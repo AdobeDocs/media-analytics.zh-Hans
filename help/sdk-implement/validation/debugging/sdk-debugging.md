@@ -1,0 +1,110 @@
+---
+seo-title: SDK 调试
+title: SDK 调试
+uuid: a5972d87-c593-4b4 f-a56 f-dca6 e25268 e1
+translation-type: tm+mt
+source-git-commit: 6b6caa59ac9ea14a42337e2f133ecb31f30491c7
+
+---
+
+
+# SDK 调试{#sdk-debugging}
+
+您可以启用和禁用日志记录。Media SDK提供了一个全方位的跟踪/记录机制，它们位于整个视频跟踪堆栈中。You can enable or disable this logging by setting the `debugLogging` flag on the Config object.
+
+## 调试日志记录的示例代码
+
+### Android
+
+```java
+// Media Heartbeat initialization 
+MediaHeartbeatConfig config = new MediaHeartbeatConfig(); 
+config.debugLogging = true; 
+
+// Use this space for setting other config values 
+MediaHeartbeat _heartbeat = new MediaHeartbeat(this, config); 
+```
+
+### iOS
+
+```
+// Media Heartbeat Initialization 
+ADBMediaHeartbeatConfig *config = [[ADBMediaHeartbeatConfig alloc] init]; 
+config.debugLogging = YES; 
+
+// Use this space for setting other config values 
+ADBMediaHeartbeat *_mediaHeartbeat =  
+[[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
+```
+
+### JavaScript
+
+```js
+// Media Heartbeat initialization 
+var mediaConfig = new MediaHeartbeatConfig(); 
+mediaConfig.debugLogging = true; 
+this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement); 
+```
+
+### OTT(Chromecast，Roku)
+
+ADBMobile 库通过 `setDebugLogging` 方法提供调试日志记录。对于所有生产应用程序，调试日志记录应设置为 `false`。
+
+#### Roku
+
+```
+ADBMobile().setDebugLogging(true)
+```
+
+#### Chromecast
+
+```
+ADBMobile.config.setDebugLogging(true)
+```
+
+**使用 Adobe Bloodhound 测试 Chromecast 应用程序 -**
+
+在应用程序开发期间，使用 Bloodhound 可以在本机上查看服务器调用，并可以选择将数据转发到 Adobe 收集服务器中。有关 Bloodhound 的更多信息，请参阅以下指南：
+
+* [适用于 Mac 的 Bloodhound 3.x](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
+* [适用于 Windows 的 Bloodhound 2.2](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+
+>[!IMPORTANT]
+>
+>自2017年月30日起，Adobe Bloodhound已日落。从 2017 年 5 月 1 日开始，将不再提供其他增强功能以及额外的工程部或 Adobe Expert Care 团队支持。
+
+### 日志消息
+
+日志消息遵循以下格式：
+
+```js
+Format: [<timestamp>] [<level>] [<tag>] [<message>] 
+Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.startupTime: 0
+```
+
+* **timestamp：**&#x200B;这是当前的 CPU 时间（GMT 时区）
+* **level：**&#x200B;共定义了 4 种消息级别：
+   * INFO - 通常是来自应用程序的输入数据（验证播放器名称、视频 ID 等）
+   * DEBUG - 调试日志，由开发人员用来调试较为复杂的问题
+   * WARN - 指示潜在的集成/配置错误或心率 SDK 错误
+   * ERROR - 指示重要的集成错误或心率 SDK 错误
+* **tag：**&#x200B;发布日志消息的子组件的名称（通常是类名称）
+* **message：**&#x200B;实际的跟踪消息
+
+您可以使用视频心率库输出的日志来验证实施。一种有效的方法是在日志中搜索字符串 `#track`. This will highlight all the `track*()` calls made by your application.
+
+For instance, this is what the logs filtered for `#track` could look like:
+
+```js
+[16:10:29 GMT­0700 (PDT).222] [INFO] [plugin::player] #trackVideoLoad() 
+[16:10:29 GMT­0700 (PDT).230] [INFO] [plugin::player] #trackSessionStart() 
+[16:10:29 GMT­0700 (PDT).250] [INFO] [plugin::player] #trackPlay() 
+[16:10:29 GMT­0700 (PDT).759] [INFO] [plugin::player] #trackChapterStart() 
+[16:10:44 GMT­0700 (PDT).769] [INFO] [plugin::player] #trackAdStart() 
+[16:10:59 GMT­0700 (PDT).752] [INFO] [plugin::player] #trackAdComplete() 
+[16:10:59 GMT­0700 (PDT).770] [INFO] [plugin::player] #trackChapterStart() 
+[16:11:29 GMT­0700 (PDT).734] [INFO] [plugin::player] #trackPause() 
+[16:11:29 GMT­0700 (PDT).764] [INFO] [plugin::player] #trackComplete() 
+[16:11:29 GMT­0700 (PDT).766] [INFO] [plugin::player] #trackVideoUnload()
+```
+
