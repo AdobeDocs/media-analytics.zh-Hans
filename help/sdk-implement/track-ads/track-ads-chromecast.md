@@ -1,0 +1,77 @@
+---
+seo-title: 在 Chromecast 中跟踪广告
+title: 在 Chromecast 中跟踪广告
+uuid: 7b1f584a-3422-416c-944c-5f5ea0ee5529
+translation-type: tm+mt
+source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
+
+---
+
+
+# 在 Chromecast 中跟踪广告{#track-ads-on-chromecast}
+
+>[!IMPORTANT]
+>
+>以下说明为使用2.x SDK提供了实施指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](../../sdk-implement/download-sdks.md)
+
+## 广告跟踪常量
+
+| 常量名称 | 描述   |
+|---|---|
+| `AdBreakStart` | 用于跟踪 AdBreak 开始事件的常量 |
+| `AdBreakComplete` | 用于跟踪 AdBreak 结束事件的常量 |
+| `AdStart` | 用于跟踪广告开始事件的常量 |
+| `AdComplete` | 用于跟踪广告结束事件的常量 |
+| `AdSkip` | 用于跟踪广告跳过事件的常量 |
+
+## 实施步骤
+
+1. 识别广告时间（包括前置广告）边界开始的时间，然后使用广告时间信息创建 `AdBreakObject`。
+
+   广告时间对象创建：[createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdBreakObject)
+
+   ```
+   adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName); 
+   ```
+
+1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+
+   ```
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, getAdBreakInfo());
+   ```
+
+1. 识别广告资产的开始时间，然后使用广告信息创建 `AdObject` 实例。
+
+   广告对象创建：[createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
+
+   ```
+   adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
+   ```
+
+1. (可选)通过上下文数据变量将标准和/或广告元数据附加到媒体跟踪会话。
+
+   * **标准广告元数据 -** 对于标准广告元数据，请使用适用于您的平台的键创建标准广告元数据键值对的字典：
+   * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告资产的数据进行填充：
+
+1. Call `trackEvent()` with the `AdStart` event to begin tracking the ad playback.
+
+   在事件调用中添加对自定义元数据变量（或空对象）的引用，以将其作为第三个参数：[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+
+   ```
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, getAdInfo(), adContextData);
+   ```
+
+1. When the ad asset playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+
+   ```
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete); 
+   ```
+
+1. 如果同一个 `AdBreak` 中存在任何其他广告，请重复执行步骤 3 至 6。
+1. 当广告时间结束时，使用 `AdBreakComplete` 事件进行跟踪：[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+
+   ```
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete, getAdBreakInfo());
+   ```
+
+有关更多信息，请参阅跟踪方案[包含前置广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md)。
