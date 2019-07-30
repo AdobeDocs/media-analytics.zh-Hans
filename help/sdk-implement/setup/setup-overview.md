@@ -3,7 +3,7 @@ seo-title: 设置概述
 title: 设置概述
 uuid: 06fedfec-b0 c8-4f7 d-90c8-e374 cdde1695
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->以下说明适用于2.x Media SDK。如果您实施的是 1.x 版本的 Media SDK，请参阅 [1.x Media SDK 文档。](../download-sdks.md) 对于Primetime集成商，请参阅 _下面的Primetime Media SDK文档_ 。
+>以下说明适用于2.x Media SDK。如果您实施的是 1.x 版本的 Media SDK，请参阅 [1.x Media SDK 文档。](/help/sdk-implement/download-sdks.md) 对于Primetime集成商，请参阅 _下面的Primetime Media SDK文档_ 。
 
 
 ## Minimum Platform Version Support {#minimum-platform-version}
