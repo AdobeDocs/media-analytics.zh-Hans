@@ -3,7 +3,7 @@ seo-title: 章节参数
 title: 章节参数
 uuid: 2b9247-a694-46e9-98e1-424c08 c27 c
 translation-type: tm+mt
-source-git-commit: f7ffb9a88f1cf3ffefba0ae5508a857fa3de8432
+source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
 
 ---
 
@@ -73,13 +73,13 @@ source-git-commit: f7ffb9a88f1cf3ffefba0ae5508a857fa3de8432
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>自动设置  </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>是 </li> <li> **类型：**<br/>字符串 </li> <li> **发送条件：**<br/>章节开始 </li> <li> **最小 SDK 版本：** 1.3 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>章节的开始次数。重要信息：如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. psa.<br/>view) </li> <li> **心跳：**<br/> (s：event：<br/>type= chapter_ start) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>event </li> <li> **报告名称：**<br/> 章节开始g </li> <li> **上下文数据：**<br/> (a. media. psa.<br/>view) </li> <li> **数据馈送：**<br/>videochapterstart </li> <li> **Audience Manager：**<br/> (c_ contextData)。<br/>a media. media. appa.<br/>view) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>自动设置  </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>是 </li> <li> **类型：**<br/>字符串 </li> <li> **发送条件：**<br/>章节开始 </li> <li> **最小 SDK 版本：** 1.3 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>章节的开始次数。**重要信息：**&#x200B;如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. psa.<br/>view) </li> <li> **心跳：**<br/> (s：event：<br/>type= chapter_ start) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>event </li> <li> **报告名称：**<br/> 章节开始g </li> <li> **上下文数据：**<br/> (a. media. psa.<br/>view) </li> <li> **数据馈送：**<br/>videochapterstart </li> <li> **Audience Manager：**<br/> (c_ contextData)。<br/>a media. media. appa.<br/>view) </li> </ul> |
 
 ### 章节结束
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>自动设置  </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>是 </li> <li> **类型：**<br/>字符串 </li> <li> **发送随：**<br/> 章节关闭 </li> <li> **最小 SDK 版本：** 1.3</li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>章节的完成次数。重要信息：如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. psa.<br/>complete) </li> <li> **心跳：**<br/> (s：event：<br/>type= farcher_ complete) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>event </li> <li> **报告名称：**<br/> 章节完成g </li> <li> **上下文数据：**<br/> (a. media. psa.<br/>complete) </li> <li> **数据馈送：**<br/>videochaptercomplete </li> <li> **Audience Manager：**<br/> (c_ contextData)。<br/>a media. media. appa.<br/>complete) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>自动设置  </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>是 </li> <li> **类型：**<br/>字符串 </li> <li> **发送随：**<br/> 章节关闭 </li> <li> **最小 SDK 版本：** 1.3</li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>章节的完成次数。**重要信息：**&#x200B;如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. psa.<br/>complete) </li> <li> **心跳：**<br/> (s：event：<br/>type= farcher_ complete) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>event </li> <li> **报告名称：**<br/> 章节完成g </li> <li> **上下文数据：**<br/> (a. media. psa.<br/>complete) </li> <li> **数据馈送：**<br/>videochaptercomplete </li> <li> **Audience Manager：**<br/> (c_ contextData)。<br/>a media. media. appa.<br/>complete) </li> </ul> |
 
 ### 平均逗留时间
 
