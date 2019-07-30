@@ -3,7 +3,7 @@ seo-title: 实施路径
 title: 实施路径
 uuid: 8400c938-e77 e-4c88 b23 b-5977a5316 c
 translation-type: tm+mt
-source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ Media Analytics(HeartBeats)是Adobe的标准化视频解决方案。它取代了
 
 * **客户端-** 这些是仅限Media Analytics的集成。您可以选择视频心率 SDK 和/或媒体收集 API 集成。此路径可在任何视频播放器中使用，包括客户和/或 OVP 的播放器，例如 Brightcove、Ooyala 和 thePlatform 等等。
 
-   If Media Analytics is your intended path, see the [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and the [Media Collection API.](../../media-collection-api/mc-api-overview.md)
+   If Media Analytics is your intended path, see the [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and the [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
 
    >[!IMPORTANT]
    >
@@ -34,6 +34,6 @@ Media Analytics(HeartBeats)是Adobe的标准化视频解决方案。它取代了
    * TVSDK 的无缝广告插入模型允许分析工具直接测量广告播放，提高了准确性。
    * 利用强大的事件和元数据集，可确保在出现各种 QoS 缓冲或移动连接中断问题以及最终用户在移动设备上进行搜寻、暂停或后台播放时，测量数据仍然准确。
    * 利用 ID3 元数据集成 Nielsen DTVR（线性）支持，利用 CMS 元数据集成 DCR 支持。
-   TVSDK已经与Media Publishics(Heartbeats) SDK集成，这使得跨每个支持的平台实现更简单、更快速的实施变得更加简单快捷。Primetime 还支持与 Nielsen 的合作。为充分利用 Primetime，请遵循[客户端](../../intro-to-ava/implementation-paths/client-side-path.md)中所述的指南和先决条件以及针对相应平台的以下文档：[Primetime用户指南。](https://helpx.adobe.com/primetime/user-guide.html)
+   TVSDK已经与Media Publishics(Heartbeats) SDK集成，这使得跨每个支持的平台实现更简单、更快速的实施变得更加简单快捷。Primetime 还支持与 Nielsen 的合作。为充分利用 Primetime，请遵循[客户端](/help/intro-to-ava/implementation-paths/client-side-path.md)中所述的指南和先决条件以及针对相应平台的以下文档：[Primetime用户指南。](https://helpx.adobe.com/primetime/user-guide.html)
 
    您还应该与您的销售代表/客户经理联系，了解购买 TVSDK 所需的条件。
