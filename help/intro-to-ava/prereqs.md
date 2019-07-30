@@ -3,7 +3,7 @@ seo-title: 先决条件
 title: 先决条件
 uuid: 4c0b37f3-8615-4cc0-b9 c9-eeb029067064
 translation-type: tm+mt
-source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
    您需要实施Adobe Experience Platform Identity Service。
 
-   Identity Service为Experience Cloud核心服务、解决方案以及People核心服务中的客户属性和受众提供通用标识框架。它通过向网站访客分配一个唯一的永久性 ID 来工作。在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
+    Identity 服务允许将通用识别框架用于 Experience Cloud 核心服务、解决方案和客户属性，以及人员核心服务中的受众。它通过向网站访客分配一个唯一的永久性 ID 来工作。在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
 
    ![](assets/mc_id_service_graphic.png)
 
@@ -48,5 +48,5 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
 1. **启用 Adobe Analytics 报表。**
 
-   To enable reports in Analytics and see the content and ad data you are collecting, see [Media reports enablement.](../media-reports/media-reports-enable.md)
+   To enable reports in Analytics and see the content and ad data you are collecting, see [Media reports enablement.](/help/media-reports/media-reports-enable.md)
 
