@@ -3,7 +3,7 @@ seo-title: Primetime
 title: Primetime
 uuid: 3d5a5ebd-b897-40f6-ba75-bba1 bae3 a081
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -22,7 +22,7 @@ Primetime 为进行媒体发布、广告投放、个性化和分析提供了模�
 * 利用强大的事件和元数据集，可确保在出现各种 QoS 缓冲或移动连接中断问题以及最终用户在移动设备上进行搜寻、暂停或后台播放时，测量数据仍然准确。
 * 利用 ID3 元数据集成 Nielsen DTVR（线性）支持，利用 CMS 元数据集成 DCR 支持。
 
-TVSDK 已与 Media SDK 集成，这使得在所有受支持的平台上都可以更便捷地实施 TVSDK。Primetime 还支持与 Nielsen 的合作。为充分利用 Primetime，请遵循[客户端](../../intro-to-ava/implementation-paths/client-side-path.md)中所述的指南和先决条件以及针对相应平台的以下文档：[Primetime用户指南](https://helpx.adobe.com/primetime/user-guide.html)
+TVSDK 已与 Media SDK 集成，这使得在所有受支持的平台上都可以更便捷地实施 TVSDK。Primetime 还支持与 Nielsen 的合作。为充分利用 Primetime，请遵循[客户端](/help/intro-to-ava/implementation-paths/client-side-path.md)中所述的指南和先决条件以及针对相应平台的以下文档：[Primetime用户指南](https://helpx.adobe.com/primetime/user-guide.html)
 
 >[!NOTE]
 >
