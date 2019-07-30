@@ -3,7 +3,7 @@ seo-title: 跟踪概述
 title: 跟踪概述
 uuid: 7b8e2f76-bc4 e-4721-8933-3e4453 b01788
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->此文档涵盖SDK的版本2.x跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](../../sdk-implement/download-sdks.md)
+>此文档涵盖SDK的版本2.x跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Player事件
 
@@ -59,7 +59,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!TIP]
 >
->播放头位置设置为设置和配置代码的一部分。For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](../../sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>播放头位置设置为设置和配置代码的一部分。For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## 实施 {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -105,7 +105,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
       实例化一个标准元数据对象，填充所需变量，并在媒体心率对象中设置该元数据对象。
 
-      请在此处查看元数据的完整列表：[音频和视频参数.](../../metrics-and-metadata/audio-video-parameters.md)
+      请在此处查看元数据的完整列表：[音频和视频参数.](/help/metrics-and-metadata/audio-video-parameters.md)
 
    * **自定义元数据 -** 为自定义变量创建变量对象，然后使用此内容的数据进行填充。
 
