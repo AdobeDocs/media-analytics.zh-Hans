@@ -3,7 +3,7 @@ seo-title: 快速启动
 title: 快速启动
 uuid: ca20bug4-2c8f-406b-833e-b4883 a9 aa534
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 
 >[!TIP]
 >
->Gather the request data necessary for completing a successful [Session request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) to the Media Analytics (MA) Collection API back-end server. 通过手动发送请求（使用 `curl` 或 Postman 等），您可以快速验证您的请求数据。这将对请求中是否存在与不正确数据类型或信息有关的任何问题立即提供反馈。使用 [JSON 验证架构](../../media-collection-api/mc-api-ref/mc-api-json-validation.md)来验证您是否提供了正确的请求数据。
+>Gather the request data necessary for completing a successful [Session request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to the Media Analytics (MA) Collection API back-end server. 通过手动发送请求（使用 `curl` 或 Postman 等），您可以快速验证您的请求数据。这将对请求中是否存在与不正确数据类型或信息有关的任何问题立即提供反馈。使用 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)来验证您是否提供了正确的请求数据。
 
 1. 收集为运行任何 Experience Cloud 应用程序而必须提供的标准、必需的 Adobe Analytics 和访客数据：
 
@@ -49,7 +49,7 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 
    >[!NOTE]
    >
-   >您必须在JSON请求正文中使用正确的数据类型。E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas.](../../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+   >您必须在JSON请求正文中使用正确的数据类型。E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 1. 将会话请求发送到MA Collection API端点。如果您的请求负载无效，请确定问题并重试，直到接收到 `201 Created` 响应。In this `curl` example, the JSON request body is in a file named `sample_data_session`:
 
@@ -72,4 +72,4 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
    Access-Control-Expose-Headers: Location
    ```
 
-如果[会话请求](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)成功，您将接收到与上述相同的 `201 Created` 响应。该响应将会话 ID 包含在 Location 标头中。会话 ID 是响应中的关键信息，因为所有后续跟踪调用都需要会话 ID。After a successful return of a [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md), you can confidently proceed with implementing video tracking using the MA API in your video player.
+如果[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)成功，您将接收到与上述相同的 `201 Created` 响应。该响应将会话 ID 包含在 Location 标头中。会话 ID 是响应中的关键信息，因为所有后续跟踪调用都需要会话 ID。After a successful return of a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md), you can confidently proceed with implementing video tracking using the MA API in your video player.
