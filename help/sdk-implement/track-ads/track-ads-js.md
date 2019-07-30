@@ -3,7 +3,7 @@ seo-title: 在 JavaScript 中跟踪广告
 title: 在 JavaScript 中跟踪广告
 uuid: 4d81d29c-c55 d-4d48-b505-3260922712ff
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 >[!IMPORTANT]
 >
->以下说明为使用2.x SDK提供了实施指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](../../sdk-implement/download-sdks.md)
+>以下说明为使用2.x SDK提供了实施指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
 
 ## 广告跟踪常量
 
@@ -74,7 +74,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 1. (可选)通过上下文数据变量将标准和/或广告元数据附加到媒体跟踪会话。
 
-   * [在 JavaScript 中实施标准广告元数据](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
+   * [在 JavaScript 中实施标准广告元数据](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
    * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
 
       ```js
@@ -123,4 +123,4 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
    };
    ```
 
-有关更多信息，请参阅跟踪方案[包含前置广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md)。
+有关更多信息，请参阅跟踪方案[包含前置广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)。
