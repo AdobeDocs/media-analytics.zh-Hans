@@ -3,7 +3,7 @@ seo-title: 跳过广告的 VOD 播放
 title: 跳过广告的 VOD 播放
 uuid: f3ab3524-abcb-4051-b64 e-a1 aad6 e3 dd3 f
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,22 +16,22 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 ### 一个已跳过的预先滚动广告的VOD
 
-This is the same scenario as [VOD playback with pre-roll ads](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
+This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
 
 | 触发器   | 心率方法  | 网络调用   | 注释   |
 | --- | --- | --- | --- |
-| 用户点击[!UICONTROL 播放] | `trackSessionStart()` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
+| 用户点击[!UICONTROL 播放] | `trackSessionStart()` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
 | 广告开始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 广告开始，心率广告开始 |  |
 | 播放广告的第一帧。 | `trackPlay()` | 心率广告播放 | 当广告内容在主内容之前播放时，将在广告开始播放时开始心率。 |
 | 播放广告。 |  | 广告心率 |  |
 | 跳过广告。 | `trackEvent:trackAdSkip` |  | 没有广告结束网络调用。 |
-| 播放内容。 |  | 内容心率 | These network calls are exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| 内容结束播放。 | `trackComplete()` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 播放内容。 |  | 内容心率 | These network calls are exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 内容结束播放。 | `trackComplete()` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束。 | `trackSessionEnd()` |  | `SessionEnd` |
 
 ## 参数 {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
 
-这些参数与[包含前置广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md)方案中的参数相同，不同之处在于此方案没有广告结束和广告时间结束调用。
+这些参数与[包含前置广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)方案中的参数相同，不同之处在于此方案没有广告结束和广告时间结束调用。
 
 ## 示例代码 {#section_lxt_qz3_x2b}
 
