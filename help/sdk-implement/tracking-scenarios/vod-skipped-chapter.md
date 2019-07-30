@@ -3,7 +3,7 @@ seo-title: 跳过一个章节的 VOD 播放
 title: 跳过一个章节的 VOD 播放
 uuid: 19fb020c-eb7 a-4942-9212-94f4 d47195 b9
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 在此方案中，用户将跳过主内容中的一个章节。
 
-此方案与[包含一个章节的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-one-chapter.md)方案相同，不同之处在于，此示例中的用户打算在章节之外搜寻，因此跳过了该章节以进入主内容。
+此方案与[包含一个章节的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)方案相同，不同之处在于，此示例中的用户打算在章节之外搜寻，因此跳过了该章节以进入主内容。
 
 | 触发器 | 心率方法 | 网络调用   | 注释 |
 |---|---|---|---|
@@ -31,7 +31,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 ## 参数 {#section_1874F6B7880B43C5856BD11FF85B382E}
 
-The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](../../sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
+The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
 
 ## 示例代码 {#section_fyl_ncj_x2b}
 
