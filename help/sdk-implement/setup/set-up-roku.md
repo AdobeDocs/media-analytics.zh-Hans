@@ -3,7 +3,7 @@ seo-title: 设置 Roku
 title: 设置 Roku
 uuid: 904dfda0-4782-41da-b4 ab-212e8115663
 translation-type: tm+mt
-source-git-commit: bb3a303edba724c8f444d612b3be9d7250eea363
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -25,7 +25,7 @@ Learn more at [Adobe Mobile Services documentation.](https://marketing.adobe.com
 
 ## SDK 实施
 
-1. 将[下载](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)的 Roku 库添加到您的项目中。
+1. 将[下载](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)的 Roku 库添加到您的项目中。
 
    1. `AdobeMobileLibrary-2.*-Roku.zip` 下载文件包含以下软件组件：
 
