@@ -3,7 +3,7 @@ seo-title: 在 Chromecast 中跟踪核心播放
 title: 在 Chromecast 中跟踪核心播放
 uuid: a9fc59d8-a2 f4-4889-bec-55c42 a835 d06
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->此文档涵盖SDK的版本2.x跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](../../../sdk-implement/download-sdks.md)
+>此文档涵盖SDK的版本2.x跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
 
 1. **初始跟踪设置**
 
@@ -40,7 +40,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **标准视频元数据**
 
-      [在 Chromecast 中实施标准元数据](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+      [在 Chromecast 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
 
       >[!NOTE]
       >
@@ -130,6 +130,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    >
    >这可能与在步骤中使用的相同。请确保当视频播放继续时，每个 `trackPause()` API 调用均与随后的一个 `trackPlay()` API 调用相配对。
 
-* 跟踪方案：[不含广告的 VOD 播放](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 跟踪方案：[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Chromecast SDK 随附有示例播放器，用于提供完整的跟踪示例。
 
