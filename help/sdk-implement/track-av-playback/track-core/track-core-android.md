@@ -3,7 +3,7 @@ seo-title: 在 Android 中跟踪核心播放
 title: 在 Android 中跟踪核心播放
 uuid: ab fab95-76ed-4ae6ae6-aedb-2e66 eg7607
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # 在 Android 中跟踪核心播放{#track-core-playback-on-android}
 
 >[!IMPORTANT]
->此文档涵盖SDK的版本2.x跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载适用于 Android 的 1.x 开发人员指南：[下载 SDK](../../../sdk-implement/download-sdks.md)
+>此文档涵盖SDK的版本2.x跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载适用于 Android 的 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
 
 1. **初始跟踪设置**
 
@@ -56,14 +56,14 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **标准元数据**
 
-      [在 Android 中实施标准元数据](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+      [在 Android 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
       >[!NOTE]
       >
       >将标准元数据对象附加到媒体对象是可选的。
 
       * 媒体元数据键 API 引用 - [标准元数据键 - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * 请在此处查看可用视频元数据的完整集合：[音频和视频参数](../../../metrics-and-metadata/audio-video-parameters.md)
+      * 请在此处查看可用视频元数据的完整集合：[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)
    * **自定义元数据**
 
       为自定义变量创建字典，并填充此媒体的数据。例如：
@@ -170,6 +170,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 有关跟踪核心播放的其他信息，请参阅以下内容：
 
-* 跟踪方案：[不含广告的 VOD 播放](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 跟踪方案：[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Android SDK 随附有示例播放器，用于提供完整的跟踪示例。
 
