@@ -3,7 +3,7 @@ seo-title: 带有缓冲的 VOD 播放
 title: 带有缓冲的 VOD 播放
 uuid: 958f76692-7193-40fb-a8 e7-2ff4 fa805330
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 在此方案中，播放 VOD 内容时出现一些缓冲。
 
-除非另外指定，否则此方案中的网络调用与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案中的调用相同。
+除非另外指定，否则此方案中的网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案中的调用相同。
 
 | 触发器   | 心率方法   | 网络调用   | 注释   |
 |---|---|---|---|
