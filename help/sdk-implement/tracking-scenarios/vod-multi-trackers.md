@@ -3,7 +3,7 @@ seo-title: 多个并行的 VOD 跟踪器
 title: 多个并行的 VOD 跟踪器
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
 
-This scenario is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. 这两个会话分别使用不同的 `MediaHeartbeat` 实例。
+This scenario is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. 这两个会话分别使用不同的 `MediaHeartbeat` 实例。
 
-除非另外指定，否则网络调用与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。
+除非另外指定，否则网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。
 
 ## 参数 {#section_45D7B10031524411B91E2C569F7818B0}
 
