@@ -3,7 +3,7 @@ seo-title: 代码比较1.x至2.x
 title: 代码比较1.x至2.x
 uuid: f0a1660-2100-446d-ab75-afdf966478 b3
 translation-type: tm+mt
-source-git-commit: ee073531814b446ba0ae4a86fc1011f063886561
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -840,4 +840,4 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-有关使用 2.x 跟踪视频的更多信息，请参阅[跟踪核心视频播放](../../sdk-implement/track-av-playback/track-core-overview.md)。
+有关使用 2.x 跟踪视频的更多信息，请参阅[跟踪核心视频播放](/help/sdk-implement/track-av-playback/track-core-overview.md)。
