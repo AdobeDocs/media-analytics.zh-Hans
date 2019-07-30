@@ -3,20 +3,20 @@ seo-title: 会话响应缓慢时对事件进行排队
 title: 会话响应缓慢时对事件进行排队
 uuid: 39ea59d9-89d3-4087a806-48a43ef0c98
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
 
 # 会话响应缓慢时对事件进行排队{#queueing-events-when-sessions-response-is-slow}
 
-媒体收集 API 是 RESTful：即，您发出 HTTP 请求并等待响应。This is an important point only for when you make a [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. 这很重要，因为所有后续跟踪调用都需要使用会话ID。
+媒体收集 API 是 RESTful：即，您发出 HTTP 请求并等待响应。This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. 这很重要，因为所有后续跟踪调用都需要使用会话ID。
 
-It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](../../media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](../../media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
+It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
 
 >[!NOTE]
 >
->[事件请求](../../media-collection-api/mc-api-ref/mc-api-events-req.md)不会将数据返回给 HTTP 响应代码之外的客户端。
+>[事件请求](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)不会将数据返回给 HTTP 响应代码之外的客户端。
 
 在接收会话 ID 之前，请查看发行版中的引用播放器，以找到一种处理事件的方法。例如：
 
