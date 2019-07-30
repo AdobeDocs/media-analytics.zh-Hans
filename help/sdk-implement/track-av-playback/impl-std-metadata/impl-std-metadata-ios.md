@@ -5,7 +5,7 @@ seo-title: 在 iOS 中实施标准元数据
 title: 在 iOS 中实施标准元数据
 uuid: 75a80f 08-a95-49d4-a27 a-8ce531 d64 d31 d
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 ## 实施
 
 1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys`
-   [IOS元数据密钥](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+   [IOS元数据密钥](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
 1. 在 `MediaInfo``ADBMediaObject`   实例中使用元数据的标准元数据常量设置标准元数据字典。
 
