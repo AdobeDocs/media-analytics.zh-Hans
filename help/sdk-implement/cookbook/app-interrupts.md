@@ -3,7 +3,7 @@ seo-title: 处理应用程序在播放过程中出现的中断问题
 title: 处理应用程序在播放过程中出现的中断问题
 uuid: 1ccb4507-bda6-462d-bf67-e22778 a4 db3 d
 translation-type: tm+mt
-source-git-commit: 8c9592ee7ad97de2cf4aefb226ed1390bc5b53a8
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,5 +31,5 @@ source-git-commit: 8c9592ee7ad97de2cf4aefb226ed1390bc5b53a8
 
 * _要如何重新启动同一个会话呢？_
 
-   有关重新启动跟踪会话的详细说明，请参阅此页面：[恢复不活动的会话。](../../sdk-implement/cookbook/resuming-inactive.md)SDK 会发送一个“恢复”ping，以告知后端用户正在手动恢复会话。
+   有关重新启动跟踪会话的详细说明，请参阅此页面：[恢复不活动的会话。](/help/sdk-implement/cookbook/resuming-inactive.md)SDK 会发送一个“恢复”ping，以告知后端用户正在手动恢复会话。
 
