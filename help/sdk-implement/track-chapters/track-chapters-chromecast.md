@@ -3,7 +3,7 @@ seo-title: 在 Chromecast 中跟踪章节和区段
 title: 在 Chromecast 中跟踪章节和区段
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d743304f5
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->以下说明为使用2.x SDK提供了实施指南。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>以下说明为使用2.x SDK提供了实施指南。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. 识别执行章节开始事件的时间，然后使用章节信息创建 `ChapterObject` 实例。
 
