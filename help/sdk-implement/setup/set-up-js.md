@@ -3,7 +3,7 @@ seo-title: 设置 JavaScript
 title: 设置 JavaScript
 uuid: 0269d ad-3af8-4ff1-9d15-e06 c2952 a005
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -21,7 +21,7 @@ Mobile SDK文档的更多信息，请参阅 [使用JavaScript实施分析。](ht
    * *可订阅播放器事件的 API -* Media SDK 要求您在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
 
-1. 将[下载](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)的库添加到您的项目中。为方便起见，请创建对类的本地引用。
+1. 将[下载](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)的库添加到您的项目中。为方便起见，请创建对类的本地引用。
 
    1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded.
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
@@ -116,4 +116,4 @@ Mobile SDK文档的更多信息，请参阅 [使用JavaScript实施分析。](ht
 
 在版本 2.x 中，所有公共方法都已合并到 `ADB.va.MediaHeartbeat` 类中，从而更加便于开发人员使用。此外，所有配置现在都已合并到 `ADB.va.MediaHeartbeatConfig` 类中。
 
-For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
