@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 3fe32425-5e2a-4886-8fea-d91 d15671 bb0
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->以下说明为使用2.x SDK提供了实施指南。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>以下说明为使用2.x SDK提供了实施指南。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 章节和细分跟踪可用于自定义定义的媒体章节或区段。章节跟踪的一些常用用法是根据媒体内容定义自定义细分，或在广告片段之间定义内容细分。Chapter tracking is **not** required for core media tracking implementations.
 
