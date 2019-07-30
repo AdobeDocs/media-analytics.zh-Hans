@@ -3,7 +3,7 @@ seo-title: 包含一个章节的 VOD 播放
 title: 包含一个章节的 VOD 播放
 uuid: 1566a6f5-cf22-42e7-1e1 a-6976c6 c4 e649
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 在此方案中，部分 VOD 内容被标记为一个章节。
 
-除非另外指定，否则此方案中的网络调用与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案中的调用相同。网络调用在同一时间发生，但负载却不同。
+除非另外指定，否则此方案中的网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案中的调用相同。网络调用在同一时间发生，但负载却不同。
 
 | 触发器   | 心率方法   | 网络调用   | 注释   |
 |---|---|---|---|
@@ -23,8 +23,8 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 | 播放章节的第一帧。 | `trackPlay` | 心率内容播放 | 当章节内容在主内容之前播放时，章节开始时心率即会开始。 |
 | 章节播放。 |  | 章节心率 |  |
 | 章节结束。 | `trackEvent:trackChapterComplete` | 心率章节结束 | 这是指到达章节结尾时。 |
-| 播放内容。 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
-| 内容结束。 | `trackComplete` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 播放内容。 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 内容结束。 | `trackComplete` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话已结束。即使用户不观看要完成的媒体，也必须调用此API。 |
 
 ## 参数 {#section_869319D99A474FEA8EA840415EA97FBD}
