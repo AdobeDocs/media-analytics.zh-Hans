@@ -3,7 +3,7 @@ seo-title: Test Standard播放
 title: Test Standard播放
 uuid: c4b3fead-1b27-484b-ab6 a-39f1 ae0 f03 f2
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -83,7 +83,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    1. Video Analytics 开始
    1. 心率开始
    1. 心率分析开始
-   以上两个调用包含额外的元数据和变量。For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   以上两个调用包含额外的元数据和变量。For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **观看广告时间（如果可用）**
 
@@ -93,7 +93,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    1. 视频广告分析开始
    1. 心率广告开始
    1. 心率广告分析开始
-   前两个调用包含额外的元数据和变量。For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
+   前两个调用包含额外的元数据和变量。For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
 
    * **广告播放**
 
@@ -122,7 +122,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    * 每发起一次播放调用，播放头位置应增加 10。
    * `l:event:duration` 值表示自上次跟踪调用后所经过的毫秒数，该参数在每次 10 秒调用中的值应该大致相同。
 
-      For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
+      For call parameters and metadata, see [Test call details](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
 1. **播放期间至少暂停 30 秒.**&#x200B;视频播放器暂停时，将每 10 秒发送一次暂停事件调用。暂停结束后，播放事件应该恢复。
 
