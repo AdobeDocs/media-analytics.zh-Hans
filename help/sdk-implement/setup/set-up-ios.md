@@ -3,7 +3,7 @@ seo-title: 设置 iOS
 title: 设置 iOS
 uuid: a1c be79-a6 dc-47b6-93b3-ac7 b42 f1 f3 eb
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -27,7 +27,7 @@ Mobile SDK文档的更多信息，请参阅 [iOS SDK4.x for Experience Cloud解�
 
 ## SDK 实施
 
-1. 将[下载](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)的 Media SDK 添加到您的项目中。
+1. 将[下载](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)的 Media SDK 添加到您的项目中。
 
    1. 验证以下软件组件存在于 `libs` 目录中：
 
@@ -137,7 +137,7 @@ Mobile SDK文档的更多信息，请参阅 [iOS SDK4.x for Experience Cloud解�
 
 在版本 2.x 中，所有公共方法都已合并到 `ADBMediaHeartbeat` 类中，从而更加便于开发人员使用。所有配置都已合并到 `ADBMediaHeartbeatConfig` 类中。
 
-For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
 
 ## 配置适用于 tvOS 的本地应用程序
 
