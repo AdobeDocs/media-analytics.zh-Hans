@@ -3,7 +3,7 @@ seo-title: 事件请求
 title: 事件请求
 uuid: b237f0a0-dc29-418b-89ee-04c596 a27 f39
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -17,7 +17,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ## URI参数
 
-`sid`： [从会话请求返回的会话ID。](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+`sid`： [从会话请求返回的会话ID。](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
 
 ## 请求正文
 
@@ -44,7 +44,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 * `customMetadata` (可选；仅发送和 `adStart``chapterStart` 事件类型)
 * `qoeData`（可选）
 
-For a list of valid event types for this release, see [Event types and descriptions.](../../media-collection-api/mc-api-ref/mc-api-event-types.md)
+For a list of valid event types for this release, see [Event types and descriptions.](/help/media-collection-api/mc-api-ref/mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
@@ -70,8 +70,8 @@ Access-Control-Expose-Headers Location
 | HTTP 响应代码 | 描述 | 客户端操作项 |
 |---|---|---|
 | **204** | **无内容。**<br/><br/>心率调用成功。 | 不适用 |
-| **400** | **错误请求。**<br/><br/>请求格式不正确。 | 请查看 [JSON 验证架构](../../media-collection-api/mc-api-ref/mc-api-json-validation.md)以了解请求类型。 |
-| **404** | **未找到。**<br/><br/>在后端服务中找不到媒体会话的会话ID。 | 客户端应用程序应使用[会话请求](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 来创建另一个媒体会话，并报告对该会话的跟踪。 |
-| **410** | **已过期。**<br/><br/>在后端服务中找到媒体会话，但客户端无法再报告其活动。 | 客户端应用程序应使用[会话请求](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 来创建另一个媒体会话，并报告对该会话的跟踪。 |
+| **400** | **错误请求。**<br/><br/>请求格式不正确。 | 请查看 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)以了解请求类型。 |
+| **404** | **未找到。**<br/><br/>在后端服务中找不到媒体会话的会话ID。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 来创建另一个媒体会话，并报告对该会话的跟踪。 |
+| **410** | **已过期。**<br/><br/>在后端服务中找到媒体会话，但客户端无法再报告其活动。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 来创建另一个媒体会话，并报告对该会话的跟踪。 |
 | **500** | **服务器错误** | 不适用 |
 
