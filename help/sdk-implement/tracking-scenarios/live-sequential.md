@@ -3,7 +3,7 @@ seo-title: 具有连续跟踪的实时主内容
 title: 具有连续跟踪的实时主内容
 uuid: b03477b6-9be1-4b67-a5 a0-4cf3 cf3 cf262 ab
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,13 +14,13 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 在此方案中，有一个加入实时流之后 40 秒不播放广告的实时资产。
 
-此方案与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同，只是移过了部分内容，并且完成了从主内容中的一个点到另一个点的搜寻。
+此方案与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同，只是移过了部分内容，并且完成了从主内容中的一个点到另一个点的搜寻。
 
 | 触发器 | 心率方法 | 网络调用   | 注释   |
 | --- | --- | --- | --- |
-| 用户点击[!UICONTROL 播放] | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
+| 用户点击[!UICONTROL 播放] | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
 | 播放内容的第一帧。 | `trackPlay` | 心率内容播放 | 当章节内容在主内容之前播放时，章节开始时心率即会开始。 |
-| 内容播放 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 内容播放 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话 1 结束（第 1 集结束） | `trackComplete` `trackSessionEnd` | 心率内容结束 | 结束是指第 1 集的会话 1 已到达结尾并观看完毕。在开始下一集的会话之前，必须先结束此会话。 |
 | 第 2 集开始（会话 2 开始） | `trackSessionStart` | 分析内容开始心跳内容开始 | 这是因为用户观看了第 1 集并继续观看另一剧集 |
 | 第一个媒体帧 | `trackPlay` | 心率内容播放 | 此方法会触发计时器，并且从此刻起，只要播放继续，每 10 秒就会发送一次心率。 |
