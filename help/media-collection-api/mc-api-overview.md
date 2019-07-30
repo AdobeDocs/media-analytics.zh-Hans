@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: c14bdbef-5846-4d31-8a14-8e9e9e9c9861
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
 
    此功能使您能够在用户脱机时跟踪媒体，通过本地存储事件数据，直至用户设备在线返回为止。（有关详细信息，请参阅[跟踪下载的内容](track-downloaded-content.md)。）
 
-媒体收集 API 本质上是一个适配器，充当 Media SDK 的服务器端版本。这意味着媒体SDK文档的某些方面也与Media Collection API相关。For example, both solutions use the same [Audio and Video Parameters](../metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](../media-reports/media-reports-enable.md)
+媒体收集 API 本质上是一个适配器，充当 Media SDK 的服务器端版本。这意味着媒体SDK文档的某些方面也与Media Collection API相关。For example, both solutions use the same [Audio and Video Parameters](/help/metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](/help/media-reports/media-reports-enable.md)
 
 ## 媒体跟踪数据流 {#section_pwq_n34_qbb}
 
