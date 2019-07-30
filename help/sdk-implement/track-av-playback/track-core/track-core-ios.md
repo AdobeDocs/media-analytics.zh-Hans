@@ -3,7 +3,7 @@ seo-title: 在 iOS 中跟踪核心播放
 title: 在 iOS 中跟踪核心播放
 uuid: bdc0e05c-4fe5-430e-aee2-f331 bc59 ac6 b
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # 在 iOS 中跟踪核心播放{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->此文档涵盖SDK的版本2.x跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](../../../sdk-implement/download-sdks.md)
+>此文档涵盖SDK的版本2.x跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
 
 1. **初始跟踪设置**
 
@@ -62,11 +62,11 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **标准视频元数据**
 
-      * [在 iOS 中实施标准元数据](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+      * [在 iOS 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **视频元数据密钥**
-         [iOS 元数据键](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         [iOS 元数据键](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-      * 请在此处查看视频元数据的完整列表：[音频和视频参数](../../../metrics-and-metadata/audio-video-parameters.md)
+      * 请在此处查看视频元数据的完整列表：[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)
       >[!NOTE]
       >
       >将标准视频元数据对象附加到媒体对象是可选的。
@@ -172,6 +172,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 有关跟踪核心播放的其他信息，请参阅以下内容：
 
-* 跟踪方案：[不含广告的 VOD 播放](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 跟踪方案：[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * iOS SDK 随附有示例播放器，用于提供完整的跟踪示例。
 
