@@ -3,7 +3,7 @@ seo-title: 时间轴 3 - 章节
 title: 时间轴 3 - 章节
 uuid: 41b52072-e1 cd-4dda-9253-31f3408924 f6
 translation-type: tm+mt
-source-git-commit: 6ada4d04824a3e501ecc58a9ca719cc9445aee12
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 6ada4d04824a3e501ecc58a9ca719cc9445aee12
 
 **实施详细信息**
 
-This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 播放器状态不是“正在播放”，而是“正在启动”。[强制会话参数](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的 `params` 映射中。在后端，此调用会生成一个 Adobe Analytics 启动调用。
+This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 播放器状态不是“正在播放”，而是“正在启动”。[强制会话参数](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的 `params` 映射中。在后端，此调用会生成一个 Adobe Analytics 启动调用。
 
 **请求主体示例**
 
