@@ -3,7 +3,7 @@ seo-title: 跟踪下载的内容
 title: 跟踪下载的内容
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 translation-type: tm+mt
-source-git-commit: 501bbfe8b44a2a8e9b2ac2caab49b2317f9ea0f3
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -30,7 +30,7 @@ Downloaded Content API 提供了在用户处于脱机状态时跟踪媒体使用
 
 ### 活动架构
 
-下载的内容API基于Media Collection API，因此您的播放器批次和发送的事件数据要求与Media Collection API中一样使用相同的事件架构。For information on these schemas, see: [Overview;](../media-collection-api/mc-api-overview.md) and [Validating event requests.](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+下载的内容API基于Media Collection API，因此您的播放器批次和发送的事件数据要求与Media Collection API中一样使用相同的事件架构。For information on these schemas, see: [Overview;](/help/media-collection-api/mc-api-overview.md) and [Validating event requests.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### 活动顺序
 
