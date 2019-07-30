@@ -3,7 +3,7 @@ seo-title: 媒体报表启用
 title: 媒体报表启用
 uuid: d306068d-a308-4b6 e-8a72-742dda0 de428
 translation-type: tm+mt
-source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -65,4 +65,4 @@ source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
 
 >[!IMPORTANT]
 >
->Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](../metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". 在启用了媒体跟踪的情况下，将定义媒体分类。Adobe时常会添加新属性，当发生这种情况时，客户必须重新启用报告套件才能访问新媒体属性。在更新过程中，Adobe通过检查变量的名称来确定是否启用了分类。如果其中任何一项缺失，Adobe将再次添加缺失的组件。
+>Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". 在启用了媒体跟踪的情况下，将定义媒体分类。Adobe时常会添加新属性，当发生这种情况时，客户必须重新启用报告套件才能访问新媒体属性。在更新过程中，Adobe通过检查变量的名称来确定是否启用了分类。如果其中任何一项缺失，Adobe将再次添加缺失的组件。
