@@ -3,7 +3,7 @@ seo-title: 一个 VOD 跟踪器用于多个会话
 title: 一个 VOD 跟踪器用于多个会话
 uuid: 355c83f4-52bd-4bdd-92dc-92dc-ab506 e412 d0 a
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 在此方案中，`MediaHeartbeat` 实例用于依次创建两个不同的会话。
 
-此方案与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。
+此方案与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。
 
 ## 参数 {#section_D52B325B99DA42108EF560873907E02C}
 
