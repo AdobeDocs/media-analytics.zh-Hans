@@ -3,7 +3,7 @@ seo-title: 在主内容中进行搜寻的 VOD 播放
 title: 在主内容中进行搜寻的 VOD 播放
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,16 +14,16 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 在此方案中，播放期间在主内容中进行搜寻。
 
-此方案与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同，只是移过了部分内容，并且完成了从主内容中的一个点到另一个点的搜寻。
+此方案与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同，只是移过了部分内容，并且完成了从主内容中的一个点到另一个点的搜寻。
 
 | 触发器   | 心率方法   | 网络调用   | 注释   |
 | --- | --- | --- | --- |
-| 用户点击[!UICONTROL 播放] | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
+| 用户点击[!UICONTROL 播放] | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
 | 播放内容的第一帧。 | `trackPlay` | 心率内容播放 | 当章节内容在主内容之前播放时，章节开始时心率即会开始。 |
-| 内容播放 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 内容播放 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 用户开始在内容中执行搜寻操作 | `trackSeekStart` |  | No heartbeats go out till seek is complete, for example, `trackSeekComplete` |
 | 搜寻操作结束 | `trackSeekComplete` |  | 搜寻完成后心率即开始发出。提示：播放头值应该表示搜寻后正确的新播放头。 |
-| 内容结束 | `trackComplete` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 内容结束 | `trackComplete` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束 | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 示例代码 {#section_q2d_wcj_x2b}
