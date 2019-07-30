@@ -3,7 +3,7 @@ seo-title: 时间轴 1 - 观看到内容的结尾
 title: 时间轴 1 - 观看到内容的结尾
 uuid: 0ff591d3-fa99-4123-9e09-c4 e71 ea1060 b
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
 
 **实施细节**
 
-此调用表示&#x200B;_用户播放视频的意图_。<br/><br/>它将一个会话ID( `{sid}`)返回给客户端，用于标识会话中的所有后续跟踪调用。播放器状态不是“正在播放”，而是“正在启动”。<br/><br/>[强制会话参数](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的 `params` 映射中。<br/><br/>在后端，此调用会生成一个 Adobe Analytics 启动调用。
+此调用表示&#x200B;_用户播放视频的意图_。<br/><br/>它将一个会话ID( `{sid}`)返回给客户端，用于标识会话中的所有后续跟踪调用。播放器状态不是“正在播放”，而是“正在启动”。<br/><br/>[强制会话参数](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的 `params` 映射中。<br/><br/>在后端，此调用会生成一个 Adobe Analytics 启动调用。
 
 **请求主体示例**
 
