@@ -3,7 +3,7 @@ seo-title: 里程碑概述
 title: 里程碑概述
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356cc5
 translation-type: tm+mt
-source-git-commit: bb5478b0934e0a3bf27def86ff70c7f92af67e6a
+source-git-commit: 7eb14c8e4da742fb426a6e5d0d60ebf8c2063bb6
 
 ---
 
@@ -30,7 +30,8 @@ source-git-commit: bb5478b0934e0a3bf27def86ff70c7f92af67e6a
 
 To set-up video reporting for a Milestone implementation, go to **[!UICONTROL Admin &gt; Report Suite Manager].** 选择报表包，然后选择 **[!UICONTROL “视频管理”&gt;“视频报表]”：**
 
-![](assets/0clip_image002_1537416456.png){width=“248”}
+<!--![](assets/0clip_image002_1537416456.png){width="248"}-->
+![](assets/rs1.png)
 
 在第一个屏幕中，只有“视频核心”可以使用里程碑数据。选择&#x200B;**[!UICONTROL 视频核心]**，然后单击&#x200B;**[!UICONTROL 保存]。**
 
@@ -38,11 +39,13 @@ To set-up video reporting for a Milestone implementation, go to **[!UICONTROL Ad
 
 On the next screen, select **[!UICONTROL Use Custom Variables].**
 
-![](assets/0clip_image006_-1561510960.png){width=“470”}
+<!--![](assets/0clip_image006_-1561510960.png){width="470"}-->
+![](assets/rs2.png)
 
 在最后一个屏幕中，选择要用于视频测量的两个 eVar 和三个事件：
 
-![](assets/0clip_image008_-92166399.png)
+<!--![](assets/0clip_image008_-92166399.png)-->
+![](assets/rs3.png)
 
 ## 视频变量引用 {#section_emg_c1z_cfb}
 
@@ -50,8 +53,8 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 
 | 视频量度 | 变量类型 | 描述 |
 | --- | --- | --- |
-| 内容 | eVar <br/>Default expiration: Visit | （必需）收集实施中指定的视频名称。 |
-| 内容类型 | eVar <br/>Default expiration: Page view | 收集由访客查看的内容类型相关数据。Hits sent by video measurement are assigned a content type of `video.` <br/>This variable does not need to be reserved exclusively for video tracking. 使用此同一变量生成其他内容报告内容类型可分析不同类型内容中访客的分布情况。例如，您可以使用此变量通过 `article` 或 `product page` 之类的值标记其他内容类型。<br/>从视频测量的角度来看，“内容类型”**&#x200B;允许您识别视频访客，从而计算视频转化率。 |
+| 内容 | eVar <br/>默认到期：访问次数 | （必需）收集实施中指定的视频名称。 |
+| 内容类型 | eVar <br/>Default expiration: Page view | 收集由访客查看的内容类型相关数据。视频测量发送的点击次数为 `video.`<br/>此变量的内容类型不需要专门保留视频跟踪。使用此同一变量生成其他内容报告内容类型可分析不同类型内容中访客的分布情况。例如，您可以使用此变量通过 `article` 或 `product page` 之类的值标记其他内容类型。<br/>从视频测量的角度来看，“内容类型”**&#x200B;允许您识别视频访客，从而计算视频转化率。 |
 | 内容逗留时间 | Event <br/>Type: Counter | 以秒为单位，计算自上次数据收集流程（图像请求）以来，观看视频所花费的时间。 |
 | 视频初始化 | Event <br/>Type: Counter | 表明访客已查看了视频的某些部分。但是它并不提供有关访客查看了视频中的多少内容或哪一部分的信息。 |
 | 视频结束 | 事件 <br/>类型：计数器 | 表明用户已查看了完整的视频。默认情况下，完整的事件会在视频结束前 1 秒进行测量。<br/>在实施过程中，您可以指定希望在距离视频结束有多少秒时被视为查看完成。对于实时视频和其他未定义结尾的流，您可以指定一个自定义时间点来测量结束。例如，在查看了特定时间之后。 |
@@ -62,7 +65,7 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 
 | 变量    | 描述 |
 | --- | --- |
-| `Media.trackUsingContextData` | **语法：**<br/><br/> `s.Media.trackUsingContextData = true;`<br/>此选项可启用集成的视频跟踪。When set to true, the media module generates context data for media tracking, instead of the legacy `pev3`. <br/>可使用 `Media.contextDataMapping` 将上下文数据映射到选定的 eVar 和 event。<br/>默认值： `false` |
+| `Media.trackUsingContextData` | **语法：**<br/><br/> `s.Media.trackUsingContextData = true;`<br/>此选项可启用集成的视频跟踪。如果设置为true，媒体模块将生成媒体跟踪的上下文数据，而不 `pev3`是传统数据。<br/>可使用 `Media.contextDataMapping` 将上下文数据映射到选定的 eVar 和 event。<br/>默认值： `false` |
 | `Media.contextDataMapping` | **语法：**<br/><br/> `s.Media.contextDataMapping = {`<br/>      `"a.media.name":"eVar2, prop2",` <br/>     `"a.media.segment":"eVar3",` <br/>     `"a.contentType":"eVar1",` <br/>     `"a.media.timePlayed":"event3",` <br/>     `"a.media.view":"event1",` <br/>     `"a.media.segmentView":"event2",` <br/>     `"a.media.complete":"event7",` <br/>     `"a.media.milestones":{` <br/>         `25:"event4",` <br/>         `50:"event5",` <br/>         `75:"event6"` <br/>     ` }` <br/> `};`<br/><br/>一个对象，可定义映射到要用于视频测量的 eVar 和 event 的变量。The object must map the following fields: <br/><br/> **a.media.name：**（必需）在变量中填充视频名称。提供您选择用来存储视频名称的 eVar，以及要用于视频路径的“自定义分析视频”变量 (`s.prop`)。Provide the values in a comma-separated list. <br/><br/> **a.media.segment：**（可选）要用于存储媒体区段名称的 eVar。a.contentType：（可选）要用于存储视频值的 eVar，其中包含已启用的用于生成视频访问和访客报表的访问和访客跟踪。您选择的变量可能已用于存储文章幻灯片或产品页面之类的数据 <br/><br/> **a media. meview：** (必需)要计算媒体查看次数的活动。 <br/><br/> **a media. segmentView：** (可选)要计算区段视图的活动。 <br/><br/> **a media. command：** (可选)要计算完整视图的活动。 <br/><br/> **a media. media. Timested：** (可选，强烈推荐)要存储播放的视频秒数的数字事件。 <br/><br/> **a.media.milestones：**（可选）一个对象，可将 s.Media.trackMilestones 里程碑映射到计数器事件。Media.segmentByMilestones should be set to true if you define milestones. <br/><br/> **广告跟踪** 要跟踪广告，可使用以下上下文数据变量： <br/> **a.media.ad.name：**（必需）在变量中填充广告名称。提供您选择用来存储广告名称的 eVar，以及要用于路径的“自定义分析视频”变量 (`s.prop`)。Provide the values in a comma-separated list. <br/><br/> **a.media.ad.pod：** 播放广告的主要内容中的位置。 <br/><br/> **a.media.ad.podocPosition：** 在播放广告的窗格中的位置。 <br/><br/> **管理员：** 应用于此回放的CPM或加密CPM(前缀为“~”)。 <br/><br/> **a.media.ad.view**：与 的工作方式相同。`a.media.view`<br/><br/> **被提醒：** 计算广告的点击次数(`Media.click` 调用) <br/><br/> **a.media.ad.timePlayed**：与 的工作方式相同。`a.media.timePlayed`<br/><br/> **a.media.ad.complette：** 工作方式与 `a.media.complete` a.media.ad.se相同：工作与 `a.media.segment`<br/><br/> **a.media.ad.segmentView**：与 的工作方式相同。`a.media.segmentView`<br/><br/> **a.media.ad.milestones**：与 的工作方式相同。`a.media.milestones`<br/><br/> **a.media.ad.offsetMilestones**：与 的工作方式相同。`a.media.offsetMilestones` |
 | `Media.trackVars` | **语法：**<br/><br/> `s.Media.trackVars =` <br/> `"events,``prop2,``eVar1,``eVar2,``eVar3";`<br/><br/>在视频跟踪代码中设置的所有变量的逗号分隔列表。 |
 | `Media.trackEvents` | **语法：**<br/><br/> `s.Media.trackEvents =` <br/> `"event1,``event2,``event3,``event4,``event5,``event6,``event7"`<br/><br/>在视频跟踪代码中设置的所有活动的逗号分隔列表。 |
@@ -106,7 +109,7 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 | `Media.openAd` | **语法：**<br/><br/> `s.Media.openAd(name, length, playerName, parentName,`<br/>`parentPod, parentPodPosition, CPM)`<br/><br/>准备媒体模块以收集广告跟踪数据。此方法采用以下参数： <ul> <li> **name：**（必需）广告的名称或 ID。  </li> <li> **length：**（必需）广告的长度。  </li> <li> **playerName：**（必需）用来查看广告的媒体播放器名称。  </li> <li> **parentName：**&#x200B;广告被嵌入到的主内容的名称或 ID。  </li> <li> **parentPod：**&#x200B;广告在主内容中播放的位置。  </li> <li> **parentPodPosition：**&#x200B;广告在面板中播放的位置。  </li> <li> **CPM：**&#x200B;应用于此播放的 CPM 或加密 CPM（具有前缀“~”）。  </li> </ul> |
 | `Media.click` | **语法：**<br/><br/> `s.Media.click(name, offset)`<br/><br/>跟踪广告何时在视频中被点击。此方法采用以下参数： <ul> <li> **name：**&#x200B;广告的名称。此名称必须匹配 Media.openAd 中使用的名称。  </li> <li> **offset：**&#x200B;点击发生时在广告中的偏移。  </li> </ul> |
 | `Media.close` | **语法：**<br/><br/> `s.Media.close(mediaName)`<br/><br/>结束视频数据收集并向 Adobe 数据收集服务器发送信息。在视频的结尾调用此方法。此方法采用以下参数： <br/><br/> **mediaName：**&#x200B;视频的名称。此名称必须匹配 `Media.open` 中使用的名称。 |
-| `Media.complete` | **语法：**<br/><br/> `s.Media.complete(name, offset)`<br/><br/>此方法可手动跟踪结束事件。如果您在触发事件时需要使用的特殊逻辑无法使用 `Media.completeByCloseOffset` 进行处理，则可以使用此方法。<br/><br/>例如，如果您测量的实时流未定义结尾，您可能会在用户查看实时流长达 X 秒后触发一次结束。您可以使用基于内容长度和类型的百分比计算方法，来测量一次结束。此方法采用以下参数： <ul> <li> **mediaName：**&#x200B;视频的名称。此名称必须匹配 Media.open 中使用的名称。  </li> <li> **mediaOffset：**&#x200B;应发送结束事件时在视频中的偏移秒数。从零秒开始，指定基于视频的偏移。<br/><br/>如果您的媒体播放器使用毫秒跟踪，请确保将此值转化为调用 Media.complete 之前的秒数。  </li> </ul> If you plan to call complete manually, set <br/><br/> `s.Media.completeByCloseOffset = false`。 |
+| `Media.complete` | **语法：**<br/><br/> `s.Media.complete(name, offset)`<br/><br/>此方法可手动跟踪结束事件。如果您在触发事件时需要使用的特殊逻辑无法使用 `Media.completeByCloseOffset` 进行处理，则可以使用此方法。<br/><br/>例如，如果您测量的实时流未定义结尾，您可能会在用户查看实时流长达 X 秒后触发一次结束。您可以使用基于内容长度和类型的百分比计算方法，来测量一次结束。此方法采用以下参数： <ul> <li> **mediaName：**&#x200B;视频的名称。此名称必须匹配 Media.open 中使用的名称。  </li> <li> **mediaOffset：**&#x200B;应发送结束事件时在视频中的偏移秒数。从零秒开始，指定基于视频的偏移。<br/><br/>如果您的媒体播放器使用毫秒跟踪，请确保将此值转化为调用 Media.complete 之前的秒数。  </li> </ul> 如果您计划手动调用完整的电话，请设置 <br/><br/> `s.Media.completeByCloseOffset = false`。 |
 | `Media.play` | **语法：**<br/><br/> `s.Media.play(name, offset, segmentNum, segment, segmentLength)`<br/><br/>无论视频何时开始播放，都调用此方法。在使用手动视频测量时，您可以在发送视频测量数据时提供当前区段数据。<br/><br/>如果玩家从一个细分更改为另一个区段，应以任何原因调用 `Media.stop``Media.play`。<br/><br/>此方法采用以下参数： <br/><br/> **mediaName：**&#x200B;视频的名称。此名称必须匹配 Media.open 中使用的名称。  <br/><br/> **mediaOffset：**&#x200B;播放开始时在视频中的偏移秒数。从零秒开始，指定基于视频的偏移。如果您的媒体播放器使用毫秒跟踪，请确保将此值转化为调用 Media.play 之前的秒数。  <br/><br/> **segmentNum：**（可选）当前区段编号，市场营销报告使用该编号来对报表中的区段显示进行排序。segmentNum 参数必须大于零。  <br/><br/> **区段：** (可选)当前区段名称。 <br/><br/> **区段长度：** (可选) <br/><br/>当前区段长度，以秒为单位。<br/><br/>例如： <br/><br/> `s.Media.play("My Video", 1800, 2,"Second Quarter", 1800)` <br/><br/> `s.Media.play("My Video", 0, 1,"Preroll", 30)` |
 | `Media.stop` | **语法：**<br/><br/> `s.Media.stop(mediaName, mediaOffset)`<br/><br/>跟踪指定视频的停止事件（停止、暂停等）。此方法采用以下参数： <ul> <li> **mediaName：**&#x200B;视频的名称。此名称必须匹配 `Media.open` 中使用的名称。  </li> <li> **mediaOffset：**&#x200B;发生停止或暂停事件时在视频中的偏移秒数。从零秒开始，指定基于视频的偏移。  </li> </ul> |
 | `Media.monitor` | **语法：**<br/><br/> `s.Media.monitor(s, media)` <br/><br/> **Silverlight 语法：**<br/><br/> `s.Media.monitor =`<br/>`new AppMeasurement_Media_Monitor(myMediaMonitor);`<br/><br/>Silverlight应用媒体监视器实现Objective-C委托设计模式。`myMediaMonitor` 类方法采用 `s` 和 `media` 参数。<br/><br/>使用此方法可发送其他视频量度。您可以设置其他变量（prop、eVar、event），并基于所播放视频的当前状态使用 `Media.track` 发送它们。<br/><br/>请参阅 [使用Media. monitor测量其他指标。](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_mediamonitor.html)<br/><br/>此方法采用以下参数： <br/><br/>  **s：**`AppMeasurement` 实例(或JavaScript `s` 对象)。 <br/><br/> **媒体：** 具有提供视频状态的成员的对象。这些成员包括：  <ul><li> `media.name:` 视频的名称。This must match the name used in `Media.open`; </li><li> `media.length:` 调用中提供的视频长度(以秒为单位 `Media.open`)； </li><li> `media.playerName:` 调用中给定的媒体播放器的名称 `Media.open`； </li><li> `media.openTime:` 包含有关何时被调用的数据的 `Media.open` NSDate对象； </li><li> `media.offset:` 当前偏移量(在视频中的实际点)中的当前偏移量。偏移开始于零(视频的第一秒为秒)； </li><li> `media.percent:` 根据视频长度和当前偏移量播放的视频的当前百分比。  </li><li> `media.timePlayed:` 迄今为止播放的秒数；  </li><li> `media.eventFirstTime:` 指示这是第一次调用此视频的媒体事件； </li><li> `media.mediaEvent:` 包含导致显示器调用的事件名称的字符串。 </li></ul> |
