@@ -3,14 +3,14 @@ seo-title: 心率参数描述
 title: 心率参数描述
 uuid: e9dda32-0952-43d0-a702-49f5 b1 bfd8 cf
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
 
-# 心率参数描述{#heartbeat-parameter-descriptions}
+# Media Analytics(Heartbat)参数描述{#heartbeat-parameter-descriptions}
 
-Adobe收集和处理心率服务器上的心跳参数的列表：
+Adobe收集和处理心率服务器上的媒体分析参数的列表：
 
 ## 所有事件
 
@@ -33,8 +33,8 @@ Adobe收集和处理心率服务器上的心跳参数的列表：
 | `s:cuser:customer_user_ids_x` | O | `MediaHeartbeatConfig` | 在 Audience Manager 中设置的所有客户用户 ID。 |
 | `l:aam:loc_hint` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
 | `s:aam:blob` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
-| `s:sc:rsid` | R | 单个或多个报表包 ID | 应从中发送报表的 SiteCatalyst RSID。 |
-| `s:sc:tracking_server` | R | `MediaHeartbeatConfig` | SiteCatalyst 跟踪服务器. |
+| `s:sc:rsid` | R | 单个或多个报表包 ID | 应发送报告的Adobe Analytics RSID。 |
+| `s:sc:tracking_server` | R | `MediaHeartbeatConfig` | Adobe Analytics跟踪服务器。 |
 | `h:sc:ssl` | R | `MediaHeartbeatConfig` | 流量是经由 HTTPS（设置为 1）还是经由 HTTP（设置为 0）。 |
 | `s:sp:ovp` | O | `MediaHeartbeatConfig` | 对于 Primetime 播放器，设置为“primetime”；对于其他播放器，则设置为实际的 OVP。 |
 | `s:sp:sdk` | R | `MediaHeartbeatConfig` | OVP 版本字符串。 |
