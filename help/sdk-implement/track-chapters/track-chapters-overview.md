@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 3fe32425-5e2a-4886-8fea-d91 d15671 bb0
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * 调用 `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Implement chapter tracking {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## 实施章节跟踪 {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
 
 1. 识别执行章节开始事件的时间，然后使用章节信息创建 `ChapterObject` 实例。
 
@@ -85,18 +85,3 @@ if (e.type == "chapter skip") {
 }; 
 ```
 
-## 验证 {#section_07EC2811BE3249249494596BFE9BF869}
-
-### 章节开始
-
-在单个章节播放开始时，将发送一个键调用：
-
-* 心率章节开始(此调用包含其他章节元数据变量。)
-
-### 章节结束
-
-在章节边界结束时，会发送心率章节结束调用。
-
-### 章节跳过
-
-在跳过章节时，会发送心率章节跳过调用。
