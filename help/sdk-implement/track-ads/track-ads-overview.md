@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 1607798b-c6 ef-4d60-8e40-e958 c345 b09 c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >以下说明为使用2.x SDK提供了实施指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
 
-广告播放包括跟踪广告时间、广告开始、广告结束和广告跳过。使用媒体播放器的API识别关键播放器事件并填充所需和可选的广告变量。See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
+广告播放包括跟踪广告时间、广告开始、广告结束和广告跳过。使用媒体播放器的API识别关键播放器事件并填充所需和可选的广告变量。请参阅此处全面的元数据列表： [广告参数。](/help/metrics-and-metadata/ad-parameters.md)
 
-## Player events {#player-events}
+## Player活动 {#player-events}
 
 
 ### 在广告分页开始时
@@ -46,7 +46,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * 为广告时间结束事件调用 `trackEvent`。
 
-## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## 实施广告跟踪 {#section_83E0F9406A7743E3B57405D4CDA66F68}
 
 ### 广告跟踪常量
 
@@ -100,7 +100,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Make sure you do NOT increment the content player playhead (`l:event:playhead`) during ad playback (`s:asset:type=ad`). 如果您这样做，内容逗留时间指标会受到负面影响。
+>确保在广告播放()期间不增加内容播放器播放头(`l:event:playhead`)`s:asset:type=ad`。如果您这样做，内容逗留时间指标会受到负面影响。
 
 以下示例代码将JavaScript2.x SDK用于HTML媒体播放器。
 
@@ -139,32 +139,4 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
 ```
-
-## 验证 {#section_5F1783F5FE2644F1B94B0101F73D57EB}
-
-### 广告开始
-
-当单个广告播放开始时，会按以下顺序发送三个关键的调用：
-
-1. 视频广告分析开始
-1. 心率广告开始
-1. 心率分析开始
-
-调用 1 和 2 包含自定义和标准的附加元数据变量。
-
-### 广告播放
-
-在广告播放期间，每秒钟就会向心率服务器发送一次心率广告播放调用。
-
-### 广告结束
-
-当广告播放到 100% 时，将发送心率广告结束调用。
-
-### 广告跳过
-
-当跳过广告时，不会发送任何事件，因此跟踪调用不会包含广告信息。
-
->[!TIP]
->
->广告中断开始和广告中断不会发送唯一调用。
 
