@@ -3,7 +3,7 @@ seo-title: 实时主内容
 title: 实时主内容
 uuid: e92e99f4-c395-48aa-8a30-cbdd2 f5 fc07 c
 translation-type: tm+mt
-source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
 
 ## 内容心率 {#section_7B387303851A43E5993F937AE2B146FE}
 
-在媒体播放期间，有一个计时器每隔10秒发送一个或多个心跳。这些心率将包含有关播放、广告、缓冲等的信息。本文档不包含各个心率的确切内容，但需要确认的一个关键点是，在继续播放时，将会持续触发心率。
+在媒体播放过程中，有一个定时器可为主要内容每10秒发送一次或多个心跳(或ping)，每秒为广告发送一次。这些心率将包含有关播放、广告、缓冲等的信息。本文档不包含各个心率的确切内容，但需要确认的一个关键点是，在继续播放时，将会持续触发心率。
 
 在内容心率中，查找几个特定的参数：
 
@@ -59,13 +59,13 @@ source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
 
 ### 开始时
 
-For LIVE media, when a user starts playing the stream, you need to set `l:event:playhead` to the current offset, in seconds. 这与VOD相反，您可以将播放头设置为“0”。
+对于实时媒体，当用户开始播放流时，您需要在秒内设置 `l:event:playhead` 为当前偏移量。这与VOD相反，您可以将播放头设置为“0”。
 
-For example, say a LIVE streaming event starts at midnight and runs for 24 hours (`a.media.length=86400`; `l:asset:length=86400`). 然后，假设用户在12：00pm开始播放该直播流。In this scenario, you should set `l:event:playhead` to 43200 (12 hours into the stream).
+例如，实时流事件从午夜开始，运行24小时(`a.media.length=86400`； `l:asset:length=86400`)。然后，假设用户在12：00pm开始播放该直播流。在此方案中，您应设置 `l:event:playhead` 为43200(在流中12小时)。
 
 ### 暂停
 
-在用户暂停播放时，必须应用在播放开始时应用的相同“实时播放头”逻辑。When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value to the new offset playhead position, _not_ to the point where the user paused the LIVE stream.
+在用户暂停播放时，必须应用在播放开始时应用的相同“实时播放头”逻辑。当用户返回播放实时流时，您必须将值 `l:event:playhead` 设置为新的偏移播放头位置， _而不_ 是指向用户暂停实时流的点。
 
 ## 示例代码 {#section_vct_j2j_x2b}
 
