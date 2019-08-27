@@ -3,12 +3,12 @@ seo-title: 跟踪概述
 title: 跟踪概述
 uuid: 7b8e2f76-bc4 e-4721-8933-3e4453 b01788
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Tracking Overview{#tracking-overview}
+# 跟踪概述{#tracking-overview}
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * 创建媒体对象
 * 填充元数据
-* Call `trackSessionStart`; For example: `trackSessionStart(mediaObject, contextData)`
+* 调用 `trackSessionStart`；例如： `trackSessionStart(mediaObject, contextData)`
 
 ### 在媒体开始时
 
@@ -59,7 +59,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!TIP]
 >
->播放头位置设置为设置和配置代码的一部分。For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>播放头位置设置为设置和配置代码的一部分。有关详细信息， `getCurrentPlayheadTime`请参阅 [概述：一般实施准则。](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## 实施 {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -234,32 +234,5 @@ if (e.type == “buffered”) {
 
 ## 验证 {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-### 内容开始
+有关验证实施的信息，请参阅 [验证。](/help/sdk-implement/validation/validation-overview.md)
 
-媒体播放器启动时，会按照以下顺序发送这些关键调用：
-
-1. Media Analytics 开始
-1. 心率开始
-1. 心率分析开始
-
-调用 1 和 2 包含自定义和标准的附加元数据变量。
-
-### 内容播放
-
-在常规主内容播放期间，每十秒就会向心率服务器发送一次心率调用。
-
-### 内容结束
-
-当内容播放到 100% 或线性流播放到边界时，会发送心率结束调用。
-
-### 内容暂停
-
-当播放器暂停时，会每 10 秒发送一次播放器暂停事件调用。暂停结束后，播放事件应该恢复。
-
-### 内容推移/搜寻
-
-在推移播放头时，不会发送特殊的跟踪调用。但是，在推移结束后恢复播放时，播放头值应反映主内容中的新位置。
-
-### 内容缓冲
-
-当媒体播放器缓冲时，会每 10 秒发送一次播放器缓冲事件调用。缓冲结束后，播放事件应该恢复。
