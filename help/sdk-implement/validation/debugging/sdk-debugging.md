@@ -3,14 +3,14 @@ seo-title: SDK 调试
 title: SDK 调试
 uuid: a5972d87-c593-4b4 f-a56 f-dca6 e25268 e1
 translation-type: tm+mt
-source-git-commit: 6b6caa59ac9ea14a42337e2f133ecb31f30491c7
+source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 ---
 
 
 # SDK 调试{#sdk-debugging}
 
-您可以启用和禁用日志记录。Media SDK提供了一个全方位的跟踪/记录机制，它们位于整个视频跟踪堆栈中。You can enable or disable this logging by setting the `debugLogging` flag on the Config object.
+您可以启用和禁用日志记录。Media SDK在整个媒体跟踪堆栈中提供了一个广泛的跟踪/记录机制。You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## 调试日志记录的示例代码
 
@@ -62,7 +62,7 @@ ADBMobile().setDebugLogging(true)
 ADBMobile.config.setDebugLogging(true)
 ```
 
-**使用 Adobe Bloodhound 测试 Chromecast 应用程序 -**
+## 使用 Adobe Bloodhound 测试 Chromecast 应用程序
 
 在应用程序开发期间，使用 Bloodhound 可以在本机上查看服务器调用，并可以选择将数据转发到 Adobe 收集服务器中。有关 Bloodhound 的更多信息，请参阅以下指南：
 
@@ -73,7 +73,7 @@ ADBMobile.config.setDebugLogging(true)
 >
 >自2017年月30日起，Adobe Bloodhound已日落。从 2017 年 5 月 1 日开始，将不再提供其他增强功能以及额外的工程部或 Adobe Expert Care 团队支持。
 
-### 日志消息
+## 日志消息
 
 日志消息遵循以下格式：
 
@@ -91,7 +91,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag：**&#x200B;发布日志消息的子组件的名称（通常是类名称）
 * **message：**&#x200B;实际的跟踪消息
 
-您可以使用视频心率库输出的日志来验证实施。一种有效的方法是在日志中搜索字符串 `#track`. This will highlight all the `track*()` calls made by your application.
+您可以使用Media SDK库输出的日志来验证实施。一种有效的方法是在日志中搜索字符串 `#track`. This will highlight all the `track*()` calls made by your application.
 
 For instance, this is what the logs filtered for `#track` could look like:
 
