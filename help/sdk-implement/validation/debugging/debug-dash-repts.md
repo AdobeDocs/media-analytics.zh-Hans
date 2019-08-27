@@ -3,7 +3,7 @@ seo-title: 调试功能板和报表
 title: 调试功能板和报表
 uuid: 8e6f6245-d8 bd-4329-89e1-4c5595 e04 ec5
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 ---
 
@@ -14,7 +14,7 @@ Adobe Debug 可实时提供报表，以便您可以查看在视频播放期间�
 
 如果要进行认证，只需通过复制 URL 并发送该链接（在 ZenDesk 票证中），便可以共享这些报表。
 
->[!TIP]
+>[!NOTE]
 >
 >一次只有一个会话可以处于活动状态。活动的会话可从功能板中打开。
 
