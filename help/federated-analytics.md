@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82tae81-c2 f6-4799-9a62-4c6 a737 a7 dab
 translation-type: tm+mt
-source-git-commit: e95fc2867ecdb874998e259cf10d33c724f4e15b
+source-git-commit: 5e067a664a97292902c847af5e913584a2b62fc8
 
 ---
 
@@ -41,7 +41,10 @@ Federated Analytics 服务提供了用于在两个合作伙伴之间共享 Adobe
 
 1. 发送者与接收者共同填写联合规则协议表单。
 
-   **请在此处下载表单的当前版本==&gt;：**[联盟规则协议](/help/federated_analytics_form.pdf)
+   **请在此处下载表单的当前版本：**
+
+   [联盟规则协议](federated_analytics_form.pdf)
+
 
    >[!NOTE]
    >
