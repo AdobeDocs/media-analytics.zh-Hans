@@ -3,12 +3,12 @@ seo-title: 自定义链接实施指南
 title: 自定义链接实施指南
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: fe245e766ab8ee48a8e8aaf247cfd552fed816e9
+source-git-commit: f790d60c7c19dc203ea5dd48e1e55ec20a341900
 
 ---
 
 
-# 自定义链接实施指南{#custom-link-implementation-guide}
+# Custom Link Implementation Guide{#custom-link-implementation-guide}
 
 Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. 大多数情况下，自定义视频链接视频跟踪会用在需要少量视频测量的平台和设备上。
 
