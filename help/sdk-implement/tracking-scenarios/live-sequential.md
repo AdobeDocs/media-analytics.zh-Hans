@@ -1,9 +1,9 @@
 ---
 seo-title: 具有连续跟踪的实时主内容
 title: 具有连续跟踪的实时主内容
-uuid: b03477b6-9be1-4b67-a5 a0-4cf3 cf3 cf262 ab
+uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 
 ---
 
@@ -16,16 +16,16 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 此方案与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同，只是移过了部分内容，并且完成了从主内容中的一个点到另一个点的搜寻。
 
-| 触发器 | 心率方法 | 网络调用   | 注释   |
+| 触发器 | 心率方法 |  网络调用 |  注释   |
 | --- | --- | --- | --- |
-| 用户点击[!UICONTROL 播放] | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
-| 播放内容的第一帧。 | `trackPlay` | 心率内容播放 | 当章节内容在主内容之前播放时，章节开始时心率即会开始。 |
+| 用户点击[!UICONTROL 播放] | trackSessionStart | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
+| 播放内容的第一帧。 | trackPlay | 心率内容播放 | 当章节内容在主内容之前播放时，章节开始时心率即会开始。 |
 | 内容播放 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
-| 会话 1 结束（第 1 集结束） | `trackComplete` `trackSessionEnd` | 心率内容结束 | 结束是指第 1 集的会话 1 已到达结尾并观看完毕。在开始下一集的会话之前，必须先结束此会话。 |
-| 第 2 集开始（会话 2 开始） | `trackSessionStart` | 分析内容开始心跳内容开始 | 这是因为用户观看了第 1 集并继续观看另一剧集 |
-| 第一个媒体帧 | `trackPlay` | 心率内容播放 | 此方法会触发计时器，并且从此刻起，只要播放继续，每 10 秒就会发送一次心率。 |
+| 会话 1 结束（第 1 集结束） | trackComplete / trackSessionEnd | 心率内容结束 | 结束是指第 1 集的会话 1 已到达结尾并观看完毕。在开始下一集的会话之前，必须先结束此会话。 |
+| 第 2 集开始（会话 2 开始） | trackSessionStart | Analytics 内容开始 心率内容开始 | 这是因为用户观看了第 1 集并继续观看另一剧集 |
+| 第1帧媒体 | trackPlay | 心率内容播放 | 此方法会触发计时器，并且从此刻起，只要播放继续，每 10 秒就会发送一次心率。 |
 | 内容播放 |  | 内容心率 |  |
-| 会话结束（第 2 集结束） | `trackComplete` `trackSessionEnd` | 心率内容结束 | 结束是指第 2 集的会话 2 已到达结尾并观看完毕。在开始下一集的会话之前，必须先结束此会话。 |
+| 会话结束（第 2 集结束） | trackComplete / trackSessionEnd | 心率内容结束 | 结束是指第 2 集的会话 2 已到达结尾并观看完毕。在开始下一集的会话之前，必须先结束此会话。 |
 
 ## 参数 {#section_D52B325B99DA42108EF560873907E02C}
 
@@ -40,7 +40,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | `s:asset:type` | `"main"` |  |
 | `s:asset:media_id` | &lt;您的媒体名称&gt; |  |
 | `s:stream:type` | `live` |  |
-| `s:meta:*` | *可选* | 在媒体上设置自定义元数据 |
+| `s:meta:*` | *可选* | 媒体上的自定义元数据集 |
 
 ## 心率内容播放 {#section_B6AD9225747943F881DCA8E6A1D5710E}
 
@@ -53,7 +53,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ## 内容心率 {#section_7B387303851A43E5993F937AE2B146FE}
 
-在媒体播放过程中，有一个定时器每10秒为主要内容发送一个或多个心跳，每秒为广告发送一次。这些心率将包含有关播放、广告、缓冲等的信息。本文档不包含各个心率的确切内容，但需要确认的一个关键点是，在继续播放时，将会持续触发心率。
+在媒体播放期间，会有一个计时器，该计时器将为主内容每10秒发送一个或多个心跳，为广告每1秒发送一个或多个心跳。 这些心率将包含有关播放、广告、缓冲等的信息。本文档不包含各个心率的确切内容，但需要确认的一个关键点是，在继续播放时，将会持续触发心率。
 
 在内容心率中，查找几个特定的参数：
 
