@@ -1,7 +1,7 @@
 ---
-seo-title: 解决广告之间显示的主要播放
-title: 解决广告之间显示的主要播放
-uuid: 228b4812-c23 e-40c8 ae2 b-e15 ca69 b0 bc2
+seo-title: 解决广告之间出现的主要播放问题
+title: 解决广告之间出现的主要播放问题
+uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
 source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
@@ -18,18 +18,18 @@ source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
 ## 识别
 
-在使用Adobe调试或网络数据包监听器(如Charles)时，如果您在滚动广告中断期间看到以下“心率”调用，请执行以下操作：
+While using Adobe Debug or a network packet sniffer such as Charles, if you see the following Heartbeat calls in this order during a pre-roll ad break:
 
 * 会话开始: `s:event:type=start` &amp; `s:asset:type=main`
 * 广告开始: `s:event:type=start` &amp; `s:asset:type=ad`
 * 广告播放: `s:event:type=play` &amp; `s:asset:type=ad`
 * 广告结束: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(unexpected)**
+* 主要内容播放： `s:event:type=play` 和 `s:asset:type=main`**（意外）**
 
 * 广告开始: `s:event:type=start` &amp; `s:asset:type=ad`
 * 广告播放: `s:event:type=play` &amp; `s:asset:type=ad`
 * 广告结束: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(expected)**
+* 主要内容播放： `s:event:type=play` 和 `s:asset:type=main`**（预期）**
 
 ## 解决办法
 
@@ -45,11 +45,11 @@ source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
 **在每个广告资产开始时：**
 
-* **致电电话`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **呼叫`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
-   >仅当上一广告未完成时才调用。请考虑使用布尔值维护前一个广告的“`isinAd`”状态。
+   >仅在上一广告未完成时调用此选项。 请考虑使用布尔值维护前一个广告的“`isinAd`”状态。
 
 * 为广告资产创建广告对象实例：例如，`adObject`。
 * Populate the ad metadata, `adCustomMetadata`.
@@ -58,7 +58,7 @@ source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
 **在每个广告资产完成时：**
 
-* **不要致电**
+* **Do not make a call**
 
    >[!NOTE]
    >
@@ -70,7 +70,7 @@ source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
 **在广告时间完成时：**
 
-* **致电电话`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **呼叫`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
