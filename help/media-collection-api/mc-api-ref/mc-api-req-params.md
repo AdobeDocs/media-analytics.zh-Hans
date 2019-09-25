@@ -17,20 +17,20 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 | `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics 服务器的 URL |
 | `analytics.reportSuite` | Y | `sessionStart` | 标识 Analytics 报表数据的 ID |
 | `analytics.enableSSL` | N | `sessionStart` | 指示是否启用 SSL 的 true 或 false |
-| `analytics.visitorId` | N | `sessionStart` | Adobe访客ID是可跨多个Adobe应用程序使用的自定义ID。 心跳 `visitorId` 等于分析 `VID.` |
+| `analytics.visitorId` | N | `sessionStart` | The Adobe Visitor ID is a custom ID you can use across multiple Adobe applications. The Heartbeat  equals the Analytics `visitorId``VID.` |
 
 ## 访客数据
 
-| 请求密钥 | 必需 | 设置位置... |  描述  |
+| Request Key  | 必需 | 设置位置... |  描述  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 组织 ID，可在 Adobe Experience Cloud 生态系统中标识您的组织 |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | 这是Experience cloud用户ID(ECID)。 在大多数情况下，这是您用来标识用户的ID。 心跳等 `marketingCloudUserId` 于Adobe `MID` Analytics中的心跳。 虽然从技术上讲不是必需的，但访问Experience cloud系列应用程序时需要此参数。 |
+| `visitor.marketingCloudUserId` | N | `sessionStart` | This is the Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat  equals the  in Adobe Analytics. `marketingCloudUserId``MID`While not technically required, this parameter is necessary for accessing the Experience Cloud family of apps. |
 | `visitor.aamLocationHint` | N | `sessionStart` | 提供 Adobe Audience Manager Edge 数据 |
 | `appInstallationId` | N | `sessionStart` | appInstallationId 用于唯一标识应用程序和设备 |
 
 ## 内容数据
 
-| 请求密钥 | 必需 | 设置位置... |  描述  |
+| Request Key  | 必需 | 设置位置... |  描述  |
 | --- | :---: | :---: | --- |
 | `media.id` | Y | `sessionStart` | 内容的唯一标识符 |
 | `media.name` | N | `sessionStart` | 人类可读的内容名称 |
@@ -64,7 +64,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## 广告数据
 
-| Request Key  | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置位置... |  描述  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | 广告时间的友好名称 |
 | `media.ad.podIndex` | Y | `adBreakStart` | 视频中广告面板的索引 |
@@ -77,7 +77,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## 广告标准元数据
 
-| Request Key  | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置位置... |  描述  |
 | --- | :---: | :---: | --- |
 | `media.ad.advertiser` | N | `adStart` | 广告中展现的产品所属的公司或品牌 |
 | `media.ad.campaignId` | N | `adStart` | 广告营销活动的 ID |
@@ -88,7 +88,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## 章节数据
 
-| Request Key  | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置位置... |  描述  |
 | --- | :---: | :---: | --- |
 | `media.chapter.index` | Y | `chapterStart` | 标识章节在内容中的位置 |
 | `media.chapter.offset` | Y | `chapterStart` | 播放中章节开始的时间（秒） |
@@ -97,7 +97,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## 质量数据
 
-| Request Key  | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置位置... |  描述  |
 | --- | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | “任一” | 流的比特率 |
 | `media.qoe.droppedFrames` | N | “任一” | 流中丢帧的数量 |
@@ -112,7 +112,7 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 >[!NOTE]
 >
->Media Analytics (MA) is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). 您需要 Experience Cloud ID 才能访问这些应用程序。_ECID是在大多数情况下识别用户时应使用的ECID。_
+>Media Analytics(MA)与Experience cloud系列应用程序（Adobe Analytics、Audience Manager、Target等）集成。 您需要 Experience Cloud ID 才能访问这些应用程序。_The ECID is what you should use to identify users in most scenarios._
 
 ### appInstallationId
 
@@ -133,14 +133,14 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/data-sharing/federated-analytics.md))
 
-### 分析旧版用户ID(aid)和声明的用户ID(customerID)
+### Analytics Legacy User ID (aid) and Declared User IDs (customerIDs)
 
 * **analytics.aid:**
 
-   The value of this key must be a string that represents the Analytics Legacy User ID
+   此键的值必须是表示Analytics Legacy User ID的字符串
 * **visitor.customerID:**
 
-   The value of this key must be an object of the following format:
+   此键的值必须是以下格式的对象：
 
    ```js
    "<<insert your ID name here>>": {  
@@ -153,7 +153,7 @@ In addition to being necessary for MCID generation when that is not provided, th
 
 ### visitor.aamLocationHint
 
-This parameter indicates which Adobe Audience Manager (AAM) Edge would be hit when Adobe Analytics sends the customer data to Audience Manager. 如果您未传递此参数，则 Adobe 会将其硬编码为 1。当最终用户倾向于在地理位置相距遥远的地方（例如，美国东部、美国西部、欧洲、亚洲）使用其设备时，这一点尤为重要。否则，用户数据将分布在多个 AAM Edge 中。
+此参数指示当Adobe Analytics将客户数据发送到Audience Manager时，将点击哪个Adobe Audience Manager(AAM)Edge。 如果您未传递此参数，则 Adobe 会将其硬编码为 1。当最终用户倾向于在地理位置相距遥远的地方（例如，美国东部、美国西部、欧洲、亚洲）使用其设备时，这一点尤为重要。否则，用户数据将分布在多个 AAM Edge 中。
 
 ### media.resume
 
