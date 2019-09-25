@@ -1,7 +1,7 @@
 ---
 seo-title: 在 JavaScript 中跟踪核心播放
 title: 在 JavaScript 中跟踪核心播放
-uuid: 3d6e0ab1-899a-43c3-b632-8276e84345 ab
+uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -11,9 +11,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # 在 JavaScript 中跟踪核心播放{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->此文档涵盖SDK的版本2.x跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
+>This documentation covers tracking in version 2.x of the SDK. 如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
 
-1. **初始跟踪设置**
+1. **Initial tracking setup**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -24,8 +24,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | 媒体名称 | 是 |
    | `mediaid` | 媒体唯一标识符 | 是 |
    | `length` | 媒体长度 | 是 |
-   | `streamType` | Stream type (see _StreamType constants_ below) | 是 |
-   | `mediaType` | Media type (see _MediaType constants_ below) | 是 |
+   | `streamType` | Stream type (see StreamType constants below)__ | 是 |
+   | `mediaType` | Media type (see MediaType constants below)__ | 是 |
 
    **`StreamType`常量：**
 
@@ -34,7 +34,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `VOD` | 点播视频的流类型。 |
    | `LIVE` | 实时内容的流类型。 |
    | `LINEAR` | 线性内容的流类型。 |
-   | `AOD` | 点播音频的流类型。 |
+   | `AOD` | Stream type for Audio on Demand. |
    | `AUDIOBOOK` | 音频书籍的流类型。 |
    | `PODCAST` | 播客的流类型。 |
 
@@ -56,7 +56,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **附加元数据**
 
-   (可选)通过上下文数据变量将标准和/或自定义元数据对象附加到跟踪会话。
+   Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
    * **标准元数据**
 
@@ -71,7 +71,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
          See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **自定义元数据**
 
-      为自定义变量创建一个变量对象，然后填充该媒体的数据。例如：
+      为自定义变量创建一个变量对象，并填充此媒体的数据。 例如：
 
       ```js
       /* Set custom context data */ 
@@ -83,9 +83,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       ```
 
 
-1. **跟踪开始播放的目的**
+1. **跟踪开始播放的意图**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance:
+   要开始跟踪媒体会话，请调用 `trackSessionStart` 媒体心跳实例：
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -93,11 +93,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >第二个值是您在步骤中创建的自定义媒体元数据对象名称。
+   >第二个值是您在步骤2中创建的自定义媒体元数据对象名称。
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 跟踪用户的播放意图，而不是播放开始。此 API 用于加载数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
+   >`trackSessionStart` tracks the user intention of playback, not the beginning of the playback. 此 API 用于加载数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
 
    >[!NOTE]
    >
@@ -111,7 +111,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackPlay();
    ```
 
-1. **跟踪播放完成**
+1. **跟踪播放的完成情况**
 
    Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
 
@@ -129,17 +129,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` 标记跟踪会话的结尾。如果会话成功观看至结束（用户一直观看内容至结尾），请确保先调用 `trackComplete`，之后再调用 `trackSessionEnd`。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` 标记跟踪会话的结束。 如果会话成功观看至结束（用户一直观看内容至结尾），请确保先调用 `trackComplete`，之后再调用 `trackSessionEnd`。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
-1. **跟踪所有可能的暂停场景**
+1. **跟踪所有可能的暂停方案**
 
-   Identify the event from the media player for pause and call `trackPause`:
+   识别媒体播放器中的事件以进行暂停和呼叫 `trackPause`:
 
    ```js
    mediaHeartbeat.trackPause();
    ```
 
-   **暂停场景**
+   **暂停方案**
 
    Identify any scenario in which the media player will pause and make sure that `trackPause` is properly called. 以下方案均要求应用程序调用 `trackPause()`()：
 
@@ -156,7 +156,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >这可能与在步骤中使用的相同。Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >这可能是步骤4中使用的同一事件源。 Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 * 跟踪方案：[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * JavaScript SDK 随附有示例播放器，用于提供完整的跟踪示例。
