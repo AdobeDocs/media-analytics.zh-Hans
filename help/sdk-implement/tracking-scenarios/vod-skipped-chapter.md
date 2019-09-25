@@ -1,7 +1,7 @@
 ---
 seo-title: 跳过一个章节的 VOD 播放
 title: 跳过一个章节的 VOD 播放
-uuid: 19fb020c-eb7 a-4942-9212-94f4 d47195 b9
+uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -18,7 +18,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 | 触发器 | 心率方法 | 网络调用   | 注释 |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与[在iOS](vod-no-intrs-details.md) 场景中无中断播放。 |
+| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与 [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | 章节开始。 | `trackEvent:ChapterStart` | 心率章节开始 |  |
 | 播放章节的第一帧。 | `trackPlay` | 心率章节播放 | 当章节内容在主内容之前播放时，我们希望在章节开始时即开始心率。 |
 | 章节播放。 |  | 章节心率 |  |
@@ -27,11 +27,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 应用程序识别出用户的搜寻超出常规章节边界。 | `trackEvent:trackChapterSkip` |  |  |
 | 播放内容。 |  | 内容心率 |  |
 | 内容结束播放。 | `trackComplete` | 心率内容结束 | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户不观看要完成的媒体，也必须调用此API。 |
+| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户不观看媒体完成，也必须调用此API。 |
 
 ## 参数 {#section_1874F6B7880B43C5856BD11FF85B382E}
 
-The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
+在回放章节期间使用的参数与 [VOD回放中的参数相同，只是没有章节完整的网络调用](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) 。
 
 ## 示例代码 {#section_fyl_ncj_x2b}
 
