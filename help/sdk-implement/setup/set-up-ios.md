@@ -1,7 +1,7 @@
 ---
 seo-title: 设置 iOS
 title: 设置 iOS
-uuid: a1c be79-a6 dc-47b6-93b3-ac7 b42 f1 f3 eb
+uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,13 +12,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 先决条件
 
-* **为媒体SDK获取有效配置参数**&#x200B;在设置分析帐户后，可以从Adobe代表获得这些参数。
-* **在应用程序**中为iOS实施AdbMobile有关Adobe
-Mobile SDK文档的更多信息，请参阅 [iOS SDK4.x for Experience Cloud解决方案。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **获取Media SDK的有效配置参数**&#x200B;在设置分析帐户后，可以从Adobe代表处获取这些参数。
+* **在您的应用程序中实施** ADBMobile for iOS有关Adobe Mobile SDK文档的更多信息，请参阅 [iOS SDK 4.x for Experience cloud解决方案。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
 
    >[!IMPORTANT]
    >
-   >从iOS开始，Apple引入了一个称为App Transport Security(ATS)的功能。此功能旨在通过确保应用程序仅使用行业标准协议和密码来提高网络安全性。默认情况下此功能处于启用状态，但您也可以通过配置选项来选择是否使用 ATS。For details on ATS, see [App Transport Security.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >Beginning with iOS 9, Apple introduced a feature called App Transport Security (ATS). 此功能旨在通过确保应用程序仅使用行业标准协议和密码来提高网络安全性。默认情况下此功能处于启用状态，但您也可以通过配置选项来选择是否使用 ATS。For details on ATS, see App Transport Security.[](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
 
 * **在媒体播放器中提供以下功能：**
 
