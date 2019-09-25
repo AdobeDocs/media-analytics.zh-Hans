@@ -16,16 +16,16 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 概述 {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 您可以使用媒体播放器API识别与QoS和错误跟踪相关的变量。
+Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. You can use the media player API to identify the variables related to QoS and error tracking.
 
 ## Player events {#player-events}
 
-### 在所有比特率更改事件上
+### 关于所有比特率更改事件
 
 * 为播放创建/更新 QoS 对象实例 `qosObject`
 * 调用 `trackEvent(Media.Heartbeat.Event.BitrateChange, qosObject);`
 
-### 播放器错误
+### 播放器错误时
 
 调用 `trackError(“media error id”);`
 
@@ -60,12 +60,12 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >更新QoS对象，并在每个比特率发生变化时调用比特率更改事件。这样将可以提供最为准确的 QoS 数据。
+   >Update the QoS object and call the bitrate change event on every bitrate change. 这样将可以提供最为准确的 QoS 数据。
 
 1. 确保 `getQoSObject()` 方法返回最新的 QoS 信息。
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
+1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See Overview.)[](/help/sdk-implement/track-errors/track-errors-overview.md)
 
    >[!TIP]
    >
-   >跟踪媒体播放器错误不会停止媒体跟踪会话。If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
