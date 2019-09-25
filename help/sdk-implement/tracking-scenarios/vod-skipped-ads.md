@@ -1,7 +1,7 @@
 ---
 seo-title: 跳过广告的 VOD 播放
 title: 跳过广告的 VOD 播放
-uuid: f3ab3524-abcb-4051-b64 e-a1 aad6 e3 dd3 f
+uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 此方案包含跳过广告的 VOD 内容播放。
 
-### 一个已跳过的预先滚动广告的VOD
+### One VOD with a skipped pre-roll ad
 
 This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
 
