@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: b20cce8df3631690a7de6de502828e961d154665
+source-git-commit: 3ca6743e34d40e5826dbe50edcbec6aa77ef66f4
 
 ---
 
@@ -37,9 +37,9 @@ Federated Analytics 服务提供了用于在两个合作伙伴之间共享 Adobe
 
 * **Adobe 咨询合同：**&#x200B;在初始设置发送者与接收者之间的联合规则时，该合同对于与咨询服务部合作来审查数据和创建数据共享协议，非常有价值。
 
-## Download the Federated Analytics Form
+## 下载Federated Analytics表单
 
-**Download the current version of the form here:`===>`**   [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) `<===`
+**Download the current version of the form here:`===>`**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) **`<===`**
 
 ## 过程 {#section_byb_kb3_vbb}
 
