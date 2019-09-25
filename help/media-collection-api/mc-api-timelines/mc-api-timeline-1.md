@@ -1,7 +1,7 @@
 ---
 seo-title: 时间轴 1 - 观看到内容的结尾
 title: 时间轴 1 - 观看到内容的结尾
-uuid: 0ff591d3-fa99-4123-9e09-c4 e71 ea1060 b
+uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD、前置广告、暂停、缓冲、观看到内容的结尾
 
-以下示意图说明了用户操作的播放头时间线和扭曲时间线。下面介绍了每个操作及其附带请求的详细信息。
+The following diagrams illustrate the playhead timeline and the corresonding timeline of a user's actions. The details for each action and its accompanying requests are presented below.
 
 
 ![](assets/va_api_content.png)
@@ -21,7 +21,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 ![](assets/va_api_actions.png)
 
 
-## 操作详细信息
+## Action details
 
 ### Action 1 - Start session {#Action-1}
 
@@ -29,11 +29,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 按自动播放或播放按钮，视频开始加载。 | 0 | 0 | `/api/v1/sessions` |
 
-**实施细节**
+**Implementation Detail**
 
-此调用表示&#x200B;_用户播放视频的意图_。<br/><br/>它将一个会话ID( `{sid}`)返回给客户端，用于标识会话中的所有后续跟踪调用。播放器状态不是“正在播放”，而是“正在启动”。<br/><br/>[强制会话参数](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的 `params` 映射中。<br/><br/>在后端，此调用会生成一个 Adobe Analytics 启动调用。
+此调用表示&#x200B;_用户播放视频的意图_。<br/><br/>它将一个会话ID( `{sid}`)返回给客户端，该客户端用于标识会话中的所有后续跟踪调用。 播放器状态不是“正在播放”，而是“正在启动”。<br/><br/>[强制会话参数](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的 `params` 映射中。<br/><br/>在后端，此调用会生成一个 Adobe Analytics 启动调用。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -57,7 +57,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 2 - Ping timer start {#Action-2}
+### 操作2 - Ping定时器开始 {#Action-2}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -65,19 +65,19 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **实施详细信息**
 
-启动应用程序的ping定时器。然后，首次ping事件应在有前置广告时触发秒，否则为10秒。
+启动应用程序的ping计时器。 First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.
 
-### Action 3 - Ad break start {#Action-3}
+### 操作3 —— 广告中断开始 {#Action-3}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 跟踪前置广告时间开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**Implementation Detail**
 
 只能在广告时间期间跟踪广告。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -93,17 +93,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### 操作4 —— 广告开始 {#Action-4}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 跟踪前置广告 #1 开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 开始跟踪第一个前置广告，其时长为 15 秒。包括含此 `adStart` 的自定义元数据。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -133,19 +133,19 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### 操作5 —— 广告ping {#Action-5}
 
-#### Action 5.1 - Ad ping 1 {#Action-5-1}
+#### 操作5.1 —— 广告ping 1 {#Action-5-1}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
-在广告内每秒ping后端。
+在广告中每1秒Ping后端。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -157,17 +157,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-#### Action 5.2 - Ad ping 2 {#Action-5-2}
+#### 操作5.2 —— 广告ping 2 {#Action-5-2}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 2 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
-在广告内每秒ping后端。
+在广告中每1秒Ping后端。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -179,23 +179,23 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-#### Action 5.3 - Ad ping 3 {#Action-5-3}
+#### 操作5.3 —— 广告ping 3 {#Action-5-3}
 
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 3 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
-在广告内每秒ping后端。
+在广告中每1秒Ping后端。
 
 >[!NOTE]
 >
->时间轴中的后续广告将跳过一系列的秒ping
->非常简单…
+>时间轴中的后续广告将跳过显示一秒钟的ping序列
+>为了简洁……
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -207,17 +207,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### 操作6 —— 广告完成 {#Action-6}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 跟踪前置广告 #1 完成 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 跟踪第一个前置广告的结束。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -229,17 +229,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 7 - Ad start {#Action-7}
+### 操作7 —— 广告开始 {#Action-7}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 跟踪前置广告 #2 开始 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 跟踪第二个前置广告的开始，其时长为 7 秒。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -264,17 +264,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 8 - Ad pings {#Action-8}
+### 操作8 —— 广告ping {#Action-8}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 20 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
-每秒ping后端。
+Ping the backend every 1 second.
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -286,17 +286,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 9 - Ad complete {#Action-9}
+### 操作9 —— 广告完成 {#Action-9}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 跟踪前置广告 #2 完成 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 跟踪第二个前置广告的结束。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -308,17 +308,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 10 - Ad break complete {#Action-10}
+### 操作10 —— 广告中断完成 {#Action-10}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 跟踪前置广告时间完成 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 广告时间结束。在整个广告时间内，播放状态始终为“正在播放”。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -330,17 +330,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 11 - Play content {#Action-11}
+### 操作11 —— 播放内容 {#Action-11}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 跟踪播放事件 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 在 `adBreakComplete` 事件后，使用 `play` 事件将播放器置于“正在播放”状态。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -352,17 +352,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 12 - Ping {#Action-12}
+### 操作12 - Ping {#Action-12}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 30 | 8 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**Implementation Detail**
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -374,17 +374,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 13 - Buffer start {#Action-13}
+### 操作13 —— 缓冲区开始 {#Action-13}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 发生缓冲开始事件 | 33 | 11 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 跟踪播放器向“正在缓冲”状态的转变
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -401,11 +401,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 缓冲结束，应用程序跟踪内容恢复 | 36 | 11 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**Implementation Detail**
 
-缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。您必须发送来自缓冲的另一个跟踪播放事件。**在将“bufferEnd”称为“bufferEnd”之后，该`play``bufferStart`调用将** 调用后端，因此 `bufferEnd` 无需活动。
+缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。您必须发送来自缓冲的另一个跟踪播放事件。**The`play`call after a`bufferStart`infers a "bufferEnd" call to the back end,** so there is no need for a `bufferEnd` event.
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -423,11 +423,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 40 | 15 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**Implementation Detail**
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -444,11 +444,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 跟踪中置广告时间开始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**Implementation Detail**
 
 持续时间为 8 秒的中置广告：发送 `adBreakStart`。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -471,11 +471,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 跟踪中置广告 #3 开始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**Implementation Detail**
 
 跟踪中置广告。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -506,11 +506,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 50 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**Implementation Detail**
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -527,11 +527,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 跟踪中置广告 #3 结束 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 中置广告完成。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -549,11 +549,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 跟踪中置广告时间完成 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 广告时间结束。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -571,11 +571,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 60 | 27 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**Implementation Detail**
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -587,17 +587,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 22 - Pause {#Action-22}
+### 操作22 —— 暂停 {#Action-22}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 用户按下了暂停 | 64 | 31 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 用户的操作将播放状态转变为“已暂停”。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -609,17 +609,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 23 - Ping {#Action-23}
+### 操作23 - Ping {#Action-23}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 70 | 31 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 每 10 秒对后端执行一次 Ping 操作。播放器仍处于“正在缓冲”状态，用户一直停留在 20 秒的内容中。正在运转中...
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -630,17 +630,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 24 - Play {#Action-24}
+### 操作24 —— 播放 {#Action-24}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 用户按下了“播放”以恢复主内容 | 74 | 31 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
-将播放状态转变为“正在播放”。**完成后调用`play``pauseStart`会“恢复”调用后端，** 因此无需 `resume` 活动。
+将播放状态转变为“正在播放”。**在后`play`端输入`pauseStart`“恢复”呼叫之后的呼叫，因此不需要事**`resume` 件。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -651,17 +651,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 25 - Ping {#Action-25}
+### 操作25 - Ping {#Action-25}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 80 | 37 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -672,17 +672,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 26 - Session complete {#Action-26}
+### 行动26 —— 会议完成 {#Action-26}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 用户完成观看内容的结尾。 | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
-**实施细节**
+**实施详细信息**
 
 将 `sessionComplete` 发送到后端，以表明用户完成了对整个内容的观看。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -695,5 +695,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!NOTE]
 >
->**不寻找事件？-** 媒体收集 API 中没有明确支持 `seekStart` 或 `seekComplete` 事件。这是因为当最终用户正在推移时，某些播放器会生成大量的此类事件，并且数百个用户可能会轻易地限制后端服务的网络带宽。Adobe 通过基于设备时间戳（而不是播放头位置）计算心率持续时间，来为搜寻事件提供明确的支持。
+>**无搜寻事件？ -** 媒体收集 API 中没有明确支持 `seekStart` 或 `seekComplete` 事件。这是因为当最终用户正在推移时，某些播放器会生成大量的此类事件，并且数百个用户可能会轻易地限制后端服务的网络带宽。Adobe 通过基于设备时间戳（而不是播放头位置）计算心率持续时间，来为搜寻事件提供明确的支持。
 
