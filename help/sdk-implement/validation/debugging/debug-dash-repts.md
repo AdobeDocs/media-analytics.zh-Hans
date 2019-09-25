@@ -1,7 +1,7 @@
 ---
 seo-title: 调试功能板和报表
 title: 调试功能板和报表
-uuid: 8e6f6245-d8 bd-4329-89e1-4c5595 e04 ec5
+uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
@@ -16,7 +16,7 @@ Adobe Debug 可实时提供报表，以便您可以查看在视频播放期间�
 
 >[!NOTE]
 >
->一次只有一个会话可以处于活动状态。活动的会话可从功能板中打开。
+>一次只能有一个会话处于活动状态。 活动的会话可从功能板中打开。
 
 ![](assets/debug-dashboard.png)
 
