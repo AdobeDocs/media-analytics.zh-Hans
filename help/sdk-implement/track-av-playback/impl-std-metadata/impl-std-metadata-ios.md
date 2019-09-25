@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: 在 iOS 中实施标准元数据
 title: 在 iOS 中实施标准元数据
-uuid: 75a80f 08-a95-49d4-a27 a-8ce531 d64 d31 d
+uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -27,7 +27,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. Provide this `MediaInfo` object while invoking the `trackSessionStart` API.
 
-### 示例实施
+### 示例实现
 
 实例化一个标准元数据对象，填充所需变量，并在媒体心率对象中设置该元数据对象。例如：
 
