@@ -1,7 +1,7 @@
 ---
 seo-title: 测试调用详细信息
 title: 测试调用详细信息
-uuid: d3a0e62f-2fc3-413d-ac56-adbhone9 b3 e983
+uuid: d3a0e62f-2fc3-413d-ac56-adbc9b3e983
 translation-type: tm+mt
 source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
@@ -14,7 +14,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ### Adobe Analytics(AppMeasurement)开始电话 {#aa-start-call}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episode Title |
@@ -31,9 +31,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 线性流的长度应设置为当前节目的最佳预计长度。
 
-### Adobe Analytics(AppMeasurement)开始电话的标准元数据 {#std-metadata-aa}
+### Adobe Analytics(AppMeasurement)中的标准元数据开始调用 {#std-metadata-aa}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -50,16 +50,16 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Adobe Analytics(AppMeasurement)开始电话的自定义元数据 {#custom-metadata-aa}
+### Adobe Analytics(AppMeasurement)开始调用中的自定义元数据 {#custom-metadata-aa}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
-### 媒体分析(心跳)开始电话 {#ma-start-call}
+### 媒体分析（心率）开始呼叫 {#ma-start-call}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
@@ -77,9 +77,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 应将视频开始时线性流的播放头位置设置为自当前节目开始后所经过的秒数，而不是设置为 0。
 
-### Media Analytics中的标准元数据(心跳)开始电话呼叫 {#std-metadata-ma}
+### Media Analytics（心率）开始调用中的标准元数据 {#std-metadata-ma}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | `s:meta:a.media.show` | 节目 |
 | `s:meta:a.media.season` | 6 |
@@ -96,16 +96,16 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### 媒体分析(心跳)中的自定义元数据开始电话联系 {#custom-metadata-ma}
+### 媒体分析（心率）开始呼叫中的自定义元数据 {#custom-metadata-ma}
 
-| 参数 | 值(示例) |
+| 参数 |  Value (sample)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics(Heartbeats) Adobe Analytics开始电话 {#ma-aa-start}
+### Media Analytics (heartbeats) Adobe Analytics Start call {#ma-aa-start}
 
-| 参数 | 值(示例) |
+| 参数 |  Value (sample)  |
 |---|---|
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
@@ -118,14 +118,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 **注意：**
 
-* 此调用指示媒体SDK已请求将Adobe Analytics `pev2=ms_s` 调用发送到Adobe Analytics(AppMeasurement)服务器。
+* 此调用表示Media SDK已请求将Adobe Analytics调 `pev2=ms_s` 用发送到Adobe Analytics(AppMeasurement)服务器。
 * 此调用不包含自定义元数据。
 
 ## 观看广告播放 {#view-ad-playback}
 
-### Adobe Analytics(AppMeasurement)广告开始电话 {#aa-ad-start-call}
+### Adobe Analytics (AppMeasurement) Ad Start call {#aa-ad-start-call}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
@@ -148,7 +148,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
 
-| 参数 | 值(示例) |
+| 参数 |  Value (sample)  |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -165,16 +165,16 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Adobe Analytics(AppMeasurement)广告开始电话中的自定义元数据 {#custom-metadata-aa-ad-start}
+### Custom metadata in Adobe Analytics (AppMeasurement) Ad Start call {#custom-metadata-aa-ad-start}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### Media Analytics(Heartbeats)广告开始电话 {#ma-ad-start-call}
+### 媒体分析（心率）广告开始呼叫 {#ma-ad-start-call}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**start**_ |
 | `l:event:playhead` | 0 |
@@ -193,7 +193,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ### Standard metadata in Media Analytics (heartbeats) Ad Start call {#std-metadata-ma-ad-start}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | `s:meta:a.media.show` | 节目 |
 | `s:meta:a.media.season` | 6 |
@@ -210,16 +210,16 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### 媒体分析(心跳)广告开始电话中的自定义元数据 {#custom-metadata-ma-ad-start}
+### 媒体分析（心率）广告开始呼叫中的自定义元数据 {#custom-metadata-ma-ad-start}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### 媒体分析(心跳) Adobe Analytics广告开始电话 {#ma-aa-ad-start-call}
+### 媒体分析（心率）Adobe Analytics广告开始电话 {#ma-aa-ad-start-call}
 
-| 参数 | 值(示例) |
+| 参数 |  Value (sample)  |
 |---|---|
 | _**`s:event:type`**_ | _**aa_ad_start**_ |
 | `l:event:playhead` | 0 |
@@ -229,9 +229,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | VOD |
 | `s:asset:type` | ad |
 
-### 媒体分析(心跳)广告播放电话 {#ma-ad-play-call}
+### 媒体分析（心率）广告播放呼叫 {#ma-ad-play-call}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**play**_ |
 | `l:event:playhead` | 15 |
@@ -241,9 +241,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | VOD |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Media Analytics(Heartbeats)广告暂停电话 {#ma-ad-pause-call}
+### 媒体分析（心率）广告暂停呼叫 {#ma-ad-pause-call}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
 | `l:event:playhead` | 15 |
@@ -253,9 +253,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | VOD |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Media Analytics(Heartbeats) Adobe Analytics Ad Complete电话 {#ma-aa-ad-complete-call}
+### 媒体分析（心率）Adobe Analytics广告完整计划电话 {#ma-aa-ad-complete-call}
 
-| 参数 | 值(示例) |
+| 参数 |  值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**complete**_ |
 | `l:event:playhead` | 15 |
@@ -267,9 +267,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ## 播放主内容 {#play-main-content}
 
-### 媒体分析(心跳)播放电话 {#ma-play-call}
+### Media Analytics (heartbeats) Play call {#ma-play-call}
 
-| 参数 | 值(示例) |
+| 参数 |  Value (sample)  |
 |---|---|
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
@@ -282,14 +282,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 **注意：**
 
-* 播放头的位置应在每次播放时增加10秒。
+* 每次播放调用时，播放头位置应增加10秒。
 * `l:event:duration` 值表示自上次跟踪调用后所经过的毫秒数，该参数在每次 10 秒调用中的值应该大致相同。
 
-## 暂停主要内容 {#pause-main-content}
+## Pause main content {#pause-main-content}
 
-### Media Analytics(Heartbeats)暂停电话联系 {#ma-pause-call}
+### Media Analytics (heartbeats) Pause call {#ma-pause-call}
 
-| 参数 | 值(示例) |
+| 参数 |  Value (sample)  |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
