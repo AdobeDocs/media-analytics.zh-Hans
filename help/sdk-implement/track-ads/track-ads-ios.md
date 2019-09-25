@@ -1,7 +1,7 @@
 ---
 seo-title: 在 iOS 中跟踪广告
 title: 在 iOS 中跟踪广告
-uuid: e979e679-cde5-4c30-8f34-867efeac13 a
+uuid: e979e679-cde5-4c30-8f34-867feceac13a
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->以下说明为使用2.x SDK提供了实施指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
+>以下说明为使用2.x SDK实施提供了指导。 如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
 
 ## 广告跟踪常量
 
@@ -74,7 +74,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                                     length:[LENGTH]];
    ```
 
-1. (可选)通过上下文数据变量将标准和/或广告元数据附加到媒体跟踪会话。
+1. （可选）通过上下文数据变量将标准和／或广告元数据附加到媒体跟踪会话。
 
    * [在 iOS 中实施标准广告元数据](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
