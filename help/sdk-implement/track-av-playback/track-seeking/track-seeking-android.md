@@ -1,7 +1,7 @@
 ---
 seo-title: 在 Android 中跟踪搜寻
 title: 在 Android 中跟踪搜寻
-uuid: 65addd99-eef-4a80-8b4 a-d5 fbdff8 ab06
+uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -21,7 +21,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `MediaHeartbeat.Event.SeekStart` | 用于跟踪搜寻开始事件的常量。 |
 | `MediaHeartbeat.Event.SeekComplete` | 用于跟踪搜寻结束事件的常量。 |
 
-## 实现搜寻
+## 实现搜索
 
 1. 监听媒体播放器中的播放搜寻事件，并在发出搜寻开始事件通知时，使用 `SeekStart` 事件跟踪搜寻：
 
