@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: 在 Android 中实施标准元数据
 title: 在 Android 中实施标准元数据
-uuid: c48b4190-b062-4c4 e-9c40-8dde4598 a50 e
+uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 translation-type: tm+mt
 source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 
@@ -12,7 +12,7 @@ source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 
 # 在 Android 中实施标准元数据{#implement-standard-metadata-on-android}
 
-## 标准元数据常量
+## Standard Metadata Constants
 
 | 常量名称 | 描述   |
 |---|---|
@@ -20,13 +20,13 @@ source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 
 ## 元数据密钥API参考
 
-* Create a `HashMap` of standard metadata key value pairs.
-   * [视频元数据密钥](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-   * [音频元数据密钥](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
+* 创建标 `HashMap` 准元数据键值对。
+   * [视频元数据键](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+   * [音频元数据键](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * 在 `HashMap` 中使用元数据的标准元数据常量设置标准元数据 `MediaInfo`。
 * Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
 
-## 示例实现
+## 实施示例
 
 ### 视频
 
