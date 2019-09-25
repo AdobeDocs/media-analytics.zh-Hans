@@ -1,7 +1,7 @@
 ---
 seo-title: 事件请求
 title: 事件请求
-uuid: b237f0a0-dc29-418b-89ee-04c596 a27 f39
+uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -17,11 +17,11 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ## URI参数
 
-`sid`： [从会话请求返回的会话ID。](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+`sid`: The session ID returned from a Sessions request.[](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
 
-## 请求正文
+## 请求主体
 
-请求主体必须为JSON，并且必须具有与此示例请求主体相同的结构：
+请求主体必须是JSON，且必须具有与此示例请求主体相同的结构：
 
 ```
 { 
@@ -41,14 +41,14 @@ https://{uri}/api/v1/sessions/{sid}/events
    * `ts` - 时间戳，必须以毫秒为单位。
 * `eventType` (必需)
 * `params`（可选）
-* `customMetadata` (可选；仅发送和 `adStart``chapterStart` 事件类型)
+* `customMetadata` (Optional; send only with  and  event types)`adStart``chapterStart`
 * `qoeData`（可选）
 
 For a list of valid event types for this release, see [Event types and descriptions.](/help/media-collection-api/mc-api-ref/mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
->***广告跟踪-**您只能跟踪广告内的广告`adBreak`*。
+>***Ad Tracking - You can only track ads inside an .**`adBreak`*
 >
 >在广告头尾没有 `adBreakStart` 和 `adBreakComplete`“书挡”的情况下，`adStart` 和 `adComplete` 事件将被忽略，并且会将相应的广告持续时间作为主内容持续时间进行跟踪。这可能会对 Adobe Analytics 中可用的聚合数据产生重大影响。
 
@@ -71,7 +71,7 @@ Access-Control-Expose-Headers Location
 |---|---|---|
 | **204** | **无内容。**<br/><br/>心率调用成功。 | 不适用 |
 | **400** | **错误请求。**<br/><br/>请求格式不正确。 | 请查看 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)以了解请求类型。 |
-| **404** | **未找到。**<br/><br/>在后端服务中找不到媒体会话的会话ID。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 来创建另一个媒体会话，并报告对该会话的跟踪。 |
-| **410** | **已过期。**<br/><br/>在后端服务中找到媒体会话，但客户端无法再报告其活动。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 来创建另一个媒体会话，并报告对该会话的跟踪。 |
+| **404** | **未找到。** 在 <br/><br/>后端服务中找不到媒体会话的会话ID。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 来创建另一个媒体会话，并报告对该会话的跟踪。 |
+| **410** | **已过期。** 在后 <br/><br/>端服务中找到媒体会话，但客户端不再报告其活动。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 来创建另一个媒体会话，并报告对该会话的跟踪。 |
 | **500** | **服务器错误** | 不适用 |
 
