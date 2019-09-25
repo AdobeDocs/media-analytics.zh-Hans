@@ -1,7 +1,7 @@
 ---
 seo-title: 设置 JavaScript
 title: 设置 JavaScript
-uuid: 0269d ad-3af8-4ff1-9d15-e06 c2952 a005
+uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,9 +12,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 先决条件
 
-* **获得有效的配置参数**&#x200B;在设置分析帐户后，可以从Adobe代表获得这些参数。
-* **在`AppMeasurement`媒体应用程序中实现JavaScript**有关Adobe
-Mobile SDK文档的更多信息，请参阅 [使用JavaScript实施分析。](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
+* **获取有效的配**&#x200B;置参数在设置分析帐户后，可以从Adobe代表处获取这些参数。
+* **在媒`AppMeasurement`体应用程序中实施JavaScript**&#x200B;有关Adobe Mobile SDK文档的详细信息，请参 [阅使用JavaScript实施分析。](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
 
 * **在媒体播放器中提供以下功能：**
 
@@ -101,7 +100,7 @@ Mobile SDK文档的更多信息，请参阅 [使用JavaScript实施分析。](ht
 
    >[!TIP]
    >
-   >`MediaHeartbeat` 需要一个向Adobe `AppMeasurement` Analytics发送调用的实例。以下是 `AppMeasurement` 实例的示例：
+   >`MediaHeartbeat` 需要一个实例 `AppMeasurement` 来向Adobe Analytics发送调用。 以下是 `AppMeasurement` 实例的示例：
 
    ```js
    var appMeasurement = new AppMeasurement(); 
