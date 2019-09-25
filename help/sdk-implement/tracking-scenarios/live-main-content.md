@@ -1,7 +1,7 @@
 ---
 seo-title: 实时主内容
 title: 实时主内容
-uuid: e92e99f4-c395-48aa-8a30-cbdd2 f5 fc07 c
+uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -17,13 +17,13 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | 触发器 | 心率方法 | 网络调用 | 注释   |
 |---|---|---|---|
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 这可以是用户点击&#x200B;**[!UICONTROL 播放]或自动播放事件。** |
-| 将播放媒体的第一帧。 | `trackPlay` | 心率内容播放 | 此方法会触发计时器。只要播放继续，每 10 秒就会发送一次心率。 |
+| 播放媒体的第一帧。 | `trackPlay` | 心率内容播放 | 此方法会触发计时器。只要播放继续，每 10 秒就会发送一次心率。 |
 | 播放内容。 |  | 内容心率 |  |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户不使用媒体完成，也必须调用此API。 |
 
 ## 参数 {#section_D52B325B99DA42108EF560873907E02C}
 
-您在 Adobe Analytics 内容开始调用中看到的很多值，同样也会在心率内容开始调用中看到。您还会看到许多Adobe用于填充Adobe Analytics中各种媒体报表的其他参数。我们不会在这里涵盖所有这些变量，而是只列出一些非常重要的变量。
+您在 Adobe Analytics 内容开始调用中看到的很多值，同样也会在心率内容开始调用中看到。您还将看到许多其他参数，Adobe使用这些参数在Adobe Analytics中填充各种媒体报表。 我们不会在这里涵盖所有这些变量，而是只列出一些非常重要的变量。
 
 ### 心率内容开始
 
@@ -34,13 +34,13 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | `s:user:mid` | `s:user:mid` | 应当匹配 Adobe Analytics 内容开始调用中的中间值 |
 | `s:event:type` | "start" |  |
 | `s:asset:type` | "main" |  |
-| `s:asset:mediao_id` | &lt;您的媒体名称&gt; |  |
+| `s:asset:mediao_id` | &lt;Your Media Name&gt; |  |
 | `s:stream:type` | live |  |
-| `s:meta:*` | 可选 | 在媒体上设置自定义元数据 |
+| `s:meta:*` | 可选 | 媒体上的自定义元数据集 |
 
 ## 内容心率 {#section_7B387303851A43E5993F937AE2B146FE}
 
-在媒体播放过程中，有一个定时器可为主要内容每10秒发送一次或多个心跳(或ping)，每秒为广告发送一次。这些心率将包含有关播放、广告、缓冲等的信息。本文档不包含各个心率的确切内容，但需要确认的一个关键点是，在继续播放时，将会持续触发心率。
+During media playback, there is a timer that will send one or more heartbeats (or pings) every 10 seconds for main content, and every second for ads. 这些心率将包含有关播放、广告、缓冲等的信息。本文档不包含各个心率的确切内容，但需要确认的一个关键点是，在继续播放时，将会持续触发心率。
 
 在内容心率中，查找几个特定的参数：
 
@@ -51,21 +51,21 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ## 心率内容结束 {#section_2CA970213AF2457195901A93FC9D4D0D}
 
-此方案中不会有完整的调用，因为实时流从未完成。
+There will not be a complete call in this scenario, because the live stream was never completed.
 
-## 播放头值设置
+## Playhead Value Settings
 
-对于直播流，您需要将播放头设置为与编程开始时的偏移量相抵消，这样，分析人员就可以确定在24小时的视图内用户加入和离开实时流的位置。
+For LIVE streams, you need to set the playhead to an offset from when the programming began, so that in reporting, analysts can determine at what point users are joining and leaving the LIVE stream within a 24-hour view.
 
-### 开始时
+### At Start
 
-对于实时媒体，当用户开始播放流时，您需要在秒内设置 `l:event:playhead` 为当前偏移量。这与VOD相反，您可以将播放头设置为“0”。
+For LIVE media, when a user starts playing the stream, you need to set  to the current offset, in seconds. `l:event:playhead`This is as opposed to VOD, where you would set the playhead to "0".
 
-例如，实时流事件从午夜开始，运行24小时(`a.media.length=86400`； `l:asset:length=86400`)。然后，假设用户在12：00pm开始播放该直播流。在此方案中，您应设置 `l:event:playhead` 为43200(在流中12小时)。
+例如，假设LIVE流事件从午夜开始，持续24小时(`a.media.length=86400`; `l:asset:length=86400`)。 然后，假设用户在下午12:00开始播放该实时流。 In this scenario, you should set  to 43200 (12 hours into the stream).`l:event:playhead`
 
-### 暂停
+### 暂停时
 
-在用户暂停播放时，必须应用在播放开始时应用的相同“实时播放头”逻辑。当用户返回播放实时流时，您必须将值 `l:event:playhead` 设置为新的偏移播放头位置， _而不_ 是指向用户暂停实时流的点。
+当用户暂停播放时，必须应用在播放开始时应用的相同“实时播放头”逻辑。 当用户返回播放LIVE流时，您必须将该值设置为新的偏移播放头位置，而 `l:event:playhead`__ 不是设置为用户暂停LIVE流的点。
 
 ## 示例代码 {#section_vct_j2j_x2b}
 
