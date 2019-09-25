@@ -1,7 +1,7 @@
 ---
 seo-title: 快速启动
 title: 快速启动
-uuid: ca20bug4-2c8f-406b-833e-b4883 a9 aa534
+uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,12 +12,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!TIP]
 >
->Gather the request data necessary for completing a successful [Session request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to the Media Analytics (MA) Collection API back-end server. 通过手动发送请求（使用 `curl` 或 Postman 等），您可以快速验证您的请求数据。这将对请求中是否存在与不正确数据类型或信息有关的任何问题立即提供反馈。使用 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)来验证您是否提供了正确的请求数据。
+>Gather the request data necessary for completing a successful Session request to the Media Analytics (MA) Collection API back-end server. [](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)通过手动发送请求（使用 `curl` 或 Postman 等），您可以快速验证您的请求数据。这将对请求中是否存在与不正确数据类型或信息有关的任何问题立即提供反馈。使用 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)来验证您是否提供了正确的请求数据。
 
 1. 收集为运行任何 Experience Cloud 应用程序而必须提供的标准、必需的 Adobe Analytics 和访客数据：
 
    * Visitor Experience Cloud 组织 ID
-   * 访客Experience Cloud用户ID
+   * 访客Experience cloud用户ID
    * Analytics 报表包 ID
    * Analytics 跟踪服务器 URL
 
@@ -49,9 +49,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!NOTE]
    >
-   >您必须在JSON请求正文中使用正确的数据类型。E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+   >您必须在JSON请求主体中使用正确的数据类型。 E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
-1. 将会话请求发送到MA Collection API端点。如果您的请求负载无效，请确定问题并重试，直到接收到 `201 Created` 响应。In this `curl` example, the JSON request body is in a file named `sample_data_session`:
+1. 将会话请求发送到MA Collection API端点。 如果您的请求负载无效，请确定问题并重试，直到接收到 `201 Created` 响应。In this `curl` example, the JSON request body is in a file named `sample_data_session`:
 
    ```
    $ curl -i -d \ 
