@@ -1,7 +1,7 @@
 ---
 seo-title: 客户端
 title: 客户端
-uuid: ba0496e2-585a-4176-b583-c705726 excc6
+uuid: ba0496e2-585a-4176-b583-c705726fecc6
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -18,7 +18,7 @@ If Media Analytics is your intended path, see [Media SDK Implementation](/help/s
 
 >[!IMPORTANT]
 >
->要使用Media Analytics，客户还必须使用Adobe Analytics。
+>To use Media Analytics, customers must also use Adobe Analytics.
 
 >[!NOTE]
 >
