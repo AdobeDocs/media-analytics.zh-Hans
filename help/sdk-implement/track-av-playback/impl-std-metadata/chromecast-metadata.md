@@ -1,7 +1,7 @@
 ---
 seo-title: Chromecast 元数据键
 title: Chromecast 元数据键
-uuid: c446ad41-51b8-46d6-9bc1-abfae866023 f
+uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -45,7 +45,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 网站 ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | 创作 URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Sample implementations for Chromecast {#section_wvy_bdn_w2b}
+## Chromecast的示例实现 {#section_wvy_bdn_w2b}
 
 ### 视频
 
