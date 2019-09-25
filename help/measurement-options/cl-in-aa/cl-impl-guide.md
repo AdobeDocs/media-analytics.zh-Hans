@@ -43,7 +43,7 @@ if (e.type == "ended") {
 };
 ```
 
-## 为何使用自定义链接
+## Why use Custom Link
 
 * 需要满足的前提条件很少
 * 适用于任何平台，包括 NoScript
