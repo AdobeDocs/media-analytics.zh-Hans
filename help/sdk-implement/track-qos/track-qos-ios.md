@@ -1,7 +1,7 @@
 ---
 seo-title: 在 iOS 中跟踪体验质量
 title: 在 iOS 中跟踪体验质量
-uuid: aque2c142-ed39-4234-a711-765dcarc5415
+uuid: cae2c142-ed39-4234-a711-765dcabc5415
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >下面的说明为所有 2.x SDK 实施提供了指南。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 实现质量
+## 实施QOS
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
@@ -53,5 +53,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >更新QoS对象，并在每个比特率发生变化时调用比特率更改事件。这样将可以提供最为准确的 QoS 数据。
+   >更新QoS对象，并在每个比特率更改时调用比特率更改事件。 这样将可以提供最为准确的 QoS 数据。
 
