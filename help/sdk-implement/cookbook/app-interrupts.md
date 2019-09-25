@@ -1,7 +1,7 @@
 ---
 seo-title: 处理应用程序在播放过程中出现的中断问题
 title: 处理应用程序在播放过程中出现的中断问题
-uuid: 1ccb4507-bda6-462d-bf67-e22778 a4 db3 d
+uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,20 +10,20 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # 处理应用程序在播放过程中出现的中断问题{#handling-application-interrupts-during-playback}
 
-在媒体应用程序中播放可能会以各种方式中断：用户显式按下暂停，或者当用户将应用程序放入后台时。无论何种原因导致媒体播放中断，跟踪说明都是相同的：
+媒体应用程序中的播放可以通过多种方式中断：用户显式按下暂停，或当用户将应用程序置于后台时。 无论哪些因素导致媒体播放中断，跟踪指令都是相同的：
 
 1. Call **`trackPause`** when the application is interrupted (goes to background, media pauses, etc.).
 1. Call **`trackPlay`** when the application returns to the foreground and/or the media resumes playing.
 
 >[!NOTE]
 >
->The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. 这样做会导致播放在未计入总回放时间的情况下进行计算，以及丢失较早的进度标记、段等。Instead, call `trackPlay` when the app returns and/or the media resumes playing.
+>The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. 这样做会导致播放到该时间点为止不计入总播放时间，并会丢失以前的进度标记、段等。 Instead, call `trackPlay` when the app returns and/or the media resumes playing.
 
 ## FAQ about handling application interrupts: {#section_osf_xqs_h2b}
 
 * _在会话关闭前，应当将应用程序置于后台多长时间？_
 
-   如果应用程序允许后台播放，则它可以通过调用我们的 API 继续进行跟踪，我们也会发送所有常规跟踪 ping。除了YouTube Red之外，很多视频应用程序允许后台播放，但所有音频应用程序允许这样做。如果应用程序不允许后台播放，则建议在暂停状态下一分钟保留一分钟，然后结束跟踪会话。应用程序无法继续发送暂停ping，因为在大多数情况下，它无法确定用户是否返回继续查看媒体或确定何时将停止查看。而且，如果应用程序在后台中还是不断发送 ping，这也不是一种很好的体验。
+   如果应用程序允许后台播放，则它可以通过调用我们的 API 继续进行跟踪，我们也会发送所有常规跟踪 ping。除YouTube红色之外，许多视频应用程序都允许后台播放，但所有音频应用程序都允许此操作。 如果应用程序不允许后台播放，则建议在“暂停状态”中停留一分钟，然后结束跟踪会话。 应用程序无法继续发送暂停ping ，因为在大多数情况下，它无法确定用户是要返回继续查看媒体，还是确定何时将停止媒体。 而且，如果应用程序在后台中还是不断发送 ping，这也不是一种很好的体验。
 
 * _在应用程序已进入后台很长时间后，要如何正确操作才能重新启动跟踪？_
 
