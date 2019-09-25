@@ -28,11 +28,11 @@ source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
          * [!UICONTROL Analytics &gt; 管理员 &gt; 公司设置 &gt; Web 服务]
          * [!UICONTROL Analytics &gt; 管理员 &gt; 用户管理 &gt; 用户 &gt; 个人用户设置]要为新用户创建 Web 服务 API 凭据，请在[!UICONTROL 用户管理]中，将用户添加到 **Web 服务访问**&#x200B;用户组。
       * [!UICONTROL 默认端点] -此字段中的数据由Adobe提供，无法更改。
-      * [!UICONTROL 额外端点] -添加 `CNAMES`(如果您使用)跟踪服务器 `metrics.companyname.com`
-   * **Video Heartbeats(Media Analytics)**
+      * [!UICONTROL 额外端点] -如果您 `CNAMES`使用它们，则添加跟踪服务器，例如 `metrics.companyname.com`
+   * **视频心率（媒体分析）**
 
       * [!UICONTROL 默认端点] -此字段中的数据由Adobe提供，无法更改。
-      * [!UICONTROL 额外端点] -添加 `CNAMES`(如果您使用)跟踪服务器，例如 `metrics.companyname.com`，
+      * [!UICONTROL Extra Endpoint - Add , if you use them, for your tracking server, e.g., .]`CNAMES``metrics.companyname.com`
 
 
 
