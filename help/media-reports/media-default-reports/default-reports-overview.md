@@ -16,10 +16,10 @@ Adobe Analytics 提供了多个报表和量度，用于跟踪您网站上的媒�
 
 媒体报表列在&#x200B;**[!UICONTROL 报表]选项卡上。** Navigate to &gt; **[!UICONTROL Media]** &gt; **[!UICONTROL Media Engagement]** and select from:
 
-| 媒体报表 | 描述     | 常见商业分析       |
+| Media Report | 描述     | 常见商业分析       |
 | --- | --- | --- |
-| [媒体概览](media-reports-overview.md) | 显示若干汇总测量，以快速监测媒体是否如期执行。图形会在广告印象旁边显示媒体，以便您快速查看和比较这些指标。 | <ul> <li>热门量度总数，包括内容开始次数、完成率、流平均花费时间以及每次访问观看的平均媒体项目数。  </li> <li>按设备类型或国家/地区过滤的媒体的内容和广告总开始次数。  </li> </ul> |
-| [媒体详细信息](media-reports-detail.md) | 显示所有媒体项目的详细量度，包括开始次数、并行查看者数、完成率、播放百分比和广告展示次数。 | <ul> <li>主要指标包括媒体开始、内容和广告开始，以及每次访问的平均内容。  </li> <li>按设备类型或国家/地区过滤的媒体的内容和广告总开始次数。  </li> </ul> |
+| [媒体概览](media-reports-overview.md) | 显示若干汇总测量，以快速监测媒体是否如期执行。A graph displays media starts next to ad impressions to let you quickly view and compare these metrics. | <ul> <li>热门量度总数，包括内容开始次数、完成率、流平均花费时间以及每次访问观看的平均媒体项目数。  </li> <li>按设备类型或国家/地区过滤的媒体的内容和广告总开始次数。  </li> </ul> |
+| [媒体详细信息](media-reports-detail.md) | 显示所有媒体项目的详细量度，包括开始次数、并行查看者数、完成率、播放百分比和广告展示次数。 | <ul> <li>Totals for top metrics including media starts, content and ad starts, and average content per visit.  </li> <li>按设备类型或国家/地区过滤的媒体的内容和广告总开始次数。  </li> </ul> |
 | [媒体时段](media-reports-daypart.md) | 按时间显示内容开始次数，以便您能够在受众参与时快速进行查看。 | <ul> <li>按时间划分的受众参与。  </li> <li>与以前的日期范围进行比较的受众参与。  </li> </ul> |
 | [媒体并行查看者](media-concurrent-viewers.md) | 显示一天中的并行查看者。数据不能按内容、设备类型或国家/地区进行过滤。 | <ul> <li>在 24 小时的时间段中，每分钟的受众参与度。  </li> </ul> |
 | 媒体事件和媒体变量 | 可以使用其他报表。媒体量度和维度是可以直接报告给其他 Analytics 报表并添加到其中的标准 Analytics 变量。 | <ul> <li>通过生成具有访问次数的报表（其中包含媒体的内容类型）进行的媒体转化（查看媒体后发生的事件）。  </li> <li>使用媒体名称 prop 的下一个/上一个媒体流。  </li> </ul> |
