@@ -1,7 +1,7 @@
 ---
 seo-title: iOS 元数据键
 title: iOS 元数据键
-uuid: 8eb90111-c9 dd-4ca7-9676-91530a8 ae6 cf
+uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -14,7 +14,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 从 `ADBStandardMetadataKeys.h`:
 
-## 视频元数据密钥
+## 视频元数据键
 
 | 常量名称 | 描述 | 类型 |
 |---|---|---|
@@ -36,7 +36,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | `ADBVideoMetadataKeyFEED` | 信息源 | 视频 |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | 流格式 | 视频 |
 
-## 音频元数据密钥
+## 音频元数据键
 
 | 常量名称 | 描述 | 类型 |
 |---|---|---|
@@ -47,7 +47,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | `ADBAudioMetadataKeyPUBLISHER` | 资产 | 音频 |
 | `ADBAudioMetadataKeySTATION` | 流派 | 音频 |
 
-## 广告元数据密钥
+## 广告元数据键
 
 | 常量名称 | 描述 | 类型 |
 |---|---|---|
