@@ -1,7 +1,7 @@
 ---
 seo-title: 在 Android 中跟踪缓冲
 title: 在 Android 中跟踪缓冲
-uuid: f16ce76d-1db3-4b51-4c98-54cb781f71d7
+uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `MediaHeartbeat.Event.BufferStart` | 用于跟踪缓冲开始事件的常量 |
 | `MediaHeartbeat.Event.BufferComplete` | 用于跟踪缓冲结束事件的常量 |
 
-## 实施缓冲
+## 实现缓冲
 
 1. 监听媒体播放器中的播放缓冲事件，并在发出缓冲开始事件通知时，使用 `BufferStart` 事件跟踪缓冲：
 
