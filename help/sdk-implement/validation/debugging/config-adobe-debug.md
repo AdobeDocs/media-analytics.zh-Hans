@@ -1,7 +1,7 @@
 ---
 seo-title: 配置 Adobe Debug
 title: 配置 Adobe Debug
-uuid: e416458d-f23 c-41ce-8d99-fa5076 c455 f0
+uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
 source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
@@ -18,7 +18,7 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
    >[!TIP]
    >
-   >此登录名与登录Adobe Analytics时使用的用户名/密码不相同。
+   >此登录名与用于登录Adobe Analytics的用户名／密码不同。
 
 1. 拥有 Experience Cloud 帐户后，请与 Adobe 代表联系以请求访问 Adobe Debug。
 1. After access has been granted, go to [https://debug.adobe.com](https://debug.adobe.com) and use your Experience Cloud credentials to log in.
@@ -52,7 +52,7 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
 第一次运行 Adobe Debug 时，将生成唯一的 SSL 证书。如果您支持跨桌面和/或应用程序的 HTTPS 通信，则需要下载并安装 SSL 证书。
 
-下载并安装SSL证书：
+Download and install the SSL certificate:
 
 1. After Adobe Debug has been installed and started, go to [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl) and download the certification.
 1. 导入证书
@@ -70,16 +70,16 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 <!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
 -->
 
-    1. 对于Firefox，请完成[在Mozilla Firefox中安装根证书的过程]中的步骤。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+    1. 对于Firefox，请完成[在Mozilla Firefox中安装根证书中的过程。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)您
     
-    You might need to quit and reopen Firefox to see the change.
+    可能需要退出并重新打开Firefox才能看到更改。
     
-    ** iOS设备**
-    1。通过单击**[！UICCONTROL设置应用程序]****&gt;****[！UICCONTROL WiFi设置]**。
+    **iOS devices**1. 
+    Set your iOS device to use Adobe Debug as its HTTP proxy by clicking **[!UICONTROL Settings app]** **&gt;** **[!UICONTROL Wifi settings]**.
     
-    1. 在Safari中，转到[调试。](https://proxy.debug.adobe.com/ssl)
+    1. 在Safari中，转到[调试]。](https://proxy.debug.adobe.com/ssl)
     
-    Safari will prompt you to install the SSL certificate.
+    Safari将提示您安装SSL证书。
 
 ## 为移动设备安装 SSL 证书 {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
 
