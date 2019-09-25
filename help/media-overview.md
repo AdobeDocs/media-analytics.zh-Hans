@@ -14,7 +14,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 它不包括有关旧版里程碑视频实施的说明。 我们建议所有客户采用其中一种或同时采用这两种最新的媒体跟踪解决方案，以便充分利用改进功能，实现更广泛的测量。您可以阅读下方的[转换到最新解决方案的益处](media-overview.md#section_cnj_5st_p1b)。While we will continue to support the Milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. 如果您有任何进一步的问题，请联系您的 Adobe 帐户管理员。
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy Milestone video implementation. 我们建议所有客户采用其中一种或同时采用这两种最新的媒体跟踪解决方案，以便充分利用改进功能，实现更广泛的测量。您可以阅读下方的[转换到最新解决方案的益处](media-overview.md#section_cnj_5st_p1b)。虽然我们将继续支持跟踪视频的里程碑方法，但不会有任何计划的更新、修复或功能改进。 如果您有任何进一步的问题，请联系您的 Adobe 帐户管理员。
 
 ## 概述 {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -39,7 +39,7 @@ Adobe 媒体测量解决方案的部分优点包括：
 
 * **及时分析 -**&#x200B;利用跨多个渠道的关键效果量度（例如，持续时间）做出实时的可操作性决策。以 **10 秒**&#x200B;为间隔，测量主内容事件，可及时捕获发生的所有活动。广告跟踪事件的发生间隔为 **1 秒**。
 * **促进参与度提升 -**&#x200B;通过较少缓冲事件并了解广告应在内容中播放的位置和时间，提供更顺畅、更友好的体验，从而吸引用户再次来访，提高回访率。
-* **Holistic picture -** Combine multiple data points across all of your content distributors to get a full view of all your media activity, and measure engagement and views/listens across all possible channels through the [Federated Analytics](data-sharing/federated-analytics.md) feature.
+* **整体图景** -通过 [Federated Analytics功能，将所有内容分发商的多个数据点组合在一起，全面了解所有媒体活动，并衡量参与度和视图／监听所有可能的渠道](data-sharing/federated-analytics.md) 。
 * **增加粒度 -**&#x200B;在极其精细的粒度级别上评估查看行为，包括具体访客的时间段、每分钟的并行查看者/收听者数量和使用内容的平均持续时长。
 * **精准测量 -**&#x200B;在使用媒体的多种设备（包括 OTT、智能手机、平板电脑、台式机，等等）上测量数据以监测用户参与模式和习惯。
 * **区段划分 -**&#x200B;对您的播放器、设备、流派、章节和节目应用分类，以了解每个分类对内容、音频、广告和组合元素的整体查看/收听量和客户参与度有何影响。
@@ -102,12 +102,12 @@ Adobe Analytics for Media 契合行业发展趋势，提供了强大的数据收
 | **Sony PS3/PS4** |  | ![](assets/icon-blue-check.png) |
 | **(其他/新连接设备）** |  | ![](assets/icon-blue-check.png) |
 
-For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+有关Media SDK，另请参阅最 [低平台版本支持](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
 ## 传输层安全性 {#transport-layer-security}
 
-**TLS声明** - adobe有安全合规标准，要求终止旧版安全协议。 为了继续满足不断演变的安全协议标准，Adobe正在向使用TLS 1.2的方向迈进，以便使用最新、最安全的版本。 从2019年2月20日起，Adobe将仅支持TLS 1.1或更高版本。 With this change, Adobe will no longer collect data from end users with older devices or web browsers deploying TLS 1.0. Migrating to TLS 1.2 provides improved security. 您应务必了解具体细节，并且针对更改做出规划以实现顺利迁移。
+**TLS声明** - adobe有安全合规标准，要求终止旧版安全协议。 为了继续满足不断演变的安全协议标准，Adobe正在向使用TLS 1.2的方向迈进，以便使用最新、最安全的版本。 从2019年2月20日起，Adobe将仅支持TLS 1.1或更高版本。 通过此更改，Adobe将不再从部署TLS 1.0的较旧设备或Web浏览器的最终用户收集数据。迁移到TLS 1.2可提高安全性。 您应务必了解具体细节，并且针对更改做出规划以实现顺利迁移。
 
 >[!NOTE]
 >
->TLS目前是部署最广的安全协议，用于要求通过网络安全交换数据的Web浏览器和其他应用程序。
+>TLS is currently the most-widely deployed security protocol used in web browsers and other applications that require data to be securely exchanged over a network.
