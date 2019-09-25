@@ -1,7 +1,7 @@
 ---
 seo-title: 设置 Chromecast
 title: 设置 Chromecast
-uuid: d664e394-02a2-4985-bug-be1 bcc44 fb2 b
+uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
 source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
@@ -20,7 +20,8 @@ _我应该使用 Chromecast JavaScript SDK 还是标准 JavaScript SDK？_
 
 ## 先决条件
 
-* **获得HeartBeats的有效配置参数**&#x200B;在设置媒体分析帐户之后，可以从Adobe代表获得这些参数。
+* **Obtain valid configuration parameters for Heartbeats**
+These parameters can be obtained from an Adobe representative after you set up your media analytics account.
 * **在媒体播放器中提供以下功能：**
    * *可订阅播放器事件的 API -* Media SDK 要求您在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
@@ -87,7 +88,7 @@ Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cl
 
       >[!IMPORTANT]
       >
-      >`mediaHeartbeat` 如果配置错误，媒体模块(VHL)输入错误状态，并将停止发送跟踪调用。
+      >If `mediaHeartbeat` is incorrectly configured, the media module (VHL) enters an error state and will stop sending tracking calls.
 
       mediaHeartbeat 键的 ADBMobile 配置参数：
    | 配置参数 | 描述     |
