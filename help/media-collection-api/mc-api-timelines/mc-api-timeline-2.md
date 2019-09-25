@@ -1,7 +1,7 @@
 ---
 seo-title: 时间轴 2 - 用户放弃会话
 title: 时间轴 2 - 用户放弃会话
-uuid: 74b89e8f-ef56-4e0 c-b9 a8-40739e15 b4 cf
+uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD、前置广告、中置广告、用户提前放弃内容
 
-以下示意图说明了用户操作的播放头时间线和相应的时间线。下面介绍了每个操作及其附带请求的详细信息。
+下图说明了播放头时间线和用户操作的对应时间线。 The details for each action and its accompanying requests are presented below.
 
 
 ![](assets/va_api_content_2.png)
@@ -21,7 +21,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 ![](assets/va_api_actions_2.png)
 
 
-## 操作详细信息
+## Action details
 
 ### Action 1 - Start session {#Action-1}
 
@@ -33,7 +33,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 此调用表示&#x200B;_用户播放视频的意图_。It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 播放器状态不是“正在播放”，而是“正在启动”。[强制会话参数](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的 `params` 映射中。在后端，此调用会生成一个 Adobe Analytics 启动调用。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -58,7 +58,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 2 - Ping timer start {#Action-2}
+### 操作2 - Ping定时器开始 {#Action-2}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -66,7 +66,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **实施详细信息**
 
-启动应用程序的ping定时器。然后，首次ping事件应在有前置广告时触发秒，否则为10秒。
+启动应用程序的ping计时器。 First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.
 
 ### Action 3 - Ad break start {#Action-3}
 
@@ -78,7 +78,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 必须跟踪前置广告。只能在广告时间期间跟踪广告。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -94,7 +94,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### 操作4 —— 广告开始 {#Action-4}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -104,7 +104,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 一个时长为 12 秒的广告开始。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -129,7 +129,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### 操作5 —— 广告ping {#Action-5}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -137,9 +137,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **实施详细信息**
 
-每秒ping后端。(没有显示随后的广告转换，因为很简单。)
+Ping the backend every 1 second. （为简便起见，不显示后续和ping。）
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -151,7 +151,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### 操作6 —— 广告完成 {#Action-6}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -161,7 +161,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 第一个前置广告结束。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -173,7 +173,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 7 - Ad break complete {#Action-7}
+### 操作7 —— 广告中断完成 {#Action-7}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -183,7 +183,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 广告时间结束。在整个广告时间内，播放器一直处于“正在播放”状态。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -195,7 +195,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 8 - Play content {#Action-8}
+### 动作8 —— 播放内容 {#Action-8}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -205,7 +205,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 将播放器转变为“正在播放”状态，开始跟踪内容播放的开始。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -218,7 +218,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 9 - Ping {#Action-9}
+### 操作9 - Ping {#Action-9}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -228,7 +228,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -240,7 +240,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 10 - Ping {#Action-10}
+### 操作10 - Ping {#Action-10}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -250,7 +250,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -262,7 +262,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 11 - Error {#Action-11}
+### 操作11 —— 错误 {#Action-11}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -271,7 +271,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 **实施详细信息**
 
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -283,7 +283,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 12 - Play content {#Action-12}
+### 操作12 —— 播放内容 {#Action-12}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -293,7 +293,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -305,7 +305,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 13 - Ping {#Action-13}
+### 操作13 - Ping {#Action-13}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -315,7 +315,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -327,7 +327,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 14 - Ad break start {#Action-14}
+### 操作14 —— 广告休息开始 {#Action-14}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -337,7 +337,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 持续时间为 8 秒的中置广告：发送 `adBreakStart`。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -353,7 +353,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 15 - Ad start {#Action-15}
+### 操作15 —— 广告开始 {#Action-15}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -363,7 +363,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 跟踪中置广告。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -386,7 +386,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 16 - Close app {#Action-16}
+### 操作16 —— 关闭应用程序 {#Action-16}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -396,7 +396,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 将 `sessionEnd` 发送到 VA 后端，以指示应立即关闭会话，无需进一步处理。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
