@@ -2,8 +2,8 @@
 seo-title: 包含前置广告的 VOD 播放
 title: 包含前置广告的 VOD 播放
 description: 在此方案中，在主内容之前插入了前置广告。
-seo-description: 在Adobe Media Analytics中，在主要内容之前插入了预先滚动广告。
-uuid: 5d1022a8-88cb-40aa-90c-60dd592a639e
+seo-description: In this scenario in Adobe Media Analytics, pre-roll ads have been inserted before the main content.
+uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -24,13 +24,13 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 播放广告 #2 的第一帧。 | `trackEvent:AdStart` | Analytics 广告开始，心率广告开始 |  |
 | 播放广告。 |  | 广告心率 |  |
 | 广告 #2 结束播放。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 心率广告结束 | 到达广告和面板的结尾。 |
-| 播放内容。 |  | 内容心率 | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| 内容结束。 | `trackComplete` | 心率内容结束 | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 播放内容。 |  | 内容心率 | This network call is identical to the VOD playback with no ads scenario.[](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
+| 内容结束。 | `trackComplete` | 心率内容结束 | This network call is identical to the VOD playback with no ads scenario.[](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
 | 会话结束 | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 参数 {#section_33CDFB6CB230437480B67A3D149EC44E}
 
-When ad playback begins, a `Heartbeat Ad Start` call is sent. If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
+广告播放开始时，将发 `Heartbeat Ad Start` 送呼叫。 If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
 
 ### 心率广告开始
 
@@ -39,7 +39,7 @@ When ad playback begins, a `Heartbeat Ad Start` call is sent. If the beginning o
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
 
-Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call is similar to the `Content Play` call.
+广告遵循与相同的基本模 `Content Heartbeats`型，因此 `Ad Play` 呼叫与呼叫类似 `Content Play` 。
 
 ### 心率广告播放调用
 
@@ -74,7 +74,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** 要在Android中查看此场景，请设置以下代码：
+* **Android** 要在Android中查看此方案，请设置以下代码：
 
    ```java
    // Set up  mediaObject 
@@ -178,7 +178,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS-** 要在iOS中查看此方案，请设置以下代码：
+* **iOS —— 要在** iOS中查看此方案，请设置以下代码：
 
    ```
    //  Set up mediaObject 
@@ -282,7 +282,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript** 要在JavaScript中查看此方案，请输入以下文本：
+* **JavaScript要在JavaScript中查看此方案** ，请输入以下文本：
 
    ```js
    // Set up mediaObject 
@@ -384,7 +384,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** 要在Android中查看此场景，请设置以下代码：
+* **Android** 要在Android中查看此方案，请设置以下代码：
 
    ```java
    // Set up mediaObject 
@@ -561,7 +561,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS** 要在iOS中查看此方案，请设置以下代码：
+* **iOS要在** iOS中查看此方案，请设置以下代码：
 
    ```
    //  Set up mediaObject 
@@ -748,7 +748,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript** 要在JavaScript中查看此方案，请输入以下文本：
+* **JavaScript要在JavaScript中查看此方案** ，请输入以下文本：
 
    ```js
    // Set up mediaObject 
