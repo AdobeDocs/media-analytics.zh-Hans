@@ -1,7 +1,7 @@
 ---
 seo-title: 媒体并行查看者
 title: 媒体并行查看者
-uuid: e61c50e5-819-4538-b67 c-eBC01 c6 ba7
+uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
@@ -14,7 +14,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 >[!TIP]
 >
->如果所选时间间隔不是一整天，则不会显示任何数据。
+>如果选定的间隔不是整天，则不会显示任何数据。
 
 ![](assets/video-concurrent-viewers.png)
 
