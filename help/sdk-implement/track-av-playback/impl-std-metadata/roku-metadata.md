@@ -1,7 +1,7 @@
 ---
 seo-title: Roku 元数据键
 title: Roku 元数据键
-uuid: 2ca6bb1d-c545-43d3-9c3 e-63b890 aa268 d
+uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -10,7 +10,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 # Roku 元数据键{#roku-metadata-keys}
 
-标准视频、音频和广告元数据可以分别在媒体和广告信息对象上设置。调用跟踪 API 之前，使用视频/广告元数据的常量键设置包含信息对象中标准元数据的字典。有关标准元数据常量的完整列表，请参阅下表，随后是对应的示例。
+可分别在媒体和广告信息对象上设置标准视频、音频和广告元数据。 调用跟踪 API 之前，使用视频/广告元数据的常量键设置包含信息对象中标准元数据的字典。有关标准元数据常量的完整列表，请参阅下表，随后是对应的示例。
 
 ## 视频元数据常量 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
 
@@ -34,7 +34,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 信息源 | `a.media.feed` | `MEDIA_VideoMetadataKeyFEED` |
 | 流格式 | `a.media.format` | `MEDIA_VideoMetadataKeySTREAM_FORMAT` |
 
-## Audio metadata constants {#audio-metadata-constants}
+## 音频元数据常量 {#audio-metadata-constants}
 
 | 元数据名称 | 上下文数据键 | 常量名称 |
 | --- | --- | --- |
@@ -70,8 +70,8 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 | 常量 | 描述   |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` | Constant to set metadata on the `MediaInfo` `trackLoad` |
-| `MEDIA_STANDARD_AD_METADATA` | Constant to set the ad metadata on the `EventData` `trackEvent` |
+| `MEDIA_STANDARD_MEDIA_METADATA` | 常数，用于在 `MediaInfo``trackLoad` |
+| `MEDIA_STANDARD_AD_METADATA` | 常数，用于在 `EventData``trackEvent` |
 | `MEDIA_RESUMED` | 用于发送视频恢复心率的常量。To resume video tracking of previously stopped content, you need to set the `MEDIA_RESUMED` property on the `mediaInfo` object when you call `mediaTrackLoad`. (`MEDIA_RESUMED` is not an event that you can track using the `mediaTrackEvent` API.) 当应用程序想要继续跟踪用户之前停止观看但现在打算继续观看的内容时，应将 `MEDIA_RESUMED` 设置为 true。<br/><br/>例如，假设一位用户只观看了 30% 的内容，然后关闭了应用程序。此操作将导致会话结束。Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they left off, then the application should set `MEDIA_RESUMED` to "true" while calling the `mediaTrackLoad` API. 其结果是，同一视频内容的这两个不同媒体会话可以链接在一起。以下是实施示例： <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)`<br/><br/>这将为视频创建一个新会话，但它也会导致 SDK 发送事件类型为“resume”的心率请求，该事件类型可用于进行报告，以将两个不同的媒体会话关联在一起。 |
 
 ### 内容类型常量
