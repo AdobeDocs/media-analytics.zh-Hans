@@ -1,7 +1,7 @@
 ---
 seo-title: 在主内容中进行搜寻的 VOD 播放
 title: 在主内容中进行搜寻的 VOD 播放
-uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
+uuid: 5c2392f6-9b9c-42f5-833f-77423d1e622
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
