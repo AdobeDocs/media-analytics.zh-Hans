@@ -1,7 +1,7 @@
 ---
 seo-title: 在 SceneGraph (Roku) 中跟踪
 title: 在 SceneGraph (Roku) 中跟踪
-uuid: fa85e546-c79 b-4df4-8c03-d6593 fa296 d5
+uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -108,14 +108,14 @@ Adobe Mobile SDK for Roku 是使用 BrightScript 编写的。SDK 使用的许多
 | 常量名称 | 描述 |
 |---|---|
 | `API_RESPONSE` | Used to retrieve the response object from `adbmobileTask` node's `adbmobileApiResponse` field |
-| `DEBUG_LOGGING` | `apiName` 用于 `getDebugLogging` |
-| `PRIVACY_STATUS` | `apiName` 用于 `getPrivacyStatus` |
-| `TRACKING_IDENTIFIER` | `apiName` 用于 `trackingIdentifier` |
-| `USER_IDENTIFIER` | `apiName` 用于 `userIdentifier` |
-| `VISITOR_MARKETING_CLOUD_ID` | `apiName` 用于 `visitorMarketingCloudID` |
-| `AUDIENCE_VISITOR_PROFILE` | `apiName` 用于 `audienceVisitorProfile` |
-| `AUDIENCE_DPID` | `apiName` 用于 `audienceDpid` |
-| `AUDIENCE_DPUUID` | `apiName` 用于 `audienceDpuuid` |
+| `DEBUG_LOGGING` | 用于 `apiName``getDebugLogging` |
+| `PRIVACY_STATUS` | 用于 `apiName``getPrivacyStatus` |
+| `TRACKING_IDENTIFIER` | 用于 `apiName``trackingIdentifier` |
+| `USER_IDENTIFIER` | 用于 `apiName``userIdentifier` |
+| `VISITOR_MARKETING_CLOUD_ID` | 用于 `apiName``visitorMarketingCloudID` |
+| `AUDIENCE_VISITOR_PROFILE` | 用于 `apiName``audienceVisitorProfile` |
+| `AUDIENCE_DPID` | 用于 `apiName``audienceDpid` |
+| `AUDIENCE_DPUUID` | 用于 `apiName``audienceDpuuid` |
 
 ### adbmobileTask 节点
 
@@ -136,26 +136,20 @@ Adobe Mobile SDK for Roku 是使用 BrightScript 编写的。SDK 使用的许多
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> 无效 </td>
-<td> 只读所有在AdobeMobilesDK上执行的API将返回此字段上的响应。应注册监听此字段更新的回调以接收响应对象。以下是响应对象的格式：  
+<td> 只读在AdobeMobileSDK上执行的所有API都将返回此字段的响应。 应注册监听此字段更新的回调以接收响应对象。以下是响应对象的格式：  
 <codeblock>
-response={“apinName”：&lt;sceneGraphel常量。
- API_ NAME&gt;
-“returnValue：&lt; API_ PORMANSE&gt;} 
+response = { "apiName" :&lt;SceneGraphConstants。
+               API_NAME&gt; "returnValue :&lt;API_RESPONSE&gt; } 
 </codeblock>
-将为 AdobeMobileSDK 中的任何 API 调用发送此响应对象的实例，根据 API 引用指南，该 API 调用应会返回一个值。例如，对visitorMarketingCloud()的API调用将返回以下响应对象： 
+将为 AdobeMobileSDK 中的任何 API 调用发送此响应对象的实例，根据 API 引用指南，该 API 调用应会返回一个值。例如，visitorMarketingCloudID()的API调用将返回以下响应对象： 
 <codeblock>
-response={“apinName”：m.
- AdbMobileConstants.
- CLUTOR_ Marketing_ CLOUD_ ID
-“returnValue：“07050x25671x3360x72644x14”} 
+response = { "apiName" :m.              adbmobileConstants。
+              VISITOR_MARKETING_CLOUD_ID "returnValue:"07050x25671x33760x72644x14" } 
 </codeblock>
 或者，响应数据也可能无效： 
 <codeblock>
-response={
-“apineName”：m.
- AdbMobileConstants.
- CLUTOR_ Marketing_ CLOUD_ ID
-“returnValue：invalid} 
+response = { "apiName" :m.              adbmobileConstants。
+              VISITOR_MARKETING_CLOUD_ID "returnValue:无效} 
 </codeblock>
 </td>
 </tr>
@@ -167,13 +161,11 @@ response={
 #### `getADBMobileConnectorInstance`
 
 API 签名: `ADBMobile().getADBMobileConnectorInstance()`\
-Input: `adbmobileTask`
-Return Type: `ADBMobileConnector`
+输入：返 `adbmobileTask`回类型： `ADBMobileConnector`
 
 #### `sgConstants`
 
-API Signature: `ADBMobile().sgConstants()`
-Input: None\
+API签名：输 `ADBMobile().sgConstants()`入：无\
 返回类型: `SceneGraphConstants`
 
 >[!NOTE]
@@ -186,7 +178,7 @@ Input: None\
 | 版本控制 | `version` | 用于检索 AdobeMobileLibrary 版本信息的常量 |
 | 隐私/选择禁用 | `PRIVACY_STATUS_OPT_IN` | 表示“已选择启用”隐私状态的常量 |
 |  | `PRIVACY_STATUS_OPT_OUT` | 表示“已选择禁用”隐私状态的常量 |
-| MediaHeartbeat 常量 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | 将这些常量与MediaHeartBeis API结合使用 |
+| MediaHeartbeat 常量 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | 将这些常量与MediaHeartbeat API一起使用 |
 | 标准元数据 | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 使用这些常量可在 MediaHeartbeat API 中附加标准视频/广告元数据 |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. 有关这些方法的更多信息，请参阅下表：
@@ -203,7 +195,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 ## 实施 {#section_dbz_ydz_y2b}
 
-1. **下载Roku库-** 下载 [最新的Roku库。](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
+1. **下载Roku库——下** 载最 [新的Roku库。](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
 
 1. **设置开发环境**
 
