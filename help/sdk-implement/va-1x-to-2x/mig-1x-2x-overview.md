@@ -1,7 +1,7 @@
 ---
 seo-title: 迁移概述
 title: 迁移概述
-uuid: d84f55bc-fa90-45c1-b97 d-cb5 fe58 e80 c0
+uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 translation-type: tm+mt
 source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
 
@@ -17,11 +17,11 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
 * **插件、代理 -**&#x200B;您不再需要实施 Analytics、VideoPlayer 和心率的插件和代理。
 * **配置 -**&#x200B;您不再需要实例化 1.x 插件的配置。
 
-## Benefits of 2.x {#benefits-of-two-x}
+## 2.x的优势 {#benefits-of-two-x}
 
 * All of the public methods are consolidated into the `MediaHeartbeat` class to make implementation easier on developers.
 * All configs are now consolidated into the `MediaHeartbeatConfig` class.
-* 不再需要实例化Analytics、VideoPlayer和HeartBeat插件的配置。You only need to instantiate the `MediaHeartbeat` class with `MediaHeartbeatDelegate` and `MediaHeartbeatConfig` instances. 这是初始化Media Analytics所需的唯一实施。
+* 您不再需要实例化Analytics、VideoPlayer和Heartbeat插件的配置。 您只需将类实例化 `MediaHeartbeat` 为包含 `MediaHeartbeatDelegate` 和实 `MediaHeartbeatConfig` 例。 这是初始化Media Analytics所需的唯一实施。
 
    With the initialization of `MediaHeartbeat`, you can safely delete all of the implementation for Analytics Plugin, VideoPlayer Plugin, and Heartbeat Plugin. 此外，对于将插件数组作为输入的 初始化，也应删除所有现有的实施。您可以在此处查看 1.x 实施与 2.x 实施的并列对比信息：[代码对比：1.x 与 2.x.](./code-comparison-1x-2x.md)
 
