@@ -1,7 +1,7 @@
 ---
 product: Media Analytics
 audience: 最终用户
-user-guide-title: Adobe Analytics for Audio and Video
+user-guide-title: Adobe Analytics for Audio和Video
 translation-type: tm+mt
 source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 
@@ -17,7 +17,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
       + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [从里程碑迁移到自定义链接](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics 中的自定义链接 {#cl-in-aa}
-      + [Custom Link Implementation Guide](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + [自定义链接实施指南](measurement-options/cl-in-aa/cl-impl-guide.md)
 + Introduction to Audio and Video Analytics {#intro-to-ava}
    + [先决条件](intro-to-ava/prereqs.md)
    + 实施路径 {#implementation-paths}
@@ -45,16 +45,16 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
          + [在Roku上跟踪核心回放](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + Track Buffering {#track-buffering}
          + [在Android上跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
-         + [在iOS上跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
-         + [Track Buffering on JavaScript](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
+         + [Track Buffering on iOS](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
+         + [在JavaScript上跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
          + [Chromecast上的跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [在Roku上跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
+         + [Track Buffering on Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + Track Seeking {#track-seeking}
-         + [Track Seeking on Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
-         + [Track Seeking on iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
+         + [在Android上跟踪搜索](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
+         + [在iOS上跟踪搜索](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + [Track Seeking on JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
-         + [Track Seeking on Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Track Seeking on Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
+         + [Chromecast上的跟踪搜索](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
+         + [在Roku上搜索音轨](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + 实施标准元数据{#impl-std-metadata}
          + [在 Android 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [在 iOS 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
@@ -80,16 +80,16 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
       + [概述](sdk-implement/track-chapters/track-chapters-overview.md)
       + [在Android上跟踪章节和细分](sdk-implement/track-chapters/track-chapters-android.md)
       + [在iOS上跟踪章节和细分](sdk-implement/track-chapters/track-chapters-ios.md)
-      + [Track Chapters and Segments on JavaScript](sdk-implement/track-chapters/track-chapters-js.md)
+      + [在JavaScript上跟踪章节和细分](sdk-implement/track-chapters/track-chapters-js.md)
       + [在Chromecast上跟踪章节和细分](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [在Roku上跟踪章节和细分](sdk-implement/track-chapters/track-chapters-roku.md)
    + 跟踪体验质量 {#track-qos}
       + [概述](sdk-implement/track-qos/track-qos-overview.md)
       + [在Android上跟踪体验质量](sdk-implement/track-qos/track-qos-android.md)
-      + [Track Quality of Experience on iOS](sdk-implement/track-qos/track-qos-ios.md)
-      + [Track Quality of Experience on JavaScript](sdk-implement/track-qos/track-qos-js.md)
+      + [在iOS上跟踪体验质量](sdk-implement/track-qos/track-qos-ios.md)
+      + [在JavaScript上跟踪体验质量](sdk-implement/track-qos/track-qos-js.md)
       + [Chromecast的体验跟踪质量](sdk-implement/track-qos/track-qos-chromecast.md)
-      + [Track Quality of Experience on Roku](sdk-implement/track-qos/track-qos-roku.md)
+      + [跟踪Roku上的体验质量](sdk-implement/track-qos/track-qos-roku.md)
    + Track Errors {#track-errors}
       + [概述](sdk-implement/track-errors/track-errors-overview.md)
       + [在Android上跟踪错误](sdk-implement/track-errors/track-errors-android.md)
@@ -114,7 +114,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
       + [验证概述](sdk-implement/validation/validation-overview.md)
       + [测试 1：标准播放](sdk-implement/validation/test1-standard-playback.md)
       + [Test 2: Media Interruption](sdk-implement/validation/test2-media-interrupt.md)
-      + [Test Call Details](sdk-implement/validation/test-call-details.md)
+      + [测试呼叫详细信息](sdk-implement/validation/test-call-details.md)
       + [心率参数描述](sdk-implement/validation/heartbeat-params.md)
       + 调试 {#debugging}
          + [SDK调试](sdk-implement/validation/debugging/sdk-debugging.md)
@@ -124,13 +124,13 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
    + Analytics in OTT Apps {#analytics-with-ott}
       + [跟踪应用程序状态](sdk-implement/analytics-with-ott/track-app-states.md)
       + [跟踪应用程序操作](sdk-implement/analytics-with-ott/track-app-actions.md)
-      + [Set User IDs](sdk-implement/analytics-with-ott/set-user-ids.md)
+      + [设置用户ID](sdk-implement/analytics-with-ott/set-user-ids.md)
       + [OTT 和 Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT 和 Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + 操作指南 {#cookbook}
       + [处理应用程序在播放过程中出现的中断问题](sdk-implement/cookbook/app-interrupts.md)
       + [解决在广告之间出现 main:play 的问题](sdk-implement/cookbook/fix-ad-play-ad.md)
-      + [Resuming Inactive Sessions](sdk-implement/cookbook/resuming-inactive.md)
+      + [恢复非活动会话](sdk-implement/cookbook/resuming-inactive.md)
       + [在 SceneGraph (Roku) 中跟踪](sdk-implement/cookbook/sdk-track-scenegraph.md)
       + [SDK and Launch Differences](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
    + Media Analytics 1.x to 2.x Migration {#va-1x-to-2x}
@@ -163,7 +163,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
       + [时间轴 3 - 章节](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [跟踪下载的内容](media-collection-api/track-downloaded-content.md)
 + 量度和元数据 {#metrics-and-metadata}
-   + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md)
+   + [音频和视频参数](metrics-and-metadata/audio-video-parameters.md)
    + [广告参数](metrics-and-metadata/ad-parameters.md)
    + [章节参数](metrics-and-metadata/chapter-parameters.md)
    + [质量参数](metrics-and-metadata/quality-parameters.md)
