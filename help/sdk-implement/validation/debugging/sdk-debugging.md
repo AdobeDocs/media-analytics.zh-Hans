@@ -1,7 +1,7 @@
 ---
 seo-title: SDK 调试
 title: SDK 调试
-uuid: a5972d87-c593-4b4 f-a56 f-dca6 e25268 e1
+uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
@@ -10,7 +10,7 @@ source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 # SDK 调试{#sdk-debugging}
 
-您可以启用和禁用日志记录。Media SDK在整个媒体跟踪堆栈中提供了一个广泛的跟踪/记录机制。You can enable or disable logging by setting the `debugLogging` flag on the Config object.
+您可以启用和禁用日志记录。 Media SDK在整个媒体跟踪堆栈中提供了广泛的跟踪／记录机制。 You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## 调试日志记录的示例代码
 
@@ -46,7 +46,7 @@ mediaConfig.debugLogging = true;
 this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement); 
 ```
 
-### OTT(Chromecast，Roku)
+### OTT(Chromecast, Roku)
 
 ADBMobile 库通过 `setDebugLogging` 方法提供调试日志记录。对于所有生产应用程序，调试日志记录应设置为 `false`。
 
@@ -71,7 +71,7 @@ ADBMobile.config.setDebugLogging(true)
 
 >[!IMPORTANT]
 >
->自2017年月30日起，Adobe Bloodhound已日落。从 2017 年 5 月 1 日开始，将不再提供其他增强功能以及额外的工程部或 Adobe Expert Care 团队支持。
+>从2017年4月30日起，Adobe Bloodhound已经日落。 从 2017 年 5 月 1 日开始，将不再提供其他增强功能以及额外的工程部或 Adobe Expert Care 团队支持。
 
 ## 日志消息
 
@@ -91,7 +91,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag：**&#x200B;发布日志消息的子组件的名称（通常是类名称）
 * **message：**&#x200B;实际的跟踪消息
 
-您可以使用Media SDK库输出的日志来验证实施。一种有效的方法是在日志中搜索字符串 `#track`. This will highlight all the `track*()` calls made by your application.
+您可以使用Media SDK库输出的日志来验证实施。 一种有效的方法是在日志中搜索字符串 `#track`. This will highlight all the `track*()` calls made by your application.
 
 For instance, this is what the logs filtered for `#track` could look like:
 
