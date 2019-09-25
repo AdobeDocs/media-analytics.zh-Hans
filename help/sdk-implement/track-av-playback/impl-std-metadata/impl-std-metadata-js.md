@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: 在 JavaScript 中实施标准元数据
 title: 在 JavaScript 中实施标准元数据
-uuid: 523d29e3-0a62-40d7-ac74-da645024 cdb
+uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 # 在 JavaScript 中实施标准元数据{#implement-standard-metadata-on-javascript}
 
-## 元数据常量
+## 元数据常数
 
 | 常量名称 | 描述   |
 | --- | --- |
