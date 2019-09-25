@@ -14,15 +14,15 @@ source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 >
 >下面的说明为所有 2.x SDK 实施提供了指南。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 实施QOS
+## Implemement QOS
 
-1. 识别媒体播放期间比特率的更改时间，并使用 `mediaUpdateQoS` API更新Media SDK上的QoS信息。
+1. Identify when the bitrate changes during media playback, and use the `mediaUpdateQoS` API to update the QoS info on the Media SDK.
 
    QoSObject 变量：
 
    >[!TIP]
    >
-   >只有在跟踪QoS时，才需要这些变量。
+   >These variables are only required if you are tracking QoS.
 
    | 变量 | 描述 | 必需 |
    | --- | --- | :---: |
