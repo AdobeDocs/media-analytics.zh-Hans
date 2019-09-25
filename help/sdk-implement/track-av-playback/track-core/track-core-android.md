@@ -1,7 +1,7 @@
 ---
 seo-title: 在 Android 中跟踪核心播放
 title: 在 Android 中跟踪核心播放
-uuid: ab fab95-76ed-4ae6ae6-aedb-2e66 eg7607
+uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -11,9 +11,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # 在 Android 中跟踪核心播放{#track-core-playback-on-android}
 
 >[!IMPORTANT]
->此文档涵盖SDK的版本2.x跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载适用于 Android 的 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
+>本文档涵盖SDK版本2.x中的跟踪。 如果您实施的是 1.x 版本的 SDK，可以在此处下载适用于 Android 的 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
 
-1. **初始跟踪设置**
+1. **Initial tracking setup**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -24,8 +24,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | 媒体名称 | 是 |
    | `mediaId` | 媒体唯一标识符 | 是 |
    | `length` | 媒体长度 | 是 |
-   | `streamType` | Stream type (see _StreamType constants_ below) | 是 |
-   | `mediaType` | Media type (see _MediaType constants_ below) | 是 |
+   | `streamType` | 流类型(请参阅 _下面的StreamType常量_ ) | 是 |
+   | `mediaType` | 媒体类型(请参阅 _下面的MediaType常量_ ) | 是 |
 
    **`StreamType`常量：**
 
@@ -52,7 +52,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **附加元数据**
 
-   (可选)通过上下文数据变量将标准和/或自定义元数据对象附加到跟踪会话。
+   Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
    * **标准元数据**
 
@@ -66,7 +66,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       * 请在此处查看可用视频元数据的完整集合：[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)
    * **自定义元数据**
 
-      为自定义变量创建字典，并填充此媒体的数据。例如：
+      为自定义变量创建字典并填充此媒体的数据。 例如：
 
       ```java
       HashMap<String, String> mediaMetadata =  
@@ -77,9 +77,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       ```
 
 
-1. **跟踪开始播放的目的**
+1. **跟踪开始播放的意图**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance. 例如：
+   要开始跟踪媒体会话，请调用 `trackSessionStart` 媒体心跳实例。 例如：
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
@@ -89,11 +89,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >第二个值是您在步骤中创建的自定义媒体元数据对象名称。
+   >The second value is the custom media metadata object name that you created in step 2.
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 跟踪用户的播放意图，而不是播放开始。此 API 用于加载媒体数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
+   >`trackSessionStart` 跟踪用户的播放意图，而不是播放的开始。 此 API 用于加载媒体数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
 
    >[!NOTE]
    >
@@ -110,7 +110,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    }
    ```
 
-1. **跟踪播放完成**
+1. **跟踪播放的完成情况**
 
    Identify the event from the media player for the completion of the media playback, where the user has watched the content until the end, and call `trackComplete`:
 
@@ -134,11 +134,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` 标记媒体跟踪会话的结束。如果会话成功观看至结束（用户一直观看内容至结尾），请确保先调用 `trackComplete`，之后再调用 `trackSessionEnd`。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new media tracking session.
+   >`trackSessionEnd` 标记媒体跟踪会话的结束。 如果会话成功观看至结束（用户一直观看内容至结尾），请确保先调用 `trackComplete`，之后再调用 `trackSessionEnd`。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new media tracking session.
 
-1. **跟踪所有可能的暂停场景**
+1. **跟踪所有可能的暂停方案**
 
-   Identify the event from the media player for media pause and call `trackPause`:
+   识别媒体播放器中的事件以进行媒体暂停和呼叫 `trackPause`:
 
    ```java
    public void onVideoPause(Observable observable, Object data) {  
@@ -146,7 +146,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    }
    ```
 
-   **暂停场景**
+   **暂停方案**
 
    Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. 以下方案均要求应用程序调用 `trackPause()`()：
 
@@ -166,7 +166,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >这可能与在步骤中使用的相同。Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the media playback resumes.
+   >这可能是步骤4中使用的同一事件源。 Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the media playback resumes.
 
 有关跟踪核心播放的其他信息，请参阅以下内容：
 
