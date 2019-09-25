@@ -1,7 +1,7 @@
 ---
 seo-title: 时间轴 3 - 章节
 title: 时间轴 3 - 章节
-uuid: 41b52072-e1 cd-4dda-9253-31f3408924 f6
+uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -13,7 +13,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 ## VOD、前置广告、暂停、缓冲、观看到内容的结尾
 
 
-以下示意图说明了用户操作的播放头时间线和相应的时间线。下面介绍了每个操作及其附带请求的详细信息。
+下图说明了播放头时间线和用户操作的对应时间线。 每项操作及其随附请求的详细信息如下所示。
 
 
 ![](assets/va_api_content_3.png)
@@ -25,7 +25,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 ## 操作详细信息
 
 
-### Action 1 - Start session {#Action-1}
+### 操作1 —— 开始会话 {#Action-1}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -33,9 +33,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **实施详细信息**
 
-This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 播放器状态不是“正在播放”，而是“正在启动”。[强制会话参数](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的 `params` 映射中。在后端，此调用会生成一个 Adobe Analytics 启动调用。
+此呼叫 _表示用户播放视频的意向_ 。 It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 播放器状态不是“正在播放”，而是“正在启动”。[强制会话参数](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的 `params` 映射中。在后端，此调用会生成一个 Adobe Analytics 启动调用。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -60,7 +60,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 2 - Ping timer starts {#Action-2}
+### 操作2 - Ping定时器开始 {#Action-2}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -68,9 +68,9 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 **实施详细信息**
 
-启动ping定时器。然后，首次ping事件应在有前置广告时触发秒，否则为10秒。
+启动ping计时器。 如果有预先播放的广告，则第一个ping事件应触发1秒，否则触发10秒。
 
-### Action 3 - Ad break start {#Action-3}
+### 操作3 —— 广告中断开始 {#Action-3}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -80,7 +80,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 只能在广告时间期间跟踪广告。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -95,7 +95,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### 操作4 —— 广告开始 {#Action-4}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -105,7 +105,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 开始跟踪第一个前置广告，其时长为 15 秒。包括含此 `adStart` 的自定义元数据。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -134,7 +134,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### 操作5 —— 广告ping {#Action-5}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -142,9 +142,9 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 **实施详细信息**
 
-每秒ping后端。(随后的广告转换不会以简单的方式显示。)
+每1秒Ping后端。 （后续的和ping不会为简便而显示。）
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -156,7 +156,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### 操作6 —— 广告完成 {#Action-6}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -166,7 +166,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 跟踪第一个前置广告的结束。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -178,7 +178,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 7 - Ad start {#Action-7}
+### 操作7 —— 广告开始 {#Action-7}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -188,7 +188,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 跟踪第二个前置广告的开始，其时长为 7 秒。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -213,7 +213,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 8 - Ad pings {#Action-8}
+### 操作8 —— 广告ping {#Action-8}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -221,9 +221,9 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 **实施详细信息**
 
-每秒ping后端。(随后的广告转换不会以简单的方式显示。)
+每1秒Ping后端。 （后续的和ping不会为简便而显示。）
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -235,7 +235,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 9 - Ad complete {#Action-9}
+### 操作9 —— 广告完成 {#Action-9}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -245,7 +245,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 跟踪第二个前置广告的结束。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -257,7 +257,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 10 - Ad break complete {#Action-10}
+### 操作10 —— 广告中断完成 {#Action-10}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -267,7 +267,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 广告时间结束。在整个广告时间内，播放状态始终为“正在播放”。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -279,7 +279,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 11 - Play content {#Action-11}
+### 操作11 —— 播放内容 {#Action-11}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -289,7 +289,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 在 `adBreakComplete` 事件后，使用 `play` 事件将播放器置于“正在播放”状态。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -301,7 +301,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 12 - Chapter start {#Action-12}
+### 操作12 —— 章节开始 {#Action-12}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -311,7 +311,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 播放事件后，跟踪第一个章节的开始。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -326,7 +326,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 13 - Ping {#Action-13}
+### 操作13 - Ping {#Action-13}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -336,7 +336,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -348,7 +348,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 14 - Buffer start {#Action-14}
+### 操作14 —— 缓冲区开始 {#Action-14}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -356,9 +356,9 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 **实施详细信息**
 
-跟踪移动到“buffering”状态。
+跟踪移动到“缓冲”状态。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -370,7 +370,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 15 - Buffer end (play) {#Action-15}
+### 操作15 —— 缓冲区结束（播放） {#Action-15}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -378,9 +378,9 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 **实施详细信息**
 
-缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。您必须发送来自缓冲的另一个跟踪播放事件。**在将“bufferEnd”称为“bufferEnd”之后，该`play``bufferStart`调用将** 调用后端，因此 `bufferEnd` 无需活动。
+缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。您必须发送来自缓冲的另一个跟踪播放事件。**在`play`向后端`bufferStart`输入“bufferEnd”调用后的调用，** 因此不需要事 `bufferEnd` 件。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -392,7 +392,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 16 - Ping {#Action-16}
+### 操作16 - Ping {#Action-16}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -402,7 +402,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -414,7 +414,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 17 - Chapter end {#Action-17}
+### 操作17 —— 章结束 {#Action-17}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -424,7 +424,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 第一个章节结束，正好在第二个广告时间之前。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -436,7 +436,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 18 - Ad break start {#Action-18}
+### 操作18 —— 广告休息开始 {#Action-18}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -446,7 +446,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 持续时间为 8 秒的中置广告：发送 `adBreakStart`。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -461,7 +461,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 19 - Ad start {#Action-19}
+### 操作19 —— 广告开始 {#Action-19}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -471,7 +471,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 跟踪中置广告。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -496,7 +496,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 20 - Ad Pings {#Action-20}
+### 操作20 —— 广告Ping {#Action-20}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -504,9 +504,9 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 **实施详细信息**
 
-每秒ping后端。(随后的广告转换不会以简单的方式显示。)
+每1秒Ping后端。 （后续的和ping不会为简便而显示。）
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -518,7 +518,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 21 - Ad complete {#Action-21}
+### 操作21 —— 广告完成 {#Action-21}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -528,7 +528,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 中置广告完成。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -540,7 +540,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 22 - Ad break complete {#Action-22}
+### 操作22 —— 广告分时段完成 {#Action-22}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -550,7 +550,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 广告时间结束。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -562,7 +562,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 23 - Chapter start {#Action-23}
+### 操作23 —— 章节开始 {#Action-23}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -572,7 +572,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -587,7 +587,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 24 - Ping {#Action-24}
+### 操作24 - Ping {#Action-24}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -597,7 +597,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -609,7 +609,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 25 - Pause {#Action-25}
+### 操作25 —— 暂停 {#Action-25}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -617,9 +617,9 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 **实施详细信息**
 
-用户动作将播放状态移动到“暂停”。
+用户操作将播放状态移至“已暂停”。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -631,7 +631,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 26 - Ping {#Action-26}
+### 操作26 - Ping {#Action-26}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -641,7 +641,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 每 10 秒对后端执行一次 Ping 操作。播放器仍处于“正在缓冲”状态，用户一直停留在 20 秒的内容中。正在运转中...
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -653,17 +653,17 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 27 - Play content {#Action-27}
+### 操作27 —— 播放内容 {#Action-27}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 用户按下了“播放”以恢复主内容 | 74 | 31 | `/api/v1/sessions/{sid}/events` |
 
-**实施详细信息**
+**Implementation details**
 
 将播放状态转变为“正在播放”。**`play`后的`pauseStart`调用一定会对后端进行“”调用**，因此不需要 `resume`resume 事件。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -675,7 +675,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 28 - Ping {#Action-28}
+### 操作28 - Ping {#Action-28}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -685,7 +685,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -697,17 +697,17 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 29 - Chapter end {#Action-29}
+### 行动29 —— 章结束 {#Action-29}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 章节 2 结束 | 87 | 44 | `/api/v1/sessions/{sid}/events` |
 
-**实施详细信息**
+**Implementation details**
 
 跟踪第二个和最后一个章节的结束
 
-**请求主体示例**
+**Sample request body**
 
 ```
 {
@@ -719,7 +719,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 30 - Session complete {#Action-30}
+### 操作30 —— 会话完成 {#Action-30}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -729,7 +729,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 将 `sessionComplete` 发送到后端，以表明用户完成了对整个内容的观看。
 
-**请求主体示例**
+**示例请求主体**
 
 ```
 {
@@ -744,5 +744,5 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 
 >[!NOTE]
 >
->**不寻找事件？-** 媒体收集 API 中没有明确支持 `seekStart` 或 `seekComplete` 事件。这是因为当最终用户正在推移时，某些播放器会生成大量的此类事件，并且数百个用户可能会轻易地限制后端服务的网络带宽。Adobe 通过基于设备时间戳（而不是播放头位置）计算心率持续时间，来为搜寻事件提供明确的支持。
+>**无搜寻事件？ -** 媒体收集 API 中没有明确支持 `seekStart` 或 `seekComplete` 事件。这是因为当最终用户正在推移时，某些播放器会生成大量的此类事件，并且数百个用户可能会轻易地限制后端服务的网络带宽。Adobe 通过基于设备时间戳（而不是播放头位置）计算心率持续时间，来为搜寻事件提供明确的支持。
 
