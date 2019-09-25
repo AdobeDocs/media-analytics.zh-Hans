@@ -1,7 +1,7 @@
 ---
 seo-title: 在 iOS 中跟踪缓冲
 title: 在 iOS 中跟踪缓冲
-uuid: 4f4db23a-489b-4b41-bb6 e-393ec64 d52 a2
+uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `ADBMediaHeartbeatEventBufferStart` | 用于跟踪缓冲开始事件的常量 |
 | `ADBMediaHeartbeatEventBufferComplete` | 用于跟踪缓冲结束事件的常量 |
 
-## 实施缓冲
+## 实现缓冲
 
 1. 监听媒体播放器中的播放缓冲事件，并在发出缓冲开始事件通知时，使用 `BufferStart` 事件跟踪缓冲：
 
