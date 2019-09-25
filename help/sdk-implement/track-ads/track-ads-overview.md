@@ -1,7 +1,7 @@
 ---
 seo-title: 概述
 title: 概述
-uuid: 1607798b-c6 ef-4d60-8e40-e958 c345 b09 c
+uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,17 +12,17 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->以下说明为使用2.x SDK提供了实施指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
+>以下说明为使用2.x SDK实施提供了指导。 如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
 
-广告播放包括跟踪广告时间、广告开始、广告结束和广告跳过。使用媒体播放器的API识别关键播放器事件并填充所需和可选的广告变量。请参阅此处全面的元数据列表： [广告参数。](/help/metrics-and-metadata/ad-parameters.md)
+广告播放包括跟踪广告时间、广告开始、广告结束和广告跳过。使用媒体播放器的API识别关键播放器事件并填充所需的和可选的广告变量。 请在此处查看完整的元数据列表：广 [告参数。](/help/metrics-and-metadata/ad-parameters.md)
 
-## Player活动 {#player-events}
+## 播放器事件 {#player-events}
 
 
-### 在广告分页开始时
+### 广告中断开始
 
 >[!NOTE]
->包括预滚动
+>包括预卷
 
 * 为广告时间创建一个 `adBreak` 对象实例。例如：`adBreakObject`。
 
@@ -100,9 +100,9 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->确保在广告播放()期间不增加内容播放器播放头(`l:event:playhead`)`s:asset:type=ad`。如果您这样做，内容逗留时间指标会受到负面影响。
+>确保在广告播放()期间不增加内容播放`l:event:playhead`器播放头(`s:asset:type=ad`)。 如果您这样做，则“内容停留时间”量度将受到不利影响。
 
-以下示例代码将JavaScript2.x SDK用于HTML媒体播放器。
+The following sample code utilizes the JavaScript 2.x SDK for an HTML5 media player.
 
 ```js
 /* Call on ad break start */ 
