@@ -1,7 +1,7 @@
 ---
 seo-title: 先决条件
 title: 先决条件
-uuid: 4c0b37f3-8615-4cc0-b9 c9-eeb029067064
+uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,7 +10,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # 先决条件{#prerequisites}
 
-## Decisions {#decision}
+## 决策 {#decision}
 
 在开始实施跟踪之前，您需要事先确定哪种实施最适用于您的具体情况：
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 任务 {#prereq-tasks}
 
-*对于Media Analytics* 实施，在开始之前必须完成以下任务：
+对于 *Media Analytics实施* ，以下是您在开始之前必须完成的任务：
 
 1. **启用 Experience Cloud。**
 
@@ -36,7 +36,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >要参加Adobe Experience Cloud Device Co-op，需要Experience Cloud ID服务。
+   >要参与Adobe Experience Cloud Device Co-op，需要Experience Cloud ID服务。
 
    如果您还没有实施 ID 服务，现在是时候开始考虑迁移策略了。For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
