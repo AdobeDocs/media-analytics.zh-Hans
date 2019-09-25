@@ -1,7 +1,7 @@
 ---
-seo-title: 代码比较1.x至2.x
-title: 代码比较1.x至2.x
-uuid: f0a1660-2100-446d-ab75-afdf966478 b3
+seo-title: Code comparison 1.x to 2.x
+title: 代码比较1.x和2.x
+uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,14 +14,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **配置 API 的更改：**
 
-* `AdobeHeartbeatPluginConfig.sdk` - 重命名为 `MediaConfig.appVersion`
-* `MediaHeartbeatConfig.playerName` - 现在而 `MediaHeartbeatConfig` 不是 `VideoPlayerPluginDelegate`
+* `AdobeHeartbeatPluginConfig.sdk` - Renamed to `MediaConfig.appVersion`
+* `MediaHeartbeatConfig.playerName` -现在可以通过，而 `MediaHeartbeatConfig` 不是 `VideoPlayerPluginDelegate`
 * （仅限 JavaScript）：`AppMeasurement` 实例 - 现在通过 `MediaHeartbeat` 构造函数发送。
 
 **配置属性更改：**
 
-* `sdk` - 重命名为 `appVersion`
-* `publisher` - 删除；使用Experience Cloud组织ID代替publisher
+* `sdk` - Renamed to `appVersion`
+* `publisher` -删除；Experience Cloud组织ID将改为作为发布者
 * `quiteMode` - 已删除
 
 **指向1.x和2.x示例播放器的链接：**
@@ -29,7 +29,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 * [1.x 播放器示例 ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
 * [2.x 播放器示例 ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
-以下部分提供1.x和2.x之间的代码比较，包括初始化、核心播放、广告回放、章节回放以及一些其他事件。
+以下各节提供1.x和2.x之间的代码比较，包括初始化、核心播放、广告播放、章节播放和一些其他事件。
 
 ## VHL 代码对比：初始化
 
@@ -42,7 +42,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `AdobeAnalyticsPlugin()` |  |
 | `HeartbeatPlugin()` |  |
 
-#### Video player plugin initialization (1.x) {#plugin-init-1.x}
+#### 视频播放器插件初始化(1.x) {#plugin-init-1.x}
 
 ```js
 this._playerPlugin = new VideoPlayerPlugin( new SampleVideoPlayerPluginDelegate(this._player));
@@ -71,7 +71,7 @@ configData.debugLogging = true;
 this._heartbeat.configure(configData);
 ```
 
-#### Media Heartbeat initialization (2.x) {#mh-init-2.x}
+#### 媒体心跳初始化(2.x) {#mh-init-2.x}
 
 ```js
 var mediaConfig = new MediaHeartbeatConfig();
@@ -85,7 +85,7 @@ mediaConfig.appVersion = Configuration.HEARTBEAT.SDK;
 this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this._player), mediaConfig, appMeasurement);
 ```
 
-### 委托代表
+### Delegates
 
 | 1.x API | 2.x API |
 | --- | --- |
@@ -98,7 +98,7 @@ this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this
 | `VideoPlayerPluginDelegate().get.onError` |  |
 | `AdobeAnalyticsPluginDelegate()` |  |
 
-#### VideoPlayerPluginDelegate (1.x) {#player-plugin-delegate-1.x}
+#### VideoPlayerPluginDelegate(1.x) {#player-plugin-delegate-1.x}
 
 ```js
 $.extend(SampleVideoPlayerPluginDelegate.prototype, VideoPlayerPluginDelegate.prototype);
@@ -128,7 +128,7 @@ SampleVideoPlayerPluginDelegate.prototype.getQoSInfo = function() {
 };
 ```
 
-#### AdobeAnalyticsPluginDelegate (1.x) {#analytics-plugin-delegate-1.x}
+#### AdobeAnalyticsPluginDelegate(1.x) {#analytics-plugin-delegate-1.x}
 
 ```js
 $.extend(SampleAdobeAnalyticsPluginDelegate.prototype, AdobeAnalyticsPluginDelegate.prototype);
@@ -140,7 +140,7 @@ SampleAdobeAnalyticsPluginDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-#### HeartbeatDelegate (1.x) {#hb-delegate-1.x}
+#### HeartbeatDelegate(1.x) {#hb-delegate-1.x}
 
 ```js
 $.extend(SampleHeartbeatDelegate.prototype, HeartbeatDelegate.prototype);
@@ -152,7 +152,7 @@ SampleHeartbeatDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-#### MediaHeartbeatDelegate (2.x) {#mh-delegate-2.x}
+#### MediaHeartbeatDelegate(2.x) {#mh-delegate-2.x}
 
 ```js
 ADB.core.extend(SampleMediaHeartbeatDelegate.prototype, MediaHeartbeatDelegate.prototype);
@@ -181,7 +181,7 @@ this._mediaHeartbeat = new MediaHeartbeat(new SampleMediaHeartbeatDelegate(this.
 | `VideoPlayerPluginDelegate.trackVideoLoad()` | `MediaHeartbeat.createMediaObject()` |
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### Session Start (1.x) {#session-start-1.x}
+#### 会话开始(1.x) {#session-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -198,7 +198,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### Session Start (2.x) {#session-start-2.x}
+#### 会话开始(2.x) {#session-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -216,7 +216,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | `VideoMetadataKeys()` | `MediaHeartbeat.createMediaObject()` |
 | `AdobeAnalyticsPlugin.setVideoMetadata()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### Standard Metadata (1.x) {#std-meta-1.x}
+#### 标准元数据(1.x) {#std-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -238,7 +238,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-#### Standard Metadata (2.x) {#std-meta-2.x}
+#### 标准元数据(2.x) {#std-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -271,7 +271,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | `VideoMetadataKeys()` | `MediaHeartbeat.createMediaObject()` |
 | `AdobeAnalyticsPlugin.setVideoMetadata()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### Custom Metadata (1.x) {#custom-meta-1.x}
+#### 自定义元数据(1.x) {#custom-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -285,7 +285,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-#### Custom Metadata (2.x) {#custom-meta-2.x}
+#### 自定义元数据(2.x) {#custom-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -305,13 +305,13 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 >Instead of setting the Custom Video Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Video Metadata is set through the `MediaHeartbeat.trackSessionStart()` API.
 
 
-### 回放
+### Playback
 
 | 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackPlay()` | `MediaHeartbeat.trackPlay()` |
 
-#### Playback (1.x) {#playback-1.x}
+#### 播放(1.x) {#playback-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekStart = function() { 
@@ -320,7 +320,7 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 };
 ```
 
-#### Playback (2.x) {#playback-2.x}
+#### 播放(2.x) {#playback-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekStart = function() { 
@@ -335,7 +335,7 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackPause()` | `MediaHeartbeat.trackPausel()` |
 
-#### Pause (1.x) {#pause-1.x}
+#### 暂停(1.x) {#pause-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onPause = function() { 
@@ -344,7 +344,7 @@ VideoAnalyticsProvider.prototype._onPause = function() {
 };
 ```
 
-#### Pause (2.x) {#pause-2.x}
+#### 暂停(2.x) {#pause-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -359,7 +359,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackSeekComplete()` | `MediaHeartbeat.`<br/>  `trackEvent(MediaHeartbeat.Event.SeekComplete)` |
 
-#### Seeking (1.x) {#seek-1.x}
+#### 搜索(1.x) {#seek-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -368,7 +368,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 };
 ```
 
-#### Seeking (2.x) {#seek-2.x}
+#### 搜索(2.x) {#seek-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -383,7 +383,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBufferStart()` | `MediaHeartbeat.trackEvent(`<br/>  `MediaHeartbeat.Event.BufferStart)` |
 
-#### Buffer Start (1.x) {#buffer-start-1.x}
+#### 缓冲区开始(1.x) {#buffer-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() { 
@@ -392,7 +392,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 };
 ```
 
-#### Buffer Start (2.x) {#buffer-start-2.x}
+#### 缓冲区开始(2.x) {#buffer-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() { 
@@ -407,7 +407,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBufferComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.BufferComplete)` |
 
-#### Buffer Complete (1.x) {#buffer-complete-1.x}
+#### 缓冲区完成(1.x) {#buffer-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -416,7 +416,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 };
 ```
 
-#### Buffer Complete (2.x) {#buffer-complete-2.x}
+#### 缓冲区完成(2.x) {#buffer-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -431,7 +431,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackComplete()` | `MediaHeartbeat.trackComplete()` |
 
-#### Playback Complete (1.x) {#playback-complete-1.x}
+#### 播放完成(1.x) {#playback-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -442,7 +442,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 };
 ```
 
-#### Playback Complete (2.x) {#playback-complete-2.x}
+#### 播放完成(2.x) {#playback-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -462,7 +462,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | `VideoPlayerPluginDelegate.getAdInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakStart)` |
 |  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
 
-#### Ad Start (1.x) {#ad-start-1.x}
+#### 广告开始(1.x) {#ad-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -477,7 +477,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### Ad Start (2.x) {#ad-start-2.x}
+#### 广告开始(2.x) {#ad-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -522,7 +522,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### Standard Ad Metadata (2.x) {#ad-meta-2.x}
+#### 标准广告元数据(2.x) {#ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -644,7 +644,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 };
 ```
 
-#### Ad Complete (2.x) {#ad-complete-2.x}
+#### 广告完成(2.x) {#ad-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() { 
@@ -663,7 +663,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.createChapterObject` |
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### Chapter Start (1.x) {#chap-start-1.x}
+#### 第一章开始(1.x) {#chap-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -814,7 +814,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 | `VideoPlayerPlugin.trackVideoLoad()` |  |
 
-#### Video Resume (1.x) {#video-resume-1.x}
+#### 视频继续(1.x) {#video-resume-1.x}
 
 ```js
 this._videoInfo.resumed=true;
@@ -827,7 +827,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### Video Resume (2.x) {#video-resume-2.x}
+#### 视频继续(2.x) {#video-resume-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
