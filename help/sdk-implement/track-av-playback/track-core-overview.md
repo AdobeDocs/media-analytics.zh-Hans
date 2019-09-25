@@ -1,7 +1,7 @@
 ---
 seo-title: 跟踪概述
 title: 跟踪概述
-uuid: 7b8e2f76-bc4 e-4721-8933-3e4453 b01788
+uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,54 +12,54 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->此文档涵盖SDK的版本2.x跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
+>本文档涵盖SDK版本2.x中的跟踪。 如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
 
-## Player事件
+## 播放器事件
 
 跟踪核心播放包括跟踪媒体载入、媒体开始、媒体暂停和媒体结束。虽然跟踪缓冲和跟踪搜寻并不是强制性的，但它们也是用于跟踪内容播放的核心组件。在媒体播放器 API 中，识别与 Media SDK 跟踪调用相对应的播放器事件，对事件处理程序进行编码以调用跟踪 API，并填充必需和可选的变量。
 
-### 在媒体加载时
+### 媒体加载时
 
 * 创建媒体对象
 * 填充元数据
-* 调用 `trackSessionStart`；例如： `trackSessionStart(mediaObject, contextData)`
+* 致电 `trackSessionStart`;例如： `trackSessionStart(mediaObject, contextData)`
 
-### 在媒体开始时
+### On media start
 
 * 调用 `trackPlay`
 
-### 暂停/恢复
+### On pause/resume
 
 * 调用 `trackPause`
-* `trackPlay`_恢复回放时调用_
+* Call `trackPlay`   _when playback resumes_
 
-### 在媒体完成时
+### On media complete
 
 * 调用 `trackComplete`
 
-### 在媒体中止上
+### 介质中止时
 
 * 调用 `trackSessionEnd`
 
-### 当划动开始时
+### 擦洗开始时
 
 * 调用 `trackEvent(SeekStart)`
 
-### 当划动结束时
+### When scrubbing ends
 
 * 调用 `trackEvent(SeekComplete)`
 
-### 缓冲开始时
+### When buffering starts
 
 * 调用 `trackEvent(BufferStart);`
 
-### 缓冲结束时
+### 当缓冲结束时
 
 * 调用 `trackEvent(BufferComplete);`
 
 >[!TIP]
 >
->播放头位置设置为设置和配置代码的一部分。有关详细信息， `getCurrentPlayheadTime`请参阅 [概述：一般实施准则。](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>播放头位置被设置为设置和配置代码的一部分。 有关详细信息，请 `getCurrentPlayheadTime`参阅 [概述：一般实施指南。](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## 实施 {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -75,7 +75,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
    | `streamType` | 流类型 | 是 |
    | `mediaType` | 媒体类型（音频或视频内容） | 是 |
 
-   **`StreamType`常量：**
+   **`StreamType`constants:**
 
    | 常量名称 | 描述 |
    |---|---|
@@ -86,7 +86,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
    | `AUDIOBOOK` | 有声读物的流类型。 |
    | `PODCAST` | 播客的流类型。 |
 
-   **`MediaType`常量：**
+   **`MediaType`constants:**
 
    | 常量名称 | 描述 |
    |---|---|
@@ -101,7 +101,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
       >[!NOTE]
       >
-      >将标准元数据对象附加到媒体对象是可选的。
+      >Attaching the standard metadata object to the media object is optional.
 
       实例化一个标准元数据对象，填充所需变量，并在媒体心率对象中设置该元数据对象。
 
@@ -113,7 +113,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 跟踪用户的播放意图，而不是播放开始。此 API 用于加载数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
+   >`trackSessionStart` 跟踪用户的播放意图，而不是播放的开始。 此 API 用于加载数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
 
    >[!NOTE]
    >
@@ -127,7 +127,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` 标记跟踪会话的结尾。如果会话成功观看至结束（用户一直观看内容至结尾），请确保先调用 `trackComplete`，之后再调用 `trackSessionEnd`。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` 标记跟踪会话的结束。 如果会话成功观看至结束（用户一直观看内容至结尾），请确保先调用 `trackComplete`，之后再调用 `trackSessionEnd`。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **跟踪所有可能的暂停方案 -**&#x200B;识别媒体播放器中的暂停事件并调用 `trackPause`。
 
@@ -142,7 +142,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!TIP]
    >
-   >这可能与在步骤中使用的相同。Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >这可能是步骤4中使用的同一事件源。 Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 1. 监听媒体播放器中的播放搜寻事件。在发出搜寻开始事件通知时，使用 `SeekStart` 事件跟踪搜寻。
 1. 在从媒体播放器发出搜寻结束通知时，使用 `SeekComplete` 事件跟踪搜寻的结束。
