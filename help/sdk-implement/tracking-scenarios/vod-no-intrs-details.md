@@ -1,7 +1,7 @@
 ---
 seo-title: 不含广告的 VOD 播放
 title: 不含广告的 VOD 播放
-uuid: ee2a1b79-2c2f-42e1-8e81-b62 bdd0 d8 cb
+uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 translation-type: tm+mt
 source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
@@ -17,13 +17,13 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 | 触发器 | 心率方法 | 网络调用 | 注释   |
 |---|---|---|---|
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 这可以是用户点击“播放”或自动播放事件。 |
-| 媒体的第一帧 | `trackPlay` | 心率内容播放 | 此方法会触发计时器，并且从此刻起，将在播放期间每 10 秒发送一次心率。 |
+| First frame of the media | `trackPlay` | 心率内容播放 | 此方法会触发计时器，并且从此刻起，将在播放期间每 10 秒发送一次心率。 |
 | 内容播放 |  | 内容心率 |  |
 | 内容结束 | `trackComplete` | 心率内容结束 | *结束*&#x200B;表示到达播放头的结尾。 |
 
 ## 参数 {#section_45D7B10031524411B91E2C569F7818B0}
 
-Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. Adobe使用许多参数填充各种媒体报表，但下表中列出了最重要的参数：
+Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. There are many parameters that Adobe uses to populate the various media reports, but only the most important parameters are listed in the following table:
 
 ### 心率内容开始
 
@@ -31,10 +31,10 @@ Many of the same values that you see on Heartbeat Content Start Calls are also s
 |---|---|---|
 | `s:sc:rsid` | &lt;您的 Adobe 报表包 ID&gt; |  |
 | `s:sc:tracking_server` | &lt;您的 Analytics 跟踪服务器 URL&gt; |  |
-| `s:user:mid` | 必须设置 | Should match the mid value on the `Adobe Analytics Content Start` call. |
+| `s:user:mid` | 必须设置 | Should match the mid value on the  call.`Adobe Analytics Content Start` |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;您的媒体名称&gt; |  |
+| `s:asset:media_id` | &lt;Your Media Name&gt; |  |
 | `s:meta:*` | 可选 | 在媒体上设置的自定义元数据。 |
 
 ## 心率内容播放 {#section_2ABBD51D3A6D45ABA92CC516E414417A}
@@ -48,14 +48,14 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 
 ## 内容心率 {#section_3B5945336E464160A94518231CEE8F53}
 
-在媒体播放过程中，计时器每10秒至少发送一次心跳。这些心率包含有关播放、广告、缓冲等内容的信息。本文档不包含各个心率的确切内容，但关键的问题在于，在继续播放时，将会持续触发心率。
+During media playback, a timer sends at least one heartbeat every 10 seconds. 这些心率包含有关播放、广告、缓冲等内容的信息。本文档不包含各个心率的确切内容，但关键的问题在于，在继续播放时，将会持续触发心率。
 
 在内容心率中，查找以下参数：
 
 | 参数 | 值 | 注释   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;播放头位置&gt;例如，50,60,70 | 此参数反映播放头的当前位置。 |
+| `l:event:playhead` | &lt;playhead position&gt; e.g., 50,60,70 | 此参数反映播放头的当前位置。 |
 
 ## 心率内容结束 {#section_33BCC4C3181940C39446A57C25D82179}
 
