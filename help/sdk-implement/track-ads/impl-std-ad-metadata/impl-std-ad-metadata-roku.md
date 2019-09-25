@@ -12,9 +12,9 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 # 在 Roku 中实施标准广告元数据{#implement-standard-ad-metadata-on-roku}
 
-## 实施标准广告元数据
+## 实施标准和元数据
 
-对于标准广告元数据，使用平台密钥创建标准广告元数据密钥对的字典：
+对于标准广告元数据，请使用适用于您的平台的键创建标准广告元数据键值对的字典：
 
 ```
 standardAdMetadata = {} 
