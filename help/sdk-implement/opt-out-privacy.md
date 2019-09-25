@@ -16,17 +16,17 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
 * **移动设备应用程序 -** VA 库遵循 `AdobeMobile` 库的隐私和选择禁用设置。要选择禁用跟踪，您需要使用 `AdobeMobile` 库。有关 `AdobeMobile` 库的选择禁用和隐私设置的更多信息，请参阅[选择禁用和隐私设置](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html)。
 * **JavaScript/浏览器应用程序 -** VA 库遵循 `VisitorAPI` 隐私和选择禁用设置。要选择禁用跟踪，您需要在访客 API 服务中选择禁用。For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* **OTT Apps(Chromecast，Roku)-** OTT SDK提供一般数据保护规定(GDPR)-就绪API，允许您设置 `opt` 用于数据收集和传输的状态标记，并检索本地存储的标识。
+* **OTT Apps(Chromecast, Roku)**`opt` -OTT SDK提供符合一般数据保护规定(GDPR)的API，允许您为数据收集和传输设置状态标志，并检索本地存储的身份。
 
    >[!NOTE]
    >
-   >如果隐私状态设置为退出，则也会禁用媒体心跳跟踪调用。
+   >Media heartbeat tracking calls are also disabled if the privacy status is set to opt-out.
 
    您可以使用以下设置来控制是否在特定设备上发送 Analytics 数据：
 
    * The `privacyDefault` setting in the `ADBMobile.json` config file. 此设置控制初始设置，除非在代码中进行更改，否则将一直保留初始设置。
 
-   * `ADBMobile().setPrivacyStatus()` 方法。
+   * The  method.`ADBMobile().setPrivacyStatus()`
 
       * **选择禁用:**
 
@@ -43,7 +43,7 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
             ```
          >[!IMPORTANT]
          >
-         >当用户选择退出跟踪时，将清除所有保留的设备数据和ID，直到用户重新选择为止。
+         >当用户退出跟踪时，将清除所有保留的设备数据和ID，直到用户返回。
 
       * **重新选择启用：**
 
@@ -79,7 +79,7 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
 >[!IMPORTANT]
 >
->检索所有标识符的方法会获取SDK已知和持久存在的所有用户身份。您必须在用户选择禁用&#x200B;**之前**&#x200B;调用此方法。
+>检索所有标识符的方法获取SDK已知并保留的所有用户标识。 您必须在用户选择禁用&#x200B;**之前**&#x200B;调用此方法。
 
 本地存储的身份在 JSON 字符串中返回，其中可能包含以下项：
 
