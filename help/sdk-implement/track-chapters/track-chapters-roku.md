@@ -12,17 +12,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->以下说明为使用2.x SDK提供了实施指南。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下说明提供了使用2.x SDK实施的指导。 If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 实施标准广告元数据
+## Implemement standard ad metadata
 
 1. 识别执行章节开始事件的时间，然后使用章节信息创建 `ChapterObject` 实例。
 
-   `ChapterObject` 章节跟踪引用：
+   `ChapterObject` 章节跟踪参考：
 
    >[!NOTE]
    >
-   >仅当您计划跟踪章节时，才需要这些变量。
+   >These variables are only required if you are planning to track chapters.
 
    | 变量名称 | 描述 | 必需 |
    | --- | --- | :---: |
