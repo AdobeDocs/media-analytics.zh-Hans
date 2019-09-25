@@ -1,7 +1,7 @@
 ---
 seo-title: 在 Chromecast 中跟踪广告
 title: 在 Chromecast 中跟踪广告
-uuid: 7b1f584a-3422-416c-944c-5f5ea0ee5529
+uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->以下说明为使用2.x SDK提供了实施指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
+>以下说明为使用2.x SDK实施提供了指导。 如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
 
 ## 广告跟踪常量
 
@@ -24,7 +24,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `AdComplete` | 用于跟踪广告结束事件的常量 |
 | `AdSkip` | 用于跟踪广告跳过事件的常量 |
 
-## 实施步骤
+## Implementation steps
 
 1. 识别广告时间（包括前置广告）边界开始的时间，然后使用广告时间信息创建 `AdBreakObject`。
 
@@ -48,7 +48,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
    ```
 
-1. (可选)通过上下文数据变量将标准和/或广告元数据附加到媒体跟踪会话。
+1. （可选）通过上下文数据变量将标准和／或广告元数据附加到媒体跟踪会话。
 
    * **标准广告元数据 -** 对于标准广告元数据，请使用适用于您的平台的键创建标准广告元数据键值对的字典：
    * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告资产的数据进行填充：
