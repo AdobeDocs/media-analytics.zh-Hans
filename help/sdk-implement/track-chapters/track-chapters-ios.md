@@ -1,7 +1,7 @@
 ---
 seo-title: 在 iOS 中跟踪章节和区段
 title: 在 iOS 中跟踪章节和区段
-uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac
+uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,11 +12,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->以下说明为使用2.x SDK提供了实施指南。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下说明提供了使用2.x SDK实施的指导。 If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. 识别执行章节开始事件的时间，然后使用章节信息创建 `ChapterObject` 实例。
 
-   `ChapterObject` 章节跟踪引用：
+   `ChapterObject` 章节跟踪参考：
 
    >[!NOTE]
    >
