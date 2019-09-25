@@ -1,7 +1,7 @@
 ---
 seo-title: 设置概述
 title: 设置概述
-uuid: 06fedfec-b0 c8-4f7 d-90c8-e374 cdde1695
+uuid: 06fedb-b0c8-4f7d-90c8-e374cde1695
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,17 +12,17 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->以下说明适用于2.x Media SDK。如果您实施的是 1.x 版本的 Media SDK，请参阅 [1.x Media SDK 文档。](/help/sdk-implement/download-sdks.md) 对于Primetime集成商，请参阅 _下面的Primetime Media SDK文档_ 。
+>以下说明适用于2.x Media SDK。 如果您实施的是 1.x 版本的 Media SDK，请参阅 [1.x Media SDK 文档。](/help/sdk-implement/download-sdks.md) 对于Primetime集成商，请参 _阅以下Primetime Media SDK文档_ 。
 
 
 ## 最低平台版本支持 {#minimum-platform-version}
 
-下表介绍了每个SDK支持的最低平台版本，自2019年月19日起。
+下表介绍了从2019年2月19日开始的每个SDK支持的最低平台版本。
 
-| 操作系统/浏览器 | 需要最低版本 |
+| 操作系统／浏览器 | 需要的最低版本 |
 | --- | --- |
 | iOS | iOS 6+ |
-| Android | Android5.0+- Lollipop |
+| Android | Android 5.0+ —— 棒棒糖 |
 | Chrome | v22+ |
 | Mozilla | v27+ |
 | Safari | v7+ |
@@ -49,7 +49,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
    | `ssl` | 指示是否应当通过 HTTPS 进行调用 | 否 | false |
    | `debugLogging` | 指示是否启用调试日志记录 | 否 | false |
 
-1. 实现 `MediaHeartbeatDelegate`。
+1. 实施 `MediaHeartbeatDelegate`.
 
    |  方法名称  |  描述  | 必需 |
    | --- | --- | :---: |
@@ -58,7 +58,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!TIP]
    >
-   >服务质量(QoS)对象是可选的。如果 QoS 数据可供播放器使用，并且您想要跟踪该数据，则需要以下变量：
+   >服务质量(QoS)对象是可选的。 如果 QoS 数据可供播放器使用，并且您想要跟踪该数据，则需要以下变量：
 
    | 变量名称 | 描述   | 必需 |
    | --- | --- | :---: |
@@ -77,7 +77,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!TIP]
    >
-   >`MediaHeartbeat` 需要一个向Adobe `AppMeasurement` Analytics发送调用的实例。
+   >`MediaHeartbeat` 需要一个实例 `AppMeasurement` 来向Adobe Analytics发送调用。
 
 1. 合并所有片段。
 
@@ -121,26 +121,26 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ## 验证 {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-媒体分析跟踪实现生成两种类型的跟踪调用：
+媒体分析跟踪实施会生成两种类型的跟踪调用：
 
-* 媒体和广告开始调用直接发送到Adobe Analytics(AppMeasurement)服务器。
-* 心率调用被发送到Media Analytics(Heartbeats)跟踪服务器，处理该服务器，并传递到Adobe Analytics服务器。
+* 媒体和广告开始调用将直接发送到Adobe Analytics(AppMeasurement)服务器。
+* 心跳调用将发送到Media Analytics（心跳）跟踪服务器，在该服务器处理，并传递到Adobe Analytics服务器。
 
-* **Adobe Analytics(AppMeasurement)服务器**&#x200B;有关跟踪服务器选项的更多信息，请参阅 [正确填充TrackingServer和TrackingServerSecure变量。](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Adobe Analytics(AppMeasurement)服务器有关跟**&#x200B;踪服务器选项的详细信息，请参 [阅正确填充trackingServer和trackingServerSecure变量。](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
-   >Experience Cloud访问者ID服务需要RDC跟踪服务器或解析RDC服务器的CNAME。
+   >Experience cloud访客ID服务需要RDC跟踪服务器或解析到RDC服务器的CNAME。
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics(HeartBeats)服务器**这始终具有格式“`[your_namespace].hb.omtrdc.net`值“`[your_namespace]`指定您的公司，由Adobe提供”。
+* ** Media Analytics(Heartbeats)服务器**它始终采用“`[your_namespace].hb.omtrdc.net`”格式。 “”的值指`[your_namespace]`定您的公司，并由Adobe提供。
 
-媒体跟踪在所有平台、桌面和移动设备上的工作方式都是相同的。音频跟踪当前可用于移动平台。在所有跟踪调用中，有一些需要验证的关键通用变量：
+媒体跟踪在所有平台、桌面和移动设备上的工作方式都是相同的。Audio tracking currently works on mobile platforms. 在所有跟踪调用中，有一些需要验证的关键通用变量：
 
-## SDK1.x文档 {#section_acj_tkk_t2b}
+## SDK 1.x文档 {#section_acj_tkk_t2b}
 
-| Video Analytics1.x SDK | 开发人员指南(仅限PDF) |
+| Video Analytics 1.x SDK |  开发人员指南（仅限PDF） |
 | --- | --- |
 | Android | [用于 Android 的配置 ](vhl-dev-guide-v15_android.pdf) |
 | AppleTV | [用于 AppleTV 的配置 ](vhl-dev-guide-v1x_appletv.pdf) |
