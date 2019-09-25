@@ -1,7 +1,7 @@
 ---
 seo-title: 会话请求
 title: 会话请求
-uuid: 9609192d-4f7f-4fb5-844f-ea89 d47 c4 e30
+uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 translation-type: tm+mt
 source-git-commit: f1c9f5f4cbcd4c043e1c7b4a5037c134b2bdd380
 
@@ -19,9 +19,9 @@ https://{uri}/api/v1/sessions
 
 无
 
-## 请求正文
+## 请求主体
 
-请求主体必须为JSON，并且必须具有与此示例请求主体相同的结构：
+请求主体必须是JSON，且必须具有与此示例请求主体相同的结构：
 
 ```
 { 
@@ -62,7 +62,7 @@ https://{uri}/api/v1/sessions
    * `ts` - 时间戳，必须以毫秒为单位。
 * `eventType` (必需)
 
-   **有效值：**`sessionStart`
+   **Valid value:** `sessionStart`
 * `params` (必需)
 * `customMetadata`（可选）
 * `qoeData`（可选）
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header- `/api/v1/` 部分提供API版本。The part after `[…]sessions/` is the Session ID.
+`Location:` header —— 该部 `/api/v1/` 分提供API版本。 之后的部 `[…]sessions/` 分是会话ID。
 
 ## 响应代码
 
