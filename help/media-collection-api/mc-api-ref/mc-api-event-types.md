@@ -1,7 +1,7 @@
 ---
 seo-title: 事件类型和描述
 title: 事件类型和描述
-uuid: bc4f75a7-ea22-47eb-a50 d-5f41274 c6 d41
+uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -25,17 +25,17 @@ Sent when the player changes state to "playing" from another state (i.e., the `o
 
 Ping 事件应该&#x200B;*不*&#x200B;包含请求正文中的 `params` 映射。
 
-## BitrateChange
+## bitrateChange
 
-当位图发生变化时发送。
+在位图发生更改时发送。
 
 ## bufferStart
 
-缓冲开始时发送。没有 `bufferResume` 事件类型。A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
+在缓冲开始时发送。 没有 `bufferResume` 事件类型。A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
 
 ## pauseStart
 
-当用户按下暂停时发送。没有 `resume` 事件类型。A `resume` is inferred when you send a `play` event after a `pauseStart`.
+当用户按下“暂停”时发送。 没有 `resume` 事件类型。A `resume` is inferred when you send a `play` event after a `pauseStart`.
 
 ## adBreakStart
 
@@ -43,7 +43,7 @@ Ping 事件应该&#x200B;*不*&#x200B;包含请求正文中的 `params` 映射�
 
 ## adStart
 
-信号开始
+指示广告的开始
 
 ## adComplete
 
@@ -51,7 +51,7 @@ Ping 事件应该&#x200B;*不*&#x200B;包含请求正文中的 `params` 映射�
 
 ## adSkip
 
-信号跳过广告
+发出广告跳过的信号
 
 ## adBreakComplete
 
@@ -63,19 +63,19 @@ Ping 事件应该&#x200B;*不*&#x200B;包含请求正文中的 `params` 映射�
 
 ## chapterSkip
 
-信号一章跳过
+表示章节跳过
 
 ## chapterComplete
 
-表示一章完成
+Signals the completion of a chapter
 
 ## error
 
-信号出现错误。
+发出错误信号。
 
 ## sessionEnd
 
-这用于通知Media Analytics后端在用户放弃查看内容时立即关闭会话，并且不太可能返回。
+这用于通知Media Analytics后端，在用户放弃查看内容且不太可能返回时立即关闭会话。
 
 If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
 
