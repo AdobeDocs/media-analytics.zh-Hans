@@ -14,14 +14,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >下面的说明为所有 2.x SDK 实施提供了指南。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 搜索跟踪常量
+## Seek tracking constants
 
 | 常量名称 | 描述     |
 |---|---|
 | `ADBMediaHeartbeatEventSeekStart` | 用于跟踪搜寻开始事件的常量。 |
 | `ADBMediaHeartbeatEventSeekComplete` | 用于跟踪搜寻结束事件的常量。 |
 
-## 实现搜寻
+## Implement seeking
 
 1. 监听媒体播放器中的播放搜寻事件，并在发出搜寻开始事件通知时，使用 `SeekStart` 事件跟踪搜寻：
 
