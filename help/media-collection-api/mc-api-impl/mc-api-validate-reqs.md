@@ -1,7 +1,7 @@
 ---
 seo-title: 验证事件请求
 title: 验证事件请求
-uuid: 1fc92f21-b510-4c96-8ea2-47e819 f4 a96 e
+uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 translation-type: tm+mt
 source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
 
@@ -125,5 +125,5 @@ Connection: keep-alive
 
 >[!NOTE]
 >
->无法进行会话级别验证，因为会话上下文在集合层不可用。
+>会话级别验证是不可能的，因为会话上下文在集合层中不可用。
 
