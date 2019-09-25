@@ -1,7 +1,7 @@
 ---
 seo-title: 媒体详细信息
 title: 媒体详细信息
-uuid: 57d7f5b0-41dd-41d7-9a5a-474528839be5
+uuid: 57d7f5b0-41dd-41d7-9a5a-47452839be5
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
