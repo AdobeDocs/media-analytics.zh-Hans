@@ -1,7 +1,7 @@
 ---
 seo-title: 获取并行查看者 JSON 报表数据
 title: 获取并行查看者 JSON 报表数据
-uuid: 9168f114-2459-4951-a06 c-57b735 d09 dc0
+uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
 source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
@@ -10,19 +10,20 @@ source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
 # 获取并行查看者 JSON 报表数据{#get-concurrent-viewers-json-report-data}
 
-You can obtain concurrent viewers report data using the _* 1.4 version *_ of the Analytics APIs:
-* [Analytics API](https://github.com/AdobeDocs/analytics-1.4-apis)
-* [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
+您可以使用 _* 1.4版Analytics API获取并发查看器报告数据&#x200B;*_ :
+* [分析API](https://github.com/AdobeDocs/analytics-1.4-apis)
+* [斯瓦格](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
-1. 使用在UI上构建的任何区段过滤数据。要按特定内容ID进行筛选，请创建新区段。
-1. Set the `elements` -&gt; `id` in the request body to `videoconcurrentviewers`.
-1. 请求足够的数据。Adobe建议提供3200个数据点，以确保数据没有间隙。
+1. 使用在UI上构建的任何区段过滤数据。 要按特定内容ID进行筛选，请创建新区段。
+1. 将请 `elements` 求主体 `id` 中的-&gt;设置为 `videoconcurrentviewers`。
+1. 请求足够数量的数据。 Adobe建议使用3200个数据点，以确保数据中不存在任何间隙。
 
-   * The data range you specify in the report gathers all concurrent viewer data _at the time the video session ended._&#x200B;因此，您必须考虑从一天开始并在午夜之后结束(即第二天)结束的会话。
+   * 您在报告中指定的数据范围在视频会话结束时收 _集所有并发查看器数据。_
+因此，您必须考虑从一天开始到午夜（即第二天）结束的会话。
 
-   * Request more than one day of data, but in your analysis _* use only the first day of the data.*_
+   * 请求一天以上的数据，但在分析中 _*&#x200B;只使用第一天的数据。*_
 
-此方案的示例请求有效负荷如下所示：
+此方案的请求有效负荷示例如下：
 
 ```
 {
