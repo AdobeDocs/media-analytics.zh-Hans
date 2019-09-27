@@ -3,14 +3,15 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
+source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
 
 ---
 
 
 # Federated Analytics{#federated-analytics}
 
-Federated Analytics 服务提供了用于在两个合作伙伴之间共享 Adobe Media（音频和视频）Analytics 数据的系统。Media Analytics 创建的标准化测量数据是 Federated Analytics 的标志，这使得来自多个源的相同数据可以进入同一个报表。利用约束 Federated Analytics 的规则和逻辑，可以轻松地控制和个性化数据，以满足每项合作的需求。Federated Analytics 可使音频和视频测量更高效、更简单和更可操作。
+Federated Analytics服务提供了一个在两个合作伙伴之间共享Adobe Media Analytics数据（音频和视频）的系统。
+Media Analytics 创建的标准化测量数据是 Federated Analytics 的标志，这使得来自多个源的相同数据可以进入同一个报表。利用约束 Federated Analytics 的规则和逻辑，可以轻松地控制和个性化数据，以满足每项合作的需求。Federated Analytics 可使音频和视频测量更高效、更简单和更可操作。
 
 ## 优点 {#section_804FFE8671594A6FB769CBE79EF9D627}
 
@@ -37,13 +38,13 @@ Federated Analytics 服务提供了用于在两个合作伙伴之间共享 Adobe
 
 * **Adobe 咨询合同：**&#x200B;在初始设置发送者与接收者之间的联合规则时，该合同对于与咨询服务部合作来审查数据和创建数据共享协议，非常有价值。
 
-## Download the Federated Analytics Form
+## 下载Federated Analytics表单
 
-**`===>`请在此处下载当前版本：联**[](/assets/federated_analytics_form.pdf)盟规则协议表。 **`<===`**
+**Download the current version here:`===>`**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) **`<===`**
 
 ## 过程 {#section_byb_kb3_vbb}
 
-1. 发送者与接收者共同填写联合规则协议表单。The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [免费下载 Acrobat。](https://get.adobe.com/reader/)
+1. 发送者与接收者共同填写联合规则协议表单。Federated Rules Agreement（联合规则协议）表单包含针对我们工程团队的特殊字段，并且仅应使用Adobe acrobat进行编辑。 [免费下载 Acrobat。](https://get.adobe.com/reader/)
 1. 咨询服务部使用来自发送者播放器的实际数据向接收者提供一个示例数据文件，以进一步确认已定义正确的数据共享规则（如果数据文件可用）。
 1. 发送者和接收者确保数据共享协议符合双方之间的所有合同要求。
 1. 咨询服务部将完成的表单发送给 Adobe 工程部以设置数据共享规则。
