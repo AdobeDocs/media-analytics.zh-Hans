@@ -3,7 +3,7 @@ seo-title: 自定义链接实施指南
 title: 自定义链接实施指南
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: d325f3184932b179bbd6cde0d3e82cb2e278dd2a
+source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
 
 ---
 
@@ -12,9 +12,9 @@ source-git-commit: d325f3184932b179bbd6cde0d3e82cb2e278dd2a
 
 Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. 大多数情况下，自定义视频链接视频跟踪会用在需要少量视频测量的平台和设备上。
 
-* 在JavaScript中：函 `s.tl()` 数
+* In JavaScript: the  function`s.tl()`
 * 在移动设备应用程序中：[trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html) 和 [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 要求
 
@@ -43,7 +43,7 @@ if (e.type == "ended") {
 };
 ```
 
-## Why use Custom Link
+## 为何使用自定义链接
 
 * 需要满足的前提条件很少
 * 适用于任何平台，包括 NoScript
