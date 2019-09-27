@@ -1,16 +1,16 @@
 ---
 cloud: experience-cloud
-solution-title: Media Analytics
-solution-hub-url: https://helpx.adobe.com/support/analytics.html
-solution-image: assets/analytics-icon-24. png
-getting-started-title: 入门指南
-getting-started-url: https://helpx.adobe.com/analytics/get-started.html
+solution-title: 学习和支持
+solution-hub-url: https://helpx.adobe.com/cn/support/analytics.html
+solution-image: assets/analytics-icon-24.png
+getting-started-title: 快速入门
+getting-started-url: https://helpx.adobe.com/cn/analytics/get-started.html
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/analytics/kt/index/analytics-videos.html
 git-repo: https://github.com/AdobeDocs/media-analytics.en
 index: true
 translation-type: tm+mt
-source-git-commit: 4067346baa0035aa6c63b0064b5d2bbbbce249a9
+source-git-commit: e074a77406f907ad66ac8e8ed1b44300596c065a
 
 ---
 
