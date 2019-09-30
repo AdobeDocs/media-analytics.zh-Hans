@@ -3,14 +3,15 @@ seo-title: 自定义链接实施指南
 title: 自定义链接实施指南
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
+source-git-commit: 445a5037b1875db3f1f13a3733aa431c3b3031a0
 
 ---
 
 
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. 大多数情况下，自定义视频链接视频跟踪会用在需要少量视频测量的平台和设备上。
+Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
+大多数情况下，自定义视频链接视频跟踪会用在需要少量视频测量的平台和设备上。
 
 * In JavaScript: the  function`s.tl()`
 * 在移动设备应用程序中：[trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html) 和 [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
@@ -50,7 +51,6 @@ if (e.type == "ended") {
 * 任何计算（例如逗留时间和四分位数）必须在自定义脚本中执行
 * 非常简单，没有任何隐藏的库或脚本
 * 可全方位完全掌控视频数据
-* 可删除指向示例播放器的链接
 
 ## 适用于 HTML5 播放器的 JavaScript 示例
 
@@ -126,4 +126,3 @@ if (e.type == "ended") {
   }; 
 </script>
 ```
-
