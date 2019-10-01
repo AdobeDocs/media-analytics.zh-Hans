@@ -3,7 +3,7 @@ seo-title: 章节参数
 title: 章节参数
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
+source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
    * *密钥* - 在应用程序中手动设置或通过 Adobe Media SDK 自动设置的变量。
    * *必需* - 指示该项是否为进行基本视频跟踪所必需的参数。
    * *类型* - 指定要设置的变量类型：字符串或数值。
-   * *Sent With - Indicates when the data is sent: Media Start is the analytics call sent on media start, Ad Start is the analytics call sent on ad start, and so on; the Close calls are the compiled analytics calls sent directly from the heartbeat server to the analytics server at the end of the media session, or the end of the ad, chapter, etc.*******&#x200B;关闭调用在网络数据包调用中不可用。
+   * *Sent With - Indicates when the data is sent: Media Start is the analytics call sent on media start, Ad Start is the analytics call sent on ad start, and so on; the Close calls are the compiled analytics calls sent directly from the heartbeat server to the analytics server at the end of the media session, or the end of the ad, chapter, etc.******* The close calls are not available in network packet calls.
    * *最小 SDK 版本* - 指示访问参数时所需的 SDK 版本。
    * *示例值* - 提供变量的常用值示例。
 * **网络参数：**&#x200B;显示传递到 Adobe Analytics 或心率服务器的值。此列显示的是在由 Adobe Media SDK 生成的网络调用中看到的参数的名称。
@@ -32,63 +32,63 @@ source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
 
 >[!IMPORTANT]
 >
->请勿更改以下列出的任何变量的分类名称，这些变量在报告／保留变量下描述为“分类”。\
->在启用报表包进行媒体跟踪时，将定义媒体分类。 Adobe会不时添加新属性，一旦出现这种情况，客户必须重新启用其报表包才能访问新的媒体属性。 在更新过程中，Adobe通过检查变量名称来确定是否启用了分类。 如果其中任何一个缺失，Adobe会再次添加缺失的。
+>Do not change the classification names for any variables listed below that are described under Reporting/Reserved Variable as "classification".\
+>The media classifications are defined when a report suite is enabled for media tracking. From time to time, Adobe adds new properties, and, when this occurs, customers must re-enable their report suites to get access to the new media properties. During the update process Adobe determines whether the classifications are enabled by checking the names of the variables. If any of them is missing, Adobe adds the missing ones again.
 
 ## 章节元数据 {#section_534D3A6BFEB24D1884F80AD6A50BF13C}
 
 ### 章节名称
 
-|   实施   | 网络参数 | 报表 |
+|   实施   | Network Parameters | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>  [name](./chapter-parameters.md#related_apis_section) </li> <li> **API 密钥：**<br/>media.chapter.friendlyName </li> <li> **必需：**<br/>否 </li> <li> **类型：**<br/>字符串 </li> <li> ****<br/> 发送方：第一章开始、章结束 </li> <li> **最小 SDK 版本：** 1.3 </li> <li> ****<br/> 示例值：《大爆炸2》 </li><li> **说明：**<br/>章节和／或区段的名称。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>friendlyName) </li> <li> ****<br/> 心跳：(s:stream:chapter_name) </li> </ul> | <ul> <li> **可用：**<br/>默认创建...  </li> <li> **保留变量：**<br/>分类 </li> <li> **报表名称：**<br/>章节名称 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>friendlyName) </li> <li> **数据馈送：**<br/>不适用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>friendlyName) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [name](./chapter-parameters.md#related_apis_section) </li> <li> **API 密钥：**<br/>media.chapter.friendlyName </li> <li> **必需：**<br/>否 </li> <li> **类型：**<br/>字符串 </li> <li> ****<br/> Sent with: Chapter Start, Chapter Close </li> <li> **最小 SDK 版本：** 1.3 </li> <li> **Sample Value:**<br/> "The Big Bang Chapter 2 - Dating" </li><li> **Description:**<br/>The name of the chapter and/or segment.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>friendlyName) </li> <li> **Heartbeat:**<br/> (s:stream:chapter_name) </li> </ul> | <ul> <li> **可用：**<br/>默认创建...  </li> <li> **保留变量：**<br/>分类 </li> <li> **报表名称：**<br/>章节名称 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>friendlyName) </li> <li> **数据馈送：**<br/>不适用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>friendlyName) </li> </ul> |
 
 ### 章节位置
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>  [position](./chapter-parameters.md#related_apis_section) </li> <li> **API 密钥：**<br/>media.chapter.index </li> <li> ****<br/> 必需：SDK:不；API:是的。 </li> <li> **类型：**<br/>数值 </li> <li> ****<br/> 发送方：章关闭 </li> <li> **最小 SDK 版本：** 1.3 </li> <li> ****<br/> 示例值：2 </li><li> **Description:The position (index, integer) of the chapter inside the content.**<br/>   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>position) </li> <li> ****<br/> 心跳：(l:stream:chapter_pos) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留变量：**<br/>分类 </li> <li> **报表名称：**<br/>章节位置 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>position) </li> <li> **数据馈送：**<br/> </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>position) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [position](./chapter-parameters.md#related_apis_section) </li> <li> **API 密钥：**<br/>media.chapter.index </li> <li> ****<br/> Required: SDK: No; API: Yes. </li> <li> **类型：**<br/>数值 </li> <li> ****<br/> 发送方：章关闭 </li> <li> **最小 SDK 版本：** 1.3 </li> <li> ****<br/> 示例值：2 </li><li> **说明：**<br/>章节在内容中的位置（索引、整数）。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>position) </li> <li> ****<br/> 心跳：(l:stream:chapter_pos) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留变量：**<br/>分类 </li> <li> **报表名称：**<br/>章节位置 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>position) </li> <li> **数据馈送：**<br/>不适用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>position) </li> </ul> |
 
 ### 章节偏移
 
-|   实施   | 网络参数 | 报表 |
+|   实施   | Network Parameters | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>  [startTime](./chapter-parameters.md#related_apis_section) </li> <li> **API 密钥：**<br/>media.chapter.offset </li> <li> ****<br/> 必需：SDK:不；API:是的。 </li> <li> **类型：**<br/>数值 </li> <li> ****<br/> Sent with: Chapter Close </li> <li> **最小 SDK 版本：** 1.3 </li> <li> ****<br/> Sample Value: 58 </li><li> **说明：**<br/>章节在内容中从开始时的偏移量（以秒为单位）。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>偏移) </li> <li> ****<br/> Heartbeat: (l:stream:chapter_offset) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留变量：**<br/>分类 </li> <li> **报表名称：**<br/>章节偏移 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>偏移) </li> <li> **数据馈送：**<br/> </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>偏移) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [startTime](./chapter-parameters.md#related_apis_section) </li> <li> **API 密钥：**<br/>media.chapter.offset </li> <li> ****<br/> 必需：SDK:不；API:是的。 </li> <li> **类型：**<br/>数值 </li> <li> ****<br/> Sent with: Chapter Close </li> <li> **最小 SDK 版本：** 1.3 </li> <li> ****<br/> Sample Value: 58 </li><li> **说明：**<br/>章节在内容中从开始时的偏移量（以秒为单位）。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>偏移) </li> <li> ****<br/> 心跳：(l:stream:chapter_offset) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留变量：**<br/>分类 </li> <li> **报表名称：**<br/>章节偏移 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>偏移) </li> <li> **数据馈送：**<br/>不适用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>偏移) </li> </ul> |
 
 ### 章节长度
 
-|   实施   | Network Parameters | 报表 |
+|   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> </li> <li> **API 密钥：**<br/>media.chapter.length </li> <li> ****<br/> 必需：SDK:不；API:是的。 </li> <li> **类型：**<br/>数值 </li> <li> ****<br/> Sent with: Chapter Close </li> <li> **最小 SDK 版本：** 1.3 </li> <li> ****<br/> 示例值：486 </li><li> **说明：**<br/>章节的长度（以秒为单位）。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>length) </li> <li> ****<br/> Heartbeat: (l:stream:chapter_length) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留变量：**<br/>分类 </li> <li> **报表名称：**<br/>章节长度 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>length) </li> <li> **数据馈送：**<br/> </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>length) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> </li> <li> **API 密钥：**<br/>media.chapter.length </li> <li> ****<br/> 必需：SDK:不；API:是的。 </li> <li> **类型：**<br/>数值 </li> <li> ****<br/> 发送方：章关闭 </li> <li> **最小 SDK 版本：** 1.3 </li> <li> ****<br/> 示例值：486 </li><li> **说明：**<br/>章节的长度（以秒为单位）。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>length) </li> <li> ****<br/> 心跳：(l:stream:chapter_length) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留变量：**<br/>分类 </li> <li> **报表名称：**<br/>章节长度 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>length) </li> <li> **数据馈送：**<br/>不适用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>length) </li> </ul> |
 
 ### 章节
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>自动设置 </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>否 </li> <li> **类型：**<br/>字符串 </li> <li> ****<br/> Sent with: Chapter Close </li> <li> **最小 SDK 版本：** 1.3 </li> <li> **Sample Value:**<br/> </li><li> **Description:The auto-generated ID of the chapter.**<br/>   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>name) </li> <li> ****<br/> 心跳：(s:stream:chapter_id) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>eVar </li> <li> **过期时间：**<br/>点击时 </li> <li> **报表名称：**<br/>章节 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>name) </li> <li> **数据馈送：**<br/>videochapter </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>name) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>自动设置 </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>否 </li> <li> **类型：**<br/>字符串 </li> <li> ****<br/> 发送方：章关闭 </li> <li> **最小 SDK 版本：** 1.3 </li> <li> **示例值：**<br/> </li><li> **Description:The auto-generated ID of the chapter.**<br/>   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>name) </li> <li> **Heartbeat:**<br/> (s:stream:chapter_id) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>eVar </li> <li> **过期时间：**<br/>点击时 </li> <li> **报表名称：**<br/>章节 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>name) </li> <li> **数据馈送：**<br/>videochapter </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter。<br/>name) </li> </ul> |
 
 ## 章节量度 {#section_1C47D6FB1DF343C39CE7A8F724406F33}
 
 ### 章节开始
 
-|   实施   | 网络参数 | 报表 |
+|   实施   | Network Parameters | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>自动设置  </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>是 </li> <li> **类型：**<br/>字符串 </li> <li> **发送条件：**<br/>章节开始 </li> <li> **最小 SDK 版本：** 1.3 </li> <li> ****<br/> 示例值：TRUE </li><li> **说明：**<br/>开始章节的数量。  **重要信息：**&#x200B;如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>view) </li> <li> ****<br/> 心跳：(s:event:<br/>type=chapter_start) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>event </li> <li> ****<br/> 报告名称：第g章开始 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>view) </li> <li> **数据馈送：**<br/>videochapterstart </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>view) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>自动设置  </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>是 </li> <li> **类型：**<br/>字符串 </li> <li> **发送条件：**<br/>章节开始 </li> <li> **最小 SDK 版本：** 1.3 </li> <li> **Sample Value:**<br/> TRUE </li><li> **Description:**<br/>The number of chapter starts.  **重要信息：**&#x200B;如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>view) </li> <li> **Heartbeat:**<br/> (s:event:<br/>type=chapter_start) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>event </li> <li> ****<br/> 报告名称：第g章开始 </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>view) </li> <li> **数据馈送：**<br/>不适用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>view) </li> </ul> |
 
 ### 章节结束
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>自动设置  </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>是 </li> <li> **类型：**<br/>字符串 </li> <li> ****<br/> 发送方：章关闭 </li> <li> **最小 SDK 版本：** 1.3</li> <li> ****<br/> 示例值：TRUE </li><li> **说明：**<br/>章节完成的次数。  **重要信息：**&#x200B;如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>complete) </li> <li> ****<br/> 心跳：(s:event:<br/>type=chapter_complete) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>event </li> <li> ****<br/> 报告名称：章节完成g </li> <li> ****<br/> Context Data: (a.media.chapter.<br/>complete) </li> <li> **数据馈送：**<br/>videochaptercomplete </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter.<br/>complete) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>自动设置  </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>是 </li> <li> **类型：**<br/>字符串 </li> <li> ****<br/> 发送方：章关闭 </li> <li> **最小 SDK 版本：** 1.3</li> <li> ****<br/> 示例值：TRUE </li><li> **说明：**<br/>章节完成的次数。  **重要信息：**&#x200B;如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>complete) </li> <li> ****<br/> 心跳：(s:event:<br/>type=chapter_complete) </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>event </li> <li> ****<br/> 报告名称：章节完成g </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>complete) </li> <li> **数据馈送：**<br/>不适用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>complete) </li> </ul> |
 
 ### 平均逗留时间
 
-|   实施   | 网络参数 | 报表 |
+|   实施   | Network Parameters | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>自动设置  </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>是 </li> <li> **类型：**<br/>数值 </li> <li> ****<br/> 发送方：章关闭 </li> <li> **最小 SDK 版本：** 1.3 </li> <li> **示例值：**<br/> </li><li> **说明：**<br/>在章节中停留的时间。  在 Analysis Workspace 和 Reports &amp; Analytics 中，该值将以时间格式 (HH:MM:SS) 显示。而在数据馈送、Data Warehouse 和报表 API 中，该值将以秒数显示。<br/>**发行日期：2018 年 9 月 13 日**   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>timePlayed) </li> <li> **心率：**<br/> </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>event </li> <li> ****<br/> 报告名称：第二章停留时间g </li> <li> ****<br/> Context Data: (a.media.chapter.<br/>timePlayed) </li> <li> **数据馈送：**<br/>videochaptertime </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter.<br/>timePlayed) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>自动设置  </li> <li> **API 密钥：**<br/>不适用 </li> <li> **必需：**<br/>是 </li> <li> **类型：**<br/>数值 </li> <li> ****<br/> 发送方：章关闭 </li> <li> **最小 SDK 版本：** 1.3 </li> <li> **Sample Value:**<br/> </li><li> **说明：**<br/>在章节中停留的时间。  在 Analysis Workspace 和 Reports &amp; Analytics 中，该值将以时间格式 (HH:MM:SS) 显示。而在数据馈送、Data Warehouse 和报表 API 中，该值将以秒数显示。<br/>**发行日期：2018 年 9 月 13 日**   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter.<br/>timePlayed) </li> <li> **心率：**<br/> </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>event </li> <li> ****<br/> 报告名称：第二章停留时间g </li> <li> ****<br/> 上下文数据：(a.media.chapter.<br/>timePlayed) </li> <li> **数据馈送：**<br/>不适用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter。<br/>timePlayed) </li> </ul> |
 
-## Related APIs {#related_apis_section}
+## 相关API {#related_apis_section}
 
 * Android - [createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createChapterObject-java.lang.String-java.lang.Long-java.lang.Double-java.lang.Double-)
-* iOS - [createChapterObjectWithName](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createChapterObjectWithName:position:length:startTime:)
+* iOS - createChapterObjectWithName[](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createChapterObjectWithName:position:length:startTime:)
 * Javascript - createChapterObject[](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createChapterObject)
