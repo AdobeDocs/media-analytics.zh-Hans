@@ -1,9 +1,9 @@
 ---
 seo-title: 在 Adobe Analytics 中测量音频和视频
 title: 在 Adobe Analytics 中测量音频和视频
-uuid: b3cbe240-b94d-42b8-a99c-0280334aa14
+uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
+source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 ---
 
@@ -24,10 +24,6 @@ Adobe Analytics for Media（也称为 Media Analytics）是 Analytics 基础产�
 
 * **Media SDK -**&#x200B;与最常用的媒体播放器集成。
 * **媒体收集 API -**(RESTful API) 与没有 SDK 支持的播放器集成（或与不需要 SDK 集成的播放器集成）。
-
-   媒体收集 API 还提供了 SDK 中尚未提供的额外功能：
-
-   * **下载的内容跟踪 -**&#x200B;支持跟踪从设备中下载和播放的媒体内容（视频和音频），无论是否连接到网络。此功能基于媒体收集 API 构建，且遵循相同的播放器跟踪规范。（当前不支持 SDK。）
 
 Adobe Analytics for Media 让用户可以跟踪客户在其网站中的整个活动历程（包括媒体使用情况），这些测量可以轻松地集成到 Analytics 报表及其他 Experience Cloud 产品中。媒体测量允许您将数据划分为多个维度和区段，捕获进行全面详尽的分析所需的全部元数据，并且还允许您将成功标准归因于完整使用媒体、平均逗留时间和完整播放广告。
 
@@ -57,6 +53,7 @@ Adobe Analytics for Media可以通过两种方式进行衡量：传统的Milesto
 * **利用 Federated Analytics 共享数据 -**&#x200B;利用我们在业界首开先河的媒体共享功能，全面评估您的所有媒体传播合作平台的数据：运营商、节目制作方和发行方。
 * **与经认证的评级合作伙伴合作 -** Adobe 与受众评级合作伙伴 Nielsen 开展合作，提供中立的人口普查第三方评测，以实现可信的认证评级。
 * **所有平台通用的标准化解决方案 -**&#x200B;针对所有媒体和平台采用一致的标准化变量，可以更高效地对不同营销活动、设备和供应商的数据进行对比。
+* **Downloaded content tracking -** Track media content (video and audio) that is downloaded and played on a device regardless of its connectivity.
 
 ### 对比图表
 
@@ -102,12 +99,12 @@ Adobe Analytics for Media 契合行业发展趋势，提供了强大的数据收
 | **Sony PS3/PS4** |  | ![](assets/icon-blue-check.png) |
 | **(其他/新连接设备）** |  | ![](assets/icon-blue-check.png) |
 
-有关Media SDK，另请参阅最 [低平台版本支持](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+For Media SDK, also see Minimum Platform Version Support[](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
-## 传输层安全性 {#transport-layer-security}
+## Transport Layer Security {#transport-layer-security}
 
-**TLS声明** - adobe有安全合规标准，要求终止旧版安全协议。 为了继续满足不断演变的安全协议标准，Adobe正在向使用TLS 1.2的方向迈进，以便使用最新、最安全的版本。 从2019年2月20日起，Adobe将仅支持TLS 1.1或更高版本。 通过此更改，Adobe将不再从部署TLS 1.0的较旧设备或Web浏览器的最终用户收集数据。迁移到TLS 1.2可提高安全性。 您应务必了解具体细节，并且针对更改做出规划以实现顺利迁移。
+**TLS Notice -- Adobe has security compliance standards that require the end-of-life of older security protocols.**&#x200B;为了继续满足不断演变的安全协议标准，Adobe正在向使用TLS 1.2的方向迈进，以便使用最新、最安全的版本。 从2019年2月20日起，Adobe将仅支持TLS 1.1或更高版本。 通过此更改，Adobe将不再从部署TLS 1.0的较旧设备或Web浏览器的最终用户收集数据。迁移到TLS 1.2可提高安全性。 您应务必了解具体细节，并且针对更改做出规划以实现顺利迁移。
 
 >[!NOTE]
 >
->TLS is currently the most-widely deployed security protocol used in web browsers and other applications that require data to be securely exchanged over a network.
+>TLS目前是部署最广的安全协议，用于要求通过网络安全交换数据的Web浏览器和其他应用程序。
