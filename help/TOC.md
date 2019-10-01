@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 最终用户
 user-guide-title: Adobe Analytics for Audio和Video
 translation-type: tm+mt
-source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
+source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
 
 ---
 
@@ -14,11 +14,11 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 + Measurement Options {#measurement-options}
    + Media Module Milestone Tracking {#mm-milestone-tracking}
       + [里程碑概述](measurement-options/mm-milestone-tracking/milestone-overview.md)
-      + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+      + [将里程碑迁移到媒体分析](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [从里程碑迁移到自定义链接](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics 中的自定义链接 {#cl-in-aa}
       + [自定义链接实施指南](measurement-options/cl-in-aa/cl-impl-guide.md)
-+ Introduction to Audio and Video Analytics {#intro-to-ava}
++ 音频和视频分析简介 {#intro-to-ava}
    + [先决条件](intro-to-ava/prereqs.md)
    + 实施路径 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -42,17 +42,17 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
          + [在iOS上跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + [在JavaScript上跟踪核心回放](sdk-implement/track-av-playback/track-core/track-core-js.md)
          + [在Chromecast上跟踪核心回放](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
-         + [在Roku上跟踪核心回放](sdk-implement/track-av-playback/track-core/track-core-roku.md)
+         + [Track Core Playback on Roku](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + Track Buffering {#track-buffering}
-         + [在Android上跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
+         + [Track Buffering on Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
          + [Track Buffering on iOS](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
-         + [在JavaScript上跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
-         + [Chromecast上的跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Track Buffering on Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
+         + [Track Buffering on JavaScript](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
+         + [Track Buffering on Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
+         + [在Roku上跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + Track Seeking {#track-seeking}
          + [在Android上跟踪搜索](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [在iOS上跟踪搜索](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
-         + [Track Seeking on JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
+         + [在JavaScript上跟踪搜索](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
          + [Chromecast上的跟踪搜索](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [在Roku上搜索音轨](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + 实施标准元数据{#impl-std-metadata}
@@ -78,7 +78,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
          + [在 Roku 中实施标准广告元数据](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + 跟踪章节和区段 {#track-chapters}
       + [概述](sdk-implement/track-chapters/track-chapters-overview.md)
-      + [在Android上跟踪章节和细分](sdk-implement/track-chapters/track-chapters-android.md)
+      + [Track Chapters and Segments on Android](sdk-implement/track-chapters/track-chapters-android.md)
       + [在iOS上跟踪章节和细分](sdk-implement/track-chapters/track-chapters-ios.md)
       + [在JavaScript上跟踪章节和细分](sdk-implement/track-chapters/track-chapters-js.md)
       + [在Chromecast上跟踪章节和细分](sdk-implement/track-chapters/track-chapters-chromecast.md)
@@ -97,7 +97,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
       + [在JavaScript上跟踪错误](sdk-implement/track-errors/track-errors-js.md)
       + [Chromecast上的跟踪错误](sdk-implement/track-errors/track-errors-chromecast.md)
       + [Roku上的跟踪错误](sdk-implement/track-errors/track-errors-roku.md)
-   + [选择退出和隐私](sdk-implement/opt-out-privacy.md)
+   + [Opt-out and Privacy](sdk-implement/opt-out-privacy.md)
    + Tracking Scenarios {#tracking-scenarios}
       + [不含广告的 VOD 播放](sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
       + [包含前置广告的 VOD 播放](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
@@ -113,7 +113,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
    + 验证 {#validation}
       + [验证概述](sdk-implement/validation/validation-overview.md)
       + [测试 1：标准播放](sdk-implement/validation/test1-standard-playback.md)
-      + [Test 2: Media Interruption](sdk-implement/validation/test2-media-interrupt.md)
+      + [测试2:媒体中断](sdk-implement/validation/test2-media-interrupt.md)
       + [测试呼叫详细信息](sdk-implement/validation/test-call-details.md)
       + [心率参数描述](sdk-implement/validation/heartbeat-params.md)
       + 调试 {#debugging}
@@ -132,12 +132,12 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
       + [解决在广告之间出现 main:play 的问题](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [恢复非活动会话](sdk-implement/cookbook/resuming-inactive.md)
       + [在 SceneGraph (Roku) 中跟踪](sdk-implement/cookbook/sdk-track-scenegraph.md)
-      + [SDK and Launch Differences](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
+      + [SDK和启动差异](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
    + Media Analytics 1.x to 2.x Migration {#va-1x-to-2x}
       + [迁移概述](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [代码对比：1.x 与 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [从 1.x API 转换到 VHL 2.x API](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
-+ Media Collection API (RESTful) {#media-collection-api}
++ Media Collection API(RESTful) {#media-collection-api}
    + [概述](media-collection-api/mc-api-overview.md)
    + API 参考 {#mc-api-ref}
       + [会话请求](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -172,7 +172,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 + Reporting and Analysis {#media-reports}
    + [启用媒体报告](media-reports/media-reports-enable.md)
    + Media Default Reports {#media-default-reports}
-      + [默认报告概述](media-reports/media-default-reports/default-reports-overview.md)
+      + [Default Reports Overview](media-reports/media-default-reports/default-reports-overview.md)
       + [媒体概览](media-reports/media-default-reports/media-reports-overview.md)
       + [媒体详细信息](media-reports/media-default-reports/media-reports-detail.md)
       + [媒体时段](media-reports/media-default-reports/media-reports-daypart.md)
@@ -182,3 +182,4 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 + [Federated Analytics](data-sharing/federated-analytics.md)
 + 其他资源 {#additional-resources}
    + [文档更新](additional-resources/doc-updates.md)
+
