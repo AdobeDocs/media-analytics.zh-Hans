@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 99a8908499ab0e43964fd3d7e6e419b5a78ce66b
+source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
 
 ---
 
@@ -40,7 +40,7 @@ Media Analytics 创建的标准化测量数据是 Federated Analytics 的标志�
 
 ## 下载Federated Analytics表单
 
-Download the current version of the form here: [Federation Rules Agreement Form](/assets/federated_analytics_form.pdf)
+请在此处下载表单的当前版本：联 [邦规则协议表](federated_analytics_form.pdf)
 
 ## 过程 {#section_byb_kb3_vbb}
 
