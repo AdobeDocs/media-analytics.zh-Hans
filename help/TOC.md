@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 最终用户
 user-guide-title: Adobe Analytics for Audio和Video
 translation-type: tm+mt
-source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
+source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
 
 ---
 
@@ -179,6 +179,6 @@ source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
       + [媒体并行查看者](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [获取并行查看者 JSON 报表数据](media-reports/media-default-reports/get-concurrent-json.md)
    + [媒体工作区模板](media-reports/media-workspace-templates.md)
-+ [Federated Analytics](data-sharing/federated-analytics.md)
++ [Federated Analytics](federated-analytics.md)
 + 其他资源 {#additional-resources}
    + [文档更新](additional-resources/doc-updates.md)
