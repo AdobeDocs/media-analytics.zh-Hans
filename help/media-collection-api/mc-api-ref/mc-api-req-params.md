@@ -3,7 +3,7 @@ seo-title: 请求参数
 title: 请求参数
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
+source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 ---
 
@@ -17,20 +17,20 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 | `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics 服务器的 URL |
 | `analytics.reportSuite` | Y | `sessionStart` | 标识 Analytics 报表数据的 ID |
 | `analytics.enableSSL` | N | `sessionStart` | 指示是否启用 SSL 的 true 或 false |
-| `analytics.visitorId` | N | `sessionStart` | The Adobe Visitor ID is a custom ID you can use across multiple Adobe applications. The Heartbeat  equals the Analytics `visitorId``VID.` |
+| `analytics.visitorId` | N | `sessionStart` | Adobe访客ID是可跨多个Adobe应用程序使用的自定义ID。 心跳 `visitorId` 等于分析 `VID.` |
 
 ## 访客数据
 
-| Request Key  | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置位置... |  描述  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 组织 ID，可在 Adobe Experience Cloud 生态系统中标识您的组织 |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | This is the Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat  equals the  in Adobe Analytics. `marketingCloudUserId``MID`While not technically required, this parameter is necessary for accessing the Experience Cloud family of apps. |
+| `visitor.marketingCloudUserId` | N | `sessionStart` | 这是Experience cloud用户ID(ECID)。 在大多数情况下，这是您用来标识用户的ID。 心跳等 `marketingCloudUserId` 于Adobe `MID` Analytics中的心跳。 虽然从技术上讲不是必需的，但访问Experience cloud系列应用程序时需要此参数。 |
 | `visitor.aamLocationHint` | N | `sessionStart` | 提供 Adobe Audience Manager Edge 数据 |
 | `appInstallationId` | N | `sessionStart` | appInstallationId 用于唯一标识应用程序和设备 |
 
 ## 内容数据
 
-| Request Key  | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置位置... |  描述  |
 | --- | :---: | :---: | --- |
 | `media.id` | Y | `sessionStart` | 内容的唯一标识符 |
 | `media.name` | N | `sessionStart` | 人类可读的内容名称 |
@@ -112,7 +112,7 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 >[!NOTE]
 >
->Media Analytics(MA)与Experience cloud系列应用程序（Adobe Analytics、Audience Manager、Target等）集成。 您需要 Experience Cloud ID 才能访问这些应用程序。_The ECID is what you should use to identify users in most scenarios._
+>Media Analytics(MA)与Experience cloud系列应用程序（Adobe Analytics、Audience Manager、Target等）集成。 您需要 Experience Cloud ID 才能访问这些应用程序。_ECID是在大多数情况下识别用户时应使用的ECID。_
 
 ### appInstallationId
 
@@ -131,9 +131,9 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 ### visitor.marketingCloudOrgId
 
-In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/data-sharing/federated-analytics.md))
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/federated-analytics.md))
 
-### Analytics Legacy User ID (aid) and Declared User IDs (customerIDs)
+### 分析旧版用户ID(aid)和声明的用户ID(customerID)
 
 * **analytics.aid:**
 
