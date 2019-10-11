@@ -3,7 +3,7 @@ seo-title: 请求参数
 title: 请求参数
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
+source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 
 ---
 
@@ -103,6 +103,13 @@ source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 | `media.qoe.droppedFrames` | N | “任一” | 流中丢帧的数量 |
 | `media.qoe.framesPerSecond` | N | “任一” | 每秒帧数 |
 | `media.qoe.timeToStart` | N | “任一” | 用户点击播放和内容加载并开始播放之间所经过的时间（以毫秒为单位） |
+
+## 加利福尼亚消费者隐私法(CCPA)参数 {#ccpa-params}
+
+| 请求密钥 | 必需 | 设置位置... |  描述  |
+| --- | :---: | :---: | --- |
+| `analytics.optOutServerSideForwarding` | N | `sessionStart` | 当最终用户选择不在Adobe Analytics和其他Experience cloud解决方案（如Audience Manager）之间共享其数据时，设置为true |
+| `analytics.optOutShare` | N | `sessionStart` | 当最终用户选择退出其联合数据（例如，退出到其他Adobe Analytics客户端）时，设置为true。 |
 
 ## 其他详细信息 {#section_ryt_ccy_lcb}
 
