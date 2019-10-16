@@ -3,7 +3,7 @@ seo-title: 设置 iOS
 title: 设置 iOS
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >Beginning with iOS 9, Apple introduced a feature called App Transport Security (ATS). 此功能旨在通过确保应用程序仅使用行业标准协议和密码来提高网络安全性。默认情况下此功能处于启用状态，但您也可以通过配置选项来选择是否使用 ATS。For details on ATS, see App Transport Security.[](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >从iOS 9开始，Apple引入了一项称为App Transport Security(ATS)的功能。 此功能旨在通过确保应用程序仅使用行业标准协议和密码来提高网络安全性。默认情况下此功能处于启用状态，但您也可以通过配置选项来选择是否使用 ATS。有关ATS的详细信息，请参阅 [App Transport Security。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
 
 * **在媒体播放器中提供以下功能：**
 
@@ -140,7 +140,7 @@ For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migrat
 
 ## 配置适用于 tvOS 的本地应用程序
 
-现在，随着新 Apple TV 的发布，您能够创建可在本地 tvOS 环境中运行的应用程序。您可以使用 iOS 中提供的任何几种框架创建纯本地应用程序，也可以使用 XML 模板和 JavaScript 创建应用程序。从 MediaSDK 版本 2.0 起，开始支持 tvOS。For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/documentation/)
+现在，随着新 Apple TV 的发布，您能够创建可在本地 tvOS 环境中运行的应用程序。您可以使用 iOS 中提供的任何几种框架创建纯本地应用程序，也可以使用 XML 模板和 JavaScript 创建应用程序。从 MediaSDK 版本 2.0 起，开始支持 tvOS。For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/)
 
 在您的 Xcode 项目中执行以下步骤：本指南假定您的项目旨在开发适用于 tvOS 的 Apple TV 应用程序：
 
