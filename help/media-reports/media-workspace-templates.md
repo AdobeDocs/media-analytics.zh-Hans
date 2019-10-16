@@ -3,7 +3,7 @@ seo-title: 媒体工作区模板
 title: 媒体工作区模板
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
    ![](assets/all-templates-audio.png)
 
-   例如，如果选择“音频使用情况”模板，则将呈现一个项目，其中具有以下以音频为导向的功能板：
+   For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
 
    ![](assets/aa-workspace.png)
 
