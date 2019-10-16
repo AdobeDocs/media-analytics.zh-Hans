@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
+source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
 
 ---
 
@@ -40,7 +40,7 @@ Media Analytics 创建的标准化测量数据是 Federated Analytics 的标志�
 
 ## 下载Federated Analytics表单
 
-请在此处下载此表单的当前版本：联 [邦规则协议](federated-analytics-form.pdf)
+请在此处下载此表单的当前版本：联 [邦规则协议](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
 ## 过程 {#section_byb_kb3_vbb}
 
