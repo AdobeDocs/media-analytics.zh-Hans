@@ -3,7 +3,7 @@ seo-title: 设置 iOS
 title: 设置 iOS
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
 ## SDK 实施
 
-1. 将[下载](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)的 Media SDK 添加到您的项目中。
+1. 将[下载](/help/sdk-implement/download-sdks.md#download-2x-sdks)的 Media SDK 添加到您的项目中。
 
    1. 验证以下软件组件存在于 `libs` 目录中：
 
@@ -48,7 +48,7 @@ source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
          ![](assets/choose-options_ios.png)
 
-      1. Click **[!UICONTROL Finish]**.
+      1. 单击&#x200B;**[!UICONTROL 完成]**。
       1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
       1. 在&#x200B;**[!UICONTROL 常规]**&#x200B;选项卡上的&#x200B;**[!UICONTROL 链接的框架]**&#x200B;和&#x200B;**[!UICONTROL 库]**&#x200B;区域，链接所需的框架和库。
 
