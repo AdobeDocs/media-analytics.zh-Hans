@@ -2,10 +2,10 @@
 seo-title: 包含前置广告的 VOD 播放
 title: 包含前置广告的 VOD 播放
 description: 在此方案中，在主内容之前插入了前置广告。
-seo-description: In this scenario in Adobe Media Analytics, pre-roll ads have been inserted before the main content.
+seo-description: 在Adobe Media Analytics的此方案中，在主内容之前已插入前置广告。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -24,11 +24,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 播放广告 #2 的第一帧。 | `trackEvent:AdStart` | Analytics 广告开始，心率广告开始 |  |
 | 播放广告。 |  | 广告心率 |  |
 | 广告 #2 结束播放。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 心率广告结束 | 到达广告和面板的结尾。 |
-| 播放内容。 |  | 内容心率 | This network call is identical to the VOD playback with no ads scenario.[](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
-| 内容结束。 | `trackComplete` | 心率内容结束 | This network call is identical to the VOD playback with no ads scenario.[](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
+| 播放内容。 |  | 内容心率 | 此网络调用与无广告的 [VOD播放方案相同](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
+| 内容结束。 | `trackComplete` | 心率内容结束 | 此网络调用与无广告的 [VOD播放方案相同](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
 | 会话结束 | `trackSessionEnd` |  | `SessionEnd` |
 
-## 参数 {#section_33CDFB6CB230437480B67A3D149EC44E}
+## 参数 {#parameters}
 
 广告播放开始时，将发 `Heartbeat Ad Start` 送呼叫。 If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
 
@@ -68,7 +68,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |
 
-## 前置广告时间的示例代码 {#section_nwf_xy3_x2b}
+## 前置广告时间的示例代码 {#sample-code-for-a-pre-roll-ad-break}
 
 在此方案中，VOD 包含第一段和第二段前置广告，然后播放内容。
 
@@ -378,7 +378,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    .......
    ```
 
-## 多个广告时间的示例代码 {#section_ojy_zy3_x2b}
+## 多个广告时间的示例代码 {#sample-code-for-multiple-ad-breaks}
 
 在此方案中，VOD 内容的播放包含前置广告、内容、中间广告、内容和后置广告。
 
