@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 最终用户
 user-guide-title: Adobe Analytics for Audio和Video
 translation-type: tm+mt
-source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
+source-git-commit: 1f9fe870b906246c3959eead2d23301f9a64f99c
 
 ---
 
@@ -128,6 +128,7 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [OTT 和 Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT 和 Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + 操作指南 {#cookbook}
+      + [SDK说明书](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [处理应用程序在播放过程中出现的中断问题](sdk-implement/cookbook/app-interrupts.md)
       + [解决在广告之间出现 main:play 的问题](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [恢复非活动会话](sdk-implement/cookbook/resuming-inactive.md)
@@ -162,6 +163,9 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [时间轴 2 - 用户放弃会话](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [时间轴 3 - 章节](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [跟踪下载的内容](media-collection-api/track-downloaded-content.md)
++ 操作指南 {#media-analytics-cookbook}
+   + [说明书概述](media-analytics-cookbook/cookbook-overview.md)
+   + [媒体跟踪之外的媒体维度](media-analytics-cookbook/media-dimensions.md)
 + 量度和元数据 {#metrics-and-metadata}
    + [音频和视频参数](metrics-and-metadata/audio-video-parameters.md)
    + [广告参数](metrics-and-metadata/ad-parameters.md)
@@ -181,4 +185,4 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
    + [媒体工作区模板](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
 + 其他资源 {#additional-resources}
-   + [文档更新](additional-resources/doc-updates.md)
+   + [资源](additional-resources/doc-updates.md)
