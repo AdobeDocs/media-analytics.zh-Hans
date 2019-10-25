@@ -3,14 +3,14 @@ seo-title: 跳过一个章节的 VOD 播放
 title: 跳过一个章节的 VOD 播放
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 跳过一个章节的 VOD 播放{#vod-playback-with-a-skipped-chapter}
 
-## 情景 {#section_34DCAFE0E64949C4A6DF2D98F8A12B41}
+## 情景 {#scenario}
 
 在此方案中，用户将跳过主内容中的一个章节。
 
@@ -29,11 +29,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 内容结束播放。 | `trackComplete` | 心率内容结束 | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户不观看媒体完成，也必须调用此API。 |
 
-## 参数 {#section_1874F6B7880B43C5856BD11FF85B382E}
+## 参数 {#parameters}
 
 在回放章节期间使用的参数与 [VOD回放中的参数相同，只是没有章节完整的网络调用](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) 。
 
-## 示例代码 {#section_fyl_ncj_x2b}
+## 示例代码 {#sample-code}
 
 ![](assets/chapter-skip.png)
 
