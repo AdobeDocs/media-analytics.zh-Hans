@@ -1,17 +1,19 @@
 ---
-title: 媒体跟踪之外的媒体维度
-seo-title: 媒体跟踪之外的媒体维度
+title: 媒体流归因
+seo-title: 媒体流归因
 translation-type: tm+mt
-source-git-commit: 5d20df537cd244a10f6c2e66cea622e98aa17a16
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
 
-# 媒体跟踪之外的媒体维度
+# 媒体流归因
 
 利用此功能，您无需附加处理规则和自定义变量即可将应用程序操作关联到媒体跟踪数据。
 
-现在，客户可以将任何媒体维度添加到所有其他分析调用，如页面查看和自定义链接。 在实施过程中，您必须将媒体上下文数据参数添加到Analytics跟踪调用。 用于媒体的上下文数据参数的完整列表可在以下网址获得：音 [频和视频参数。](/help/metrics-and-metadata/audio-video-parameters.md)
+## 媒体跟踪之外的媒体维度
+
+借助媒体流归因，客户现在可以将任何媒体维度添加到所有其他分析调用，如页面查看和自定义链接。 在实施过程中，您必须将媒体上下文数据参数添加到Analytics跟踪调用。 用于媒体的上下文数据参数的完整列表可在以下网址获得：音 [频和视频参数。](/help/metrics-and-metadata/audio-video-parameters.md)
 
 您还需要从管理控制台为要启用此功能的每个报告重新启用媒体跟踪配置。
 
