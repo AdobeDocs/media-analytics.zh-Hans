@@ -3,7 +3,7 @@ seo-title: 在 Adobe Analytics 中测量音频和视频
 title: 在 Adobe Analytics 中测量音频和视频
 uuid: b3cbe240-b94d-42b8-a99c-0280334aa14
 translation-type: tm+mt
-source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
+source-git-commit: d339ae295af89a1c2ba2e8c938e1650d82507e2b
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 它不包括有关旧版里程碑视频实施的说明。 我们建议所有客户采用其中一种或同时采用这两种最新的媒体跟踪解决方案，以便充分利用改进功能，实现更广泛的测量。您可以阅读下方的[转换到最新解决方案的益处](media-overview.md#section_cnj_5st_p1b)。虽然我们将继续支持跟踪视频的里程碑方法，但不会有任何计划的更新、修复或功能改进。 如果您有任何进一步的问题，请联系您的 Adobe 帐户管理员。
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 它不包括有关旧版里程碑视频实施的说明。 我们建议所有客户采用其中一种或同时采用这两种最新的媒体跟踪解决方案，以便充分利用改进功能，实现更广泛的测量。您可以阅读下方的[转换到最新解决方案的益处](media-overview.md#heartbeat-versus-milestone-benefits)。虽然我们将继续支持跟踪视频的里程碑方法，但不会有任何计划的更新、修复或功能改进。 如果您有任何进一步的问题，请联系您的 Adobe 帐户管理员。
 
-## 概述 {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
+## 概述 {#overview}
 
 Adobe Analytics for Media（也称为 Media Analytics）是 Analytics 基础产品的附加组件，可为客户提供针对内容、音频和广告的可靠媒体测量。Media Analytics 为客户带来诸多益处，允许客户进行实时监测、详细分析、可操作分析及盈利商机挖掘。
 
@@ -29,7 +29,7 @@ Adobe Analytics for Media 让用户可以跟踪客户在其网站中的整个活
 
 媒体解决方案不仅可以测量与 QoS 相关的重要交付量度，例如丢帧、缓冲花费时间和平均比特率，而且还可以与您的网站或应用程序数据相结合，使客户的流量和兴趣可视化，从而让您能够通过 Adobe Experience Cloud 更有效地推荐内容，并提供个性化的客户体验。
 
-## 优点 {#section_7712BA90EAE64C118218D1C581EF68B7}
+## 优点 {#benefits}
 
 Adobe 媒体测量解决方案的部分优点包括：
 
@@ -40,7 +40,7 @@ Adobe 媒体测量解决方案的部分优点包括：
 * **精准测量 -**&#x200B;在使用媒体的多种设备（包括 OTT、智能手机、平板电脑、台式机，等等）上测量数据以监测用户参与模式和习惯。
 * **区段划分 -**&#x200B;对您的播放器、设备、流派、章节和节目应用分类，以了解每个分类对内容、音频、广告和组合元素的整体查看/收听量和客户参与度有何影响。
 
-## 心率相比里程碑的优势 {#section_cnj_5st_p1b}
+## 心率相比里程碑的优势 {#heartbeat-versus-milestone-benefits}
 
 Adobe Analytics for Media可以通过两种方式进行衡量：传统的Milestone方法（仅视频）和当前的Heartbeats方法（音频和视频，在Media SDK和Media Collection API中都有）。 心率方法是首选的测量方法，我们建议所有尚未采用心率方法的客户迁移到此版本，以便充分利用下文所述的优点。
 
@@ -51,7 +51,6 @@ Adobe Analytics for Media可以通过两种方式进行衡量：传统的Milesto
 * **简化的实施流程 -**&#x200B;利用您的播放器 API 更轻松地映射变量，通过 Adobe Debug 工具验证实施以确保准确跟踪所有必需的变量。
 * **自动集成 Adobe Experience Cloud -**&#x200B;通过 Experience Cloud ID 充分利用与 Adobe Experience Cloud 的自动集成，对媒体受众进行分段和定位，并根据用户的偏好推荐媒体内容。
 * **利用 Federated Analytics 共享数据 -**&#x200B;利用我们在业界首开先河的媒体共享功能，全面评估您的所有媒体传播合作平台的数据：运营商、节目制作方和发行方。
-* **与经认证的评级合作伙伴合作 -** Adobe 与受众评级合作伙伴 Nielsen 开展合作，提供中立的人口普查第三方评测，以实现可信的认证评级。
 * **所有平台通用的标准化解决方案 -**&#x200B;针对所有媒体和平台采用一致的标准化变量，可以更高效地对不同营销活动、设备和供应商的数据进行对比。
 * **下载的内容跟踪** -跟踪在设备上下载和播放的媒体内容（视频和音频），而不管其连接性如何。
 
@@ -67,7 +66,7 @@ Adobe Analytics for Media可以通过两种方式进行衡量：传统的Milesto
 | **合作伙伴共享** | 不适用 | Federated Analytics 和经过认证的量度 |
 | **高级跟踪** | 不适用 | 错误恢复跟踪和并行查看者 |
 
-## 支持的设备 {#section_lkm_l5t_p1b}
+## 支持的设备 {#devices-supported}
 
 Adobe Analytics for Media 契合行业发展趋势，提供了强大的数据收集工具，可确保在所有具有统计意义的设备上收集和报告每个媒体流。我们的 Media SDK 针对所有常用的设备而开发，这些设备包括：
 
