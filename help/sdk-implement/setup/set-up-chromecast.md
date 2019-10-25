@@ -3,7 +3,7 @@ seo-title: 设置 Chromecast
 title: 设置 Chromecast
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -20,8 +20,7 @@ _我应该使用 Chromecast JavaScript SDK 还是标准 JavaScript SDK？_
 
 ## 先决条件
 
-* **Obtain valid configuration parameters for Heartbeats**
-These parameters can be obtained from an Adobe representative after you set up your media analytics account.
+* **获取Heartbeats的有效配置参数**&#x200B;在设置媒体分析帐户后，这些参数可从Adobe代表处获取。
 * **在媒体播放器中提供以下功能：**
    * *可订阅播放器事件的 API -* Media SDK 要求您在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
@@ -32,7 +31,7 @@ Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cl
 
 ## SDK 实施
 
-1. 将[下载](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)的 Chromecast 库添加到您的项目中。
+1. 将[下载](/help/sdk-implement/download-sdks.md#download-2x-sdks)的 Chromecast 库添加到您的项目中。
 
    1. `AdobeMobileLibrary-Chromecast-[version]` zip 文件包含以下软件组件：
 
