@@ -1,9 +1,9 @@
 ---
 seo-title: 设置 Roku
 title: 设置 Roku
-uuid: 904dfda0-4782-41da-b4ab-212e81156633
+uuid: 904dfda0-4782-41da-b4ab-212e8115633
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -25,7 +25,7 @@ Learn more at [Adobe Mobile Services documentation.](https://marketing.adobe.com
 
 ## SDK 实施
 
-1. 将[下载](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)的 Roku 库添加到您的项目中。
+1. 将[下载](/help/sdk-implement/download-sdks.md#download-2x-sdks)的 Roku 库添加到您的项目中。
 
    1. The `AdobeMobileLibrary-2.*-Roku.zip` download file consists of the following software components:
 
@@ -127,8 +127,8 @@ Learn more at [Adobe Mobile Services documentation.](https://marketing.adobe.com
    |  方法   | 描述 |
    | --- | --- |
    | `visitorMarketingCloudID` | Retrieves the Experience Cloud visitor ID from the visitor ID service.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | 除了 Experience Cloud 访客 ID 之外，您还可以设置其他与每个访客关联的客户 ID。访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。This method corresponds to . `setCustomerIDs`For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | Used to set the Roku ID for Advertising (RIDA) on the SDK. For example: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>   Get the Roku ID for Advertising (RIDA) using the Roku SDK getRIDA() API.`"<sample_roku_identifier_for_advertising>")`<br/><br/><br/>[](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) |
+   | `visitorSyncIdentifiers` | 除了 Experience Cloud 访客 ID 之外，您还可以设置其他与每个访客关联的客户 ID。访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。此方法对应 `setCustomerIDs`。 For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `setAdvertisingIdentifier` | 用于在SDK上设置Roku ID for Advertising(RIDA)。 For example: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` 使 <br/><br/><br/>用Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API获取Roku ID for Advertising(RIDA)。 |
 
    <!--
     Roku Api Reference: 
