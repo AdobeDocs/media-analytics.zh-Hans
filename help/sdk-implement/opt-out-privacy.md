@@ -3,14 +3,14 @@ seo-title: 选择禁用和隐私
 title: 选择禁用和隐私
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 translation-type: tm+mt
-source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 选择禁用和隐私{#opt-out-and-privacy}
 
-## 选择禁用/选择启用 {#section_zfb_syq_v2b}
+## 选择禁用/选择启用 {#opt-out-opt-in}
 
 您可以控制是否允许在特定设备上进行跟踪活动。
 
@@ -20,13 +20,13 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
    >[!NOTE]
    >
-   >Media heartbeat tracking calls are also disabled if the privacy status is set to opt-out.
+   >如果隐私状态设置为“退出”，则还会禁用媒体心跳跟踪调用。
 
    您可以使用以下设置来控制是否在特定设备上发送 Analytics 数据：
 
    * The `privacyDefault` setting in the `ADBMobile.json` config file. 此设置控制初始设置，除非在代码中进行更改，否则将一直保留初始设置。
 
-   * The  method.`ADBMobile().setPrivacyStatus()`
+   * `ADBMobile().setPrivacyStatus()` 方法。
 
       * **选择禁用:**
 
@@ -73,7 +73,7 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
             ```
    使用 `setPrivacyStatus` 更改隐私设置后，除非再次使用此方法对该设置进行更改，或者卸载并重新安装应用程序，否则此更改将为永久性的。
 
-## Retrieving Stored Identifiers (OTT Apps) {#section_mky_2yq_v2b}
+## Retrieving Stored Identifiers (OTT Apps) {#retrieving-stored-identifiers-ott-apps}
 
 此信息可帮助您从 Roku 应用程序中检索本地存储的用户身份。
 
