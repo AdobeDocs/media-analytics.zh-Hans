@@ -3,14 +3,14 @@ seo-title: 多个并行的 VOD 跟踪器
 title: 多个并行的 VOD 跟踪器
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 多个并行的 VOD 跟踪器{#vod-multiple-trackers-in-parallel}
 
-## 情景 {#section_1AFCA33B322B46818BA4F1BDD3B40B4E}
+## 情景 {#scenario}
 
 In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
 
@@ -18,7 +18,7 @@ This scenario is identical to the [VOD playback with no ads](/help/sdk-implement
 
 除非另外指定，否则网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。
 
-## 参数 {#section_45D7B10031524411B91E2C569F7818B0}
+## 参数 {#parameters}
 
 ### 心率会话
 
@@ -26,7 +26,7 @@ This scenario is identical to the [VOD playback with no ads](/help/sdk-implement
 |---|---|---|
 | `s:event:sid` | 唯一的会话 ID | 唯一的会话 ID 一直存在于所有心率网络调用中，直到调用 `trackSessionEnd` 方法。 |
 
-## 示例代码 {#section_qpy_4dj_x2b}
+## 示例代码 {#sample-code}
 
 ![](assets/multi-sessions-in-parallel.png)
 
