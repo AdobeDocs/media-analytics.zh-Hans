@@ -3,14 +3,14 @@ seo-title: 下载 SDK
 title: 下载 SDK
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 下载 SDK{#download-sdks}
 
-## 下载 2.x Media SDK {#section_551A10AD7880426BB29AE52482BB4211}
+## 下载 2.x Media SDK {#download-2x-sdks}
 
 | 2.x媒体SDK | 最新Media SDK下载 |  API   |  文档  |
 | --- | --- | --- | --- |
@@ -20,13 +20,13 @@ source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
 | Roku | [适用于 Roku v2.2.1 的 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [设置Roku](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [适用于 Chromecast v2.2.0 的 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [设置 Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
-## Media Analytics Launch 扩展 {#section_o54_gsd_12b}
+## Media Analytics Launch 扩展 {#media-analytics-launch-extension}
 
 | MA 启动组件   | 下载 | 文档 |
 |---|---|---|
 | **MA Launch 扩展** | [HTML5 播放器扩展示例](https://github.com/adobe/reactor-adobe-va-sample-player) | [Adobe Media Analytics for Audio and Video 扩展](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension) |
 
-## 下载 1.x Media SDK {#section_B91B3A02E68B4B42917E392AAE666522}
+## 下载 1.x Media SDK {#download-the-1.x-media-sDKs}
 
 | 1.x SDK |  Media SDK下载 |  入门指南 |
 | --- | --- | --- |
