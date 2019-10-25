@@ -3,7 +3,7 @@ seo-title: 在 Chromecast 中跟踪体验质量
 title: 在 Chromecast 中跟踪体验质量
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,11 +14,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >下面的说明为所有 2.x SDK 实施提供了指南。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 概述 {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
+## 概述 {#overview}
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. You can use the media player API to identify the variables related to QoS and error tracking.
+Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 您可以使用媒体播放器API来标识与QoS和错误跟踪相关的变量。
 
-## Player events {#player-events}
+## 播放器事件 {#player-events}
 
 ### 关于所有比特率更改事件
 
@@ -29,7 +29,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 调用 `trackError(“media error id”);`
 
-## 实施 {#section_3B8EBEB167624D0481E8AF4761F83047}
+## 实施 {#implement}
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
@@ -60,12 +60,12 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >Update the QoS object and call the bitrate change event on every bitrate change. 这样将可以提供最为准确的 QoS 数据。
+   >更新QoS对象，并在每个比特率更改时调用比特率更改事件。 这样将可以提供最为准确的 QoS 数据。
 
 1. 确保 `getQoSObject()` 方法返回最新的 QoS 信息。
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See Overview.)[](/help/sdk-implement/track-errors/track-errors-overview.md)
+1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (请参阅 [概述](/help/sdk-implement/track-errors/track-errors-overview.md)。)
 
    >[!TIP]
    >
-   >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >跟踪媒体播放器错误不会停止媒体跟踪会话。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
