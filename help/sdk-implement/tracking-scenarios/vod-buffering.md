@@ -3,14 +3,14 @@ seo-title: 带有缓冲的 VOD 播放
 title: 带有缓冲的 VOD 播放
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 带有缓冲的 VOD 播放{#vod-playback-with-buffering}
 
-## 情景 {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## 情景 {#scenario}
 
 在此方案中，播放 VOD 内容时出现一些缓冲。
 
@@ -28,7 +28,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 内容结束播放。 | `trackComplete` | 心率内容结束 | 到达播放头的结尾。 |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户没有观看完视频，也必须调用此 API。 |
 
-## 参数 {#section_A52A57C9FB1C41CEA6C0E2D53E01048E}
+## 参数 {#parameters}
 
 ### 心率缓冲
 
@@ -36,7 +36,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 |---|---|---|
 | `s:event:type` | `"buffer"` |  |
 
-## 示例代码 {#section_hxn_fdj_x2b}
+## 示例代码 {#sample-code}
 
 在此方案中，播放 VOD 内容时出现缓冲。
 
