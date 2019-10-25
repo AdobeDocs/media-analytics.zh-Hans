@@ -3,14 +3,14 @@ seo-title: 跟踪下载的内容
 title: 跟踪下载的内容
 uuid: 0718689d-9602-4e3f-833c-8297ae1d909
 translation-type: tm+mt
-source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 跟踪下载的内容{#track-downloaded-content}
 
-## 概述 {#section_hcy_3pk_cfb}
+## 概述 {#overview}
 
 “已下载内容”功能可在用户脱机时跟踪媒体使用情况。 例如，用户在移动设备上下载并安装了某个应用程序。然后，用户使用该应用程序将内容下载到设备上的本地存储中。为了跟踪此下载的数据，Adobe开发了“下载的内容”功能。 利用此功能，当用户从设备的存储中播放内容时，跟踪数据将存储在设备上，而不管设备的连接性如何。 当用户完成播放会话，并且设备返回联机状态时，存储的跟踪信息将在单个有效负荷内发送到Media Collection API后端。 在Media Collection API中，处理和报告会按正常方式进行。
 
@@ -28,7 +28,7 @@ source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
 * 在线场景实时跟踪；这要求在每次网络调用之前进行连接性检查。
 * 脱机场景（“下载的内容”功能）只需要一个网络连接检查，但还需要设备上更大的内存占用。
 
-## 实施 {#section_jhp_jpk_cfb}
+## 实施 {#implementation}
 
 ### 事件架构
 
@@ -47,11 +47,11 @@ source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
 * 201 - Created: Successful Request；数据有效，已创建会话并且将对其进行处理。
 * 400 - Bad Request；架构验证失败，所有数据均会被丢弃，并且不会处理任何会话数据。
 
-## 与 Adobe Analytics 集成 {#section_cty_kpk_cfb}
+## 与 Adobe Analytics 集成 {#integration-with-adobe-analtyics}
 
 在计算下载内容场景的Analytics启动／关闭调用时，后端会设置一个额外的Analytics字段，称为 `ts.` Theeses are timestamps for the first and last events received(start and complete)。 此机制允许将已完成的媒体会话放置在正确的时间点（即，即使用户连续数天未联机，媒体会话也会报告在实际查看内容时已发生）。 必须通过在 Adobe Analytics 端创建“可选时间戳报表包”_来启用此机制。_ 要启用时间戳可选报表包，请参阅 [可选时间戳。](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
 
-## 会话对比示例 {#section_qnk_lpk_cfb}
+## 会话对比示例 {#sample-session-comparison}
 
 ```
 [url]/api/v1/sessions
