@@ -3,20 +3,20 @@ seo-title: 一个 VOD 跟踪器用于多个会话
 title: 一个 VOD 跟踪器用于多个会话
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: e24dbf0ab08b9e148f887ef19903ad2d157822ad
 
 ---
 
 
 # 一个 VOD 跟踪器用于多个会话{#vod-one-tracker-for-multiple-sessions}
 
-## 情景 {#section_45D7B10031524411B91E2C569F7818B0}
+## 情景 {#scenario}
 
 在此方案中，`MediaHeartbeat` 实例用于依次创建两个不同的会话。
 
 此方案与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。
 
-## 参数 {#section_D52B325B99DA42108EF560873907E02C}
+## 参数 {#parameters}
 
 ### 心率会话
 
@@ -24,11 +24,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | --- | --- |
 | `s:event:sid` | 唯一的会话 ID | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
 
-## 示例代码 {#section_ndg_wdj_x2b}
+## 示例代码 {#sample-code}
 
 ![](assets/multi-sessions-one-at-a-time.png)
 
-### Android
+### Android {#android}
 
 To create two instances of `MediaHeartbeat` for two media players, set up the following code:
 
@@ -183,7 +183,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS
+### iOS {#ios}
 
 To create two instances of `MediaHeartbeat` for two media players, enter the following:
 
@@ -329,7 +329,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 ....... 
 ```
 
-### JavaScript
+### JavaScript {#javascript}
 
 ```js
 var MediaHeartbeat = ADB.va.MediaHeartbeat; 
