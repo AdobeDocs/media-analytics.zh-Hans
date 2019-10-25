@@ -3,7 +3,7 @@ seo-title: 请求参数
 title: 请求参数
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 | `analytics.optOutServerSideForwarding` | N | `sessionStart` | 当最终用户选择不在Adobe Analytics和其他Experience cloud解决方案（如Audience Manager）之间共享其数据时，设置为true |
 | `analytics.optOutShare` | N | `sessionStart` | 当最终用户选择退出其联合数据（例如，退出到其他Adobe Analytics客户端）时，设置为true。 |
 
-## 其他详细信息 {#section_ryt_ccy_lcb}
+## 其他详细信息 {#additional-details}
 
 ### visitor.marketingCloudUserId
 
