@@ -3,14 +3,14 @@ seo-title: 包含一个章节的 VOD 播放
 title: 包含一个章节的 VOD 播放
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 包含一个章节的 VOD 播放{#vod-playback-with-one-chapter}
 
-## 情景 {#section_E4B558253AD84ED59256EDB60CED02AE}
+## 情景 {#scenario}
 
 在此方案中，部分 VOD 内容被标记为一个章节。
 
@@ -27,7 +27,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 内容结束。 | `trackComplete` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话已结束。即使用户不观看媒体完成，也必须调用此API。 |
 
-## 参数 {#section_869319D99A474FEA8EA840415EA97FBD}
+## 参数 {#parameters}
 
 当章节播放开始时， `Heartbeat Chapter Start` 将发送呼叫。 If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
 
@@ -42,7 +42,7 @@ When this happens, a `Content Heartbeat` call goes out in the same interval. 您
 | `s:stream:chapter_*` |  | 特定于章节数据的流信息。 |
 | `s:meta:*` |  | 包含特定上下文数据的章节。 |
 
-## 示例代码，章节位于中间 {#section_icd_5bj_x2b}
+## 示例代码，章节位于中间 {#sample-code-chapter-in-the-middle}
 
 在此方案中，部分 VOD 内容是一个章节。
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## 示例代码，章节位于开头 {#section_flj_5bj_x2b}
+## 示例代码，章节位于开头 {#sample-code-chapter-at-the-beginning}
 
 在此方案中，VOD 内容的播放在开头有一个章节。
 
