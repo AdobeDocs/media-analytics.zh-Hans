@@ -3,14 +3,14 @@ seo-title: 在主内容中进行搜寻的 VOD 播放
 title: 在主内容中进行搜寻的 VOD 播放
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e622
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 在主内容中进行搜寻的 VOD 播放{#vod-playback-with-seeking-in-the-main-content}
 
-## 情景 {#section_E4B558253AD84ED59256EDB60CED02AE}
+## 情景 {#scenario}
 
 在此方案中，播放期间在主内容中进行搜寻。
 
@@ -26,7 +26,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 内容结束 | `trackComplete` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束 | `trackSessionEnd` |  | `SessionEnd` |
 
-## 示例代码 {#section_q2d_wcj_x2b}
+## 示例代码 {#sample-code}
 
 在此方案中，用户将在主内容播放时进行搜寻。
 
