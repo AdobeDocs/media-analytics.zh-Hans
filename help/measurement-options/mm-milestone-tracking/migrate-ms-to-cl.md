@@ -3,20 +3,20 @@ seo-title: 从里程碑迁移到自定义链接
 title: 从里程碑迁移到自定义链接
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 从里程碑迁移到自定义链接{#migrating-from-milestone-to-custom-link}
 
-## 概述 {#section_xlc_fc2_dfb}
+## 概述 {#overview}
 
 视频测量的核心概念与里程碑和自定义链接跟踪的核心概念相同，即获取视频播放器事件并将其映射到分析方法，同时还获取播放器元数据和值并将其映射到分析变量。应将“自定义链接”方法视为对实施和所收集数据的精简和简化。使用“自定义链接”解决方案，不会为视频测量预定义任何变量或方法，它需要进行完整的自定义设置。应当可以更新播放器事件代码，以指向基本的播放器事件（例如开始和结束）的自定义链接跟踪调用。有关更多详细信息，请参阅[自定义链接实施指南](/help/measurement-options/cl-in-aa/cl-impl-guide.md)和[使用自定义链接代码手动链接跟踪](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html)。
 
 下表提供了“里程碑”解决方案和“自定义链接”解决方案之间的转换。
 
-## 迁移指南 {#section_btt_fc2_dfb}
+## 迁移指南 {#migration-guide}
 
 ### 视频变量引用
 
@@ -95,8 +95,7 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData 
-  = true;
+  trackUsingContextData = true;
 </pre>
 </td>
 <td>
@@ -104,11 +103,8 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars
-  = 'events, 
-contextData.video.name’; 
-s.contextData[‘video.name']
-  = mediaName;
+s.linkTrackVars = 'events, contextData.video.name';
+s.contextData[‘video.name'] = mediaName;
 </pre>
 </td>
 </tr>
@@ -119,27 +115,7 @@ Media.contextDataMapping
 <td>
 <pre>
 s.Media.
-  contextDataMapping = {
-  "a.media.name":
-    "eVar2,prop2",
-  "a.media.segment":
-    "eVar3",
-  "a.contentType":
-    "eVar1",
-  "a.media.timePlayed":
-    "event3",
-  "a.media.view":
-    "event1",
-  "a.media.segmentView":
-    "event2",
-  "a.media.complete":
-    "event7",
-  "a.media.milestones":{
-    25:"event4",
-    50:"event5",
-    75:"event6"
-  }
-};
+  contextDataMapping = { "a.media.name":    “eVar2,prop2”、“a.media.segment”:    “eVar3”、“a.contentType”:    “eVar1”、“a.media.timePlayed”:    “event3”、“a.media.view”:    “event1”、“a.media.segmentView”:    “event2”、“a.media.complete”:    "event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
 </pre>
 </td>
 <td>不适用
@@ -153,12 +129,7 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s.Media.trackVars
-  = "events,
-     prop2,
-     eVar1,
-     eVar2,
-     eVar3";
+s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
 </pre>
 </td>
 <td>
@@ -166,16 +137,8 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars
-  = 'events,
-     prop10,
-     eVar10,
-     eVar12,
-     eVar13,
-     eVar15,
-     contextData.
-       video.name,
-     contextData.
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData。
+       video.name、contextData。
        video.view';
 </pre>
 </td>
@@ -194,8 +157,7 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s.linkTrackEvents
-  = 'event2';
+s.linkTrackEvents = 'event2';
 </pre>
 </td>
 </tr>
@@ -223,8 +185,7 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData 
-  = true;
+  trackUsingContextData = true;
 </pre>
 </td>
 <td>
@@ -232,11 +193,8 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars
-  = 'events, 
-contextData.video.name’; 
-s.contextData[‘video.name']
-  = mediaName;
+s.linkTrackVars = 'events, contextData.video.name';
+s.contextData[‘video.name'] = mediaName;
 </pre>
 </td>
 </tr>
@@ -460,7 +418,7 @@ s.Media.
 </tbody>
 </table>
 
-### Ad tracking variables
+### 广告跟踪变量
 
 <table>
 <thead>
