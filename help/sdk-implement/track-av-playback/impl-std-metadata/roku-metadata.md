@@ -3,7 +3,7 @@ seo-title: Roku 元数据键
 title: Roku 元数据键
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 可分别在媒体和广告信息对象上设置标准视频、音频和广告元数据。 调用跟踪 API 之前，使用视频/广告元数据的常量键设置包含信息对象中标准元数据的字典。有关标准元数据常量的完整列表，请参阅下表，随后是对应的示例。
 
-## 视频元数据常量 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## 视频元数据常量 {#video-metadata-constants}
 
 | 元数据名称 | 上下文数据键 | 常量名称 |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 电台/电视台 | `a.media.station` | `MEDIA_AudioMetadataKeySTATION` |
 | 发布者 | `a.media.publisher` | `MEDIA_AudioMetadataKeyPUBLISHER` |
 
-## 广告元数据常量 {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## 广告元数据常量 {#ad-metadata-constants}
 
 | 元数据名称 | 上下文数据键 | 常量名称 |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 网站 ID | `a.media.ad.site` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
 | 创作 URL | `a.media.ad.creativeURL` | `MEDIA_AdMetadataKeyCREATIVE_URL` |
 
-## 常量 {#section_F55145DBE77F45B988849C42C044C7DA}
+## 常量 {#constants}
 
 您可以使用以下常量来跟踪媒体事件：
 
