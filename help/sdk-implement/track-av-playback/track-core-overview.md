@@ -3,7 +3,7 @@ seo-title: 跟踪概述
 title: 跟踪概述
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -24,16 +24,16 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 * 填充元数据
 * 致电 `trackSessionStart`;例如： `trackSessionStart(mediaObject, contextData)`
 
-### On media start
+### 介质启动时
 
 * 调用 `trackPlay`
 
-### On pause/resume
+### 暂停／恢复时
 
 * 调用 `trackPause`
 * Call `trackPlay`   _when playback resumes_
 
-### On media complete
+### 介质完成时
 
 * 调用 `trackComplete`
 
@@ -45,11 +45,11 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 * 调用 `trackEvent(SeekStart)`
 
-### When scrubbing ends
+### 擦洗结束时
 
 * 调用 `trackEvent(SeekComplete)`
 
-### When buffering starts
+### 当缓冲开始时
 
 * 调用 `trackEvent(BufferStart);`
 
@@ -59,9 +59,9 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!TIP]
 >
->播放头位置被设置为设置和配置代码的一部分。 有关详细信息，请 `getCurrentPlayheadTime`参阅 [概述：一般实施指南。](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>播放头位置被设置为设置和配置代码的一部分。 有关详细信息，请 `getCurrentPlayheadTime`参阅 [概述：一般实施指南。](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
-## 实施 {#section_BB217BE6585D4EDEB34C198559575004}
+## 实施 {#implement}
 
 1. **初始跟踪设置 -**&#x200B;识别用户何时触发播放意图（用户点击“播放”和/或自动播放开启），并使用媒体的内容名称、内容 ID、内容时长和流类型信息，创建 `MediaObject` 实例。
 
@@ -75,7 +75,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
    | `streamType` | 流类型 | 是 |
    | `mediaType` | 媒体类型（音频或视频内容） | 是 |
 
-   **`StreamType`constants:**
+   **`StreamType`常量：**
 
    | 常量名称 | 描述 |
    |---|---|
@@ -86,7 +86,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
    | `AUDIOBOOK` | 有声读物的流类型。 |
    | `PODCAST` | 播客的流类型。 |
 
-   **`MediaType`constants:**
+   **`MediaType`常量：**
 
    | 常量名称 | 描述 |
    |---|---|
@@ -101,7 +101,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
       >[!NOTE]
       >
-      >Attaching the standard metadata object to the media object is optional.
+      >将标准元数据对象附加到媒体对象是可选的。
 
       实例化一个标准元数据对象，填充所需变量，并在媒体心率对象中设置该元数据对象。
 
@@ -232,7 +232,7 @@ if (e.type == “buffered”) {
 };
 ```
 
-## 验证 {#section_ABCFB92C587B4CAABDACF93452EFA78F}
+## 验证 {#validate}
 
 有关验证实施的信息，请参阅 [验证。](/help/sdk-implement/validation/validation-overview.md)
 
