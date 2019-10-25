@@ -3,7 +3,7 @@ seo-title: 设置概述
 title: 设置概述
 uuid: 06fedb-b0c8-4f7d-90c8-e374cde1695
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | Safari | v7+ |
 | IE | v11+ |
 
-## 一般实施指南 {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
+## 一般实施指南 {#general-implementation-guidelines}
 
 媒体跟踪涉及三个主要的 SDK 组件：
 * 媒体心率配置 - 配置包含报表的基本设置。
@@ -119,7 +119,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## 验证 {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
+## 验证 {#validate}
 
 媒体分析跟踪实施会生成两种类型的跟踪调用：
 
@@ -136,9 +136,9 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 * ** Media Analytics(Heartbeats)服务器**它始终采用“`[your_namespace].hb.omtrdc.net`”格式。 “”的值指`[your_namespace]`定您的公司，并由Adobe提供。
 
-媒体跟踪在所有平台、桌面和移动设备上的工作方式都是相同的。Audio tracking currently works on mobile platforms. 在所有跟踪调用中，有一些需要验证的关键通用变量：
+媒体跟踪在所有平台、桌面和移动设备上的工作方式都是相同的。音频跟踪当前在移动平台上可用。 在所有跟踪调用中，有一些需要验证的关键通用变量：
 
-## SDK 1.x文档 {#section_acj_tkk_t2b}
+## SDK 1.x文档 {#sdk-1x-documentation}
 
 | Video Analytics 1.x SDK |  开发人员指南（仅限PDF） |
 | --- | --- |
