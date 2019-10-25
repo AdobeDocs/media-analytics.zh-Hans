@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -46,7 +46,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 * 为广告时间结束事件调用 `trackEvent`。
 
-## 实施广告跟踪 {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## 实施广告跟踪 {#implement-ad-tracking}
 
 ### 广告跟踪常量
 
@@ -102,7 +102,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 >
 >确保在广告播放()期间不增加内容播放`l:event:playhead`器播放头(`s:asset:type=ad`)。 如果您这样做，则“内容停留时间”量度将受到不利影响。
 
-The following sample code utilizes the JavaScript 2.x SDK for an HTML5 media player.
+以下示例代码将JavaScript 2.x SDK用于HTML5媒体播放器。
 
 ```js
 /* Call on ad break start */ 
