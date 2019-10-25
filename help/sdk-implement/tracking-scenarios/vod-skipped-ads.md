@@ -3,18 +3,18 @@ seo-title: 跳过广告的 VOD 播放
 title: 跳过广告的 VOD 播放
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 跳过广告的 VOD 播放{#vod-playback-with-skipped-ads}
 
-## 情景 {#section_DAC4BCE25F4A4C4991AD0AE495D15B00}
+## 情景 {#scenario}
 
 此方案包含跳过广告的 VOD 内容播放。
 
-### One VOD with a skipped pre-roll ad
+### 一个跳过预滚动广告的VOD
 
 This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
 
@@ -29,11 +29,11 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implemen
 | 内容结束播放。 | `trackComplete()` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束。 | `trackSessionEnd()` |  | `SessionEnd` |
 
-## 参数 {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
+## 参数 {#parameters}
 
 这些参数与[包含前置广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)方案中的参数相同，不同之处在于此方案没有广告结束和广告时间结束调用。
 
-## 示例代码 {#section_lxt_qz3_x2b}
+## 示例代码 {#sample-code}
 
 ![](assets/ad-skip.png)
 
