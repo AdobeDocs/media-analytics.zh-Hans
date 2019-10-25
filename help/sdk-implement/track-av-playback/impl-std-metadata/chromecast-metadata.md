@@ -3,7 +3,7 @@ seo-title: Chromecast 元数据键
 title: Chromecast 元数据键
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 可以分别在媒体和广告信息对象上设置标准视频和广告元数据。调用跟踪 API 之前，使用视频/广告元数据的常量键设置包含信息对象中标准元数据的字典。有关标准元数据常量的完整列表，请参阅下表，随后是对应的示例。
 
-## 元数据常量 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## 元数据常量 {#video-metadata-constants}
 
 | 元数据名称 | 上下文数据键 | 常量名称 |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 信息源 | `a.media.feed` | `ADBMobile.media.VideoMetadataKeys.FEED` |
 | 流格式 | `a.media.format` | `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` |
 
-## 广告元数据常量 {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## 广告元数据常量 {#ad-metadata-constants}
 
 | 元数据名称 | 上下文数据键 | 常量名称 |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 网站 ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | 创作 URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Chromecast的示例实现 {#section_wvy_bdn_w2b}
+## Chromecast的示例实现 {#sample-implementations-for-chromecast}
 
 ### 视频
 
