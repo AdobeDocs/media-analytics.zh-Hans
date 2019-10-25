@@ -3,14 +3,14 @@ seo-title: 配置 Adobe Debug
 title: 配置 Adobe Debug
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
-source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
 
 # 配置 Adobe Debug{#configure-adobe-debug}
 
-## 访问 Adobe Debug {#section_AF81E7AD331E41FFA371AB9DA924BFBB}
+## 访问 Adobe Debug {#accessing-adobe-debug}
 
 要访问 Adobe Debug，请执行以下操作：
 
@@ -33,7 +33,7 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
 推荐的浏览器是最新版本的 Chrome 和 Firefox。
 
-## Debug Proxy {#section_8D3493B8426B46DEB9CD7E2ABD785D66}
+## Debug Proxy {#debug-proxy}
 
 下载并配置调试代理：
 
@@ -48,11 +48,11 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
    您可能需要根据操作系统和浏览器来调整浏览器设置。
 
-## 在桌面或应用程序中下载并安装 SSL 证书 {#section_2F9547E301CB413299A67BD59AFBEE0D}
+## 在桌面或应用程序中下载并安装 SSL 证书 {#download-and-install-sSL-desktop}
 
 第一次运行 Adobe Debug 时，将生成唯一的 SSL 证书。如果您支持跨桌面和/或应用程序的 HTTPS 通信，则需要下载并安装 SSL 证书。
 
-Download and install the SSL certificate:
+下载并安装SSL证书：
 
 1. After Adobe Debug has been installed and started, go to [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl) and download the certification.
 1. 导入证书
@@ -74,14 +74,14 @@ Download and install the SSL certificate:
     
     可能需要退出并重新打开Firefox才能看到更改。
     
-    **iOS devices**1. 
-    Set your iOS device to use Adobe Debug as its HTTP proxy by clicking **[!UICONTROL Settings app]** **&gt;** **[!UICONTROL Wifi settings]**.
+    **iOS设备**
+    1。 Set your iOS device to use Adobe Debug as its HTTP proxy by clicking **[!UICONTROL Settings app]** **&gt;** **[!UICONTROL Wifi settings]**.
     
     1. 在Safari中，转到[调试]。](https://proxy.debug.adobe.com/ssl)
     
     Safari将提示您安装SSL证书。
 
-## 为移动设备安装 SSL 证书 {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
+## 为移动设备安装 SSL 证书 {#install-sSL-for-mobile-device}
 
 如果在 Adobe Debug 中缺少 HTTPS 调用，则必须在移动设备上安装适用于 Adobe Debug 的 SSL 证书。
 
