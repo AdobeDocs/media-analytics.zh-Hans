@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
 Federated Analytics服务提供了一个在两个合作伙伴之间共享Adobe Media Analytics数据（音频和视频）的系统。
 Media Analytics 创建的标准化测量数据是 Federated Analytics 的标志，这使得来自多个源的相同数据可以进入同一个报表。利用约束 Federated Analytics 的规则和逻辑，可以轻松地控制和个性化数据，以满足每项合作的需求。Federated Analytics 可使音频和视频测量更高效、更简单和更可操作。
 
-## 优点 {#section_804FFE8671594A6FB769CBE79EF9D627}
+## 优点 {#benefits}
 
 * **透明：**&#x200B;通过在各家公司使用相同的逻辑，去除了数据创建的黑盒
 * **广泛：**&#x200B;跨越所有合作伙伴、平台和设备，全面了解音频和视频消费的抵达面和影响
@@ -25,12 +25,12 @@ Media Analytics 创建的标准化测量数据是 Federated Analytics 的标志�
 * **及时：**&#x200B;近乎实时地发送和接收数据
 * **简单：**&#x200B;使用 Adobe SDK 为播放器添加一次标签，可将数据共享给很多合作伙伴
 
-## 定义 {#section_ypl_mb3_vbb}
+## 定义 {#definitions}
 
 * **发送者：**&#x200B;在自己拥有的播放器中生成音频和视频分析数据的客户
 * **接收者：**&#x200B;从发送者接收音频和视频分析数据的客户
 
-## 要求 {#section_4758843A8941441B9A4D0D7A61077A6E}
+## 要求 {#requirements}
 
 * **媒体流合同：**&#x200B;发送者和接收者必须先就使用 Adobe Analytics 的媒体流功能签订合同，然后才能获得访问 Adobe Analytics 音频和视频数据的权限。有关更多详细信息，请联系您的帐户团队。
 * **联合附录：**&#x200B;每个发送者和接收者都必须先与 Adobe 签署附录，然后才能发送或接收数据。每名客户需签署一份附录，但并非每次合作签署一份附录。有关更多详细信息，请联系您的帐户团队。
@@ -42,7 +42,7 @@ Media Analytics 创建的标准化测量数据是 Federated Analytics 的标志�
 
 请在此处下载此表单的当前版本：联 [邦规则协议](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
-## 过程 {#section_byb_kb3_vbb}
+## 过程 {#process}
 
 1. 发送者与接收者共同填写联合规则协议表单。Federated Rules Agreement（联合规则协议）表单包含针对我们工程团队的特殊字段，并且仅应使用Adobe acrobat进行编辑。 [免费下载 Acrobat。](https://get.adobe.com/reader/)
 1. 咨询服务部使用来自发送者播放器的实际数据向接收者提供一个示例数据文件，以进一步确认已定义正确的数据共享规则（如果数据文件可用）。
