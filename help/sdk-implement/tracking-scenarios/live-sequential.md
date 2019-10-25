@@ -3,14 +3,14 @@ seo-title: 具有连续跟踪的实时主内容
 title: 具有连续跟踪的实时主内容
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 具有连续跟踪的实时主内容{#live-main-content-with-sequential-tracking}
 
-## 情景 {#section_E4B558253AD84ED59256EDB60CED02AE}
+## 情景 {#scenario}
 
 在此方案中，有一个加入实时流之后 40 秒不播放广告的实时资产。
 
@@ -27,7 +27,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | 内容播放 |  | 内容心率 |  |
 | 会话结束（第 2 集结束） | trackComplete / trackSessionEnd | 心率内容结束 | 结束是指第 2 集的会话 2 已到达结尾并观看完毕。在开始下一集的会话之前，必须先结束此会话。 |
 
-## 参数 {#section_D52B325B99DA42108EF560873907E02C}
+## 参数 {#parameters}
 
 ### 心率内容开始
 
@@ -42,7 +42,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *可选* | 媒体上的自定义元数据集 |
 
-## 心率内容播放 {#section_B6AD9225747943F881DCA8E6A1D5710E}
+## 心率内容播放 {#heartbeat-content-play}
 
 这应当看起来与心率内容开始调用几乎完全相似，但关键的区别在于“s:event:type”参数。所有参数应当也位于此处。
 
@@ -51,7 +51,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## 内容心率 {#section_7B387303851A43E5993F937AE2B146FE}
+## 内容心率 {#content-heartbeats}
 
 在媒体播放期间，会有一个计时器，该计时器将为主内容每10秒发送一个或多个心跳，为广告每1秒发送一个或多个心跳。 这些心率将包含有关播放、广告、缓冲等的信息。本文档不包含各个心率的确切内容，但需要确认的一个关键点是，在继续播放时，将会持续触发心率。
 
@@ -62,7 +62,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;播放头位置&gt; 例如 50、60、70 | 这应该反映播放头的当前位置。 |
 
-## 心率内容结束 {#section_2CA970213AF2457195901A93FC9D4D0D}
+## 心率内容结束 {#heartbeat-content-complete}
 
 当任何给定剧集的播放已结束时（播放头越过剧集边界），将发送一个心率内容结束调用。此调用看起来类似于其他心率调用，但包含几个特定的参数：
 
@@ -71,7 +71,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## 示例代码 {#section_mpx_q2j_x2b}
+## 示例代码 {#sample-code}
 
 ![](assets/ios-live-noads-multiplesessions.png)
 
