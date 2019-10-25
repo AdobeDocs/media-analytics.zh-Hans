@@ -3,20 +3,20 @@ seo-title: 从里程碑迁移到 Media Analytics
 title: 从里程碑迁移到 Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 从里程碑迁移到 Media Analytics {#migrating-from-milestone-to-media-analytics}
 
-## 概述 {#section_ihl_nbz_cfb}
+## 概述 {#overview}
 
 视频测量的核心概念与里程碑和 Media Analytics 的核心概念相同，即获取视频播放器事件并将其映射到分析方法，同时还获取播放器元数据和值并将其映射到分析变量。Media Analytics 解决方案源自里程碑解决方案，因此两种解决方案中的许多方法和量度都是相同的，但配置方法和代码发生了较大改变。应当可以更新播放器事件代码以指向新的 Media Analytics 方法。有关实 [施Media Analytics的更多详细信](/help/sdk-implement/setup/setup-overview.md)[](/help/sdk-implement/track-av-playback/track-core-overview.md) 息，请参阅SDK概述和跟踪概述。
 
 下表提供了“里程碑”解决方案和“Media Analytics”解决方案之间的转换。
 
-## 迁移指南 {#section_iyb_pbz_cfb}
+## 迁移指南 {#migration-guide}
 
 ### 变量引用
 
@@ -188,8 +188,7 @@ s.Media.playerName = "自定义播放器名称"
 </pre>
 </td>
 <td>
-SDK密钥：playerName;
-API密钥：media.playerName
+SDK密钥：playerName;API密钥：media.playerName
 </td>
 <td>
 <pre>
