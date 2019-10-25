@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -18,15 +18,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 媒体收集 API 本质上是一个适配器，充当 Media SDK 的服务器端版本。这意味着Media SDK文档的某些方面也与Media Collection API相关。 例如，两个解决方案都使用相同的 [音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)，而收集的音频和视频跟踪数据会导致相同的报 [告和分析。](/help/media-reports/media-reports-enable.md)
 
-## 媒体跟踪数据流 {#section_pwq_n34_qbb}
+## 媒体跟踪数据流 {#media-tracking-data-flows}
 
 实施Media Collection API的媒体播放器直接向媒体跟踪后端服务器发出RESTful API跟踪调用，而实施Media SDK的播放器则向播放器应用程序内的SDK API发出跟踪调用。 通过 Web 进行调用的一个效果是，实施媒体收集 API 的播放器需要处理 Media SDK 自动处理的一些进程。(Media Collection实 [施中的详细信息。](mc-api-impl/mc-api-quick-start.md))
 
-The tracking data captured with the Media Collection API is sent and initially processed differently than the tracking data captured in a Media SDK player, but the same processing engine on the back-end is used for both solutions.
+使用Media Collection API捕获的跟踪数据会以不同于Media SDK播放器捕获的跟踪数据的方式发送和最初处理，但后端的相同处理引擎用于这两个解决方案。
 
 ![](assets/col_api_overview_simple.png)
 
-## API概述 {#section_y4n_mcl_kcb}
+## API概述 {#api-overview}
 
 **URI：**&#x200B;从 Adobe 代表处获得此信息。
 
