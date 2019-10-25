@@ -3,7 +3,7 @@ seo-title: 媒体概览
 title: 媒体概览
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,17 +14,17 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 ![](assets/media_overview.png){width="672px"}
 
-## 快速过滤器 {#section_8DF3E4A6734145B082657C6BECFA0BBE}
+## 快速过滤器 {#quick-filters}
 
 按设备或国家/地区快速显示媒体量度：
 
 ![](assets/video-overview-report-filters.png){width="400px"}
 
-## 媒体效果 {#section_288FB476EDA44761BB8A86551F0A110C}
+## 媒体效果 {#media-performance}
 
 单击并拖动以放大，然后将鼠标悬停在上面以查看特定媒体的精细量度。单击  ![](assets/video-overview-report-revert.png)
 
-to reset the view after you zoom.
+以在缩放后重置视图。
 
 ![](assets/media_overview_zoom.png){width="400px"}
 
