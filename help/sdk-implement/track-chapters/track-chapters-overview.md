@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 * 调用 `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## 实现章节跟踪 {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## 实现章节跟踪 {#implement-chapter-tracking}
 
 1. 识别执行章节开始事件的时间，然后使用章节信息创建 `ChapterObject` 实例。
 
@@ -57,7 +57,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 1. 如果由于用户选择跳过章节（例如，用户搜寻章节边界之外的内容）而使章节播放未能完成，请在 MediaHeartbeat 实例中调用 `ChapterSkip`。
 1. 如果存在任何其他章节，请重复执行步骤 1 至 5。
 
-The following sample code uses the JavaScript 2.x SDK for an HTML5 media player. You should use this code with the core media playback code.
+以下示例代码将JavaScript 2.x SDK用于HTML5媒体播放器。 应将此代码与核心媒体播放代码一起使用。
 
 ```js
 /* Call on chapter start */ 
