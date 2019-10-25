@@ -3,14 +3,14 @@ seo-title: 实时主内容
 title: 实时主内容
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 实时主内容{#live-main-content}
 
-## 情景 {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## 情景 {#scenario}
 
 在此方案中，有一个加入实时流之后 40 秒不播放广告的实时资产。
 
@@ -21,7 +21,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | 播放内容。 |  | 内容心率 |  |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户不使用媒体完成，也必须调用此API。 |
 
-## 参数 {#section_D52B325B99DA42108EF560873907E02C}
+## 参数 {#parameters}
 
 您在 Adobe Analytics 内容开始调用中看到的很多值，同样也会在心率内容开始调用中看到。您还将看到许多其他参数，Adobe使用这些参数在Adobe Analytics中填充各种媒体报表。 我们不会在这里涵盖所有这些变量，而是只列出一些非常重要的变量。
 
@@ -34,13 +34,13 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | `s:user:mid` | `s:user:mid` | 应当匹配 Adobe Analytics 内容开始调用中的中间值 |
 | `s:event:type` | "start" |  |
 | `s:asset:type` | "main" |  |
-| `s:asset:mediao_id` | &lt;Your Media Name&gt; |  |
+| `s:asset:mediao_id` | &lt;您的媒体名称&gt; |  |
 | `s:stream:type` | live |  |
 | `s:meta:*` | 可选 | 媒体上的自定义元数据集 |
 
-## 内容心率 {#section_7B387303851A43E5993F937AE2B146FE}
+## 内容心率 {#content-heartbeats}
 
-During media playback, there is a timer that will send one or more heartbeats (or pings) every 10 seconds for main content, and every second for ads. 这些心率将包含有关播放、广告、缓冲等的信息。本文档不包含各个心率的确切内容，但需要确认的一个关键点是，在继续播放时，将会持续触发心率。
+在媒体播放期间，有一个计时器将每10秒为主内容发送一个或多个心跳（或ping），每秒为广告发送一个或多个心跳。 这些心率将包含有关播放、广告、缓冲等的信息。本文档不包含各个心率的确切内容，但需要确认的一个关键点是，在继续播放时，将会持续触发心率。
 
 在内容心率中，查找几个特定的参数：
 
@@ -49,25 +49,25 @@ During media playback, there is a timer that will send one or more heartbeats (o
 | `s:event:type` | "play" |  |
 | `l:event:playhead` | &lt;播放头位置&gt; 例如 50、60、70 | 这应该反映播放头的当前位置。 |
 
-## 心率内容结束 {#section_2CA970213AF2457195901A93FC9D4D0D}
+## 心率内容结束 {#heartbeat-content-complete}
 
-There will not be a complete call in this scenario, because the live stream was never completed.
+此场景中不会有完整的调用，因为实时流从未完成。
 
-## Playhead Value Settings
+## 播放头值设置
 
-For LIVE streams, you need to set the playhead to an offset from when the programming began, so that in reporting, analysts can determine at what point users are joining and leaving the LIVE stream within a 24-hour view.
+对于LIVE流，您需要将播放头设置为与开始编程时的偏移量，这样，在报告中，分析师可以确定用户在24小时视图内加入和离开LIVE流的时间点。
 
-### At Start
+### 开始
 
-For LIVE media, when a user starts playing the stream, you need to set  to the current offset, in seconds. `l:event:playhead`This is as opposed to VOD, where you would set the playhead to "0".
+对于实时媒体，当用户开始播放流时，您需要设置为当 `l:event:playhead` 前的偏移量（以秒为单位）。 这与VOD不同，在VOD中，您可以将播放头设置为“0”。
 
-例如，假设LIVE流事件从午夜开始，持续24小时(`a.media.length=86400`; `l:asset:length=86400`)。 然后，假设用户在下午12:00开始播放该实时流。 In this scenario, you should set  to 43200 (12 hours into the stream).`l:event:playhead`
+例如，假设LIVE流事件从午夜开始，持续24小时(`a.media.length=86400`; `l:asset:length=86400`)。 然后，假设用户在下午12:00开始播放该实时流。 在此方案中，您应设 `l:event:playhead` 置为43200（在流中停留12小时）。
 
 ### 暂停时
 
 当用户暂停播放时，必须应用在播放开始时应用的相同“实时播放头”逻辑。 当用户返回播放LIVE流时，您必须将该值设置为新的偏移播放头位置，而 `l:event:playhead`__ 不是设置为用户暂停LIVE流的点。
 
-## 示例代码 {#section_vct_j2j_x2b}
+## 示例代码 {#sample-code}
 
 ![](assets/live-content-playback.png)
 
