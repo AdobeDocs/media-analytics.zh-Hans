@@ -3,7 +3,7 @@ seo-title: 客户端
 title: 客户端
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -18,9 +18,8 @@ If Media Analytics is your intended path, see [Media SDK Implementation](/help/s
 
 >[!IMPORTANT]
 >
->To use Media Analytics, customers must also use Adobe Analytics.
+>要使用Media Analytics，客户还必须使用Adobe Analytics。
 
 >[!NOTE]
 >
->由于 Media Analytics 具有独有的 SKU，其定价模型已由基于服务器调用的模型变为基于媒体流的模型，因此客户将需要联系他们的销售代表/帐户管理员来签署新的销售订单。
-
+>客户需要联系其销售代表／客户经理以签署新的销售订单，因为Media Analytics具有唯一的SKU，并且定价模型根据服务器调用的变化更改为基于媒体流的模型。
