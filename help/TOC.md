@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 最终用户
 user-guide-title: Adobe Analytics for Audio和Video
 translation-type: tm+mt
-source-git-commit: cc067b31066aa5d7e254167e32429c6c56e40c77
+source-git-commit: fa72eba07a06adbd7c278282bd69d0b336529ac8
 
 ---
 
@@ -164,7 +164,7 @@ source-git-commit: cc067b31066aa5d7e254167e32429c6c56e40c77
       + [时间轴 3 - 章节](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [跟踪下载的内容](media-collection-api/track-downloaded-content.md)
 + 操作指南 {#media-analytics-cookbook}
-   + [操作指南](media-analytics-cookbook/cookbook-overview.md)
+   + [操作指南](media-analytics-cookbook/media-analytics-cookbook.md)
    + [媒体流归因](media-analytics-cookbook/media-dimensions.md)
 + 量度和元数据 {#metrics-and-metadata}
    + [音频和视频参数](metrics-and-metadata/audio-video-parameters.md)
@@ -186,4 +186,3 @@ source-git-commit: cc067b31066aa5d7e254167e32429c6c56e40c77
 + [Federated Analytics](federated-analytics.md)
 + 其他资源 {#additional-resources}
    + [资源](additional-resources/doc-updates.md)
-
