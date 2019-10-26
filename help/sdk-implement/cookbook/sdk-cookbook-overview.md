@@ -4,14 +4,14 @@ seo-title: SDK说明书概述
 description: '特定于SDK的说明书主题 '
 seo-description: '特定于SDK的说明书主题 '
 translation-type: tm+mt
-source-git-commit: cafe29452f5c0a14849b15aaf2af557dc4721d9f
+source-git-commit: 9736c939b40ecdf72d3faa6d25cc9f3ee6e14419
 
 ---
 
 
 # SDK说明书概述
 
-您可以在以下网址找到适用于Media SDK和Media Collection API的常规Media Analytics说明书主题：媒 [体分析说明书。](/help/media-analytics-cookbook/cookbook-overview.md)
+您可以在以下网址找到适用于Media SDK和Media Collection API的常规Media Analytics说明书主题：媒 [体分析说明书。](/help/media-analytics-cookbook/media-analytics-cookbook.md)
 
 下面列出的说明书主题特定于Media SDK版本的Media Analytics:
 
