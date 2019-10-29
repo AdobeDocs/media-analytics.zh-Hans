@@ -3,7 +3,7 @@ seo-title: 音频和视频参数
 title: 音频和视频参数
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a74955b2a
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 35224b77881802c742b15ecd6e9f6b0e12b316e3
 
 ---
 
@@ -434,17 +434,19 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK 密钥：**<br/>自动设置 </li> <li> **API 密钥：**<br/>不适用 </li> <li> **类型：**<br/>字符串 </li> <li> ****<br/> 发送方：媒体关闭 </li> <li> **最小 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/>TRUE </li> <li> ****<br/> 说明：主内容的查看次数。 A Content Segment View is counted when there is at least one frame viewed.  <br/> **重要信息：**&#x200B;如果设置此参数，只能将其设置为 true。如果不设置此参数，则不会返回任何值。 </li></ul> | <ul> <li> **Adobe Analytics：**<br/>不适用 </li> <li> **心率：**<br/>不适用 </li> </ul> | <ul> <li> **可用：**<br/>是 </li> <li> **保留的变量：**<br/>event </li> <li> **报表名称：**<br/>内容区段查看 </li> <li> ****<br/> 上下文数据：(a.media.segmentView) </li> <li> **数据馈送：**<br/>不适用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.segmentView) </li> </ul> |
 
-### 广告计数
+<!--
+### Ad Count 
 
-|   实施   | 网络参数 | 报表 |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> SDK密钥：N/A </li> <li> **API 密钥：**<br/>不适用 </li> <li> **类型：**<br/>数值 </li> <li> ****<br/> 发送方：媒体关闭 </li> <li> **最小 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/>2 </li> <li> ****<br/> 说明：在媒体会话期间开始的广告数。   <br/> </li></ul> | <ul> <li> **Adobe Analytics：**<br/>不适用 </li> <li> **心率：**<br/>不适用 </li> </ul> | <ul> <li> **可用：**<br/>使用自定义处理规则 </li> <li> **保留的变量：**<br/>不适用 </li> <li> **报表名称：**<br/>自定义 </li> <li> ****<br/> 上下文数据：(a.media.adCount) </li> <li> **数据馈送：**<br/>不适用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.adCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of ads started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.adCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.adCount) </li> </ul> |
 
-### 章节计数
+### Chapter Count 
 
-|   实施   | 网络参数 | 报表 |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> SDK密钥：N/A </li> <li> **API 密钥：**<br/>不适用 </li> <li> **类型：**<br/>数值 </li> <li> ****<br/> 发送方：媒体关闭 </li> <li> **最小 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/>2 </li> <li> ****<br/> 说明：媒体会话期间开始的章节数。   <br/> </li></ul> | <ul> <li> **Adobe Analytics：**<br/>不适用 </li> <li> **心率：**<br/>不适用 </li> </ul> | <ul> <li> **可用：**<br/>使用自定义处理规则 </li> <li> **保留的变量：**<br/>不适用 </li> <li> **报表名称：**<br/>自定义 </li> <li> ****<br/> 上下文数据：(a.media.chapterCount) </li> <li> **数据馈送：**<br/>不适用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of chapters started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.chapterCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+-->
 
 ## 加利福尼亚消费者隐私法(CCPA)参数 {#ccpa-params}
 
