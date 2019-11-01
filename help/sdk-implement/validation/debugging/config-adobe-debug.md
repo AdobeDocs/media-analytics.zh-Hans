@@ -1,9 +1,9 @@
 ---
-seo-title: 配置 Adobe Debug
 title: 配置 Adobe Debug
+description: 本主题介绍如何配置Adobe Debug，您可以使用它来对Media SDK实施进行疑难解答。
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
