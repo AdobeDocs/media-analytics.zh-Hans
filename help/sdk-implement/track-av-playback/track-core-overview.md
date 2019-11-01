@@ -1,9 +1,9 @@
 ---
-seo-title: 跟踪概述
 title: 跟踪概述
+description: '本主题介绍跟踪核心播放，包括跟踪媒体加载、媒体开始、媒体暂停和媒体完成。 '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
