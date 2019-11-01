@@ -1,9 +1,9 @@
 ---
-seo-title: 一个 VOD 跟踪器用于多个会话
 title: 一个 VOD 跟踪器用于多个会话
+description: 如何使用一个跟踪器使用Media SDK跟踪多个会话的示例。
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
-source-git-commit: e24dbf0ab08b9e148f887ef19903ad2d157822ad
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
