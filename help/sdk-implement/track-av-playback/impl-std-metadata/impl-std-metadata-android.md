@@ -1,18 +1,16 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 在 Android 中实施标准元数据
 title: 在 Android 中实施标准元数据
+description: 介绍如何设置标准视频和广告元数据，以便通过Android上的跟踪调用发送。
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 translation-type: tm+mt
-source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
 # 在 Android 中实施标准元数据{#implement-standard-metadata-on-android}
 
-## Standard Metadata Constants
+## 标准元数据常量
 
 | 常量名称 | 描述   |
 |---|---|
