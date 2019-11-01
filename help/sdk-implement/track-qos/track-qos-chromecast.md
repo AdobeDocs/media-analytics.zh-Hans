@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Chromecast 中跟踪体验质量
 title: 在 Chromecast 中跟踪体验质量
+description: 本主题介绍在Chromecast上使用Media SDK实现体验质量(QoE,QoS)跟踪。
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
