@@ -1,9 +1,9 @@
 ---
-seo-title: Test 2媒体中断
 title: Test 2媒体中断
+description: 本主题介绍在验证中使用的媒体中断测试。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 translation-type: tm+mt
-source-git-commit: 5822e634c51cb53a60400623d115c6d862dad44f
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -49,11 +49,11 @@ source-git-commit: 5822e634c51cb53a60400623d115c6d862dad44f
 
    从后台返回时，应恢复内容播放。
 
-1. **Play main content media for at least 5 minutes uninterrupted**
+1. **播放主内容媒体至少5分钟不间断**
 
    有关调用参数和元数据，请参阅测 [试调用详细信息。](/help/sdk-implement/validation/test-call-details.md#play-main-content)
 
 1. **关闭媒体播放器**
 
-   No additional tracking calls should fire after the media player is closed.
+   关闭媒体播放器后，不会再触发其他跟踪调用。
 
