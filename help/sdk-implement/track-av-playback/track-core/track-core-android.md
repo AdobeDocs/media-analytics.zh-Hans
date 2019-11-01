@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Android 中跟踪核心播放
 title: 在 Android 中跟踪核心播放
+description: 本主题介绍如何在Android上使用Media SDK实现核心跟踪。
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >[!IMPORTANT]
 >本文档涵盖SDK版本2.x中的跟踪。 如果您实施的是 1.x 版本的 SDK，可以在此处下载适用于 Android 的 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
 
-1. **Initial tracking setup**
+1. **初始跟踪设置**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -52,7 +52,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **附加元数据**
 
-   Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
+   （可选）通过上下文数据变量将标准和／或自定义元数据对象附加到跟踪会话。
 
    * **标准元数据**
 
@@ -89,7 +89,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >The second value is the custom media metadata object name that you created in step 2.
+   >第二个值是您在步骤2中创建的自定义媒体元数据对象名称。
 
    >[!IMPORTANT]
    >
