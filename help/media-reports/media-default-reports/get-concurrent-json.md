@@ -1,9 +1,9 @@
 ---
-seo-title: 获取并行查看者 JSON 报表数据
 title: 获取并行查看者 JSON 报表数据
+description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
-source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 # 获取并行查看者 JSON 报表数据{#get-concurrent-viewers-json-report-data}
 
 您可以使用 _* 1.4版Analytics API获取并发查看器报告数据&#x200B;*_ :
-* [分析API](https://github.com/AdobeDocs/analytics-1.4-apis)
+* [Analytics API](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [斯瓦格](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. 使用在UI上构建的任何区段过滤数据。 要按特定内容ID进行筛选，请创建新区段。
