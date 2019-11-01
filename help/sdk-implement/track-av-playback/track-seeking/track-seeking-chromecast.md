@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Chromecast 中跟踪搜寻
 title: 在 Chromecast 中跟踪搜寻
+description: 本主题介绍在Chromecast上使用Media SDK实现搜索跟踪。
 uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
