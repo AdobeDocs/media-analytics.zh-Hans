@@ -1,9 +1,9 @@
 ---
-seo-title: 时间轴 2 - 用户放弃会话
 title: 时间轴 2 - 用户放弃会话
+description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD、前置广告、中置广告、用户提前放弃内容
 
-下图说明了播放头时间线和用户操作的对应时间线。 The details for each action and its accompanying requests are presented below.
+下图说明了播放头时间线和用户操作的对应时间线。 每项操作及其随附请求的详细信息如下所示。
 
 
 ![](assets/va_api_content_2.png)
@@ -21,9 +21,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 ![](assets/va_api_actions_2.png)
 
 
-## Action details
+## 操作详细信息
 
-### Action 1 - Start session {#Action-1}
+### 操作1 —— 开始会话 {#Action-1}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -66,9 +66,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **实施详细信息**
 
-启动应用程序的ping计时器。 First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.
+启动应用程序的ping计时器。 如果有预先播放的广告，则第一个ping事件应触发1秒，否则触发10秒。
 
-### Action 3 - Ad break start {#Action-3}
+### 操作3 —— 广告中断开始 {#Action-3}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -137,9 +137,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **实施详细信息**
 
-Ping the backend every 1 second. （为简便起见，不显示后续和ping。）
+每1秒Ping后端。 （为简便起见，不显示后续和ping。）
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -161,7 +161,7 @@ Ping the backend every 1 second. （为简便起见，不显示后续和ping。�
 
 第一个前置广告结束。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -183,7 +183,7 @@ Ping the backend every 1 second. （为简便起见，不显示后续和ping。�
 
 广告时间结束。在整个广告时间内，播放器一直处于“正在播放”状态。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -250,7 +250,7 @@ Ping the backend every 1 second. （为简便起见，不显示后续和ping。�
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -271,7 +271,7 @@ Ping the backend every 1 second. （为简便起见，不显示后续和ping。�
 **实施详细信息**
 
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -337,7 +337,7 @@ Ping the backend every 1 second. （为简便起见，不显示后续和ping。�
 
 持续时间为 8 秒的中置广告：发送 `adBreakStart`。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -363,7 +363,7 @@ Ping the backend every 1 second. （为简便起见，不显示后续和ping。�
 
 跟踪中置广告。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
