@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Android 中跟踪广告
 title: 在 Android 中跟踪广告
+description: 在Android应用程序中使用Media SDK实施广告跟踪。
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `MediaHeartbeat.Event.AdComplete` | 用于跟踪广告结束事件的常量 |
 | `MediaHeartbeat.Event.AdSkip` | 用于跟踪广告跳过事件的常量 |
 
-## Implementation steps
+## 实施步骤
 
 1. 识别广告时间（包括前置广告）边界开始的时间，然后使用广告时间信息创建 `AdBreakObject`。
 
@@ -76,7 +76,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                                    <LENGTH>);
    ```
 
-1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
+1. （可选）通过上下文数据变量将标准和／或广告元数据附加到媒体跟踪会话。
 
    * [在 Android 中实施标准广告元数据](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
    * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
