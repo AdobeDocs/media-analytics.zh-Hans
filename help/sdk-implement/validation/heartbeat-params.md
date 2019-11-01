@@ -1,9 +1,9 @@
 ---
-seo-title: 心率参数描述
 title: 心率参数描述
+description: Adobe在Media Analytics（心跳）服务器上收集和处理的心跳参数列表。
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 translation-type: tm+mt
-source-git-commit: 10a5d921953339bef1cde2f802eb9ce0cb1bbe4b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
