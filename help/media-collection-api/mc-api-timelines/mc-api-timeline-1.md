@@ -1,9 +1,9 @@
 ---
-seo-title: 时间轴 1 - 观看到内容的结尾
 title: 时间轴 1 - 观看到内容的结尾
+description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD、前置广告、暂停、缓冲、观看到内容的结尾
 
-The following diagrams illustrate the playhead timeline and the corresonding timeline of a user's actions. The details for each action and its accompanying requests are presented below.
+下图说明了播放头时间线和用户操作的相应时间线。 每项操作及其随附请求的详细信息如下所示。
 
 
 ![](assets/va_api_content.png)
@@ -21,19 +21,19 @@ The following diagrams illustrate the playhead timeline and the corresonding tim
 ![](assets/va_api_actions.png)
 
 
-## Action details
+## 操作详细信息
 
-### Action 1 - Start session {#Action-1}
+### 操作1 —— 开始会话 {#Action-1}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 按自动播放或播放按钮，视频开始加载。 | 0 | 0 | `/api/v1/sessions` |
 
-**Implementation Detail**
+**实施详细信息**
 
 此调用表示&#x200B;_用户播放视频的意图_。<br/><br/>它将一个会话ID( `{sid}`)返回给客户端，该客户端用于标识会话中的所有后续跟踪调用。 播放器状态不是“正在播放”，而是“正在启动”。<br/><br/>[强制会话参数](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的 `params` 映射中。<br/><br/>在后端，此调用会生成一个 Adobe Analytics 启动调用。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -65,7 +65,7 @@ The following diagrams illustrate the playhead timeline and the corresonding tim
 
 **实施详细信息**
 
-启动应用程序的ping计时器。 First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.
+启动应用程序的ping计时器。 如果有预先播放的广告，则第一个ping事件应触发1秒，否则触发10秒。
 
 ### 操作3 —— 广告中断开始 {#Action-3}
 
@@ -73,7 +73,7 @@ The following diagrams illustrate the playhead timeline and the corresonding tim
 | --- | :---: | :---: | --- |
 | 跟踪前置广告时间开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**实施详细信息**
 
 只能在广告时间期间跟踪广告。
 
@@ -167,7 +167,7 @@ The following diagrams illustrate the playhead timeline and the corresonding tim
 
 在广告中每1秒Ping后端。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -195,7 +195,7 @@ The following diagrams illustrate the playhead timeline and the corresonding tim
 >时间轴中的后续广告将跳过显示一秒钟的ping序列
 >为了简洁……
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -217,7 +217,7 @@ The following diagrams illustrate the playhead timeline and the corresonding tim
 
 跟踪第一个前置广告的结束。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -239,7 +239,7 @@ The following diagrams illustrate the playhead timeline and the corresonding tim
 
 跟踪第二个前置广告的开始，其时长为 7 秒。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -272,7 +272,7 @@ The following diagrams illustrate the playhead timeline and the corresonding tim
 
 **实施详细信息**
 
-Ping the backend every 1 second.
+每1秒Ping后端。
 
 **示例请求主体**
 
@@ -358,7 +358,7 @@ Ping the backend every 1 second.
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 30 | 8 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**实施详细信息**
 
 每 10 秒对后端执行一次 Ping 操作。
 
@@ -395,17 +395,17 @@ Ping the backend every 1 second.
 }
 ```
 
-### Action 14 - Buffer end {#Action-14}
+### 操作14 —— 缓冲区结束 {#Action-14}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 缓冲结束，应用程序跟踪内容恢复 | 36 | 11 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**实施详细信息**
 
-缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。您必须发送来自缓冲的另一个跟踪播放事件。**The`play`call after a`bufferStart`infers a "bufferEnd" call to the back end,** so there is no need for a `bufferEnd` event.
+缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。您必须发送来自缓冲的另一个跟踪播放事件。**在`play`向后端`bufferStart`输入“bufferEnd”调用后的调用，** 因此不需要事 `bufferEnd` 件。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -417,17 +417,17 @@ Ping the backend every 1 second.
 }
 ```
 
-### Action 15 - Ping {#Action-15}
+### 操作15 - Ping {#Action-15}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 40 | 15 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**实施详细信息**
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -438,17 +438,17 @@ Ping the backend every 1 second.
 }
 ```
 
-### Action 16 - Ad break start {#Action-16}
+### 操作16 —— 广告中断开始 {#Action-16}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 跟踪中置广告时间开始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**实施详细信息**
 
 持续时间为 8 秒的中置广告：发送 `adBreakStart`。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -465,13 +465,13 @@ Ping the backend every 1 second.
 }
 ```
 
-### Action 17 - Ad start {#Action-17}
+### 操作17 —— 广告开始 {#Action-17}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 跟踪中置广告 #3 开始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**实施详细信息**
 
 跟踪中置广告。
 
@@ -500,13 +500,13 @@ Ping the backend every 1 second.
 }
 ```
 
-### Action 18 - Ad ping {#Action-18}
+### 操作18 —— 广告ping {#Action-18}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 50 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**实施详细信息**
 
 每 10 秒对后端执行一次 Ping 操作。
 
@@ -521,7 +521,7 @@ Ping the backend every 1 second.
 }
 ```
 
-### Action 19 - Ad complete {#Action-19}
+### 操作19 —— 广告完成 {#Action-19}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -543,7 +543,7 @@ Ping the backend every 1 second.
 }
 ```
 
-### Action 20 - Ad break complete {#Action-20}
+### 操作20 —— 广告中断完成 {#Action-20}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -565,13 +565,13 @@ Ping the backend every 1 second.
 }
 ```
 
-### Action 21 - Ping {#Action-21}
+### 操作21 - Ping {#Action-21}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 60 | 27 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation Detail**
+**实施详细信息**
 
 每 10 秒对后端执行一次 Ping 操作。
 
