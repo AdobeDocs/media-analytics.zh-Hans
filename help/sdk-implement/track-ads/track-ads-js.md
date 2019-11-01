@@ -1,9 +1,9 @@
 ---
-seo-title: 在 JavaScript 中跟踪广告
 title: 在 JavaScript 中跟踪广告
+description: 在浏览器(JS)应用程序中使用Media SDK实施广告跟踪。
 uuid: 4d81d29c-c55d-4d48-b505-326092712ff
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
