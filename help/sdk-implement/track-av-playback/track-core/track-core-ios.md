@@ -1,9 +1,9 @@
 ---
-seo-title: 在 iOS 中跟踪核心播放
 title: 在 iOS 中跟踪核心播放
+description: 本主题介绍如何使用iOS上的Media SDK实现核心跟踪。
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # 在 iOS 中跟踪核心播放{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->This documentation covers tracking in version 2.x of the SDK. 如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
+>本文档涵盖SDK版本2.x中的跟踪。 如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
 
 1. **初始跟踪设置**
 
@@ -69,11 +69,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       * 请在此处查看视频元数据的完整列表：[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)
       >[!NOTE]
       >
-      >Attaching the standard video metadata object to the media object is optional.
+      >将标准视频元数据对象附加到媒体对象是可选的。
 
    * **自定义元数据**
 
-      Create a variable object for the custom variables and populate with the data for this video. 例如：
+      为自定义变量创建一个变量对象，并填充此视频的数据。 例如：
 
       ```
       NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
@@ -168,7 +168,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >This may be the same event source that was used in Step 4. 请确保当视频播放继续时，每个 `trackPause()` API 调用均与随后的一个 `trackPlay()` API 调用相配对。
+   >这可能是步骤4中使用的同一事件源。 请确保当视频播放继续时，每个 `trackPause()` API 调用均与随后的一个 `trackPlay()` API 调用相配对。
 
 有关跟踪核心播放的其他信息，请参阅以下内容：
 
