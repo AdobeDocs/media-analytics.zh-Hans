@@ -1,9 +1,9 @@
 ---
-seo-title: 解决广告之间出现的主要播放问题
 title: 解决广告之间出现的主要播放问题
+description: 如何处理意外的main：广告之间的play调用。
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
-source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
 ## 识别
 
-While using Adobe Debug or a network packet sniffer such as Charles, if you see the following Heartbeat calls in this order during a pre-roll ad break:
+在使用Adobe Debug或网络数据包嗅探器（如Charles）时，如果在前置广告中断期间按此顺序看到以下心跳调用：
 
 * 会话开始: `s:event:type=start` &amp; `s:asset:type=main`
 * 广告开始: `s:event:type=start` &amp; `s:asset:type=ad`
@@ -58,7 +58,7 @@ While using Adobe Debug or a network packet sniffer such as Charles, if you see 
 
 **在每个广告资产完成时：**
 
-* **Do not make a call**
+* **不要打电话**
 
    >[!NOTE]
    >
