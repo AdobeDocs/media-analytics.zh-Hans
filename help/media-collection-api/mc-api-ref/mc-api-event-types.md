@@ -1,9 +1,9 @@
 ---
-seo-title: 事件类型和描述
 title: 事件类型和描述
+description: null
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## sessionStart
 
-Sent with the `sessions` call. 当响应返回时，您将从 Location 标头中提取会话 ID，并将其用于对收集服务器的后续事件调用。
+随电话发 `sessions` 送。 当响应返回时，您将从 Location 标头中提取会话 ID，并将其用于对收集服务器的后续事件调用。
 
 ## play
 
@@ -67,7 +67,7 @@ Ping 事件应该&#x200B;*不*&#x200B;包含请求正文中的 `params` 映射�
 
 ## chapterComplete
 
-Signals the completion of a chapter
+表示章节的完成
 
 ## error
 
