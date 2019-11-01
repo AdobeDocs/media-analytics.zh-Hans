@@ -1,10 +1,8 @@
 ---
 title: 媒体分析说明书
-seo-title: 媒体分析说明书
 description: 顶级说明书页面，包含常规MA说明书链接和特定于SDK的链接。
-seo-description: 顶级说明书页面，包含常规MA说明书链接和特定于SDK的链接。
 translation-type: tm+mt
-source-git-commit: fa72eba07a06adbd7c278282bd69d0b336529ac8
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
