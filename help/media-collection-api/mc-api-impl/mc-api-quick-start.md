@@ -1,9 +1,9 @@
 ---
-seo-title: 快速启动
 title: 快速启动
+description: null
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!TIP]
 >
->Gather the request data necessary for completing a successful Session request to the Media Analytics (MA) Collection API back-end server. [](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)通过手动发送请求（使用 `curl` 或 Postman 等），您可以快速验证您的请求数据。这将对请求中是否存在与不正确数据类型或信息有关的任何问题立即提供反馈。使用 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)来验证您是否提供了正确的请求数据。
+>收集完成对Media Analytics(MA)Collection API后端服 [务器的Session](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) request所需的请求数据。 通过手动发送请求（使用 `curl` 或 Postman 等），您可以快速验证您的请求数据。这将对请求中是否存在与不正确数据类型或信息有关的任何问题立即提供反馈。使用 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)来验证您是否提供了正确的请求数据。
 
 1. 收集为运行任何 Experience Cloud 应用程序而必须提供的标准、必需的 Adobe Analytics 和访客数据：
 
