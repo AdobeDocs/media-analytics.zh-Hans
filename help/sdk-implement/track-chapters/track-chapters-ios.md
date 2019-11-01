@@ -1,9 +1,9 @@
 ---
-seo-title: 在 iOS 中跟踪章节和区段
 title: 在 iOS 中跟踪章节和区段
+description: 本主题介绍如何在iOS上使用Media SDK实施章节和细分跟踪。
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
