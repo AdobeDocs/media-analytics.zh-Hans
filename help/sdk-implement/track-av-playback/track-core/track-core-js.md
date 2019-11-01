@@ -1,9 +1,9 @@
 ---
-seo-title: 在 JavaScript 中跟踪核心播放
 title: 在 JavaScript 中跟踪核心播放
+description: 本主题介绍如何在浏览器应用程序(JS)中使用Media SDK实施核心跟踪。
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # 在 JavaScript 中跟踪核心播放{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->This documentation covers tracking in version 2.x of the SDK. 如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
+>本文档涵盖SDK版本2.x中的跟踪。 如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
 
-1. **Initial tracking setup**
+1. **初始跟踪设置**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -24,8 +24,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | 媒体名称 | 是 |
    | `mediaid` | 媒体唯一标识符 | 是 |
    | `length` | 媒体长度 | 是 |
-   | `streamType` | Stream type (see StreamType constants below)__ | 是 |
-   | `mediaType` | Media type (see MediaType constants below)__ | 是 |
+   | `streamType` | 流类型(请参阅 _下面的StreamType常量_ ) | 是 |
+   | `mediaType` | 媒体类型(请参阅 _下面的MediaType常量_ ) | 是 |
 
    **`StreamType`常量：**
 
@@ -34,7 +34,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `VOD` | 点播视频的流类型。 |
    | `LIVE` | 实时内容的流类型。 |
    | `LINEAR` | 线性内容的流类型。 |
-   | `AOD` | Stream type for Audio on Demand. |
+   | `AOD` | 音频点播的流类型。 |
    | `AUDIOBOOK` | 音频书籍的流类型。 |
    | `PODCAST` | 播客的流类型。 |
 
@@ -56,7 +56,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **附加元数据**
 
-   Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
+   （可选）通过上下文数据变量将标准和／或自定义元数据对象附加到跟踪会话。
 
    * **标准元数据**
 
@@ -97,7 +97,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` tracks the user intention of playback, not the beginning of the playback. 此 API 用于加载数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
+   >`trackSessionStart` 跟踪用户的播放意图，而不是播放的开始。 此 API 用于加载数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
 
    >[!NOTE]
    >
