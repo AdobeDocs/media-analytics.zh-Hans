@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Roku 中跟踪广告
 title: 在 Roku 中跟踪广告
+description: 在Roku应用程序中使用Media SDK实施广告跟踪。
 uuid: b1567265-7043-4efa-a313-aaa91c4bb01
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
