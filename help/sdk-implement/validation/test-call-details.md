@@ -1,9 +1,9 @@
 ---
-seo-title: 测试调用详细信息
 title: 测试调用详细信息
+description: 本主题详细介绍了验证实施时必须进行的调用。
 uuid: d3a0e62f-2fc3-413d-ac56-adbc9b3e983
 translation-type: tm+mt
-source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | _**`custom.[value]`**_ | _**自定义元数据字段**_ |
 | _**`a.media.[value]`**_ | _**标准元数据字段**_ |
 
-**注意：**
+**注释:**
 
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 线性流的长度应设置为当前节目的最佳预计长度。
@@ -72,7 +72,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | _**`s:meta:custom.[value]`**_ | _**自定义元数据字段**_ |
 | _**`s:meta:a.media.[value]`**_ | _**标准元数据字段**_ |
 
-**注意：**
+**注释:**
 
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 应将视频开始时线性流的播放头位置设置为自当前节目开始后所经过的秒数，而不是设置为 0。
@@ -98,14 +98,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ### 媒体分析（心率）开始呼叫中的自定义元数据 {#custom-metadata-ma}
 
-| 参数 |  Value (sample)  |
+| 参数 |  值（示例） |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics (heartbeats) Adobe Analytics Start call {#ma-aa-start}
+### Media Analytics（心率）Adobe Analytics开始电话 {#ma-aa-start}
 
-| 参数 |  Value (sample)  |
+| 参数 |  值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
@@ -116,14 +116,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | VOD |
 | `s:asset:type` | main |
 
-**注意：**
+**注释:**
 
 * 此调用表示Media SDK已请求将Adobe Analytics调 `pev2=ms_s` 用发送到Adobe Analytics(AppMeasurement)服务器。
 * 此调用不包含自定义元数据。
 
 ## 观看广告播放 {#view-ad-playback}
 
-### Adobe Analytics (AppMeasurement) Ad Start call {#aa-ad-start-call}
+### Adobe Analytics(AppMeasurement)广告开始电话 {#aa-ad-start-call}
 
 | 参数 |  值（示例） |
 |---|---|
@@ -141,14 +141,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | _**`custom.[value]`**_ | _**元数据字段**_ |
 | _**`a.media.[value]`**_ | _**标准元数据字段**_ |
 
-**注意：**
+**注释:**
 
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 广告开始时，如果未提供广告长度，广告长度可能会被设置为 -1。
 
 ### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
 
-| 参数 |  Value (sample)  |
+| 参数 |  值（示例） |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -165,7 +165,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Custom metadata in Adobe Analytics (AppMeasurement) Ad Start call {#custom-metadata-aa-ad-start}
+### Adobe Analytics(AppMeasurement)广告开始电话中的自定义元数据 {#custom-metadata-aa-ad-start}
 
 | 参数 |  值（示例） |
 |---|---|
@@ -186,7 +186,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | _**`s:meta:custom.[value]`**_ | _**自定义元数据字段**_ |
 | _**`s:meta:a.media.[value]`**_ | _**标准元数据字段**_ |
 
-**注意：**
+**注释:**
 
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 广告开始时，如果未提供广告长度，广告长度可能会被设置为 -1。
@@ -219,7 +219,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ### 媒体分析（心率）Adobe Analytics广告开始电话 {#ma-aa-ad-start-call}
 
-| 参数 |  Value (sample)  |
+| 参数 |  值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**aa_ad_start**_ |
 | `l:event:playhead` | 0 |
@@ -267,9 +267,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ## 播放主内容 {#play-main-content}
 
-### Media Analytics (heartbeats) Play call {#ma-play-call}
+### 媒体分析（心率）播放呼叫 {#ma-play-call}
 
-| 参数 |  Value (sample)  |
+| 参数 |  值（示例） |
 |---|---|
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
@@ -280,16 +280,16 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | VOD |
 | `s:asset:type` | main |
 
-**注意：**
+**注释:**
 
 * 每次播放调用时，播放头位置应增加10秒。
 * `l:event:duration` 值表示自上次跟踪调用后所经过的毫秒数，该参数在每次 10 秒调用中的值应该大致相同。
 
-## Pause main content {#pause-main-content}
+## 暂停主内容 {#pause-main-content}
 
-### Media Analytics (heartbeats) Pause call {#ma-pause-call}
+### 媒体分析（心率）暂停呼叫 {#ma-pause-call}
 
-| 参数 |  Value (sample)  |
+| 参数 |  值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
