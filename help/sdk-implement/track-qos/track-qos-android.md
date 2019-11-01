@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Android 中跟踪体验质量
 title: 在 Android 中跟踪体验质量
+description: 本主题介绍在Android上使用Media SDK实现体验质量(QoE、QoS)跟踪。
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
