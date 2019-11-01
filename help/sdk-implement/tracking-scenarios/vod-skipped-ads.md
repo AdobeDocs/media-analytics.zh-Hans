@@ -1,9 +1,9 @@
 ---
-seo-title: 跳过广告的 VOD 播放
 title: 跳过广告的 VOD 播放
+description: 如何跟踪用户使用Media SDK跳过广告的VOD内容的示例。
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
