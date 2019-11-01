@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Android 中跟踪缓冲
 title: 在 Android 中跟踪缓冲
+description: 介绍在Android上跟踪缓冲事件。
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
