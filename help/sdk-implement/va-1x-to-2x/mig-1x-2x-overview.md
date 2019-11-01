@@ -1,9 +1,9 @@
 ---
-seo-title: 迁移概述
 title: 迁移概述
+description: 本主题概述了从1.x版本迁移到2.x版本的Media SDK。
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
