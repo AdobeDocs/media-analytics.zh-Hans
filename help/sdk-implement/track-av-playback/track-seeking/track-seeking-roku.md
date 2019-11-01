@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Roku 中跟踪搜寻
 title: 在 Roku 中跟踪搜寻
+description: 本主题介绍在Roku上使用Media SDK实施搜索跟踪。
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
