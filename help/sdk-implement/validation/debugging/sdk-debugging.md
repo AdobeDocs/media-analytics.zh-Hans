@@ -1,9 +1,9 @@
 ---
-seo-title: SDK 调试
 title: SDK 调试
+description: 本主题介绍Media SDK中可用的跟踪／记录。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -71,7 +71,7 @@ ADBMobile.config.setDebugLogging(true)
 
 >[!IMPORTANT]
 >
->从2017年4月30日起，Adobe Bloodhound已经日落。 从 2017 年 5 月 1 日开始，将不再提供其他增强功能以及额外的工程部或 Adobe Expert Care 团队支持。
+>从 2017 年 4 月 30 日起，Adobe Bloodhound 已废止。从 2017 年 5 月 1 日开始，将不再提供其他增强功能以及额外的工程部或 Adobe Expert Care 团队支持。
 
 ## 日志消息
 
