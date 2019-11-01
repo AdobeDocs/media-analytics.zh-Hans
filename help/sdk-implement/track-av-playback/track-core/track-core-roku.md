@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Roku 中跟踪核心播放
 title: 在 Roku 中跟踪核心播放
+description: 本主题介绍如何使用Roku上的Media SDK实施核心跟踪。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -120,7 +120,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       ```
 
 
-1. **Track the intention to start playback**
+1. **跟踪开始播放的意图**
 
    要开始跟踪媒体会话，请调用 `trackSessionStart` 媒体心跳实例：
 
@@ -140,7 +140,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >
    >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Track the actual start of playback**
+1. **跟踪实际播放开始**
 
    Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
 
@@ -148,7 +148,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackPlay();
    ```
 
-1. **Track the completion of playback**
+1. **跟踪播放的完成情况**
 
    Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
 
@@ -156,7 +156,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackComplete();
    ```
 
-1. **Track the end of the session**
+1. **跟踪会话结束**
 
    Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
 
@@ -176,7 +176,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaInfo.length = "600"
    ```
 
-1. **Attach video metadata**
+1. **附加视频元数据**
 
    （可选）通过上下文数据变量将标准和／或自定义视频元数据对象附加到视频跟踪会话。
 
@@ -197,9 +197,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       mediaContextData["cmk2"] = "cmv2"
       ```
 
-1. **Track the intention to start playback**
+1. **跟踪开始播放的意图**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance:
+   要开始跟踪媒体会话，请调用 `trackSessionStart` 媒体心跳实例：
 
    ```
    ADBMobile().mediaTrackSessionStart(mediaInfo,mediaContextData)
@@ -209,7 +209,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >第二个值是您在步骤2中创建的自定义视频元数据对象名称。
 
    >[!IMPORTANT]
-   >`trackSessionStart` tracks the user intention of playback, not the beginning of the playback. 此 API 用于加载视频数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
+   >`trackSessionStart` 跟踪用户的播放意图，而不是播放的开始。 此 API 用于加载视频数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
 
    >[!NOTE]
    >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
@@ -222,7 +222,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ADBMobile().mediaTrackPlay()
    ```
 
-1. **Track the completion of playback**
+1. **跟踪播放的完成情况**
 
    识别视频播放器中的视频播放结束事件（用户一直观看至内容的结尾）并调用 `trackComplete`()：
 
@@ -241,7 +241,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >[!IMPORTANT]
    >`trackSessionEnd` 标记视频跟踪会话的结束。 如果会话成功观看至结束（用户一直观看内容至结尾），请确保先调用 `trackComplete`，之后再调用 `trackSessionEnd`。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
 
-1. **Track all possible pause scenarios**
+1. **跟踪所有可能的暂停方案**
 
    Identify the event from the video player for video pause and call `trackPause`:
 
@@ -249,7 +249,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ADBMobile().mediaTrackPause()
    ```
 
-   **Pause Scenarios**
+   **暂停方案**
 
    Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. 以下方案均要求应用程序调用 `trackPause()`()：
 
