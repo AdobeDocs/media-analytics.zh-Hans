@@ -1,9 +1,9 @@
 ---
-seo-title: 在主内容中进行搜寻的 VOD 播放
 title: 在主内容中进行搜寻的 VOD 播放
+description: 如何使用Media SDK跟踪其中发生搜索的VOD内容的示例。
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e622
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
