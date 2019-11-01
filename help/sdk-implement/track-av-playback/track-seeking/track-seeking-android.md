@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Android 中跟踪搜寻
 title: 在 Android 中跟踪搜寻
+description: 本主题介绍在Android上使用Media SDK实现搜索跟踪。
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
