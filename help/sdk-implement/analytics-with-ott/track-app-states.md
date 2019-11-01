@@ -1,9 +1,9 @@
 ---
-seo-title: 跟踪应用程序状态
 title: 跟踪应用程序状态
+description: '应用程序状态是应用程序中的不同屏幕或视图，当显示该状态时，将导致trackState调用。 '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 translation-type: tm+mt
-source-git-commit: 9cdf69e30fa727aeb974213769a7ab61fb05b756
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
