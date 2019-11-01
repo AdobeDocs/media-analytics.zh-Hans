@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 在 Chromecast 中实施标准元数据
 title: 在 Chromecast 中实施标准元数据
+description: 介绍在Chromecast上设置标准视频和广告元数据。
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
