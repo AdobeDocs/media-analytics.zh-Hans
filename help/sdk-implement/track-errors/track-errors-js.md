@@ -1,9 +1,9 @@
 ---
-seo-title: 在 JavaScript 中跟踪错误
 title: 在 JavaScript 中跟踪错误
+description: 本主题介绍在浏览器应用程序(JS)中使用Media SDK实施错误跟踪。
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 实现错误跟踪
 
-1. Track media player errors:
+1. 跟踪媒体播放器错误：
 
    ```js
    onPlayerError = function() { 
