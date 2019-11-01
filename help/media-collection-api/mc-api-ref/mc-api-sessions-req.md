@@ -1,9 +1,9 @@
 ---
-seo-title: 会话请求
 title: 会话请求
+description: null
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 translation-type: tm+mt
-source-git-commit: f1c9f5f4cbcd4c043e1c7b4a5037c134b2bdd380
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -62,7 +62,7 @@ https://{uri}/api/v1/sessions
    * `ts` - 时间戳，必须以毫秒为单位。
 * `eventType` (必需)
 
-   **Valid value:** `sessionStart`
+   **有效值：**`sessionStart`
 * `params` (必需)
 * `customMetadata`（可选）
 * `qoeData`（可选）
