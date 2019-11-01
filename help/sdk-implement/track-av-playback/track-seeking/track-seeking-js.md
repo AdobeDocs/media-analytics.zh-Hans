@@ -1,9 +1,9 @@
 ---
-seo-title: 在 JavaScript 中跟踪搜寻
 title: 在 JavaScript 中跟踪搜寻
+description: 本主题介绍在浏览器应用程序(JS)中使用Media SDK实现搜索跟踪。
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
