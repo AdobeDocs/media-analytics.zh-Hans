@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 在 JavaScript 中实施标准广告元数据
 title: 在 JavaScript 中实施标准广告元数据
+description: 如何在浏览器(JS)应用程序中的广告跟踪中使用标准广告元数据。
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
