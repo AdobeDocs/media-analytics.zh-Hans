@@ -1,9 +1,9 @@
 ---
-seo-title: Chromecast 元数据键
 title: Chromecast 元数据键
+description: 介绍如何设置标准视频和广告元数据，以便通过Chromecast上的跟踪调用发送这些元数据。
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
