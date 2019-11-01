@@ -1,9 +1,9 @@
 ---
-seo-title: 创建新的调试报告
 title: 创建新的调试报告
+description: 本主题介绍如何创建新的调试报告。
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
    * **视频心率（媒体分析）**
 
       * [!UICONTROL 默认端点] -此字段中的数据由Adobe提供，无法更改。
-      * [!UICONTROL Extra Endpoint - Add , if you use them, for your tracking server, e.g., .]`CNAMES``metrics.companyname.com`
+      * [!UICONTROL 额外端点] -如果 `CNAMES``metrics.companyname.com`您使用它们，则为跟踪服务器添加，例如，
 
 
 
