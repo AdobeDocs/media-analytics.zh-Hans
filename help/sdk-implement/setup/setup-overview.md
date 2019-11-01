@@ -1,9 +1,9 @@
 ---
-seo-title: 设置概述
 title: 设置概述
+description: 为移动、OTT和浏览器(JS)应用程序中的媒体跟踪设置Media SDK的概述。
 uuid: 06fedb-b0c8-4f7d-90c8-e374cde1695
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
