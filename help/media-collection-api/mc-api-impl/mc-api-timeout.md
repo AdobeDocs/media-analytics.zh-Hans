@@ -1,9 +1,9 @@
 ---
-seo-title: 超时情况
 title: 超时情况
+description: null
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -19,7 +19,7 @@ Media Collection API是无状态的，它与Media SDK没有相同的机制，在
    如果后端未收到任何API事件，它将关闭会话。
 * **30分钟：无播放头更改**
 
-   If the playhead does not move for 30 minutes (e.g., the user hits Pause and walks away), the back end will close the session.
+   如果播放头在30分钟内未移动（例如，用户点击“暂停”并离开），则后端将关闭会话。
 
 >[!NOTE]
 >
