@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Roku 中跟踪章节和区段
 title: 在 Roku 中跟踪章节和区段
+description: 本主题介绍如何在Roku上使用Media SDK实施章节和细分跟踪。
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >以下说明提供了使用2.x SDK实施的指导。 If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## Implemement standard ad metadata
+## 实施标准和元数据
 
 1. 识别执行章节开始事件的时间，然后使用章节信息创建 `ChapterObject` 实例。
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!NOTE]
    >
-   >These variables are only required if you are planning to track chapters.
+   >仅当您计划跟踪章节时，才需要这些变量。
 
    | 变量名称 | 描述 | 必需 |
    | --- | --- | :---: |
