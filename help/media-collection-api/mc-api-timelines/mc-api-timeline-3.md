@@ -1,9 +1,9 @@
 ---
-seo-title: 时间轴 3 - 章节
 title: 时间轴 3 - 章节
+description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -659,7 +659,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 用户按下了“播放”以恢复主内容 | 74 | 31 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**实施详细信息**
 
 将播放状态转变为“正在播放”。**`play`后的`pauseStart`调用一定会对后端进行“”调用**，因此不需要 `resume`resume 事件。
 
@@ -685,7 +685,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 每 10 秒对后端执行一次 Ping 操作。
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
@@ -703,11 +703,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 章节 2 结束 | 87 | 44 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**实施详细信息**
 
 跟踪第二个和最后一个章节的结束
 
-**Sample request body**
+**示例请求主体**
 
 ```
 {
