@@ -1,9 +1,9 @@
 ---
-seo-title: 恢复不活动的会话
 title: 恢复不活动的会话
+description: 如何处理恢复不活动的会话。
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 长时间暂停
 
-The Media SDK automatically tracks how long the media playback is in one of the following inactive states:
+Media SDK会自动跟踪媒体播放处于以下非活动状态之一的时间：
 
 * 暂停
 * 搜寻
@@ -23,7 +23,7 @@ The Media SDK automatically tracks how long the media playback is in one of the 
 
 ## 手动恢复之前关闭的会话
 
-The Media SDK will only automatically resume sessions if the application was not closed. 如果应用程序存储用户数据并且能够恢复之前关闭的媒体，则可以手动触发恢复事件。 启动视频跟踪会话时，请设置可选的“视频已恢复”属性。
+Media SDK仅在应用程序未关闭时才会自动恢复会话。 如果应用程序存储用户数据并且能够恢复之前关闭的媒体，则可以手动触发恢复事件。 启动视频跟踪会话时，请设置可选的“视频已恢复”属性。
 
 ### Android
 
