@@ -1,9 +1,9 @@
 ---
-seo-title: 事件请求
 title: 事件请求
+description: null
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -17,7 +17,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ## URI参数
 
-`sid`: The session ID returned from a Sessions request.[](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+`sid`:会话ID从会话请求 [返回。](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
 
 ## 请求主体
 
@@ -41,14 +41,14 @@ https://{uri}/api/v1/sessions/{sid}/events
    * `ts` - 时间戳，必须以毫秒为单位。
 * `eventType` (必需)
 * `params`（可选）
-* `customMetadata` (Optional; send only with  and  event types)`adStart``chapterStart`
+* `customMetadata` (可选；仅发送(含 `adStart` 和活 `chapterStart` 动类型)
 * `qoeData`（可选）
 
 For a list of valid event types for this release, see [Event types and descriptions.](/help/media-collection-api/mc-api-ref/mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
->***Ad Tracking - You can only track ads inside an .**`adBreak`*
+>***广告跟踪**-您只能跟踪广告内部`adBreak`*。
 >
 >在广告头尾没有 `adBreakStart` 和 `adBreakComplete`“书挡”的情况下，`adStart` 和 `adComplete` 事件将被忽略，并且会将相应的广告持续时间作为主内容持续时间进行跟踪。这可能会对 Adobe Analytics 中可用的聚合数据产生重大影响。
 
