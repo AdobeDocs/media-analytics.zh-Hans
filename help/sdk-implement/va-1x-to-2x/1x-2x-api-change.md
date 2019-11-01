@@ -1,9 +1,9 @@
 ---
-seo-title: 从 1.x API 转换到 2.x API
 title: 从 1.x API 转换到 2.x API
+description: 本主题包括指向API引用的链接，并列出了1.x和2.x版Media SDK的必需和可选跟踪API。
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
