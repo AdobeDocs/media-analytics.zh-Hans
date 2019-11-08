@@ -1,10 +1,8 @@
 ---
-seo-title: 从独立的Media SDK迁移到Adobe Launch - Web(JS)
 title: 从独立的Media SDK迁移到Adobe Launch - Web(JS)
-seo-description: 帮助从Media SDK迁移到Launch的说明和代码示例。
 description: 帮助从Media SDK迁移到Launch的说明和代码示例。
 translation-type: tm+mt
-source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
+source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
@@ -18,15 +16,6 @@ source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
 
 ## 配置
 
-### 启动扩展
-
-1. 在Experience Platform Launch中，单击Web属 [!UICONTROL 性的] “扩展”选项卡。
-1. 在“目 [!UICONTROL 录] ”选项卡上，找到“Adobe Media Analytics for Audio andVideo”扩展，然后单击“安 [!UICONTROL 装”]。
-1. 在扩展设置页面中，配置跟踪参数。
-媒体扩展将使用已配置的参数进行跟踪。
-
-[启动用户指南——安装和配置媒体扩展](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
-
 ### 独立Media SDK
 
 在独立的Media SDK中，您可以在应用程序中配置跟踪配置，并在创建跟踪器时将其传递给SDK。
@@ -36,7 +25,7 @@ source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
 var mediaConfig = new MediaHeartbeatConfig();
 mediaConfig.trackingServer = "namespace.hb.omtrdc.net";
 mediaConfig.playerName = "html5-player";
-mediaConfig.channel = "sample-channe";
+mediaConfig.channel = "sample-channel";
 mediaConfig.ovp = "video-provider";
 mediaConfig.appVersion = "v2.0.0"
 mediaConfig.ssl = true;
@@ -45,7 +34,46 @@ mediaConfig.debugLogging = true;
 
 除了配置之 `MediaHeartbeat` 外，页面还必须配置和传递媒体跟踪 `AppMeasurement` 的实 `VisitorAPI` 例和实例，才能正常工作。
 
+### 启动扩展
+
+1. 在Experience Platform Launch中，单击Web属 [!UICONTROL 性的] “扩展”选项卡。
+1. 在“目 [!UICONTROL 录] ”选项卡上，找到“Adobe Media Analytics for Audio andVideo”扩展，然后单击“安 [!UICONTROL 装”]。
+1. 在扩展设置页面中，配置跟踪参数。
+媒体扩展将使用已配置的参数进行跟踪。
+
+   ![](assets/launch_config_js.png)
+
+[启动用户指南——安装和配置媒体扩展](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+
 ## 跟踪器创建差异
+
+### Media SDK
+
+1. 将媒体分析库添加到您的开发项目。
+1. 创建配置对象(`MediaHeartbeatConfig`)。
+1. 实施委托协议，公开 `getQoSObject()` 和功 `getCurrentPlaybackTime()` 能。
+1. 创建媒体心跳实例(`MediaHeartbeat`)。
+
+```
+// Media Heartbeat initialization
+var mediaConfig = new MediaHeartbeatConfig();
+...
+// Configuration settings
+mediaConfig.trackingServer = Configuration.HEARTBEAT.TRACKING_SERVER;
+...
+// Implement Media Delegate (Quality of Service and Playhead)
+var mediaDelegate = new MediaHeartbeatDelegate();
+...
+mediaDelegate.getQoSObject = function() {
+    return MediaHeartbeat.createQoSObject(<bitrate>, <startuptime>, <fps>, <droppedFrames>);
+    ...
+}
+...
+// Create your tracker
+this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
+```
+
+[Media SDK —— 创建跟踪器](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
 
 ### Launch
 
@@ -77,43 +105,14 @@ Launch提供了两种创建跟踪基础架构的方法。 这两种方法都使�
 
    通过 `MediaHeartbeat` 共享模块访问 `media-heartbeat` 常量。
 
-### Media SDK
-
-1. 将媒体分析库添加到您的开发项目。
-1. 创建配置对象(`MediaHeartbeatConfig`)。
-1. 实施委托协议，公开 `getQoSObject()` 和功 `getCurrentPlaybackTime()` 能。
-1. 创建媒体心跳实例(`MediaHeartbeat`)。
-
-```
-// Media Heartbeat initialization
-var mediaConfig = new MediaHeartbeatConfig();
-...
-// Configuration settings
-mediaConfig.trackingServer = Configuration.HEARTBEAT.TRACKING_SERVER;
-...
-// Implement Media Delegate (Quality of Service and Playhead)
-var mediaDelegate = new MediaHeartbeatDelegate();
-...
-mediaDelegate.getQoSObject = function() {
-    return MediaHeartbeat.createQoSObject(<bitrate>, <startuptime>, <fps>, <droppedFrames>);
-    ...
-}
-...
-// Create your tracker
-this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
-```
-
-[Media SDK —— 创建跟踪器](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
-
 ## 相关文档
-
-### Launch
-
-* [启动概述](https://docs.adobe.com/content/help/en/launch/using/overview.html)
-* [媒体分析扩展](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 
 ### Media SDK
 
 * [设置JS](/help/sdk-implement/setup/set-up-js.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
+### Launch
+
+* [启动概述](https://docs.adobe.com/content/help/en/launch/using/overview.html)
+* [媒体分析扩展](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
