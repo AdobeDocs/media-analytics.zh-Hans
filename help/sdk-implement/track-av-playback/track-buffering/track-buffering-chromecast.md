@@ -1,8 +1,8 @@
 ---
 title: 在 Chromecast 中跟踪缓冲
-description: 描述Chromecast上的跟踪缓冲事件。
+description: 介绍如何在 Chromecast 中跟踪缓冲事件。
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,9 +12,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->下面的说明为所有 2.x SDK 实施提供了指南。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下面的说明为所有 2.x SDK 实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
-## 缓冲区跟踪常量
+## 缓冲跟踪常量
 
 
 | 常量名称 | 描述     |
@@ -22,7 +22,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `BufferStart` | 用于跟踪缓冲开始事件的常量 |
 | `BufferComplete` | 用于跟踪缓冲结束事件的常量 |
 
-## 实现缓冲
+## 实施缓冲
 
 1. 监听媒体播放器中的播放缓冲事件，并在发出缓冲开始事件通知时，使用 `BufferStart` 事件跟踪缓冲：[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
