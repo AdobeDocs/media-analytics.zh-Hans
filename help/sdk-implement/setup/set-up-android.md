@@ -1,8 +1,8 @@
 ---
 title: 设置 Android
-description: Media SDK应用程序设置，以在Android上实施。
+description: 设置 Media SDK 应用程序，以在 Android 中实施。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,8 +12,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 先决条件
 
-* **获取Media SDK的有效配置参数**&#x200B;在设置分析帐户后，可以从Adobe代表处获取这些参数。
-* **在您的应用程序中实施** ADBMobile for android有关Adobe Mobile SDK文档的更多信息，请参阅 [Android SDK 4.x for Experience Cloud解决方案。](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
+* **获取 Media SDK 的有效配置参数**
+在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
+* **在应用程序中实施适用于 Android 的 ADBMobile**
+有关 Adobe Mobile SDK 文档的更多信息，请参阅[适用于 Experience Cloud 解决方案的 Android SDK 4.x](https://marketing.adobe.com/resources/help/zh_CN/mobile/android/)。
 * **在媒体播放器中提供以下功能：**
    * *可订阅播放器事件的 API -* Media SDK 要求您在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
@@ -22,8 +24,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. 将[下载](/help/sdk-implement/download-sdks.md#download-2x-sdks)的 Media SDK 添加到您的项目中。
 
-   1. Expand the Android zip file (e.g., `MediaSDK-android-v2.*.zip`).
-   1. Verify that the `MediaSDK.jar` file exists in the `libs/` directory.
+   1. 展开 Android zip 文件（例如，`MediaSDK-android-v2.*.zip`）。
+   1. 验证 `MediaSDK.jar` 文件存在于 `libs/` 目录中。
 
    1. 将库添加到您的项目中。
 
@@ -33,7 +35,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       1. 选择&#x200B;**[!UICONTROL 打开模块设置]**。
       1. 在&#x200B;**[!UICONTROL 项目设置]**&#x200B;下，选择&#x200B;**[!UICONTROL 库]**。
 
-      1. Click **[!UICONTROL +]** to add a new library.
+      1. 单击 **[!UICONTROL +]** 以添加新库。
       1. 选择 **[!UICONTROL Java]** 并导航至 `MediaSDK.jar` 文件。
 
       1. 选择您计划在其中使用移动设备库的模块。
@@ -42,9 +44,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       1. 在 Eclipse IDE 中，右键单击项目名称。
       1. 单击&#x200B;**[!UICONTROL 生成路径]** &gt; **[!UICONTROL 添加外部存档]**。
-      1. 选择 `MediaSDK.jar`.
+      1. 选择 `MediaSDK.jar`。
       1. 单击&#x200B;**[!UICONTROL 打开]**。
-      1. Right-click the project again, and click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]** .
+      1. 再次右键单击项目，然后单击&#x200B;**[!UICONTROL 生成路径]** &gt; **[!UICONTROL 配置生成路径]**。
       1. 单击&#x200B;**[!UICONTROL 顺序]**&#x200B;和&#x200B;**[!UICONTROL 导出]**&#x200B;选项卡。
 
       1. 确保选中 `MediaSDK.jar` 文件。
@@ -59,9 +61,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    import com.adobe.primetime.va.simple.MediaObject; 
    ```
 
-1. Create the `MediaHeartbeatConfig` instance.
+1. 创建 `MediaHeartbeatConfig` 实例。
 
-   以下是 `MediaHeartbeatConfig` 初始化示例:
+   以下是 `MediaHeartbeatConfig` 初始化示例：
 
    ```java
    // Media Heartbeat Initialization 
@@ -74,7 +76,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    config.debugLogging = <true/false>; 
    ```
 
-1. Implement the `MediaHeartbeatDelegate` interface.
+1. 实施 `MediaHeartbeatDelegate` 接口。
 
    ```java
    public class VideoAnalyticsProvider implements Observer, MediaHeartbeatDelegate{}
@@ -98,9 +100,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. Create the `MediaHeartbeat` instance.
+1. 创建 `MediaHeartbeat` 实例。
 
-   Use the `MediaHeartbeatConfig` instance and the `MediaHertbeatDelegate` instance to create the `MediaHeartbeat` instance.
+   使用 `MediaHeartbeatConfig` 实例和 `MediaHertbeatDelegate` 实例创建 `MediaHeartbeat` 实例。
 
    ```java
    // Replace <MediaHertbeatDelegate> with your delegate instance 
@@ -110,7 +112,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `MediaHeartbeat` instance is accessible and *does not get deallocated until the end of the session*. 此实例将用于以下所有的跟踪事件。
+   >在会话结束前，请确保您的 `MediaHeartbeat` 实例可以访问且“未被取消分配”**。此实例将用于以下所有的跟踪事件。
 
 **添加应用程序权限**
 
@@ -128,4 +130,4 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 在版本 2.x 中，所有公共方法都已合并到 `com.adobe.primetime.va.simple.MediaHeartbeat` 类中，从而更加便于开发人员使用。此外，所有配置现在都已合并到 `com.adobe.primetime.va.simple.MediaHeartbeatConfig` 类中。
 
-有关从1.x迁移到2.x的详细信息，请参 [阅mig-1x-2x-overview.md。](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+有关从 1.x 迁移到 2.x 的详细信息，请参阅 [mig-1x-2x-overview.md](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)。
