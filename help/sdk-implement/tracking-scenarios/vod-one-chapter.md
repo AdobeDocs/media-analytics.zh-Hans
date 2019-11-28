@@ -1,8 +1,8 @@
 ---
 title: 包含一个章节的 VOD 播放
-description: 包含一章的跟踪VOD播放的示例。
+description: 有关跟踪包含一个章节的 VOD 播放的示例。
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -10,7 +10,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 包含一个章节的 VOD 播放{#vod-playback-with-one-chapter}
 
-## 情景 {#scenario}
+## 方案 {#scenario}
 
 在此方案中，部分 VOD 内容被标记为一个章节。
 
@@ -18,20 +18,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 触发器   | 心率方法   | 网络调用   | 注释   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 我们尚未告知测量库存在一个前置广告，因此这些网络调用仍然与单个 VOD 方案完全相同。 |
+| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 我们尚未告知测量库存在一个前置广告，因此这些网络调用仍然与单个 VOD 方案完全相同。 |
 | 章节开始。 | `trackEvent:ChapterStart` | 心率章节开始 |  |
 | 播放章节的第一帧。 | `trackPlay` | 心率内容播放 | 当章节内容在主内容之前播放时，章节开始时心率即会开始。 |
 | 章节播放。 |  | 章节心率 |  |
 | 章节结束。 | `trackEvent:trackChapterComplete` | 心率章节结束 | 这是指到达章节结尾时。 |
 | 播放内容。 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 内容结束。 | `trackComplete` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
-| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话已结束。即使用户不观看媒体完成，也必须调用此API。 |
+| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话已结束。即使用户没有观看至媒体结束，也必须调用此 API。 |
 
 ## 参数 {#parameters}
 
-当章节播放开始时， `Heartbeat Chapter Start` 将发送呼叫。 If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
+当章节播放开始时，将发送 `Heartbeat Chapter Start` 调用。如果章节的开头与 10 秒计时器不一致，则 `Heartbeat Chapter Start` 调用将延迟几秒钟，并转到下一个 10 秒间隔。
 
-When this happens, a `Content Heartbeat` call goes out in the same interval. 您可以通过检查事件类型和资产类型来区分这两种调用：
+发生此情况时，`Content Heartbeat` 调用将以相同的间隔发出。您可以通过检查事件类型和资产类型来区分这两种调用：
 
 ### 心率章节开始
 
