@@ -2,20 +2,19 @@
 title: 自定义链接实施指南
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Custom Link Implementation Guide{#custom-link-implementation-guide}
+# 自定义链接实施指南{#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
-大多数情况下，自定义视频链接视频跟踪会用在需要少量视频测量的平台和设备上。
+自定义视频跟踪可利用 Analytics `appMeasurement` 中的[使用自定义链接代码的手动链接跟踪](https://marketing.adobe.com/resources/help/zh_CN/sc/implement/link_manual.html)。大多数情况下，自定义视频链接视频跟踪会用在需要少量视频测量的平台和设备上。
 
-* 在JavaScript中：函 `s.tl()` 数
-* 在移动设备应用程序中：[trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html) 和 [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* 在 JavaScript 中：`s.tl()` 函数
+* 在移动设备应用程序中：[trackAction() Android](https://marketing.adobe.com/resources/help/zh_CN/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/zh_CN/mobile/ios/actions.html) 和 [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* 在 Data Insertion API 中：[linktype 标记](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 要求
 
@@ -26,7 +25,7 @@ Custom Video Tracking uses [manual link tracking using custom link code](https:/
 ## 元数据
 
 * 可以将元数据作为链接数据的一部分添加到任何跟踪调用中
-* Remember to update the `linkTrackVars` and `linkTrackEvents`
+* 请记住要更新 `linkTrackVars` 和 `linkTrackEvents`
 
 ```javascript
 /* Call on video complete */ 
@@ -44,7 +43,7 @@ if (e.type == "ended") {
 };
 ```
 
-## 为何使用自定义链接
+## 使用自定义链接的理由
 
 * 需要满足的前提条件很少
 * 适用于任何平台，包括 NoScript
