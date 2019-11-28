@@ -1,8 +1,8 @@
 ---
 title: 在 Android 中实施标准元数据
-description: 介绍如何设置标准视频和广告元数据，以便通过Android上的跟踪调用发送。
+description: 介绍如何在 Android 中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -16,13 +16,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata` | 用于将标准元数据附加到 `MediaObject` 的常量。 |
 
-## 元数据密钥API参考
+## 元数据键 API 引用
 
-* 创建标 `HashMap` 准元数据键值对。
+* 创建标准元数据键值对的 `HashMap`。
    * [视频元数据键](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
    * [音频元数据键](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * 在 `HashMap` 中使用元数据的标准元数据常量设置标准元数据 `MediaInfo`。
-* Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
+* 调用 `trackSessionStart()` API 时提供此 `MediaInfo` 对象。
 
 ## 实施示例
 
