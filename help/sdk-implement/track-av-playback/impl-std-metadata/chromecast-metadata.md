@@ -1,8 +1,8 @@
 ---
 title: Chromecast 元数据键
-description: 介绍如何设置标准视频和广告元数据，以便通过Chromecast上的跟踪调用发送这些元数据。
+description: 介绍如何在 Chromecast 中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -45,7 +45,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 网站 ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | 创作 URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Chromecast的示例实现 {#sample-implementations-for-chromecast}
+## Chromecast 实施示例 {#sample-implementations-for-chromecast}
 
 ### 视频
 
