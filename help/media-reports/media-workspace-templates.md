@@ -2,7 +2,7 @@
 title: 媒体工作区模板
 description: null
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -14,11 +14,11 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 在创建或管理项目时，可以使用 Adobe Analytics 的“工作区”选项卡中的模板。当您最初进入到工作区时，系统将显示用于创建新项目或打开现有项目的选项：
 
-* **创建新项目 -**&#x200B;在单击工作区中的&#x200B;**[!UICONTROL 新建项目]按钮时，系统将显示一个对话框，您可以从该对话框的模板集合（包括标准模板和自定义模板）中进行选择：**
+* **创建新项目 -**&#x200B;在单击工作区中的&#x200B;**[!UICONTROL 新建项目]**&#x200B;按钮时，系统将显示一个对话框，您可以从该对话框的模板集合（包括标准模板和自定义模板）中进行选择：
 
    ![](assets/all-templates-audio.png)
 
-   For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
+   例如，如果选择&#x200B;**[!UICONTROL 音频使用情况]**&#x200B;模板，则将呈现一个项目，其中具有以下以音频为导向的功能板：
 
    ![](assets/aa-workspace.png)
 
