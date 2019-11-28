@@ -2,7 +2,7 @@
 title: 先决条件
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -10,7 +10,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # 先决条件{#prerequisites}
 
-## 决策 {#decision}
+## 确定适当的实施 {#decision}
 
 在开始实施跟踪之前，您需要事先确定哪种实施最适用于您的具体情况：
 
@@ -20,33 +20,33 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 任务 {#prereq-tasks}
 
-对于 *Media Analytics实施* ，以下是您在开始之前必须完成的任务：
+对于 *Media Analytics* 实施，以下是您在开始之前必须完成的任务：
 
 1. **启用 Experience Cloud。**
 
-   您需要实施Adobe Experience Platform Identity Service。
+   您需要实施 Adobe Experience Platform Identity Service。
 
-    Identity 服务允许将通用识别框架用于 Experience Cloud 核心服务、解决方案和客户属性，以及人员核心服务中的受众。它通过向网站访客分配一个唯一的永久性 ID 来工作。在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
+   Identity Service 允许将通用识别框架用于 Experience Cloud 核心服务、解决方案和客户属性，以及人员核心服务中的受众。它通过向网站访客分配一个唯一的永久性 ID 来工作。在您的组织实施 ID 服务后，您可以通过此 ID 在不同的 Experience Cloud 解决方案中识别同一网站访客及其数据。
 
    ![](assets/mc_id_service_graphic.png)
 
-   ID 服务还可以取代不同的解决方案特定 ID（例如，Analytics AID）。利用[客户 ID 和身份验证状态](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html)功能，ID 服务允许您将自己的客户 ID 传递到 Experience Cloud。但是，请谨记，ID 服务仅可在您已经订阅的解决方案中使用。如果您没有注册以访问其他产品，ID 服务并不会提供该访问权限。
+   ID 服务还可以取代不同的解决方案特定 ID（例如，Analytics AID）。利用[客户 ID 和身份验证状态](https://marketing.adobe.com/resources/help/zh_CN/mcvid/mcvid-authenticated-state.html)功能，ID 服务允许您将自己的客户 ID 传递到 Experience Cloud。但是，请谨记，ID 服务仅可在您已经订阅的解决方案中使用。如果您没有注册以访问其他产品，ID 服务并不会提供该访问权限。
 
-   今后，ID 服务将成为许多当前和将来推出的 Experience Cloud 功能、增强功能和服务中的必备组件。Currently, the ID service supports [Analytics,](https://www.adobe.com/marketing-cloud/web-analytics.html) [Audience Manager,](https://www.adobe.com/marketing-cloud/data-management-platform.html) and [Target.](https://www.adobe.com/marketing-cloud/testing-targeting.html)
-
-   >[!IMPORTANT]
-   >
-   >要参与Adobe Experience Cloud Device Co-op，需要Experience Cloud ID服务。
-
-   如果您还没有实施 ID 服务，现在是时候开始考虑迁移策略了。For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
+   今后，ID 服务将成为许多当前和将来推出的 Experience Cloud 功能、增强功能和服务中的必备组件。当前，ID 服务支持 [Analytics](https://www.adobe.com/cn/marketing-cloud/web-analytics.html)、[Audience Manager](https://www.adobe.com/cn/marketing-cloud/data-management-platform.html) 和 [Target](https://www.adobe.com/cn/marketing-cloud/testing-targeting.html)。
 
    >[!IMPORTANT]
    >
-   >In the absence of any user ID information present on the media-specific calls, the default analytics [Fallback ID Methods](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html) will apply.
+   >要参与 Adobe Experience Cloud 设备协作，需要使用 Experience Cloud ID 服务。
 
-   For additional information about the Experience Cloud ID, see [Experience Cloud ID Overview,](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html) and [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/)
+   如果您还没有实施 ID 服务，现在是时候开始考虑迁移策略了。有关 ID 服务的重要性和角色的更多信息，请参阅[为什么您应考虑使用 Identity Service](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
+
+   >[!IMPORTANT]
+   >
+   >如果特定于媒体的调用中缺少任何用户 ID 信息，则将应用默认的 Analytics [回退 ID 方法](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html)。
+
+   有关 Experience Cloud ID 的更多信息，请参阅 [Experience Cloud ID 概述](https://marketing.adobe.com/resources/help/zh_CN/mcvid/mcvid-overview.html)和 [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/zh_CN/mcvid/)。
 
 1. **启用 Adobe Analytics 报表。**
 
-   To enable reports in Analytics and see the content and ad data you are collecting, see [Media reports enablement.](/help/media-reports/media-reports-enable.md)
+   要启用 Analytics 中的报表并查看您正在收集的内容和广告数据，请参阅[媒体报表启用](/help/media-reports/media-reports-enable.md)。
 
