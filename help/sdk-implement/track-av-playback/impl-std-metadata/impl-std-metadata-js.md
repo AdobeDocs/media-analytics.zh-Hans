@@ -1,8 +1,8 @@
 ---
 title: 在 JavaScript 中实施标准元数据
-description: 介绍如何设置标准视频和广告元数据，以便在浏览器应用程序(JS)中通过跟踪调用发送该元数据。
+description: 介绍如何在浏览器应用程序 (JS) 中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -10,11 +10,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 在 JavaScript 中实施标准元数据{#implement-standard-metadata-on-javascript}
 
-## 元数据常数
+## 元数据常量
 
 | 常量名称 | 描述   |
 | --- | --- |
-| `StandardMediaMetadata` | Constant for attaching standard metadata on `MediaObject` |
+| `StandardMediaMetadata` | 用于将标准元数据附加到 `MediaObject` 的常量 |
 
 ## 实施
 
