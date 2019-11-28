@@ -1,8 +1,8 @@
 ---
 title: SDK 调试
-description: 本主题介绍Media SDK中可用的跟踪／记录。
+description: 本主题介绍 Media SDK 中提供的跟踪/日志记录功能。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -10,9 +10,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # SDK 调试{#sdk-debugging}
 
-您可以启用和禁用日志记录。 Media SDK在整个媒体跟踪堆栈中提供了广泛的跟踪／记录机制。 You can enable or disable logging by setting the `debugLogging` flag on the Config object.
+您可以启用和禁用日志记录功能。Media SDK 会在整个媒体跟踪堆栈中提供广泛的跟踪/日志记录机制。您可以通过在配置对象中设置 `debugLogging` 标记，来启用或禁用日志记录功能。
 
-## 调试日志记录的示例代码
+## 有关调试日志记录的代码示例
 
 ### Android
 
@@ -46,7 +46,7 @@ mediaConfig.debugLogging = true;
 this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement); 
 ```
 
-### OTT(Chromecast, Roku)
+### OTT（Chromecast、Roku）
 
 ADBMobile 库通过 `setDebugLogging` 方法提供调试日志记录。对于所有生产应用程序，调试日志记录应设置为 `false`。
 
@@ -67,7 +67,7 @@ ADBMobile.config.setDebugLogging(true)
 在应用程序开发期间，使用 Bloodhound 可以在本机上查看服务器调用，并可以选择将数据转发到 Adobe 收集服务器中。有关 Bloodhound 的更多信息，请参阅以下指南：
 
 * [适用于 Mac 的 Bloodhound 3.x](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
-* [适用于 Windows 的 Bloodhound 2.2](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+* [适用于 Windows 的 Bloodhound 2.2](https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&amp;url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&amp;usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&amp;sig2=K0waTKxdMj_2kfNXdMI2yg)
 
 >[!IMPORTANT]
 >
@@ -91,9 +91,9 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag：**&#x200B;发布日志消息的子组件的名称（通常是类名称）
 * **message：**&#x200B;实际的跟踪消息
 
-您可以使用Media SDK库输出的日志来验证实施。 一种有效的方法是在日志中搜索字符串 `#track`. This will highlight all the `track*()` calls made by your application.
+您可以使用 Media SDK 库输出的日志来验证实施。一种有效的方法是在日志中搜索字符串 `#track`。这会突出显示您的应用程序发出的所有 `track*()` 调用。
 
-For instance, this is what the logs filtered for `#track` could look like:
+例如，在日志中过滤 `#track` 的结果如下所示：
 
 ```js
 [16:10:29 GMT­0700 (PDT).222] [INFO] [plugin::player] #trackVideoLoad() 
