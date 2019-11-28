@@ -1,8 +1,8 @@
 ---
 title: 在 iOS 中实施标准广告元数据
-description: 如何在iOS上的广告跟踪中使用标准广告元数据。
+description: 如何在 iOS 上的广告跟踪中使用标准广告元数据。
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,9 +14,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 常量名称 | 描述   |
 |---|---|
-| `ADBMediaObjectKeyStandardAdMetadata` | Constant for attaching standard ad metadata on `AdInfo ADBMediaObject` |
+| `ADBMediaObjectKeyStandardAdMetadata` | 用于将标准广告元数据附加到 `AdInfo ADBMediaObject` 的常量 |
 
-## 实施标准和元数据
+## 实施标准广告元数据
 
 对于标准广告元数据，请使用适用于您的平台的键创建标准广告元数据键值对的字典：
 
