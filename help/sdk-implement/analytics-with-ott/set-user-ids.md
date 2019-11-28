@@ -1,8 +1,8 @@
 ---
 title: 设置用户 ID
-description: 用于设置用户ID的API，将哪台服务器设置为唯一客户标识符。
+description: 用于设置用户 ID 的 API，用户 ID 用作唯一客户标识符。
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
