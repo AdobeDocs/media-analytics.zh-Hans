@@ -2,7 +2,7 @@
 title: 验证事件请求
 description: null
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 可在后端使用 JSON 架构对每个事件类型的 JSON 请求正文进行验证。当 API 调用验证失败时，HTTP 响应正文将填充错误消息。
 
-JSON validation schemas for each event type are publicly accessible here: `{uri}/api/v1/schemas/{eventType}` (e.g., `{uri}/api/v1/schemas/sessionEnd`). 这些JSON验证架构是确定每种类型事件的正确请求主体参数的绝对权限。
+可在此处公开访问每个事件类型的 JSON 验证架构：`{uri}/api/v1/schemas/{eventType}`（例如，`{uri}/api/v1/schemas/sessionEnd`）。这些 JSON 验证架构是绝对的权威，其可为每个事件类型确定正确的请求正文参数。
 
 例如，对 `sessionStart` 验证架构的请求响应类似于此示例（为方便阅读，此处格式略有改动）：
 
@@ -125,5 +125,5 @@ Connection: keep-alive
 
 >[!NOTE]
 >
->会话级别验证是不可能的，因为会话上下文在集合层中不可用。
+>无法进行会话级别验证，因为会话上下文在收集层中不可用。
 
