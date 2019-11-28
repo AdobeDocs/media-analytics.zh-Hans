@@ -1,8 +1,8 @@
 ---
 title: 恢复不活动的会话
-description: 如何处理恢复不活动的会话。
+description: 如何恢复不活动的会话。
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,18 +12,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 长时间暂停
 
-Media SDK会自动跟踪媒体播放处于以下非活动状态之一的时间：
+Media SDK 会自动跟踪媒体播放处于下列某个不活动状态的时长：
 
 * 暂停
 * 搜寻
 * 停滞
 * 缓冲
 
-如果媒体跟踪会话在30分钟以上处于非活动状态，则会话将自动关闭。 如果用户恢复之前不活动的视频跟踪会话 (`trackPlay`)，媒体心率会使用先前使用的视频信息和元数据自动创建新的视频会话，并发送恢复心率事件。For more information, see [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
+如果媒体跟踪会话保持不活动状态超过 30 分钟，则该会话将被自动关闭。如果用户恢复之前不活动的视频跟踪会话 (`trackPlay`)，媒体心率会使用先前使用的视频信息和元数据自动创建新的视频会话，并发送恢复心率事件。有关更多信息，请参阅[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)。
 
 ## 手动恢复之前关闭的会话
 
-Media SDK仅在应用程序未关闭时才会自动恢复会话。 如果应用程序存储用户数据并且能够恢复之前关闭的媒体，则可以手动触发恢复事件。 启动视频跟踪会话时，请设置可选的“视频已恢复”属性。
+Media SDK 仅在应用程序未关闭的情况下才会自动恢复会话。如果应用程序存储了用户数据，并且能够恢复之前关闭的媒体，则可以手动触发恢复事件。启动视频跟踪会话时，请设置可选的“视频已恢复”属性。
 
 ### Android
 
