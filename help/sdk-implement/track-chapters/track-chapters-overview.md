@@ -1,8 +1,8 @@
 ---
 title: 概述
-description: 如何使用Media SDK实施章节和细分跟踪。
+description: 如何使用 Media SDK 实施章节和区段跟踪。
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,29 +12,29 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->以下说明提供了使用2.x SDK实施的指导。 If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下说明为使用 2.x SDK 进行实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
-章节和细分跟踪适用于自定义媒体章节或细分。 章节跟踪的一些常见用途是根据媒体内容（如棒球引擎）定义自定义区段，或定义广告分段之间的内容区段。 Chapter tracking is **not** required for core media tracking implementations.
+章节和区段跟踪适用于自定义的媒体章节或区段。章节跟踪的一些常见用例包括根据媒体内容定义自定义区段（例如，棒球赛的回合），或者定义不同广告时间之间的内容区段。对于核心媒体跟踪实施，章节跟踪&#x200B;**并非**&#x200B;必需项。
 
-章节跟踪包括章节开始、章节结束和章节跳过。您可以将媒体播放器API与自定义细分逻辑结合使用，以识别章节事件并填充所需的和可选的章节变量。
+章节跟踪包括章节开始、章节结束和章节跳过。您可以结合自定义分段逻辑使用媒体播放器 API 来识别章节事件，并填充必需章节变量和可选章节变量。
 
 ## 播放器事件
 
-### 章节开始
+### 在章节开始时
 
 * 为章节创建章节对象实例 `chapterObject`
-* Populate the chapter metadata, `chapterCustomMetadata`
+* 填充章节元数据 `chapterCustomMetadata`
 * 调用 `trackEvent(MediaHeartbeat.Event.ChapterStart, chapterObject, chapterCustomMetadata);`
 
-### 论章节的完成
+### 在章节结束时
 
 * 调用 `trackEvent(MediaHeartbeat.Event.ChapterComplete);`
 
-### 章节跳过
+### 在章节跳过时
 
 * 调用 `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## 实现章节跟踪 {#implement-chapter-tracking}
+## 实施章节跟踪 {#implement-chapter-tracking}
 
 1. 识别执行章节开始事件的时间，然后使用章节信息创建 `ChapterObject` 实例。
 
@@ -42,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!NOTE]
    >
-   >仅当您计划跟踪章节时，才需要这些变量。
+   >只有在您打算跟踪章节的情况下，才需要使用这些变量。
 
    | 变量名称 | 描述 | 必需 |
    | --- | --- | :---: |
@@ -53,11 +53,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. 如果为章节添加了自定义元数据，请为元数据创建上下文数据变量。
 1. 要开始跟踪章节播放，请在 `ChapterStart` 实例中调用 `MediaHeartbeat` 事件。
-1. 当播放达到您通过自定义代码定义的章节结尾边界时，在 实例中调用 `ChapterComplete` 事件。`MediaHeartbeat`
+1. 当播放达到您通过自定义代码定义的章节结尾边界时，在 `MediaHeartbeat` 实例中调用 `ChapterComplete` 事件。
 1. 如果由于用户选择跳过章节（例如，用户搜寻章节边界之外的内容）而使章节播放未能完成，请在 MediaHeartbeat 实例中调用 `ChapterSkip`。
 1. 如果存在任何其他章节，请重复执行步骤 1 至 5。
 
-以下示例代码将JavaScript 2.x SDK用于HTML5媒体播放器。 应将此代码与核心媒体播放代码一起使用。
+以下代码示例为 HTML5 媒体播放器使用 JavaScript 2.x SDK。您应该结合使用此代码与核心媒体播放代码。
 
 ```js
 /* Call on chapter start */ 
