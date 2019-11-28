@@ -1,18 +1,18 @@
 ---
-title: 媒体分析说明书
-description: 顶级说明书页面，包含常规MA说明书链接和特定于SDK的链接。
-translation-type: tm+mt
+title: Media Analytics 指南
+description: 顶级指南页面，其中包含常规 MA 指南链接以及特定于 SDK 的链接。
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# 媒体分析说明书
+# Media Analytics 指南
 
-## 常规媒体分析说明书主题
+## 常规 Media Analytics 指南主题
 
 [媒体流归因](/help/media-analytics-cookbook/media-dimensions.md)
 
-## Media SDK说明书主题
+## Media SDK 指南主题
 
-[Media SDK说明书](/help/sdk-implement/cookbook/sdk-cookbook-overview.md)
+[Media SDK 指南](/help/sdk-implement/cookbook/sdk-cookbook-overview.md)
