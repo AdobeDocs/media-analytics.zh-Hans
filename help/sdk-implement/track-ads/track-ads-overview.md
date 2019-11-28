@@ -1,8 +1,8 @@
 ---
 title: 概述
-description: 使用Media SDK实施广告跟踪的概述。
+description: 有关使用 Media SDK 实施广告跟踪的概述。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,26 +12,26 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->以下说明为使用2.x SDK实施提供了指导。 如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
+>以下说明为使用 2.x SDK 进行实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
-广告播放包括跟踪广告时间、广告开始、广告结束和广告跳过。使用媒体播放器的API识别关键播放器事件并填充所需的和可选的广告变量。 请在此处查看完整的元数据列表：广 [告参数。](/help/metrics-and-metadata/ad-parameters.md)
+广告播放包括跟踪广告时间、广告开始、广告结束和广告跳过。可以使用媒体播放器的 API 来识别关键播放器事件，以及填充必需和可选的广告变量。请在此处查看元数据的完整列表：[广告参数](/help/metrics-and-metadata/ad-parameters.md)。
 
 ## 播放器事件 {#player-events}
 
 
-### 广告中断开始
+### 在广告时间开始时
 
 >[!NOTE]
->包括预卷
+>包括前置广告
 
 * 为广告时间创建一个 `adBreak` 对象实例。例如：`adBreakObject`。
 
-* Call `trackEvent` for the ad break start with your `adBreakObject`.
+* 使用 `adBreakObject` 为广告时间开始事件调用 `trackEvent`。
 
 ### 在每个广告资产开始时
 
 * 为广告资产创建一个广告对象实例。例如：`adObject`。
-* Populate the ad metadata, `adCustomMetadata`.
+* 填充广告元数据 `adCustomMetadata`。
 * 为广告开始事件调用 `trackEvent`。
 
 ### 在每个广告完成时
@@ -62,7 +62,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. 识别广告时间（包括前置广告）边界开始的时间，然后使用广告时间信息创建 `AdBreakObject`。
 
-   `AdBreakObject` 参考：
+   `AdBreakObject` 引用：
 
    | 变量名称 | 描述 | 必需 |
    | --- | --- | :---: |
@@ -70,11 +70,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `position` | 内容中广告时间的位置编号，从 1 开始编号。 | 是 |
    | `startTime` | 广告时间开始的播放头值。 | 是 |
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break.
+1. 在 `MediaHeartbeat` 实例中使用 `AdBreakStart` 调用 `trackEvent()`，以开始跟踪广告时间。
 
 1. 识别广告的开始时间，然后使用广告信息创建 `AdObject` 实例。
 
-   `AdObject` 参考：
+   `AdObject` 引用：
 
    | 变量名称 | 描述 | 必需 |
    | --- | --- | :---: |
@@ -88,21 +88,21 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    * **标准广告元数据 -** 对于标准广告元数据，请使用适用于您的平台的键创建标准广告元数据键值对的字典。
    * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充。
 
-1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
+1. 在 `MediaHeartbeat` 实例中使用 `AdStart` 事件调用 `trackEvent()`，以开始跟踪广告播放。
 
    在事件调用中添加对自定义元数据变量（或空对象）的引用，以将其作为第三个参数。
 
-1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event.
+1. 当广告播放到达广告结尾时，使用 `AdComplete` 事件调用 `trackEvent()`。
 
 1. 如果由于用户选择跳过广告而使广告播放未能完成，则跟踪 `AdSkip` 事件。
 1. 如果同一个 `AdBreak` 中存在任何其他广告，请重复执行步骤 3 至 7。
-1. When the ad break is complete, use the `AdBreakComplete` event to track it.
+1. 当广告时间结束时，使用 `AdBreakComplete` 事件对其进行跟踪。
 
 >[!IMPORTANT]
 >
->确保在广告播放()期间不增加内容播放`l:event:playhead`器播放头(`s:asset:type=ad`)。 如果您这样做，则“内容停留时间”量度将受到不利影响。
+>确保在广告播放 (`s:asset:type=ad`) 期间不增加内容播放器播放头 (`l:event:playhead`)。否则，“内容逗留时间”量度将受到不良影响。
 
-以下示例代码将JavaScript 2.x SDK用于HTML5媒体播放器。
+以下代码示例对 HTML5 媒体播放器使用 JavaScript 2.x SDK。
 
 ```js
 /* Call on ad break start */ 
