@@ -1,8 +1,8 @@
 ---
 title: 在 Adobe Analytics 中测量音频和视频
-description: 'Adobe Analytics for Media（也称为Media Analytics）为客户提供了针对内容、音频和广告的强大的媒体测量。 '
-uuid: b3cbe240-b94d-42b8-a99c-0280334aa14
-translation-type: tm+mt
+description: 'Adobe Analytics for Media（也称为 Media Analytics）可为客户提供针对内容、音频和广告的可靠媒体测量。 '
+uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 它不包括有关旧版里程碑视频实施的说明。 我们建议所有客户采用其中一种或同时采用这两种最新的媒体跟踪解决方案，以便充分利用改进功能，实现更广泛的测量。您可以阅读下方的[转换到最新解决方案的益处](media-overview.md#heartbeat-versus-milestone-benefits)。虽然我们将继续支持跟踪视频的里程碑方法，但不会有任何计划的更新、修复或功能改进。 如果您有任何进一步的问题，请联系您的 Adobe 帐户管理员。
+>此处提供的文档专门面向利用 Adobe 的 1.5 或更高版本 *Media SDK* 或者较新的&#x200B;*媒体收集 API* 进行心率测量的客户。该文档不包括有关旧版里程碑视频实施的说明。我们建议所有客户采用其中一种或同时采用这两种最新的媒体跟踪解决方案，以便充分利用改进功能，实现更广泛的测量。您可以阅读下方的[转换到最新解决方案的益处](media-overview.md#heartbeat-versus-milestone-benefits)。尽管我们会继续支持通过里程碑跟踪视频的方法，但将不会有任何计划的更新、修复或功能改进。如果您有任何进一步的问题，请联系您的 Adobe 帐户管理员。
 
 ## 概述 {#overview}
 
@@ -35,14 +35,14 @@ Adobe 媒体测量解决方案的部分优点包括：
 
 * **及时分析 -**&#x200B;利用跨多个渠道的关键效果量度（例如，持续时间）做出实时的可操作性决策。以 **10 秒**&#x200B;为间隔，测量主内容事件，可及时捕获发生的所有活动。广告跟踪事件的发生间隔为 **1 秒**。
 * **促进参与度提升 -**&#x200B;通过较少缓冲事件并了解广告应在内容中播放的位置和时间，提供更顺畅、更友好的体验，从而吸引用户再次来访，提高回访率。
-* **整体图景** -通过 [Federated Analytics功能，将所有内容分发商的多个数据点组合在一起，全面了解所有媒体活动，并衡量参与度和视图／监听所有可能的渠道](/help/federated-analytics.md) 。
+* **全面视角 -**&#x200B;通过 [Federated Analytics](/help/federated-analytics.md) 功能将所有内容传播方的多个数据点相结合，在所有可能的渠道中全面了解媒体的活动，测量参与度和查看/收听次数。
 * **增加粒度 -**&#x200B;在极其精细的粒度级别上评估查看行为，包括具体访客的时间段、每分钟的并行查看者/收听者数量和使用内容的平均持续时长。
 * **精准测量 -**&#x200B;在使用媒体的多种设备（包括 OTT、智能手机、平板电脑、台式机，等等）上测量数据以监测用户参与模式和习惯。
 * **区段划分 -**&#x200B;对您的播放器、设备、流派、章节和节目应用分类，以了解每个分类对内容、音频、广告和组合元素的整体查看/收听量和客户参与度有何影响。
 
 ## 心率相比里程碑的优势 {#heartbeat-versus-milestone-benefits}
 
-Adobe Analytics for Media可以通过两种方式进行衡量：传统的Milestone方法（仅视频）和当前的Heartbeats方法（音频和视频，在Media SDK和Media Collection API中都有）。 心率方法是首选的测量方法，我们建议所有尚未采用心率方法的客户迁移到此版本，以便充分利用下文所述的优点。
+Adobe Analytics for Media 可通过两种方式进行测量：旧版的里程碑方法（仅限视频）和新版的心率方法（适用于音频和视频，包括 Media SDK 和媒体收集 API）。心率方法是首选的测量方法，我们建议所有尚未采用心率方法的客户迁移到此版本，以便充分利用下文所述的优点。
 
 旧版的里程碑方法基于对 Analytics 服务器的以下单个服务器调用：视频开始、四分位点、持续时间和结束。心率方法则提供了更强大的媒体跟踪解决方案，能够以 10 秒为间隔测量主内容，从而提供增强的标准化量度。此外，Adobe 从里程碑方法中汲取了经验，在心率方法中通过利用 Media SDK 或媒体收集 API，使实施流程更为顺畅、更为简单。
 
@@ -52,7 +52,7 @@ Adobe Analytics for Media可以通过两种方式进行衡量：传统的Milesto
 * **自动集成 Adobe Experience Cloud -**&#x200B;通过 Experience Cloud ID 充分利用与 Adobe Experience Cloud 的自动集成，对媒体受众进行分段和定位，并根据用户的偏好推荐媒体内容。
 * **利用 Federated Analytics 共享数据 -**&#x200B;利用我们在业界首开先河的媒体共享功能，全面评估您的所有媒体传播合作平台的数据：运营商、节目制作方和发行方。
 * **所有平台通用的标准化解决方案 -**&#x200B;针对所有媒体和平台采用一致的标准化变量，可以更高效地对不同营销活动、设备和供应商的数据进行对比。
-* **下载的内容跟踪** -跟踪在设备上下载和播放的媒体内容（视频和音频），而不管其连接性如何。
+* **下载的内容跟踪 -**&#x200B;跟踪从设备中下载和播放的媒体内容（视频和音频），无论是否连接到网络。
 
 ### 对比图表
 
@@ -98,12 +98,12 @@ Adobe Analytics for Media 契合行业发展趋势，提供了强大的数据收
 | **Sony PS3/PS4** |  | ![](assets/icon-blue-check.png) |
 | **(其他/新连接设备）** |  | ![](assets/icon-blue-check.png) |
 
-有关Media SDK，另请参阅最 [低平台版本支持](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+有关 Media SDK 的信息，另请参阅[最低平台版本支持](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
 ## 传输层安全性 {#transport-layer-security}
 
-**TLS声明** - adobe有安全合规标准，要求终止旧版安全协议。 为了继续满足不断演变的安全协议标准，Adobe正在向使用TLS 1.2的方向迈进，以便使用最新、最安全的版本。 从2019年2月20日起，Adobe将仅支持TLS 1.1或更高版本。 通过此更改，Adobe将不再从部署TLS 1.0的较旧设备或Web浏览器的最终用户收集数据。迁移到TLS 1.2可提高安全性。 您应务必了解具体细节，并且针对更改做出规划以实现顺利迁移。
+**TLS 声明 --** Adobe 制定了要求终止使用旧版安全协议的安全合规标准。为了继续满足不断演变的安全协议标准，Adobe 正逐渐转为使用 TLS 1.2，以便使用最新的安全协议版本。从 2019 年 2 月 20 日起，Adobe 将仅支持 TLS 1.1 或更高版本。伴随这项变化，对于使用部署了 TLS 1.0 的较旧设备或 Web 浏览器的最终用户，Adobe 将不再收集他们的数据。迁移到 TLS 1.2 可提高安全性。您应务必了解具体细节，并且针对更改做出规划以实现顺利迁移。
 
 >[!NOTE]
 >
->TLS目前是部署最广的安全协议，用于要求通过网络安全交换数据的Web浏览器和其他应用程序。
+>TLS 是目前最广泛部署的安全协议，适用于 Web 浏览器和其他需要通过网络安全交换数据的应用程序。
