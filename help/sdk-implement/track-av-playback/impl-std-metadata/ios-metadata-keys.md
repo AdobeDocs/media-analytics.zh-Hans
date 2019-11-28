@@ -1,8 +1,8 @@
 ---
 title: iOS 元数据键
-description: 本主题介绍了可用的iOS元数据键。
+description: 本主题介绍可用的 iOS 元数据键。
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 [iOS API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
-从 `ADBStandardMetadataKeys.h`:
+从 `ADBStandardMetadataKeys.h`：
 
 ## 视频元数据键
 
