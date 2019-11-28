@@ -1,8 +1,8 @@
 ---
 title: 在 Chromecast 中跟踪章节和区段
-description: 本主题介绍如何使用Chromecast上的Media SDK实现章节和细分跟踪。
+description: 本主题介绍如何在 Chromecast 中使用 Media SDK 实施章节和区段跟踪。
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,15 +12,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->以下说明提供了使用2.x SDK实施的指导。 If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下说明为使用 2.x SDK 进行实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
 1. 识别执行章节开始事件的时间，然后使用章节信息创建 `ChapterObject` 实例。
 
-   `ChapterObject` 章节跟踪参考：
+   `ChapterObject` 章节跟踪引用：
 
    >[!NOTE]
    >
-   >仅当您计划跟踪章节时，才需要这些变量。
+   >只有在您打算跟踪章节的情况下，才需要使用这些变量。
 
    | 变量名称 | 描述 | 必需 |
    | --- | --- | :---: |
