@@ -1,8 +1,8 @@
 ---
 title: 跳过一个章节的 VOD 播放
-description: 有关如何跟踪VOD内容的示例，其中用户使用Media SDK跳过了一章。
+description: 有关如何使用 Media SDK 跟踪用户跳过了一个章节的 VOD 内容的示例。
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -10,7 +10,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 跳过一个章节的 VOD 播放{#vod-playback-with-a-skipped-chapter}
 
-## 情景 {#scenario}
+## 方案 {#scenario}
 
 在此方案中，用户将跳过主内容中的一个章节。
 
@@ -18,7 +18,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 触发器 | 心率方法 | 网络调用   | 注释 |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与 [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
+| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与 [iOS 中没有中断的播放](vod-no-intrs-details.md)方案完全相同。 |
 | 章节开始。 | `trackEvent:ChapterStart` | 心率章节开始 |  |
 | 播放章节的第一帧。 | `trackPlay` | 心率章节播放 | 当章节内容在主内容之前播放时，我们希望在章节开始时即开始心率。 |
 | 章节播放。 |  | 章节心率 |  |
@@ -26,12 +26,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 搜寻结束。 | `trackEvent:trackSeekComplete` |  | 心率将在此之后继续。 |
 | 应用程序识别出用户的搜寻超出常规章节边界。 | `trackEvent:trackChapterSkip` |  |  |
 | 播放内容。 |  | 内容心率 |  |
-| 内容结束播放。 | `trackComplete` | 心率内容结束 | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户不观看媒体完成，也必须调用此API。 |
+| 内容结束播放。 | `trackComplete` | 心率内容结束 | 此网络调用与 [iOS 中没有中断的播放](vod-no-intrs-details.md)方案完全相同。 |
+| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户没有观看至媒体结束，也必须调用此 API。 |
 
 ## 参数 {#parameters}
 
-在回放章节期间使用的参数与 [VOD回放中的参数相同，只是没有章节完整的网络调用](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) 。
+在章节播放过程中使用的参数与[包含一个章节的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)方案中的参数相同，不同之处在于没有章节结束网络调用。
 
 ## 示例代码 {#sample-code}
 
