@@ -2,7 +2,7 @@
 title: 会话请求
 description: null
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -15,13 +15,13 @@ POST
 https://{uri}/api/v1/sessions
 ```
 
-## URI参数
+## URI 参数
 
 无
 
-## 请求主体
+## 请求正文
 
-请求主体必须是JSON，且必须具有与此示例请求主体相同的结构：
+请求正文必须是 JSON，且还必须具有与此示例请求正文相同的结构：
 
 ```
 { 
@@ -57,13 +57,13 @@ https://{uri}/api/v1/sessions
 }
 ```
 
-* `playerTime` (必需)
+* `playerTime`（必需）
    * `playhead` - 必须以秒为单位，但它可以是一个浮点数。
    * `ts` - 时间戳，必须以毫秒为单位。
-* `eventType` (必需)
+* `eventType`（必需）
 
    **有效值：**`sessionStart`
-* `params` (必需)
+* `params`（必需）
 * `customMetadata`（可选）
 * `qoeData`（可选）
 
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header —— 该部 `/api/v1/` 分提供API版本。 之后的部 `[…]sessions/` 分是会话ID。
+`Location:` 标头 - `/api/v1/` 部分提供 API 版本。`[…]sessions/` 之后的部分是会话 ID。
 
 ## 响应代码
 
