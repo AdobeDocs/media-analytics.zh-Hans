@@ -1,8 +1,8 @@
 ---
 title: 在 iOS 中跟踪体验质量
-description: 本主题介绍在iOS上使用Media SDK实现体验质量(QoE、QoS)跟踪。
+description: 本主题介绍如何在 iOS 中使用 Media SDK 实施体验质量（QoE、QoS）跟踪。
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,11 +12,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->下面的说明为所有 2.x SDK 实施提供了指南。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下面的说明为所有 2.x SDK 实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
-## 实施QOS
+## 实施 QoS
 
-1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
+1. 识别在媒体播放期间比特率发生更改的时间，并使用 QoS 信息创建 `MediaObject` 实例。
 
    QoSObject 变量：
 
@@ -29,7 +29,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >仅当您计划跟踪QoS时，才需要这些变量。
+   >只有在您打算跟踪 QoS 的情况下，才需要使用这些变量。
 
    QoS 对象创建：
 
@@ -53,5 +53,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >更新QoS对象，并在每个比特率更改时调用比特率更改事件。 这样将可以提供最为准确的 QoS 数据。
+   >请更新 QoS 对象并在每次比特率发生更改时调用比特率更改事件。这样将可以提供最为准确的 QoS 数据。
 
