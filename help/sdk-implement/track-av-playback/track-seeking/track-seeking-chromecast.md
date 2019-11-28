@@ -1,8 +1,8 @@
 ---
 title: 在 Chromecast 中跟踪搜寻
-description: 本主题介绍在Chromecast上使用Media SDK实现搜索跟踪。
+description: 本主题介绍如何在 Chromecast 中使用 Media SDK 实施搜寻跟踪。
 uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,16 +12,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->下面的说明为所有 2.x SDK 实施提供了指南。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下面的说明为所有 2.x SDK 实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
-## 搜索跟踪常量
+## 搜寻跟踪常量
 
 | 常量名称 | 描述     |
 |---|---|
 | `SeekStart` | 用于跟踪搜寻开始事件的常量。 |
 | `SeekComplete` | 用于跟踪搜寻结束事件的常量。 |
 
-## 实现搜索
+## 实施搜寻
 
 1. 监听媒体播放器中的播放搜寻事件，并在发出搜寻开始事件通知时，使用 `SeekStart` 事件跟踪搜寻：[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
