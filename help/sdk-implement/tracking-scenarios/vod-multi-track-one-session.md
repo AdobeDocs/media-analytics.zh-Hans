@@ -1,8 +1,8 @@
 ---
 title: 一个 VOD 跟踪器用于多个会话
-description: 如何使用一个跟踪器使用Media SDK跟踪多个会话的示例。
+description: 有关如何使用 Media SDK 通过一个跟踪器来跟踪多个会话的示例。
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -10,7 +10,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 一个 VOD 跟踪器用于多个会话{#vod-one-tracker-for-multiple-sessions}
 
-## 情景 {#scenario}
+## 方案 {#scenario}
 
 在此方案中，`MediaHeartbeat` 实例用于依次创建两个不同的会话。
 
@@ -22,7 +22,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 参数 | 值 | 注释   |
 | --- | --- | --- |
-| `s:event:sid` | 唯一的会话 ID | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
+| `s:event:sid` | 唯一的会话 ID | 唯一的会话 ID 一直存在于所有心率网络调用中，直到调用 `trackSessionEnd`。 |
 
 ## 示例代码 {#sample-code}
 
@@ -30,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Android {#android}
 
-To create two instances of `MediaHeartbeat` for two media players, set up the following code:
+要为两种媒体播放器创建两个 `MediaHeartbeat` 实例，请设置以下代码：
 
 ```java
 public class MediaAnalyticsProvider implements MediaHeartbeatDelegate { 
@@ -139,7 +139,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-To display the second session, you can use the same `MediaAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session:
+要显示第二个会话，您可以使用相同的 `MediaAnalyticsProvider` (`MediaHeartbeat`) 实例作为第一个会话，但是对于新对话：
 
 ```java
 // Set up mediaObject 
@@ -185,7 +185,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS {#ios}
 
-To create two instances of `MediaHeartbeat` for two media players, enter the following:
+要为两种媒体播放器创建两个 `MediaHeartbeat` 实例，请输入以下代码：
 
 ```
 @interface MediaAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -291,7 +291,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 ....... 
 ```
 
-To display the second session, you can use the same `MediaAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session:
+要显示第二个会话，您可以使用相同的 `MediaAnalyticsProvider` (`MediaHeartbeat`) 实例作为第一个会话，但是对于新对话：
 
 ```
 // Set up mediaObject 
