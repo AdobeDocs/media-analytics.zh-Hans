@@ -2,7 +2,7 @@
 title: Primetime
 description: null
 uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -24,8 +24,8 @@ Primetime 为进行媒体发布、广告投放、个性化和分析提供了模�
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK 已与 Media SDK 集成，这使得在所有受支持的平台上都可以更便捷地实施 TVSDK。<!--Primetime also supports the partnership with Nielsen.--> 要利用Primetime，请遵循客户端中提供的相同准则和先决条件 [](/help/intro-to-ava/implementation-paths/client-side-path.md) ，并遵循适用于您的平台的以下文档：Primetime [用户指南。](https://helpx.adobe.com/primetime/user-guide.html)
+TVSDK 已与 Media SDK 集成，这使得在所有受支持的平台上都可以更便捷地实施 TVSDK。<!--Primetime also supports the partnership with Nielsen.-->要利用 Primetime，请遵循[客户端](/help/intro-to-ava/implementation-paths/client-side-path.md)中提供的相同准则和先决条件，以及以下适用于您的平台的文档：[Primetime 用户指南](https://helpx.adobe.com/cn/primetime/user-guide.html)。
 
 >[!NOTE]
 >
->对于此实施路径，客户需要联系其销售代表／客户经理以签署新的销售订单，因为Media Analytics具有唯一的SKU，并且定价模型根据服务器调用的变化更改为基于媒体流的模型。 您还应该联系销售代表/帐户管理员，讨论购买 TVSDK 的相关事宜。
+>对于此实施路径，由于 Media Analytics 具有独有的 SKU，其定价模型已由基于服务器调用的模型变为基于媒体流的模型，因此客户将需要联系他们的销售代表/客户经理来签署新的销售订单。您还应该联系销售代表/帐户管理员，讨论购买 TVSDK 的相关事宜。
