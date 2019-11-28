@@ -2,7 +2,7 @@
 title: 计算量度
 description: null
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,13 +12,13 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!NOTE]
 >
->这些计算指标于2018年9月13日引入。
+>下列计算量度是于 2018 年 9 月 13 日引入的。
 
 | 量度 | 描述 | 公式 |
 |---|---|---|
-| 每个媒体流的平均广告数 | 每媒体开始的广告开始数 | `Ad Starts / Media Starts` |
-| 每个媒体流的平均章节数 | 每个媒体开始的章节 | `Chapter Start / Media Starts` |
-| 媒体平均逗留时间 | 每个媒体开始的总花费时间(HH:MM:SS) | `Media Time Spent / Media Starts` |
+| 每个媒体流的平均广告数 | 每次媒体开始的广告开始次数 | `Ad Starts / Media Starts` |
+| 每个媒体流的平均章节数 | 每次媒体开始的章节开始次数 | `Chapter Start / Media Starts` |
+| 媒体平均逗留时间 | 每次媒体开始的总逗留时间 (HH:MM:SS) | `Media Time Spent / Media Starts` |
 | 内容平均逗留时间 | 每次开始内容的内容逗留时间 (HH:MM:SS) | `Content Time Spent / Content Start` |
 | 广告平均逗留时间 | 每次开始广告的广告逗留时间 (HH:MM:SS) | `Ad Time Spent / Ad Start` |
 | 章节平均逗留时间 | 每次开始章节的章节逗留时间 (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
