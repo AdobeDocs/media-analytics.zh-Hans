@@ -1,8 +1,8 @@
 ---
 title: 在 Chromecast 中实施标准元数据
-description: 介绍在Chromecast上设置标准视频和广告元数据。
+description: 介绍如何在 Chromecast 中设置标准视频和广告元数据。
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -28,4 +28,4 @@ standardAudioMetadata[AudioMetadataKeys.ALBUM] = "Sample album";
 mediaObject[ADBMobile.media.MediaObjectKey.StandardAudioMetadata] = standardAudioMetadata;
 ```
 
-See the comprehensive list of audio and video metadata here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
+请在此处查看音频和视频元数据的完整列表：[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)。
