@@ -2,7 +2,7 @@
 title: 媒体概览
 description: null
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -22,9 +22,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 媒体效果 {#media-performance}
 
-单击并拖动以放大，然后将鼠标悬停在上面以查看特定媒体的精细量度。单击  ![](assets/video-overview-report-revert.png)
+单击并拖动以放大，然后将鼠标悬停在上面以查看特定媒体的精细量度。单击 ![](assets/video-overview-report-revert.png)
 
-以在缩放后重置视图。
+可在缩放后重置视图。
 
 ![](assets/media_overview_zoom.png){width="400px"}
 
