@@ -1,8 +1,8 @@
 ---
 title: 在 SceneGraph (Roku) 中跟踪
-description: 使用Roku SceneGraph XML编程框架跟踪媒体。
+description: 使用 Roku SceneGraph XML 编程框架跟踪媒体。
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -56,7 +56,7 @@ Adobe Mobile SDK for Roku 是使用 BrightScript 编写的。SDK 使用的许多
 | 类别 | 方法名称 | 描述 |
 |---|---|---|
 | **常量** |  |  |
-|  | `sceneGraphConstants` | Returns an object containing `SceneGraphConstants`. 有关详细信息，请参阅上表。 |
+|  | `sceneGraphConstants` | 返回包含 `SceneGraphConstants` 的对象。有关详细信息，请参阅上表。 |
 |  |  |  |
 | **调试日志记录** |  |  |
 |  | `setDebugLogging` | 用于在 ADBMobile SDK 中设置调试日志记录的 SceneGraph API。 |
@@ -107,15 +107,15 @@ Adobe Mobile SDK for Roku 是使用 BrightScript 编写的。SDK 使用的许多
 
 | 常量名称 | 描述 |
 |---|---|
-| `API_RESPONSE` | Used to retrieve the response object from `adbmobileTask` node's `adbmobileApiResponse` field |
-| `DEBUG_LOGGING` | 用于 `apiName``getDebugLogging` |
-| `PRIVACY_STATUS` | 用于 `apiName``getPrivacyStatus` |
-| `TRACKING_IDENTIFIER` | 用于 `apiName``trackingIdentifier` |
-| `USER_IDENTIFIER` | 用于 `apiName``userIdentifier` |
-| `VISITOR_MARKETING_CLOUD_ID` | 用于 `apiName``visitorMarketingCloudID` |
-| `AUDIENCE_VISITOR_PROFILE` | 用于 `apiName``audienceVisitorProfile` |
-| `AUDIENCE_DPID` | 用于 `apiName``audienceDpid` |
-| `AUDIENCE_DPUUID` | 用于 `apiName``audienceDpuuid` |
+| `API_RESPONSE` | 用于从 `adbmobileTask` 节点的 `adbmobileApiResponse` 字段中检索响应对象 |
+| `DEBUG_LOGGING` | 用作 `getDebugLogging` 的 `apiName` |
+| `PRIVACY_STATUS` | 用作 `getPrivacyStatus` 的 `apiName` |
+| `TRACKING_IDENTIFIER` | 用作 `trackingIdentifier` 的 `apiName` |
+| `USER_IDENTIFIER` | 用作 `userIdentifier` 的 `apiName` |
+| `VISITOR_MARKETING_CLOUD_ID` | 用作 `visitorMarketingCloudID` 的 `apiName` |
+| `AUDIENCE_VISITOR_PROFILE` | 用作 `audienceVisitorProfile` 的 `apiName` |
+| `AUDIENCE_DPID` | 用作 `audienceDpid` 的 `apiName` |
+| `AUDIENCE_DPUUID` | 用作 `audienceDpuuid` 的 `apiName` |
 
 ### adbmobileTask 节点
 
@@ -136,20 +136,31 @@ Adobe Mobile SDK for Roku 是使用 BrightScript 编写的。SDK 使用的许多
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> 无效 </td>
-<td> 只读在AdobeMobileSDK上执行的所有API都将返回此字段的响应。 应注册监听此字段更新的回调以接收响应对象。以下是响应对象的格式：  
+<td> 只读。在 AdobeMobileSDK 中执行的所有 API 都将返回此字段中的响应。应注册监听此字段更新的回调以接收响应对象。以下是响应对象的格式：  
 <codeblock>
-response = { "apiName" :&lt;SceneGraphConstants。
-               API_NAME&gt; "returnValue :&lt;API_RESPONSE&gt; } 
+response = {
+  "apiName" : &lt;SceneGraphConstants.
+               API_NAME&gt; 
+  "returnValue : &lt;API_RESPONSE&gt; 
+} 
 </codeblock>
-将为 AdobeMobileSDK 中的任何 API 调用发送此响应对象的实例，根据 API 引用指南，该 API 调用应会返回一个值。例如，visitorMarketingCloudID()的API调用将返回以下响应对象： 
+将为 AdobeMobileSDK 中的任何 API 调用发送此响应对象的实例，根据 API 引用指南，该 API 调用应会返回一个值。例如，visitorMarketingCloudID() 的 API 调用将返回以下响应对象： 
 <codeblock>
-response = { "apiName" :m.              adbmobileConstants。
-              VISITOR_MARKETING_CLOUD_ID "returnValue:"07050x25671x33760x72644x14" } 
+response = {
+  "apiName" : m.
+              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID  
+  "returnValue : "07050x25671x33760x72644x14"  
+} 
 </codeblock>
 或者，响应数据也可能无效： 
 <codeblock>
-response = { "apiName" :m.              adbmobileConstants。
-              VISITOR_MARKETING_CLOUD_ID "returnValue:无效} 
+response = {  
+  "apiName" : m.
+              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID  
+  "returnValue : invalid 
+} 
 </codeblock>
 </td>
 </tr>
@@ -160,16 +171,18 @@ response = { "apiName" :m.              adbmobileConstants。
 
 #### `getADBMobileConnectorInstance`
 
-API 签名: `ADBMobile().getADBMobileConnectorInstance()`\
-输入：返 `adbmobileTask`回类型： `ADBMobileConnector`
+API 签名：`ADBMobile().getADBMobileConnectorInstance()`\
+输入：`adbmobileTask`
+返回类型：`ADBMobileConnector`
 
 #### `sgConstants`
 
-API签名：输 `ADBMobile().sgConstants()`入：无\
-返回类型: `SceneGraphConstants`
+API 签名：`ADBMobile().sgConstants()`
+输入：无\
+返回类型：`SceneGraphConstants`
 
 >[!NOTE]
->Refer to the `ADBMobileConnector` API reference for details.
+>有关详细信息，请参阅 `ADBMobileConnector` API 引用。
 
 ### ADBMobile 常量
 
@@ -178,34 +191,34 @@ API签名：输 `ADBMobile().sgConstants()`入：无\
 | 版本控制 | `version` | 用于检索 AdobeMobileLibrary 版本信息的常量 |
 | 隐私/选择禁用 | `PRIVACY_STATUS_OPT_IN` | 表示“已选择启用”隐私状态的常量 |
 |  | `PRIVACY_STATUS_OPT_OUT` | 表示“已选择禁用”隐私状态的常量 |
-| MediaHeartbeat 常量 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | 将这些常量与MediaHeartbeat API一起使用 |
-| 标准元数据 | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 使用这些常量可在 MediaHeartbeat API 中附加标准视频/广告元数据 |
+| MediaHeartbeat 常量 | 请参阅以下页面上的常量：<br/><br/>[媒体心率方法](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md)。 | 将这些常量与 MediaHeartbeat API 一起使用 |
+| 标准元数据 | 请参阅以下页面上的常量：<br/><br/>[标准元数据参数](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)。 | 使用这些常量可在 MediaHeartbeat API 中附加标准视频/广告元数据 |
 
-Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. 有关这些方法的更多信息，请参阅下表：
+旧版 AdobeMobileLibrary 中全局定义的实用程序 `MediaHeartbeat` API 可在 SceneGraph 环境中“照常”**&#x200B;进行访问，因为它们未使用任何无法在 SceneGraph 节点中使用的 Brightscript 组件。有关这些方法的更多信息，请参阅下表：
 
 ### 适用于 MediaHeartbeat 的全局方法
 
 | 方法 | 描述 |
 | --- | --- |
-| `adb_media_init_mediainfo` | 此方法返回初始化的媒体信息对象 `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
-| `adb_media_init_adinfo` | 此方法返回初始化的广告信息对象 `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
-| `adb_media_init_chapterinfo` | This method returns initialized Chapter Information object.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
-| `adb_media_init_adbreakinfo` | This method returns initialized AdBreak Information object.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
-| `adb_media_init_qosinfo` | This method returns an initialized QoS Information object.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
+| `adb_media_init_mediainfo` | 此方法返回初始化的媒体信息对象。`Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
+| `adb_media_init_adinfo` | 此方法返回初始化的广告信息对象。`Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
+| `adb_media_init_chapterinfo` | 此方法返回初始化的章节信息对象。`Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
+| `adb_media_init_adbreakinfo` | 此方法返回初始化的 AdBreak 信息对象。`Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
+| `adb_media_init_qosinfo` | 此方法返回初始化的 QoS 信息对象。`Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
 ## 实施 {#implementation}
 
-1. **下载Roku库——下** 载最 [新的Roku库。](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
+1. **下载 Roku 库 -** 下载[最新版本的 Roku 库](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)。
 
 1. **设置开发环境**
 
-   1. Copy `adbmobile.brs` (AdobeMobileLibrary) into your `pkg:/source/` directory.
+   1. 将 `adbmobile.brs` (AdobeMobileLibrary) 复制到 `pkg:/source/` 目录中。
 
-   1. For Scene Graph support, copy `adbmobileTask.brs` and `adbMobileTask.xml` into your `pkg:/components/` directory.
+   1. 要支持 Scene Graph，请将 `adbmobileTask.brs` 和 `adbMobileTask.xml` 复制到 `pkg:/components/` 目录中。
 
 1. **初始化**
 
-   1. Import `adbmobile.brs` into your Scene.
+   1. 将 `adbmobile.brs` 导入到场景中。
 
       ```
       <script type="text/brightscript" uri="pkg:/source/adbmobile.brs" />
@@ -223,7 +236,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
       m.adbmobile = ADBMobile().getADBMobileConnectorInstance(m.adbmobileTask)
       ```
 
-   1. Get `adbmobile` SG constants.
+   1. 获取 `adbmobile` SG 常量。
 
       ```
       m.adbmobileConstants = m.adbmobile.sceneGraphConstants()
