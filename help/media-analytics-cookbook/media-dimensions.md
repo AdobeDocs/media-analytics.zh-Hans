@@ -1,7 +1,7 @@
 ---
 title: 媒体流归因
 description: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -9,28 +9,28 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # 媒体流归因
 
-利用此功能，您无需附加处理规则和自定义变量即可将应用程序操作关联到媒体跟踪数据。
+利用此功能，可以将应用程序操作链接到媒体跟踪数据，而无需其他的处理规则和自定义变量。
 
 ## 媒体跟踪之外的媒体维度
 
-借助媒体流归因，客户现在可以将任何媒体维度添加到所有其他分析调用，如页面查看和自定义链接。 在实施过程中，您必须将媒体上下文数据参数添加到Analytics跟踪调用。 用于媒体的上下文数据参数的完整列表可在以下网址获得：音 [频和视频参数。](/help/metrics-and-metadata/audio-video-parameters.md)
+借助媒体流归因，客户现在能够将任何媒体维度添加到所有其他分析调用，例如“页面查看次数”和“自定义链接”。在实施过程中，您必须将媒体上下文数据参数添加到 Analytics 跟踪调用。可在此处找到用于媒体的上下文数据参数的完整列表：[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)。
 
-您还需要从管理控制台为要启用此功能的每个报告重新启用媒体跟踪配置。
+此外，您还需要从 Admin Console 为要启用此项功能的每个报表重新启用媒体跟踪配置。
 
 >[!NOTE]
->媒体指标在媒 _体跟踪_ 之外不可用，因为大部分指标都是由Media Analytics计算的
->基于心跳事件。 另外，媒体指标不要被不同的实施夸大也很重要。
+>媒体量度在媒体跟踪之外&#x200B;_不_可用，因为大多数媒体量度是由 Media Analytics
+>基于心率事件计算的。此外，媒体量度不应被不同的实施夸大，这一点也很重要。
 
-## 如何
+## 方法
 
-以下JavaScript示例将生成一个名称设置为“Hero Banner”的“自定义链接”跟踪调用。
+以下 JavaScript 示例将生成一个名称设置为“Hero Banner”的自定义链接跟踪调用。
 
 ```javascript
 s.contextData["a.media.show"]="Mi Amore"
 s.tl(this,'o','Hero Banner');
 ```
 
-在Analytics报告中，您可以使用 `Show` eVar来划分数据，并且您将能够计算跟踪链接实例。 报告将类似于：
+在 Analytics 报表中，您可以使用 `Show` eVar 来划分数据，并且将能够计数跟踪链接实例。报表将类似于：
 
 ![](/assets/myShow-rpt-1.png)
 
