@@ -1,8 +1,8 @@
 ---
 title: 概述
-description: 使用Media SDK跟踪体验质量(QoE、QoS)的概述。
+description: 有关使用 Media SDK 跟踪体验质量（QoE、QoS）的概述。
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,29 +12,29 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->下面的说明为所有 2.x SDK 实施提供了指南。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下面的说明为所有 2.x SDK 实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 您可以使用媒体播放器API来标识与QoS和错误跟踪相关的变量。 以下是体验质量跟踪的关键元素：
+体验质量跟踪包括服务质量 (QoS) 和错误跟踪，在核心媒体跟踪实施中，这两项跟踪都是可选元素，而&#x200B;**不是**&#x200B;必需元素。您可以使用媒体播放器 API 来识别与 QoS 和错误跟踪相关的变量。以下是体验质量跟踪的关键元素：
 
 ## 播放器事件 {#player-events}
 
 ### 在任何 QoS 量度发生更改时：
 
-为播放创建或更新 QoS 对象实例。[QoS API参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
+为播放创建或更新 QoS 对象实例。[QoS API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
 
-### 关于所有比特率更改事件
+### 在发生所有比特率更改事件时
 
 调用 `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
-## 实施QOS
+## 实施 QoS
 
-1. Identify when any of QOS metrics change during media playback, create the `MediaObject` using the QoS information, and update the new QoS information.
+1. 识别在媒体播放期间任何 QoS 量度发生更改的时间，使用 QoS 信息创建 `MediaObject`，并更新新的 QoS 信息。
 
    QoSObject 变量：
 
    >[!TIP]
    >
-   >仅当您计划跟踪QoS时，才需要这些变量。
+   >只有在您打算跟踪 QoS 的情况下，才需要使用这些变量。
 
    | 变量 | 描述 | 必需 |
    | --- | --- | :---: |
@@ -48,9 +48,9 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >更新QoS对象，并在每个比特率更改时调用比特率更改事件。 这样将可以提供最为准确的 QoS 数据。
+   >请更新 QoS 对象并在每次比特率发生更改时调用比特率更改事件。这样将可以提供最为准确的 QoS 数据。
 
-以下示例代码将JavaScript 2.x SDK用于HTML5媒体播放器。 应将此代码与核心媒体播放代码一起使用。
+以下代码示例为 HTML5 媒体播放器使用 JavaScript 2.x SDK。您应该结合使用此代码与核心媒体播放代码。
 
 ```js
 var mediaDelegate = new MediaHeartbeatDelegate(); 
