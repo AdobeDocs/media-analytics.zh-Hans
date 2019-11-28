@@ -1,8 +1,8 @@
 ---
 title: 在 Roku 中实施标准元数据
-description: 介绍如何设置标准视频和广告元数据，以便通过Roku上的跟踪调用发送。
+description: 介绍如何在 Roku 中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
