@@ -1,8 +1,8 @@
 ---
 title: 跳过广告的 VOD 播放
-description: 如何跟踪用户使用Media SDK跳过广告的VOD内容的示例。
+description: 有关如何使用 Media SDK 跟踪用户跳过了广告的 VOD 内容的示例。
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -10,13 +10,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 跳过广告的 VOD 播放{#vod-playback-with-skipped-ads}
 
-## 情景 {#scenario}
+## 方案 {#scenario}
 
 此方案包含跳过广告的 VOD 内容播放。
 
-### 一个跳过预滚动广告的VOD
+### 一个跳过前置广告的 VOD
 
-This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
+此方案与[包含前置广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)方案相同，不同之处在于，应用程序进行了配置以允许用户跳过广告，这或许是通过点击跳过按钮来实现。
 
 | 触发器   | 心率方法  | 网络调用   | 注释   |
 | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implemen
 | 播放广告的第一帧。 | `trackPlay()` | 心率广告播放 | 当广告内容在主内容之前播放时，将在广告开始播放时开始心率。 |
 | 播放广告。 |  | 广告心率 |  |
 | 跳过广告。 | `trackEvent:trackAdSkip` |  | 没有广告结束网络调用。 |
-| 播放内容。 |  | 内容心率 | These network calls are exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 播放内容。 |  | 内容心率 | 这些网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 内容结束播放。 | `trackComplete()` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束。 | `trackSessionEnd()` |  | `SessionEnd` |
 
