@@ -1,8 +1,8 @@
 ---
 title: 在 Android 中跟踪广告
-description: 在Android应用程序中使用Media SDK实施广告跟踪。
+description: 使用 Media SDK 在 Android 应用程序中实施广告跟踪。
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,11 +12,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->以下说明为使用2.x SDK实施提供了指导。 如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK.](/help/sdk-implement/download-sdks.md)
+>以下说明为使用 2.x SDK 进行实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
 ## 广告跟踪常量
 
-| 常数名称 | 描述 |
+| 常量名称 | 描述 |
 | --- | --- |
 | `MediaHeartbeat.Event.AdBreakStart` | 用于跟踪 AdBreak 开始事件的常量 |
 | `MediaHeartbeat.Event.AdBreakComplete` | 用于跟踪 AdBreak 结束事件的常量 |
@@ -28,7 +28,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. 识别广告时间（包括前置广告）边界开始的时间，然后使用广告时间信息创建 `AdBreakObject`。
 
-   `AdBreakObject` 参考：
+   `AdBreakObject` 引用：
 
    | 变量名称 | 描述 | 必需 |
    | --- | --- | :---: |
@@ -45,7 +45,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                                         <START_TIME>);
    ```
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break:
+1. 在 `MediaHeartbeat` 实例中使用 `AdBreakStart` 调用 `trackEvent()`，以开始跟踪广告时间：
 
    ```java
    public void onAdBreakStart(Observable observable, Object data) {  
@@ -57,7 +57,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. 识别广告的开始时间，然后使用广告信息创建 `AdObject` 实例。
 
-   `AdObject` 参考：
+   `AdObject` 引用：
 
    | 变量名称 | 描述 | 必需 |
    | --- | --- | :---: |
@@ -76,7 +76,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                                    <LENGTH>);
    ```
 
-1. （可选）通过上下文数据变量将标准和／或广告元数据附加到媒体跟踪会话。
+1. （可选）通过上下文数据变量将标准和/或广告元数据附加到媒体跟踪会话。
 
    * [在 Android 中实施标准广告元数据](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
    * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
@@ -88,7 +88,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       adMetadata.put("campaign", "Sample ad campaign");
       ```
 
-1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
+1. 在 `MediaHeartbeat` 实例中使用 `AdStart` 事件调用 `trackEvent()`，以开始跟踪广告播放。
 
    在事件调用中添加对自定义元数据变量（或空对象）的引用，以将其作为第三个参数：
 
@@ -100,7 +100,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event:
+1. 当广告播放到达广告结尾时，使用 `AdComplete` 事件调用 `trackEvent()`：
 
    ```java
    public void onAdComplete(Observable observable, Object data) {  
