@@ -1,8 +1,8 @@
 ---
 title: 包含前置广告的 VOD 播放
-description: 如何使用Media SDK跟踪包含前置广告的VOD内容的示例。
+description: 有关如何使用 Media SDK 跟踪包含前置广告的 VOD 内容的示例。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 触发器 | 心率方法 | 网络调用   | 注释   |
 | --- | --- | --- | --- |
-| 用户点击[!UICONTROL 播放] | `trackSessionStart` | Analytics 内容开始，心率内容开始 | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 用户点击[!UICONTROL 播放] | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用仍然与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
 | 广告开始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 广告开始，心率广告开始 |  |
 | 播放广告 #1 的帧。 | `trackPlay` | 心率广告播放 | 广告内容在主内容之前播放，并且心率在广告开始时即开始。 |
 | 播放广告。 |  | 广告心率 |  |
@@ -22,13 +22,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 播放广告 #2 的第一帧。 | `trackEvent:AdStart` | Analytics 广告开始，心率广告开始 |  |
 | 播放广告。 |  | 广告心率 |  |
 | 广告 #2 结束播放。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 心率广告结束 | 到达广告和面板的结尾。 |
-| 播放内容。 |  | 内容心率 | 此网络调用与无广告的 [VOD播放方案相同](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
-| 内容结束。 | `trackComplete` | 心率内容结束 | 此网络调用与无广告的 [VOD播放方案相同](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
+| 播放内容。 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
+| 内容结束。 | `trackComplete` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
 | 会话结束 | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 参数 {#parameters}
 
-广告播放开始时，将发 `Heartbeat Ad Start` 送呼叫。 If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
+当广告播放开始时，将发送 `Heartbeat Ad Start` 调用。如果广告的开头与 10 秒计时器不一致，则 `Heartbeat Ad Start` 调用将延迟几秒钟，并转到下一个 10 秒间隔。发生此情况时，`Content Heartbeat` 将以相同的间隔发出，您可以通过检查事件类型和资产类型来区分这两种调用：
 
 ### 心率广告开始
 
@@ -37,7 +37,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
 
-广告遵循与相同的基本模 `Content Heartbeats`型，因此 `Ad Play` 呼叫与呼叫类似 `Content Play` 。
+广告遵循与 `Content Heartbeats` 相同的基本模型，因此 `Ad Play` 调用类似于 `Content Play` 调用。
 
 ### 心率广告播放调用
 
@@ -46,7 +46,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
 
-These parameters are similar to the `Content Heartbeats` call, but the `Ad Heartbeats` call contains a few extra parameters:
+这些参数类似于 `Content Heartbeats` 调用，但是 `Ad Heartbeats` 调用包含一些额外的参数：
 
 ### 广告心率
 
@@ -57,7 +57,7 @@ These parameters are similar to the `Content Heartbeats` call, but the `Ad Heart
 | `s:asset:ad_id` | &lt;广告 ID&gt; |  |
 | `s:asset:pod_id` | &lt;广告面板 ID&gt; |  |
 
-Similar to `Heartbeat Content Complete` calls, when ad playback has completed, and the end of the playhead is reached, a `Heartbeat Ad Complete` call is sent. This call looks like other `Heartbeat Ad` calls but contains a couple specific things:
+与 `Heartbeat Content Complete` 调用类似，当广告播放结束（即，到达播放头的结尾）时，将发送 `Heartbeat Ad Complete` 调用。此调用看起来类似于其他 `Heartbeat Ad` 调用，但包含几个特定的参数：
 
 ### 心率广告结束调用
 
@@ -72,7 +72,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** 要在Android中查看此方案，请设置以下代码：
+* **Android -** 要在 Android 中查看此方案，请设置以下代码：
 
    ```java
    // Set up  mediaObject 
@@ -176,7 +176,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS —— 要在** iOS中查看此方案，请设置以下代码：
+* **iOS -** 要在 iOS 中查看此方案，请设置以下代码：
 
    ```
    //  Set up mediaObject 
@@ -280,7 +280,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript要在JavaScript中查看此方案** ，请输入以下文本：
+* **JavaScript -** 要在 JavaScript 中查看此方案，请输入以下文本：
 
    ```js
    // Set up mediaObject 
@@ -382,7 +382,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** 要在Android中查看此方案，请设置以下代码：
+* **Android -** 要在 Android 中查看此方案，请设置以下代码：
 
    ```java
    // Set up mediaObject 
@@ -559,7 +559,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS要在** iOS中查看此方案，请设置以下代码：
+* **iOS -** 要在 iOS 中查看此方案，请设置以下代码：
 
    ```
    //  Set up mediaObject 
@@ -746,7 +746,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript要在JavaScript中查看此方案** ，请输入以下文本：
+* **JavaScript -** 要在 JavaScript 中查看此方案，请输入以下文本：
 
    ```js
    // Set up mediaObject 
