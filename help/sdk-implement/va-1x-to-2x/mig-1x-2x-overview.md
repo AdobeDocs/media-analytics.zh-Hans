@@ -1,8 +1,8 @@
 ---
 title: 迁移概述
-description: 本主题概述了从1.x版本迁移到2.x版本的Media SDK。
+description: 本主题概述如何从 Media SDK 版本 1.x 迁移到版本 2.x。
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -17,12 +17,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * **插件、代理 -**&#x200B;您不再需要实施 Analytics、VideoPlayer 和心率的插件和代理。
 * **配置 -**&#x200B;您不再需要实例化 1.x 插件的配置。
 
-## 2.x的优势 {#benefits-of-two-x}
+## 2.x 的优势 {#benefits-of-two-x}
 
-* All of the public methods are consolidated into the `MediaHeartbeat` class to make implementation easier on developers.
-* All configs are now consolidated into the `MediaHeartbeatConfig` class.
-* 您不再需要实例化Analytics、VideoPlayer和Heartbeat插件的配置。 您只需将类实例化 `MediaHeartbeat` 为包含 `MediaHeartbeatDelegate` 和实 `MediaHeartbeatConfig` 例。 这是初始化Media Analytics所需的唯一实施。
+* 所有公共方法都已合并到 `MediaHeartbeat` 类中，从而更加便于开发人员实施。
+* 现在，所有配置都已合并到 `MediaHeartbeatConfig` 类中。
+* 您不再需要实例化 Analytics 插件、VideoPlayer 插件和心率插件的配置。您只需要使用 `MediaHeartbeatDelegate` 和 `MediaHeartbeatConfig` 实例来实例化 `MediaHeartbeat` 类。这是初始化 Media Analytics 时所需的唯一实施。
 
-   With the initialization of `MediaHeartbeat`, you can safely delete all of the implementation for Analytics Plugin, VideoPlayer Plugin, and Heartbeat Plugin. 此外，对于将插件数组作为输入的 初始化，也应删除所有现有的实施。您可以在此处查看 1.x 实施与 2.x 实施的并列对比信息：[代码对比：1.x 与 2.x.](./code-comparison-1x-2x.md)
+   通过初始化 `MediaHeartbeat`，您可以安全地删除 Analytics 插件、VideoPlayer 插件和心率插件的所有实施。此外，对于将插件数组作为输入的 初始化，也应删除所有现有的实施。您可以在此处查看 1.x 实施与 2.x 实施的并列对比信息：[代码对比：1.x 与 2.x](./code-comparison-1x-2x.md)。
 
-这里详细介绍了 2.x 中新的 API: [API 1.x 至 2.x 的转换](./1x-2x-api-change.md)。
+这里详细介绍了 2.x 中的新 API：[从 API 1.x 转换到 2.x](./1x-2x-api-change.md)。
