@@ -2,7 +2,7 @@
 title: 媒体并行查看者
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!TIP]
 >
->如果选定的间隔不是整天，则不会显示任何数据。
+>如果选择的间隔不是一整天，则不会显示任何数据。
 
 ![](assets/video-concurrent-viewers.png)
 
