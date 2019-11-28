@@ -1,25 +1,25 @@
 ---
 title: 从 1.x API 转换到 2.x API
-description: 本主题包括指向API引用的链接，并列出了1.x和2.x版Media SDK的必需和可选跟踪API。
+description: 本主题包括指向 API 引用的链接，并且列出了 Media SDK 版本 1.x 和 2.x 的必需和可选跟踪 API。
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# API 1.x到2.x转换 {#one-x-to-two-x-conv}
+# 从 API 1.x 转换到 2.x {#one-x-to-two-x-conv}
 
-## Media SDK 2.x API参考
+## Media SDK 2.x API 引用
 
 * [Android API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [iOS API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
 * [JS API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
 * [Chromecast API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
-## 所需的跟踪* API:
+## 必需跟踪* API：
 
-|  VHL 1.x | VHL 2.x |
+|  VHL 1.x  | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | 不适用 |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbeat.trackSessionStart(mediaObject, mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |
@@ -36,14 +36,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | VHL 1.x | VHL 2.x |
 |---|---|
-| Return a valid `AdBreakInfo` in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakStart)` |
-| Return null in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakComplete)` |
+| 在 `VideoPlayerPlugin.getAdBreakInfo()` 中返回有效的 `AdBreakInfo` | `trackEvent(Event.AdBreakStart)` |
+| 在 `VideoPlayerPlugin.getAdBreakInfo()` 中返回空值 | `trackEvent(Event.AdBreakComplete)` |
 | `playerPlugin.trackAdStart()` | `trackEvent(Event.AdStart, adObject, adCustomMetadata)` |
 | `playerPlugin.trackAdComplete()` | `trackEvent(Event.AdComplete)` |
-| Return null in `VideoPlayerPlugin.getAdInfo()` | `trackEvent(Event.AdSkip)` |
+| 在 `VideoPlayerPlugin.getAdInfo()` 中返回空值 | `trackEvent(Event.AdSkip)` |
 | `playerPlugin.trackChapterStart()` | `trackEvent(Event.ChapterStart, chapterObject, chapterCustomMetadata)` |
 | `playerPlugin.trackChapterComplete()` | `trackEvent(Event.ChapterComplete)` |
-| Return null in `VideoPlayerPlugin.getChapterInfo()` | `trackEvent(Event.ChapterSkip)` |
+| 在 `VideoPlayerPlugin.getChapterInfo()` 中返回空值 | `trackEvent(Event.ChapterSkip)` |
 | `playerPlugin.trackSeekStart()` | `trackEvent(Event.SeekStart)` |
 | `playerPlugin.trackSeekComplete()` | `trackEvent(Event.SeekComplete)` |
 | `playerPlugin.trackBufferStart()` | `trackEvent(Event.BufferStart)` |
