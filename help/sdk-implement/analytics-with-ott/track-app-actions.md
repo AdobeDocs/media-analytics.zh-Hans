@@ -1,8 +1,8 @@
 ---
 title: 跟踪应用程序操作
-description: 应用程序操作是您要测量的应用程序中发生的事件。
+description: 应用程序操作是指在您要测量的应用程序中发生的事件。
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,11 +12,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 操作是指在您要测量的应用程序中发生的事件。
 
-每个操作均具有一个或多个对应的量度，每当发生事件时，这些量度的数量都会递增。For example, you might send a `trackAction` call for each new subscription, or each time content is rated, or each time a level is completed.
+每个操作均具有一个或多个对应的量度，每当发生事件时，这些量度的数量都会递增。例如，您可为每次新订阅，或者每当评定内容或完成某个级别时，发送一个 `trackAction` 调用。
 
 系统不会自动跟踪操作，因此在发生要跟踪的事件时调用 `trackAction`，并将操作映射到一个自定义事件。
 
-1. When an event that you want to track occurs, call `trackAction`.
+1. 在发生要跟踪的事件时，调用 `trackAction`。
 
    * **Roku:**
 
