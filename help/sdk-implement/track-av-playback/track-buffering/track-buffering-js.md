@@ -1,8 +1,8 @@
 ---
 title: 在 JavaScript 中跟踪缓冲
-description: 描述在浏览器应用程序(JS)中跟踪缓冲事件。
+description: 介绍如何在浏览器应用程序 (JS) 中跟踪缓冲事件。
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,16 +12,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->下面的说明为所有 2.x SDK 实施提供了指南。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下面的说明为所有 2.x SDK 实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
-## 缓冲区跟踪常量
+## 缓冲跟踪常量
 
 | 常量名称 | 描述     |
 |---|---|
 | `BufferStart` | 用于跟踪缓冲开始事件的常量 |
 | `BufferComplete` | 用于跟踪缓冲结束事件的常量 |
 
-## 实现缓冲
+## 实施缓冲
 
 1. 监听媒体播放器中的播放缓冲事件，并在发出缓冲开始事件通知时，使用 `BufferStart` 事件跟踪缓冲。
 
