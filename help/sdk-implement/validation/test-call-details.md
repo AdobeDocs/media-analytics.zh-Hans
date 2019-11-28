@@ -1,8 +1,8 @@
 ---
 title: 测试调用详细信息
-description: 本主题详细介绍了验证实施时必须进行的调用。
-uuid: d3a0e62f-2fc3-413d-ac56-adbc9b3e983
-translation-type: tm+mt
+description: 本主题详细介绍验证实施时必须发出的各种调用。
+uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,12 +12,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 启动媒体播放器 {#start-the-media-player}
 
-### Adobe Analytics(AppMeasurement)开始电话 {#aa-start-call}
+### Adobe Analytics (AppMeasurement) 开始调用 {#aa-start-call}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | `pev2` | ms_s |
-| `a.media.friendlyName` | Episode Title |
+| `a.media.friendlyName` | 剧集标题 |
 | _**`a.media.name`**_ | _**123456**_ |
 | _**`a.media.length`**_ | _**120**_ |
 | `a.media.playerName` | HTML5 |
@@ -26,18 +26,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`custom.[value]`**_ | _**自定义元数据字段**_ |
 | _**`a.media.[value]`**_ | _**标准元数据字段**_ |
 
-**注释:**
+**注释：**
 
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 线性流的长度应设置为当前节目的最佳预计长度。
 
-### Adobe Analytics(AppMeasurement)中的标准元数据开始调用 {#std-metadata-aa}
+### Adobe Analytics (AppMeasurement) 开始调用中的标准元数据 {#std-metadata-aa}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
-| `a.media.show` | Show Title |
+| `a.media.show` | 节目标题 |
 | `a.media.season` | 6 |
-| `a.media.episode` | Episode Title |
+| `a.media.episode` | 剧集标题 |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
@@ -50,21 +50,21 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Adobe Analytics(AppMeasurement)开始调用中的自定义元数据 {#custom-metadata-aa}
+### Adobe Analytics (AppMeasurement) 开始调用中的自定义元数据 {#custom-metadata-aa}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
-### 媒体分析（心率）开始呼叫 {#ma-start-call}
+### Media Analytics（心率）开始调用 {#ma-start-call}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 剧集标题 |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
@@ -72,18 +72,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:meta:custom.[value]`**_ | _**自定义元数据字段**_ |
 | _**`s:meta:a.media.[value]`**_ | _**标准元数据字段**_ |
 
-**注释:**
+**注释：**
 
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 应将视频开始时线性流的播放头位置设置为自当前节目开始后所经过的秒数，而不是设置为 0。
 
 ### Media Analytics（心率）开始调用中的标准元数据 {#std-metadata-ma}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | `s:meta:a.media.show` | 节目 |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Episode Title |
+| `s:meta:a.media.episode` | 剧集标题 |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
@@ -96,36 +96,36 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### 媒体分析（心率）开始呼叫中的自定义元数据 {#custom-metadata-ma}
+### Media Analytics（心率）开始调用中的自定义元数据 {#custom-metadata-ma}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics（心率）Adobe Analytics开始电话 {#ma-aa-start}
+### Media Analytics（心率）Adobe Analytics 开始调用 {#ma-aa-start}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 剧集标题 |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
 | `s:asset:type` | main |
 
-**注释:**
+**注释：**
 
-* 此调用表示Media SDK已请求将Adobe Analytics调 `pev2=ms_s` 用发送到Adobe Analytics(AppMeasurement)服务器。
+* 此调用表示 Media SDK 已请求将 Adobe Analytics `pev2=ms_s` 调用发送到 Adobe Analytics (AppMeasurement) 服务器。
 * 此调用不包含自定义元数据。
 
 ## 观看广告播放 {#view-ad-playback}
 
-### Adobe Analytics(AppMeasurement)广告开始电话 {#aa-ad-start-call}
+### Adobe Analytics (AppMeasurement) 广告开始调用 {#aa-ad-start-call}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
@@ -141,18 +141,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`custom.[value]`**_ | _**元数据字段**_ |
 | _**`a.media.[value]`**_ | _**标准元数据字段**_ |
 
-**注释:**
+**注释：**
 
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 广告开始时，如果未提供广告长度，广告长度可能会被设置为 -1。
 
-### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
+### Adobe Analytics (AppMeasurement) 广告开始调用中的标准元数据 {#std-metadata-aa-ad-start}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
-| `a.media.show` | Show Title |
+| `a.media.show` | 节目标题 |
 | `a.media.season` | 6 |
-| `a.media.episode` | Episode Title |
+| `a.media.episode` | 剧集标题 |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
@@ -165,16 +165,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Adobe Analytics(AppMeasurement)广告开始电话中的自定义元数据 {#custom-metadata-aa-ad-start}
+### Adobe Analytics (AppMeasurement) 广告开始调用中的自定义元数据 {#custom-metadata-aa-ad-start}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### 媒体分析（心率）广告开始呼叫 {#ma-ad-start-call}
+### Media Analytics（心率）广告开始调用 {#ma-ad-start-call}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**start**_ |
 | `l:event:playhead` | 0 |
@@ -186,18 +186,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:meta:custom.[value]`**_ | _**自定义元数据字段**_ |
 | _**`s:meta:a.media.[value]`**_ | _**标准元数据字段**_ |
 
-**注释:**
+**注释：**
 
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 广告开始时，如果未提供广告长度，广告长度可能会被设置为 -1。
 
-### Standard metadata in Media Analytics (heartbeats) Ad Start call {#std-metadata-ma-ad-start}
+### Media Analytics（心率）广告开始调用中的标准元数据 {#std-metadata-ma-ad-start}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | `s:meta:a.media.show` | 节目 |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Episode Title |
+| `s:meta:a.media.episode` | 剧集标题 |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
@@ -210,16 +210,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### 媒体分析（心率）广告开始呼叫中的自定义元数据 {#custom-metadata-ma-ad-start}
+### Media Analytics（心率）广告开始调用中的自定义元数据 {#custom-metadata-ma-ad-start}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### 媒体分析（心率）Adobe Analytics广告开始电话 {#ma-aa-ad-start-call}
+### Media Analytics（心率）Adobe Analytics 广告开始调用 {#ma-aa-ad-start-call}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**aa_ad_start**_ |
 | `l:event:playhead` | 0 |
@@ -229,9 +229,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | VOD |
 | `s:asset:type` | ad |
 
-### 媒体分析（心率）广告播放呼叫 {#ma-ad-play-call}
+### Media Analytics（心率）广告播放调用 {#ma-ad-play-call}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**play**_ |
 | `l:event:playhead` | 15 |
@@ -241,9 +241,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | VOD |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### 媒体分析（心率）广告暂停呼叫 {#ma-ad-pause-call}
+### Media Analytics（心率）广告暂停调用 {#ma-ad-pause-call}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
 | `l:event:playhead` | 15 |
@@ -253,9 +253,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | VOD |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### 媒体分析（心率）Adobe Analytics广告完整计划电话 {#ma-aa-ad-complete-call}
+### Media Analytics（心率）Adobe Analytics 广告结束调用 {#ma-aa-ad-complete-call}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**complete**_ |
 | `l:event:playhead` | 15 |
@@ -267,34 +267,34 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 播放主内容 {#play-main-content}
 
-### 媒体分析（心率）播放呼叫 {#ma-play-call}
+### Media Analytics（心率）播放调用 {#ma-play-call}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
 | _**`l:event:duration`**_ | _**10189**_ |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 剧集标题 |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
 | `s:asset:type` | main |
 
-**注释:**
+**注释：**
 
-* 每次播放调用时，播放头位置应增加10秒。
+* 每发起一次播放调用，播放头位置应增加 10 秒。
 * `l:event:duration` 值表示自上次跟踪调用后所经过的毫秒数，该参数在每次 10 秒调用中的值应该大致相同。
 
 ## 暂停主内容 {#pause-main-content}
 
-### 媒体分析（心率）暂停呼叫 {#ma-pause-call}
+### Media Analytics（心率）暂停调用 {#ma-pause-call}
 
-| 参数 |  值（示例） |
+| 参数 | 值（示例） |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 剧集标题 |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
