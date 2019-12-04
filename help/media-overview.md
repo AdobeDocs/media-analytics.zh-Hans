@@ -2,8 +2,8 @@
 title: 在 Adobe Analytics 中测量音频和视频
 description: 'Adobe Analytics for Media（也称为 Media Analytics）可为客户提供针对内容、音频和广告的可靠媒体测量。 '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ---
 
@@ -107,3 +107,4 @@ Adobe Analytics for Media 契合行业发展趋势，提供了强大的数据收
 >[!NOTE]
 >
 >TLS 是目前最广泛部署的安全协议，适用于 Web 浏览器和其他需要通过网络安全交换数据的应用程序。
+
