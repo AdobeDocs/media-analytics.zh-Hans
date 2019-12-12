@@ -19,9 +19,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | 每个媒体流的平均广告数 | 每次媒体开始的广告开始次数 | `Ad Starts / Media Starts` |
 | 每个媒体流的平均章节数 | 每次媒体开始的章节开始次数 | `Chapter Start / Media Starts` |
 | 媒体平均逗留时间 | 每次媒体开始的总逗留时间 (HH:MM:SS) | `Media Time Spent / Media Starts` |
-| 内容平均逗留时间 | 每次开始内容的内容逗留时间 (HH:MM:SS) | `Content Time Spent / Content Start` |
+| 内容内容逗留时间 | 每次开始内容的内容逗留时间 (HH:MM:SS) | `Content Time Spent / Content Start` |
 | 广告平均逗留时间 | 每次开始广告的广告逗留时间 (HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| 章节平均逗留时间 | 每次开始章节的章节逗留时间 (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| 章节章节逗留时间 | 每次开始章节的章节逗留时间 (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
 | 媒体完成率 | 已完成的内容与已启动的媒体的比率 (%) | `Content Completes/ Media Starts` |
 | 内容完成率 | 已完成的内容与已开始的内容的比率 (%) | `Content Completes / Content Starts` |
 | 广告完成率 | 已完成的广告与已开始的广告的比率 (%) | `Ad Completes / Ad Starts` |
