@@ -1,25 +1,25 @@
 ---
-seo-title: 从独立的Media SDK迁移到Adobe Launch
-title: 从独立的Media SDK迁移到Adobe Launch
-seo-description: 帮助从Media SDK迁移到Launch的说明和代码示例。
-description: 帮助从Media SDK迁移到Launch的说明和代码示例。
-translation-type: tm+mt
+seo-title: 从独立 Media SDK 迁移到 Adobe Launch
+title: 从独立 Media SDK 迁移到 Adobe Launch
+seo-description: 帮助从 Media SDK 迁移到 Launch 的说明和代码示例。
+description: 帮助从 Media SDK 迁移到 Launch 的说明和代码示例。
+translation-type: ht
 source-git-commit: ccc23ad0fc7073159431c50b8a8235b692803236
 
 ---
 
 
-# 从独立的Media SDK迁移到Adobe Launch
+# 从独立 Media SDK 迁移到 Adobe Launch
 
-本文档主要介绍独立Media SDK与Media Analytics Launch扩展之间的Media Analytics实施差异。
+本文档主要介绍独立 Media SDK 与 Media Analytics Launch 扩展之间的 Media Analytics 实施差异。
 
-Launch为客户提供了部署和管理所有分析、营销和广告解决方案的简单方法，这些解决方案是跨Web和移动支持相关客户体验所必需的。 Launch使任何人都能构建和维护自己与Launch的集成。 这些集成称为扩展。
-Launch客户可以通过App Store体验获得扩展，因此他们可以快速安装、配置和部署解决方案。
+Launch 为客户提供了一种简单的方式来部署和管理所有用来加强跨 Web 和移动设备的相关客户体验的分析、营销和广告标签。Launch 可让任何人构建与维护他们自身与 Launch 的集成。这些集成称为扩展。
+Launch 客户可在应用商店中获取这些扩展，从而可以快速安装、配置和部署自己的解决方案。
 
-Adobe Media Analytics for Audio和Video可作为Launch扩展用于Web和移动：
+Adobe Media Analytics for Audio and Video 可用作 Web 和移动的 Launch 扩展：
 
-* [Web启动文档](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
-* [移动启动文档](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+* [Web Launch 文档](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.translate.html)
+* [移动 Launch 文档](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## 平台
 
