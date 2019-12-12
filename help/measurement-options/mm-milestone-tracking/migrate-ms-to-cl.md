@@ -48,7 +48,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 <tr>
 <td>内容逗留时间</td>
 <td>
-<p>事件</p>
+<p>Event</p>
 <p>类型：计数器</p>
 </td>
 <td>定义您自已的事件</td>
@@ -56,7 +56,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 <tr>
 <td>视频初始化</td>
 <td>
-<p>事件</p>
+<p>Event</p>
 <p>类型：计数器</p>
 </td>
 <td>定义您自已的事件</td>
@@ -64,7 +64,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 <tr>
 <td>视频结束</td>
 <td>
-<p>事件</p>
+<p>Event</p>
 <p>类型：计数器</p>
 </td>
 <td>定义您自已的事件</td>
