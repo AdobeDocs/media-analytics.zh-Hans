@@ -1,19 +1,19 @@
 ---
-title: 从独立的Media SDK迁移到Adobe Launch - Android
-description: 帮助从Media SDK迁移到Launch for android的说明和代码示例。
-translation-type: tm+mt
+title: 从独立 Media SDK 迁移到 Adobe Launch - Android
+description: 帮助从 Media SDK 迁移到用于 Android 的 Launch 的说明和代码示例。
+translation-type: ht
 source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
 
-# 从独立的Media SDK迁移到Adobe Launch - Android
+# 从独立 Media SDK 迁移到 Adobe Launch - Android
 
 ## 配置
 
-### 独立Media SDK
+### 独立 Media SDK
 
-在独立的Media SDK中，您可以在应用程序中配置跟踪，并在创建跟踪器时将其传递给SDK。
+在独立 Media SDK 中，您可以在应用程序中配置跟踪，并在创建跟踪器时将其传递给 SDK。
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -28,12 +28,12 @@ config.debugLogging = true;
 MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 ```
 
-### 启动扩展
+### Launch 扩展
 
-1. 在Experience Platform Launch中，单击您的移动 [!UICONTROL 属性的] “扩展”选项卡。
-1. 在“目 [!UICONTROL 录] ”选项卡上，找到Adobe Media Analytics for Audio和Video扩展，然后单击“安 [!UICONTROL 装”]。
+1. 在 Experience Platform Launch 中，单击适用于您的移动属性的[!UICONTROL 扩展]选项卡。
+1. 在[!UICONTROL 目录]选项卡上，找到 Adobe Media Analytics for Audio and Video 扩展，然后单击[!UICONTROL 安装]。
 1. 在扩展设置页面中，配置跟踪参数。
-媒体扩展将使用已配置的参数进行跟踪。
+Media 扩展将使用已配置的参数进行跟踪。
 
 ![](assets/launch_config_mobile.png)
 
@@ -41,9 +41,9 @@ MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 
 ## 创建跟踪器
 
-### 独立Media SDK
+### 独立 Media SDK
 
-在独立的Media SDK中，您可以手动创建对 `MediaHeartbeatConfig` 象并配置跟踪参数。 实现授权界面公开`getQoSObject()` , `getCurrentPlaybackTime()functions.`并创建 `MediaHeartbeat` 一个实例进行跟踪。
+在独立 Media SDK 中，您可以手动创建 `MediaHeartbeatConfig` 对象并配置跟踪参数。实施公开 `getQoSObject()` 和 `getCurrentPlaybackTime()functions.` 的委派接口。创建用于跟踪的 `MediaHeartbeat` 实例。
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -75,11 +75,11 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 }
 ```
 
-### 启动扩展
+### Launch 扩展
 
-[媒体API参考——创建媒体跟踪器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[媒体 API 引用 - 创建媒体跟踪器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
-在创建跟踪器之前，应使用移动核心注册媒体扩展和从属扩展。
+在创建跟踪器之前，应先使用移动核心注册媒体扩展和从属扩展。
 
 ```java
 // Register the extension once during app launch
@@ -103,8 +103,8 @@ try {
 }
 ```
 
-注册媒体扩展后，请使用以下API创建跟踪器。
-该跟踪器会从已配置的启动属性中自动选取配置。
+注册媒体扩展后，请使用以下 API 创建跟踪器。
+该跟踪器会自动从已配置的 Launch 属性中选取配置。
 
 ```java
 Media.createTracker(new AdobeCallback<MediaTracker>() {
@@ -115,25 +115,25 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 });
 ```
 
-## 更新播放头和体验质量值。
+## 更新“播放头”和“体验质量”值。
 
-### 独立Media SDK
+### 独立 Media SDK
 
-在独立的Media SDK中，您传递一个委托对象，该对象在创建跟踪器期间实现该接口`MediaHeartbeartDelegate` 。  每当跟踪器调用和接口方法时，实现应返回最新的QoE`getQoSObject()` 和播 `getCurrentPlaybackTime()` 放头。
+在独立 Media SDK 中，在创建跟踪器期间传递实施 `MediaHeartbeartDelegate` 接口的委派对象。每当跟踪器调用 `getQoSObject()` 和 `getCurrentPlaybackTime()` 接口方法时，该实施应返回最新的 QoE 和播放头。
 
-### 启动扩展
+### Launch 扩展
 
-实现应通过调用跟踪器公开的方法来更新当前播放器播放头`updateCurrentPlayhead` 。 要进行准确跟踪，您应至少每秒调用一次此方法。
+该实施应通过调用跟踪器公开的 `updateCurrentPlayhead` 方法来更新当前播放器的播放头。要进行准确跟踪，您应至少每秒调用一次此方法。
 
-[媒体API参考——更新当前播放器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[媒体 API 引用 - 更新当前播放器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
-实现应通过调用跟踪器公开的方法来更 `updateQoEObject`新QoE信息。 只要质量指标发生变化，我们就希望调用此方法。
+该实施应通过调用跟踪器公开的 `updateQoEObject` 方法来更新 QoE 信息。我们希望每当质量量度发生变化都要调用此方法。
 
-[媒体API参考——更新QoE对象](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[媒体 API 引用 - 更新 QoE 对象](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-## 传递标准媒体／广告元数据
+## 传递标准媒体/广告元数据
 
-### 独立Media SDK
+### 独立 Media SDK
 
 * 标准媒体元数据：
 
@@ -193,7 +193,7 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
                       adMetadata);
    ```
 
-### 启动扩展
+### Launch 扩展
 
 * 标准媒体元数据：
 
