@@ -92,13 +92,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 例如：
 
-* **Chromecast:**
+* **Chromecast：**
 
    ```
    ADBMobile.config.getAllIdentifiersAsync(callback)
    ```
 
-* **Roku:**
+* **Roku：**
 
    ```
    vids = ADBMobile().getAllIdentifiers()
