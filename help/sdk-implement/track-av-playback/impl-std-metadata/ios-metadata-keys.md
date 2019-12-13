@@ -18,7 +18,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 常量名称 | 描述 | 类型 |
 |---|---|---|
-| `ADBVideoMetadataKeySHOW` | 在“客户获取链接”页面上显示 | 视频 |
+| `ADBVideoMetadataKeySHOW` | 节目 | 视频 |
 | `ADBVideoMetadataKeySEASON` | 季 | 视频 |
 | `ADBVideoMetadataKeyEPISODE` | 剧集 | 视频 |
 | `ADBVideoMetadataKeyASSET_ID` | 资产 | 视频 |
