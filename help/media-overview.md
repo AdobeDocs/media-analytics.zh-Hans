@@ -2,7 +2,7 @@
 title: 在 Adobe Analytics 中测量音频和视频
 description: 'Adobe Analytics for Media（也称为 Media Analytics）可为客户提供针对内容、音频和广告的可靠媒体测量。 '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ---
