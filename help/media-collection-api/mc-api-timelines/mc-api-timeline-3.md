@@ -2,7 +2,7 @@
 title: 时间轴 3 - 章节
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 ---
@@ -287,7 +287,7 @@ source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 **实施详细信息**
 
-After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
+在 `adBreakComplete` 事件后，使用 `play` 事件将播放器置于“正在播放”状态。
 
 **示例请求正文**
 
