@@ -2,21 +2,15 @@
 title: 测试 1：标准播放
 description: 本主题介绍验证中使用的标准播放测试。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # 测试 1：标准播放{#test-standard-playback}
 
-此测试案例将验证常规播放和排序。它是认证请求的必需元素。
-
-## 认证请求表单
-
-**可从此处下载认证请求表单：==&gt;**[认证请求表单。](cert_req_form.docx)
-
-## 认证测试 1 概述
+此测试案例将验证常规播放和排序。
 
 Media Analytics 实施包含两种类型的跟踪调用：
 * 直接向 Adobe Analytics (AppMeasurement) 服务器发出的调用 - 这些调用发生在“媒体开始”和“广告开始”事件中。
@@ -145,4 +139,3 @@ Media Analytics 实施包含两种类型的跟踪调用：
 1. **观看播放列表中的下一个媒体。**&#x200B;在播放列表中的下一个媒体开始播放时，应发送一组新的“媒体开始”调用。
 
 1. **切换媒体或流。**&#x200B;在切换实时流时，不应发送第一个流的 Media Analytics 结束调用。媒体开始调用和播放调用应该以新的节目和流名称开始，并以新节目的正确播放头和持续时间值开始。
-
