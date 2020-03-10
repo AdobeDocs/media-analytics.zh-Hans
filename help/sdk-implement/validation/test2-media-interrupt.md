@@ -2,19 +2,15 @@
 title: 测试 2：媒体中断
 description: 本主题介绍验证中使用的媒体中断测试。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # 测试 2：媒体中断{#test-media-interruption}
 
-此测试案例将验证移动中断行为。它是认证请求的必需元素。
-
-## 认证请求表单
-
-**可从此处下载认证请求表单：==&gt;**[认证请求表单。](cert_req_form.docx)
+此测试案例将验证移动中断行为。
 
 ## 测试步骤
 
@@ -56,4 +52,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. **关闭媒体播放器**
 
    在媒体播放器关闭后，不应触发任何其他跟踪调用。
-
