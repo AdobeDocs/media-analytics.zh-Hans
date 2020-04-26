@@ -12,20 +12,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 方案 {#scenario}
 
-在此方案中，用户将跳过主内容中的一个章节。
+在此方案中，用户将跳过主内容中的一章。
 
-此方案与[包含一个章节的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)方案相同，不同之处在于，此示例中的用户打算在章节之外搜寻，因此跳过了该章节以进入主内容。
+此方案与[包含一个章节的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)方案相同，但此例中的用户希望从章节中搜寻，从而跳过该章节以进入主内容。
 
 | 触发器 | 心率方法 | 网络调用   | 注释 |
 |---|---|---|---|
-| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与 [iOS 中没有中断的播放](vod-no-intrs-details.md)方案完全相同。 |
+| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与 [iOS 种不含广告的播放](vod-no-intrs-details.md)方案完全相同。 |
 | 章节开始。 | `trackEvent:ChapterStart` | 心率章节开始 |  |
-| 播放章节的第一帧。 | `trackPlay` | 心率章节播放 | 当章节内容在主内容之前播放时，我们希望在章节开始时即开始心率。 |
-| 章节播放。 |  | 章节心率 |  |
-| 搜寻开始以跳过第一章节。 | `trackEvent:trackSeekStart` |  | 搜寻期间没有心率 |
-| 搜寻结束。 | `trackEvent:trackSeekComplete` |  | 心率将在此之后继续。 |
-| 应用程序识别出用户的搜寻超出常规章节边界。 | `trackEvent:trackChapterSkip` |  |  |
-| 播放内容。 |  | 内容心率 |  |
+| 将播放章节的第一帧。 | `trackPlay` | 心率章节播放 | 当章节内容在主内容之前播放时，我们希望在章节开始时开始播放心率。 |
+| 将播放章节。 |  | 章节心率 |  |
+| 搜寻开始跳过第一章。 | `trackEvent:trackSeekStart` |  | 搜寻期间没有心率 |
+| 搜寻结束。 | `trackEvent:trackSeekComplete` |  | 心率会继续发布此内容。 |
+| 应用程序可实现用户从常规的章节边界进行搜寻。 | `trackEvent:trackChapterSkip` |  |  |
+| 将播放内容。 |  | 内容心率 |  |
 | 内容结束播放。 | `trackComplete` | 心率内容结束 | 此网络调用与 [iOS 中没有中断的播放](vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户没有观看至媒体结束，也必须调用此 API。 |
 
