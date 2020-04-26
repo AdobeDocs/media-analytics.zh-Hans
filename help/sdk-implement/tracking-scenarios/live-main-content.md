@@ -12,13 +12,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 方案 {#scenario}
 
-在此方案中，有一个加入实时流之后 40 秒不播放广告的实时资产。
+在此方案中，有一个实时资产，在加入实时流后 40 秒内不播放任何广告。
 
 | 触发器 | 心率方法 | 网络调用 | 注释   |
 |---|---|---|---|
 | 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 这可以是用户点击&#x200B;**[!UICONTROL 播放]**&#x200B;或自动播放事件。 |
-| 播放媒体的第一帧。 | `trackPlay` | 心率内容播放 | 此方法会触发计时器。只要播放继续，每 10 秒就会发送一次心率。 |
-| 播放内容。 |  | 内容心率 |  |
+| 播放媒体的第一帧。 | `trackPlay` | 心率内容播放 | 此方法将触发计时器。只要继续播放，就会每 10 秒发送一次心率。 |
+| 将播放内容。 |  | 内容心率 |  |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户没有观看至媒体结束，也必须调用此 API。 |
 
 ## 参数 {#parameters}
@@ -29,25 +29,25 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 参数 | 值 | 注释 |
 |---|---|---|
-| `s:sc:rsid` | &lt;您的 Adobe 报表包 ID&gt; |  |
-| `s:sc:tracking_serve` | &lt;您的 Analytics 跟踪服务器 URL&gt; |  |
+| `s:sc:rsid` | &lt;您的 Adobe 报表包 ID> |  |
+| `s:sc:tracking_serve` | &lt;您的 Analytics 跟踪服务器 URL> |  |
 | `s:user:mid` | `s:user:mid` | 应当匹配 Adobe Analytics 内容开始调用中的中间值 |
-| `s:event:type` | "start" |  |
-| `s:asset:type` | "main" |  |
-| `s:asset:mediao_id` | &lt;您的媒体名称&gt; |  |
+| `s:event:type` | &quot;start&quot; |  |
+| `s:asset:type` | &quot;main&quot; |  |
+| `s:asset:mediao_id` | &lt;您的媒体名称> |  |
 | `s:stream:type` | live |  |
 | `s:meta:*` | 可选 | 对媒体设置的自定义元数据 |
 
 ## 内容心率 {#content-heartbeats}
 
-在媒体播放期间，有一个计时器将会每 10 秒发送一次主内容的一个或多个心率（或 ping），每 1 秒发送一次广告的一个或多个心率（或 ping）。这些心率将包含有关播放、广告、缓冲等的信息。本文档不包含各个心率的确切内容，但需要确认的一个关键点是，在继续播放时，将会持续触发心率。
+在媒体播放期间，有一个计时器将会每 10 秒发送一次主内容的一个或多个心率（或 ping），每 1 秒发送一次广告的一个或多个心率（或 ping）。这些心率将包含有关播放、广告、缓冲和许多其他内容的信息。每个心率的确切内容不在本文档涵盖的范围之内，验证的关键内容是在持续播放期间始终触发心率。
 
-在内容心率中，查找几个特定的参数：
+在内容心率中，查找一些特定的内容：
 
 | 参数 | 值 | 注释 |
 |---|---|---|
-| `s:event:type` | "play" |  |
-| `l:event:playhead` | &lt;播放头位置&gt; 例如 50、60、70 | 这应该反映播放头的当前位置。 |
+| `s:event:type` | &quot;play&quot; |  |
+| `l:event:playhead` | &lt;播放头位置> 例如，50、60、70 | 这应该反映播放头的当前位置。 |
 
 ## 心率内容结束 {#heartbeat-content-complete}
 
