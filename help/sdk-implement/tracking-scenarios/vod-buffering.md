@@ -12,20 +12,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 方案 {#scenario}
 
-在此方案中，播放 VOD 内容时出现一些缓冲。
+在此方案中，播放 VOD 内容时会出现一些缓冲。
 
 除非另外指定，否则此方案中的网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案中的调用相同。
 
 | 触发器   | 心率方法   | 网络调用   | 注释   |
 |---|---|---|---|
 | 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 这可以是用户点击&#x200B;**[!UICONTROL 播放]**&#x200B;或自动播放事件。 |
-| 播放视频的第一帧。 | `trackPlay` | 心率内容播放 | 此方法会触发计时器。只要播放继续，每 10 秒就会发送一次心率。 |
-| 播放内容。 |  | 内容心率 |  |
+| 播放视频的第一帧。 | `trackPlay` | 心率内容播放 | 此方法将触发计时器。只要继续播放，就会每 10 秒发送一次心率。 |
+| 将播放内容。 |  | 内容心率 |  |
 | 缓冲开始。 | `trackEvent:BufferStart` | 心率缓冲 |  |
-| 缓冲了内容。 |  | 内容心率 |  |
-| 缓冲结束。 | `trackEvent:BufferComplete` | 心率缓冲，心率播放 |  |
-| 播放内容。 |  | 内容心率 |  |
-| 内容结束播放。 | `trackComplete` | 心率内容结束 | 到达播放头的结尾。 |
+| 内容已缓冲。 |  | 内容心率 |  |
+| 缓冲结束。 | `trackEvent:BufferComplete` | 心率缓冲区，心率播放 |  |
+| 将播放内容。 |  | 内容心率 |  |
+| 内容结束播放。 | `trackComplete` | 心率内容结束 | 播放头已到达末尾。 |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户没有观看至视频结束，也必须调用此 API。 |
 
 ## 参数 {#parameters}
