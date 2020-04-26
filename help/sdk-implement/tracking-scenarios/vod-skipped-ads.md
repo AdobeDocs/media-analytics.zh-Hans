@@ -20,12 +20,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 触发器   | 心率方法  | 网络调用   | 注释   |
 | --- | --- | --- | --- |
-| 用户点击[!UICONTROL 播放] | `trackSessionStart()` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
-| 广告开始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 广告开始，心率广告开始 |  |
-| 播放广告的第一帧。 | `trackPlay()` | 心率广告播放 | 当广告内容在主内容之前播放时，将在广告开始播放时开始心率。 |
-| 播放广告。 |  | 广告心率 |  |
+| 用户点击[!UICONTROL 播放] | `trackSessionStart()` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 广告开始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 广告开始、心率广告开始 |  |
+| 将播放广告的第一帧。 | `trackPlay()` | 心率广告播放 | 当广告内容在主内容之前播放时，心率将在广告开始播放时开始。 |
+| 将播放广告。 |  | 广告心率 |  |
 | 跳过广告。 | `trackEvent:trackAdSkip` |  | 没有广告结束网络调用。 |
-| 播放内容。 |  | 内容心率 | 这些网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 将播放内容。 |  | 内容心率 | 这些网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 内容结束播放。 | `trackComplete()` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束。 | `trackSessionEnd()` |  | `SessionEnd` |
 
