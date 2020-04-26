@@ -12,22 +12,22 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 简介 {#introduction}
 
-Roku 引入了一个用于开发应用程序的新编程框架：SceneGraph XML 编程框架。这个新框架包含两个新的关键概念：
+Roku 为开发应用程序引入了一个新的编程框架：SceneGraph XML 编程框架。此新框架具有两个新的关键概念：
 
 * 应用程序屏幕的 SceneGraph 渲染
 * SceneGraph 屏幕的 XML 配置
 
-Adobe Mobile SDK for Roku 是使用 BrightScript 编写的。SDK 使用的许多组件并不适用于在 SceneGraph（例如，线程）上运行的应用程序。因此，打算使用 SceneGraph 框架的 Roku 应用程序开发人员无法调用 Adobe Mobile SDK API（后者类似于旧版 BrightScript 应用程序中提供的 API）。
+Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件不适用于在 SceneGraph 上运行的应用程序（例如线程）。因此，计划使用 SceneGraph 框架的 Roku 应用程序开发人员无法调用 Adobe Mobile SDK API（后者类似于旧版 BrightScript 应用程序中提供的 API）。
 
 ## 架构 {#architecture}
 
 为了向 AdobeMobile SDK 添加 SceneGraph 支持，Adobe 已添加了一个新的 API，通过此 API，可在 AdobeMobile SDK 和 `adbmobileTask` 之间创建一个连接器桥。后者是用于 SDK API 执行的 SceneGraph 节点。（在本文档的其他部分中对 `adbmobileTask` 的用法进行了详细解释。）
 
-连接器桥用于执行以下操作：
+连接器桥旨在执行以下操作：
 
-* 该桥返回 AdobeMobile SDK 的 SceneGraph 兼容实例。与 SceneGraph 兼容的 SDK 拥有旧版 SDK 公开的所有 API。
-* 您在 SceneGraph 中使用 AdobeMobile SDK API 的方式与使用旧版 API 的方式非常相似。
-* 该桥还公开了一种机制来监听返回某些数据的 API 回调。
+* 桥会返回 AdobeMobile SDK 的与 SceneGraph 兼容的实例。与 SceneGraph 兼容的 SDK 具有旧版 SDK 公开的所有 API。
+* 在 SceneGraph 中使用 Adobe Mobile SDK API 的方式与使用旧版 API 的方式非常相似。
+* 桥还公开了一种机制来侦听返回某些数据的 API 的回调。
 
 ![](assets/SceneGraph_arch.png)
 
@@ -40,7 +40,7 @@ Adobe Mobile SDK for Roku 是使用 BrightScript 编写的。SDK 使用的许多
 
 **AdobeMobileLibrary：**
 
-* 公开了一组公共 API（旧版），包括连接器桥 API。
+* 公开一组公共 API（旧版），包括连接器桥 API。
 * 返回包含所有旧版公共 API 的 SceneGraph 连接器实例。
 * 与用于执行 API 的 `adbmobileTask` SceneGraph 节点通信。
 
@@ -91,14 +91,14 @@ Adobe Mobile SDK for Roku 是使用 BrightScript 编写的。SDK 使用的许多
 |  | 有关更多信息，请参阅旧版 SDK 的 Audience Manager 部分。 |  |
 |  |  |  |
 | **MediaHeartbeat** |  |  |
-|  | `mediaTrackLoad` | 用于加载视频内容以进行 MediaHeartbeat 跟踪的 SceneGraph API。 |
-|  | mediaTrackStart | 使用 MediaHeartbeat 开始视频跟踪会话的 SceneGraph API。 |
+|  | `mediaTrackLoad` | 用于为 MediaHeartbeat 跟踪加载视频内容的 SceneGraph API。 |
+|  | mediaTrackStart | 用于使用 MediaHeartbeat 开始视频跟踪会话的 SceneGraph API。 |
 |  | `mediaTrackUnload` | 用于从 MediaHeartbeat 跟踪中卸载视频内容的 SceneGraph API。 |
 |  | `mediaTrackPlay` | 用于跟踪视频内容播放的 SceneGraph API。 |
-|  | mediaTrackPause | 用于跟踪视频内容暂停的 SceneGraph API。 |
+|  | mediaTrackPause | 用于跟踪暂停的视频内容的 SceneGraph API。 |
 |  | `mediaTrackComplete` | 用于跟踪视频内容播放结束的 SceneGraph API。 |
 |  | `mediaTrackError` | 用于跟踪播放错误的 SceneGraph API。 |
-|  | mediaTrackEvent | 用于在跟踪期间，跟踪播放事件的 SceneGraph API。例如：广告、章节。 |
+|  | mediaTrackEvent | 用于在跟踪期间跟踪回放事件的 SceneGraph API。例如：广告、章节。 |
 |  | `mediaUpdatePlayhead` | 用于在视频跟踪期间，将播放头更新发送到 MediaHeartbeat 的 SceneGraph API。 |
 |  | `mediaUpdateQoS` | 用于在视频跟踪期间，将 QoS 更新发送到 MediaHeartbeat 的 SceneGraph API。 |
 |  | 有关更多信息，请参阅旧版 SDK 的“媒体心率”部分。 |  |
@@ -122,7 +122,7 @@ Adobe Mobile SDK for Roku 是使用 BrightScript 编写的。SDK 使用的许多
 <table>
 <thead>
 <tr>
-<td> 字段 </td><td> 类型 </td><td> 默认值 </td><td> 使用情况 </td>
+<td> 字段 </td><td> 类型 </td><td> 默认 </td><td> 使用情况 </td>
 </tr>
 </thead>
 <tbody>
@@ -136,7 +136,7 @@ Adobe Mobile SDK for Roku 是使用 BrightScript 编写的。SDK 使用的许多
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> 无效 </td>
-<td> 只读。在 AdobeMobileSDK 中执行的所有 API 都将返回此字段中的响应。应注册监听此字段更新的回调以接收响应对象。以下是响应对象的格式：  
+<td> 只读。在 AdobeMobileSDK 中执行的所有 API 都将返回此字段中的响应。注册侦听此字段更新的回调，以接收响应对象。以下是响应对象的格式：  
 <codeblock>
 response = {
   "apiName" : &lt;SceneGraphConstants.
@@ -188,9 +188,9 @@ API 签名：`ADBMobile().sgConstants()`
 
 |  功能  | 常量名称 | 描述   |
 |---|---|---|
-| 版本控制 | `version` | 用于检索 AdobeMobileLibrary 版本信息的常量 |
-| 隐私/选择禁用 | `PRIVACY_STATUS_OPT_IN` | 表示“已选择启用”隐私状态的常量 |
-|  | `PRIVACY_STATUS_OPT_OUT` | 表示“已选择禁用”隐私状态的常量 |
+| 版本控制 | `version` | 表示检索 AdobeMobileLibrary 版本信息的常量 |
+| 隐私/选择退出 | `PRIVACY_STATUS_OPT_IN` | 表示“已选择启用”隐私状态的常量 |
+|  | `PRIVACY_STATUS_OPT_OUT` | 表示“已选择退出”隐私状态的常量 |
 | MediaHeartbeat 常量 | 请参阅以下页面上的常量：<br/><br/>[媒体心率方法](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md)。 | 将这些常量与 MediaHeartbeat API 一起使用 |
 | 标准元数据 | 请参阅以下页面上的常量：<br/><br/>[标准元数据参数](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)。 | 使用这些常量可在 MediaHeartbeat API 中附加标准视频/广告元数据 |
 
