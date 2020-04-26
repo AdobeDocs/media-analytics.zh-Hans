@@ -27,7 +27,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 自动播放或按“播放”按钮 | 0 | 0 | `/api/v1/sessions` |
+| 按下“自动播放”或“播放”按钮 | 0 | 0 | `/api/v1/sessions` |
 
 **实施详细信息**
 
@@ -98,7 +98,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪前置广告 #1 开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| 跟踪前置广告 1 开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **实施详细信息**
 
@@ -155,7 +155,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪前置广告 #1 完成 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| 跟踪前置广告 1 结束 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **实施详细信息**
 
@@ -177,7 +177,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪前置广告时间完成 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| 跟踪前置广告时间结束 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **实施详细信息**
 
@@ -266,7 +266,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 发生错误，应用程序发送错误消息。 | 32 | 20 | `/api/v1/sessions/{sid}/events` |
+| 发生错误，应用程序发送错误信息。 | 32 | 20 | `/api/v1/sessions/{sid}/events` |
 
 **实施详细信息**
 
@@ -287,7 +287,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 应用程序从错误中恢复，用户按下“播放” | 37 | 20 | `/api/v1/sessions/{sid}/events` |
+| 应用程序从错误中恢复，用户按“播放” | 37 | 20 | `/api/v1/sessions/{sid}/events` |
 
 **实施详细信息**
 
@@ -357,7 +357,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪中置广告 #1 开始 | 45 | 33 | `/api/v1/sessions/{sid}/events` |
+| 跟踪中置广告 1 开始 | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
 **实施详细信息**
 
@@ -390,7 +390,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 用户关闭应用程序。该应用程序确定用户已放弃观看并且没有返回到此会话。 | 48 | 33 | `/api/v1/sessions/{sid}/events` |
+| 用户关闭应用程序。应用程序确定用户已放弃查看，并且未返回到此会话。 | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
 **实施详细信息**
 
