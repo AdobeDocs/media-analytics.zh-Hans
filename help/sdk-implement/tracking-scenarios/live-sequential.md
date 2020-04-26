@@ -12,20 +12,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 方案 {#scenario}
 
-在此方案中，有一个加入实时流之后 40 秒不播放广告的实时资产。
+在此方案中，有一个实时资产，在加入实时流后 40 秒内不播放任何广告。
 
-此方案与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同，只是移过了部分内容，并且完成了从主内容中的一个点到另一个点的搜寻。
+此方案与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同，但是部分内容会被清除，并且会从主内容的一个点到另一个点完成搜寻。
 
 | 触发器 | 心率方法 |  网络调用  |  注释   |
 | --- | --- | --- | --- |
 | 用户点击[!UICONTROL 播放] | trackSessionStart | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
-| 播放内容的第一帧。 | trackPlay | 心率内容播放 | 当章节内容在主内容之前播放时，章节开始时心率即会开始。 |
+| 播放内容的第一帧。 | trackPlay | 心率内容播放 | 当章节内容在主内容之前播放时，心率在章节开始时开始。 |
 | 内容播放 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
-| 会话 1 结束（第 1 集结束） | trackComplete / trackSessionEnd | 心率内容结束 | 结束是指第 1 集的会话 1 已到达结尾并观看完毕。在开始下一集的会话之前，必须先结束此会话。 |
-| 第 2 集开始（会话 2 开始） | trackSessionStart | Analytics 内容开始，心率内容开始 | 这是因为用户观看了第 1 集并继续观看另一剧集 |
-| 媒体的第 1 帧 | trackPlay | 心率内容播放 | 此方法会触发计时器，并且从此刻起，只要播放继续，每 10 秒就会发送一次心率。 |
+| Session1 结束（Episode1 结束） | trackComplete / trackSessionEnd | 心率内容结束 | “结束”是指第 1 集的 session1 已完全观看结束。在开始下一集的会话之前，必须结束此会话。 |
+| Episode2 开始（Session2 开始） | trackSessionStart | Analytics 内容开始，心率内容开始 | 这是因为用户观看了第 1 集并继续观看另一剧集 |
+| 媒体的第 1 帧 | trackPlay | 心率内容播放 | 此方法将触发计时器，从这一刻开始，只要继续播放，就会每 10 秒发送一次心率。 |
 | 内容播放 |  | 内容心率 |  |
-| 会话结束（第 2 集结束） | trackComplete / trackSessionEnd | 心率内容结束 | 结束是指第 2 集的会话 2 已到达结尾并观看完毕。在开始下一集的会话之前，必须先结束此会话。 |
+| 会话结束（Episode2 结束） | trackComplete / trackSessionEnd | 心率内容结束 | “结束”是指第 2 集的 session2 已完全观看结束。在开始下一集的会话之前，必须结束此会话。 |
 
 ## 参数 {#parameters}
 
@@ -33,18 +33,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 参数 | 值 | 注释 |
 |---|---|---|
-| `s:sc:rsid` | &lt;您的 Adobe 报表包 ID&gt; |  |
-| `s:sc:tracking_serve` | &lt;您的 Analytics 跟踪服务器 URL&gt; |  |
+| `s:sc:rsid` | &lt;您的 Adobe 报表包 ID> |  |
+| `s:sc:tracking_serve` | &lt;您的 Analytics 跟踪服务器 URL> |  |
 | `s:user:mid` | `s:user:mid` | 应当匹配 Adobe Analytics 内容开始调用中的中间值 |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;您的媒体名称&gt; |  |
+| `s:asset:media_id` | &lt;您的媒体名称> |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *可选* | 对媒体设置的自定义元数据 |
 
 ## 心率内容播放 {#heartbeat-content-play}
 
-这应当看起来与心率内容开始调用几乎完全相似，但关键的区别在于“s:event:type”参数。所有参数应当也位于此处。
+这应该与“心率内容开始”调用的外观完全相同，但与“s:event:type”参数有很大区别。所有参数仍应位于此处。
 
 | 参数 | 值 | 注释 |
 |---|---|---|
@@ -53,18 +53,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 内容心率 {#content-heartbeats}
 
-在媒体播放期间，有一个计时器将会每 10 秒发送一次主内容的一个或多个心率，每 1 秒发送一次广告的一个或多个心率。这些心率将包含有关播放、广告、缓冲等的信息。本文档不包含各个心率的确切内容，但需要确认的一个关键点是，在继续播放时，将会持续触发心率。
+在媒体播放期间，有一个计时器将会每 10 秒发送一次主内容的一个或多个心率，每 1 秒发送一次广告的一个或多个心率。这些心率将包含有关播放、广告、缓冲和许多其他内容的信息。每个心率的确切内容不在本文档涵盖的范围之内，验证的关键内容是在持续播放期间始终触发心率。
 
-在内容心率中，查找几个特定的参数：
+在内容心率中，查找一些特定的内容：
 
 | 参数 | 值 | 注释 |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;播放头位置&gt; 例如 50、60、70 | 这应该反映播放头的当前位置。 |
+| `l:event:playhead` | &lt;播放头位置> 例如，50、60、70 | 这应该反映播放头的当前位置。 |
 
 ## 心率内容结束 {#heartbeat-content-complete}
 
-当任何给定剧集的播放已结束时（播放头越过剧集边界），将发送一个心率内容结束调用。此调用看起来类似于其他心率调用，但包含几个特定的参数：
+当任何给定剧集的播放结束时（播放头跨越剧集边界），将发送“心率内容结束”调用。此调用看起来类似于其他心率调用，但包含几个特定的参数：
 
 | 参数 | 值 | 注释 |
 |---|---|---|
