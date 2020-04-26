@@ -18,12 +18,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 触发器   | 心率方法   | 网络调用   | 注释   |
 |---|---|---|---|
-| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 我们尚未告知测量库存在一个前置广告，因此这些网络调用仍然与单个 VOD 方案完全相同。 |
+| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 我们尚未告知测量库存在前置广告，因此这些网络调用仍与单个 VoD 完全相同。 |
 | 章节开始。 | `trackEvent:ChapterStart` | 心率章节开始 |  |
-| 播放章节的第一帧。 | `trackPlay` | 心率内容播放 | 当章节内容在主内容之前播放时，章节开始时心率即会开始。 |
-| 章节播放。 |  | 章节心率 |  |
-| 章节结束。 | `trackEvent:trackChapterComplete` | 心率章节结束 | 这是指到达章节结尾时。 |
-| 播放内容。 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 播放章节的第一帧。 | `trackPlay` | 心率内容播放 | 当章节内容在主内容之前播放时，心率在章节开始时开始。 |
+| 将播放章节。 |  | 章节心率 |  |
+| 章节结束。 | `trackEvent:trackChapterComplete` | 心率章节结束 | 到达章节结尾时。 |
+| 将播放内容。 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 内容结束。 | `trackComplete` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话已结束。即使用户没有观看至媒体结束，也必须调用此 API。 |
 
@@ -42,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:chapter_*` |  | 特定于章节数据的流信息。 |
 | `s:meta:*` |  | 包含特定上下文数据的章节。 |
 
-## 示例代码，章节位于中间 {#sample-code-chapter-in-the-middle}
+## 示例代码，中间的章节 {#sample-code-chapter-in-the-middle}
 
 在此方案中，部分 VOD 内容是一个章节。
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## 示例代码，章节位于开头 {#sample-code-chapter-at-the-beginning}
+## 示例代码，开头的章节 {#sample-code-chapter-at-the-beginning}
 
 在此方案中，VOD 内容的播放在开头有一个章节。
 
