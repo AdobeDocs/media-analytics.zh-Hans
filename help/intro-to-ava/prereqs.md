@@ -2,8 +2,8 @@
 title: 先决条件
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
    ![](assets/mc_id_service_graphic.png)
 
-   ID 服务还可以取代不同的解决方案特定 ID（例如，Analytics AID）。利用[客户 ID 和身份验证状态](https://marketing.adobe.com/resources/help/zh_CN/mcvid/mcvid-authenticated-state.html)功能，ID 服务允许您将自己的客户 ID 传递到 Experience Cloud。但是，请谨记，ID 服务仅可在您已经订阅的解决方案中使用。如果您没有注册以访问其他产品，ID 服务并不会提供该访问权限。
+   ID 服务还可以取代不同的解决方案特定 ID（例如，Analytics AID）。利用[客户 ID 和身份验证状态](https://docs.adobe.com/content/help/zh-Hans/id-service/using/reference/authenticated-state.html)功能，ID 服务允许您将自己的客户 ID 传递到 Experience Cloud。但是，请谨记，ID 服务仅可在您已经订阅的解决方案中使用。如果您没有注册以访问其他产品，ID 服务并不会提供该访问权限。
 
    今后，ID 服务将成为许多当前和将来推出的 Experience Cloud 功能、增强功能和服务中的必备组件。当前，ID 服务支持 [Analytics](https://www.adobe.com/cn/marketing-cloud/web-analytics.html)、[Audience Manager](https://www.adobe.com/cn/marketing-cloud/data-management-platform.html) 和 [Target](https://www.adobe.com/cn/marketing-cloud/testing-targeting.html)。
 
@@ -44,7 +44,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
    >
    >如果特定于媒体的调用中缺少任何用户 ID 信息，则将应用默认的 Analytics [回退 ID 方法](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html)。
 
-   有关 Experience Cloud ID 的更多信息，请参阅 [Experience Cloud ID 概述](https://marketing.adobe.com/resources/help/zh_CN/mcvid/mcvid-overview.html)和 [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/zh_CN/mcvid/)。
+   有关 Experience Cloud ID 的更多信息，请参阅 [Experience Cloud ID 概述](https://docs.adobe.com/content/help/zh-Hans/id-service/using/intro/overview.html)和 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html)。
 
 1. **启用 Adobe Analytics 报表。**
 
