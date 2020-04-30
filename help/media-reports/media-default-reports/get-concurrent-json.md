@@ -2,20 +2,20 @@
 title: 获取并行查看者 JSON 报表数据
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
 # 获取并行查看者 JSON 报表数据{#get-concurrent-viewers-json-report-data}
 
-您可以使用 _* 1.4 版本&#x200B;*_&#x200B;的 Analytics API 获取并行查看者报表数据：
+您可以使用 _*1.4 版本*_&#x200B;的 Analytics API 获取并行查看者报表数据：
 * [Analytics API](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. 使用在 UI 中构建的任何区段过滤数据。要按特定内容 ID 进行过滤，请创建新区段。
-1. 将请求主体中的 `elements` -&gt; `id` 设置为 `videoconcurrentviewers`。
+1. 将请求主体中的 `elements` -> `id` 设置为 `videoconcurrentviewers`。
 1. 请求足够数量的数据。Adobe 建议请求 3200 个数据点，以确保不会漏掉任何数据。
 
    * 您在报表中指定的数据范围会“在视频会话结束时”收集所有并行查看器数据。__
@@ -56,7 +56,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 <!--
 You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows. 
 
-1. Navigate to: [https://marketing.adobe.com/developer/api-explorer.](https://marketing.adobe.com/developer/api-explorer)
+1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:
 
     * **API -** Select "Report".
@@ -64,7 +64,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-reports-report-suites.html)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html)
         
         * `dateTo` - End date of the report.         
         
