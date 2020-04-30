@@ -2,18 +2,18 @@
 title: 自定义链接实施指南
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
 # 自定义链接实施指南{#custom-link-implementation-guide}
 
-自定义视频跟踪可利用 Analytics `appMeasurement` 中的[使用自定义链接代码的手动链接跟踪](https://marketing.adobe.com/resources/help/zh_CN/sc/implement/link_manual.html)。大多数情况下，自定义视频链接视频跟踪会用在需要少量视频测量的平台和设备上。
+自定义视频跟踪可利用 Analytics `appMeasurement` 中的[使用自定义链接代码的手动链接跟踪](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)。大多数情况下，自定义视频链接视频跟踪会用在需要少量视频测量的平台和设备上。
 
 * 在 JavaScript 中：`s.tl()` 函数
-* 在移动设备应用程序中：[trackAction() Android](https://marketing.adobe.com/resources/help/zh_CN/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/zh_CN/mobile/ios/actions.html) 和 [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* 在移动设备应用程序中：[trackAction() Android](hhttps://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html)、[trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html) 和 [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * 在 Data Insertion API 中：[linktype 标记](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 要求
