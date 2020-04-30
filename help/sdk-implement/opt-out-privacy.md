@@ -2,8 +2,8 @@
 title: 选择禁用和隐私
 description: 如何处理选择启用、选择禁用和隐私。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 您可以控制是否允许在特定设备上进行跟踪活动。
 
 * **移动设备应用程序 -** VA 库遵循 `AdobeMobile` 库的隐私和选择禁用设置。要选择禁用跟踪，您需要使用 `AdobeMobile` 库。有关 `AdobeMobile` 库的选择禁用和隐私设置的更多信息，请参阅[选择禁用和隐私设置](https://docs.adobe.com/content/help/zh-Hans/mobile-services/android/gdpr-privacy-android/privacy.html)。
-* **JavaScript/浏览器应用程序 -** VA 库遵循 `VisitorAPI` 隐私和选择禁用设置。要选择禁用跟踪，您需要在访客 API 服务中选择禁用。有关选择禁用和隐私的更多信息，请参阅 [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/zh_CN/mcvid/)。
+* **JavaScript/浏览器应用程序 -** VA 库遵循 `VisitorAPI` 隐私和选择禁用设置。要选择禁用跟踪，您需要在访客 API 服务中选择禁用。有关选择禁用和隐私的更多信息，请参阅 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html)。
 * **OTT 应用程序（Chromecast、Roku）-** OTT SDK 提供了通用数据保护条例 (GDPR) 就绪 API，允许您为数据收集和传输设置 `opt` 状态标记，并检索本地存储的身份。
 
    >[!NOTE]
