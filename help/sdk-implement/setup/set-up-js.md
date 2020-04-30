@@ -2,8 +2,8 @@
 title: 设置 JavaScript
 description: 设置 Media SDK 应用程序，以在 JavaScript 中实施。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * **获取有效配置参数**
 在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
 * **在媒体应用程序中实施适用于 JavaScript 的`AppMeasurement`**
-有关 Adobe Mobile SDK 文档的更多信息，请参阅[使用 JavaScript 实施 Analytics](https://marketing.adobe.com/resources/help/zh_CN/sc/implement/js_implementation.html)。
+有关 Adobe Mobile SDK 文档的更多信息，请参阅[使用 JavaScript 实施 Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/js/overview.html)。
 
 * **在媒体播放器中提供以下功能：**
 
