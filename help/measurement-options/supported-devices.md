@@ -3,7 +3,7 @@ title: 支持的设备
 description: null
 uuid: null
 translation-type: tm+mt
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+source-git-commit: 3a237ee31412784f708e772cc3a58047630e2184
 
 ---
 
@@ -46,4 +46,4 @@ Adobe Analytics for Audio and Video支持所有主要设备，包括：
 |  | 新的连接设备 |  |  | X |
 
 
-有关 Media SDK 的信息，另请参阅[最低平台版本支持](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+有关 Media SDK 的信息，另请参阅[最低平台版本支持](/help/sdk-implement/setup/setup-overview.md#minimum-platform-version)
