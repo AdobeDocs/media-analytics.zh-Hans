@@ -2,9 +2,9 @@
 audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
-sub-product: media analytics
-translation-type: ht
-source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
+sub-product: 媒体分析
+translation-type: tm+mt
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
@@ -12,20 +12,31 @@ source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 # Adobe Analytics for Audio and Video {#using}
 
 + [在 Adobe Analytics 中测量音频和视频](media-overview.md)
-+ 测量选项 {#measurement-options}
++ [测量选项](measurement-options/measurement-options.md)
    + 媒体模块里程碑跟踪 {#mm-milestone-tracking}
       + [里程碑概述](measurement-options/mm-milestone-tracking/milestone-overview.md)
       + [将里程碑迁移到 Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [从里程碑迁移到自定义链接](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics 中的自定义链接 {#cl-in-aa}
-      + [自定义链接实施指南](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + [自定义链接实施指南](measurement-options/cl-in-aa/cl-impl-guide.md) -->
++ [支持的设备](measurement-options/supported-devices.md)
 + Audio and Video Analytics 简介 {#intro-to-ava}
    + [先决条件](intro-to-ava/prereqs.md)
    + 实施路径 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
-      + [客户端](intro-to-ava/implementation-paths/client-side-path.md)
       + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)
-      + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
+      + [客户端](intro-to-ava/implementation-paths/client-side-path.md)
+      + [其他实现路径](PATH)
+      + 媒体模块里程碑跟踪 {#mm-milestone-tracking}
+         + [里程碑概述](measurement-options/mm-milestone-tracking/milestone-overview.md)
+         + [跟踪媒体](measurement-options/tracking-media-overview.md)
+         + [支持的设备](measurement-options/supported-devices.md)
+         + [将里程碑迁移到 Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+         + [从里程碑迁移到自定义链接](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+      + Analytics 中的自定义链接 {#cl-in-aa}
+         + [自定义链接实施指南](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + Primetime {#primetime}
+         + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
    + [Audience Manager 启用](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
    + [下载 SDK](sdk-implement/download-sdks.md)
