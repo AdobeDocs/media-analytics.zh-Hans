@@ -3,7 +3,7 @@ title: 设置 Chromecast
 description: 设置 Media SDK 应用程序，以在 Chromecast 中实施。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 ---
 
@@ -46,43 +46,43 @@ Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cl
    1. 将库文件添加到 `index.html` 文件中，并按照以下方式创建 `ADBMobileConfig` 全局变量（用于配置 Adobe Mobile for Heartbeats 的全局变量具有一个名为 `mediaHeartbeat` 的排他键）：
 
       ```js
-      <script> 
-          var ADBMobileConfig = { 
-            "marketingCloud": { 
-              "org": "972C898555E9F7BC7F000101@AdobeOrg" 
-            }, 
-            "target": { 
-              "clientCode": "", 
-              "timeout": 5 
-            }, 
-            "audienceManager": { 
-              "server": "obumobile5.demdex.net" 
-            }, 
-            "analytics": { 
-              "rsids": "mobile5vhl.sample.player", 
-              "server": "obumobile5.sc.omtrdc.net", 
-              "ssl": false, 
-              "offlineEnabled": false, 
-              "charset": "UTF-8", 
-              "lifecycleTimeout": 300, 
-              "privacyDefault": "optedin", 
-              "batchLimit": 0, 
-              "timezone": "MDT", 
-              "timezoneOffset": -360, 
-              "referrerTimeout": 0, 
-              "poi": [] 
-            }, 
-            "mediaHeartbeat": { 
-              "server": "obumobile5.hb.omtrdc.net", 
-              "publisher": "972C898555E9F7BC7F000101@AdobeOrg", 
-              "channel": "test-channel-chromecast", 
-              "ssl": false, 
-              "ovp": "chromecast-player", 
-              "sdkVersion": "chromecast-sdk", 
-              "playerName": "Chromecast" 
-            } 
-          }; 
-        </script> 
+      <script>
+          var ADBMobileConfig = {
+            "marketingCloud": {
+              "org": "972C898555E9F7BC7F000101@AdobeOrg"
+            },
+            "target": {
+              "clientCode": "",
+              "timeout": 5
+            },
+            "audienceManager": {
+              "server": "obumobile5.demdex.net"
+            },
+            "analytics": {
+              "rsids": "mobile5vhl.sample.player",
+              "server": "obumobile5.sc.omtrdc.net",
+              "ssl": false,
+              "offlineEnabled": false,
+              "charset": "UTF-8",
+              "lifecycleTimeout": 300,
+              "privacyDefault": "optedin",
+              "batchLimit": 0,
+              "timezone": "MDT",
+              "timezoneOffset": -360,
+              "referrerTimeout": 0,
+              "poi": []
+            },
+            "mediaHeartbeat": {
+              "server": "obumobile5.hb.omtrdc.net",
+              "publisher": "972C898555E9F7BC7F000101@AdobeOrg",
+              "channel": "test-channel-chromecast",
+              "ssl": false,
+              "ovp": "chromecast-player",
+              "sdkVersion": "chromecast-sdk",
+              "playerName": "Chromecast"
+            }
+          };
+        </script>
       <script type="text/javascript" src="script/lib/adbmobile-chromecast.min.js"></script>
       ```
 
@@ -109,8 +109,8 @@ Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cl
    验证您的 `ADBMobileConfig` 配置包含 `marketingCloud` 组织 ID。
 
    ```js
-   "marketingCloud": { 
-       "org": YOUR-MCORG-ID" 
+   "marketingCloud": {
+       "org": YOUR-MCORG-ID"
    }
    ```
 
@@ -132,6 +132,7 @@ Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cl
    | --- | --- |
    | `getMarketingCloudID()` | 从访客 ID 服务中检索 Experience Cloud 访客 ID。<br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
    | `syncIdentifiers()` | 除了 Experience Cloud 访客 ID 之外，您还可以设置其他与每个访客关联的客户 ID。访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。此方法对应于 JavaScript 库中的 `setCustomerIDs()`。For example: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
