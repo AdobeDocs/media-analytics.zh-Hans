@@ -14,7 +14,7 @@ Media Analytics (Heartbeats) 是 Adobe 的标准化视频解决方案。它取�
 
 对于以下每种实施路径，由于 Media Analytics 具有独有的 SKU，其定价模型已由基于服务器调用的模型变为基于视频流的模型，因此客户将需要联系他们的销售代表/客户经理来签署新的销售订单：
 
-* **客户端 -** 这些是仅限 Media Analytics 的集成。您可以选择视频心率 SDK 和/或媒体收集 API 集成。此路径可在任何视频播放器中使用，包括客户和/或 OVP 的播放器，例如 Brightcove、Ooyala 和 thePlatform 等等。
+* **客户端 -** 这些是仅限 Media Analytics 的集成。您可以选择视频心率 SDK 和/或媒体收集 API 集成。此路径可以跨任何播放器使用，包括客户和/或 OVP 播放器，如 Brightcove、Ooyala、thePlatform 等。
 
    如果 Media Analytics 是您的预期路径，请参阅 [Media SDK 实施](/help/sdk-implement/setup/setup-overview.md)和[媒体收集 API](/help/media-collection-api/mc-api-overview.md)。
 
@@ -27,12 +27,12 @@ Media Analytics (Heartbeats) 是 Adobe 的标准化视频解决方案。它取�
    您可以在此处了解有关 Experience Platform Launch 的更多信息：[Adobe Media Analytics for Audio and Video 扩展](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.translate.html)
 * **Adobe Primetime -** Adobe Primetime 是一款 Adobe Experience Cloud 解决方案，可帮助内容程序员和发行商从每一个连接屏幕上的媒体中盈利。
 
-   Primetime 为进行视频发布、广告投放、个性化和分析提供了模块化的平台，让客户可以更轻松地在各种各样的设备上联系和吸引全球客户并借以盈利。此外，Primetime 还在以下方面提供了解决方案，并带来了价值：
+   Primetime 通过提供用于视频发布、广告、个性化和分析的模块化平台，消除了跨设备吸引、货币化和激活全球受众的复杂性。此外，Primetime 还提供以下解决方案和值：
 
-   * 支持精准地测量线性和 VOD 内容类型。
-   * 支持测量含有（或不含）动态广告插入的广告时间。
-   * TVSDK 的无缝广告插入模型允许分析工具直接测量广告播放，提高了准确性。
-   * 利用强大的事件和元数据集，可确保在出现各种 QoS 缓冲或移动连接中断问题以及最终用户在移动设备上进行搜寻、暂停或后台播放时，测量数据仍然准确。
+   * 支持精确测量线性和 VOD 内容类型。
+   * 支持在包含（或不含）动态广告插入时测量广告时间。
+   * TVSDK 的无缝广告插入模型允许 Analytics 直接测量广告播放，从而提高准确性。
+   * 可靠的事件和元数据集可确保跨 QoS 缓冲或移动连接中断问题和最终用户交互（如搜索、暂停和后台）之间的准确性。
 <!--
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
