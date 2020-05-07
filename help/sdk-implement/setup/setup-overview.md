@@ -30,8 +30,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 一般实施指南 {#general-implementation-guidelines}
 
-媒体跟踪涉及三个主要的 SDK 组件：
-* 媒体心率配置 - 配置包含报表的基本设置。
+媒体跟踪涉及三个主要 SDK 组件：
+* 媒体心率配置 - 配置包含用于报表的基本设置。
 * 媒体心率委派 - 委派控制播放时间和 QoS 对象。
 * 媒体心率 - 包含成员和方法的主库。
 
@@ -41,12 +41,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    |  变量名称  | 描述  | 必需 |  默认值  |
    |---|---|:---:|---|
-   | `trackingServer` | 用于 Media Analytics 的跟踪服务器。这与您的分析跟踪服务器不同。 | 是 | 空字符串 |
+   | `trackingServer` | 适用于 Media Analytics 的跟踪服务器。这与您的分析跟踪服务器不同。 | 是 | 空字符串 |
    | `channel` | 渠道名称 | 否 | 空字符串 |
    | `ovp` | 用于分发内容的在线媒体平台的名称 | 否 | 空字符串 |
    | `appVersion` | 媒体播放器应用程序/SDK 的版本 | 否 | 空字符串 |
-   | `playerName` | 正在使用的媒体播放器的名称，例如“AVPlayer”、“HTML5 播放器”、“我的自定义播放器” | 否 | 空字符串 |
-   | `ssl` | 指示是否应当通过 HTTPS 进行调用 | 否 | false |
+   | `playerName` | 正在使用的媒体播放器的名称（例如“AVPlayer”、“HTML5 播放器”、“我的自定义播放器”） | 否 | 空字符串 |
+   | `ssl` | 指示是否应通过 HTTPS 进行调用 | 否 | false |
    | `debugLogging` | 指示是否启用调试日志记录 | 否 | false |
 
 1. 实施 `MediaHeartbeatDelegate`。
@@ -54,18 +54,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    |  方法名称  |  描述  | 必需 |
    | --- | --- | :---: |
    | `getQoSObject()` | 返回包含当前 QoS 信息的 `MediaObject` 实例。在播放会话期间，此方法将被调用多次。播放器实施必须始终返回最新的可用 QoS 数据。 | 是 |
-   | `getCurrentPlaybackTime()` | 返回播放头的当前位置。对于 VOD 跟踪，该值以秒为单位，从媒体项目的开头起计算。对于 LINEAR/LIVE 跟踪，该值以秒为单位，从计划的开头起计算。 | 是 |
+   | `getCurrentPlaybackTime()` | 返回播放头的当前位置。对于 VOD 跟踪，该值以秒为单位，从媒体项目的开头起计算。对于线性/实时跟踪，该值以秒为单位，从节目的开头起计算。 | 是 |
 
    >[!TIP]
    >
-   >服务质量 (QoS) 对象是可选的。如果 QoS 数据可供播放器使用，并且您想要跟踪该数据，则需要以下变量：
+   >服务质量 (QoS) 对象是可选的。如果您的播放器有 QoS 数据，并且您希望跟踪该数据，则需要以下变量：
 
    | 变量名称 | 描述   | 必需 |
    | --- | --- | :---: |
-   | `bitrate` | 媒体的比特率（以比特/秒为单位）. | 是 |
+   | `bitrate` | 媒体的比特率（以位/秒为单位）。 | 是 |
    | `startupTime` | 媒体的开始时间（以毫秒为单位）。 | 是 |
    | `fps` | 每秒显示的帧数。 | 是 |
-   | `droppedFrames` | 截至目前的丢帧数量. | 是 |
+   | `droppedFrames` | 到目前为止丢帧的数量。 | 是 |
 
 1. 创建 `MediaHeartbeat` 实例。
 
@@ -79,9 +79,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >
    >`MediaHeartbeat` 需要 `AppMeasurement` 的实例，才能向 Adobe Analytics 发送调用。
 
-1. 合并所有片段。
+1. 合并所有部分。
 
-   以下代码示例为 HTML5 视频播放器使用我们的 JavaScript 2.x SDK：
+   以下代码示例对 HTML5 媒体播放器使用 JavaScript 2.x SDK。
 
    ```javascript
    // Create local references to the heartbeat classes 
