@@ -12,9 +12,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!TIP]
 >
->收集必要的请求数据，以成功将[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)发送到 Media Analytics (MA) 收集 API 后端服务器。通过手动发送请求（使用 `curl` 或 Postman 等），您可以快速验证您的请求数据。这将对请求中是否存在与不正确数据类型或信息有关的任何问题立即提供反馈。使用 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)来验证您是否提供了正确的请求数据。
+>收集必要的请求数据，以成功将[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)发送到 Media Analytics (MA) 收集 API 后端服务器。通过手动发送请求（使用 `curl` 或 Postman 等），您可以快速验证您的请求数据。这将对请求中是否存在与不正确数据类型或信息有关的任何问题立即提供反馈。使用 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)验证您提供的请求数据是否正确。
 
-1. 收集为运行任何 Experience Cloud 应用程序而必须提供的标准、必需的 Adobe Analytics 和访客数据：
+1. 收集运行任何 Experience Cloud 应用程序必须提供的标准、所需 Adobe Analytics 和访客数据：
 
    * Visitor Experience Cloud 组织 ID
    * Visitor Experience Cloud 用户 ID
@@ -72,4 +72,4 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
    Access-Control-Expose-Headers: Location
    ```
 
-如果[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)成功，您将接收到与上述相同的 `201 Created` 响应。该响应将会话 ID 包含在 Location 标头中。会话 ID 是响应中的关键信息，因为所有后续跟踪调用都需要会话 ID。成功返回[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)后，您可以放心地继续使用视频播放器中的 MA API 来实施视频跟踪。
+如果[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)成功，您将接收到与上述相同的 `201 Created` 响应。响应包含 Location 标头中的会话 ID。会话 ID 是响应中的关键信息，因为所有后续跟踪调用都需要该信息。成功返回[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)后，您可以放心地继续使用视频播放器中的 MA API 来实施视频跟踪。
