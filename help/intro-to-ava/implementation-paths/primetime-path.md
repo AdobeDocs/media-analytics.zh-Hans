@@ -10,16 +10,16 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # Primetime{#primetime}
 
-Media Analytics (Heartbeats) 是 Adobe 的标准化媒体跟踪解决方案。它取代了 Adobe 的旧式里程碑模型。
+Media Analytics（心率）是 Adobe 的标准化媒体跟踪解决方案。它取代了 Adobe 的旧式里程碑模型。
 
 Adobe Primetime 是一款 Adobe Experience Cloud 解决方案，可帮助内容程序员和发行商从每一个连接屏幕上的媒体中盈利。
 
-Primetime 为进行媒体发布、广告投放、个性化和分析提供了模块化的平台，让客户可以更轻松地在各种各样的设备上联系和吸引全球客户并借以盈利。此外，Primetime 还在以下方面提供了解决方案，并带来了价值：
+Primetime 通过提供用于媒体发布、广告、个性化和分析的模块化平台，消除了跨设备吸引、货币化和激活全球受众的复杂性。此外，Primetime 还提供以下解决方案和值：
 
-* 支持精准地测量线性和 VOD 内容类型。
-* 支持测量含有（或不含）动态广告插入的广告时间。
-* TVSDK 的无缝广告插入模型允许分析工具直接测量广告播放，提高了准确性。
-* 利用强大的事件和元数据集，可确保在出现各种 QoS 缓冲或移动连接中断问题以及最终用户在移动设备上进行搜寻、暂停或后台播放时，测量数据仍然准确。
+* 支持精确测量线性和 VOD 内容类型。
+* 支持在包含（或不含）动态广告插入时测量广告时间。
+* TVSDK 的无缝广告插入模型允许 Analytics 直接测量广告播放，从而提高准确性。
+* 可靠的事件和元数据集可确保跨 QoS 缓冲或移动连接中断问题和最终用户交互（如搜索、暂停和后台）之间的准确性。
 <!--
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
