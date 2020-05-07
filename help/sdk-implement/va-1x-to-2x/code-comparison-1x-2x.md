@@ -2,8 +2,11 @@
 title: 1.x 与 2.x 代码对比
 description: 本主题对比了 Media SDK 版本 1.x 与 2.x 中的代码。
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 **1.x 和 2.x 播放器示例的链接：**
 
 * [1.x 播放器示例 ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x 播放器示例 ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [2.x 播放器示例 ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 以下部分提供了 1.x 与 2.x 之间的代码对比，其中包括初始化、核心播放、广告播放、章节播放以及其他一些事件的对比。
 
