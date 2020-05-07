@@ -3,7 +3,10 @@ title: 自定义链接实施指南
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+workflow-type: tm+mt
+source-wordcount: '203'
+ht-degree: 86%
 
 ---
 
@@ -13,14 +16,14 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 自定义视频跟踪可利用 Analytics `appMeasurement` 中的[使用自定义链接代码的手动链接跟踪](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)。大多数情况下，自定义视频链接视频跟踪会用在需要少量视频测量的平台和设备上。
 
 * 在 JavaScript 中：`s.tl()` 函数
-* 在移动设备应用程序中：[trackAction() Android](hhttps://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html)、[trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html) 和 [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* 在移动设备应用程序中：[trackAction() Android](https://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html)、[trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html) 和 [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * 在 Data Insertion API 中：[linktype 标记](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 要求
 
-* 有权访问视频播放器 API 事件和数据
-* 使用 Analytics SDK 时，能够添加脚本
-* 使用 Data Insertion API 时，能够添加跟踪信标（自定义脚本或硬编码）
+* 访问视频播放器 API 事件和数据
+* 在使用 Analytics SDK 时能够添加脚本
+* 如果使用 Data Insertion API，则能够添加跟踪信标（自定义脚本或硬编码）
 
 ## 元数据
 
@@ -45,11 +48,11 @@ if (e.type == "ended") {
 
 ## 使用自定义链接的理由
 
-* 需要满足的前提条件很少
-* 适用于任何平台，包括 NoScript
-* 任何计算（例如逗留时间和四分位数）必须在自定义脚本中执行
-* 非常简单，没有任何隐藏的库或脚本
-* 可全方位完全掌控视频数据
+* 需要满足最低的先决条件
+* 适用于任何平台，包括无脚本
+* 任何计算（如逗留时间或四分位点）都必须在自定义脚本中计算
+* 无隐藏库或脚本，非常简单直观
+* 全面控制视频数据的各个方面
 
 ## 适用于 HTML5 播放器的 JavaScript 示例
 
