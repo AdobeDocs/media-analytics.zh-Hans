@@ -25,32 +25,32 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    ![](assets/adobe-debug-login.png)
 
-   此工具支持的浏览器如下：
+   此工具支持的浏览器包括：
    * Google Chrome
    * Mozilla Firefox
    * Apple Safari
-   * Microsoft Internet Explorer 版本 9-11
+   * Microsoft Internet Explorer 版本 9 - 11
 
-推荐的浏览器是最新版本的 Chrome 和 Firefox。
+推荐的浏览器是 Chrome 和 Firefox 的最新版本。
 
-## Debug Proxy {#debug-proxy}
+## 调试代理 {#debug-proxy}
 
 要下载并配置 Debug Proxy，请执行以下操作：
 
 1. 在[应用程序下载](https://debug.adobe.com/#/downloads)页面下载 Debug Proxy 应用程序。
 
-   支持的操作系统如下：
-   * OS X 10.7 64 位或更高版本
-   * Windows 7.1 64 位或更高版本
+   支持的操作系统包括：
+   * OS X 10.7 64 位或更高
+   * Windows 7.1 64 位或更高
    ![](assets/debug-proxy-app.png)
 
-1. Debug Proxy 服务器将在本地计算机的端口 33284 上运行，并且将被设置为系统代理。
+1. 调试代理服务器将在本地计算机上的端口 33284 上运行，并且将被设置为系统代理。
 
-   您可能需要根据操作系统和浏览器来调整浏览器设置。
+   您可能需要根据操作系统和浏览器调整浏览器设置。
 
-## 在桌面或应用程序中下载并安装 SSL 证书 {#download-and-install-sSL-desktop}
+## 在桌面或应用程序上下载并安装 SSL 证书 {#download-and-install-sSL-desktop}
 
-第一次运行 Adobe Debug 时，将生成唯一的 SSL 证书。如果您支持跨桌面和/或应用程序的 HTTPS 通信，则需要下载并安装 SSL 证书。
+首次运行 Adobe Debug 时，将生成唯一的 SSL 证书。如果您支持跨桌面和/或应用程序的 HTTPS 流量，则需要下载并安装我们的 SSL 证书。
 
 要下载并安装 SSL 证书，请执行以下操作：
 
@@ -58,15 +58,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. 导入证书
 
    **Mac OS**
-   1. 双击根 CA 证书以在“钥匙串访问”中将其打开。
-   1. 根 CA 证书会出现在登录中。
-   1. 将根 CA 证书移动（拖动）到 System。
-   1. 您必须将证书复制到系统中，以确保所有用户和本地系统进程都信任该证书。
-   1. 打开根 CA 证书，展开“信任”，选择“始终信任”并保存更改。
+   1. 双击根 CA 证书以在密钥链访问中将其打开。
+   1. 根 CA 证书显示在登录名中。
+   1. 将根 CA 证书移动（拖动）到系统。
+   1. 您必须将证书复制到系统，以确保证书受到所有用户和本地系统进程的信任。
+   1. 打开根 CA 证书，展开“信任”，选择“始终信任”，然后保存更改。
    **Windows**
-   1. 完成以下过程之一：
+   1. 完成以下步骤之一：
 
-      * [将证书添加到本地计算机的“受信任的根证书颁发机构”存储区中](https://technet.microsoft.com/zh-cn/library/cc754841.aspx#BKMK_addlocal)
+      * [将证书添加到本地计算机的受信任的根证书颁发机构进行存储](https://technet.microsoft.com/zh-cn/library/cc754841.aspx#BKMK_addlocal)
 <!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
 -->
 
@@ -75,7 +75,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
     您可能需要退出 Firefox 后重新将其打开才能看到所做的更改。
     
     **iOS 设备**
-    1. 通过单击 **[!UICONTROL 设置应用程序]** **&gt;** **[!UICONTROL Wifi 设置]**，将 iOS 设备设置为使用 Adobe Debug 作为其 HTTP 代理。
+    1. 通过单击 **[!UICONTROL 设置应用程序]** **>** **[!UICONTROL Wifi 设置]**，将 iOS 设备设置为使用 Adobe Debug 作为其 HTTP 代理。
     
     1. 在 Safari 中，转到 [Debug。](https://proxy.debug.adobe.com/ssl)
     
@@ -91,15 +91,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. 在笔记本电脑上，打开 Debug Proxy，然后转到 [Adobe Debug](https://debug.adobe.com)。
 1. 在 iOS 设备上完成以下步骤：
-   1. 将设备转换到飞行模式。
-   1. 选择笔记本电脑所使用的相同 Wi-Fi 信号。
-   1. 在笔记本电脑上，手动设置 Debug Proxy 应用程序中显示的 IP 和端口。
+   1. 将设备转换为“飞行模式”。
+   1. 选择笔记本与电脑使用的相同的 Wi-Fi 信号。
+   1. 在笔记本电脑上，手动设置调试代理应用程序上显示的 IP 和端口。
    1. 打开 Apple Safari 浏览器窗口。
    1. 转到 [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl)。
    1. 下载并安装 SSL 证书。
 
-1. 在笔记本电脑上，启动 Adobe Debug 会话。
-1. 在 iOS 设备上开始测试。
+1. 在笔记本电脑上启动 Adobe Debug 会话。
+1. 开始在 iOS 设备上进行测试。
 
 ### Android
 
@@ -107,13 +107,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. 在笔记本电脑上，打开 Debug Proxy，然后转到 [Adobe Debug](https://debug.adobe.com)。
 1. 在 Android 设备上完成以下步骤：
-   1. 将您的设备设置为飞行模式。
-   1. 选择笔记本电脑所使用的相同 Wi-Fi 信号。
-   1. 在笔记本电脑上，手动设置 Debug Proxy 应用程序中显示的 IP 和端口。
+   1. 将设备设置为“飞行模式”。
+   1. 选择笔记本与电脑使用的相同的 Wi-Fi 信号。
+   1. 在笔记本电脑上，手动设置调试代理应用程序上显示的 IP 和端口。
    1. 打开浏览器窗口。
    1. 转到 [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl)。
    1. 下载并安装 SSL 证书。
 
-1. 在笔记本电脑上，启动 Adobe Debug 会话。
-1. 在 Android 设备上开始测试。
+1. 在笔记本电脑上启动 Adobe Debug 会话。
+1. 开始在 Android 设备上进行测试。
 
