@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 概述 {#overview}
 
-视频测量的核心概念与里程碑和 Media Analytics 的核心概念相同，即获取视频播放器事件并将其映射到分析方法，同时还获取播放器元数据和值并将其映射到分析变量。Media Analytics 解决方案源自里程碑解决方案，因此两种解决方案中的许多方法和量度都是相同的，但配置方法和代码发生了较大改变。应当可以更新播放器事件代码以指向新的 Media Analytics 方法。有关实施 Media Analytics 的更多详细信息，请参阅 [SDK 概述](/help/sdk-implement/setup/setup-overview.md)和[跟踪概述](/help/sdk-implement/track-av-playback/track-core-overview.md)。
+视频测量的核心概念与里程碑和 Media Analytics 相同，后者采用视频播放器事件并将其映射到分析方法，同时捕获播放器元数据和值并将它们映射到分析变量。Media Analytics 解决方案源自里程碑，因此许多方法和量度都与里程碑是相同的，但配置方法和代码发生了显著变化。也可以更新播放器事件代码以指向新的 Media Analytics 方法。有关实施 Media Analytics 的更多详细信息，请参阅 [SDK 概述](/help/sdk-implement/setup/setup-overview.md)和[跟踪概述](/help/sdk-implement/track-av-playback/track-core-overview.md)。
 
 下表提供了“里程碑”解决方案和“Media Analytics”解决方案之间的转换。
 
@@ -22,11 +22,11 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 里程碑量度 | 变量类型 | Media Analytics 量度 |
 | --- | --- | --- |
-| 内容 | eVar<br/><br/>默认过期：访问 | 内容 |
-| 内容类型 | eVar<br/><br/>默认过期：页面查看 | 内容类型 |
-| 内容逗留时间 | 事件<br/><br/>类型：计数器 | 内容逗留时间 |
-| 视频初始化 | 事件<br/><br/>类型：计数器 | 视频初始化 |
-| 视频结束 | 事件<br/><br/>类型：计数器 | 内容结束 |
+| 内容 | eVar <br/><br/>默认过期：访问 | 内容 |
+| 内容类型 | eVar <br/><br/>默认过期：页面查看 | 内容类型 |
+| 内容逗留时间 | 事件 <br/><br/>类型：计数器 | 内容逗留时间 |
+| 视频初始化 | 事件 <br/><br/>类型：计数器 | 视频初始化 |
+| 视频结束 | 事件 <br/><br/>类型：计数器 | 内容结束 |
 
 ### 媒体模块变量
 
@@ -157,7 +157,7 @@ s.Media.autoTrack
 </td>
 <td>不适用
 </td>
-<td>我们不再提供预先构建的播放器映射。
+<td>我们不再提供预建的播放器映射。
 </td>
 </tr>
 <tr>
@@ -173,7 +173,7 @@ s.Media.
 </td>
 <td>不适用
 </td>
-<td>我们不再提供预先构建的播放器映射。
+<td>我们不再提供预建的播放器映射。
 </td>
 </tr>
 <tr>
@@ -357,7 +357,7 @@ s.Media.
 </td>
 <td>不适用
 </td>
-<td>默认情况下，不会为广告提供进度标记。请使用计算量度来构建广告进度标记。
+<td>默认情况下，广告不提供进度标记。请使用计算量度来构建广告进度标记。
 </td>
 </tr>
 <tr>
@@ -889,7 +889,7 @@ s.Media.track(
 </td>
 <td>不适用
 </td>
-<td>将自动设置跟踪调用频率。
+<td>跟踪调用频率是自动设置的。
 </td>
 </tr>
 </tbody>
