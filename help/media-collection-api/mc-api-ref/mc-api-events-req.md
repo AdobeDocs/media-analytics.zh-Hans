@@ -48,7 +48,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 >[!IMPORTANT]
 >
->***广告跟踪 -**您只能跟踪`adBreak`内的广告*。
+>***广告跟踪 -**您只能跟踪`adBreak`*内的广告。
 >
 >在广告头尾没有 `adBreakStart` 和 `adBreakComplete`“书挡”的情况下，`adStart` 和 `adComplete` 事件将被忽略，并且会将相应的广告持续时间作为主内容持续时间进行跟踪。这可能会对 Adobe Analytics 中可用的聚合数据产生重大影响。
 
@@ -70,8 +70,8 @@ Access-Control-Expose-Headers Location
 | HTTP 响应代码 | 描述 | 客户端操作项 |
 |---|---|---|
 | **204** | **无内容。**<br/><br/>心率调用成功。 | 不适用 |
-| **400** | **错误请求。**<br/><br/>请求格式不正确。 | 请查看 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)以了解请求类型。 |
-| **404** | **未找到。**<br/><br/>在后端服务中找不到媒体会话的会话 ID。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 来创建另一个媒体会话，并报告对该会话的跟踪。 |
-| **410** | **已过期。**<br/><br/>在后端服务中找到媒体会话，但客户端无法再对该会话报告活动。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 来创建另一个媒体会话，并报告对该会话的跟踪。 |
+| **400** | **错误请求。**<br/><br/>请求格式不正确。 | 检查 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)以了解请求类型。 |
+| **404** | **未找到。**<br/><br/>在后端服务中找不到媒体会话的会话 ID。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 创建另一个媒体会话并报告对它的跟踪。 |
+| **410** | **不存在。**<br/><br/>在后端服务中找到媒体会话，但客户端无法再对该会话报告活动。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 创建另一个媒体会话并报告对它的跟踪。 |
 | **500** | **服务器错误** | 不适用 |
 
