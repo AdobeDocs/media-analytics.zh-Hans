@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Analytics 数据
 
-| 请求密钥 | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置... |  描述  |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics 服务器的 URL |
 | `analytics.reportSuite` | Y | `sessionStart` | 标识 Analytics 报表数据的 ID |
@@ -21,7 +21,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 访客数据
 
-| 请求密钥 | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置... |  描述  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 组织 ID，可在 Adobe Experience Cloud 生态系统中标识您的组织 |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | 这是 Experience Cloud 用户 ID (ECID)。在大多数情况下，这是您应当用来标识用户的 ID。心率 `marketingCloudUserId` 等于 Adobe Analytics 中的 `MID`。虽然从技术上讲不是必需的，但访问 Experience Cloud 系列应用程序时需要此参数。 |
@@ -30,32 +30,32 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 内容数据
 
-| 请求密钥 | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置... |  描述  |
 | --- | :---: | :---: | --- |
 | `media.id` | Y | `sessionStart` | 内容的唯一标识符 |
 | `media.name` | N | `sessionStart` | 人类可读的内容名称 |
 | `media.length` | Y | `sessionStart` | 内容长度（秒） |
 | `media.contentType` | Y | `sessionStart` | 流的格式（可以是任何字符串，一些推荐值为“Live”、“VOD”或“Linear”） |
 | `media.playerName` | Y | `sessionStart` | 负责呈现内容的播放器的名称 |
-| `media.channel` | Y | `sessionStart` | 内容的分发渠道。这可以是一个移动应用程序名称或一个网站名称、属性名称 |
+| `media.channel` | Y | `sessionStart` | 内容分发的渠道。分发渠道可以是移动应用程序名称或网站名称、属性名称 |
 | `media.resume` | N | `sessionStart` | 指示用户是否正在恢复上一个会话（而不是启动新会话） |
 | `media.sdkVersion` | N | `sessionStart` | 播放器使用的 SDK 版本 |
 
 ## 内容标准元数据
 
-| 请求密钥 | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置... |  描述  |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | 节目或系列节目的名称 |
 | `media.season` | N | `sessionStart` | 节目或系列节目所属的季编号 |
 | `media.episode` | N | `sessionStart` | 剧集的数量 |
-| `media.assetId` | N | `sessionStart` | 视频资产内容的唯一标识符，例如电视剧剧集标识符、电影资产标识符或直播赛事标识符。通常而言，这些 ID 来自元数据管理机构，例如 EIDR、TMS/Gracenote 或 Rovi。这些标识符也可能来自其他专有或内部系统。 |
+| `media.assetId` | N | `sessionStart` | 视频资产内容的唯一标识符，例如电视剧剧集标识符、电影资产标识符或实时事件标识符。通常，这些 ID 是从元数据颁发机构（如 EIDR、TMS/Gracenote 或 Rovi）派生的。这些标识符也可以来自其他专有或内部系统。 |
 | `media.genre` | N | `sessionStart` | 内容制作者定义的内容类型 |
 | `media.firstAirDate` | N | `sessionStart` | 内容首次在电视上播出的日期 |
 | `media.firstDigitalDate` | N | `sessionStart` | 内容首次在任何数字平台上播出的日期 |
 | `media.rating` | N | `sessionStart` | 由电视节目家长指南定义的评级 |
 | `media.originator` | N | `sessionStart` | 内容的创作者 |
 | `media.network` | N | `sessionStart` | 网络/渠道名称 |
-| `media.showType` | N | `sessionStart` | 内容的类型，以 0 到 3 之间的整数表示： <ul> <li>0 - 完整剧集 </li> <li>1 - 预告片 </li> <li>2 - 剪辑 </li> <li>3 - 其他 </li> </ul> |
+| `media.showType` | N | `sessionStart` | 内容的类型，以 0 到 3 之间的整数表示。 <ul> <li>0 - 整集 </li> <li>1 - 预览 </li> <li>2 - 剪辑 </li> <li>3 - 其它 </li> </ul> |
 | `media.adLoad` | N | `sessionStart` | 加载的广告类型 |
 | `media.pass.mvpd` | N | `sessionStart` | 由 Adobe 身份验证提供的 MVPD |
 | `media.pass.auth` | N | `sessionStart` | 表示用户已获得 Adobe 身份验证授权（若要设置，则只能为 true） |
@@ -64,7 +64,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 广告数据
 
-| 请求密钥 | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置... |  描述  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | 广告时间的友好名称 |
 | `media.ad.podIndex` | Y | `adBreakStart` | 视频中广告面板的索引 |
@@ -77,7 +77,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 广告标准元数据
 
-| 请求密钥 | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置... |  描述  |
 | --- | :---: | :---: | --- |
 | `media.ad.advertiser` | N | `adStart` | 广告中展现的产品所属的公司或品牌 |
 | `media.ad.campaignId` | N | `adStart` | 广告营销活动的 ID |
@@ -88,7 +88,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 章节数据
 
-| 请求密钥 | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置... |  描述  |
 | --- | :---: | :---: | --- |
 | `media.chapter.index` | Y | `chapterStart` | 标识章节在内容中的位置 |
 | `media.chapter.offset` | Y | `chapterStart` | 播放中章节开始的时间（秒） |
@@ -97,16 +97,16 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 质量数据
 
-| 请求密钥 | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置... |  描述  |
 | --- | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | “任一” | 流的比特率 |
-| `media.qoe.droppedFrames` | N | “任一” | 流中丢帧的数量 |
-| `media.qoe.framesPerSecond` | N | “任一” | 每秒帧数 |
-| `media.qoe.timeToStart` | N | “任一” | 用户点击播放和内容加载并开始播放之间所经过的时间（以毫秒为单位） |
+| `media.qoe.bitrate` | N | 任何 | 流的比特率 |
+| `media.qoe.droppedFrames` | N | 任何 | 流中的丢帧数 |
+| `media.qoe.framesPerSecond` | N | 任何 | 每秒帧数 |
+| `media.qoe.timeToStart` | N | 任何 | 用户点击播放与内容加载和开始播放之间所经过的时间（以毫秒为单位） |
 
 ## 《加州消费者隐私法案》(CCPA) 参数 {#ccpa-params}
 
-| 请求密钥 | 必需 | 设置位置... |  描述  |
+| 请求密钥 | 必需 | 设置... |  描述  |
 | --- | :---: | :---: | --- |
 | `analytics.optOutServerSideForwarding` | N | `sessionStart` | 如果最终用户选择禁止在 Adobe Analytics 与其他 Experience Cloud 解决方案（如 Audience Manager）之间共享其数据，则设置为 true |
 | `analytics.optOutShare` | N | `sessionStart` | 如果最终用户选择禁止联合其数据（例如，将其数据联合到其他 Adobe Analytics 客户端），则设置为 true。 |
@@ -160,7 +160,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ### visitor.aamLocationHint
 
-此参数指示当 Adobe Analytics 将客户数据发送至 Audience Manager 时，将会点击哪个 Adobe Audience Manager (AAM) Edge。如果您未传递此参数，则 Adobe 会将其硬编码为 1。当最终用户倾向于在地理位置相距遥远的地方（例如，美国东部、美国西部、欧洲、亚洲）使用其设备时，这一点尤为重要。否则，用户数据将分布在多个 AAM Edge 中。
+此参数指示当 Adobe Analytics 将客户数据发送至 Audience Manager 时，将会点击哪个 Adobe Audience Manager (AAM) Edge。如果不传递此参数，则 Adobe 将其硬编码为 1。当最终用户倾向于在地理上相距较远的位置（例如，美国东部、美国西部、欧洲、亚洲）使用其设备时，这一点尤其重要。否则，用户数据将散布在多个 AAM 边缘中。
 
 ### media.resume
 
