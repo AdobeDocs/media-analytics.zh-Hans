@@ -10,9 +10,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # 客户端{#client-side}
 
-Media Analytics (Heartbeats) 是 Adobe 的标准化媒体跟踪解决方案。它取代了 Adobe 的旧式里程碑模型。
+Media Analytics（心率）是 Adobe 的标准化媒体跟踪解决方案。它取代了 Adobe 的旧式里程碑模型。
 
-Media Analytics 只能实施客户端集成。您可以选择实施 Media SDK 或媒体收集 API（或者同时实施两者）。客户端路径可在任何播放器中使用，包括客户和/或 OVP 的播放器，例如 Brightcove、Ooyala、thePlatform，等等。
+客户端集成只能通过 Media Analytics 实施。您可以选择实施 Media SDK 或媒体收集 API（或同时实施两者）。客户端路径可以跨任何播放器使用，包括客户和/或 OVP 播放器，如 Brightcove、Ooyala、thePlatform 等。
 
 如果 Media Analytics 是您的预期路径，请参阅 [Media SDK 实施](/help/sdk-implement/setup/setup-overview.md)和[媒体收集 API](/help/media-collection-api/mc-api-overview.md)。
 
