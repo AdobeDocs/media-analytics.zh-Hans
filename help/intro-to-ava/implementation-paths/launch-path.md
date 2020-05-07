@@ -10,7 +10,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # Adobe Experience Platform Launch{#adobe-launch}
 
-Media Analytics (Heartbeats) 是 Adobe 的标准化媒体跟踪解决方案。它取代了 Adobe 的旧式里程碑模型。
+Media Analytics（心率）是 Adobe 的标准化媒体跟踪解决方案。它取代了 Adobe 的旧式里程碑模型。
 
 Adobe Experience Platform Launch 是 Dynamic Tag Management 的后续产品，具有 Launch 扩展功能，可帮助您在媒体播放器中实施跟踪。
 
