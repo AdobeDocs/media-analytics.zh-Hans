@@ -19,7 +19,7 @@ Adobe 在 Media Analytics（心率）服务器上收集和处理的 Media Analyt
 | s:event:type | Media SDK | （必需）<br/><br/>被跟踪的事件的类型。事件类型： <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
 | l:event:prev_ts | Media SDK | （必需）<br/><br/>此会话中具有相同类型的最后一个事件的时间戳。值为 -1。 |
 | l:event:ts | Media SDK | （必需）<br/><br/>事件的时间戳。 |
-| l:event:duration | Media SDK | （必需）<br/><br/>此值由 Media SDK 在内部设置（以毫秒为单位），而不是由播放器设置。它用于在后端计算花费时间量度。例如：a.media.totalTimePlayed 计算为所生成的所有播放 (type=play) 心率的持续时间总和。<br/>*注意：*&#x200B;对于某些事件，由于它们是“状态更改事件”（例如，type=complete、type=chapter_complete 或 type=bitrate_change），此参数将设置为 0。 |
+| l:event:duration | Media SDK | （必需）<br/><br/>此值由 Media SDK 在内部设置（以毫秒为单位），而不是由播放器设置。它用于在后端计算花费时间量度。例如：a.media.totalTimePlayed 计算为所生成的所有播放 (type=play) 心率的持续时间总和。<br/>*注意：*对于某些事件，由于它们是“状态更改事件”（例如，type=complete、type=chapter_complete 或 type=bitrate_change），此参数将设置为 0。 |
 | l:event:playhead | VideoInfo | （必需）<br/><br/>当事件被记录时，播放头位于当前活动的资产（主资产或广告）内。 |
 | s:event:sid | Media SDK | （必需）<br/><br/>会话 ID（随机生成的字符串）。特定会话中的所有事件（视频 + 广告）应当相同。 |
 | l:asset:duration / l:asset:length <br/>（从长度持续时间重命名） | VideoInfo | （必需）<br/><br/>主资产的视频资产长度。 |
@@ -39,7 +39,7 @@ Adobe 在 Media Analytics（心率）服务器上收集和处理的 Media Analyt
 | s:sp:ovp | MediaHeartbeatConfig | （可选）<br/><br/>对于 Primetime 播放器，设置为“primetime”；对于其他播放器，则设置为实际的 OVP。 |
 | s:sp:sdk | MediaHeartbeatConfig | （必需）<br/><br/>OVP 版本字符串。 |
 | s:sp:player_name | VideoInfo | （必需）<br/><br/>视频播放器名称（实际的播放器软件，用于标识播放器）。 |
-| s:sp:channel | MediaHeartbeatConfig | （可选）<br/><br/>用户从中观看内容的渠道。对于移动设备应用程序，为应用程序名称。对于网站，则为域名。 |
+| s:sp:channel | MediaHeartbeatConfig | （可选）<br/><br/>用户从中观看内容的渠道。对于移动应用程序，显示应用程序名称。对于网站，显示域名。 |
 | s:sp:hb_version | Media SDK | （必需）<br/><br/>发出调用的 Media SDK 库的版本号。 |
 | l:stream:bitrate | QoSInfo | （必需）<br/><br/>流比特率的当前值（以 bps 为单位）。 |
 
