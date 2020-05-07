@@ -15,11 +15,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 触发器 | 心率方法 | 网络调用   | 注释   |
 | --- | --- | --- | --- |
 | 用户点击[!UICONTROL 播放] | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用仍然与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
-| 广告开始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 广告开始，心率广告开始 |  |
-| 播放广告 #1 的帧。 | `trackPlay` | 心率广告播放 | 广告内容在主内容之前播放，并且心率在广告开始时即开始。 |
+| 广告开始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 广告开始、心率广告开始 |  |
+| 播放广告 #1 的帧。 | `trackPlay` | 心率广告播放 | 广告内容在主内容之前播放，心率在广告开始时开始。 |
 | 播放广告。 |  | 广告心率 |  |
 | 广告 #2 结束播放。 | `trackEvent:trackAdComplete` | 心率广告结束 | 到达广告的结尾。 |
-| 播放广告 #2 的第一帧。 | `trackEvent:AdStart` | Analytics 广告开始，心率广告开始 |  |
+| 播放广告 2 的第一帧。 | `trackEvent:AdStart` | Analytics 广告开始、心率广告开始 |  |
 | 播放广告。 |  | 广告心率 |  |
 | 广告 #2 结束播放。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 心率广告结束 | 到达广告和面板的结尾。 |
 | 播放内容。 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
@@ -54,8 +54,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
-| `s:asset:ad_id` | &lt;广告 ID&gt; |  |
-| `s:asset:pod_id` | &lt;广告面板 ID&gt; |  |
+| `s:asset:ad_id` | &lt;广告 ID> |  |
+| `s:asset:pod_id` | &lt;广告面板 ID> |  |
 
 与 `Heartbeat Content Complete` 调用类似，当广告播放结束（即，到达播放头的结尾）时，将发送 `Heartbeat Ad Complete` 调用。此调用看起来类似于其他 `Heartbeat Ad` 调用，但包含几个特定的参数：
 
