@@ -2,7 +2,7 @@
 title: 测试 1：标准播放
 description: 本主题介绍验证中使用的标准播放测试。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
