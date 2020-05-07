@@ -12,12 +12,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 方案 {#scenario}
 
-此方案包含一个不含广告的 VOD 资产，该资产从头到尾播放一次。
+此方案有一个不含广告的 VOD 资产，该资产将从头到尾播放一次。
 
 | 触发器 | 心率方法 | 网络调用 | 注释   |
 |---|---|---|---|
 | 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 这可以是用户点击“播放”或自动播放事件。 |
-| 媒体的第一帧 | `trackPlay` | 心率内容播放 | 此方法会触发计时器，并且从此刻起，将在播放期间每 10 秒发送一次心率。 |
+| 媒体的第一帧 | `trackPlay` | 心率内容播放 | 此方法会触发计时器，从此刻开始，在播放期间，每 10 秒将发送一次心率。 |
 | 内容播放 |  | 内容心率 |  |
 | 内容结束 | `trackComplete` | 心率内容结束 | *结束*&#x200B;表示到达播放头的结尾。 |
 
@@ -29,17 +29,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 参数 | 值 | 注释   |
 |---|---|---|
-| `s:sc:rsid` | &lt;您的 Adobe 报表包 ID&gt; |  |
-| `s:sc:tracking_server` | &lt;您的 Analytics 跟踪服务器 URL&gt; |  |
+| `s:sc:rsid` | &lt;您的 Adobe 报表包 ID> |  |
+| `s:sc:tracking_server` | &lt;您的 Analytics 跟踪服务器 URL> |  |
 | `s:user:mid` | 必须设置 | 应当匹配 `Adobe Analytics Content Start` 调用中的中间值。 |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;您的媒体名称&gt; |  |
+| `s:asset:media_id` | &lt;您的媒体名称> |  |
 | `s:meta:*` | 可选 | 对媒体设置的自定义元数据。 |
 
 ## 心率内容播放 {#heartbeat-content-play}
 
-这些参数应当看起来与 `Heartbeat Content Start` 调用几乎完全相同，但关键的区别在于 `s:event:type` 参数。所有其他参数应当仍然存在。
+这些参数应当看起来与 `Heartbeat Content Start` 调用几乎完全相同，但关键的区别在于 `s:event:type` 参数。所有其他参数仍应该存在。
 
 | 参数 | 值 | 注释   |
 |---|---|---|
@@ -48,18 +48,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 内容心率 {#content-heartbeats}
 
-在媒体播放期间，计时器至少每 10 秒发送一次心率。这些心率包含有关播放、广告、缓冲等内容的信息。本文档不包含各个心率的确切内容，但关键的问题在于，在继续播放时，将会持续触发心率。
+在媒体播放期间，计时器至少每 10 秒发送一次心率。这些心率包含有关播放、广告、缓冲等的信息。每个心率的确切内容超出了此文档的范围，但关键问题是在播放持续的同时始终触发心率。
 
 在内容心率中，查找以下参数：
 
 | 参数 | 值 | 注释   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;播放头位置&gt; 例如，50,60,70 | 此参数反映播放头的当前位置。 |
+| `l:event:playhead` | &lt;播放头位置> 例如，50,60,70 | 此参数反映播放头的当前位置。 |
 
 ## 心率内容结束 {#heartbeat-content-complete}
 
-当播放结束（即，到达播放头的结尾）时，将发送 `Heartbeat Content Complete` 调用。此调用看上去类似于其他心率调用，但它包含一些特定的参数：
+当播放结束（即，到达播放头的结尾）时，将发送 `Heartbeat Content Complete` 调用。此调用与其他心率调用类似，但包含一些特定参数：
 
 | 参数 | 值 | 注释   |
 |---|---|---|
@@ -68,7 +68,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 示例代码 {#sample-code}
 
-在此方案中，内容的时长为 40 秒。内容将一直播放到结束而没有任何中断。
+在此方案中，内容的长度为 40 秒。在结束之前，它将一至播放，不会受到任何干扰。
 
 ![](assets/main-content-regular-playback.png)
 
