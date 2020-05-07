@@ -11,7 +11,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 # 概述{#overview}
 
-媒体收集 API 是 Adobe 对客户端 Media SDK 提供的 RESTful 替代方法。借助媒体收集 API，您的播放器可以使用 RESTful HTTP 调用来跟踪音频和视频事件。
+媒体收集 API 是 Adobe 的客户端 Media SDK 的 RESTful 替代方法。借助媒体收集 API，您的播放器可以使用 RESTful HTTP 调用来跟踪音频和视频事件。
 
 媒体收集 API 本质上是一个适配器，可充当 Media SDK 的服务器端版本。这意味着，Media SDK 文档的某些方面也与媒体收集 API 相关。例如，两个解决方案使用了相同的[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)，并且收集的音频和视频跟踪数据最终获得相同的[报表和分析](/help/media-reports/media-reports-enable.md)。
 
