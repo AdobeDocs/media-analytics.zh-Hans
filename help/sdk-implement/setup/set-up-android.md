@@ -3,7 +3,10 @@ title: 设置 Android
 description: 设置 Media SDK 应用程序，以在 Android 中实施。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 92%
 
 ---
 
@@ -12,12 +15,10 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 >[!IMPORTANT]
 >
->从2020年10月开始，Adobe将停止支持版本4的Mobile SDK和适用于Android的独立Media Analytics SDK。 您可以继续下载和使用版本4 SDK，但客户关怀支持和论坛访问将结束。 您应迁移至适用于Android的Adobe Experience Platform(AEP)SDK。 AEP Mobile SDK（以前称为v5）将独家支持Adobe Experience Cloud的特性和功能。 有关此更改的其他信息，请参 [阅版本4 Mobile SDK停止支持常见问题解答](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。 我们建议您迁移到新的AEP Mobile SDK。
-迁移到AEP Mobile SDK后，必须实施Analytics Launch扩展和Media Analytics Launch扩展以启用Adobe Analytics for Audio和Video。 有关迁移到新的AEP Mobile SDK的更多信息，请 [参阅从独立媒体SDK迁移到Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+>随着2021年8月31日停止对版本4 Mobile SDK的支持，Adobe还将结束对适用于iOS和Android的Media Analytics SDK的支持。  有关其他信息，请 [参阅Media Analytics SDK支持终止常见问题解答](/help/sdk-implement/end-of-support-faqs.md)。
 
 
 ## 先决条件
-
 
 * **获取 Media SDK 的有效配置参数**
 在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
@@ -25,7 +26,7 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 有关 Adobe Mobile SDK 文档的更多信息，请参阅[适用于 Experience Cloud 解决方案的 Android SDK 4.x](https://docs.adobe.com/content/help/zh-Hans/mobile-services/android/overview.html)。
 
 * **在媒体播放器中提供以下功能：**
-   * *可订阅播放器事件的 API -* Media SDK 要求您在播放器中发生事件时调用一组简单的 API。
+   * *用于订阅播放器事件的 API* - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
 
 ## SDK 实施
@@ -39,23 +40,23 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
       **IntelliJ IDEA：**
 
-      1. Right click your project in the **[!UICONTROL Project navigation]** panel.
-      1. 选择 **[!UICONTROL Open Module Settings]**。
-      1. 在下 **[!UICONTROL Project Settings]**&#x200B;面，选 **[!UICONTROL Libraries]**&#x200B;择。
+      1. 在&#x200B;**[!UICONTROL 项目导航]**&#x200B;面板中，右键单击您的项目。
+      1. 选择&#x200B;**[!UICONTROL 打开模块设置]**。
+      1. 在&#x200B;**[!UICONTROL 项目设置]**&#x200B;下，选择&#x200B;**[!UICONTROL 库]**。
 
-      1. Click **[!UICONTROL +]** to add a new library.
-      1. Select **[!UICONTROL Java]** and navigate to the `MediaSDK.jar` file.
+      1. 单击 **[!UICONTROL +]** 以添加新库。
+      1. 选择 **[!UICONTROL Java]** 并导航至 `MediaSDK.jar` 文件。
 
       1. 选择您计划在其中使用移动设备库的模块。
-      1. Click **[!UICONTROL Apply]** and then **[!UICONTROL OK]** to close the Module Settings window.
+      1. 单击&#x200B;**[!UICONTROL 应用]**，然后单击&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭“模块设置”窗口。
       **Eclipse：**
 
       1. 在 Eclipse IDE 中，右键单击项目名称。
-      1. 单击  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]** .
+      1. 单击&#x200B;**[!UICONTROL 生成路径]** > **[!UICONTROL 添加外部存档]**。
       1. 选择 `MediaSDK.jar`。
-      1. 单击 **[!UICONTROL Open]**.
-      1. 再次右键单击项目，然后单击 **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]** 。
-      1. 单击“和” **[!UICONTROL Order]** 选项卡 **[!UICONTROL Export]** 。
+      1. 单击&#x200B;**[!UICONTROL 打开]**。
+      1. 再次右键单击项目，然后选择&#x200B;**[!UICONTROL 生成路径]** > **[!UICONTROL 配置生成路径]**。
+      1. 单击&#x200B;**[!UICONTROL 顺序]**&#x200B;和&#x200B;**[!UICONTROL 导出]**&#x200B;选项卡。
 
       1. 确保选中 `MediaSDK.jar` 文件。
 
