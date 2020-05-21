@@ -3,7 +3,10 @@ title: 设置 iOS
 description: 设置 Media SDK 应用程序，以在 iOS 中实施。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 93%
 
 ---
 
@@ -12,9 +15,7 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 >[!IMPORTANT]
 >
->从2020年10月开始，Adobe将停止支持版本4 Mobile SDK和iOS的独立Media Analytics SDK。 您可以继续下载和使用版本4 SDK，但客户关怀支持和论坛访问将结束。 您应迁移至适用于iOS的Adobe Experience Platform(AEP)SDK。 AEP Mobile SDK（以前称为v5）将独家支持Adobe Experience Cloud的特性和功能。 有关此更改的其他信息，请参 [阅版本4 Mobile SDK停止支持常见问题解答](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。 我们建议您迁移到新的AEP Mobile SDK。
-迁移到AEP Mobile SDK后，必须实施Analytics Launch扩展和Media Analytics Launch扩展以启用Adobe Analytics for Audio和Video。 有关迁移到新的AEP Mobile SDK的更多信息，请 [参阅从独立媒体SDK迁移到Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
-
+>随着2021年8月31日停止对版本4 Mobile SDK的支持，Adobe还将结束对适用于iOS和Android的Media Analytics SDK的支持。  有关其他信息，请 [参阅Media Analytics SDK支持终止常见问题解答](/help/sdk-implement/end-of-support-faqs.md)。
 
 ## 先决条件
 
@@ -25,11 +26,11 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
    >[!IMPORTANT]
    >
-   >从 iOS 9 开始，Apple 引入了 App Transport Security (ATS) 功能。此功能旨在通过确保应用程序仅使用行业标准协议和密码来提高网络安全性。默认情况下此功能处于启用状态，但您也可以通过配置选项来选择是否使用 ATS。有关 ATS 的详细信息，请参阅 [App Transport Security](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)。
+   >从 iOS 9 开始，Apple 引入了 App Transport Security (ATS) 功能。此功能旨在通过确保您的应用程序仅使用行业标准协议和密码来提高网络安全性。此功能默认处于启用状态，但您的配置选项为您提供了是否使用 ATS 的选项。有关 ATS 的详细信息，请参阅 [App Transport Security](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)。
 
 * **在媒体播放器中提供以下功能：**
 
-   * _可订阅播放器事件的 API -_ Media SDK 要求您在播放器中发生事件时调用一组简单的 API。
+   * _用于订阅播放器事件的 API_ - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * _提供播放器信息的 API_ - 此信息包括媒体名称和播放头位置等详细信息。
 
 ## SDK 实施
@@ -50,15 +51,15 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
    1. 将库添加到您的项目中：
 
       1. 启动 Xcode IDE 并打开您的应用程序。
-      1. In **[!UICONTROL Project Navigator]**, drag the `libs` directory and drop it under your project.
+      1. 在&#x200B;**[!UICONTROL 项目导航器]**&#x200B;中，将 `libs` 目录拖放到您的项目下。
 
-      1. 确保选 **[!UICONTROL Copy Items if Needed]** 中了复选框、 **[!UICONTROL Create Groups]** 选中了复选框，且未选中 **[!UICONTROL Add to Target]** 中的复选框。
+      1. 确保选中&#x200B;**[!UICONTROL 需要时复制项目]**&#x200B;复选框，选定&#x200B;**[!UICONTROL 创建群组]**，且未选中&#x200B;**[!UICONTROL 添加到目标]**&#x200B;中的任何复选框。
 
          ![](assets/choose-options_ios.png)
 
-      1. 单击 **[!UICONTROL Finish]**.
-      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
-      1. Link the required frameworks and libraries in the **[!UICONTROL Linked Frameworks]** and **[!UICONTROL Libraries]** section on the **[!UICONTROL General]** tab.
+      1. 单击&#x200B;**[!UICONTROL 完成]**。
+      1. 在&#x200B;**[!UICONTROL 项目导航器]**&#x200B;中，选择您的应用程序并选择您的目标。
+      1. 在&#x200B;**[!UICONTROL 常规]**&#x200B;选项卡上的&#x200B;**[!UICONTROL 链接的框架]**&#x200B;和&#x200B;**[!UICONTROL 库]**&#x200B;区域，链接所需的框架和库。
 
          **iOS 应用程序目标:**
 
@@ -71,7 +72,7 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
          * **MediaSDK_TV.a**
          * **libsqlite3.0.tbd**
          * **SystemConfiguration.framework**
-      1. 验证您的应用程序在生成时没有出现错误。
+      1. 确认您的应用程序在生成时没有出现错误。
 
 
 
@@ -148,13 +149,13 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 ## 配置适用于 tvOS 的本地应用程序
 
-现在，随着新 Apple TV 的发布，您能够创建可在本地 tvOS 环境中运行的应用程序。您可以使用 iOS 中提供的任何几种框架创建纯本地应用程序，也可以使用 XML 模板和 JavaScript 创建应用程序。从 MediaSDK 版本 2.0 起，开始支持 tvOS。有关 tvOS 的更多信息，请参阅 [tvOS 开发人员网站](https://developer.apple.com/cn/tvos/)。
+新的 Apple TV 发布后，您现在可以创建要在本机 tvOS 环境中运行的应用程序。您可以使用 iOS 中提供的几个框架中的任意一个来创建纯本机应用程序，也可以使用 XML 模板和 JavaScript 创建应用程序。从 MediaSDK 版本 2.0 开始，提供对 tvOS 的支持。有关 tvOS 的更多信息，请参阅 [tvOS 开发人员网站](https://developer.apple.com/cn/tvos/)。
 
-在您的 Xcode 项目中执行以下步骤：本指南假定您的项目旨在开发适用于 tvOS 的 Apple TV 应用程序：
+在您的 Xcode 项目中执行以下步骤。本指南的编写假定您的项目具有针对 tvOS 的 Apple TV 应用程序：
 
 1. 将 `VideoHeartbeat_TV.a` 库文件拖到您项目的 `lib` 文件夹中。
 
-1. 在tvOS **[!UICONTROL Build Phases]** 应用程序目标的选项卡中，展开该 **[!UICONTROL Link Binary with Libraries]** 部分并添加以下库：
+1. 在 tvOS 应用程序目标的&#x200B;**[!UICONTROL 构建阶段]**&#x200B;选项卡中，展开&#x200B;**[!UICONTROL 链接二进制文件和库]**&#x200B;部分，并添加以下库:
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
