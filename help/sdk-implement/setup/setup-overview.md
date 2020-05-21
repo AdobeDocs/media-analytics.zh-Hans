@@ -2,8 +2,11 @@
 title: 设置概述
 description: 有关为移动设备、OTT 和浏览器 (JS) 应用程序中的媒体跟踪设置 Media SDK 的概述。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '734'
+ht-degree: 95%
 
 ---
 
@@ -12,8 +15,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->以下说明适用于 2.x Media SDK。如果您实施的是 1.x 版本的 Media SDK，请参阅 [1.x Media SDK 文档。](/help/sdk-implement/download-sdks.md)有关 Primetime 集成程序的信息，请参阅以下 _Primetime Media SDK 文档_。
+>随着2021年8月31日停止对版本4 Mobile SDK的支持，Adobe还将结束对适用于iOS和Android的Media Analytics SDK的支持。  有关其他信息，请 [参阅Media Analytics SDK支持终止常见问题解答](/help/sdk-implement/end-of-support-faqs.md)。
 
+以下说明适用于 2.x Media SDK。如果您实施的是 1.x 版本的 Media SDK，请参阅 [1.x Media SDK 文档。](/help/sdk-implement/download-sdks.md)有关 Primetime 集成程序的信息，请参阅以下 _Primetime Media SDK 文档_。
 
 ## 支持的最低平台版本 {#minimum-platform-version}
 
@@ -84,36 +88,36 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    以下代码示例对 HTML5 媒体播放器使用 JavaScript 2.x SDK。
 
    ```javascript
-   // Create local references to the heartbeat classes 
-   var MediaHeartbeat = ADB.va.MediaHeartbeat; 
-   var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig; 
-   var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
+   // Create local references to the heartbeat classes
+   var MediaHeartbeat = ADB.va.MediaHeartbeat;
+   var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig;
+   var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate;
    
-   //Media Heartbeat Config 
-   var mediaConfig = new MediaHeartbeatConfig(); 
-   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net"; 
-   mediaConfig.playerName = "HTML5 Basic"; 
-   mediaConfig.channel = "Video Channel"; 
-   mediaConfig.debugLogging = true; 
-   mediaConfig.appVersion = "2.0"; 
-   mediaConfig.ssl = false; 
-   mediaConfig.ovp = ""; 
+   //Media Heartbeat Config
+   var mediaConfig = new MediaHeartbeatConfig();
+   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net";
+   mediaConfig.playerName = "HTML5 Basic";
+   mediaConfig.channel = "Video Channel";
+   mediaConfig.debugLogging = true;
+   mediaConfig.appVersion = "2.0";
+   mediaConfig.ssl = false;
+   mediaConfig.ovp = "";
    
-   // Media Heartbeat Delegate 
-   var mediaDelegate = new MediaHeartbeatDelegate(); 
+   // Media Heartbeat Delegate
+   var mediaDelegate = new MediaHeartbeatDelegate();
    
-   // Set mediaDelegate CurrentPlaybackTime 
-   mediaDelegate.getCurrentPlaybackTime = function() { 
-       return video.currentTime; 
-   }; 
+   // Set mediaDelegate CurrentPlaybackTime
+   mediaDelegate.getCurrentPlaybackTime = function() {
+       return video.currentTime;
+   };
    
-   // Set mediaDelegate QoSObject - OPTIONAL 
-   mediaDelegate.getQoSObject = function() { 
+   // Set mediaDelegate QoSObject - OPTIONAL
+   mediaDelegate.getQoSObject = function() {
        return MediaHeartbeat.createQoSObject(video.bitrate,  
                                              video.startuptime,  
                                              video.fps,  
-                                             video.droppedframes); 
-   } 
+                                             video.droppedframes);
+   }
    // Create mediaHeartbeat instance      
    this.mediaHeartbeat =  
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
