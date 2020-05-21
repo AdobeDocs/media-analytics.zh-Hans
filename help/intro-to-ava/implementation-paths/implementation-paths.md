@@ -2,17 +2,31 @@
 title: 实施路径
 description: null
 uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 64%
 
 ---
 
 
 # 实施路径 {#implementation-paths}
 
-Media Analytics (Heartbeats) 是 Adobe 的标准化视频解决方案。它取代了 Adobe 的旧式里程碑模型。
+对于每个实施路径，客户需要联系其销售代表／客户经理以签署新的销售订单，因为媒体分析具有唯一的SKU，并且从基于服务器调用的定价模型更改为基于视频流的模型。
 
-对于以下每种实施路径，由于 Media Analytics 具有独有的 SKU，其定价模型已由基于服务器调用的模型变为基于视频流的模型，因此客户将需要联系他们的销售代表/客户经理来签署新的销售订单：
+* **带有Adobe Media Analytics扩展的Adobe Launch**
+
+   Adobe Launch是Adobe的新一代标签管理解决方案。 Launch提供了部署和管理所有分析、营销和广告标签的简单方法，这些标签是提升相关客户体验所必需的。 要构建和维护您与Launch的集成，您需要使用扩展。 扩展是JavaScript、HTML和CSS包，它扩展了Launch UI和客户端功能。 有关详细信息，请参 [阅《Experience Platform Launch用户指南》](https://docs.adobe.com/content/help/zh-Hans/launch/using/overview.translate.html)
+
+   Adobe Media Analytics(MA)扩展为音频和视频添加核心JavaScript Media SDK(Media 2.x SDK)。 此扩展提供了将 `MediaHeartbeat` 跟踪器实例添加到 Launch 网站或项目的功能。
+
+   带有Media Analytics扩展的Adobe Launch需要：
+   * 您必须是Adobe Experience Cloud客户。
+   * 必须在网页上部署启动或DTM嵌入代码。
+   * [Analytics 扩展](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
+   * [Experience Cloud ID 扩展](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
+
 
 * **客户端 -** 这些是仅限 Media Analytics 的集成。您可以选择视频心率 SDK 和/或媒体收集 API 集成。此路径可以跨任何播放器使用，包括客户和/或 OVP 播放器，如 Brightcove、Ooyala、thePlatform 等。
 
@@ -22,9 +36,6 @@ Media Analytics (Heartbeats) 是 Adobe 的标准化视频解决方案。它取�
    >
    >要使用 Media Analytics，客户还必须使用 Adobe Analytics。
 
-* **Adobe Experience Platform Launch -** Adobe Experience Platform Launch 是 Dynamic Tag Management 的后续产品，具有 Media Analytics Launch 扩展功能，可帮助您在播放器中实施视频跟踪。
-
-   您可以在此处了解有关 Experience Platform Launch 的更多信息：[Adobe Media Analytics for Audio and Video 扩展](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.translate.html)
 * **Adobe Primetime -** Adobe Primetime 是一款 Adobe Experience Cloud 解决方案，可帮助内容程序员和发行商从每一个连接屏幕上的媒体中盈利。
 
    Primetime 通过提供用于视频发布、广告、个性化和分析的模块化平台，消除了跨设备吸引、货币化和激活全球受众的复杂性。此外，Primetime 还提供以下解决方案和值：
