@@ -2,8 +2,11 @@
 title: 时间轴 3 - 章节
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
+translation-type: tm+mt
+source-git-commit: 197041df4c985cdc572564652a976bd733448787
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 100%
 
 ---
 
@@ -745,4 +748,3 @@ source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 >[!NOTE]
 >
 >**无搜寻事件？-** 媒体收集 API 中没有明确支持 `seekStart` 或 `seekComplete` 事件。这是因为在终端用户进行清理时，某些播放器会生成大量此类事件，而几百个用户很容易就会阻塞后端服务的网络带宽。Adobe 根据设备时间戳而不是播放头位置来计算心率持续时间，以明确支持搜寻事件。
-
