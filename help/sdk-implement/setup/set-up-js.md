@@ -2,8 +2,11 @@
 title: 设置 JavaScript
 description: 设置 Media SDK 应用程序，以在 JavaScript 中实施。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '393'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 * **在媒体播放器中提供以下功能：**
 
-   * *可订阅播放器事件的 API -* Media SDK 要求您在播放器中发生事件时调用一组简单的 API。
+   * *用于订阅播放器事件的 API* - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
 
 1. 将[下载](/help/sdk-implement/download-sdks.md#download-2x-sdks)的库添加到您的项目中。为方便起见，请创建对类的本地引用。
@@ -29,7 +32,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
    1. 托管 `MediaSDK.min.js` 文件。
 
-      此核心 JavaScript 文件必须在一个您站点的所有页面都能访问的 Web 服务器上托管。下一步中需要使用这些文件的路径。
+      此核心 JavaScript 文件必须在一个您站点的所有页面都能访问的 Web 服务器上托管。您需要具有这些文件的路径才能进行下一步操作。
 
    1. 在所有网站页面上引用 `MediaSDK.min.js`。
 
