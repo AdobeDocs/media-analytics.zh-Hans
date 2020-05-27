@@ -2,8 +2,11 @@
 title: 选择禁用和隐私
 description: 如何处理选择启用、选择禁用和隐私。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '360'
+ht-degree: 100%
 
 ---
 
@@ -45,7 +48,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
          >
          >当用户选择禁用跟踪时，所有保留的设备数据和 ID 将被清除，除非用户重新选择启用。
 
-      * **重新选择启用：**
+      * **选择退回：**
 
          * **Chromecast：**
 
@@ -79,15 +82,15 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 >[!IMPORTANT]
 >
->用于检索所有标识符的方法将获取 SDK 已知并且保留的所有用户身份。您必须在用户选择禁用&#x200B;**之前**&#x200B;调用此方法。
+>用于检索所有标识符的方法将获取 SDK 已知并且保留的所有用户身份。必须&#x200B;**先**&#x200B;调用此方法，用户才能选择退出。
 
-本地存储的身份在 JSON 字符串中返回，其中可能包含以下项：
+将在 JSON 字符串中返回本地存储的身份，该字符串可能包含：
 
 * 公司上下文 - IMS 组织 ID
 * 用户 ID
 * Experience Cloud ID (MCID)
-* 数据源 ID（DPID、DPUUID）
-* Analytics ID（AVID、AID、VID 和关联的 RSID）
+* 数据源 ID (DPID、DPUUID)
+* Analytics ID（AVID、AID、VID 和相关 RSID）
 * Audience Manager ID (UUID)
 
 例如：
