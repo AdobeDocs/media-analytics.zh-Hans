@@ -2,8 +2,11 @@
 title: SDK 调试
 description: 本主题介绍 Media SDK 中提供的跟踪/日志记录功能。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '271'
+ht-degree: 100%
 
 ---
 
@@ -79,21 +82,21 @@ For more information about Bloodhound, see the following guides:
 
 ## 日志消息
 
-日志消息遵循以下格式：
+日志消息采用以下格式：
 
 ```js
 Format: [<timestamp>] [<level>] [<tag>] [<message>] 
 Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.startupTime: 0
 ```
 
-* **timestamp：**&#x200B;这是当前的 CPU 时间（GMT 时区）
-* **level：**&#x200B;共定义了 4 种消息级别：
-   * INFO - 通常是来自应用程序的输入数据（验证播放器名称、视频 ID 等）
-   * DEBUG - 调试日志，由开发人员用来调试较为复杂的问题
-   * WARN - 指示潜在的集成/配置错误或心率 SDK 错误
-   * ERROR - 指示重要的集成错误或心率 SDK 错误
-* **tag：**&#x200B;发布日志消息的子组件的名称（通常是类名称）
-* **message：**&#x200B;实际的跟踪消息
+* **时间戳：**&#x200B;这是当前 CPU 时间（GMT 时区）
+* **级别：**&#x200B;定义了 4 个消息级别：
+   * 信息 - 通常来自应用程序的输入数据（验证播放器名称、视频 ID 等）
+   * 调试 - 调试日志，开发人员使用它调试比较复杂的问题
+   * 警告 - 指示潜在的集成/配置错误或心率 SDK 错误
+   * 错误 - 指示重要的集成错误或心率 SDK 错误
+* **标记：**&#x200B;发出日志消息的子组件的名称（通常是类名称）
+* **消息：**&#x200B;实际跟踪消息
 
 您可以使用 Media SDK 库输出的日志来验证实施。一种有效的方法是在日志中搜索字符串 `#track`。这会突出显示您的应用程序发出的所有 `track*()` 调用。
 
