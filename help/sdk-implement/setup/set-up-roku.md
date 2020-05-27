@@ -2,8 +2,11 @@
 title: 设置 Roku
 description: 设置 Media SDK 应用程序，以在 Roku 中实施。
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '577'
+ht-degree: 100%
 
 ---
 
@@ -15,10 +18,10 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 * **获取心率的有效配置参数**
 在设置 Media Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
 * **在媒体播放器中提供以下功能：**
-   * _可订阅播放器事件的 API -_ Media SDK 要求您在播放器中发生事件时调用一组简单的 API。
+   * _用于订阅播放器事件的 API_ - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * _提供播放器信息的 API_ - 此信息包括媒体名称和播放头位置等详细信息。
 
-Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cloud 中针对移动设备应用程序的移动营销功能。最初，Mobile 服务无缝集成了 Adobe Analytics 和 Adobe Target 解决方案的应用程序分析和目标定位功能。
+Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针对移动设备应用程序的移动营销功能整合到一起。最初，移动服务可无缝集成 Adobe Analytics 和 Adobe Target 解决方案的应用程序分析和定位功能。
 
 请参阅 [Adobe Mobile Services 文档](https://docs.adobe.com/content/help/zh-Hans/mobile-services/using/home.html)，以了解更多信息。
 
@@ -39,7 +42,7 @@ Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cl
 
       >[!TIP]
       >
-      >此包中提供了一个 `ADBMobileConfig` JSON 文件示例。请与 Adobe 代表联系以获取有关设置。
+      >此包中提供了一个 `ADBMobileConfig` JSON 文件示例。有关设置，请与 Adobe 代表联系。
 
       例如：
 
@@ -101,7 +104,7 @@ Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cl
 
 1. 配置 Experience Cloud 访客 ID。
 
-   Experience Cloud 访客 ID 服务可以跨多个 Experience Cloud 解决方案提供一个通用的访客 ID。访客 ID 服务是视频心率和其他 Marketing Cloud 集成所必需的。
+   Experience Cloud 访客 ID 提供了一个跨 Experience Cloud 解决方案的通用访客 ID。视频心率和其他 Marketing Cloud 集成都需要使用访客 ID 服务。
 
    验证您的 `ADBMobileConfig` 配置包含 `marketingCloud` 组织 ID。
 
@@ -128,8 +131,8 @@ Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cl
    |  方法   | 描述 |
    | --- | --- |
    | `visitorMarketingCloudID` | 从访客 ID 服务中检索 Experience Cloud 访客 ID。<br/><br/>`ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | 除了 Experience Cloud 访客 ID 之外，您还可以设置其他与每个访客关联的客户 ID。访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。此方法对应于 `setCustomerIDs`。For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | 用于在 SDK 上设置 Roku ID for Advertising (RIDA)。例如：<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>使用Roku SDK getRIDA()API获取Roku ID for Advertising( [RIDA)](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) 。 |
+   | `visitorSyncIdentifiers` | 使用 Experience Cloud 访客 ID，您可以设置其他可与每个访客关联的客户 ID。访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。此方法对应于 `setCustomerIDs`。例如：<br/><br/>`identifiers={}`<br/>`identifiers["idType"]="idValue"`<br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `setAdvertisingIdentifier` | 用于在 SDK 上设置 Roku ID for Advertising (RIDA)。例如：<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>使用 Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API 获取 Roku ID for Advertising (RIDA)。 |
 
    <!--
     Roku Api Reference: 
