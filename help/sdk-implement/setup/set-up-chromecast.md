@@ -2,8 +2,11 @@
 title: 设置 Chromecast
 description: 设置 Media SDK 应用程序，以在 Chromecast 中实施。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+workflow-type: ht
+source-wordcount: '630'
+ht-degree: 100%
 
 ---
 
@@ -15,18 +18,18 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 _我应该使用 Chromecast JavaScript SDK 还是标准 JavaScript SDK？_
 
 正确答案是“Chromecast”，原因如下：
-* 标准 JS SDK 中的 AppMeasurement 和 VisitorAPI 库未经过认证，无法在 OTT 平台上运行。在 Chromecast JS SDK 中，视频心率库 (VHL)、Analytics 和 VisitorAPI 都内置于单个、统一且经过 Chromecast 认证的 SDK 中。
-* Chromecast SDK 比标准 JS SDK 要简便得多。对于 OTT 平台所使用的较低端硬件来说，这一点非常关键。
+* Standard JS SDK 中的 AppMeasurement 和 VisitorAPI 库未经认证可在 OTT 平台上工作。在 Chromecast JS SDK 中，视频心率库 (VHL)、Analytics 和 VisitorAPI 都内置于一个经过 Chromecast 认证的统一 SDK 中。
+* Chromecast SDK 比 Standard JS SDK 更加轻巧。这对于 OTT 平台使用的低端硬件来说非常重要。
 
 ## 先决条件
 
 * **获取心率的有效配置参数**
 在设置 Media Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
 * **在媒体播放器中提供以下功能：**
-   * *可订阅播放器事件的 API -* Media SDK 要求您在播放器中发生事件时调用一组简单的 API。
+   * *用于订阅播放器事件的 API* - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
 
-Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cloud 中针对移动设备应用程序的移动营销功能。最初，Mobile 服务无缝集成了 Adobe Analytics 和 Adobe Target 解决方案的应用程序分析和目标定位功能。请参阅 [Adobe Mobile Services 文档](https://docs.adobe.com/content/help/zh-Hans/mobile-services/using/home.html)，以了解更多信息。
+Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针对移动设备应用程序的移动营销功能整合到一起。最初，移动服务可无缝集成 Adobe Analytics 和 Adobe Target 解决方案的应用程序分析和定位功能。请参阅 [Adobe Mobile Services 文档](https://docs.adobe.com/content/help/zh-Hans/mobile-services/using/home.html)，以了解更多信息。
 
 适用于 Experience Cloud 解决方案的 Chromecast SDK 2.x 让您能够测量使用 JavaScript 编写的 Chromecast 应用程序，通过受众管理收集并利用受众数据，以及通过视频心率测量视频参与。
 
@@ -104,7 +107,7 @@ Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cl
 
 1. 配置 Experience Cloud 访客 ID。
 
-   Experience Cloud 访客 ID 服务可以跨多个 Experience Cloud 解决方案提供一个通用的访客 ID。访客 ID 服务是视频心率和其他 Marketing Cloud 集成所必需的。
+   Experience Cloud 访客 ID 提供了一个跨 Experience Cloud 解决方案的通用访客 ID。视频心率和其他 Marketing Cloud 集成都需要使用访客 ID 服务。
 
    验证您的 `ADBMobileConfig` 配置包含 `marketingCloud` 组织 ID。
 
@@ -131,7 +134,7 @@ Adobe Mobile Services 提供了新的用户界面，以整合 Adobe Marketing Cl
    | 方法 | 描述 |
    | --- | --- |
    | `getMarketingCloudID()` | 从访客 ID 服务中检索 Experience Cloud 访客 ID。<br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
-   | `syncIdentifiers()` | 除了 Experience Cloud 访客 ID 之外，您还可以设置其他与每个访客关联的客户 ID。访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。此方法对应于 JavaScript 库中的 `setCustomerIDs()`。For example: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+   | `syncIdentifiers()` | 使用 Experience Cloud 访客 ID，您可以设置其他可与每个访客关联的客户 ID。访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。此方法对应于 JavaScript 库中的 `setCustomerIDs()`。例如：<br/><br/>`var identifiers = {};`<br/><br/>`identifiers["idType"] = "idValue";`<br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
 
