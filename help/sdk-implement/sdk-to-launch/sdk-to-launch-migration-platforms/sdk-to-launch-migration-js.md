@@ -2,10 +2,10 @@
 title: 从独立 Media SDK 迁移到 Adobe Launch - Web (JS)
 description: 帮助从 Media SDK 迁移到 Launch 的说明和代码示例。
 translation-type: tm+mt
-source-git-commit: 0f9a985d04969eeca837a2655c666259ce30aee4
+source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 100%
+source-wordcount: '409'
+ht-degree: 98%
 
 ---
 
@@ -113,7 +113,8 @@ Launch 提供了两种创建跟踪基础结构的方法。这两种方法都使�
 
 ### Media SDK
 
-* [设置 JS](/help/sdk-implement/setup/set-up-js.md)
+* [设置JavaScript 2.x](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md)
+* [设置JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
