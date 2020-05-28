@@ -2,9 +2,9 @@
 title: 实施和报告
 description: 本主题介绍如何实现播放器状态跟踪功能，包括。
 translation-type: tm+mt
-source-git-commit: b0bfe74d1f6083e700dbf98f504a17518bd19ecb
+source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Media SDK包括两种用于自定义状态跟踪的新方法：
 `trackStateClose("state_name")`
 
 
-Media Collection API包括两个新事件，它们将“media.stateName”作为必需参数：
+Media Collection API包括两个新事件，它 `media.stateName` 们作为所需参数：
 
 `stateStart` 和 `stateEnd`
 
@@ -84,14 +84,19 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 为每个状态提供的量度将作为上下文数据参数计算并推送到Adobe Analytics，并存储为报告目的。 每个状态有三个可用的指标：
 
-* `a.media.states.(media.state.name).set = true` —如果每个流的特定播放至少设置一次状态，则设置为true。
-* `a.media.states.(media.state.name).count = 4` —标识在每次播放流时的状态出现次数
-* `a.media.states.(media.state.name).time = 240` —以秒为单位标识流的每个单独播放的总状态持续时间
+* `a.media.states.[state.name].set = true` —如果每个流的特定播放至少设置一次状态，则设置为true。
+* `a.media.states.[state.name].count = 4` —标识在每次播放流时的状态出现次数
+* `a.media.states.[state.name].time = 240` —以秒为单位标识流的每个单独播放的总状态持续时间
 
 ## 报表
 
-所有状态度量可用于任何报告可视化或组件（区段、计算度量）。
-TBD —— 检查源/wiki以了解更新信息——从AW拍摄屏幕
+在启用报表包进行播放器状态跟踪后，所有播放器状态度量都可用于分析工作区或组件（区段、计算度量）中的任何报告可视化。 可以使用“媒体报告设置”(“编辑设置”>“媒体管理”>“媒体报告”)从Admin Console为每个报告启用新指标。
+
+![](assets/report-setup.png)
+
+在Analytics Workspace中，所有新属性都位于“度量”面板中。 例如，您可以通过搜索 `full screen` 在“度量”面板中视图全屏数据。
+
+![](assets/full-screen-report.png)
 
 ## 将播放器声明的指标导入Adobe Experience Platform
 
