@@ -1,14 +1,17 @@
 ---
-title: 在 JavaScript 中跟踪章节和区段
+title: 使用JavaScript 2.x跟踪章节和细分
 description: 本主题介绍如何在浏览器应用程序 (JS) 中使用 Media SDK 实施章节和区段跟踪。
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: b14b56aea4a1821a2a160b9cd301cd181f1ba8dd
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 92%
 
 ---
 
 
-# 在 JavaScript 中跟踪章节和区段{#track-chapters-and-segments-on-javascript}
+# 使用JavaScript 2.x跟踪章节和细分{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -42,38 +45,37 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. 如果为章节添加了自定义元数据，请为该元数据创建上下文数据变量：
 
    ```js
-   var chapterCustomMetadata = { 
+   var chapterCustomMetadata = {
        segmentType: "Sample segment type",  
        segmentName: "Sample segment name",  
-       segmentInfo: "Sample segment info" 
+       segmentInfo: "Sample segment info"
    };
    ```
 
 1. 要开始跟踪章节播放，请在 `ChapterStart` 实例中调用 `MediaHeartbeat` 事件：
 
    ```js
-   _onChapterStart = function() { 
+   _onChapterStart = function() {
        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
                                        chapterObject,  
-                                       chapterCustomMetadata); 
+                                       chapterCustomMetadata);
    };
    ```
 
 1. 当播放到达您通过自定义代码定义的章节结尾边界时，在 `ChapterComplete` 实例中调用 `MediaHeartbeat` 事件：
 
    ```js
-   _onChapterComplete = function() { 
-      this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
+   _onChapterComplete = function() {
+      this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete);
    };
    ```
 
 1. 如果由于用户选择跳过章节（例如，用户搜寻章节边界之外的内容）而使章节播放未能完成，请在 MediaHeartbeat 实例中调用 `ChapterSkip` 事件：
 
    ```js
-   _onChapterSkip = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
+   _onChapterSkip = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
    };
    ```
 
 1. 如果存在任何其他章节，请重复执行步骤 1 至 5。
-
