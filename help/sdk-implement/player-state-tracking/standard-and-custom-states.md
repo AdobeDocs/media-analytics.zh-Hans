@@ -2,9 +2,9 @@
 title: 关于标准和自定义状态
 description: 本主题描述播放器状态跟踪功能，包括实施和报告标准和自定义播放器状态的要求和准则。
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '280'
 ht-degree: 1%
 
 ---
@@ -30,14 +30,15 @@ ht-degree: 1%
 
 ## 准则
 
-* 一个视频会话仅限于10个唯一的自定义播放器状态。
-* 如果多个播放器状态通过，则仅保留前10个并将其转发到下游的VA（？视频分析）处理组件。
+* 一个视频会话仅限10个播放器状态。
+* 允许任意状态组合。
+* 如果多个播放器状态通过，则仅保留前10并在下游转发到VA处理组件。
 * 无论是否关闭，所有状态都应用最多10个状态。
-* 同一状态可以启动和结束任意次数，并计为单个状态。
-* 超出允许的最大自定义数的每个状态？ 状态(10)被丢弃。
+* 一个状态可以多次开始和结束，它被计为单个状态。 例如，可 `closedCapationing` 以启动和停止五次，但它将计为单个状态。
+* 超过10个允许状态的最大值的每个状态都将被丢弃。
 
 ## 自定义状态
 
 利用创建自定义状态的功能，您可以在播放会话期间捕获自定义操作和更新自定义元数据。
 
-需要有关自定义状态的更多信息
+有关创建自定义状态的信息，请参 [阅《Media API参考指南》: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
