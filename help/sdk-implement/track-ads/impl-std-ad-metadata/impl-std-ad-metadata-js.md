@@ -1,14 +1,17 @@
 ---
-title: 在 JavaScript 中实施标准广告元数据
-description: 如何在浏览器 (JS) 应用程序的广告跟踪中使用标准广告元数据。
+title: 使用JavaScript 2.x实现标准广告元数据
+description: 如何在浏览器中使用JavaScript 2.x应用程序在广告跟踪中使用标准广告元数据。
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 30ed54924c75a9c33e6122b2d7ddbb84c06b8c0c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 55%
 
 ---
 
 
-# 在 JavaScript 中实施标准广告元数据{#implement-standard-ad-metadata-on-javascript}
+# 使用JavaScript 2.x实现标准广告元数据{#implement-standard-ad-metadata-on-javascript}
 
 ## 广告常量
 
@@ -25,12 +28,11 @@ var adObject =
 MediaHeartbeat.createAdObject(<AD_NAME>,  
                               <AD_ID>,  
                               <POSITION>,  
-                              <LENGTH>); 
-   
-// Set standard Ad Metadata 
-var standardAdMetadata = {}; 
-standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = "Sample Advertiser"; 
-standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign"; 
+                              <LENGTH>);
+
+// Set standard Ad Metadata
+var standardAdMetadata = {};
+standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = "Sample Advertiser";
+standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign";
 adObject.setValue(MediaObjectKey.StandardAdMetadata, standardAdMetadata);
 ```
-
