@@ -2,9 +2,9 @@
 title: 实施和报告
 description: 本主题介绍如何实现播放器状态跟踪功能，包括。
 translation-type: tm+mt
-source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
+source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -100,4 +100,4 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## 将播放器声明的指标导入Adobe Experience Platform
 
-存储在Analytics中的数据可用于任何目的，并且播放器状态指标可以使用XDM导入Adobe Experience Platform，并与客户旅程分析一起使用。 标准状态属性具有特定属性，而自定义状态是属性可通过自定义事件使用。 有关其他信息，请参阅XDM标识的属性列表，网址为？LINK TO METRIC列表?。
+存储在Analytics中的数据可用于任何目的，并且播放器状态指标可以使用XDM导入Adobe Experience Platform，并与客户旅程分析一起使用。 标准状态属性具有特定属性，而自定义状态是属性可通过自定义事件使用。
