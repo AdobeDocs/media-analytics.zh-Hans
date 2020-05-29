@@ -3,10 +3,10 @@ title: 播放器状态参数
 description: 本主题描述播放器状态跟踪参数。
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: c23a8787a8f59746665702eb5e2e74dde2c213e8
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 27%
+source-wordcount: '2236'
+ht-degree: 26%
 
 ---
 
@@ -155,7 +155,27 @@ ht-degree: 27%
 | --- | --- | --- |
 | <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述显示“聚焦”的时间长度。 This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **重要**<br/> ：如果设置此事件，则时间等于视频处于“聚焦”状态的时间。 如果未设置此事件，则不发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.time)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **焦点中的报&#x200B;**<br/>告名称总持续时间</li> <li> **Context Data **<br/>(media.states.infocus.time)<br/> </li> <li> **Data Feed **<br/>media.states.infocus.time</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.media.states.infocus.time)</li> </ul> |
 
+## XDM标识的属性列表
 
+Analytics中存储的数据可用于任何目的，并且播放器状态指标可以使用XDM导入Adobe Experience Platform，并与客户旅程分析结合使用。
+
+| 播放器状态属性 | 映射 |
+|---------------------------------------|------------------------------------|
+| a.media.states.fullScreen.set | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateSet |
+| a.media.states.fullScreen.count | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateCount |
+| a.media.states.fullScreen.time | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateTime |
+| a.media.states.mute.set | media.mediaTimed.primaryAssetViewDetails.mute.playerStateSet |
+| a.media.states.mute.count | media.mediaTimed.primaryAssetViewDetails.mute.playerStateCount |
+| a.media.states.mute.time | media.mediaTimed.primaryAssetViewDetails.mute.playerStateTime |
+| a.media.states.closeCaption.set | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateSet |
+| a.media.states.closeCaption.count | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateCount |
+| a.media.states.closeCaption.time | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateTime |
+| a.media.states.pictureInPicture.set | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateSet |
+| a.media.states.pictureInPicture.count | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateCount |
+| a.media.states.pictureInPicture.time | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateTime |
+| a.media.states.inFocus.set | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateSet |
+| a.media.states.inFocus.count | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateCount |
+| a.media.states.inFocus.time | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateTime |
 
 ## 相关 API {#related_apis_section}
 
