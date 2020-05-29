@@ -2,7 +2,7 @@
 title: 设置JavaScript 3.x
 description: Media SDK应用程序设置，以在JavaScript 3.x上实现。
 translation-type: tm+mt
-source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
+source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 47%
@@ -50,11 +50,11 @@ ht-degree: 47%
 
    Media SDK配置需要一个已配置 `AppMeasurement` 的实 `visitor` 例。
 
-```js
-var appMeasurement = new AppMeasurement(“<rsid>”);
-appMeasurement.visitor = visitor;
-appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
-```
+   ```js
+    var appMeasurement = new AppMeasurement(“<rsid>”);
+    appMeasurement.visitor = visitor;
+    appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+   ```
 
 1. 配置媒体SDK
 
@@ -63,7 +63,6 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
    >[!IMPORTANT]
    >
    > Media SDK(3.x)使用Media Collection API跟踪媒体，该API与2.x SDK中使用的HB端点不同。 请与Adobe代表联系以获取更多信息。
-
 
    以下是 `MediaConfig` 初始化示例：
 
@@ -78,7 +77,8 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
     mediaConfig.ssl = true;
    
     ADB.Media.configure(mediaConfig, appMeasurement);
-   
+   ```
+
 1. 创建 `MediaTracker` 实例。
 
    配置Media SDK后，可以使用API创建用于跟踪媒体内容的跟踪器 `getInstance` 实例。
