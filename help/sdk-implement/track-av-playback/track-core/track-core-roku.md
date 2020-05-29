@@ -2,8 +2,11 @@
 title: 在 Roku 中跟踪核心播放
 description: 本主题介绍如何在 Roku 中使用 Media SDK 实施核心跟踪。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+workflow-type: tm+mt
+source-wordcount: '1022'
+ht-degree: 100%
 
 ---
 
@@ -72,10 +75,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    ```
    mediaInfo = adb_media_init_mediainfo(
-    "<MEDIA_NAME>", 
-    "<MEDIA_ID>", 
-    600, 
-    ADBMobile().MEDIA_STREAM_TYPE_AOD, 
+    "<MEDIA_NAME>",
+    "<MEDIA_ID>",
+    600,
+    ADBMobile().MEDIA_STREAM_TYPE_AOD,
     ADBMobile().MEDIA_TYPE_AUDIO
    )
    ```
@@ -97,7 +100,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    * **标准元数据**
 
-      [在 JavaScript 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+      [在 JavaScript 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
@@ -111,11 +114,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       为自定义变量创建变量对象，然后使用此媒体的数据进行填充。例如：
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
@@ -254,9 +257,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    识别视频播放器将会暂停的任何方案，并确保正确调用了 `trackPause`。以下方案均要求应用程序调用 `trackPause()`：
 
    * 用户在应用程序中明确点击暂停。
-   * 播放器自行进入暂停状态。
-   * （*移动设备应用程序*）- 用户将应用程序置于后台，但您希望应用程序保持会话打开。
-   * （*移动设备应用程序*）- 出现导致应用程序被置于后台的任何类型的系统中断。例如，用户接收到一个调用，或者出现来自其他应用程序的弹出窗口，但您希望应用程序将会话保持活动状态，以便用户有机会从中断点继续观看视频。
+   * 播放器将其置于“暂停”状态。
+   * （*移动应用程序*）- 用户将应用程序放入后台，但您希望应用程序保持会话打开。
+   * （*移动应用程序*）- 发生导致应用程序被置于后台运行的任何类型的系统中断。例如，用户接收到一个调用，或者出现来自其他应用程序的弹出窗口，但您希望应用程序将会话保持活动状态，以便用户有机会从中断点继续观看视频。
 
 1. 识别播放器中的视频播放事件和/或视频在暂停后继续播放的事件并调用 `trackPlay`：
 
@@ -269,4 +272,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * 跟踪方案：[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Roku SDK 随附有示例播放器，用于提供完整的跟踪示例。
-
