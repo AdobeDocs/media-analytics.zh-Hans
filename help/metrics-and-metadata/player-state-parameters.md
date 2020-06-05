@@ -1,19 +1,19 @@
 ---
 title: 播放器状态参数
-description: 本主题描述播放器状态跟踪参数。
+description: 本主题将介绍播放器状态跟踪参数。
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
+source-git-commit: 73c579ec013d15ab47faa936cca1297f7052a8fb
 workflow-type: tm+mt
 source-wordcount: '2236'
-ht-degree: 26%
+ht-degree: 73%
 
 ---
 
 
 # 播放器状态参数{#player-state-parameters}
 
-本主题提供一列表播放器状态数据，Adobe通过解决方案变量收集这些数据。
+本主题将介绍 Adobe 通过解决方案变量收集的播放器状态数据列表。
 
 表格数据描述：
 
@@ -44,17 +44,17 @@ ht-degree: 26%
 
 ### 全屏属性
 
-#### 受全屏影响的流
+#### 受全屏影响的流数量
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述受全屏影响的流数。 This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **重要**<br/> ：如果设置此事件，则唯一可能的值为TRUE。 如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.fullscreen.set)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **受全屏影&#x200B;**<br/>响的报表名称流</li> <li> **Context Data **<br/>(a.media.states.fullscreen.set)<br/> </li> <li> **Data Feed **<br/>media.states.fullscreen</li> <li> **受众管&#x200B;**<br/>理器(c_contextdata.a.media.states.fullscreen.set)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描述&#x200B;**<br/>受全屏影响的流数量。只有在播放会话期间出现至少一次全屏状态时，此量度才设置为 1。<br/> **重要信息**<br/> 如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.fullscreen.set<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>受全屏影响的流数量</li> <li> **Context Data **<br/>a.media.states.fullscreen.set<br/> </li> <li> **数据源&#x200B;**<br/>videostatefullscreen</li> <li> **受众管理&#x200B;**<br/>器c_contextdata.a.media.states.fullscreen.set</li> </ul> |
 
 #### 全屏计数
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **说&#x200B;**<br/>明全屏显示的次数。 This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **重要&#x200B;**<br/>：如果设置了此事件，则计数等于视频处于“全屏”状态的次数。 如果不设置此事件，则不会发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.fullscreen.count)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **报告名称&#x200B;**<br/>“全屏计数”</li> <li> **Context Data **<br/>(media.states.fullscreen.count)<br/> </li> <li> **Data Feed **<br/>media.states.fullscreen.count</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.media.states.fullscreen.count)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描述&#x200B;**<br/>显示全屏的次数。只有在播放会话期间出现至少一次全屏状态时，此量度才设置为 1。<br/> **重要&#x200B;**<br/>：如果设置了此事件，则计数等于视频处于“全屏”状态的次数。 如果不设置此事件，则不会发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.fullscreen.count<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>全屏计数</li> <li> **Context Data **<br/>a.media.states.fullscreen.count<br/> </li> <li> **数据源&#x200B;**<br/>videostatefullscreencount</li> <li> **受众管理器&#x200B;**<br/>c_contextdata.media.states.fullscreen.count</li> </ul> |
 
 
 
@@ -62,98 +62,98 @@ ht-degree: 26%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述全屏显示的时长。 This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **重要&#x200B;**<br/>：如果设置此事件，则时间等于视频处于“全屏”状态的时间。 如果不设置此事件，则不会发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.fullscreen.time)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **报告名称&#x200B;**<br/>“全屏”总持续时间</li> <li> **Context Data **<br/>(media.states.fullscreen.time)<br/> </li> <li> **Data Feed **<br/>media.states.fullscreen.time</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.media.states.fullscreen.time)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描述&#x200B;**<br/>显示全屏的时长。只有在播放会话期间出现至少一次全屏状态时，此量度才设置为 1。<br/> **重要&#x200B;**<br/>：如果设置此事件，则时间等于视频处于“全屏”状态的时间。 如果不设置此事件，则不会发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.fullscreen.time<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报告名称&#x200B;**<br/>“全屏”总持续时间</li> <li> **Context Data **<br/>a.media.states.fullscreen.time<br/> </li> <li> **数据源&#x200B;**<br/>videostatefullscreentime</li> <li> **受众管理器&#x200B;**<br/>c_contextdata.media.states.fullscreen.time</li> </ul> |
 
 
-### 关闭题注属性
+### 隐藏式字幕属性
 
-#### 受隐藏字幕影响的流
-
-|   实施   | 网络参数 | 报表 |
-| --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述受隐藏字幕影响的流数。 This metric is set to 1 only if at least one Closed Caption State occurred during a playback session.<br/> **重要**<br/> ：如果设置此事件，则唯一可能的值为TRUE。 如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.closedcaptioning.set)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **隐藏字幕&#x200B;**<br/>影响的报表名称流</li> <li> **Context Data **<br/>(a.media.states.closedcaptioning.set)<br/> </li> <li> **Data Feed **<br/>media.states.closed字幕</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.a.media.states.closedcaptioning.set)</li> </ul> |
-
-
-#### 隐藏字幕计数
+#### 受隐藏式字幕影响的流数量
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **说&#x200B;**<br/>明隐藏字幕的显示次数。 This metric is set to 1 only if at least one Closed Captioning State occurred during a playback session.<br/> **重要&#x200B;**<br/>：如果设置了此事件，则计数等于视频处于“关闭字幕”状态的次数。 如果不设置此事件，则不会发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(C19)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **报表名称&#x200B;**<br/>关闭的字幕计数</li> <li> **Context Data **<br/>(media.states.closedcaptioning.count)<br/> </li> <li> **Data Feed **<br/>media.states.closedcaptioning.count</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.media.states.closedcaptioning.count)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描述&#x200B;**<br/>受隐藏式字幕影响的流数量。只有在播放会话期间出现至少一次隐藏式字幕状态时，此量度才设置为 1。<br/> **重要信息**<br/> 如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.closedcaptioning.set<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>受隐藏式字幕影响的流数量</li> <li> **Context Data **<br/>a.media.states.closedcaptioning.set<br/> </li> <li> **数据源&#x200B;**<br/>videostateclosedcaptioning</li> <li> **受众管理器&#x200B;**<br/>c_contextdata.a.media.states.closedcaptioning.set</li> </ul> |
 
 
-#### 隐藏字幕总时长
+#### 隐藏式字幕计数
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **说&#x200B;**<br/>明显示隐藏式字幕的时长。 This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **重要&#x200B;**<br/>：如果设置此事件，则时间等于视频处于“关闭字幕”状态的时间。 如果未设置此事件，则不发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.closedcaptioning.time)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **报表名称&#x200B;**<br/>关闭的字幕总持续时间</li> <li> **Context Data **<br/>(media.states.closedcaptioning.time)<br/> </li> <li> **Data Feed **<br/>media.states.closedcaptioning.time</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.media.states.closedcaptioning.time)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **说&#x200B;**<br/>明隐藏字幕的显示次数。 只有在播放会话期间出现至少一次隐藏式字幕状态时，此量度才设置为 1。<br/> **重要&#x200B;**<br/>：如果设置了此事件，则计数等于视频处于“关闭字幕”状态的次数。 如果不设置此事件，则不会发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>C19<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>隐藏式字幕计数</li> <li> **Context Data **<br/>a.media.states.closedcaptioning.count<br/> </li> <li> **数据源&#x200B;**<br/>videostateclosedcaptioningcount</li> <li> **受众管理器&#x200B;**<br/>c_contextdata.media.states.closedcaptioning.count</li> </ul> |
+
+
+#### 隐藏式字幕总时长
+
+|   实施   | 网络参数 | 报表 |
+| --- | --- | --- |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **说&#x200B;**<br/>明显示隐藏式字幕的时长。 只有在播放会话期间出现至少一次全屏状态时，此量度才设置为 1。<br/> **重要&#x200B;**<br/>：如果设置此事件，则时间等于视频处于“关闭字幕”状态的时间。 如果未设置此事件，则不发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.closedcaptioning.time<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>关闭的字幕总持续时间</li> <li> **Context Data **<br/>a.media.states.closedcaptioning.time<br/> </li> <li> **数据源&#x200B;**<br/>videostateclosedcaptioningtime</li> <li> **受众管理器&#x200B;**<br/>c_contextdata.media.states.closedcaptioning.time</li> </ul> |
 
 
 ### 静音属性
 
-#### 受静音影响的流
+#### 受静音影响的流数量
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述静音影响的流数。 This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **重要**<br/> ：如果设置此事件，则唯一可能的值为TRUE。 如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.mute.set)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **静音影响&#x200B;**<br/>的报表名称流</li> <li> **上下文数据&#x200B;**<br/>(a.media.states.mute.set)<br/> </li> <li> **Data Feed **<br/>media.states.mute</li> <li> **受众管&#x200B;**<br/>理器(c_contextdata.a.media.states.mute.set)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描述&#x200B;**<br/>受静音影响的流数量。只有在播放会话期间出现至少一次静音状态时，此量度才设置为 1。<br/> **重要信息**<br/> 如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.mute.set<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>受静音影响的流数量</li> <li> **Context Data **<br/>a.media.states.mute.set<br/> </li> <li> **数据源&#x200B;**<br/>videostatemute</li> <li> **受众管理&#x200B;**<br/>器c_contextdata.a.media.states.mute.set</li> </ul> |
 
 #### 静音计数
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述静音显示的次数。 This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **重要&#x200B;**<br/>：如果设置了此事件，则计数等于视频处于静音状态的次数。 如果不设置此事件，则不会发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.mute.count)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **报表名称&#x200B;**<br/>静音计数</li> <li> **上下文数&#x200B;**<br/>据(media.states.mute.count)<br/> </li> <li> **数据源&#x200B;**<br/>media.states.mute.count</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.media.states.mute.count)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述静音显示的次数。 只有在播放会话期间出现至少一次静音状态时，此量度才设置为 1。<br/> **重要&#x200B;**<br/>：如果设置了此事件，则计数等于视频处于静音状态的次数。 如果不设置此事件，则不会发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.mute.count<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>静音计数</li> <li> **Context Data **<br/>a.media.states.mute.count<br/> </li> <li> **数据源&#x200B;**<br/>videostatemutecount</li> <li> **受众管理&#x200B;**<br/>器c_contextdata.media.states.mute.count</li> </ul> |
 
 #### 静音总时长
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **说&#x200B;**<br/>明显示静音的时长。 This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **重要&#x200B;**<br/>：如果设置此事件，则时间等于视频处于静音状态的时间。 如果未设置此事件，则不发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.mute.time)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **报告名称&#x200B;**<br/>静音总持续时间</li> <li> **上下文数据&#x200B;**<br/>(media.states.mute.time)<br/> </li> <li> **Data Feed **<br/>media.states.mute.time</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.media.states.mute.time)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **说&#x200B;**<br/>明显示静音的时长。 只有在播放会话期间出现至少一次静音状态时，此量度才设置为 1。<br/> **重要&#x200B;**<br/>：如果设置此事件，则时间等于视频处于静音状态的时间。 如果未设置此事件，则不发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.mute.time<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报告名称&#x200B;**<br/>静音总持续时间</li> <li> **Context Data **<br/>a.media.states.mute.time<br/> </li> <li> **数据源&#x200B;**<br/>videostatemutetime</li> <li> **受众管理&#x200B;**<br/>器c_contextdata.media.states.mute.time</li> </ul> |
 
 
 ### 画中画属性
 
 
-#### 受画中画影响的流
+#### 受画中画影响的流数量
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述受画中画影响的流数。 This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **重要**<br/> ：如果设置此事件，则唯一可能的值为TRUE。 如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.pictureinpicture.set)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **受画中画&#x200B;**<br/>影响的报表名称流</li> <li> **Context Data **<br/>(a.media.states.pictureinpicture.set)<br/> </li> <li> **Data Feed **<br/>media.states.pictureinpicture</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.a.media.states.pictureinpicture.set)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描述&#x200B;**<br/>受画中画影响的流数量。只有在播放会话期间出现至少一次画中画状态时，此量度才设置为 1。<br/> **重要信息**<br/> 如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.pictureinpicture.set<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>受画中画影响的流数量</li> <li> **Context Data **<br/>a.media.states.pictureinpicture.set<br/> </li> <li> **数据源&#x200B;**<br/>videostatepictureinpicture</li> <li> **受众管理&#x200B;**<br/>器c_contextdata.a.media.states.pictureinpicture.set</li> </ul> |
 
 
 #### 画中画计数
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述显示画中画的次数。 This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **重要**<br/> ：如果设置此事件，则计数等于视频处于“画中画”状态的次数。 如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.pictureinpicture.count)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **报表名称&#x200B;**<br/>“图片计数”</li> <li> **Context Data **<br/>(media.states.pictureinpicture.count)<br/> </li> <li> **Data Feed **<br/>media.states.pictureinpicture.count</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.media.states.pictureinpicture.count)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描述&#x200B;**<br/>显示画中画的次数。只有在播放会话期间出现至少一次画中画状态时，此量度才设置为 1。<br/> **重要**<br/> ：如果设置此事件，则计数等于视频处于“画中画”状态的次数。 如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.pictureinpicture.count<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>画中画计数</li> <li> **Context Data **<br/>a.media.states.pictureinpicture.count<br/> </li> <li> **数据源&#x200B;**<br/>videostatepictureinpicturecount</li> <li> **受众管理器&#x200B;**<br/>c_contextdata.media.states.pictureinpicture.count</li> </ul> |
 
 
-#### 画中画总持续时间
-
-|   实施   | 网络参数 | 报表 |
-| --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述显示“画中画”的时间长度。 This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **重要**<br/> ：如果设置此事件，则时间等于视频处于“画中画”状态的时间。 如果未设置此事件，则不发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.pictureinpicture.time)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **报表名称&#x200B;**<br/>“画中画”总持续时间</li> <li> **Context Data **<br/>(media.states.pictureinpicture.time)<br/> </li> <li> **Data Feed **<br/>media.states.pictureinpicture.time</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.media.states.pictureinpicture.time)</li> </ul> |
-
-
-### 焦点属性
-
-#### 受聚焦影响的流
+#### 画中画总时长
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述受焦点影响的流数。 This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **重要**<br/> ：如果设置此事件，则唯一可能的值为TRUE。 如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.infocus.set)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **受焦点影响&#x200B;**<br/>的报表名称流</li> <li> **Context Data **<br/>(a.media.states.infocus.set)<br/> </li> <li> **Data Feed **<br/>media.states.infocus</li> <li> **受众管&#x200B;**<br/>理器(c_contextdata.a.media.states.infocus.set)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描述&#x200B;**<br/>显示画中画的时长。只有在播放会话期间出现至少一次画中画状态时，此量度才设置为 1。<br/> **重要**<br/> ：如果设置此事件，则时间等于视频处于“画中画”状态的时间。 如果未设置此事件，则不发送任何值。   </li> </ul> | <ul> <li> **Adobe **<br/>Analyticsa.media.states.pictureinpicture.time<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>“画中画”总持续时间</li> <li> **Context Data **<br/>a.media.states.pictureinpicture.time<br/> </li> <li> **数据源&#x200B;**<br/>videostatepictureinpicturetime</li> <li> **受众管理器&#x200B;**<br/>c_contextdata.media.states.pictureinpicture.time</li> </ul> |
+
+
+### 聚焦属性
+
+#### 受聚焦影响的流数量
+
+|   实施   | 网络参数 | 报表 |
+| --- | --- | --- |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描述&#x200B;**<br/>受聚焦影响的流数量。只有在播放会话期间出现至少一次聚焦状态时，此量度才设置为 1。<br/> **重要信息**<br/> 如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.infocus.set<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>受聚焦影响的流数量</li> <li> **Context Data **<br/>a.media.states.infocus.set<br/> </li> <li> **数据源&#x200B;**<br/>videostateinfocus</li> <li> **受众管理&#x200B;**<br/>器c_contextdata.a.media.states.infocus.set</li> </ul> |
 
 
 #### 聚焦计数
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述焦点显示的次数。 This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **重要&#x200B;**<br/>：如果设置此事件，则计数等于视频处于“焦点”状态的次数。 如果不设置此事件，则不会发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.count)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **焦点计数中&#x200B;**<br/>的报表名称</li> <li> **Context Data **<br/>(media.states.infocus.count)<br/> </li> <li> **Data Feed **<br/>media.states.infocus.count</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.media.states.infocus.count)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描述&#x200B;**<br/>显示聚焦的次数。只有在播放会话期间出现至少一次聚焦状态时，此量度才设置为 1。<br/> **重要&#x200B;**<br/>：如果设置此事件，则计数等于视频处于“焦点”状态的次数。 如果不设置此事件，则不会发送任何值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.infocus.count<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **报表名称&#x200B;**<br/>聚焦计数</li> <li> **Context Data **<br/>a.media.states.infocus.count<br/> </li> <li> **数据源&#x200B;**<br/>videostateinfocuscount</li> <li> **受众管理器&#x200B;**<br/>c_contextdata.media.states.infocus.count</li> </ul> |
 
 
 #### 聚焦总时长
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK密钥&#x200B;**<br/>自动设置</li> <li> **API密钥&#x200B;**<br/>N/A</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>编号</li> <li> **通过媒体关闭&#x200B;**<br/>发送</li> <li> **最低 SDK Version **<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描&#x200B;**<br/>述显示“聚焦”的时间长度。 This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **重要**<br/> ：如果设置此事件，则时间等于视频处于“聚焦”状态的时间。 如果未设置此事件，则不发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.time)<br/></li> <li> **心跳&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **可用&#x200B;**<br/>：是</li> <li> **保留变量&#x200B;**<br/>事件</li> <li> **焦点中的报&#x200B;**<br/>告名称总持续时间</li> <li> **Context Data **<br/>(media.states.infocus.time)<br/> </li> <li> **Data Feed **<br/>media.states.infocus.time</li> <li> **受众管理&#x200B;**<br/>器(c_contextdata.media.states.infocus.time)</li> </ul> |
+| <ul> <li> **SDK 密钥&#x200B;**<br/>自动设置</li> <li> **API 密钥&#x200B;**<br/>不适用</li> <li> **必需&#x200B;**<br/>否</li> <li> **类型&#x200B;**<br/>数值</li> <li> **发送条件&#x200B;**<br/>媒体关闭</li> <li> **最低 SDK 版本&#x200B;**<br/>3.0</li> <li> **示例值&#x200B;**<br/>TRUE</li><li> **描述&#x200B;**<br/>显示聚焦的时长。只有在播放会话期间出现至少一次聚焦状态时，此量度才设置为 1。<br/> **重要**<br/> ：如果设置此事件，则时间等于视频处于“聚焦”状态的时间。 如果未设置此事件，则不发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.infocus.time<br/></li> <li> **心率&#x200B;**<br/>不适用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **保留的变量&#x200B;**<br/>event</li> <li> **焦点中的报&#x200B;**<br/>告名称总持续时间</li> <li> **Context Data **<br/>a.media.states.infocus.time<br/> </li> <li> **数据源&#x200B;**<br/>videostateinfocustime</li> <li> **受众管理器&#x200B;**<br/>c_contextdata.media.states.infocus.time</li> </ul> |
 
 ## XDM标识的属性列表
 
