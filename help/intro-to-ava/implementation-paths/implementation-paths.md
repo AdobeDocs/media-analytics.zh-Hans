@@ -2,28 +2,28 @@
 title: 实施路径
 description: null
 uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 
 # 实施路径 {#implementation-paths}
 
-对于每个实施路径，客户需要联系其销售代表／客户经理以签署新的销售订单，因为媒体分析具有唯一的SKU，并且从基于服务器调用的定价模型更改为基于视频流的模型。
+对于每个实施路径，由于 Media Analytics 具有独有的 SKU，其定价模型已由基于服务器调用的模型变为基于视频流的模型，因此客户将需要联系他们的销售代表/客户经理来签署新的销售订单。
 
-* **带有Adobe Media Analytics扩展的Adobe Launch**
+* **包含 Adobe Media Analytics 扩展的 Adobe Launch**
 
-   Adobe Launch是Adobe的新一代标签管理解决方案。 Launch提供了部署和管理所有分析、营销和广告标签的简单方法，这些标签是提升相关客户体验所必需的。 要构建和维护您与Launch的集成，您需要使用扩展。 扩展是JavaScript、HTML和CSS包，它扩展了Launch UI和客户端功能。 有关详细信息，请参 [阅《Experience Platform Launch用户指南》](https://docs.adobe.com/content/help/zh-Hans/launch/using/overview.translate.html)
+   Adobe Launch 是 Adobe 推出的下一代标记管理解决方案。Launch 为客户提供了一种简单的方式来部署和管理有助于加强相关客户体验的所有分析、营销和广告标记。要自行构建并维护与 Launch 的集成，您需要使用扩展。扩展是一种 JavaScript、HTML 和 CSS 代码包，用于扩展 Launch UI 和客户端功能。有关更多信息，请参阅 [Experience Platform Launch 用户指南](https://docs.adobe.com/content/help/zh-Hans/launch/using/overview.translate.html)。
 
-   Adobe Media Analytics(MA)扩展为音频和视频添加核心JavaScript Media SDK(Media 2.x SDK)。 此扩展提供了将 `MediaHeartbeat` 跟踪器实例添加到 Launch 网站或项目的功能。
+   Adobe Media Analytics (MA) 扩展添加了适用于音频和视频的核心 JavaScript Media SDK (Media 2.x SDK)。此扩展提供了将 `MediaHeartbeat` 跟踪器实例添加到 Launch 网站或项目的功能。
 
-   带有Media Analytics扩展的Adobe Launch需要：
-   * 您必须是Adobe Experience Cloud客户。
-   * 必须在网页上部署启动或DTM嵌入代码。
+   包含 Media Analytics 扩展的 Adobe Launch 要求您必须满足以下条件：
+   * 您必须是 Adobe Experience Cloud 客户。
+   * 您必须在网页上部署 Launch 或 DTM 嵌入代码。
    * [Analytics 扩展](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
    * [Experience Cloud ID 扩展](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
 
