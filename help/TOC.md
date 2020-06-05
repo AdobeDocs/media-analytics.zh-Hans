@@ -4,10 +4,10 @@ user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: f26816d37f30e9e4ae08dbf7af78f2135e8403f4
+source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 79%
    + 实施路径 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
       + [客户端](intro-to-ava/implementation-paths/client-side-path.md)
-      + Other Implementation Paths {#other-paths}
+      + 其他实施路径 {#other-paths}
          + 媒体模块里程碑跟踪 {#mm-milestone-tracking}
             + [里程碑概述](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [将里程碑迁移到 Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
@@ -32,7 +32,7 @@ ht-degree: 79%
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Audience Manager 启用](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
-   + [Media Analytics SDK支持终止常见问题解答](sdk-implement/end-of-support-faqs.md)
+   + [Media Analytics SDK 支持终止常见问题解答](sdk-implement/end-of-support-faqs.md)
    + [下载 SDK](sdk-implement/download-sdks.md)
    + 安装和配置 {#setup}
       + [概述](sdk-implement/setup/setup-overview.md)
@@ -43,7 +43,7 @@ ht-degree: 79%
          + [设置JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [设置 Chromecast](sdk-implement/setup/set-up-chromecast.md)
       + [设置 Roku](sdk-implement/setup/set-up-roku.md)
-   + Track Audio and Video Playback {#track-av-playback}
+   + 跟踪音频和视频播放 {#track-av-playback}
       + [概述](sdk-implement/track-av-playback/track-core-overview.md)
       + 跟踪核心音频和视频播放 {#track-core}
          + [在 Android 中跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -69,7 +69,7 @@ ht-degree: 79%
             + [在JavaScript 3.x上跟踪搜索](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [在 Chromecast 中跟踪搜寻](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [在 Roku 中跟踪搜寻](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Implement Standard Metadata {#impl-std-metadata}
+      + 实施标准元数据 {#impl-std-metadata}
          + [在 Android 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [在 iOS 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS 元数据键](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -89,7 +89,7 @@ ht-degree: 79%
          + [在JavaScript 3.x上跟踪广告](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [在 Chromecast 中跟踪广告](sdk-implement/track-ads/track-ads-chromecast.md)
       + [在 Roku 中跟踪广告](sdk-implement/track-ads/track-ads-roku.md)
-      + Implement Standard ad Metadata {#impl-std-ad-metadata}
+      + 实施标准广告元数据 {#impl-std-ad-metadata}
          + [在 Android 中实施标准广告元数据](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [在 iOS 中实施标准广告元数据](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
@@ -193,7 +193,6 @@ ht-degree: 79%
       + [时间轴 1 - 观看到内容的结尾](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [时间轴 2 - 用户放弃会话](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [时间轴 3 - 章节](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-   + [跟踪下载的内容](media-collection-api/track-downloaded-content.md)
 + 指南 {#media-analytics-cookbook}
    + [指南](media-analytics-cookbook/media-analytics-cookbook.md)
    + [媒体流归因](media-analytics-cookbook/media-dimensions.md)
@@ -215,11 +214,12 @@ ht-degree: 79%
       + [媒体并行查看者](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [获取并行查看者 JSON 报表数据](media-reports/media-default-reports/get-concurrent-json.md)
    + [媒体工作区模板](media-reports/media-workspace-templates.md)
++ [跟踪下载的内容](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + 播放器状态跟踪 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
    + [标准和自定义状态](sdk-implement/player-state-tracking/standard-and-custom-states.md)
-   + [实施和报告](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [实施与报表](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [播放器状态跟踪示例](sdk-implement/player-state-tracking/player-state-examples.md)
 + 其他资源 {#additional-resources}
    + [发行说明](additional-resources/doc-updates.md)
