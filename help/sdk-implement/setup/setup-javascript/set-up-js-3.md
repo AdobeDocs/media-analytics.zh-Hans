@@ -1,27 +1,28 @@
 ---
-title: 设置JavaScript 3.x
-description: Media SDK应用程序设置，以在JavaScript 3.x上实现。
-translation-type: tm+mt
+title: 设置 JavaScript 3.x
+description: 设置 Media SDK 应用程序，以在 JavaScript 3.x 中实施。
+translation-type: ht
 source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 
-# 设置JavaScript 3.x{#set-up-javascript}
+# 设置 JavaScript 3.x{#set-up-javascript}
 
 ## 先决条件
 
 * **获取有效配置参数**
 在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
-* **在媒`AppMeasurement`体应`Experience Cloud Identity Service`用程序中实施和实现JavaScript**&#x200B;有关详细信息，请参 [阅使用JavaScript实现分析](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/js/overview.html) 和实 [现Experience Cloud Identity Service。](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-analytics.html)
+* **在媒体应用程序中实施适用于 JavaScript 的`AppMeasurement`和`Experience Cloud Identity Service`**
+有关更多信息，请参阅[使用 JavaScript 实施 Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/js/overview.html) 和[实施 Experience Cloud Identity Service。](https://docs.adobe.com/content/help/zh-Hans/id-service/using/implementation/setup-analytics.html)
 
 * **在媒体播放器中提供以下功能：**
 
    * *用于订阅播放器事件的 API* - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
-   * *提供播放器信息的API* —— 其中包括有关当前播放的媒体、广告、章节的信息。
+   * *提供播放器信息的 API* - 其中包括有关当前播放的媒体、广告、章节的信息。
 
 1. 将[下载](/help/sdk-implement/download-sdks.md#download-3x-sdks)的库添加到您的项目中。为方便起见，请创建对类的本地引用。
 
@@ -40,15 +41,15 @@ ht-degree: 47%
       <script type="text/javascript" src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/MediaSDK.js"></script>
       ```
 
-   1. 要快速验证库是否成功导入，请检查是否 `ADB.Media` 在Window对象上导出。
+   1. 要快速验证是否成功导入了库，请检查 `ADB.Media` 是否已在窗口对象上导出。
 
       >[!NOTE]
       >
-      >The JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `MediaSDK.js` can also be used with compatible module loaders.
+      >JavaScript SDK 遵循 AMD 和 CommonJS 模块规范，并且 `MediaSDK.js` 也可以与兼容的模块加载器一起使用。
 
-1. 创建并配 `AppMeasurement` 置实例 `visitor`。
+1. 创建 `AppMeasurement` 实例并配置 `visitor`。
 
-   Media SDK配置需要一个已配置 `AppMeasurement` 的实 `visitor` 例。
+   Media SDK 配置需要一个已配置 `visitor` 的 `AppMeasurement` 实例。
 
    ```js
     var appMeasurement = new AppMeasurement(“<rsid>”);
@@ -56,13 +57,13 @@ ht-degree: 47%
     appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
    ```
 
-1. 配置媒体SDK
+1. 配置 Media SDK
 
-   Media SDK应每个网页配置一次，该配置应用于所有创建的跟踪器实例。
+   应该为每个网页配置一次 Media SDK，并且该配置适用于创建的所有跟踪器实例。
 
    >[!IMPORTANT]
    >
-   > Media SDK(3.x)使用Media Collection API跟踪媒体，该API与2.x SDK中使用的HB端点不同。 请与Adobe代表联系以获取更多信息。
+   > Media SDK (3.x) 使用媒体收集 API 跟踪媒体，该 API 与 2.x SDK 中使用的 HB 端点不同。请与 Adobe 代表联系以获取更多信息。
 
    以下是 `MediaConfig` 初始化示例：
 
@@ -81,7 +82,7 @@ ht-degree: 47%
 
 1. 创建 `MediaTracker` 实例。
 
-   配置Media SDK后，可以使用API创建用于跟踪媒体内容的跟踪器 `getInstance` 实例。
+   配置 Media SDK 后，可以使用 `getInstance` API 创建用于跟踪媒体内容的跟踪器实例。
 
    ```js
    var tracker = ADB.Media.getInstance();
@@ -91,6 +92,6 @@ ht-degree: 47%
    >
    >在媒体会话结束前，请确保您的 `tracker` 实例可以访问且未被取消分配。此实例将用于跟踪该会话的以下所有事件。
 
-## 从JavaScript 2.x迁移到3.x
+## 从 JavaScript 2.x 迁移到 3.x
 
 有关从 2.x 迁移到 3.x 的详细信息，请参阅[从 2.x 迁移到 3.x](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)。
