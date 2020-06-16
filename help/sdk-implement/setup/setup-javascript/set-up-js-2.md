@@ -1,17 +1,17 @@
 ---
-title: 设置JavaScript 2.x
-description: 在JavaScript 2.x上实现的Media SDK应用程序设置。
+title: 设置 JavaScript 2.x
+description: 设置 Media SDK 应用程序，以在 JavaScript 2.x 中实施。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# 设置JavaScript 2.x{#set-up-javascript}
+# 设置 JavaScript 2.x{#set-up-javascript}
 
 ## 先决条件
 
@@ -116,7 +116,7 @@ ht-degree: 94%
    appMeasurement.charSet = "UTF­8";
    ```
 
-## 从JavaScript 1.x迁移到2.x
+## 从 JavaScript 1.x 迁移到 2.x
 
 在版本 2.x 中，所有公共方法都已合并到 `ADB.va.MediaHeartbeat` 类中，从而更加便于开发人员使用。此外，所有配置现在都已合并到 `ADB.va.MediaHeartbeatConfig` 类中。
 
