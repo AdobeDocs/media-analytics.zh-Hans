@@ -1,11 +1,11 @@
 ---
 title: Media Analytics SDK 终止支持常见问题解答
 description: 本主题包括关于终止支持 Media Analytics SDK 的常见问题解答。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将
 
 ## 五大须知要点
 
-1. 2021 年 8 月 31 日之后，将不再支持 Mobile v4 SDK。您应该迁移到适用于 iOS 和 Android 的 Adobe Experience Platform (AEP) SDK。有关其他信息， [请参阅版本4 Mobile SDK停止支持常见问题解答](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。
+1. 2021 年 8 月 31 日之后，将不再支持 Mobile v4 SDK。您应该迁移到适用于 iOS 和 Android 的 Adobe Experience Platform (AEP) SDK。有关更多信息，请参阅[版本 4 Mobile SDK 支持终止常见问题解答](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。
 
 1. Analytics for Audio and Video 实施需要安装 AEP SDK 以及使用 Analytics 扩展和 Media Analytics 扩展。从 2021 年 9 月 1 日起，您应使用新的 AEP SDK 和扩展。Media Analytics 扩展是使用 Adobe Launch 配置的。有关更多信息，请参阅[从独立的 Media SDK 迁移到 Adobe Launch](https://docs.adobe.com/content/help/zh-Hans/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
@@ -49,7 +49,7 @@ Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将
 
 1. **是否需要将 Launch 作为标签管理系统？如果我不想使用 Launch，应该怎么办？**
 
-   对于移动应用程序用例，Launch不像Web一样用作标签管理系统。  配置SDK扩展需要使用启动UI。 这与您使用Adobe Mobile Services UI配置移动v4 SDK的方式相似。 对于安装，使用Launch的好处是它可以根据您选择的扩展为您提供自定义的安装说明。
+   对于移动应用程序用例，不能使用 Launch 作为标签管理系统，因为它适用于 Web 用例。配置 SDK 扩展需要使用 Launch UI。这与您使用 Adobe Mobile Services UI 配置 Mobile v4 SDK 的方式相似。对于安装而言，使用 Launch 的好处是它可以根据您选择的扩展为您提供自定义的安装说明。
 
 1. **终止支持是否会影响适用于 tvOS 的 SDK？**
 
