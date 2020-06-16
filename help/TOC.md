@@ -3,11 +3,11 @@ audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -39,8 +39,8 @@ ht-degree: 83%
       + [设置 Android](sdk-implement/setup/set-up-android.md)
       + [设置 iOS](sdk-implement/setup/set-up-ios.md)
       + 设置 JavaScript {#setup-javascript}
-         + [设置JavaScript 2.x](sdk-implement/setup/setup-javascript/set-up-js-2.md)
-         + [设置JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
+         + [设置 JavaScript 2.x](sdk-implement/setup/setup-javascript/set-up-js-2.md)
+         + [设置 JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [设置 Chromecast](sdk-implement/setup/set-up-chromecast.md)
       + [设置 Roku](sdk-implement/setup/set-up-roku.md)
    + 跟踪音频和视频播放 {#track-av-playback}
@@ -49,33 +49,33 @@ ht-degree: 83%
          + [在 Android 中跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [在 iOS 中跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + 在 JavaScript 中跟踪核心播放 {#track-core-javascript}
-            + [在JavaScript 2.x上跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-            + [在JavaScript 3.x上跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
+            + [在 JavaScript 2.x 中跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js.md)
+            + [在 JavaScript 3.x 中跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
          + [在 Chromecast 中跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
          + [在 Roku 中跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + 跟踪缓冲 {#track-buffering}
          + [在 Android 中跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
          + [在 iOS 中跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
          + 在 JavaScript 中跟踪缓冲 {#track-buffering-js}
-            + [在JavaScript 2.x上跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-            + [在JavaScript 3.x上跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+            + [在 JavaScript 2.x 中跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+            + [在 JavaScript 3.x 中跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
          + [在 Chromecast 中跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
          + [在 Roku 中跟踪缓冲](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + 跟踪搜寻 {#track-seeking}
          + [在 Android 中跟踪搜寻](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [在 iOS 中跟踪搜寻](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + 在 JavaScript 中跟踪搜寻 {#track-seeking-js}
-            + [在JavaScript 2.x上跟踪搜索](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-            + [在JavaScript 3.x上跟踪搜索](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+            + [在 JavaScript 2.x 中跟踪搜寻](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+            + [在 JavaScript 3.x 中跟踪搜寻](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [在 Chromecast 中跟踪搜寻](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [在 Roku 中跟踪搜寻](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + 实施标准元数据 {#impl-std-metadata}
          + [在 Android 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [在 iOS 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS 元数据键](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-         + Implement Standard Metadata on JavaScript {#impl-std-md-js}
-            + [在JavaScript 2.x上实现标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-            + [在JavaScript 3.x上实现标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+         + 在 JavaScript 中实施标准元数据 {#impl-std-md-js}
+            + [在 JavaScript 2.x 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+            + [在 JavaScript 3.x 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [在 Chromecast 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [标准元数据参数 - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [在 Roku 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
@@ -85,24 +85,24 @@ ht-degree: 83%
       + [在 Android 中跟踪广告](sdk-implement/track-ads/track-ads-android.md)
       + [在 iOS 中跟踪广告](sdk-implement/track-ads/track-ads-ios.md)
       + 在 JavaScript 中跟踪广告 {#track-ads-js}
-         + [在JavaScript 2.x上跟踪广告](sdk-implement/track-ads/track-ads-js/track-ads-js.md)
-         + [在JavaScript 3.x上跟踪广告](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
+         + [在 JavaScript 2.x 中跟踪广告](sdk-implement/track-ads/track-ads-js/track-ads-js.md)
+         + [在 JavaScript 3.x 中跟踪广告](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [在 Chromecast 中跟踪广告](sdk-implement/track-ads/track-ads-chromecast.md)
       + [在 Roku 中跟踪广告](sdk-implement/track-ads/track-ads-roku.md)
       + 实施标准广告元数据 {#impl-std-ad-metadata}
          + [在 Android 中实施标准广告元数据](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [在 iOS 中实施标准广告元数据](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-         + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
-            + [在JavaScript 2.x上实施标准广告元数据](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-            + [在JavaScript 3.x上实施标准广告元数据](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+         + 在 JavaScript 中实施标准广告元数据 {#impl-std-ad-md-js}
+            + [在 JavaScript 2.x 中实施标准广告元数据](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
+            + [在 JavaScript 3.x 中实施标准广告元数据](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
          + [在 Roku 中实施标准广告元数据](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + 跟踪章节和区段 {#track-chapters}
       + [概述](sdk-implement/track-chapters/track-chapters-overview.md)
       + [在 Android 中跟踪章节和区段](sdk-implement/track-chapters/track-chapters-android.md)
       + [在 iOS 中跟踪章节和区段](sdk-implement/track-chapters/track-chapters-ios.md)
       + 在 JavaScript 中跟踪章节和区段 {#track-chapters-js}
-         + [在JavaScript 2.x上跟踪章节和细分](sdk-implement/track-chapters/track-chapters-js/track-chapters-js.md)
-         + [在JavaScript 3.x上跟踪章节和细分](sdk-implement/track-chapters/track-chapters-js/track-chapters-js3.md)
+         + [在 JavaScript 2.x 中跟踪章节和区段](sdk-implement/track-chapters/track-chapters-js/track-chapters-js.md)
+         + [在 JavaScript 3.x 中跟踪章节和区段](sdk-implement/track-chapters/track-chapters-js/track-chapters-js3.md)
       + [在 Chromecast 中跟踪章节和区段](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [在 Roku 中跟踪章节和区段](sdk-implement/track-chapters/track-chapters-roku.md)
    + 跟踪体验质量 {#track-qos}
@@ -110,8 +110,8 @@ ht-degree: 83%
       + [在 Android 中跟踪体验质量](sdk-implement/track-qos/track-qos-android.md)
       + [在 iOS 中跟踪体验质量](sdk-implement/track-qos/track-qos-ios.md)
       + 在 JavaScript 中跟踪体验质量 {#track-qos-js}
-         + [跟踪JavaScript 2.x上的体验质量](sdk-implement/track-qos/track-qos-js/track-qos-js.md)
-         + [跟踪JavaScript 3.x上的体验质量](sdk-implement/track-qos/track-qos-js/track-qos-js3.md)
+         + [在 JavaScript 2.x 中跟踪体验质量](sdk-implement/track-qos/track-qos-js/track-qos-js.md)
+         + [在 JavaScript 3.x 中跟踪体验质量](sdk-implement/track-qos/track-qos-js/track-qos-js3.md)
       + [在 Chromecast 中跟踪体验质量](sdk-implement/track-qos/track-qos-chromecast.md)
       + [在 Roku 中跟踪体验质量](sdk-implement/track-qos/track-qos-roku.md)
    + 跟踪错误 {#track-errors}
@@ -119,8 +119,8 @@ ht-degree: 83%
       + [在 Android 中跟踪错误](sdk-implement/track-errors/track-errors-android.md)
       + [在 iOS 中跟踪错误](sdk-implement/track-errors/track-errors-ios.md)
       + 在 JavaScript 中跟踪错误 {#track-errors-js}
-         + [在JavaScript 2.x上跟踪错误](sdk-implement/track-errors/track-errors-js/track-errors-js.md)
-         + [在JavaScript 3.x上跟踪错误](sdk-implement/track-errors/track-errors-js/track-errors-js3.md)
+         + [在 JavaScript 2.x 中跟踪错误](sdk-implement/track-errors/track-errors-js/track-errors-js.md)
+         + [在 JavaScript 3.x 中跟踪错误](sdk-implement/track-errors/track-errors-js/track-errors-js3.md)
       + [在 Chromecast 中跟踪错误](sdk-implement/track-errors/track-errors-chromecast.md)
       + [在 Roku 中跟踪错误](sdk-implement/track-errors/track-errors-roku.md)
    + [选择禁用和隐私](sdk-implement/opt-out-privacy.md)
@@ -218,7 +218,7 @@ ht-degree: 83%
 + [Federated Analytics](federated-analytics.md)
 + 播放器状态跟踪 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
-   + [标准和自定义状态](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+   + [标准状态和自定义状态](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [实施与报表](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [播放器状态跟踪示例](sdk-implement/player-state-tracking/player-state-examples.md)
 + 其他资源 {#additional-resources}
