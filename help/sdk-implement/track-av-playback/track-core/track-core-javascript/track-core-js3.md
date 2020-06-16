@@ -1,19 +1,19 @@
 ---
-title: 使用JavaScript v3.x跟踪核心回放
-description: 本主题介绍如何使用JavaScript 3.x应用程序在浏览器中使用Media SDK实现核心跟踪。
-translation-type: tm+mt
+title: 使用 JavaScript v3.x 跟踪核心播放
+description: 本主题介绍如何使用 JavaScript 3.x 应用程序在浏览器中使用 Media SDK 实施核心跟踪。
+translation-type: ht
 source-git-commit: 40d75ef32596e915ac07c173b4595bb78db3688d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# 使用JavaScript 3.x跟踪核心回放{#track-core-playback-on-javascript}
+# 使用 JavaScript 3.x 跟踪核心播放{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->本文档介绍 3.x 版本的 SDK 中的跟踪。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
+>本文档介绍 3.x 版本的 SDK 中的跟踪。如果您实施的是 SDK 之前的版本，可以在此处下载开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
 1. **初始跟踪设置**
 
@@ -25,7 +25,7 @@ ht-degree: 81%
    | --- | --- | --- |
    | `name` | 字符串 | 表示媒体名称的非空字符串。 |
    | `id` | 字符串 | 表示唯一媒体标识符的非空字符串。 |
-   | `length` | number | 正数，表示媒体长度（秒）。 如果长度未知，则使用0。 |
+   | `length` | 数字 | 正数，表示媒体长度（秒）。如果长度未知，则使用 0 表示。 |
    | `streamType` | 字符串 |  |
    | `mediaType` |  | 媒体类型（音频或视频）。 |
 
@@ -53,13 +53,13 @@ ht-degree: 81%
 
 1. **附加元数据**
 
-   （可选）通过上下文数据变量将标准和／或自定义元数据附加到跟踪会话。
+   （可选）通过上下文数据变量将标准和/或自定义元数据附加到跟踪会话。
 
    * **标准元数据**
 
       >[!NOTE]
       >
-      >附加标准元数据是可选的。
+      >附加标准元数据是可选操作。
 
       * 媒体元数据键 API 引用 - [标准元数据键 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
@@ -112,7 +112,7 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >If you are not using contextData, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >如果不使用 contextData，则只需在 `trackSessionStart` 中为 `data` 参数发送一个空对象。
 
 1. **跟踪播放的实际开始事件**
 
