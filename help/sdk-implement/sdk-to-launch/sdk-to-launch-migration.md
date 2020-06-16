@@ -3,9 +3,9 @@ seo-title: 从独立 Media SDK 迁移到 Adobe Launch
 title: 从独立 Media SDK 迁移到 Adobe Launch
 seo-description: 帮助从 Media SDK 迁移到 Launch 的说明和代码示例。
 description: 帮助从 Media SDK 迁移到 Launch 的说明和代码示例。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fde203bab895c9a49ebc0d1dadb2c96697dea509
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
 ht-degree: 100%
 
