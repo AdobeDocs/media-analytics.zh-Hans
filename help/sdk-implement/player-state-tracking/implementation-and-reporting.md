@@ -1,31 +1,31 @@
 ---
-title: 实施和报告
-description: 本主题介绍如何实现播放器状态跟踪功能，包括。
-translation-type: tm+mt
+title: 实施与报表
+description: 本主题将介绍如何实施播放器状态跟踪功能。
+translation-type: ht
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 实施和报告
+# 实施与报表
 
-在播放会话期间，必须单独跟踪每个状态出现情况(开始到结束)。 Media SDK和Media Collection API为此功能提供新的跟踪方法。
+在播放会话期间，必须单独跟踪每个状态的出现情况（从开始到结束）。Media SDK 和媒体收集 API 为实现这项功能提供了新的跟踪方法。
 
-Media SDK包括两种用于自定义状态跟踪的新方法：
+Media SDK 包含两种进行自定义状态跟踪的新方法：
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-Media Collection API包括两个新事件，它 `media.stateName` 们作为所需参数：
+媒体收集 API 包含两个新事件，它们将 `media.stateName` 作为必需参数：
 
 `stateStart` 和 `stateEnd`
 
-## Media SDK实施
+## Media SDK 实施
 
 播放器状态开始
 
@@ -43,7 +43,7 @@ tracker.trackEvent(ADB.Media.Event.StateEnd, stateObject);
 ```
 
 
-## Media Collection API实施
+## 媒体收集 API 实施
 
 播放器状态开始
 
@@ -80,24 +80,24 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 }
 ```
 
-## 状态指标
+## 状态量度
 
-为每个状态提供的量度将作为上下文数据参数计算并推送到Adobe Analytics，并存储为报告目的。 每个状态有三个可用的指标：
+会计算为每个单独状态提供的量度，并将其作为“上下文数据”参数推送到 Adobe Analytics，然后进行存储以用于生成报表。每个状态有三个可用量度：
 
-* `a.media.states.[state.name].set = true` —如果每个流的特定播放至少设置一次状态，则设置为true。
-* `a.media.states.[state.name].count = 4` —标识在每次播放流时的状态出现次数
-* `a.media.states.[state.name].time = 240` —以秒为单位标识流的每个单独播放的总状态持续时间
+* `a.media.states.[state.name].set = true` - 如果每次播放特定流时至少设置一次状态，则设置为 true。
+* `a.media.states.[state.name].count = 4` - 标识在每次播放流时某种状态出现的次数
+* `a.media.states.[state.name].time = 240` - 标识在每次播放流时持续的时长（以秒为单位）
 
 ## 报表
 
-在启用报表包进行播放器状态跟踪后，所有播放器状态度量都可用于分析工作区或组件（区段、计算度量）中的任何报告可视化。 可以使用“媒体报告设置”(“编辑设置”>“媒体管理”>“媒体报告”)从Admin Console为每个报告启用新指标。
+为播放器状态跟踪启用报表包后，所有播放器状态量度都可用于 Analysis Workspace 或组件（区段、计算量度）中提供的任何报告可视化。可以从 Admin Console 中使用“媒体报告设置”（“编辑设置”>“媒体管理”>“媒体报告”）为每个报告启用新量度。
 
 ![](assets/report-setup.png)
 
-在Analytics Workspace中，所有新属性都位于“度量”面板中。 例如，您可以通过搜索 `full screen` 在“度量”面板中视图全屏数据。
+在 Analytics Workspace 中，所有新属性都位于“量度”面板中。例如，您可以在“量度”面板中搜索 `full screen` 以查看全屏数据。
 
 ![](assets/full-screen-report.png)
 
-## 将播放器声明的指标导入Adobe Experience Platform
+## 将播放器规定的量度导入 Adobe Experience Platform
 
-存储在Analytics中的数据可用于任何目的，并且播放器状态指标可以使用XDM导入Adobe Experience Platform，并与客户旅程分析一起使用。 标准状态属性具有特定属性，而自定义状态是属性，则可以使用自定义事件。 有关标准状态属性的其他信息，请参 *阅“播放器状态参数”页上的* “XDM标 [识的属性列表](/help/metrics-and-metadata/player-state-parameters.md) ”一节。
+存储在 Analytics 中的数据可用于任何目的，并且可以使用 XDM 将播放器状态量度导入到 Adobe Experience Platform 中，用于 Customer Journey Analytics。标准状态属性具有特定属性，而自定义状态属性可使用自定义事件获得。有关标准状态属性的更多信息，请参阅[播放器状态参数](/help/metrics-and-metadata/player-state-parameters.md)页面上的 *XDM 标识的属性列表*&#x200B;部分。
