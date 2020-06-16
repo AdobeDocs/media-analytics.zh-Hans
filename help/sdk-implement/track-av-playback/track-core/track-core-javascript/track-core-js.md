@@ -1,17 +1,17 @@
 ---
-title: 使用JavaScript 2.x跟踪核心回放
-description: 本主题介绍如何使用JavaScript 2.x应用程序在浏览器中使用Media SDK实现核心跟踪。
+title: 使用 JavaScript 2.x 跟踪核心播放
+description: 本主题介绍如何使用 JavaScript 2.x 应用程序在浏览器中使用 Media SDK 实施核心跟踪。
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# 使用JavaScript 2.x跟踪核心回放{#track-core-playback-on-javascript}
+# 使用 JavaScript 2.x 跟踪核心播放{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
 >本文档介绍 2.x 版本的 SDK 中的跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
