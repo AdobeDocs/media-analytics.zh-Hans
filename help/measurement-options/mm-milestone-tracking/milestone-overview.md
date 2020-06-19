@@ -2,9 +2,9 @@
 title: 里程碑概述
 description: null
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3344'
 ht-degree: 100%
 
