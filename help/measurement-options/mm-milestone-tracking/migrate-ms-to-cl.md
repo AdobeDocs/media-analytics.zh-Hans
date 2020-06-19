@@ -4,6 +4,9 @@ description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: tm+mt
+source-wordcount: '908'
+ht-degree: 98%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ## 概述 {#overview}
 
-视频测量的核心概念与里程碑和自定义链接跟踪的核心概念相同，即获取视频播放器事件并将其映射到分析方法，同时还获取播放器元数据和值并将其映射到分析变量。应将“自定义链接”方法视为对实施和所收集数据的精简和简化。使用“自定义链接”解决方案，不会为视频测量预定义任何变量或方法，它需要进行完整的自定义设置。应当可以更新播放器事件代码，以指向基本的播放器事件（例如开始和结束）的自定义链接跟踪调用。有关更多详细信息，请参阅[自定义链接实施指南](/help/measurement-options/cl-in-aa/cl-impl-guide.md)和[使用自定义链接代码手动链接跟踪](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)。
+视频测量的核心概念与里程碑和自定义链接跟踪的核心概念相同，即获取视频播放器事件并将其映射到分析方法，同时还获取播放器元数据和值并将其映射到分析变量。应将“自定义链接”方法视为对实施和所收集数据的精简和简化。使用“自定义链接”解决方案，不会为视频测量预定义任何变量或方法，它需要进行完整的自定义设置。应当可以更新播放器事件代码，以指向基本的播放器事件（例如开始和结束）的自定义链接跟踪调用。有关更多详细信息，请参阅[自定义链接实施指南](/help/measurement-options/cl-in-aa/cl-impl-guide.md)和[使用自定义链接代码手动链接跟踪](https://docs.adobe.com/content/help/zh-Hans/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)。
 
 下表提供了“里程碑”解决方案和“自定义链接”解决方案之间的转换。
 
