@@ -1,10 +1,10 @@
 ---
 title: 支持的设备和平台
 description: Adobe Analytics for Audio and Video 确保在所有设备上收集和报告每个媒体流。
-translation-type: ht
-source-git-commit: a8fec1747e688473af7a5eabbc4f9968772b5db3
-workflow-type: ht
-source-wordcount: '341'
+translation-type: tm+mt
+source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
+workflow-type: tm+mt
+source-wordcount: '338'
 ht-degree: 100%
 
 ---
@@ -37,10 +37,10 @@ Adobe Analytics for Audio and Video 支持所有主要设备，包括：
 |  | Android 设备 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Windows 设备 |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
-|  | Apple TV  (tvOS) | 已计划于 2020 年提供支持 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Apple TV  (tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript)    | ![](/help/assets/icon-blue-check.png)<br>（本机） |
-|  | Fire TV (Fire OS) | 已计划于 2020 年提供支持 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android TV | 已计划于 2020 年提供支持 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | 游戏机（例如 Xbox ONE、Sony PS3/PS4） |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | 机顶盒（例如 xfinity X1） |  |  | ![](/help/assets/icon-blue-check.png) |
