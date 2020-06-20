@@ -2,11 +2,11 @@
 title: 音频和视频参数
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccd4209f6fad0547e9595674602ee978d86e10cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6103'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -193,7 +193,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>SHOW</li> <li> **API 密钥：**<br/>media.show</li> <li> **必需：**<br/>否</li> <li> **类型：**<br/>字符串</li> <li> **发送条件：**<br/>媒体开始、媒体关闭</li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;现代家庭&quot;&quot;最后的舞蹈&quot;&quot;新女孩&quot;</li> <li> **描述：**<br/>节目/系列名称<br/>只有在节目属于某个系列节目的组成部分时，才需要指定“节目名称”。</li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.show)</li> <li> **心率：**<br/>(s:meta:<br/>a.media.show)</li> </ul> | <ul> <li> **可用：**<br/>是</li> <li> **保留的变量：**<br/>eVar</li> <li> **过期时间：**<br/>点击时</li> <li> **报表名称：**<br/>节目</li> <li> **上下文数据：**<br/>(a.media.show)</li> <li> **数据馈送：**<br/>videoshow</li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.show)</li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>SHOW</li> <li> **API 密钥：**<br/>media.show</li> <li> **必需：**<br/>否</li> <li> **类型：**<br/>字符串</li> <li> **发送条件：**<br/>媒体开始、媒体关闭</li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;Modern Family&quot;、&quot;The Last Dance&quot;、&quot;New Girl&quot;</li> <li> **描述：**<br/>节目/系列名称<br/>只有在节目属于某个系列节目的组成部分时，才需要指定“节目名称”。</li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.show)</li> <li> **心率：**<br/>(s:meta:<br/>a.media.show)</li> </ul> | <ul> <li> **可用：**<br/>是</li> <li> **保留的变量：**<br/>eVar</li> <li> **过期时间：**<br/>点击时</li> <li> **报表名称：**<br/>节目</li> <li> **上下文数据：**<br/>(a.media.show)</li> <li> **数据馈送：**<br/>videoshow</li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.show)</li> </ul> |
 
 ### 流格式
 
