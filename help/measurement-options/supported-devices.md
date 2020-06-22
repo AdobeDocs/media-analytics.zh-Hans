@@ -1,9 +1,9 @@
 ---
 title: 支持的设备和平台
 description: Adobe Analytics for Audio and Video 确保在所有设备上收集和报告每个媒体流。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
 ht-degree: 100%
 
