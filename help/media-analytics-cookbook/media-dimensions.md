@@ -1,9 +1,9 @@
 ---
 title: 媒体流归因
 description: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->媒体量度在媒体跟踪之外&#x200B;_不_&#x200B;可用，因为大多数媒体量度是由 Media Analytics基于心率事件计算的。此外，媒体量度不应被不同的实施夸大，这一点也很重要。
+>媒体量度在媒体跟踪之外&#x200B;_不_&#x200B;可用，因为大多数媒体量度是由 Media Analytics 基于心率事件计算的。此外，媒体量度不应被不同的实施夸大，这一点也很重要。
 
 ## 方法
 
