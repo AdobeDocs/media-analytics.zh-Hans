@@ -2,11 +2,11 @@
 title: 从里程碑迁移到 Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aa2a230daa96b823f9963345ac4578799e59d3f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -52,8 +52,8 @@ ht-degree: 79%
 | Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | 不适用 | 对于内容，Media Analytics 设置为 10 秒；对于广告，设置为 1 秒。无其他选项可用。 |
 | Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 不适用 | Media Analytics 始终跟踪 10%、25%、50%、75%、95% 进度标记 |
 | Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 不适用 | Media Analytics 始终跟踪 10%、25%、50%、75%、95% 进度标记 |
-| Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | 不适用 | 自动跟踪不再可用. |
-| Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | 不适用 | 自动跟踪不再可用. |
+| Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | 不适用 | 自动跟踪不再可用。 |
+| Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | 不适用 | 自动跟踪不再可用。 |
 
 ### 广告跟踪变量
 
@@ -62,30 +62,30 @@ ht-degree: 79%
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 不适用 | 对于内容，Media Analytics 设置为 10 秒；对于广告，设置为 1 秒。无其他选项可用。 |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 不适用 | 默认情况下，广告不提供进度标记。请使用计算量度来构建广告进度标记。 |
 | Media.adTrackOffsetMilestones | `s.Media.` <br> `  adTrackOffsetMilestones` <br> `  = "20,40,60";` | 不适用 | 对于广告，Media Analytics 设置为 1 秒。无其他选项可用。 |
-| Media.adSegmentByMilestones | `s.Media.` <br> `  adSegmentByMilestones` <br> `  = true;` | 不适用 | 自动跟踪不再可用. |
-| Media.adSegmentByOffsetMilestones | `s.Media.` <br> `  adSegmentByOffsetMilestones` <br> `  = true;` | 不适用 | 自动跟踪不再可用. |
+| Media.adSegmentByMilestones | `s.Media.` <br> `  adSegmentByMilestones` <br> `  = true;` | 不适用 | 自动跟踪不再可用。 |
+| Media.adSegmentByOffsetMilestones | `s.Media.` <br> `  adSegmentByOffsetMilestones` <br> `  = true;` | 不适用 | 自动跟踪不再可用。 |
 
 ### 媒体模块方法
 
 | 里程碑 | 里程碑语法 | Media Analytics | Media Analytics 语法 |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
-| mediaName - (Required) <br> The name of the video as you want it to appear in video reports. | `mediaName` | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
-| mediaLength - (Required) <br> The length of the video in seconds. | `mediaLength` | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
-| mediaPlayerName - (Required) <br> The name of the media player used to view the video, as you want it to appear in video reports. | `mediaPlayerName` | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| mediaName -（必需）<br>您希望在视频报表中显示的视频名称。 | `mediaName` | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
+| mediaLength -（必需）<br>视频的长度，以秒为单位。 | `mediaLength` | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
+| mediaPlayerName -（必需）<br>您希望在视频报表中显示的用来查看视频的媒体播放器名称。 | `mediaPlayerName` | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
-| name - (Required) <br> The name or ID of the ad. | `name` | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| length - (Required) <br> The length of the ad. | `length` | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| playerName - (Required) <br> The name of the media player used to view the ad. | `playerName` | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| parentName <br> The name or ID of the primary content where the ad is embedded. | `parentName` | 不适用 | 自动继承 |
-| parentPod <br> The position in the primary content the ad was played. | `parentPod` | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
-| parentPodPosition <br> The position within the pod where the ad is played. | `parentPodPosition` | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| CPM <br> The CPM or encrypted CPM (prefixed with a &quot;~&quot;) that applies to this playback. | `CPM` | 不适用 | 在 Media Analytics 中默认不可用. |
-| Media.click | `s.Media.click(` <br> `  name,` <br> `  offset)` | 不适用 | 使用自定义链接分析调用来跟踪点击次数. |
+| name -（必需）<br>广告的名称或 ID。 | `name` | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| length -（必需）<br>广告的长度。 | `length` | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| playerName -（必需）<br>用来查看广告的媒体播放器名称。 | `playerName` | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| parentName <br>广告被嵌入到的主内容的名称或 ID。 | `parentName` | 不适用 | 自动继承 |
+| parentPod <br>广告在主内容中播放的位置。 | `parentPod` | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
+| parentPodPosition <br>广告在面板中播放的位置。 | `parentPodPosition` | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| CPM <br>应用于此播放的 CPM 或加密 CPM（具有前缀“~”）。 | `CPM` | 不适用 | 在 Media Analytics 中默认不可用。 |
+| Media.click | `s.Media.click(` <br> `  name,` <br> `  offset)` | 不适用 | 使用自定义链接分析调用来跟踪点击次数。 |
 | Media.close | `s.Media.close(` <br> `  mediaName)` | trackSessionEnd | `trackSessionEnd()` |
 | Media.complete | `s.Media.complete(` <br> `  name,` <br> `  offset)` | trackComplete | `trackComplete()` |
 | Media.play | `s.Media.play(` <br> `  name,` <br> `  offset,` <br> `  segmentNum,` <br> `  segment, ` <br> `  segmentLength)` | trackPlay | `trackPlay()` |
 | Media.stop | `s.Media.stop(` <br> `  mediaName,` <br> `  mediaOffset)` | trackPause<br> 或 <br>trackEvent | `trackPause()` <br> 或 `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> 或 <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
-| Media.monitor | `s.Media.monitor(s, media)` | 使用自定义或标准元数据来设置其他变量. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
+| Media.monitor | `s.Media.monitor(s, media)` | 使用自定义或标准元数据来设置其他变量。 | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(` <br> `  mediaName)` | 不适用 | 跟踪调用频率是自动设置的。 |
 
