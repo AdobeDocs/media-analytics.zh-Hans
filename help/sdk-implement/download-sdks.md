@@ -2,9 +2,9 @@
 title: 下载 SDK
 description: 可用平台（包括 Android、iOS、JavaScript、Chromecast 和 Roku）的 SDK 下载链接。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b127e50efd0e5ecbb19ed617b1d1afc31d7d9417
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
 ht-degree: 100%
 
@@ -52,5 +52,5 @@ ht-degree: 100%
 | iOS | [适用于 iOS 的 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [入门 - 适用于 iOS 的 Media 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [适用于 JavaScript 的 SDK v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [入门 - 适用于 JS 的 Media 1.x](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [适用于 TVML 的 SDK v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [入门 - 适用于 TVML 的 Media 1.x](setup/vhl_tvml.pdf) |
-| Apple TV | 适用于 Apple TV 的 SDK v1.0.0（联系[客户关怀团队](https://helpx.adobe.com/marketing-cloud/contact-support.html)获取旧版 1.x SDK） | [入门 - 适用于 Apple TV 的 Media 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | 适用于 Chromecast 的 SDK v1.0.0（联系[客户关怀团队](https://helpx.adobe.com/marketing-cloud/contact-support.html)获取旧版 1.x SDK） | [入门 - 适用于 Chromecast 的 Media 1.x](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | 适用于 Apple TV 的 SDK v1.0.0（联系[客户关怀团队](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)获取旧版 1.x SDK） | [入门 - 适用于 Apple TV 的 Media 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | 适用于 Chromecast 的 SDK v1.0.0（联系[客户关怀团队](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)获取旧版 1.x SDK） | [入门 - 适用于 Chromecast 的 Media 1.x](setup/chromecast_1.x_sdk.pdf) |
