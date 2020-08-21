@@ -2,8 +2,11 @@
 title: 在 SceneGraph (Roku) 中跟踪
 description: 使用 Roku SceneGraph XML 编程框架跟踪媒体。
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 100%
 
 ---
 
@@ -134,34 +137,33 @@ Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件
 </tr>
 <tr>
 <td> adbmobileApiResponse </td>
-<td> assocarray </td>
+<td> 水龙属 </td>
 <td> 无效 </td>
 <td> 只读。在 AdobeMobileSDK 中执行的所有 API 都将返回此字段中的响应。注册侦听此字段更新的回调，以接收响应对象。以下是响应对象的格式：  
-<codeblock>
+<pre>
 response = {
   "apiName" : &lt;SceneGraphConstants.
                API_NAME&gt; 
   "returnValue : &lt;API_RESPONSE&gt; 
-} 
-</codeblock>
+}</pre>
 将为 AdobeMobileSDK 中的任何 API 调用发送此响应对象的实例，根据 API 引用指南，该 API 调用应会返回一个值。例如，visitorMarketingCloudID() 的 API 调用将返回以下响应对象： 
-<codeblock>
+<pre>
 response = {
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : "07050x25671x33760x72644x14"  
 } 
-</codeblock>
+</pre>
 或者，响应数据也可能无效： 
-<codeblock>
+<pre>
 response = {  
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : invalid 
 } 
-</codeblock>
+</pre>
 </td>
 </tr>
 </tbody>
