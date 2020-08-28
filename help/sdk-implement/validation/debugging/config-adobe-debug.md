@@ -2,11 +2,11 @@
 title: 配置 Adobe Debug
 description: 本主题介绍如何配置 Adobe Debug，以便用于对 Media SDK 实施进行故障诊断。
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,13 +72,13 @@ ht-degree: 95%
    1. 完成以下步骤之一：
 
       * [将证书添加到本地计算机的受信任的根证书颁发机构进行存储](https://technet.microsoft.com/zh-cn/library/cc754841.aspx#BKMK_addlocal)
-   1. 对于Firefox，请完成 [在Mozilla Firefox中安装根证书。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+   1. 对于 Firefox，请完成[在 Mozilla Firefox 中安装根证书](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)中的步骤。
 
       您可能需要退出并重新打开 Firefox 才能看到更改。
    **iOS 设备**
    1. 通过单击&#x200B;**[!UICONTROL 设置应用程序]** **>** **[!UICONTROL Wifi 设置]**，将 iOS 设备设置为使用 Adobe Debug 作为其 HTTP 代理。
 
-   1. 在Safari中，转到 [调试。](https://proxy.debug.adobe.com/ssl)
+   1. 在 Safari 中，转到 [Debug](https://proxy.debug.adobe.com/ssl)。
 
       Safari 将提示您安装 SSL 证书。
 
