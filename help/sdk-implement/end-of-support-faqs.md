@@ -1,9 +1,9 @@
 ---
 title: Media Analytics SDK 终止支持常见问题解答
 description: 本主题包括关于终止支持 Media Analytics SDK 的常见问题解答。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cea8c4b31b21f1b13a55268fbcfb9100a7bdbd7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
@@ -53,8 +53,8 @@ Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将
 
 1. **终止支持是否会影响适用于 tvOS 的 SDK？**
 
-   是，对于 tvOS（版本 10+），建议的实施是迁移到 Media Analytics 扩展。有关更多信息，请参阅[从独立的 Media SDK 迁移到 Adobe Launch - iOS](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)。
+   是，对于 tvOS（版本 10+），建议的实施是迁移到 Media Analytics 扩展。有关更多信息，请参阅[从独立的 Media SDK 迁移到 Adobe Launch - iOS](https://docs.adobe.com/content/help/zh-Hans/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)。
 
 1. **终止支持是否会影响适用于 FireTV 和 AndroidTV 的 SDK？**
 
-   是，对于 FireTV 和 AndroidTV，建议的实施是迁移到 Media Analytics 扩展。有关更多信息，请参阅[从独立的 Media SDK 迁移到 Adobe Launch - Android](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)。
+   是，对于 FireTV 和 AndroidTV，建议的实施是迁移到 Media Analytics 扩展。有关更多信息，请参阅[从独立的 Media SDK 迁移到 Adobe Launch - Android](https://docs.adobe.com/content/help/zh-Hans/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)。
