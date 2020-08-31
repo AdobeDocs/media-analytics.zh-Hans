@@ -5,10 +5,10 @@ user-guide-description: Implement Analytics on audio or video sources. Includes 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: ec64289694dde391b6a14634c9685e741790e552
+source-git-commit: 25920c9c01e67f9e5d969495a03f23fcf80d6493
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 100%
+source-wordcount: '826'
+ht-degree: 97%
 
 ---
 
@@ -214,6 +214,8 @@ ht-degree: 100%
       + [媒体时段](media-reports/media-default-reports/media-reports-daypart.md)
       + [媒体并行查看者](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [获取并行查看者 JSON 报表数据](media-reports/media-default-reports/get-concurrent-json.md)
+   + 媒体工作区面板 {#media-workspace-panels}
+      + [“媒体并发查看器”面板](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
    + [媒体工作区模板](media-reports/media-workspace-templates.md)
 + [跟踪下载的内容](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
