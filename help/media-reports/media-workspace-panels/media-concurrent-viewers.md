@@ -1,18 +1,18 @@
 ---
 title: 媒体并行查看者
-description: 对于媒体分析客户，通过媒体并发查看器面板，您可以分析并发查看器，以了解高峰期并发或中断发生的位置。
-translation-type: tm+mt
+description: 对于 Media Analytics 客户，通过“媒体并行查看者”面板，您可以分析并行查看者，以此来了解出现并发峰值或发生锐减的位置。
+translation-type: ht
 source-git-commit: a7938247a7cc3c23288e3ac5866ddecdf1f6a3bf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '89'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 
-# 媒体并发查看器{#media-concurrent-viewers}
+# 媒体并行查看者{#media-concurrent-viewers}
 
-对于Media Analytics客户，通过“媒体并发查看器”面板，您可以了解高峰期并发发生的位置或中断发生的位置，从而对内容和查看者参与度提供宝贵的洞察，并帮助进行批量和规模的疑难解答或规划。  [了解更多](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+对于 Media Analytics 客户，通过“媒体并行查看者”面板，您可以了解出现并发峰值或发生锐减的位置，从而对内容质量和查看者参与度提供有价值的分析，同时有助于对容量/规模进行疑难问题解答或规划。[了解更多](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
 ## 面板输出
 
