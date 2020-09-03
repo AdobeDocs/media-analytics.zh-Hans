@@ -2,7 +2,7 @@
 title: 媒体并发查看器报告
 description: 对于媒体分析客户，Analysis Workspace的“媒体并发查看器”面板使您能够分析并发查看器，以了解高峰并发发生的位置或中断发生的位置。
 translation-type: tm+mt
-source-git-commit: 9c87109477518dd647b263edfa6bcf89be3e067d
+source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 14%
@@ -10,7 +10,7 @@ ht-degree: 14%
 ---
 
 
-# 媒体Concurent查看器报告{#media-concurrent-viewers}
+# 媒体并发查看器报告{#media-concurrent-viewers}
 
 >[!IMPORTANT]
 >
