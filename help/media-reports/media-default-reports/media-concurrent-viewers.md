@@ -2,8 +2,11 @@
 title: 媒体并行查看者
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 85%
 
 ---
 
@@ -13,8 +16,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 “媒体并行查看者”仪表板显示一天内的并行查看者。数据不能按内容、设备类型或国家/地区进行过滤。
 
 >[!TIP]
->
->如果选择的间隔不是一整天，则不会显示任何数据。
+> 
+> 提示：此报告基于并发活动媒体会话。  要按独特的访客查看并发查看器，还可应用区段、进行细分和比较的附加功能，请使用 [Analysis Workspace的“媒体并发查看器”面板](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+
 
 ![](assets/video-concurrent-viewers.png)
 
@@ -34,6 +38,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 以下是此报表的一些限制：
 
+* 如果选择的间隔不是一整天，则不会显示任何数据。
 * 无法导出数据，如 ReportBuilder。
 * 不能以表格式显示数据。
 * 无法通过电子邮件发送报表。
