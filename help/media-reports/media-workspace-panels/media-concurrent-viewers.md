@@ -1,9 +1,9 @@
 ---
 title: 媒体并行查看者报表
 description: 对于 Media Analytics 客户而言，借助 Analysis Workspace 中的“媒体并行查看者”面板，可以分析并行查看者，进而了解出现并发峰值或发生锐减的位置。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
 ht-degree: 100%
 
