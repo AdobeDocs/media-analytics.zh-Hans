@@ -1,11 +1,11 @@
 ---
 title: 媒体并行查看者报表
 description: 对于 Media Analytics 客户而言，借助 Analysis Workspace 中的“媒体并行查看者”面板，可以分析并行查看者，进而了解出现并发峰值或发生锐减的位置。
-translation-type: ht
-source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
-workflow-type: ht
-source-wordcount: '224'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 687ae6f2037590b58b30ea776635898c93ca144f
+workflow-type: tm+mt
+source-wordcount: '212'
+ht-degree: 97%
 
 ---
 
@@ -24,4 +24,4 @@ ht-degree: 100%
 
 ## 借助 Analytics 报表 API 获取并行查看者数据
 
-此外，您还可以借助 Analytics 报表 API 2.0，以分钟级别的时间粒度，一次性获取长达 1 个月的并行查看者数据。报表 API 可使用与 Analysis Workspace 相同的并行查看者定义。有关 Analytics API 的更多信息，请参阅 [Analytics API 报表用户指南](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-guide.md)。
+此外，您还可以借助 Analytics 报表 API 2.0，以分钟级别的时间粒度，一次性获取长达 1 个月的并行查看者数据。报表 API 可使用与 Analysis Workspace 相同的并行查看者定义。有关详细信息，请参阅 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
