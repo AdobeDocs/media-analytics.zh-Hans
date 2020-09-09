@@ -5,10 +5,10 @@ user-guide-description: Implement Analytics on audio or video sources. Includes 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 126b54173b8b488e53fe27fbc99ad9e83fb2c078
+source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 99%
+source-wordcount: '830'
+ht-degree: 97%
 
 ---
 
@@ -211,12 +211,13 @@ ht-degree: 99%
       + [默认报表概述](media-reports/media-default-reports/default-reports-overview.md)
       + [媒体概览](media-reports/media-default-reports/media-reports-overview.md)
       + [媒体详细信息](media-reports/media-default-reports/media-reports-detail.md)
-      + [媒体时段](media-reports/media-default-reports/media-reports-daypart.md)
-      + [媒体并行查看者](media-reports/media-default-reports/media-concurrent-viewers.md)
-      + [获取并行查看者 JSON 报表数据](media-reports/media-default-reports/get-concurrent-json.md)
+      + [媒体时段报告](media-reports/media-default-reports/media-reports-daypart.md)
+      + [媒体并发查看器报告](media-reports/media-default-reports/media-concurrent-viewers.md)
+      + [获取并行查看者 JSON 报表数据](media-reports/media-default-reports/get-concurrent-json20.md)
    + 媒体工作区面板 {#media-workspace-panels}
       + [“媒体并发查看器”面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [媒体工作区模板](media-reports/media-workspace-templates.md)
+   + [通过API获取并发查看器数据](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
 + [跟踪下载的内容](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + 播放器状态跟踪 {#player-state-tracking}
