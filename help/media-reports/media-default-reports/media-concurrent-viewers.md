@@ -6,18 +6,18 @@ translation-type: tm+mt
 source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
 
 # 媒体并行查看者{#media-concurrent-viewers}
 
-“媒体并行查看者”仪表板显示一天内的并行查看者。数据不能按内容、设备类型或国家/地区进行过滤。
+“媒体并行查看者”仪表板显示一天内的并行查看者。数据可以按内容、设备类型或国家/地区进行过滤。
 
 >[!TIP]
 >
-> 此报告基于并发活动媒体会话。  要按独特的访客查看并发查看器，还可应用区段、进行细分和比较的附加功能，请使用 [Analysis Workspace的“媒体并发查看器”面板](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+> 此报告基于并发活动媒体会话。  要按独特访客以及通过应用区段、进行细分和比较的附加功能查看并行查看者，请使用 [Analysis Workspace 中的“媒体并行查看者”面板](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)。
 
 
 ![](assets/video-concurrent-viewers.png)
