@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 >[!TIP]
 >
-> 此报告基于并发活动媒体会话。  要按独特访客以及通过应用区段、进行细分和比较的附加功能查看并行查看者，请使用 [Analysis Workspace 中的“媒体并行查看者”面板](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)。
+> 此报表基于并行活动媒体会话。要按独特访客以及通过应用区段、进行细分和比较的附加功能查看并行查看者，请使用 [Analysis Workspace 中的“媒体并行查看者”面板](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)。
 
 
 ![](assets/video-concurrent-viewers.png)
