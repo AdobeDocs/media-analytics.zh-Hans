@@ -1,30 +1,30 @@
 ---
-title: 使用Analytics 2.0 API获取并发查看器JSON报告数据
+title: 使用 Analytics 2.0 API 获取并行查看者 JSON 报表数据
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
 
-# 使用Analytics 2.0 API获取并发查看器JSON报告数据{#get-concurrent-viewers-json-report-data}
+# 使用 Analytics 2.0 API 获取并行查看者 JSON 报表数据{#get-concurrent-viewers-json-report-data}
 
-您可以使用 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+您可以使用 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) 获取并行查看者报表数据。
 
-1. 使用在UI上构建的任何区段过滤数据。 要按特定内容 ID 进行过滤，请创建新区段。
+1. 使用在 UI 中构建的任何区段过滤数据。要按特定内容 ID 进行过滤，请创建新区段。
 1. 将请求主体中的 `elements` -> `id` 设置为 `metrics/concurrent_viewers_visitors`。
 1. 请求足够数量的数据。
 
-   * 您在报表中指定的数据范围会“在视频会话结束时”收集所有并行查看器数据。__
-您必须说明该开始的会话在某天结束，在午夜（即第二天）后结束。
+   * 您在报表中指定的数据范围会“在视频会话结束时”收集所有并行查看者数据。__
+因此，您必须考虑从前一天开始，到午夜之后（即第二天）结束的会话。
 
-   * 在您的请求中，在您的分析中再请求一天的数据 _*仅使用预期数据。*_
+   * 在您的请求中，在预期时间段后再请求一天的数据，但在您的分析中，“仅使用预期数据”。_**_
 
-一天数据的示例请求有效负荷类似于以下示例。 请求连续完成2天，但在报告中，您只使用第一天。
+一天数据的请求有效负荷类似于以下示例。请求将连续 2 天完成，但在报表中，您只使用第一天。
 
 ## 示例请求
 
