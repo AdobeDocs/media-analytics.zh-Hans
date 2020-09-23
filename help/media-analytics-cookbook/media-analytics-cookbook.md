@@ -1,8 +1,11 @@
 ---
 title: Media Analytics 指南
 description: 顶级指南页面，其中包含常规 MA 指南链接以及特定于 SDK 的链接。
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 298d17ced7a62cad8e2a45814fbfb80c3f58ce35
+workflow-type: tm+mt
+source-wordcount: '32'
+ht-degree: 100%
 
 ---
 
