@@ -1,9 +1,12 @@
 ---
 title: Federated Analytics
-description: 'Federated Analytics 服务提供了用于在两个合作伙伴之间共享 Adobe Media Analytics 数据（音频和视频）的系统。 '
+description: Federated Analytics 服务提供了用于在两个合作伙伴之间共享 Adobe Media Analytics 数据（音频和视频）的系统。
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 88f4479ec072ab2a332ade09a83e9fbff94a98e9
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 97%
 
 ---
 
@@ -39,7 +42,8 @@ Federated Analytics 服务提供了用于在两个合作伙伴之间共享 Adobe
 
 ## 下载 Federated Analytics 表单
 
-请在此处下载此表单的最新版本：[联合规则协议](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
+要参加Federated Analytics，请下载并完成 [联合规则协议](federated-analytics-form.pdf) 的双曲余切值。
+
 
 ## 过程 {#process}
 
@@ -51,4 +55,3 @@ Federated Analytics 服务提供了用于在两个合作伙伴之间共享 Adobe
 1. 接收者确认数据正确后，Adobe 工程部门会更新规则以指向生产报表包。
 1. 接收者将查看并验证生产报表包中的数据。
 1. 如果数据集将发生更改，发件人或接收者可以提交客户关怀票证以寻求支持。
-
