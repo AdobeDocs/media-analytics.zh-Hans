@@ -1,12 +1,12 @@
 ---
 title: Federated Analytics
-description: Federated Analytics 服务提供了用于在两个合作伙伴之间共享 Adobe Media Analytics 数据（音频和视频）的系统。
+description: Federated Analytics服务为在两个合作伙伴之间共享Adobe Analytics的流媒体数据提供了一个系统。
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 88f4479ec072ab2a332ade09a83e9fbff94a98e9
+source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 97%
+source-wordcount: '552'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,8 @@ Federated Analytics 服务提供了用于在两个合作伙伴之间共享 Adobe
 
 * **媒体流合同：**&#x200B;接收者和发件人必须已签订适用于媒体流的 Adobe Analytics 合同，然后才能在 Adobe Analytics 中访问音频和视频数据。有关更多详细信息，请与您的帐户团队联系。
 * **联合附录：**&#x200B;在发送或接收数据之前，每个发件人和接收者都必须拥有 Adobe 的已签名附录。要求每个客户一个附录，而不是每个合作伙伴一个附录。有关更多详细信息，请与您的帐户团队联系。
-* **Media Analytics 实施：**&#x200B;发件人必须在将成为联合数据集一部分的所有播放器上实施 Media Analytics。只有 Media Analytics 数据可用于联合。请参阅文档：[在 Adobe Analytics 中测量音频和视频](/help/media-overview.md)
+
+* **Media Analytics 实施：**&#x200B;发件人必须在将成为联合数据集一部分的所有播放器上实施 Media Analytics。只有 Media Analytics 数据可用于联合。请参阅文档： [测量Adobe Analytics蒸汽介质](/help/media-overview.md)
 
 * **Adobe 咨询合同：**&#x200B;在初始设置发送者与接收者之间的联合规则时，该合同对于与咨询服务部合作来审查数据和创建数据共享协议，非常有价值。
 
