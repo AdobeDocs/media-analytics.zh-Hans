@@ -1,11 +1,11 @@
 ---
 title: 支持的设备和平台
-description: Adobe Analytics for Audio and Video 确保在所有设备上收集和报告每个媒体流。
-translation-type: ht
-source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
-workflow-type: ht
-source-wordcount: '338'
-ht-degree: 100%
+description: Adobe Analytics的流媒体服务可确保跨所有设备收集和报告每个媒体流。
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >
 >Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将终止对适用于 iOS 和 Android 的 Media Analytics SDK 的支持。有关更多信息，请参阅 [Media Analytics SDK 支持终止常见问题解答](/help/sdk-implement/end-of-support-faqs.md)。
 
-Adobe Analytics for Audio and Video 支持所有主要设备，包括：
+Adobe Analytics的流媒体支持所有主要设备，包括：
 
 * iOS 和 Android 智能手机和平板电脑
 * 适用于 ROKU、AppleTV、FireTV 和 Android TV 的 OTT 设备
