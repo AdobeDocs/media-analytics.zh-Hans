@@ -1,31 +1,31 @@
 ---
-title: 在 Adobe Analytics 中测量音频和视频
+title: 测量Adobe Analytics蒸汽介质
 description: Adobe Analytics for Media（也称为 Media Analytics）可为客户提供针对内容、音频和广告的可靠媒体测量。
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: ht
-source-git-commit: bddcbcd844145788518c60399bee9e4744e42d3a
-workflow-type: ht
-source-wordcount: '912'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '903'
+ht-degree: 85%
 
 ---
 
 
-# 在 Adobe Analytics 中测量音频和视频{#measuring-audio-and-video-in-adobe-analytics}
+# 测量Adobe Analytics蒸汽介质{#measuring-audio-and-video-in-adobe-analytics}
 
 ![横幅](./assets/media_analytics_banner.png)
 
-## 关于 Adobe Analytics for Audio and Video
+## 关于Adobe Analytics的流媒体
 
-Adobe Analytics for Audio and Video 是 Adobe Analytics 的一个附加产品，可提供针对音频、视频和广告的强大测量工具。Adobe Analytics 是 Adobe Experience Platform 的一部分。
+Adobe Analytics的流媒体是Adobe Analytics的一个附加工具，它为音频、视频和广告提供强大的测量工具。 Adobe Analytics 是 Adobe Experience Platform 的一部分。
 
-Adobe Analytics for Audio and Video 让您能够跟踪客户访问您的网站的整个历程。这些量度可轻松集成到 Adobe Analytics 报表和其他 Adobe Experience Cloud 产品中。媒体测量让您可以将数据分类为多个维度和区段，从而捕获执行完整的详细分析所需的所有元数据。然后，您可以分析数据并将成功标准归因于充分使用的媒体、平均逗留时间和已完成的广告。
+Adobe Analytics的流媒体解决方案使您能够跟踪整个网站的客户旅程。 这些量度可轻松集成到 Adobe Analytics 报表和其他 Adobe Experience Cloud 产品中。媒体测量让您可以将数据分类为多个维度和区段，从而捕获执行完整的详细分析所需的所有元数据。然后，您可以分析数据并将成功标准归因于充分使用的媒体、平均逗留时间和已完成的广告。
 
 您可以测量与 QoS 相关的重要交付量度，例如丢帧、缓冲用时和平均比特率。这些量度可与您的网站或应用程序数据相结合，以实现客户路径和兴趣的可视化 - 通过 Adobe Experience Cloud 提供优化的推荐和个性化的客户体验。
 
 ## 功能 {#features}
 
-Adobe Analytics for Audio and Video 的优势包括：实时监控、详细分析、切实可行的洞察信息以及盈利机会。
+Adobe Analytics的流媒体优势包括实时监控、详细分析、可操作的洞察和盈利机会。
 * **实时分析** - 利用跨多个渠道的关键性能量度（如，持续时间、ex2 和 ex3 等），实时做出切实可行的决策。主内容事件以 10 秒为间隔进行测量，以捕获所有活动。广告跟踪事件以 1 秒为间隔进行。
 * **推动参与** - 通过减少缓冲事件，了解广告在内容中的播放位置和时间，以提供流畅、影响较小的体验，促进用户重复访问，从而充分吸引用户参与。
 * **全面视角** - 整合所有内容分发商的多个数据点以全面了解所有媒体活动。同时，通过 Federated Analytics 功能来测量所有可能的渠道中的参与度以及查看/收听次数。
@@ -35,9 +35,9 @@ Adobe Analytics for Audio and Video 的优势包括：实时监控、详细分�
 
 ## 心率测量 {#heartbeat}
 
-Adobe Analytics 使用“心率”收集视频量度。在视频播放期间，心率会发送到心率跟踪服务器以测量播放时长。每十秒发送一次心率调用。心率会生成精细的视频参与量度，以及更准确的视频流失报表。Adobe Analytics for Audio and Video 使用包含 Media Analytics 扩展的 Adobe Launch、Media SDK 和媒体收集 API 来测量心率。`AppMeasurement` 和 `VisitorID` 组件用于接收视频数据。
+Adobe Analytics 使用“心率”收集视频量度。在视频播放期间，心率会发送到心率跟踪服务器以测量播放时长。每十秒发送一次心率调用。心率会生成精细的视频参与量度，以及更准确的视频流失报表。Adobe Analytics的Streaming Media公司通过Media Analytics扩展、Media SDK和Media Collection API使用Adobe启动测量心跳。 `AppMeasurement` 和 `VisitorID` 组件用于接收视频数据。
 
-通过使用心率，Adobe Analytics for Audio and Video 具备以下优势：
+将心跳Adobe Analytics用于流媒体提供以下优势：
 
 | 功能 | 描述 |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -47,7 +47,7 @@ Adobe Analytics 使用“心率”收集视频量度。在视频播放期间，�
 | 定价 | 透明的按媒体流跟踪（单个） |
 | 实施和支持 | 通过不断更新和改进来简化配置<br>通过简化实施流程，您可以通过播放器 API 快速映射变量并使用 Adobe Debug Tool 验证实施，以确保准确跟踪所有必要变量。 |
 | 合作伙伴共享 | Federated Analytics 和认证的量度<br>通过 Federated Analytics 共享数据，您可以利用我们业界领先的媒体共享功能，全面评估您的所有媒体分发合作伙伴（运营商、节目制作商和分发商）的数据。 |
-| 高级跟踪 | 下载内容跟踪、错误恢复跟踪和并行查看者<br>您可以跟踪在设备上下载和播放的音频和视频内容，而不论该设备是否联网。 |
+| 高级跟踪 | 下载的内容跟踪、错误恢复跟踪和并发查看器<br>您可以跟踪在设备上下载和播放的流媒体内容，无论其连接性如何。 |
 
 
 
