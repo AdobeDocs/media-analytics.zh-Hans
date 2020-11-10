@@ -3,9 +3,9 @@ title: 音频和视频参数
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: abb2cd2d056ffbefa72126061b11286cc10ec1ca
+source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
 workflow-type: tm+mt
-source-wordcount: '6237'
+source-wordcount: '6234'
 ht-degree: 99%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 99%
 >请勿更改下面列出的在“报表/保留的变量”下描述为“分类”的任何变量的分类名称。\
 >在启用报表包进行媒体跟踪后，将定义媒体分类。Adobe 会不时添加新属性，如果添加了新属性，客户必须重新启用其报表包才能访问新的媒体属性。在更新过程中，Adobe 会通过检查变量名称来确定是否启用了分类。如果任何变量名称缺失，Adobe 会再次添加缺失的变量名称。
 
-## 音频和视频核心数据 {#core-audio-and-video-data}
+## 核心流媒体数据 {#core-audio-and-video-data}
 
 ### 流类型 {#stream-type}
 
@@ -187,7 +187,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;js-2.0.1.88-c8c0b1&quot; </li> <li> **描述：**<br/>&#x200B;用于跟踪会话的 Media SDK 版本。<br/><br/>客户必须自行创建处理规则才能在报表中使用此值。<br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.<br/>vhlVersion) </li> <li> **心率：**<br/>(s:sp:hb_version) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;使用自定义处理规则 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;自定义 </li> <li> **上下文数据：**<br/>(a.media.vhlVersion) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.vhlVersion) </li> </ul> |
 
-## 标准音频和视频元数据 {#standard-audio-and-video-metadata}
+## 标准流媒体元数据 {#standard-audio-and-video-metadata}
 
 ### 节目
 
@@ -321,7 +321,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK 密钥：**<br/> </li> <li> **API 密钥：**<br/> media.publisher </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 <br/>可从以下位置获取：[媒体收集概述](/help/media-collection-api/mc-api-overview.md)或[下载 SDK - 版本 2.2](/help/sdk-implement/download-sdks.md)。  </li> <li> **示例值：**<br/>&quot;Random Bauhaus&quot; </li> <li> **描述：**<br/>&#x200B;音频内容发布者的名称。<br/> **发行日期：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.publisher) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> </li> <li> **上下文数据：**<br/>(a.media.publisher) </li> <li> **数据馈送：**<br/> videoaudiopublisher </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.publisher) </li> </ul> |
 
-## 音频和视频量度 {#audio-and-video-metrics}
+## Staming Media Metrics {#audio-and-video-metrics}
 
 ### 媒体开始
 
