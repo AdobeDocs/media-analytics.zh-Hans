@@ -1,9 +1,9 @@
 ---
-title: 测量Adobe Analytics蒸汽介质
+title: 衡量Adobe Analytics的流媒体
 description: Adobe Analytics for Media（也称为 Media Analytics）可为客户提供针对内容、音频和广告的可靠媒体测量。
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 85%
@@ -11,7 +11,7 @@ ht-degree: 85%
 ---
 
 
-# 测量Adobe Analytics蒸汽介质{#measuring-audio-and-video-in-adobe-analytics}
+# 在Adobe Analytics测量流媒体{#measuring-audio-and-video-in-adobe-analytics}
 
 ![横幅](./assets/media_analytics_banner.png)
 
