@@ -1,24 +1,24 @@
 ---
 audience: end-user
-user-guide-title: Adobe Analytics流媒体
+user-guide-title: 适用于流媒体的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 对音频或视频源实施 Analytics。包括 Media SDK 和 Media Collection API。
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
 
-# Adobe Analytics流媒体 {#using}
+# 适用于流媒体的 Adobe Analytics {#using}
 
 + [衡量Adobe Analytics的流媒体](media-overview.md)
 + [支持的设备和平台](measurement-options/supported-devices.md)
-+ 流媒体分析简介 {#intro-to-ava}
++ 流媒体分析简介{#intro-to-ava}
    + [先决条件](intro-to-ava/prereqs.md)
    + 实施路径 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 93%
          + [设置 JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [设置 Chromecast](sdk-implement/setup/set-up-chromecast.md)
       + [设置 Roku](sdk-implement/setup/set-up-roku.md)
-   + 跟踪流式媒体播放 {#track-av-playback}
+   + 跟踪流媒体播放{#track-av-playback}
       + [概述](sdk-implement/track-av-playback/track-core-overview.md)
-      + 跟踪核心流媒体播放 {#track-core}
+      + 跟踪核心流媒体播放{#track-core}
          + [在 Android 中跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [在 iOS 中跟踪核心播放](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + 在 JavaScript 中跟踪核心播放 {#track-core-javascript}
@@ -214,7 +214,7 @@ ht-degree: 93%
       + [媒体详细信息](media-reports/media-default-reports/media-reports-detail.md)
       + [媒体时段报告](media-reports/media-default-reports/media-reports-daypart.md)
       + [媒体并发查看器报告](media-reports/media-default-reports/media-concurrent-viewers.md)
-   + 媒体工作区面板 {#media-workspace-panels}
+   + 媒体工作区面板{#media-workspace-panels}
       + [“媒体并发查看器”面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [媒体工作区模板](media-reports/media-workspace-templates.md)
    + [通过API获取并发查看器数据](media-reports/media-default-reports/get-concurrent-json20.md)
