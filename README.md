@@ -1,21 +1,12 @@
 ---
-source-git-commit: 7dbbd8b77801243a4a557be811dc678156c39d31
+source-git-commit: 4c4f296aced1e0e65a5fef7cf26ee9f6481139dd
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '568'
-ht-degree: 72%
+source-wordcount: '434'
+ht-degree: 91%
 
 ---
 # 贡献文章
-
-| EXL-PR | EXL | 预览 | 激活 | 发布日期 | 帮助 |
-|--- |--- |--- |--- |--- |--- |
-| [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/lastBuild/) | [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/lastBuild) | [预览URL](https://experienceleague.corp.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [实时URL](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [Authoring 指南](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
-
-| 生产 | Stage（阶段） |
-|---|---|
-| [![生成状态](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![生成状态](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/lastBuild) |
-| [输出产品](https://docs.adobe.com/content/help/zh-Hans/media-analytics/using/media-overview.html) | [输出Stg](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html) |
 
 我们欢迎社区成员以及文档团队以外的 Adobe 员工积极贡献文章。
 
@@ -45,7 +36,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Adobe 员工做出的主要更改
 
-如果您是Adobe Experience Cloud解决方案的技术撰稿人、项目经理或产品团队的开发人员，并且您的工作是贡献技术文章或创作技术文章，则应使用专用存储库 [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+如果您是Adobe Experience Cloud解决方案的技术撰稿人、项目经理或产品团队的开发人员，并且您的工作是撰写或撰写技术文章，则应使用专用存储库[git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs)。 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## 工具和设置
 
