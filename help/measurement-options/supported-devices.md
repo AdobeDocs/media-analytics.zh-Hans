@@ -2,10 +2,10 @@
 title: 支持的设备和平台
 description: Adobe Analytics的流媒体服务可确保跨所有设备收集和报告每个媒体流。
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '337'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Analytics的流媒体支持所有主要设备，包括：
 
 下表列出了当前支持的设备和平台。要下载最新版本的 SDK，请参阅[下载 SDK](https://docs.adobe.com/content/help/zh-Hans/media-analytics/using/sdk-implement/download-sdks.html)。对于表中未列出的设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
 
-| 流平台和设备 |  | 包含 AEP SDK 的 Media Launch 扩展 | Media SDK | 媒体收集 API |
+| 流平台和设备 |  | 带有AEP Mobile SDK的Media Launch Extension | Media SDK | 媒体收集 API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/移动 Web |  |  |  |  |
 |  | JavaScript 浏览器 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
