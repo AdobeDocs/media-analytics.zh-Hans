@@ -6,7 +6,7 @@ user-guide-description: 对音频或视频源实施 Analytics。包括 Media SDK
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: a6f9c93c8c21f261eb5b592d4a2d8c9d2532efee
+source-git-commit: a51f9bb33c7385fef0f13b7e1e9009b07a788305
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 94%
@@ -219,11 +219,16 @@ ht-degree: 94%
    + [媒体工作区模板](media-reports/media-workspace-templates.md)
    + [通过API获取并发查看器数据](media-reports/media-default-reports/get-concurrent-json20.md)
 + [跟踪下载的内容](media-collection-api/track-downloaded-content.md)
-+ [Federated Analytics](federated-analytics.md)
 + 播放器状态跟踪 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
    + [标准状态和自定义状态](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [实施与报表](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [播放器状态跟踪示例](sdk-implement/player-state-tracking/player-state-examples.md)
++ [Federated Analytics](federated-analytics.md)
+<!-- + Player State Tracking {#player-state-tracking}
+    + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
+    + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+    + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
 + 其他资源 {#additional-resources}
    + [发行说明](additional-resources/doc-updates.md)
