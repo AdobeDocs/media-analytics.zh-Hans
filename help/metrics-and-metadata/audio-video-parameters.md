@@ -3,9 +3,9 @@ title: 音频和视频参数
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: c4d48d2ba1bec8afc7cfd8d625c6b654056e5489
 workflow-type: tm+mt
-source-wordcount: '6234'
+source-wordcount: '6235'
 ht-degree: 99%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 99%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 密钥：**<br/> media.streamType </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 2.2 <br/><br/>可从以下位置获取：[媒体收集 API 概述](/help/media-collection-api/mc-api-overview.md)或[下载 SDK - 版本 2.2](/help/sdk-implement/download-sdks.md)。  </li>  <li> **示例值：**<br/>&quot;video&quot; </li> <li> **描述：**<br/>&#x200B;标识流类型。有效值为“audio”、“video”和“all”。<br/><br/>[报表区段](/help/metrics-and-metadata/segments.md)：<br/><br/>媒体流类型：全部 - <br/>对所有媒体流数据进行分段；规则：存在内容 (ID) <br/><br/>媒体流类型：音频 - <br/>对所有音频流数据进行分段；规则：存在内容 (ID) 且媒体流类型 = audio <br/><br/>媒体流类型：“视频”- <br/>对所有视频流数据进行分段；规则：存在内容 (ID) 且媒体流类型 = audio <br/><br/> **发行日期：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.streamType) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.streamType) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;访问时 </li> <li> **报表名称：**<br/>&#x200B;内容 </li> <li> **上下文数据：**<br/>(a.media.streamType) </li> <li> **数据馈送：**<br/> videostreamtype </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.streamType) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 密钥：**<br/> media.streamType </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 2.2 <br/><br/>可从以下位置获取：[媒体收集 API 概述](/help/media-collection-api/mc-api-overview.md)或[下载 SDK - 版本 2.2](/help/sdk-implement/download-sdks.md)。  </li>  <li> **示例值：**<br/>&quot;video&quot; </li> <li> **描述：**<br/>&#x200B;标识流类型。有效值为“audio”、“video”和“all”。<br/><br/>[报表区段](/help/metrics-and-metadata/segments.md)：<br/><br/>媒体流类型：全部 - <br/>对所有媒体流数据进行分段；规则：存在内容 (ID) <br/><br/>媒体流类型：音频 - <br/>对所有音频流数据进行分段；规则：存在内容 (ID) 且媒体流类型 = audio <br/><br/>媒体流类型：“视频”- <br/>对所有视频流数据进行分段；规则：存在内容 (ID) 且媒体流类型 = audio <br/><br/> **发行日期：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.streamType) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.streamType) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> 流类型 </li> <li> **上下文数据：**<br/>(a.media.streamType) </li> <li> **数据馈送：**<br/> videostreamtype </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.streamType) </li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
