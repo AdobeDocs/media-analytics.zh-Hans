@@ -3,9 +3,9 @@ title: 音频和视频参数
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: ef237fd0d9e2bcebe011d819224d98d450830d07
+source-git-commit: f59738f48eeb80d3aaead1757abd2ba3785c40da
 workflow-type: tm+mt
-source-wordcount: '6252'
+source-wordcount: '6257'
 ht-degree: 99%
 
 ---
@@ -179,7 +179,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>  [appVersion](./audio-video-parameters.md#config-media-object) </li> <li> **API 密钥：**<br/> media.sdkVersion </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;2.62.0_release&quot; </li> <li> **描述：**<br/>&#x200B;播放器使用的 SDK 版本。此参数可使用您的播放器支持的任何自定义值。<br/><br/>客户必须自行创建处理规则才能在报表中使用此值。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.<br/>sdkVersion) </li> <li> **心率：**<br/>(s:sp:sdk) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;使用自定义处理规则 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;自定义* </li> <li> **上下文数据：**<br/>(a.media.sdkVersion) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.sdkVersion) </li> </ul><br/>*使用自定义处理规则 |
+| <ul> <li> **SDK 密钥：**<br/>  [appVersion](./audio-video-parameters.md#config-media-object) </li> <li> **API 密钥：**<br/> media.sdkVersion </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;2.62.0_release&quot; </li> <li> **描述：**<br/>&#x200B;播放器使用的 SDK 版本。此参数可使用您的播放器支持的任何自定义值。<br/><br/>客户必须自行创建处理规则才能在报表中使用此值。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.<br/>sdkVersion) </li> <li> **心率：**<br/>(s:sp:sdk) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;使用自定义处理规则 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;自定义* </li> <li> **上下文数据：**<br/>(a.media.sdkVersion) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.sdkVersion) </li> </ul>*使用自定义处理规则 |
 
 ### VHL 版本
 
@@ -301,7 +301,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> </li> <li> **API 密钥：**<br/> media.label </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 <br/>可从以下位置获取：[媒体收集概述](/help/media-collection-api/mc-api-overview.md)或[下载 SDK - 版本 2.2](/help/sdk-implement/download-sdks.md)。  </li> <li> **示例值：**<br/>&quot;Revolver&quot; </li> <li> **描述：**<br/>&#x200B;记录标签的名称。<br/> **发行日期：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.label) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.label) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> </li> 标签<li> **上下文数据：**<br/>(a.media.label) </li> <li> **数据馈送：**<br/> videoaudiolabel </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.label) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> </li> <li> **API 密钥：**<br/> media.label </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 <br/>可从以下位置获取：[媒体收集概述](/help/media-collection-api/mc-api-overview.md)或[下载 SDK - 版本 2.2](/help/sdk-implement/download-sdks.md)。  </li> <li> **示例值：**<br/>&quot;Revolver&quot; </li> <li> **描述：**<br/>&#x200B;记录标签的名称。<br/> **发行日期：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.label) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.label) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> 标签</li> <li> **上下文数据：**<br/>(a.media.label) </li> <li> **数据馈送：**<br/> videoaudiolabel </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.label) </li> </ul> |
 
 ### 作者
 
@@ -319,7 +319,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> </li> <li> **API 密钥：**<br/> media.publisher </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 <br/>可从以下位置获取：[媒体收集概述](/help/media-collection-api/mc-api-overview.md)或[下载 SDK - 版本 2.2](/help/sdk-implement/download-sdks.md)。  </li> <li> **示例值：**<br/>&quot;Random Bauhaus&quot; </li> <li> **描述：**<br/>&#x200B;音频内容发布者的名称。<br/> **发行日期：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.publisher) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> 自定义* </li> <li> **上下文数据：**<br/>(a.media.publisher) </li> <li> **数据馈送：**<br/> videoaudiopublisher </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.publisher) </li>  </ul><br/> *使用自定义处理规则 |
+| <ul> <li> **SDK 密钥：**<br/> </li> <li> **API 密钥：**<br/> media.publisher </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 <br/>可从以下位置获取：[媒体收集概述](/help/media-collection-api/mc-api-overview.md)或[下载 SDK - 版本 2.2](/help/sdk-implement/download-sdks.md)。  </li> <li> **示例值：**<br/>&quot;Random Bauhaus&quot; </li> <li> **描述：**<br/>&#x200B;音频内容发布者的名称。<br/> **发行日期：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.publisher) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> 自定义* </li> <li> **上下文数据：**<br/>(a.media.publisher) </li> <li> **数据馈送：**<br/> videoaudiopublisher </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.publisher) </li>  </ul> *使用自定义处理规则 |
 
 ## 流媒体指标{#audio-and-video-metrics}
 
@@ -357,7 +357,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;媒体关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 94 </li> <li> **描述：**<br/>&#x200B;会话期间不重复播放的内容区段的时间值（以秒为单位）。不包含向回搜寻观看的情况（查看者多次观看同一内容区段）所播放的时间。在 Analysis Workspace 和 Reports &amp; Analytics 中，该值将以时间格式 (HH:MM:SS) 显示。而在数据馈送、Data Warehouse 和报表 API 中，该值将以秒数显示。  <br/> **发行日期：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;不适用 </li> <li> **心率：**<br/>&#x200B;不适用 </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;自定义 </li> <li> **上下文数据：**<br/>(a.media.uniqueTimePlayed) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.uniqueTimePlayed) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;媒体关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 94 </li> <li> **描述：**<br/>&#x200B;会话期间不重复播放的内容区段的时间值（以秒为单位）。不包含向回搜寻观看的情况（查看者多次观看同一内容区段）所播放的时间。在 Analysis Workspace 和 Reports &amp; Analytics 中，该值将以时间格式 (HH:MM:SS) 显示。而在数据馈送、Data Warehouse 和报表 API 中，该值将以秒数显示。  <br/> **发行日期：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;不适用 </li> <li> **心率：**<br/>&#x200B;不适用 </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报告名称：播**<br/> 放的唯一时间 </li> <li> **上下文数据：**<br/>(a.media.uniqueTimePlayed) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.uniqueTimePlayed) </li> </ul> |
 
 ### 10% 进度标记
 
@@ -399,7 +399,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;媒体关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 600</li> <li> **说明：**<br/>&#x200B;如果流在关闭时带有完整事件或结束事件，则自上次调用量度开始的秒数为 0；如果由于超时而关闭，则通常为 600。此量度没有解决方案变量和自动处理规则，因此您必须创建自定义处理规则才能进行保存。</li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;不适用 </li> <li> **心率：**<br/>&#x200B;不适用 </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;使用自定义处理规则 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/>(a.media.secondsSinceLastCall) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.secondsSinceLastCall) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;媒体关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 600</li> <li> **说明：**<br/>&#x200B;如果流在关闭时带有完整事件或结束事件，则自上次调用量度开始的秒数为 0；如果由于超时而关闭，则通常为 600。此量度没有解决方案变量和自动处理规则，因此您必须创建自定义处理规则才能进行保存。</li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;不适用 </li> <li> **心率：**<br/>&#x200B;不适用 </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;使用自定义处理规则 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;自定义*</li> <li> **上下文数据：**<br/>(a.media.secondsSinceLastCall) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.secondsSinceLastCall) </li> </ul> *使用自定义处理规则 |
 
 ### 联合数据
 
