@@ -9,14 +9,14 @@ translation-type: tm+mt
 source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
 
 # 适用于流媒体的 Adobe Analytics {#using}
 
-+ [衡量Adobe Analytics的流媒体](media-overview.md)
++ [在 Adobe Analytics 中测量流媒体](media-overview.md)
 + [支持的设备和平台](measurement-options/supported-devices.md)
 + 流媒体分析简介{#intro-to-ava}
    + [先决条件](intro-to-ava/prereqs.md)
@@ -212,12 +212,12 @@ ht-degree: 94%
       + [默认报表概述](media-reports/media-default-reports/default-reports-overview.md)
       + [媒体概览](media-reports/media-default-reports/media-reports-overview.md)
       + [媒体详细信息](media-reports/media-default-reports/media-reports-detail.md)
-      + [媒体时段报告](media-reports/media-default-reports/media-reports-daypart.md)
-      + [媒体并发查看器报告](media-reports/media-default-reports/media-concurrent-viewers.md)
+      + [“媒体时段”报表](media-reports/media-default-reports/media-reports-daypart.md)
+      + [“媒体并行查看者”报表](media-reports/media-default-reports/media-concurrent-viewers.md)
    + 媒体工作区面板{#media-workspace-panels}
-      + [“媒体并发查看器”面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+      + [“媒体并行查看者”面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [媒体工作区模板](media-reports/media-workspace-templates.md)
-   + [通过API获取并发查看器数据](media-reports/media-default-reports/get-concurrent-json20.md)
+   + [通过 API 获取并行查看者数据](media-reports/media-default-reports/get-concurrent-json20.md)
 + [跟踪下载的内容](media-collection-api/track-downloaded-content.md)
 + 播放器状态跟踪 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
