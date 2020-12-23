@@ -1,11 +1,11 @@
 ---
 title: 支持的设备和平台
-description: Adobe Analytics的流媒体服务可确保跨所有设备收集和报告每个媒体流。
-translation-type: tm+mt
+description: 适用于流媒体的 Adobe Analytics 可确保在所有设备上收集和报告每个媒体流。
+translation-type: ht
 source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 89%
 >
 >Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将终止对适用于 iOS 和 Android 的 Media Analytics SDK 的支持。有关更多信息，请参阅 [Media Analytics SDK 支持终止常见问题解答](/help/sdk-implement/end-of-support-faqs.md)。
 
-Adobe Analytics的流媒体支持所有主要设备，包括：
+适用于流媒体的 Adobe Analytics 支持所有主要设备，包括：
 
 * iOS 和 Android 智能手机和平板电脑
 * 适用于 ROKU、AppleTV、FireTV 和 Android TV 的 OTT 设备
@@ -28,7 +28,7 @@ Adobe Analytics的流媒体支持所有主要设备，包括：
 
 下表列出了当前支持的设备和平台。要下载最新版本的 SDK，请参阅[下载 SDK](https://docs.adobe.com/content/help/zh-Hans/media-analytics/using/sdk-implement/download-sdks.html)。对于表中未列出的设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
 
-| 流平台和设备 |  | 带有AEP Mobile SDK的Media Launch Extension | Media SDK | 媒体收集 API |
+| 流平台和设备 |  | 包含 AEP Mobile SDK 的 Media Launch 扩展 | Media SDK | 媒体收集 API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/移动 Web |  |  |  |  |
 |  | JavaScript 浏览器 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
