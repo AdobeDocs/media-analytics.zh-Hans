@@ -2,14 +2,14 @@
 audience: end-user
 user-guide-title: 适用于流媒体的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
-user-guide-description: 实施Adobe Analytics流媒体。 包括 Media SDK 和 Media Collection API。
+user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
 source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
