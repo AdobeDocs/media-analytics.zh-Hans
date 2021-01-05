@@ -2,11 +2,11 @@
 title: 设置 iOS
 description: 设置 Media SDK 应用程序，以在 iOS 中实施。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: ht
-source-wordcount: '690'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: f54733c44e96c517d0c4c624a40742b421a54325
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 99%
 
 ---
 
@@ -34,6 +34,17 @@ ht-degree: 100%
    * _提供播放器信息的 API_ - 此信息包括媒体名称和播放头位置等详细信息。
 
 ## SDK 实施
+
+>[!IMPORTANT]
+>
+>从版本 2.3.0 开始，SDK 通过 XCFramework 进行分发。
+>
+>SDK 版本 2.3.0 需要 Xcode 12.0 或更高版本以及（如果适用）Cocoapods 1.10.0 或更高版本。
+
+* 每当提到二进制库文件时，应改用其 XCFramework 替换：
+   * MediaSDK.a > MediaSDK.xcframework
+   * MediaSDK_TV.a > MediaSDKTV.xcframework
+* 如果手动将 Adobe XCFramework 添加到您的项目，请确保未嵌入它们。
 
 1. 将[下载](/help/sdk-implement/download-sdks.md#download-2x-sdks)的 Media SDK 添加到您的项目中。
 
@@ -66,6 +77,7 @@ ht-degree: 100%
          * **AdobeMobileLibrary.a**
          * **MediaSDK.a**
          * **libsqlite3.0.tbd**
+
          **Apple TV (tvOS) 目标：**
 
          * **AdobeMobileLibrary_TV.a**
