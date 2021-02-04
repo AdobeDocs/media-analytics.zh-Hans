@@ -1,9 +1,11 @@
 ---
-title: Audience Manager 启用
-description: null
-uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+title: Adobe Audience Manager支持什么？
+description: 了解如何将应用程序操作链接到媒体跟踪数据，而无需额外的处理规则和自定义变量。
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 93%
 
 ---
 
@@ -109,4 +111,3 @@ Adobe Audience Manager (AAM) 是一种数据管理平台 (DMP)，可帮助您将
    ```js
    ADBMobile().audienceSubmitSignal()
    ```
-
