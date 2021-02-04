@@ -1,19 +1,18 @@
 ---
-title: 实施路径
-description: null
-uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: ht
-source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+title: 提供哪些流媒体实施路径？
+description: 了解Adobe流媒体实施路径，包括Adobe启动。
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 87%
 
 ---
 
 
 # 实施路径 {#implementation-paths}
 
-对于每个实施路径，由于 Media Analytics 具有独有的 SKU，其定价模型已由基于服务器调用的模型变为基于视频流的模型，因此客户将需要联系他们的销售代表/客户经理来签署新的销售订单。
+对于每个实施路径，客户需要联系其销售代表／客户经理来签署新的销售订单，因为流式媒体分析具有唯一的SKU，并且从基于服务器调用的定价模型更改为基于视频流的模型。
 
 * **包含 Adobe Media Analytics 扩展的 Adobe Launch**
 
@@ -44,6 +43,7 @@ ht-degree: 100%
    * 支持在包含（或不含）动态广告插入时测量广告时间。
    * TVSDK 的无缝广告插入模型允许 Analytics 直接测量广告播放，从而提高准确性。
    * 可靠的事件和元数据集可确保跨 QoS 缓冲或移动连接中断问题和最终用户交互（如搜索、暂停和后台）之间的准确性。
+
 <!--
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
