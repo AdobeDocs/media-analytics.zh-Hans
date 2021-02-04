@@ -1,11 +1,11 @@
 ---
-title: 媒体流归因
-description: null
-translation-type: ht
-source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: ht
-source-wordcount: '209'
-ht-degree: 100%
+title: 什么是媒体流归因？
+description: 了解如何将应用程序操作链接到媒体跟踪数据，而无需额外的处理规则和自定义变量。
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 89%
 
 ---
 
@@ -46,4 +46,3 @@ s.tl(this,'o','Hero Banner');
 ![](/assets/show-engagement.png)
 
 ![](/assets/vid-stream-attr-subs.png)
-
