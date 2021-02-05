@@ -1,18 +1,18 @@
 ---
-title: 提供哪些流媒体实施路径？
-description: 了解Adobe流媒体实施路径，包括Adobe启动。
-translation-type: tm+mt
+title: 提供有哪些流媒体实施路径？
+description: 了解 Adobe 流媒体实施路径，包括 Adobe Launch。
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '505'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # 实施路径 {#implementation-paths}
 
-对于每个实施路径，客户需要联系其销售代表／客户经理来签署新的销售订单，因为流式媒体分析具有唯一的SKU，并且从基于服务器调用的定价模型更改为基于视频流的模型。
+对于每个实施路径，由于 Streaming Media Analytics 具有独有的 SKU，其定价模型已由基于服务器调用的模型变为基于视频流的模型，因此客户将需要联系他们的销售代表/客户经理来签署新的销售订单。
 
 * **包含 Adobe Media Analytics 扩展的 Adobe Launch**
 
