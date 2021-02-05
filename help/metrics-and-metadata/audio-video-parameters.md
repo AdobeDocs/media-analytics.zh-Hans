@@ -3,9 +3,9 @@ title: 音频和视频参数
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
 workflow-type: tm+mt
-source-wordcount: '6245'
+source-wordcount: '6243'
 ht-degree: 99%
 
 ---
@@ -199,7 +199,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> STREAM_FORMAT </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;Live&quot; </li> <li> **描述：**<br/>&#x200B;流的格式（实时、VOD、线性）。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.format) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.format) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;使用自定义处理规则 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;自定义 </li> <li> **上下文数据：**<br/>(a.media.format) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.format) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> STREAM_FORMAT </li> <li> **API密钥：**<br/> media.streamFormat </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值**<br/> :“HD” </li> <li> **描述：**<br/> 流的格式(HD、SD)  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.format) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.format) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;使用自定义处理规则 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;自定义 </li> <li> **上下文数据：**<br/>(a.media.format) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.format) </li> </ul> |
 
 ### 季
 
