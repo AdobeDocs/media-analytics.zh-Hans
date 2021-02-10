@@ -1,19 +1,19 @@
 ---
-title: 什么是媒体分析和客户端集成？
-description: 了解Media Analytics如何与客户端集成、Media SDK和／或Media Collection API一起使用。
+title: 什么是 Media Analytics 和客户端集成？
+description: 了解 Media Analytics 如何与客户端集成、Media SDK 和/或媒体收集 API 一起使用。
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '152'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 
 # 客户端{#client-side}
 
-Media Analytics（心率）是 Adobe 的标准化媒体跟踪解决方案。替换了Adobe的里程碑模型。
+Media Analytics（心率）是 Adobe 的标准化媒体跟踪解决方案。它替换了 Adobe 的里程碑模型。
 
 客户端集成只能通过 Media Analytics 实施。您可以选择实施 Media SDK 或媒体收集 API（或同时实施两者）。客户端路径可以跨任何播放器使用，包括客户和/或 OVP 播放器，如 Brightcove、Ooyala、thePlatform 等。
 
