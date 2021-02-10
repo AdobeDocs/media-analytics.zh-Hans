@@ -1,18 +1,18 @@
 ---
 title: 什么是 Adobe Primetime？
-description: 了解Adobe Primetime解决方案及其如何帮助流媒体货币化。
-translation-type: tm+mt
+description: 了解 Adobe Primetime 解决方案及其如何帮助从流媒体中盈利。
+translation-type: ht
 source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
 # Primetime{#primetime}
 
-媒体分析(Heartbeats)是Adobe的标准化媒体跟踪解决方案，取代了Adobe的里程碑模型。
+Media Analytics（心率）是 Adobe 的标准化媒体跟踪解决方案，它取代了 Adobe 的里程碑模型。
 
 Adobe Primetime 是一款 Adobe Experience Cloud 解决方案，可帮助内容程序员和发行商从每一个连接屏幕上的媒体中盈利。
 
