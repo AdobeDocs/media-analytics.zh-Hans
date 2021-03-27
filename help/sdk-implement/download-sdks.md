@@ -3,7 +3,7 @@ title: 下载 SDK
 description: 可用平台（包括 Android、iOS、JavaScript、Chromecast 和 Roku）的 SDK 下载链接。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 63daad47260243d7f8c3badd8dc3cbf45432a905
+source-git-commit: cd3efa68ba0903bc9a616ac41dd5b20346c66870
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 100%
@@ -22,8 +22,8 @@ ht-degree: 100%
 
 | 3.x Media SDK | 最新 Media SDK 下载 |  API   |  文档  |
 | --- | --- | --- | --- |
-| JavaScript | [适用于 JS 的 Media SDK v3.0.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.1) | [JS API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [设置 JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
-| Chromecast | [适用于 Chromecast 的 Media SDK v3.0.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.1) | [Chromecast API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [设置 Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
+| JavaScript | [适用于 JS 的 Media SDK v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JS API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [设置 JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
+| Chromecast | [适用于 Chromecast 的 Media SDK v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Chromecast API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [设置 Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## 下载 2.x Media SDK {#download-2x-sdks}
