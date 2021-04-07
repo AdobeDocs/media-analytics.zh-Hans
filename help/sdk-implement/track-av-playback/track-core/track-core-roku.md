@@ -2,14 +2,14 @@
 title: 在 Roku 中跟踪核心播放
 description: 本主题介绍如何在 Roku 中使用 Media SDK 实施核心跟踪。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
+exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
-
 
 # 在 Roku 中跟踪核心播放{#track-core-playback-on-roku}
 
@@ -99,91 +99,6 @@ ht-degree: 100%
    （可选）通过上下文数据变量将标准和/或自定义元数据对象附加到跟踪会话。
 
    * **标准元数据**
-
-      [在 JavaScript 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-
-      >[!NOTE]
-      >
-      >将标准元数据对象附加到媒体对象是可选的。
-
-      * 媒体元数据键 API 引用 - [标准元数据键 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-         请在此处查看可用元数据的完整集合：[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)
-   * **自定义元数据**
-
-      为自定义变量创建变量对象，然后使用此媒体的数据进行填充。例如：
-
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
-
-1. **跟踪开始播放的意图**
-
-   要开始跟踪媒体会话，请在媒体心率实例中调用 `trackSessionStart`：
-
-   ```js
-   mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
-   ```
-
-   >[!TIP]
-   >
-   >第二个值是您在步骤 2 中创建的自定义媒体元数据对象名称。
-
-   >[!IMPORTANT]
-   >
-   >`trackSessionStart` 跟踪的是用户的播放意图，而不是播放的开始。此 API 用于加载数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
-
-   >[!NOTE]
-   >
-   >如果不使用自定义元数据，则只需在 `trackSessionStart` 中为 `data` 参数发送一个空对象，如上面 iOS 示例中注释掉的行所示。
-
-1. **跟踪播放的实际开始事件**
-
-   识别媒体播放器中的播放开始事件（媒体的第一帧呈现在屏幕上）并调用 `trackPlay`：
-
-   ```js
-   mediaHeartbeat.trackPlay();
-   ```
-
-1. **跟踪播放的结束事件**
-
-   识别媒体播放器中的播放结束事件（用户一直观看至内容的结尾）并调用 `trackComplete`：
-
-   ```js
-   mediaHeartbeat.trackComplete();
-   ```
-
-1. **跟踪会话的结束事件**
-
-   识别媒体播放器中的播放卸载/关闭事件（用户关闭媒体和/或媒体已结束并卸载）并调用 `trackSessionEnd`：
-
-   ```js
-   mediaHeartbeat.trackSessionEnd();
-   ```
-
-   >[!IMPORTANT]
-   >
-   >`trackSessionEnd` 标记跟踪会话的结尾。如果会话成功观看至结束（用户一直观看内容至结尾），请确保先调用 `trackComplete`，之后再调用 `trackSessionEnd`。在调用 `trackSessionEnd` 之后，任何其他 `track*` API 调用都将被忽略（除了用于新的跟踪会话的 `trackSessionStart` 之外）。用于跟踪媒体载入以及将当前会话设置为活动的媒体播放跟踪方法：
-
-   ```
-   ‘ Create a media info object
-   mediaInfo = adb_media_init_mediainfo()
-   mediaInfo.id = <MEDIA_ID>
-   mediaInfo.playhead = "0"
-   mediaInfo.length = "600"
-   ```
-
-1. **附加视频元数据**
-
-   （可选）通过上下文数据变量将标准和/或自定义视频元数据对象附加到视频跟踪会话。
-
-   * **标准视频元数据**
 
       [在 Roku 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
