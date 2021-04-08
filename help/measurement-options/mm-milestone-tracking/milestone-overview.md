@@ -2,14 +2,14 @@
 title: 里程碑概述
 description: null
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
-translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
-workflow-type: tm+mt
+exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '3344'
 ht-degree: 100%
 
 ---
-
 
 # 里程碑概述{#milestone-overview}
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ### 里程碑报表配置
 
-要设置里程碑实施的视频报告，请转到&#x200B;**[!UICONTROL 管理员 > 报表包管理器]。**选择相应的报表包，然后选择**[!UICONTROL 视频管理 > 视频报告]：**
+要设置里程碑实施的视频报告，请转到&#x200B;**[!UICONTROL 管理员 > 报表包管理器]。**&#x200B;选择相应的报表包，然后选择&#x200B;**[!UICONTROL 视频管理 > 视频报告]：**
 
 <!--
 ![](assets/0clip_image002_1537416456.png){width="248"}
@@ -238,4 +238,3 @@ s.dc = '122';
 /****************************** MODULES *****************************/ 
 /* Insert the media module tracking code here. */ 
 ```
-
