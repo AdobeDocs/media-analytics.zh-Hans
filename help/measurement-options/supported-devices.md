@@ -1,14 +1,14 @@
 ---
 title: 支持的设备和平台
 description: 适用于流媒体的 Adobe Analytics 可确保在所有设备上收集和报告每个媒体流。
+exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 translation-type: ht
-source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '337'
 ht-degree: 100%
 
 ---
-
 
 # 支持的设备和平台 {#devices-supported}
 
