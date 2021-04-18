@@ -1,12 +1,15 @@
 ---
 title: 事件请求
-description: null
+description: 事件请求
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 100%
 
 ---
-
 
 # 事件请求{#events-request}
 
@@ -48,7 +51,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 >[!IMPORTANT]
 >
->***广告跟踪 -**您只能跟踪`adBreak`*内的广告。
+>***广告跟踪 -**您只能跟踪`adBreak`* 内的广告。
 >
 >在广告头尾没有 `adBreakStart` 和 `adBreakComplete`“书挡”的情况下，`adStart` 和 `adComplete` 事件将被忽略，并且会将相应的广告持续时间作为主内容持续时间进行跟踪。这可能会对 Adobe Analytics 中可用的聚合数据产生重大影响。
 
@@ -74,4 +77,3 @@ Access-Control-Expose-Headers Location
 | **404** | **未找到。**<br/><br/>在后端服务中找不到媒体会话的会话 ID。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 创建另一个媒体会话并报告对它的跟踪。 |
 | **410** | **不存在。**<br/><br/>在后端服务中找到媒体会话，但客户端无法再对该会话报告活动。 | 客户端应用程序应使用[会话请求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API 创建另一个媒体会话并报告对它的跟踪。 |
 | **500** | **服务器错误** | 不适用 |
-
