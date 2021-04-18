@@ -1,12 +1,15 @@
 ---
 title: 超时情况
-description: null
+description: 超时情况
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: 0b494b27-a4a6-4af7-84c1-c44b33b6da8f
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 100%
 
 ---
-
 
 # 超时情况{#timeout-conditions}
 
@@ -24,4 +27,3 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 >[!NOTE]
 >
 >您还可以通过发送具有 `sessionEnd` 事件类型的 `events` 请求来强制结束会话。
-
