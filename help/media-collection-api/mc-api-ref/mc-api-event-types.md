@@ -1,12 +1,15 @@
 ---
 title: 事件类型和描述
-description: null
+description: 事件类型和描述
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
-
 
 # 事件类型和描述{#event-types-and-descriptions}
 
@@ -86,4 +89,3 @@ Ping 事件应该&#x200B;*不*&#x200B;包含请求正文中的 `params` 映射�
 >[!IMPORTANT]
 >
 >对于每个事件类型，您应该参考 [JSON 验证架构](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)，以验证正确的事件参数类型和要求。
-
