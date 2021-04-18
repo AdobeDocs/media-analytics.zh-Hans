@@ -1,12 +1,15 @@
 ---
 title: 区段
-description: null
+description: 区段
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '125'
+ht-degree: 100%
 
 ---
-
 
 # 区段{#segments}
 
@@ -25,4 +28,3 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | 媒体内容类型: 播客 | 对所有播客内容进行分段 | &quot;内容类型 = `podcast`&quot; |
 | 媒体内容类型: 有声书 | 对所有有声读物内容进行分段 | &quot;内容类型 = `audiobook`&quot; |
 | 媒体内容类型: AoD | 对所有 AoD 内容进行分段 | &quot;内容类型 = `aod`&quot; |
-
