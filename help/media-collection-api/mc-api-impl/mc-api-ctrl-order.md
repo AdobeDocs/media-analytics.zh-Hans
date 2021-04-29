@@ -4,7 +4,7 @@ description: 控制事件的顺序
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
 translation-type: tm+mt
-source-git-commit: e0da35f364dc057a241fbb05a718a731ffee1e94
+source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 4%
@@ -16,6 +16,7 @@ ht-degree: 4%
 流式视频跟踪是一个高度依赖时间的操作，有时Media Collection API跟踪调用会按顺序到达后端。 在这种情况下，后端会尝试根据`playerTime`对象中提供的时间戳来排队和重新排序事件。  这存在一些限制。 目前，如果失序调用之间的延迟超过一秒，则重新排序可能会失败。 在将来的更新中，可以优化和配置“可接受的延迟时间”。
 
 ## 无序事件示例
+
 当事件通过网络时，会出现无序事件，这有时会导致延迟。
 
 例如，您可以发送`adBreakStart`事件，后跟`adStart`事件。 这是一个常见用例，因为广告在广告中断内开始是必需的。
