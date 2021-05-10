@@ -2,14 +2,14 @@
 title: 请求参数
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
+exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 99%
+source-wordcount: '1205'
+ht-degree: 98%
 
 ---
-
 
 # 请求参数{#request-parameters}
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 组织 ID，可在 Adobe Experience Cloud 生态系统中标识您的组织 |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | 这是 Experience Cloud 用户 ID (ECID)。在大多数情况下，这是您应当用来标识用户的 ID。心率 `marketingCloudUserId` 等于 Adobe Analytics 中的 `MID`。虽然从技术上讲不是必需的，但访问 Experience Cloud 系列应用程序时需要此参数。 |
-| `visitor.aamLocationHint` | N | `sessionStart` | 提供 Adobe Audience Manager Edge 数据 |
+| `visitor.aamLocationHint` | N | `sessionStart` | 提供 Adobe Audience Manager Edge 数据  — 如果未输入值，则该值为null。 |
 | `appInstallationId` | N | `sessionStart` | appInstallationId 用于唯一标识应用程序和设备 |
 
 ## 内容数据
@@ -48,7 +48,7 @@ ht-degree: 99%
 
 | 请求密钥 | 必需 | 设置... |  描述  |
 | --- | :---: | :---: | --- |
-| `media.streamFormat` | N | `sessionStart` | 流格式，如“高清” |
+| `media.streamFormat` | N | `sessionStart` | 流格式，例如“高清” |
 | `media.show` | N | `sessionStart` | 节目或系列节目的名称 |
 | `media.season` | N | `sessionStart` | 节目或系列节目所属的季编号 |
 | `media.episode` | N | `sessionStart` | 剧集的数量 |
