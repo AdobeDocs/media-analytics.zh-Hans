@@ -1,14 +1,13 @@
 ---
 title: 从独立 Media SDK 迁移到 Adobe Launch - Web (JS)
 description: 帮助从 Media SDK 迁移到 Launch 的说明和代码示例。
-translation-type: tm+mt
-source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
+exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 98%
+source-wordcount: '403'
+ht-degree: 95%
 
 ---
-
 
 # 从独立 Media SDK 迁移到 Adobe Launch - Web (JS)
 
@@ -46,7 +45,7 @@ Media 扩展将使用已配置的参数进行跟踪。
 
    ![](assets/launch_config_js.png)
 
-[Launch 用户指南 - 安装和配置媒体扩展](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Launch 用户指南 - 安装和配置媒体扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
 
 ## 跟踪器创建差异
 
@@ -77,7 +76,7 @@ this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurem
 ```
 
 <!--  Dead Link - from 2019 - can't locate where this should go
-[Media SDK - Tracker Creation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
+[Media SDK - Tracker Creation](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
 
 ### Launch
 
@@ -113,11 +112,11 @@ Launch 提供了两种创建跟踪基础结构的方法。这两种方法都使�
 
 ### Media SDK
 
-* [设置JavaScript 2.x](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md)
-* [设置JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md)
+* [设置 JavaScript 2.x](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md)
+* [设置 JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
 
-* [Launch 概述](https://docs.adobe.com/content/help/zh-Hans/launch/using/overview.translate.html)
-* [Media Analytics 扩展](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.translate.html)
+* [Launch 概述](https://experienceleague.adobe.com/docs/launch/using/overview.html)
+* [Media Analytics 扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
