@@ -2,14 +2,13 @@
 title: 跟踪下载的内容
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
-translation-type: ht
-source-git-commit: be68a7abf7d5fd4cc725b040583801f2308ab066
-workflow-type: ht
-source-wordcount: '611'
-ht-degree: 100%
+exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 98%
 
 ---
-
 
 # 跟踪下载的内容{#track-downloaded-content}
 
@@ -40,13 +39,13 @@ iOS 和 Android 移动设备支持内容跟踪。
 ### 事件架构
 
 “下载的内容”功能是（标准）联机媒体收集 API 的脱机版本，因此，播放器进行批处理并发送到后端的事件数据必须使用进行联机调用时所用的相同事件架构。有关这些架构的信息，请参阅：
-* [概述](/help/media-collection-api/mc-api-overview.md)
+* [概述;](/help/media-collection-api/mc-api-overview.md)
 * [验证事件请求](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### 事件的顺序
 
 * 与媒体收集 API 中的常规情况一样，批量负载中的第一个事件必须为 `sessionStart`。
-* **您必须将`media.downloaded: true`**包含在`params`事件的标准元数据参数（`sessionStart`键）中，以向后端指示您正在发送下载的内容。当您发送下载的数据时，如果此参数不存在或设置为 false，则 API 将返回 400 响应代码（错误请求）。在将内容发送到后端时，此参数会将下载的内容与实时内容区分开。如果在实时会话中设置了`media.downloaded: true`，则同样会导致 API 返回 400 响应。
+* **您必须将`media.downloaded: true`** 包含在 `params` 事件的标准元数据参数（`sessionStart` 键）中，以向后端指示您正在发送下载的内容。当您发送下载的数据时，如果此参数不存在或设置为 false，则 API 将返回 400 响应代码（错误请求）。在将内容发送到后端时，此参数会将下载的内容与实时内容区分开。如果在实时会话中设置了 `media.downloaded: true`，则同样会导致 API 返回 400 响应。
 * 实施负责按照播放器事件发生的顺序正确地对事件进行存储。
 
 ### 响应代码
@@ -56,7 +55,7 @@ iOS 和 Android 移动设备支持内容跟踪。
 
 ## 与 Adobe Analytics 集成 {#integration-with-adobe-analtyics}
 
-在计算“下载的内容”方案的 Analytics 开始/结束调用时，后端会设置一个名为 `ts.` 的额外 Analytics 字段。这些是收到的第一个事件和最后一个事件（开始和结束）的时间戳。此机制可将已结束的媒体会话放置在正确的时间点（也就是说，即便用户几天都没有联机，也会报告在实际查看内容时所发生的媒体会话）。必须通过在 Adobe Analytics 端创建“可选时间戳报表包”来启用此机制。__&#x200B;要启用可选时间戳报表包，请参阅[可选时间戳](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/timestamp-optional.html)。
+在计算“下载的内容”方案的 Analytics 开始/结束调用时，后端会设置一个名为 `ts.` 的额外 Analytics 字段。这些是收到的第一个事件和最后一个事件（开始和结束）的时间戳。此机制可将已结束的媒体会话放置在正确的时间点（也就是说，即便用户几天都没有联机，也会报告在实际查看内容时所发生的媒体会话）。必须通过在 Adobe Analytics 端创建“可选时间戳报表包”来启用此机制。__&#x200B;要启用可选时间戳报表包，请参阅[可选时间戳](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)。
 
 ## 会话对比示例 {#sample-session-comparison}
 
