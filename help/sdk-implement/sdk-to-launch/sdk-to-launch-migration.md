@@ -3,14 +3,13 @@ seo-title: 从独立 Media SDK 迁移到 Adobe Launch
 title: 从独立 Media SDK 迁移到 Adobe Launch
 seo-description: 帮助从 Media SDK 迁移到 Launch 的说明和代码示例。
 description: 帮助从 Media SDK 迁移到 Launch 的说明和代码示例。
-translation-type: ht
-source-git-commit: fde203bab895c9a49ebc0d1dadb2c96697dea509
-workflow-type: ht
-source-wordcount: '184'
-ht-degree: 100%
+exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 95%
 
 ---
-
 
 # 从独立 Media SDK 迁移到 Adobe Launch
 
@@ -21,7 +20,7 @@ Launch 客户可在应用商店中获取这些扩展，从而可以快速安装�
 
 Adobe Media Analytics for Audio and Video 可用作 Web 和移动的 Launch 扩展：
 
-* [Web Launch 文档](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.translate.html)
+* [Web Launch 文档](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 * [移动 Launch 文档](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## 平台
