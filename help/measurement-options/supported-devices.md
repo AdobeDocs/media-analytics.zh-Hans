@@ -2,11 +2,10 @@
 title: 支持的设备和平台
 description: 适用于流媒体的 Adobe Analytics 可确保在所有设备上收集和报告每个媒体流。
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '337'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +25,7 @@ ht-degree: 100%
 
 对于当前不支持 SDK 的设备或平台，或者如果您不想使用 SDK，则可以实施媒体收集 API。媒体收集 API 允许您直接从设备或平台向 Media Analytics 后端发起 RESTful API 调用。
 
-下表列出了当前支持的设备和平台。要下载最新版本的 SDK，请参阅[下载 SDK](https://docs.adobe.com/content/help/zh-Hans/media-analytics/using/sdk-implement/download-sdks.html)。对于表中未列出的设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
+下表列出了当前支持的设备和平台。要下载最新版本的 SDK，请参阅[下载 SDK](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html)。对于表中未列出的设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
 
 | 流平台和设备 |  | 包含 AEP Mobile SDK 的 Media Launch 扩展 | Media SDK | 媒体收集 API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
@@ -50,4 +49,4 @@ ht-degree: 100%
 
 1. 将于 2021 年 8 月 31 日终止对这些 SDK 的支持。有关更多信息，请参阅 [Media Analytics SDK 支持终止常见问题解答](/help/sdk-implement/end-of-support-faqs.md)。
 
-有关每个 SDK 支持的最低平台版本的更多信息，请参阅[最低平台版本支持](https://docs.adobe.com/content/help/zh-Hans/media-analytics/using/sdk-implement/setup/setup-overview.html)
+有关每个 SDK 支持的最低平台版本的更多信息，请参阅[最低平台版本支持](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/setup/setup-overview.html)
