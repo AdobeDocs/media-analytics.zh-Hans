@@ -1,14 +1,13 @@
 ---
 title: 设置 JavaScript 3.x
 description: 设置 Media SDK 应用程序，以在 JavaScript 3.x 中实施。
-translation-type: ht
-source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
-workflow-type: ht
-source-wordcount: '398'
+exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '396'
 ht-degree: 100%
 
 ---
-
 
 # 设置 JavaScript 3.x{#set-up-javascript}
 
@@ -16,8 +15,8 @@ ht-degree: 100%
 
 * **获取有效配置参数**
 在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
-* **在媒体应用程序中实施适用于 JavaScript 的`AppMeasurement`和`Experience Cloud Identity Service`**
-有关更多信息，请参阅[使用 JavaScript 实施 Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/js/overview.html) 和[实施 Experience Cloud Identity Service。](https://docs.adobe.com/content/help/zh-Hans/id-service/using/implementation/setup-analytics.html)
+* **在媒体应用程序中实施适用于 JavaScript 的 `AppMeasurement` 和 `Experience Cloud Identity Service`**
+有关更多信息，请参阅[使用 JavaScript 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) 和[实施 Experience Cloud Identity Service。](https://docs.adobe.com/content/help/zh-Hans/id-service/using/implementation/setup-analytics.html)
 
 * **在媒体播放器中提供以下功能：**
 
