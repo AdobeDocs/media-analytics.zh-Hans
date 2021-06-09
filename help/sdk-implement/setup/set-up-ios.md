@@ -2,14 +2,13 @@
 title: 设置 iOS
 description: 设置 Media SDK 应用程序，以在 iOS 中实施。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: tm+mt
-source-git-commit: f54733c44e96c517d0c4c624a40742b421a54325
+exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 99%
+source-wordcount: '744'
+ht-degree: 97%
 
 ---
-
 
 # 设置 iOS{#set-up-ios}
 
@@ -22,11 +21,11 @@ ht-degree: 99%
 * **获取 Media SDK 的有效配置参数**
 在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
 * **在应用程序中实施适用于 iOS 的 ADBMobile**
-有关 Adobe Mobile SDK 文档的更多信息，请参阅[适用于 Experience Cloud 解决方案的 iOS SDK 4.x](https://docs.adobe.com/content/help/zh-Hans/mobile-services/ios/overview.html)。
+有关 Adobe Mobile SDK 文档的更多信息，请参阅[适用于 Experience Cloud 解决方案的 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)。
 
    >[!IMPORTANT]
    >
-   >从 iOS 9 开始，Apple 引入了 App Transport Security (ATS) 功能。此功能旨在通过确保您的应用程序仅使用行业标准协议和密码来提高网络安全性。此功能默认处于启用状态，但您的配置选项为您提供了是否使用 ATS 的选项。有关 ATS 的详细信息，请参阅 [App Transport Security](https://docs.adobe.com/content/help/zh-Hans/mobile-services/ios/config-ios/app-transport-security.html)。
+   >从 iOS 9 开始，Apple 引入了 App Transport Security (ATS) 功能。此功能旨在通过确保您的应用程序仅使用行业标准协议和密码来提高网络安全性。此功能默认处于启用状态，但您的配置选项为您提供了是否使用 ATS 的选项。有关 ATS 的详细信息，请参阅 [App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)。
 
 * **在媒体播放器中提供以下功能：**
 
