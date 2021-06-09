@@ -2,14 +2,13 @@
 title: 设置 Android
 description: 设置 Media SDK 应用程序，以在 Android 中实施。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: ht
-source-wordcount: '427'
-ht-degree: 100%
+exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 98%
 
 ---
-
 
 # 设置 Android{#set-up-android}
 
@@ -23,7 +22,7 @@ ht-degree: 100%
 * **获取 Media SDK 的有效配置参数**
 在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
 * **在应用程序中实施适用于 Android 的 ADBMobile**
-有关 Adobe Mobile SDK 文档的更多信息，请参阅[适用于 Experience Cloud 解决方案的 Android SDK 4.x](https://docs.adobe.com/content/help/zh-Hans/mobile-services/android/overview.html)。
+有关 Adobe Mobile SDK 文档的更多信息，请参阅[适用于 Experience Cloud 解决方案的 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)。
 
 * **在媒体播放器中提供以下功能：**
    * *用于订阅播放器事件的 API* - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
@@ -49,6 +48,7 @@ ht-degree: 100%
 
       1. 选择您计划在其中使用移动设备库的模块。
       1. 单击&#x200B;**[!UICONTROL 应用]**，然后单击&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭“模块设置”窗口。
+
       **Eclipse：**
 
       1. 在 Eclipse IDE 中，右键单击项目名称。
