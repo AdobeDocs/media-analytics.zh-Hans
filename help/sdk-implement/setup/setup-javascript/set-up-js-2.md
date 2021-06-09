@@ -2,14 +2,13 @@
 title: 设置 JavaScript 2.x
 description: 设置 Media SDK 应用程序，以在 JavaScript 2.x 中实施。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: ht
-source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
-workflow-type: ht
-source-wordcount: '394'
+exl-id: 33976096-8b86-4353-906b-e25bf4693471
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '392'
 ht-degree: 100%
 
 ---
-
 
 # 设置 JavaScript 2.x{#set-up-javascript}
 
@@ -17,8 +16,8 @@ ht-degree: 100%
 
 * **获取有效配置参数**
 在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
-* **在媒体应用程序中实施适用于 JavaScript 的`AppMeasurement`**
-有关 Adobe Mobile SDK 文档的更多信息，请参阅[使用 JavaScript 实施 Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/js/overview.html)。
+* **在媒体应用程序中实施适用于 JavaScript 的 `AppMeasurement`**
+有关 Adobe Mobile SDK 文档的更多信息，请参阅[使用 JavaScript 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)。
 
 * **在媒体播放器中提供以下功能：**
 
