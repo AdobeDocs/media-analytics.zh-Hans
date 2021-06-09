@@ -2,11 +2,10 @@
 title: 提供有哪些流媒体实施路径？
 description: 了解 Adobe 流媒体实施路径，包括 Adobe Launch。
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '505'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 98%
 
 ---
 
@@ -16,15 +15,15 @@ ht-degree: 100%
 
 * **包含 Adobe Media Analytics 扩展的 Adobe Launch**
 
-   Adobe Launch 是 Adobe 推出的下一代标记管理解决方案。Launch 为客户提供了一种简单的方式来部署和管理有助于加强相关客户体验的所有分析、营销和广告标记。要自行构建并维护与 Launch 的集成，您需要使用扩展。扩展是一种 JavaScript、HTML 和 CSS 代码包，用于扩展 Launch UI 和客户端功能。有关更多信息，请参阅 [Experience Platform Launch 用户指南](https://docs.adobe.com/content/help/zh-Hans/launch/using/overview.translate.html)。
+   Adobe Launch 是 Adobe 推出的下一代标记管理解决方案。Launch 为客户提供了一种简单的方式来部署和管理有助于加强相关客户体验的所有分析、营销和广告标记。要自行构建并维护与 Launch 的集成，您需要使用扩展。扩展是一种 JavaScript、HTML 和 CSS 代码包，用于扩展 Launch UI 和客户端功能。有关更多信息，请参阅 [Experience Platform Launch 用户指南](https://experienceleague.adobe.com/docs/launch/using/overview.html)。
 
    Adobe Media Analytics (MA) 扩展添加了适用于音频和视频的核心 JavaScript Media SDK (Media 2.x SDK)。此扩展提供了将 `MediaHeartbeat` 跟踪器实例添加到 Launch 网站或项目的功能。
 
    包含 Media Analytics 扩展的 Adobe Launch 要求您必须满足以下条件：
    * 您必须是 Adobe Experience Cloud 客户。
    * 您必须在网页上部署 Launch 或 DTM 嵌入代码。
-   * [Analytics 扩展](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
-   * [Experience Cloud ID 扩展](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
+   * [Analytics 扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
+   * [Experience Cloud ID 扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
 
 
 * **客户端 -** 这些是仅限 Media Analytics 的集成。您可以选择视频心率 SDK 和/或媒体收集 API 集成。此路径可以跨任何播放器使用，包括客户和/或 OVP 播放器，如 Brightcove、Ooyala、thePlatform 等。
