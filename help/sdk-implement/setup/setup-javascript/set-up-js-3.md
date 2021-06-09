@@ -2,10 +2,10 @@
 title: 设置 JavaScript 3.x
 description: 设置 Media SDK 应用程序，以在 JavaScript 3.x 中实施。
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 92%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 100%
 
 * **获取有效配置参数**
 在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
-* **在媒体应用程序中实施适用于 JavaScript 的 `AppMeasurement` 和 `Experience Cloud Identity Service`**
-有关更多信息，请参阅[使用 JavaScript 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) 和[实施 Experience Cloud Identity Service。](https://docs.adobe.com/content/help/zh-Hans/id-service/using/implementation/setup-analytics.html)
+* **在媒 `AppMeasurement` 体应 `Experience Cloud Identity Service` 用程序中实施和for**
+JavaScript有关更多信息，请参 [阅使用JavaScript实](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) 施Analytics和 [实施Experience Cloud身份服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)。
 
 * **在媒体播放器中提供以下功能：**
 
