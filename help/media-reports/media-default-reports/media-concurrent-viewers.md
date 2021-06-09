@@ -3,11 +3,10 @@ title: 媒体并行查看者
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '267'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +16,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
-> 此报表基于并行活动媒体会话。要按独特访客以及通过应用区段、进行细分和比较的附加功能查看并行查看者，请使用 [Analysis Workspace 中的“媒体并行查看者”面板](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)。
+> 此报表基于并行活动媒体会话。要按独特访客以及通过应用区段、进行细分和比较的附加功能查看并行查看者，请使用 [Analysis Workspace 中的“媒体并行查看者”面板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)。
 
 
 ![](assets/video-concurrent-viewers.png)
