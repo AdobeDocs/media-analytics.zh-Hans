@@ -3,10 +3,10 @@ title: 设置 Chromecast
 description: 设置 Media SDK 应用程序，以在 Chromecast 中实施。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
-source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 100%
+source-wordcount: '628'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ _我应该使用 Chromecast JavaScript SDK 还是标准 JavaScript SDK？_
    * *用于订阅播放器事件的 API* - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
 
-Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针对移动设备应用程序的移动营销功能整合到一起。最初，移动服务可无缝集成 Adobe Analytics 和 Adobe Target 解决方案的应用程序分析和定位功能。请参阅 [Adobe Mobile Services 文档](https://docs.adobe.com/content/help/zh-Hans/mobile-services/using/home.html)，以了解更多信息。
+Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针对移动设备应用程序的移动营销功能整合到一起。最初，移动服务可无缝集成 Adobe Analytics 和 Adobe Target 解决方案的应用程序分析和定位功能。请参阅 [Adobe Mobile Services 文档](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)，以了解更多信息。
 
 适用于 Experience Cloud 解决方案的 Chromecast SDK 2.x 让您能够测量使用 JavaScript 编写的 Chromecast 应用程序，通过受众管理收集并利用受众数据，以及通过视频心率测量视频参与。
 
@@ -137,4 +137,4 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
 
 
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
