@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4c4f296aced1e0e65a5fef7cf26ee9f6481139dd
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '434'
-ht-degree: 91%
+source-wordcount: '428'
+ht-degree: 90%
 
 ---
 # 贡献文章
@@ -16,13 +15,13 @@ ht-degree: 91%
 
 ## 关于您对 Adobe 内容的贡献
 
-请参阅 [Adobe Docs 参与者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
+请参阅 [Adobe Docs 参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 您的参与方式取决于您的身份以及您想提供的更改类型：
 
 ### 次要更改
 
-如果您出于善意而想要对文章进行次要更新，请访问文章，并单击文章中的&#x200B;**编辑**&#x200B;链接以转到文章所对应的 GitHub 源。然后，只需使用 GitHub UI 即可进行更新。有关更多信息，请参阅[《Adobe 文档贡献者指南》](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
+如果您出于善意而想要对文章进行次要更新，请访问文章，并单击文章中的&#x200B;**编辑**&#x200B;链接以转到文章所对应的 GitHub 源。然后，只需使用 GitHub UI 即可进行更新。有关更多信息，请参阅[《Adobe 文档贡献者指南》](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您对本存储库中文档和代码示例提交的细微更正或说明均受 Adobe 使用条款的约束。
 
@@ -36,13 +35,13 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Adobe 员工做出的主要更改
 
-如果您是Adobe Experience Cloud解决方案的技术撰稿人、项目经理或产品团队的开发人员，并且您的工作是撰写或撰写技术文章，则应使用专用存储库[git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs)。 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+如果您是来自Adobe Experience Cloud解决方案产品团队的技术文档撰稿人、项目经理或开发人员，并且您的工作是撰写或创作技术文章，则应使用专用存储库[git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs)。 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## 工具和设置
 
 社区参与者可以使用 GitHub UI 进行基本编辑或创建存储库分支，以做出主要更改。
 
-有关详细信息，请参阅 [Adobe Docs 参与者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
+有关详细信息，请参阅 [Adobe Docs 参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用 Markdown 格式化您的主题
 
