@@ -6,13 +6,13 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
 # 先决条件{#prerequisites}
 
-## 确定适当的实施 {#decision}
+## 决策 {#decision}
 
 在开始跟踪实施之前，您需要就哪种实施对您的情况更有帮助做一些早期决策。
 
@@ -32,7 +32,7 @@ ht-degree: 89%
 
    ![](assets/mc_id_service_graphic.png)
 
-   ID 服务还可以替换解决方案特定的不同 ID（例如，Analytics AID）。通过[客户 ID 和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)功能，ID 服务允许您将自己的客户 ID 传递到 Experience Cloud。但是，请记住，ID 服务仅适用于您已订阅的解决方案。如果您未注册访问其他产品，则 ID 服务不提供访问权限。
+   ID 服务还可以替换解决方案特定的不同 ID（例如，Analytics AID）。通过[客户 ID 和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hans)功能，ID 服务允许您将自己的客户 ID 传递到 Experience Cloud。但是，请记住，ID 服务仅适用于您已订阅的解决方案。如果您未注册访问其他产品，则 ID 服务不提供访问权限。
 
    今后，ID 服务将成为许多当前和将来推出的 Experience Cloud 功能、增强功能和服务中的必备组件。当前，ID 服务支持 [Analytics](https://www.adobe.com/cn/marketing-cloud/web-analytics.html)、[Audience Manager](https://www.adobe.com/cn/marketing-cloud/data-management-platform.html) 和 [Target](https://www.adobe.com/cn/marketing-cloud/testing-targeting.html)。
 
@@ -42,7 +42,7 @@ ht-degree: 89%
 
    如果您还没有实施 ID 服务，现在是时候开始考虑迁移策略了。有关 ID 服务的重要性和角色的更多信息，请参阅[为什么您应考虑使用 Identity Service](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
-   有关Experience CloudID的其他信息，请参阅[Experience CloudID概述、](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html)和[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
+   有关Experience CloudID的其他信息，请参阅[Experience CloudID概述、](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hans)和[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
 
 1. **启用 Adobe Analytics 报表。**
 
