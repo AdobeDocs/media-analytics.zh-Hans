@@ -2,9 +2,9 @@
 title: Adobe Launch 如何实施流媒体跟踪？
 description: 了解适用于流媒体的 Adobe 流媒体 Launch 扩展。
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Media Analytics（心率）是 Adobe 的标准化媒体跟踪解决方案。它�
 
 Adobe Experience Platform Launch 是 Dynamic Tag Management 的后续产品，具有 Launch 扩展功能，可帮助您在媒体播放器中实施跟踪。
 
-您可以在此处了解有关 Launch 扩展的更多信息：[Adobe Media Analytics for Audio and Video 扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)。
+您可以在此处了解有关 Launch 扩展的更多信息：[Adobe Media Analytics for Audio and Video 扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=zh-Hans)。
 
 >[!NOTE]
 >
