@@ -3,11 +3,10 @@ title: 在 Adobe Analytics 中测量流媒体
 description: Adobe Analytics for Media（也称为 Media Analytics）可为客户提供针对内容、音频和广告的可靠媒体测量。
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: eaae56abd3e549ad57c45852fe0bedb618f80e9e
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +25,7 @@ ht-degree: 100%
 ## 功能 {#features}
 
 适用于流媒体的 Adobe Analytics 具备以下优势：实时监控、详细分析、切实可行的洞察信息以及盈利机会。
-* **实时分析** - 利用跨多个渠道的关键性能量度（如，持续时间、ex2 和 ex3 等），实时做出切实可行的决策。主内容事件以 10 秒为间隔进行测量，以捕获所有活动。广告跟踪事件以 1 秒为间隔进行。
+* **实时分析** — 跨多个渠道利用媒体开始等关键绩效指标，做出实时、可操作的决策。
 * **推动参与** - 通过减少缓冲事件，了解广告在内容中的播放位置和时间，以提供流畅、影响较小的体验，促进用户重复访问，从而充分吸引用户参与。
 * **全面视角** - 整合所有内容分发商的多个数据点以全面了解所有媒体活动。同时，通过 Federated Analytics 功能来测量所有可能的渠道中的参与度以及查看/收听次数。
 * **增加粒度** - 在极其精细的粒度级别上评估查看行为，包括单个访客访问的时间、每分钟的并行查看者/收听者，以及使用内容的平均时长。
