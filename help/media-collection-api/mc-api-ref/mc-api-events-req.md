@@ -1,13 +1,14 @@
 ---
-title: 事件请求
-description: 事件请求
+title: 流媒体收集API事件�请求端点
+description: “媒体收集API事件请求端点参数和响应是什么？”
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 100%
+source-wordcount: '263'
+ht-degree: 92%
 
 ---
 
