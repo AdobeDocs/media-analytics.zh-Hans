@@ -1,12 +1,16 @@
 ---
 title: 恢复不活动的会话
-description: 如何恢复不活动的会话。
+description: 了解如何恢复不活动的会话。
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 95%
 
 ---
-
 
 # 恢复不活动的会话{#resuming-inactive-sessions}
 
@@ -86,4 +90,3 @@ _onmediaLoad = function () {
   this._mediaHeartbeat.trackSessionStart(mediaObject, contextData); 
 };
 ```
-
