@@ -1,13 +1,14 @@
 ---
 title: 媒体时段
-description: 媒体时段
+description: 使用“媒体时段”功能板可显示按时间划分的内容开始次数，并分析受众何时参与。
 uuid: aa545f72-6816-448f-af5d-3c5e18f7b3b7
 exl-id: 5e4a390e-8cc5-4934-8d60-c82ca0daaee1
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '27'
-ht-degree: 100%
+feature: “Media Analytics、Reports & Analytics基础知识”
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '50'
+ht-degree: 50%
 
 ---
 
