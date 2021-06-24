@@ -1,20 +1,21 @@
 ---
-title: 使用JavaScript 3.x跟踪广告
+title: 了解如何使用JavaScript 3.x跟踪广告
 description: 使用 Media SDK 在浏览器 (JS) 应用程序中实施广告跟踪。
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '364'
 ht-degree: 80%
 
 ---
-
 
 # 使用JavaScript 3.x跟踪广告{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
->以下说明为使用 3.x SDK 进行实施提供了指南。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下说明为使用 3.x SDK 进行实施提供了指南。如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 广告跟踪常量
 
@@ -34,9 +35,9 @@ ht-degree: 80%
 
    | 变量名称 | 类型 | 描述 |
    | --- | --- | --- |
-   | `name` | 字符串 | 非空字符串，表示广告名称（前滚、中滚和后滚）。 |
-   | `position` | number | 广告时间的位置编号，从 1 开始编号。 |
-   | `startTime` | number | 广告时间开始的播放头值。 |
+   | `name` | 字符串 | 表示广告时间名称（前置、中置和后置）的非空字符串。 |
+   | `position` | 数字 | 广告时间的位置编号，从 1 开始编号。 |
+   | `startTime` | 数字 | 广告时间开始的播放头值。 |
 
    广告时间对象创建：
 
@@ -61,8 +62,8 @@ ht-degree: 80%
    | --- | --- | --- |
    | `name` | 字符串 | 表示广告名称的非空字符串。 |
    | `adId` | 字符串 | 表示广告标识符的非空字符串。 |
-   | `position` | number | 广告在广告中的编号位置，从1开始。 |
-   | `length` | number | 正数表示广告长度。 |
+   | `position` | 数字 | 广告在广告时间中的位置编号，从1开始。 |
+   | `length` | 数字 | 表示广告长度的正数。 |
 
    广告对象创建：
 
