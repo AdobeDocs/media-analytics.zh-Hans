@@ -1,13 +1,14 @@
 ---
-title: 在 Roku 中跟踪核心播放
-description: 本主题介绍如何在 Roku 中使用 Media SDK 实施核心跟踪。
+title: 了解如何在Roku中跟踪核心播放
+description: 了解如何在Roku中使用Media SDK实施核心跟踪。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-translation-type: tm+mt
-source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 97%
 
 ---
 
@@ -100,7 +101,7 @@ ht-degree: 100%
 
    * **标准元数据**
 
-      [在 Roku 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[在 Roku 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >将标准视频元数据对象附加到媒体对象是可选的。
