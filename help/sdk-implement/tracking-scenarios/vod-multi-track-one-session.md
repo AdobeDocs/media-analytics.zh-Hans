@@ -1,12 +1,16 @@
 ---
-title: 一个 VOD 跟踪器用于多个会话
-description: 有关如何使用 Media SDK 通过一个跟踪器来跟踪多个会话的示例。
+title: 一个VOD跟踪器用于多个会话
+description: 查看有关如何使用Media SDK使用一个跟踪器跟踪多个会话的示例。
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 87%
 
 ---
-
 
 # 一个 VOD 跟踪器用于多个会话{#vod-one-tracker-for-multiple-sessions}
 
@@ -378,4 +382,3 @@ analyticsProvider1 = new MediaAnalyticsProvider(_player1);
 // Load the main media content.  
 _player1.loadContent(URL_TO_MEDIA_1);
 ```
-
