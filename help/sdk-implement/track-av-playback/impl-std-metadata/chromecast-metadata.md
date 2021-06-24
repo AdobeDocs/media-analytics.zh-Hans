@@ -1,12 +1,16 @@
 ---
-title: Chromecast 元数据键
-description: 介绍如何在 Chromecast 中设置要与跟踪调用一起发送的标准视频和广告元数据。
+title: Chromecast元数据键说明
+description: 了解如何在Chromecast中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 85%
 
 ---
-
 
 # Chromecast 元数据键{#chromecast-metadata-keys}
 
@@ -111,4 +115,3 @@ adObject[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardVideoMetad
  
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, this._player.getAdInfo(), adContextData);
 ```
-
