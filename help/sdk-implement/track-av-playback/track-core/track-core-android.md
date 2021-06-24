@@ -1,12 +1,16 @@
 ---
-title: 在 Android 中跟踪核心播放
-description: 本主题介绍如何在 Android 中使用 Media SDK 实施核心跟踪。
+title: 了解如何在Android中跟踪核心播放
+description: 了解如何在Android中使用Media SDK实施核心跟踪。
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
-
 
 # 在 Android 中跟踪核心播放{#track-core-playback-on-android}
 
@@ -151,9 +155,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    识别视频播放器将会暂停的任何方案，并确保正确调用了 `trackPause`。以下方案均要求应用程序调用 `trackPause()`：
 
    * 用户在应用程序中明确点击暂停。
-   * 播放器自行进入暂停状态。
-   * （*移动设备应用程序*）- 用户将应用程序置于后台，但您希望应用程序保持会话打开。
-   * （*移动设备应用程序*）- 出现导致应用程序被置于后台的任何类型的系统中断。例如，用户接收到一个调用，或者出现来自其他应用程序的弹出窗口，但您希望应用程序将会话保持活动状态，以便用户有机会从中断点继续播放媒体。
+   * 播放器将其置于“暂停”状态。
+   * （*移动应用程序*）- 用户将应用程序放入后台，但您希望应用程序保持会话打开。
+   * （*移动应用程序*）- 发生导致应用程序被置于后台运行的任何类型的系统中断。例如，用户接到电话，或其他应用程序出现弹出窗口，但您希望应用程序保持会话的活动状态，以便用户有机会从中断点恢复媒体。
 
 1. 识别播放器中的媒体播放事件和/或媒体在暂停后继续播放的事件并调用 `trackPlay`。
 
@@ -172,4 +176,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * 跟踪方案：[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Android SDK 随附有示例播放器，用于提供完整的跟踪示例。
-
