@@ -1,12 +1,16 @@
 ---
-title: 跳过一个章节的 VOD 播放
-description: 有关如何使用 Media SDK 跟踪用户跳过了一个章节的 VOD 内容的示例。
+title: 跳过一个章节的VOD播放
+description: 查看有关如何使用Media SDK跟踪用户跳过一个章节的VOD内容的示例。
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 91%
 
 ---
-
 
 # 跳过一个章节的 VOD 播放{#vod-playback-with-a-skipped-chapter}
 
@@ -288,4 +292,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
