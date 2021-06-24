@@ -1,12 +1,16 @@
 ---
 title: 创建新的调试报告
-description: 本主题介绍如何创建新的调试报告。
+description: 了解如何创建新的调试报告。
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 96%
 
 ---
-
 
 # 创建新的调试报告{#create-a-new-debug-report}
 
@@ -25,14 +29,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
          您可以通过以下方法之一访问相应设置：
 
-         * [!UICONTROL Analytics &gt; 管理员 &gt; 公司设置 &gt; Web 服务]
-         * [!UICONTROL Analytics &gt; 管理员 &gt; 用户管理 &gt; 用户 &gt; 个人用户设置]要为新用户创建 Web 服务 API 凭据，请在[!UICONTROL 用户管理]中，将用户添加到 **Web 服务访问**&#x200B;用户组。
+         * [!UICONTROL Analytics > 管理员 > 公司设置 > Web 服务]
+         * [!UICONTROL Analytics > 管理员 > 用户管理 > 用户 > 个人用户设置]要为新用户创建 Web 服务 API 凭据，请在[!UICONTROL 用户管理]中，将用户添加到 **Web 服务访问**&#x200B;用户组。
       * [!UICONTROL 默认端点] – 此字段中的数据由 Adobe 提供，无法更改。
       * [!UICONTROL 附加端点] – 如果需要使用，为诸如 `metrics.companyname.com` 之类的跟踪服务器添加 `CNAMES`
    * **视频心率 (Media Analytics)**
 
       * [!UICONTROL 默认端点] – 此字段中的数据由 Adobe 提供，无法更改。
       * [!UICONTROL 附加端点] – 如果需要使用，为诸如 `metrics.companyname.com` 之类的跟踪服务器添加 `CNAMES`。
-
-
-
