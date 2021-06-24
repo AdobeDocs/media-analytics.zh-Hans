@@ -1,15 +1,16 @@
 ---
 title: 广告参数
-description: null
+description: “了解广告参数，包括广告视频数据的实施、网络和报告变量。”
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
-translation-type: tm+mt
-source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
+exl-id: 949e86cb-d265-4836-8825-a06b87203b15
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 100%
+source-wordcount: '1850'
+ht-degree: 93%
 
 ---
-
 
 # 广告参数{#ad-parameters}
 
@@ -50,7 +51,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> [adId](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.id </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本  </li> <li> **示例值：**<br/>&quot;2125&quot; </li><li> **描述：**<br/>&#x200B;广告的 ID。（任何整数和/或字母组合）  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>name) </li> <li> **心率：**<br/>(s:asset:ad_id) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;访问时 </li> <li> **报表名称：**<br/>&#x200B;广告 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>名称) </li> <li> **数据馈送：**<br/> videoad </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.name) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> [adId](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.id </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本  </li> <li> **示例值：**<br/>&quot;2125&quot; </li><li> **描述：**<br/>&#x200B;广告的 ID。（任何整数和/或字母组合）  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>name) </li> <li> **心率：**<br/> (:asset:sad_id) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;访问时 </li> <li> **报表名称：**<br/>&#x200B;广告 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>name) </li> <li> **数据馈送：**<br/> videoad </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.name) </li> </ul> |
 
 
 
@@ -58,7 +59,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.podPosition </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 1 </li><li> **描述：**<br/>&#x200B;广告在父广告时间中的位置（索引）。第一个广告的索引是 0，第二个广告的索引是 1，以此类推。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>podPosition) </li> <li> **心率：**<br/>(s:asset:pod_position) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;面板中的广告位置 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>podPosition) </li> <li> **数据馈送：**<br/> videoadinpod </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.podPosition) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.podPosition </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 1 </li><li> **描述：**<br/>&#x200B;广告在父广告时间中的位置（索引）。第一个广告的索引是 0，第二个广告的索引是 1，以此类推。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>podPosition) </li> <li> **心率：**<br/> (:asset:spod_position) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;面板中的广告位置 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>podPosition) </li> <li> **数据馈送：**<br/> videoadinpod </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.podPosition) </li> </ul> |
 
 
 
@@ -66,7 +67,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>  [length](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.length </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.1 </li> <li> **示例值：**<br/>&quot;15&quot;  </li><li> **描述：**<br/>&#x200B;视频广告的长度，以秒为单位。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>length) </li> <li> **心率：**<br/>(l:asset:ad_length) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar 和分类 </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;广告长度和广告长度（变量） </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>长度) </li> <li> **数据馈送：**<br/> videoadlength </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.length) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [length](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.length </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.1 </li> <li> **示例值：**<br/>&quot;15&quot;  </li><li> **描述：**<br/>&#x200B;视频广告的长度，以秒为单位。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>length) </li> <li> **心率：**<br/> (:asset:lad_length) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar 和分类 </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;广告长度和广告长度（变量） </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>length) </li> <li> **数据馈送：**<br/> videoadlength </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.length) </li> </ul> |
 
 
 
@@ -74,7 +75,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>  [playerName](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.playerName </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/>&quot;Freewheel&quot; </li><li> **描述：**<br/>&#x200B;负责呈现广告的播放器的名称。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>playerName) </li> <li> **心率：**<br/>(s:sp:player_name) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;广告播放器名称 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>playerName) </li> <li> **数据馈送：**<br/> videoadplayername </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.playerName) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [playerName](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.playerName </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/>&quot;Freewheel&quot; </li><li> **描述：**<br/>&#x200B;负责呈现广告的播放器的名称。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>playerName) </li> <li> **心率：**<br/> (:sp:splayer_name) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;广告播放器名称 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>playerName) </li> <li> **数据馈送：**<br/> videoadplayername </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.playerName) </li> </ul> |
 
 
 
@@ -82,7 +83,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.podFriendlyName </li> <li> **必需：**<br/> SDK：是；API：否。 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/>&quot;pre-roll&quot; </li><li> **描述：**<br/>&#x200B;广告时间的友好名称。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>podFriendlyName) </li> <li> **心率：**<br/>(s:asset:pod_name) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/>&#x200B;分类 </li> <li> **报表名称：**<br/>&#x200B;面板名称 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>podFriendlyName) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.podFriendlyName </li> <li> **必需：**<br/> SDK：是；API：否。 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/>&quot;pre-roll&quot; </li><li> **描述：**<br/>&#x200B;广告时间的友好名称。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>podFriendlyName) </li> <li> **心率：**<br/> (:asset:spod_name) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/>&#x200B;分类 </li> <li> **报表名称：**<br/>&#x200B;面板名称 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>podFriendlyName) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
 
 
 
@@ -98,7 +99,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.podSecond </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 90 </li><li> **描述：**<br/>&#x200B;广告时间在内容中的偏移，以秒为单位。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>podSecond) </li> <li> **心率：**<br/>(l:asset:pod_offset) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/>&#x200B;分类 </li> <li> **报表名称：**<br/>&#x200B;面板位置 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>podSecond) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.podSecond) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.podSecond </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 90 </li><li> **描述：**<br/>&#x200B;广告时间在内容中的偏移，以秒为单位。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>podSecond) </li> <li> **心率：**<br/> (:asset:lpod_offset) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/>&#x200B;分类 </li> <li> **报表名称：**<br/>&#x200B;面板位置 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>podSecond) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.podSecond) </li> </ul> |
 
 
 
@@ -106,7 +107,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> c4a577424c84067899b807c76722d495_1  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>pod) </li> <li> **心率：**<br/>(s:asset:pod_id) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;广告面板 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>窗格) </li> <li> **数据馈送：**<br/> videoadpod </li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> c4a577424c84067899b807c76722d495_1  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>pod) </li> <li> **心率：**<br/> (:asset:spod_id) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;广告面板 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>pod) </li> <li> **数据馈送：**<br/> videoadpod </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
@@ -114,7 +115,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>  [名称](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.name </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.1 </li> <li> **示例值：**<br/>&quot;Ford F-150&quot; </li><li> **描述：**<br/>&#x200B;广告的友好名称。在报表中，“广告名称”是分类，“广告名称（变量）”是 eVar。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>friendlyName) </li> <li> **心率：**<br/>(s:asset:ad_name) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar 和分类 </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;广告名称和广告名称（变量） </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>friendlyName) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.friendlyName) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.name </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.1 </li> <li> **示例值：**<br/>&quot;Ford F-150&quot; </li><li> **描述：**<br/>&#x200B;广告的友好名称。在报表中，“广告名称”是分类，“广告名称（变量）”是 eVar。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>friendlyName) </li> <li> **心率：**<br/> (:asset:sad_name) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar 和分类 </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;广告名称和广告名称（变量） </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>friendlyName) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.friendlyName) </li> </ul> |
 
 
 
@@ -124,7 +125,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> ADVERTISER </li> <li> **API 密钥：**<br/> media.ad.advertiser </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/> </li><li> **描述：**<br/>&#x200B;广告中展现的产品所属的公司/品牌。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>advertiser) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.ad.advertiser) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> <i>广告商 </i> </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>广告商) </li> <li> **数据馈送：**<br/> videoadvertiser </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.advertiser) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> ADVERTISER </li> <li> **API 密钥：**<br/> media.ad.advertiser </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/> </li><li> **描述：**<br/>&#x200B;广告中展现的产品所属的公司/品牌。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>advertiser) </li> <li> **心率：**<br/> (:meta:<br/>sa.media.ad.advertiser) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> <i>广告商 </i> </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>advertiser) </li> <li> **数据馈送：**<br/> videoadvertiser </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.advertiser) </li> </ul> |
 
 
 
@@ -132,7 +133,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> CAMPAIGN_ID </li> <li> **API 密钥：**<br/> media.ad.campaignId </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&#x200B;整数或名称（字符串）。  </li><li> **描述：**<br/>&#x200B;广告营销活动的 ID。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>campaign) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.ad.campaign) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> <i>营销活动 ID </i> </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>活动) </li> <li> **数据馈送：**<br/> videocampaign </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.campaign) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> CAMPAIGN_ID </li> <li> **API 密钥：**<br/> media.ad.campaignId </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&#x200B;整数或名称（字符串）。  </li><li> **描述：**<br/>&#x200B;广告营销活动的 ID。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>campaign) </li> <li> **心率：**<br/> (:meta:<br/>sa.media.ad.campaign) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> <i>营销活动 ID </i> </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>campaign) </li> <li> **数据馈送：**<br/> videocampaign </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.campaign) </li> </ul> |
 
 
 
@@ -140,7 +141,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> CREATIVE_ID </li> <li> **API 密钥：**<br/> media.ad.creativeId </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&#x200B;整数或名称（字符串）。  </li><li> **描述：**<br/>&#x200B;广告创作的 ID。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>creative) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.ad.creative) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> <i>创作 ID </i> </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>创意) </li> <li> **数据馈送：**<br/> adclassificationcreative </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.creative) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> CREATIVE_ID </li> <li> **API 密钥：**<br/> media.ad.creativeId </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&#x200B;整数或名称（字符串）。  </li><li> **描述：**<br/>&#x200B;广告创作的 ID。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>creative) </li> <li> **心率：**<br/> (:meta:<br/>sa.media.ad.creative) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> <i>创作 ID </i> </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>creative) </li> <li> **数据馈送：**<br/> adclassificationcreative </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.creative) </li> </ul> |
 
 
 
@@ -148,7 +149,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> SITE_ID </li> <li> **API 密钥：**<br/> media.ad.siteId </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/> </li><li> **描述：**<br/>&#x200B;广告网站的 ID。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>site) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **可用：**<br/> <i>使用自定义处理规则</i> </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> 自定义 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>站点) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.site) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> SITE_ID </li> <li> **API 密钥：**<br/> media.ad.siteId </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/> </li><li> **描述：**<br/>&#x200B;广告网站的 ID。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>site) </li> <li> **心率：**<br/> (:meta:<br/>sa.media.ad.site) </li> </ul> | <ul> <li> **可用：**<br/> <i>使用自定义处理规则</i> </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> 自定义 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>site) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.site) </li> </ul> |
 
 
 
@@ -156,7 +157,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> CREATIVE_URL </li> <li> **API 密钥：**<br/> media.ad.creativeURL </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/> </li><li> **描述：**<br/>&#x200B;广告创作的 URL。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>creativeURL) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **可用：**<br/> <i>使用自定义处理规则</i> </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> 自定义 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>creativeURL) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> CREATIVE_URL </li> <li> **API 密钥：**<br/> media.ad.creativeURL </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/> </li><li> **描述：**<br/>&#x200B;广告创作的 URL。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>creativeURL) </li> <li> **心率：**<br/> (:meta:<br/>sa.media.ad.creativeURL) </li> </ul> | <ul> <li> **可用：**<br/> <i>使用自定义处理规则</i> </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> 自定义 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>creativeURL) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> |
 
 
 
@@ -164,7 +165,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> PLACEMENT_ID </li> <li> **API 密钥：**<br/> media.ad.placementId </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/> </li><li> **描述：**<br/>&#x200B;广告的版面 ID。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>placement) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **可用：**<br/> <i>使用自定义处理规则</i> </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> 自定义 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>放置) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.placement) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> PLACEMENT_ID </li> <li> **API 密钥：**<br/> media.ad.placementId </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/> </li><li> **描述：**<br/>&#x200B;广告的版面 ID。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>placement) </li> <li> **心率：**<br/> (:meta:<br/>sa.media.ad.placement) </li> </ul> | <ul> <li> **可用：**<br/> <i>使用自定义处理规则</i> </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/> 自定义 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>placement) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.placement) </li> </ul> |
 
 
 
@@ -175,7 +176,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;视频广告开始的次数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>view) </li> <li> **心率：**<br/>(s:event:type=start)<br/> (s:asset:type=ad) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;广告开始 </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>视图) </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.view) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;视频广告开始的次数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>view) </li> <li> **心率：**<br/>  (:event:stype=start)<br/> (:asset:stype=ad) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;广告开始 </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>view) </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.view) </li> </ul> |
 
 
 
@@ -183,7 +184,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;视频广告完成的次数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>complete) </li> <li> **心率：**<br/>(s:event:type=complete)<br/> (s:asset:type=ad)  </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;广告结束 </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>完成) </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.complete) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;视频广告完成的次数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>complete) </li> <li> **心率：**<br/> (:event:stype=complete)<br/> (:asset:stype=ad)  </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;广告结束 </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>complete) </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.complete) </li> </ul> |
 
 
 
@@ -191,7 +192,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 15 </li><li> **描述：**<br/>&#x200B;观看广告所花费的总时间，以秒为单位（即播放广告所用的秒数）。在 Analysis Workspace 和 Reports &amp; Analytics 中，该值将以时间格式 (HH:MM:SS) 显示。而在数据馈送、Data Warehouse 和报表 API 中，该值将以秒数显示。<br/>**发行日期：2018 年 9 月 13 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>timePlayed) </li> <li> **心率：**<br/> </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;广告逗留时间 </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>timePlayed) </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 15 </li><li> **描述：**<br/>&#x200B;观看广告所花费的总时间，以秒为单位（即播放广告所用的秒数）。在Analysis Workspace和Reports &amp; Analytics中，该值将以时间格式(HH:MM:SS)显示。 而在数据馈送、Data Warehouse 和报表 API 中，该值将以秒数显示。<br/>**发行日期：2018 年 9 月 13 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>timePlayed) </li> <li> **心率：**<br/> </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;广告逗留时间 </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>timePlayed) </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
 
 
 
