@@ -1,15 +1,16 @@
 ---
-title: 时间轴 1 - 观看到内容的结尾
-description: null
+title: 了解从内容结尾�看媒体跟踪时间轴
+description: 深入了解播放头时间轴和相应用户�的操作。 了解每个操作及其随附请求的详细信息。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: ht
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 97%
 
 ---
-
 
 # 时间轴 1 - 观看到内容的结尾{#timeline-view-to-end-of-content}
 
@@ -406,7 +407,7 @@ ht-degree: 100%
 
 **实施详细信息**
 
-缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。您必须发送来自缓冲的另一个跟踪播放事件。**`bufferStart`后的`play`调用一定会对后端进行“bufferEnd”调用**，因此不需要 `bufferEnd` 事件。
+缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。您必须发送来自缓冲的另一个跟踪播放事件。**`bufferStart` 后的 `play` 调用一定会对后端进行“bufferEnd”调用**，因此不需要 `bufferEnd` 事件。
 
 **示例请求正文**
 
@@ -641,7 +642,7 @@ ht-degree: 100%
 
 **实施详细信息**
 
-将播放状态转变为“正在播放”。**`pauseStart`后的`play`调用一定会对后端进行“resume”调用**，因此不需要 `resume` 事件。
+将播放状态转变为“正在播放”。**`pauseStart` 后的 `play` 调用一定会对后端进行“resume”调用**，因此不需要 `resume` 事件。
 
 **示例请求正文**
 
