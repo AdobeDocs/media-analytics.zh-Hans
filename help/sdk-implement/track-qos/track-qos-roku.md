@@ -1,12 +1,16 @@
 ---
-title: 在 Roku 中跟踪体验质量
-description: 本主题介绍如何在 Roku 中使用 Media SDK 实施体验质量（QoE、QoS）跟踪。
+title: 了解如何在Roku中跟踪体验质量
+description: “了解如何在Roku中使用Media SDK实施体验质量(QoE、QoS)跟踪。”
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 87%
 
 ---
-
 
 # 在 Roku 中跟踪体验质量{#track-quality-of-experience-on-roku}
 
@@ -81,4 +85,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >跟踪媒体播放器错误不会停止媒体跟踪会话。如果媒体播放器错误导致无法继续播放，请确保通过调用 `trackSessionEnd()` 后调用 `trackError()` 来关闭媒体跟踪会话。
-
