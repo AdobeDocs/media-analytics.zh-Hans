@@ -1,14 +1,15 @@
 ---
 title: 关于标准状态和自定义状态
-description: 本主题将介绍播放器状态跟踪功能，包括实施和报告标准播放器状态与自定义播放器状态的要求和准则。
-translation-type: ht
-source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+description: 了解播放器状态跟踪功能，包括实施和报告标准播放器状态和自定义播放器状态的要求和准则。
+exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 92%
 
 ---
-
 
 # 关于标准状态和自定义状态
 
