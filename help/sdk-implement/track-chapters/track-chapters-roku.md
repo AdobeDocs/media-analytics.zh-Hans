@@ -1,12 +1,16 @@
 ---
-title: 在 Roku 中跟踪章节和区段
-description: 本主题介绍如何在 Roku 中使用 Media SDK 实施章节和区段跟踪。
+title: 了解如何在Roku中跟踪章节和区段
+description: 了解如何在Roku中使用Media SDK实施章节和区段跟踪。
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 89%
 
 ---
-
 
 # 在 Roku 中跟踪章节和区段{#track-chapters-and-segments-on-roku}
 
@@ -71,4 +75,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. 如果存在任何其他章节，请重复执行步骤 1 至 5。
-
