@@ -1,12 +1,16 @@
 ---
 title: 实时主内容
-description: 有关如何使用 Media SDK 跟踪实时内容的示例。
+description: 查看有关如何使用Media SDK跟踪实时内容的示例。
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 96%
 
 ---
-
 
 # 实时主内容{#live-main-content}
 
@@ -185,4 +189,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
