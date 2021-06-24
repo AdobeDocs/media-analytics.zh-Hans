@@ -1,12 +1,14 @@
 ---
-title: 设置 JavaScript 2.x
-description: 设置 Media SDK 应用程序，以在 JavaScript 2.x 中实施。
+title: 如何使用JavaScript 2.x设置媒体SKD
+description: 按照以下步骤在JavaScript 2.x中设置Media SDK应用程序。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 100%
+source-wordcount: '403'
+ht-degree: 94%
 
 ---
 
