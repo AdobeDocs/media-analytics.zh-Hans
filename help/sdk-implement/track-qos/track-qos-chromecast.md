@@ -1,12 +1,16 @@
 ---
-title: 在 Chromecast 中跟踪体验质量
-description: 本主题介绍如何在 Chromecast 中使用 Media SDK 实施体验质量（QoE、QoS）跟踪。
+title: 了解如何在Chromecast中跟踪体验质量
+description: “了解如何在Chromecast中使用Media SDK实施体验质量(QoE、QoS)跟踪。”
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 91%
 
 ---
-
 
 # 在 Chromecast 中跟踪体验质量{#track-quality-of-experience-on-chromecast}
 
@@ -68,4 +72,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >跟踪媒体播放器错误不会停止媒体跟踪会话。如果媒体播放器错误导致无法继续播放，请确保通过调用 `trackSessionEnd()` 后调用 `trackError()` 来关闭媒体跟踪会话。
-
