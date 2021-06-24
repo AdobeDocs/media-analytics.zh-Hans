@@ -1,15 +1,16 @@
 ---
-title: JSON 验证架构
-description: null
+title: 流媒体分析JSON验证架构
+description: 什么是Staming Media JSON验证架构，如何使用它们为每个事件类型确定正确的请求正文参数。
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
-translation-type: tm+mt
-source-git-commit: 9b2f8b14ddb5b814f57c752665b78409e31173e8
+exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 100%
+source-wordcount: '84'
+ht-degree: 64%
 
 ---
-
 
 # JSON 验证架构{#json-validation-schemas}
 
