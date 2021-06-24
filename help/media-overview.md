@@ -1,12 +1,14 @@
 ---
-title: 在 Adobe Analytics 中测量流媒体
-description: Adobe Analytics for Media（也称为 Media Analytics）可为客户提供针对内容、音频和广告的可靠媒体测量。
+title: 'AdobeAdobe Analytics中的流媒体 '
+description: “深入了解最先进的流媒体内容、音频和广告测量。 了解适用于流媒体的Adobe Analytics。”
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-source-git-commit: eaae56abd3e549ad57c45852fe0bedb618f80e9e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 98%
+source-wordcount: '880'
+ht-degree: 95%
 
 ---
 
