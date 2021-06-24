@@ -1,12 +1,14 @@
 ---
 title: 使用 Analytics 2.0 API 获取并行查看者 JSON 报表数据
-description: null
+description: 了解如何使用Analytics 2.0 API获取并行查看者报表数据。 查看示例请求和响应。
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '167'
-ht-degree: 100%
+feature: “Media Analytics、Reports & Analytics基础知识”
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 87%
 
 ---
 
