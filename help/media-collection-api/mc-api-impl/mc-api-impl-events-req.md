@@ -1,13 +1,14 @@
 ---
 title: 实施事件请求
-description: 实施事件请求
+description: 了解在获取会话ID后，如何将事件请求端点用于所有后续跟踪调用
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 100%
+source-wordcount: '101'
+ht-degree: 81%
 
 ---
 
