@@ -1,12 +1,16 @@
 ---
-title: 解决在广告之间出现 main:play 的问题
-description: 如何处理在广告之间出现的意外 main:play 调用。
+title: 解决在广告之间出现Main Play的问题
+description: “了解如何处理广告之间意外的main:play调用。”
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: f27ce2ba-7584-4601-8837-d8316c641708
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '451'
+ht-degree: 96%
 
 ---
-
 
 # 解决在广告之间出现 main:play 的问题{#resolving-main-play-appearing-between-ads}
 
@@ -77,4 +81,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >如果前面在上一次 `trackEvent:AdComplete` 调用中已经执行此步骤，那么可以跳过此调用。
 
 * 调用 `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`。
-
