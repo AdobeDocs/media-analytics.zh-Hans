@@ -1,18 +1,22 @@
 ---
-title: 计算量度
+title: 流媒体计算量度
 description: 了解Adobe流媒体计算量度和量度公式。
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 2d9d4352b0fd71710a9952ba4a77f6796ea9f5cc
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 78%
+source-wordcount: '258'
+ht-degree: 59%
 
 ---
 
 # 计算量度{#calculated-metrics}
+
+流媒体的计算量度是自定义量度，允许您获取目标流媒体数据，例如每个媒体流的平均广告逗留时间或平均广告数。
+
+有关Adobe Analytics计算量度的信息，请参阅《Adobe Analytics组件指南》中的[计算量度和高级计算（派生）量度](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en)。
 
 >[!NOTE]
 >
