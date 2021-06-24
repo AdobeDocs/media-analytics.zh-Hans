@@ -1,12 +1,14 @@
 ---
-title: 设置 Roku
-description: 设置 Media SDK 应用程序，以在 Roku 中实施。
+title: 如何为Roku设置媒体SKD
+description: 按照以下步骤在Roku中设置Media SDK应用程序。
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 81%
+source-wordcount: '718'
+ht-degree: 78%
 
 ---
 
