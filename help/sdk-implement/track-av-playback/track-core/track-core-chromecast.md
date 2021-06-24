@@ -1,12 +1,16 @@
 ---
-title: 在 Chromecast 中跟踪核心播放
-description: 本主题介绍如何在 Chromecast 中使用 Media SDK 实施核心跟踪。
+title: 了解如何在Chromecast中跟踪核心播放
+description: 了解如何在Chromecast中使用Media SDK实施核心跟踪。
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 96%
 
 ---
-
 
 # 在 Chromecast 中跟踪核心播放{#track-core-playback-on-chromecast}
 
@@ -116,9 +120,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    识别视频播放器将会暂停的任何方案，并确保正确调用了 `trackPause`。以下方案均要求应用程序调用 `trackPause()`：
 
    * 用户在应用程序中明确点击暂停。
-   * 播放器自行进入暂停状态。
-   * （*移动设备应用程序*）- 用户将应用程序置于后台，但您希望应用程序保持会话打开。
-   * （*移动设备应用程序*）- 出现导致应用程序被置于后台的任何类型的系统中断。例如，用户接收到一个调用，或者出现来自其他应用程序的弹出窗口，但您希望应用程序将会话保持活动状态，以便用户有机会从中断点继续观看视频。
+   * 播放器将其置于“暂停”状态。
+   * （*移动应用程序*）- 用户将应用程序放入后台，但您希望应用程序保持会话打开。
+   * （*移动应用程序*）- 发生导致应用程序被置于后台运行的任何类型的系统中断。例如，用户接收到一个调用，或者出现来自其他应用程序的弹出窗口，但您希望应用程序将会话保持活动状态，以便用户有机会从中断点继续观看视频。
 
 1. 识别播放器中的视频播放事件和/或视频在暂停后继续播放的事件并调用 [trackPlay](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)：
 
@@ -132,4 +136,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * 跟踪方案：[不含广告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Chromecast SDK 随附有示例播放器，用于提供完整的跟踪示例。
-
