@@ -1,12 +1,14 @@
 ---
 title: 媒体并行查看者
-description: null
+description: “了解“媒体并行查看者”功能板，该功能板用于在一天内显示并行查看者。 数据可以按内容、设备类型或国家/地区进行过滤。”
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+feature: “Media Analytics、Reports & Analytics基础知识”
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 89%
 
 ---
 
