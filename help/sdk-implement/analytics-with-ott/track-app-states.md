@@ -1,12 +1,16 @@
 ---
 title: 跟踪应用程序状态
-description: '应用程序状态是应用程序中的不同屏幕或视图，在显示该屏幕或视图时，应当导致 trackState 调用。 '
+description: '应用程序状态是指您的应用程序中的不同屏幕或视图。 了解如何使用trackState调用跟踪应用程序中的应用程序状态。 '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 86%
 
 ---
-
 
 # 跟踪应用程序状态{#track-app-states}
 
@@ -53,4 +57,3 @@ ADBMobile.analytics.trackState("Home Screen", dictionary);
 >[!NOTE]
 >
 >上下文数据值必须映射到 Adobe Mobile Services 中的自定义变量。
-
