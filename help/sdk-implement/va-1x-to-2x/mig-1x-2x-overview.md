@@ -1,12 +1,16 @@
 ---
 title: 迁移概述
-description: 本主题概述如何从 Media SDK 版本 1.x 迁移到版本 2.x。
+description: 了解如何从1.x版本的Media SDK迁移到2.x版本。
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 94%
 
 ---
-
 
 # 迁移概述{#migration-overview}
 
