@@ -1,14 +1,15 @@
 ---
 title: 什么是媒体流归因？
-description: 了解如何将应用程序操作链接到媒体跟踪数据，而无需额外的处理规则和自定义变量。
-translation-type: tm+mt
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+description: 了解如何将应用程序操作链接到媒体跟踪数据，而无需其他的处理规则和自定义变量。
+exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 89%
+source-wordcount: '233'
+ht-degree: 97%
 
 ---
-
 
 # 媒体流归因
 
