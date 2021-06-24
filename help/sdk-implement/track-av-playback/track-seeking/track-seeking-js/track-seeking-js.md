@@ -1,17 +1,18 @@
 ---
-title: 使用JavaScript 2.x跟踪搜索
-description: 本主题介绍如何在浏览器应用程序 (JS) 中使用 Media SDK 实施搜寻跟踪。
+title: 了解如何使用JavaScript 2.x跟踪搜寻
+description: 了解如何使用浏览器应用程序(JS 2.x)中的Media SDK跟踪搜寻开始和搜寻结束事件。
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 92%
+source-wordcount: '137'
+ht-degree: 76%
 
 ---
 
-
-# 使用JavaScript 2.x跟踪搜索{#track-seeking-on-javascript}
+# 使用JavaScript 2.x跟踪搜寻{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
