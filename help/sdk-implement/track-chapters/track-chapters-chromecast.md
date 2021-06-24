@@ -1,12 +1,16 @@
 ---
-title: 在 Chromecast 中跟踪章节和区段
-description: 本主题介绍如何在 Chromecast 中使用 Media SDK 实施章节和区段跟踪。
+title: 了解如何在Chromecast中跟踪章节和区段
+description: 了解如何在Chromecast中使用Media SDK实施章节和区段跟踪。
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 90%
 
 ---
-
 
 # 在 Chromecast 中跟踪章节和区段{#track-chapters-and-segments-on-chromecast}
 
@@ -62,4 +66,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. 如果存在任何其他章节，请重复执行步骤 1 至 5。
-
