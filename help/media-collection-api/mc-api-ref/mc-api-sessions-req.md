@@ -1,13 +1,14 @@
 ---
-title: 会话请求
-description: 会话请求
+title: 流媒体收集API会�话请求端点
+description: “媒体收集API会话请求端点参数和响应是什么？”
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 100%
+source-wordcount: '97'
+ht-degree: 80%
 
 ---
 
