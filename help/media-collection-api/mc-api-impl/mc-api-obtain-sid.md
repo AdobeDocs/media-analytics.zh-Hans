@@ -1,13 +1,14 @@
 ---
 title: 获取会话 ID
-description: 获取会话 ID
+description: 了解如何对会话请求进行编码，以从响应的Location标头中获取会话ID。
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 100%
+source-wordcount: '63'
+ht-degree: 69%
 
 ---
 
