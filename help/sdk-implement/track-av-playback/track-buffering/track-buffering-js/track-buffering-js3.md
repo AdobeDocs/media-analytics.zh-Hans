@@ -1,20 +1,21 @@
 ---
-title: 使用JavaScript 3.x跟踪缓冲
-description: 介绍如何在浏览器应用程序 (JS) 中跟踪缓冲事件。
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: 了解如何使用JavaScript 3.x跟踪缓冲
+description: 了解如何在浏览器应用程序(JS)中跟踪缓冲事件。
+exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 74%
+source-wordcount: '122'
+ht-degree: 65%
 
 ---
-
 
 # 使用JavaScript 3.x跟踪缓冲{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
->下面的说明为所有 3.x SDK 实施提供了指南。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下面的说明为所有 3.x SDK 实施提供了指南。如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 缓冲跟踪常量
 
