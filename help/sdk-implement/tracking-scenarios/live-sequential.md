@@ -1,12 +1,16 @@
 ---
 title: 具有连续跟踪的实时主内容
-description: 有关如何使用 Media SDK 跟踪具有连续跟踪的实时内容的示例。
+description: 查看有关如何使用Media SDK跟踪具有连续跟踪的实时内容的示例。
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 91%
 
 ---
-
 
 # 具有连续跟踪的实时主内容{#live-main-content-with-sequential-tracking}
 
@@ -44,7 +48,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 心率内容播放 {#heartbeat-content-play}
 
-这应该与“心率内容开始”调用的外观完全相同，但与“s:event:type”参数有很大区别。所有参数仍应位于此处。
+这应该与心率内容开始调用的外观完全相同，但与“s:event:type”参数的关键区别在于。 所有参数仍应位于此处。
 
 | 参数 | 值 | 注释 |
 |---|---|---|
@@ -331,4 +335,3 @@ this._mediaHeartbeat.trackSessionEnd();
 
 // Continue tracking further sessions in live stream similarly if required 
 ```
-
