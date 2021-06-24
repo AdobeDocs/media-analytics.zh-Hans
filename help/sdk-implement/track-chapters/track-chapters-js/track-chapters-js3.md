@@ -1,20 +1,21 @@
 ---
-title: 使用JavaScript 3.x跟踪章节和细分
-description: 本主题介绍如何在浏览器应用程序 (JS) 中使用 Media SDK 实施章节和区段跟踪。
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: 了解如何使用JavaScript 3.x跟踪章节和区段
+description: 了解如何在浏览器应用程序(JS)中使用Media SDK实施章节和区段跟踪。
+exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 71%
+source-wordcount: '220'
+ht-degree: 64%
 
 ---
 
-
-# 使用JavaScript 3.x跟踪章节和细分{#track-chapters-and-segments-on-javascript}
+# 使用JavaScript 3.x跟踪章节和区段{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
->以下说明为使用 3.x SDK 进行实施提供了指南。If you are implementing any previous versions of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下说明为使用 3.x SDK 进行实施提供了指南。如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
 
 1. 识别执行章节开始事件的时间，然后使用章节信息创建 `ChapterObject` 实例。
 
@@ -27,9 +28,9 @@ ht-degree: 71%
    | 变量名称 | 类型 | 描述 |
    | --- | --- | --- |
    | `name` | 字符串 | 表示章节名称的非空字符串。 |
-   | `position` | number | 章节在内容中的位置，从1开始。 |
-   | `length` | number | 正数表示章节长度。 |
-   | `startTime` | number | 章节开始的播放头值。 |
+   | `position` | 数字 | 章节在内容中的位置，从1开始。 |
+   | `length` | 数字 | 正数，表示章节的长度。 |
+   | `startTime` | 数字 | 章节开始时的播放头值。 |
 
    章节对象：
 
