@@ -1,15 +1,16 @@
 ---
 title: 播放器状态参数
-description: 本主题将介绍播放器状态跟踪参数。
+description: “了解全屏、隐藏式字幕、静音和画中画属性的播放器状态跟踪参数。”
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-translation-type: tm+mt
-source-git-commit: 1cf631d7f3d5365a02be99af78655ac3b53fb3cb
+exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
+feature: '"Media Analytics， Variables"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 99%
+source-wordcount: '2249'
+ht-degree: 98%
 
 ---
-
 
 # 播放器状态参数{#player-state-parameters}
 
