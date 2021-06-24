@@ -1,15 +1,16 @@
 ---
-title: 时间轴 3 - 章节
-description: null
+title: 了解媒体跟踪时间轴�章节
+description: 了解播放头时间轴以及章节开始和结束的时间。
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 197041df4c985cdc572564652a976bd733448787
-workflow-type: ht
-source-wordcount: '1219'
-ht-degree: 100%
+exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1237'
+ht-degree: 98%
 
 ---
-
 
 # 时间轴 3 - 章节 {#timeline-3-chapters}
 
@@ -373,7 +374,7 @@ ht-degree: 100%
 }
 ```
 
-### 操作 15 - 缓冲结束（播放）{#Action-15}
+### 操作 15 - 缓冲结束（播放） {#Action-15}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
@@ -381,7 +382,7 @@ ht-degree: 100%
 
 **实施详细信息**
 
-缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。您必须发送来自缓冲的另一个跟踪播放事件。**`bufferStart`后的`play`调用一定会对后端进行“bufferEnd”调用**，因此不需要 `bufferEnd` 事件。
+缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。您必须发送来自缓冲的另一个跟踪播放事件。**`bufferStart` 后的 `play` 调用一定会对后端进行“bufferEnd”调用**，因此不需要 `bufferEnd` 事件。
 
 **示例请求正文**
 
@@ -664,7 +665,7 @@ ht-degree: 100%
 
 **实施详细信息**
 
-将播放状态转变为“正在播放”。**`pauseStart`后的`play`调用一定会对后端进行“resume”调用**，因此不需要 `resume` 事件。
+将播放状态转变为“正在播放”。**`pauseStart` 后的 `play` 调用一定会对后端进行“resume”调用**，因此不需要 `resume` 事件。
 
 **示例请求正文**
 
