@@ -1,12 +1,14 @@
 ---
-title: 请求参数
-description: 了解Adobe Analytics流媒体请求参数。
+title: 流媒体收集API请�求参数
+description: “媒体收集API请求参数、请求密钥和描述的内容。”
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-source-git-commit: 00e9992712034dc67072e09cce7819719c0371d1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 94%
+source-wordcount: '1307'
+ht-degree: 93%
 
 ---
 
@@ -107,7 +109,7 @@ ht-degree: 94%
 | `media.qoe.framesPerSecond` | N | 整数 | 任何 | 每秒帧数 |
 | `media.qoe.timeToStart` | N | 整数 | 任何 | 用户点击播放与内容加载和开始播放之间所经过的时间（以毫秒为单位） |
 
-## 《加州消费者隐私法案》(CCPA) 参数 {#ccpa-params}
+## 《加州消费者隐私法案》(CCPA) 参数  {#ccpa-params}
 
 | 请求密钥 | 必需 | 请求类型键 | 设置... |  描述  |
 | --- | :---: | :---: | :---: | --- |
