@@ -1,12 +1,16 @@
 ---
-title: 在 Roku 中实施标准元数据
-description: 介绍如何在 Roku 中设置要与跟踪调用一起发送的标准视频和广告元数据。
+title: 了解如何在Roku中实施标准元数据
+description: 了解如何在Roku中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 1552b16a-3c2d-4caa-b571-e6628f0b6866
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 61%
 
 ---
-
 
 # 在 Roku 中实施标准元数据{#implement-standard-metadata-on-roku}
 
@@ -35,4 +39,3 @@ mediaInfo[ADBMobile().MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
 ```
 
 请在此处查看视频元数据的完整列表：[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)
-
