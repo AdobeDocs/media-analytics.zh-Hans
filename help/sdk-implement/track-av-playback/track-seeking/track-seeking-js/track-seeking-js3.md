@@ -1,20 +1,21 @@
 ---
-title: 使用JavaScript 3.x跟踪搜索
-description: 本主题介绍如何在浏览器应用程序 (JS) 中使用 Media SDK 实施搜寻跟踪。
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: 了解如何使用JavaScript 3.x跟踪搜寻
+description: 了解如何使用浏览器应用程序(JS 3.x)中的Media SDK跟踪搜寻开始和搜寻结束事件。
+exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 76%
+source-wordcount: '136'
+ht-degree: 62%
 
 ---
 
-
-# 使用JavaScript 3.x跟踪搜索{#track-seeking-on-javascript}
+# 使用JavaScript 3.x跟踪搜寻{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
->下面的说明为所有 3.x SDK 实施提供了指南。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下面的说明为所有 3.x SDK 实施提供了指南。如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 搜寻跟踪常量
 
