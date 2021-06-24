@@ -1,16 +1,17 @@
 ---
-title: 使用JavaScript 3.x实现标准元数据
-description: 介绍如何在浏览器应用程序 (JS) 中设置要与跟踪调用一起发送的标准视频和广告元数据。
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: 了解如何使用JavaScript 3.x实施标准元数据
+description: 了解如何在浏览器应用程序(JS 3.x)中设置要与跟踪调用一起发送的标准视频和广告元数据。
+exl-id: 228ba000-10e2-4906-8417-265a03367a9b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 46%
+source-wordcount: '50'
+ht-degree: 10%
 
 ---
 
-
-# 使用JavaScript 3.x实现标准元数据{#implement-standard-metadata-on-javascript}
+# 使用JavaScript 3.x实施标准元数据{#implement-standard-metadata-on-javascript}
 
 ## 实施
 
