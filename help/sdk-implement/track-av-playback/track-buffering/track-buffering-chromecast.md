@@ -1,12 +1,16 @@
 ---
-title: 在 Chromecast 中跟踪缓冲
-description: 介绍如何在 Chromecast 中跟踪缓冲事件。
+title: 了解如何在Chromecast中跟踪缓冲
+description: 了解如何在Chromecast中跟踪缓冲事件。
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 26fd1e2a-4103-486f-be12-36b088d28cb6
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 88%
 
 ---
-
 
 # 在 Chromecast 中跟踪缓冲{#track-buffering-on-chromecast}
 
