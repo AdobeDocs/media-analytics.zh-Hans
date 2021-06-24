@@ -1,14 +1,15 @@
 ---
 title: 实施与报表
-description: 本主题将介绍如何实施播放器状态跟踪功能。
-translation-type: ht
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: ht
-source-wordcount: '333'
-ht-degree: 100%
+description: 了解如何实施播放器状态跟踪功能，包括。
+exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 96%
 
 ---
-
 
 # 实施与报表
 
@@ -94,7 +95,7 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ![](assets/report-setup.png)
 
-在 Analytics Workspace 中，所有新属性都位于“量度”面板中。例如，您可以在“量度”面板中搜索 `full screen` 以查看全屏数据。
+在 Analytics 工作区中，所有新属性都位于“量度”面板中。例如，您可以在“量度”面板中搜索 `full screen` 以查看全屏数据。
 
 ![](assets/full-screen-report.png)
 
