@@ -1,15 +1,16 @@
 ---
-title: 1.x 与 2.x 代码对比
-description: 本主题对比了 Media SDK 版本 1.x 与 2.x 中的代码。
+title: v1.x与v2.x的代码比较
+description: 了解Media SDK版本1.x和2.x中的代码差异。
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: tm+mt
-source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 97%
+source-wordcount: '572'
+ht-degree: 93%
 
 ---
-
 
 # 代码对比：1.x 与 2.x {#code-comparison-x-to-x}
 
