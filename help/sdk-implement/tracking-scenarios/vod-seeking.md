@@ -1,12 +1,16 @@
 ---
-title: 在主内容中进行搜寻的 VOD 播放
-description: 有关如何使用 Media SDK 跟踪在其中进行了搜寻的 VOD 内容的示例。
+title: 在主内容中进行搜寻的VOD播放
+description: 查看有关如何使用Media SDK跟踪在其中进行搜寻的VOD内容的示例。
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 90%
 
 ---
-
 
 # 在主内容中进行搜寻的 VOD 播放{#vod-playback-with-seeking-in-the-main-content}
 
@@ -209,4 +213,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
