@@ -1,15 +1,16 @@
 ---
-title: 时间轴 2 - 用户放弃会话
-description: null
+title: 了解媒体跟踪时间轴用�户放弃会话
+description: 了解视频会话被放弃时播放头时�间轴和相应用户的操作。 了解每个操作和请求的详细信息。
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: ht
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
-workflow-type: ht
-source-wordcount: '634'
-ht-degree: 100%
+exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 95%
 
 ---
-
 
 # 时间轴 2 - 用户放弃会话 {#timeline--2-user-abandons-session}
 
