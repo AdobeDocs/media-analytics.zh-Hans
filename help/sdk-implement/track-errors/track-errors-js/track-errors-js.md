@@ -1,15 +1,16 @@
 ---
-title: 使用JavaScript 2.x跟踪错误
-description: 本主题介绍如何在浏览器应用程序 (JS) 中使用 Media SDK 实施错误跟踪。
+title: 了解如何使用JavaScript 2.x跟踪错误
+description: 了解如何在浏览器应用程序(JS)中使用Media SDK实施错误跟踪。
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
+exl-id: b3012bce-4b92-408e-8b7a-57ae9d52e93d
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 89%
+source-wordcount: '100'
+ht-degree: 74%
 
 ---
-
 
 # 使用JavaScript 2.x跟踪错误{#track-errors-on-javascript}
 
