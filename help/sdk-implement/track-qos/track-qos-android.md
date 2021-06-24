@@ -1,12 +1,16 @@
 ---
-title: 在 Android 中跟踪体验质量
-description: 本主题介绍如何在 Android 中使用 Media SDK 实施体验质量（QoE、QoS）跟踪。
+title: 了解如何在Android中跟踪体验质量
+description: “了解如何在Android中使用Media SDK实施体验质量(QoE、QoS)跟踪。”
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 84%
 
 ---
-
 
 # 在 Android 中跟踪体验质量{#track-quality-of-experience-on-android}
 
@@ -53,4 +57,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!IMPORTANT]
    >
    >请更新 QoS 对象并在每次比特率发生更改时调用比特率更改事件。这样将可以提供最为准确的 QoS 数据。
-
