@@ -2,11 +2,15 @@
 title: 跟踪应用程序操作
 description: 应用程序操作是指在您要测量的应用程序中发生的事件。
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 100%
 
 ---
-
 
 # 跟踪应用程序操作{#track-app-actions}
 
@@ -49,4 +53,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       ```
 
 您还可以通过每个跟踪操作调用发送其他上下文数据。
-
