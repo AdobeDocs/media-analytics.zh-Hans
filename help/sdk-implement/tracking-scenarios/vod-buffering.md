@@ -1,12 +1,16 @@
 ---
-title: 带有缓冲的 VOD 播放
-description: 有关如何使用 Media SDK 跟踪 VOD 内容的示例。
+title: 带有缓冲的VOD播放
+description: 查看有关如何使用Media SDK跟踪VOD内容的示例。
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 92%
 
 ---
-
 
 # 带有缓冲的 VOD 播放{#vod-playback-with-buffering}
 
@@ -222,4 +226,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
