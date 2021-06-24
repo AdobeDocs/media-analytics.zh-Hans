@@ -1,12 +1,16 @@
 ---
 title: 测试调用详细信息
-description: 本主题详细介绍验证实施时必须发出的各种调用。
+description: 浏览验证实施时必须发出的调用。
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 98%
 
 ---
-
 
 # 测试调用详细信息{#test-call-details}
 
@@ -55,7 +59,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 参数 | 值（示例） |
 |---|---|
 | `custom.metadataA` | value |
-| `custom.metadataB` | value |
+| `custom.metadataB` | 值 |
 
 ### Media Analytics（心率）开始调用 {#ma-start-call}
 
@@ -88,20 +92,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | production house |
-| `s:meta:a.media.network` | network |
-| `s:meta:a.media.ad_load` | 1 |
+| `s:meta:a.media.originator` | 生产厂房 |
+| `s:meta:a.media.network` | 网络 |
+| `s:meta:a.media.ad_load` | 3 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | unlocked |
-| `s:meta:a.media.feed` | no feed |
+| `s:meta:a.media.authorized` | 已解锁 |
+| `s:meta:a.media.feed` | 无馈送 |
 | `s:meta:a.media.stream_format` | 0 |
 
 ### Media Analytics（心率）开始调用中的自定义元数据 {#custom-metadata-ma}
 
 | 参数 | 值（示例） |
 |---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | 值 |
+| `s:meta:custom.metadata` | 值 |
 
 ### Media Analytics（心率）Adobe Analytics 开始调用 {#ma-aa-start}
 
@@ -135,7 +139,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`a.media.ad.length`**_ | _**15**_ |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
-| `a.media.ad.podPosition` | 1 |
+| `a.media.ad.podPosition` | 3 |
 | `a.media.ad.podSecond` | 0.0 |
 | _**`a.media.ad.view`**_ | _**True**_ |
 | _**`custom.[value]`**_ | _**元数据字段**_ |
@@ -157,20 +161,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
 | `a.media.rating` | TV-14 |
-| `a.media.originator` | production house |
-| `a.media.network` | network |
-| `a.media.ad_load` | 1 |
+| `a.media.originator` | 生产厂房 |
+| `a.media.network` | 网络 |
+| `a.media.ad_load` | 3 |
 | `a.media.mvpd` | mvpd |
-| `a.media.authorized` | unlocked |
-| `a.media.feed` | no feed |
+| `a.media.authorized` | 已解锁 |
+| `a.media.feed` | 无馈送 |
 | `a.media.stream_format` | 0 |
 
 ### Adobe Analytics (AppMeasurement) 广告开始调用中的自定义元数据 {#custom-metadata-aa-ad-start}
 
 | 参数 | 值（示例） |
 |---|---|
-| `custom.metadata` | value |
-| `custom.metadata` | value |
+| `custom.metadata` | 值 |
+| `custom.metadata` | 值 |
 
 ### Media Analytics（心率）广告开始调用 {#ma-ad-start-call}
 
@@ -202,20 +206,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | production house |
-| `s:meta:a.media.network` | network |
-| `s:meta:a.media.ad_load` | 1 |
+| `s:meta:a.media.originator` | 生产厂房 |
+| `s:meta:a.media.network` | 网络 |
+| `s:meta:a.media.ad_load` | 3 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | unlocked |
-| `s:meta:a.media.feed` | no feed |
+| `s:meta:a.media.authorized` | 已解锁 |
+| `s:meta:a.media.feed` | 无馈送 |
 | `s:meta:a.media.stream_format` | 0 |
 
 ### Media Analytics（心率）广告开始调用中的自定义元数据 {#custom-metadata-ma-ad-start}
 
 | 参数 | 值（示例） |
 |---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | 值 |
+| `s:meta:custom.metadata` | 值 |
 
 ### Media Analytics（心率）Adobe Analytics 广告开始调用 {#ma-aa-ad-start-call}
 
@@ -239,7 +243,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | VOD |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**广告**_ |
 
 ### Media Analytics（心率）广告暂停调用 {#ma-ad-pause-call}
 
@@ -251,7 +255,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | VOD |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**广告**_ |
 
 ### Media Analytics（心率）Adobe Analytics 广告结束调用 {#ma-aa-ad-complete-call}
 
@@ -263,7 +267,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | VOD |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**广告**_ |
 
 ## 播放主内容 {#play-main-content}
 
@@ -291,7 +295,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 参数 | 值（示例） |
 |---|---|
-| _**`s:event:type`**_ | _**pause**_ |
+| _**`s:event:type`**_ | _**暂停**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | 剧集标题 |
@@ -299,5 +303,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
 | `s:asset:type` | main |
-
-
