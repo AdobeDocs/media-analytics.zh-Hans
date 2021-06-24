@@ -1,12 +1,16 @@
 ---
-title: 测试 1：标准播放
-description: 本主题介绍验证中使用的标准播放测试。
+title: 测试1标准播放
+description: 了解验证中使用的标准播放测试。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 98%
 
 ---
-
 
 # 测试 1：标准播放{#test-standard-playback}
 
@@ -32,6 +36,7 @@ Media Analytics 实施包含两种类型的跟踪调用：
    * **Adobe Analytics (AppMeasurement) 服务器 -** Experience Cloud 访客 ID 服务需要一个 RDC 跟踪服务器或可解析为 RDC 跟踪服务器的 CNAME。Adobe Analytics 跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该是一个 CNAME。
 
    * **Media Analytics（心率）服务器 -** 此服务器的格式始终为“`[namespace].hb.omtrdc.net`”，其中 `[namespace]` 指定您的公司名称。此名称由 Adobe 提供。
+
    您需要验证在所有跟踪调用中通用的某些关键变量：
 
    **Adobe 访客 ID (`mid`)：**`mid` 变量用于捕获 AMCV Cookie 中设置的值。`mid` 变量是网站和移动设备应用程序的主要标识值，它还指示已正确设置 Experience Cloud 访客 ID 服务。此变量在 Adobe Analytics (AppMeasurement) 调用和 Media Analytics（心率）调用中均可找到。
@@ -81,6 +86,7 @@ Media Analytics 实施包含两种类型的跟踪调用：
    1. Adobe Analytics 服务器 - 开始调用
    1. Media Analytics 服务器 - 开始调用
    1. Media Analytics 服务器 -“请求的 Adobe Analytics 开始调用”
+
    上述前两个调用包含其他的元数据和变量。有关调用参数和元数据，请参阅[测试调用详细信息](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)。
 
    上述第三个调用告知 Media Analytics 服务器，Media SDK 已请求将 Adobe Analytics 开始调用 (`pev2=ms_s`) 发送到 Adobe Analytics 服务器。
@@ -88,11 +94,13 @@ Media Analytics 实施包含两种类型的跟踪调用：
 1. **观看广告时间（如果可用）**
 
    * **广告开始**
+
    广告开始时，会按照以下顺序发送以下关键调用：
 
    1. Adobe Analytics 服务器 - 广告开始调用
    1. Media Analytics 服务器 - 广告开始调用
    1. Media Analytics 服务器 -“请求的 Adobe Analytics 广告开始调用”
+
    前两个调用包含其他的元数据和变量。有关调用参数和元数据，请参阅[测试调用详细信息](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)。
 
    第三个调用告知 Media Analytics 服务器，Media SDK 已请求将 Adobe Analytics 广告开始调用 (`pev2=msa_s`) 发送到 Adobe Analytics 服务器。
