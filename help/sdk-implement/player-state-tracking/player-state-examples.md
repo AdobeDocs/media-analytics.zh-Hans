@@ -1,14 +1,15 @@
 ---
 title: 播放器状态跟踪示例
 description: 本主题包括播放器状态跟踪功能的示例。
-translation-type: ht
-source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
-workflow-type: ht
-source-wordcount: '119'
+exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: 8a421ee4ee5d2e61126fc6ac8f10f326427e78a7
+workflow-type: tm+mt
+source-wordcount: '121'
 ht-degree: 100%
 
 ---
-
 
 # 播放器状态跟踪示例
 
@@ -17,8 +18,7 @@ ht-degree: 100%
 
 当视频会话的暂停持续时间超过 30 分钟时，API 需要启动新会话。这种情况下，客户端应生成新的会话 ID。对于这两个视频会话，客户端应保留播放器所处的所有状态，并在 `sessionStart` 调用之后作为 `stateStart` 事件发送所有信息。
 
-`sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd
-`
+`sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd`
 
 发送 `sessionEnd` 后，必须启动新的视频会话，并且第一个 API 事件为：
 
