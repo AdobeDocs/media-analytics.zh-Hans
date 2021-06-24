@@ -1,12 +1,16 @@
 ---
-title: 多个并行的 VOD 跟踪器
-description: 有关如何使用多个并行跟踪器跟踪 VOD 的示例。
+title: 多个并行的VOD跟踪器
+description: 查看有关如何使用多个并行跟踪器跟踪VOD的示例。
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 92%
 
 ---
-
 
 # 多个并行的 VOD 跟踪器{#vod-multiple-trackers-in-parallel}
 
@@ -374,4 +378,3 @@ _player2.loadContent(URL_TO_MEDIA_2);
 ```
 
 `MediaAnalyticsProvider` 和 `MediaHeartbeat` 的实例都跟踪两个不同的会话，每个会话具有自己唯一的会话 ID。您可以在 Charles 调试工具中看到这两个会话。
-
