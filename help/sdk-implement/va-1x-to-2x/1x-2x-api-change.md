@@ -1,20 +1,24 @@
 ---
-title: 从 1.x API 转换到 2.x API
-description: 本主题包括指向 API 引用的链接，并且列出了 Media SDK 版本 1.x 和 2.x 的必需和可选跟踪 API。
+title: 从1.x API转换到2.x API
+description: 浏览API引用，并列出1.x和2.x版Media SDK的必需和可选跟踪API。
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 87%
 
 ---
-
 
 # 从 API 1.x 转换到 2.x {#one-x-to-two-x-conv}
 
 ## Media SDK 2.x API 引用
 
-* [Android API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
+* [Android API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [iOS API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
-* [JS API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
+* [JS API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
 * [Chromecast API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
 ## 必需跟踪* API：
@@ -50,4 +54,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `playerPlugin.trackBufferComplete()` | `trackEvent(Event.BufferComplete)` |
 | `playerPlugin.trackBitrateChange()` | `trackEvent(Event.BitrateChange)` |
 | `playerPlugin.trackTimedMetadata()` | `trackEvent(Event.TimedMetadataUpdate)` |
-
