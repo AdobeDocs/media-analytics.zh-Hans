@@ -1,12 +1,16 @@
 ---
-title: 跳过广告的 VOD 播放
-description: 有关如何使用 Media SDK 跟踪用户跳过了广告的 VOD 内容的示例。
+title: 跳过广告的VOD播放
+description: 查看有关如何使用Media SDK跟踪用户跳过广告的VOD内容的示例。
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 91%
 
 ---
-
 
 # 跳过广告的 VOD 播放{#vod-playback-with-skipped-ads}
 
@@ -292,4 +296,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
