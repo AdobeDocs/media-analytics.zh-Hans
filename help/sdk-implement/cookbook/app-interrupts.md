@@ -1,15 +1,16 @@
 ---
 title: 处理应用程序在播放过程中出现的中断问题
-description: 如何处理媒体播放过程中的跟踪中断问题。
+description: 了解如何处理媒体播放过程中的跟踪中断问题。
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-translation-type: tm+mt
-source-git-commit: 29b0d38e904a561d467ba0432b255fdb17d6b829
+exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '369'
+ht-degree: 95%
 
 ---
-
 
 # 处理应用程序在播放过程中出现的中断问题{#handling-application-interrupts-during-playback}
 
@@ -22,7 +23,7 @@ ht-degree: 100%
 >
 >Media Analytics 团队曾注意到有用户在应用程序从后台返回时，调用了 `trackSessionStart`。这样做会引发一些问题，包括在此之前的播放时间未计入总播放时间，之前的进度标记和区段丢失，等等。因此，在应用程序返回前台和/或媒体重新开始播放时，应调用 `trackPlay`。
 
-## 有关处理应用程序中断的常见问题解答：{#faq-about-handling-application-interrupts}
+## 有关处理应用程序中断的常见问题解答： {#faq-about-handling-application-interrupts}
 
 * _在会话关闭前，应当将应用程序置于后台多长时间？_
 
@@ -35,4 +36,3 @@ ht-degree: 100%
 * _要如何重新启动同一个会话呢？_
 
    有关重新启动跟踪会话的详细说明，请参阅此页面：[恢复不活动的会话](/help/sdk-implement/cookbook/resuming-inactive.md)。SDK 会发送一个“恢复”ping，以告知后端用户正在手动恢复会话。
-
