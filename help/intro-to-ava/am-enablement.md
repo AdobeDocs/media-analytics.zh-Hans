@@ -2,14 +2,16 @@
 title: Adobe Audience Manager 支持什么？
 description: 了解如何将应用程序操作链接到媒体跟踪数据，而无需其他的处理规则和自定义变量。
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
-source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '409'
 ht-degree: 96%
 
 ---
 
-# Audience Manager 支持{#audience-manager-enablement}
+# Audience Manager 启用{#audience-manager-enablement}
 
 Adobe Audience Manager (AAM) 是一种数据管理平台 (DMP)，可帮助您将受众数据资产整合在一起，从而轻松收集与网站访客相关的商业信息、创建可销售的区段，并向正确的受众提供有针对性的广告和内容。
 
