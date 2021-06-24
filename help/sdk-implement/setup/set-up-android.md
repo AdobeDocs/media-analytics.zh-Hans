@@ -1,12 +1,14 @@
 ---
-title: 设置 Android
-description: 设置 Media SDK 应用程序，以在 Android 中实施。
+title: 如何在Android中设置媒体SKD
+description: 请按照以下步骤在Android中设置Media SDK应用程序。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 98%
+source-wordcount: '436'
+ht-degree: 95%
 
 ---
 
