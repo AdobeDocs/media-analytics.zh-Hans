@@ -1,12 +1,16 @@
 ---
 title: 测试 2：媒体中断
-description: 本主题介绍验证中使用的媒体中断测试。
+description: 了解验证中使用的媒体中断测试。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: tm+mt
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 96%
 
 ---
-
 
 # 测试 2：媒体中断{#test-media-interruption}
 
@@ -23,6 +27,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
    1. Adobe Analytics (AppMeasurement) 开始
    1. Media Analytics（心率）开始
    1. 请求的 Media Analytics（心率）Adobe Analytics 开始调用
+
    上述前两个调用包含其他的元数据和变量。有关调用参数和元数据，请参阅[测试调用详细信息](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)。
 
    上述第三个调用告知 Media Analytics 服务器，Media SDK 已请求将 Adobe Analytics 开始调用 (`pev2=ms_s`) 发送到 Adobe Analytics 服务器。
