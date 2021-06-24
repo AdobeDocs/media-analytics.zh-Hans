@@ -1,12 +1,16 @@
 ---
-title: 在 iOS 中实施标准元数据
-description: 介绍如何在 iOS 中设置要与跟踪调用一起发送的标准视频和广告元数据。
+title: 了解如何在iOS中实施标准元数据
+description: 了解如何在iOS中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 75%
 
 ---
-
 
 # 在 iOS 中实施标准元数据{#implement-standard-metadata-on-ios}
 
@@ -54,4 +58,3 @@ NSMutableDictionary *standardAudioMetadata = [[NSMutableDictionary alloc] init];
  
 [mediaObject setValue:standardAudioMetadata   forKey:ADBMediaObjectKeyStandardMediaMetadata];
 ```
-
