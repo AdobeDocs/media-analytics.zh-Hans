@@ -1,12 +1,16 @@
 ---
-title: 在 Roku 中跟踪缓冲
-description: 介绍如何在 Roku 中跟踪缓冲事件。
+title: 了解如何在Roku中跟踪缓冲
+description: 了解如何在Roku中跟踪缓冲事件。
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 73b10b42-02ab-47f8-8250-58f03c5e0dd1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
-
 
 # 在 Roku 中跟踪缓冲{#track-buffering-on-roku}
 
