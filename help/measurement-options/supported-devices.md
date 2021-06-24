@@ -1,11 +1,13 @@
 ---
-title: 支持的设备和平台
-description: 适用于流媒体的 Adobe Analytics 可确保在所有设备上收集和报告每个媒体流。
+title: 了解支持的设备和平台
+description: “了解适用于流媒体的Adobe Analytics支持的主要设备，如iOS、Android、OTT设备和JavaScript浏览器。”
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '333'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 92%
 
 ---
 
@@ -33,13 +35,13 @@ ht-degree: 100%
 |  | JavaScript 浏览器 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 | 移动设备应用程序 |  |  |  |  |
 |  | iOS 设备 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android 设备 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android 设备 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Windows 设备 |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
-|  | Apple TV  (tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Apple TV  (tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript)    | ![](/help/assets/icon-blue-check.png)<br>（本机） |
-|  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | 游戏机（例如 Xbox ONE、Sony PS3/PS4） |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | 机顶盒（例如 xfinity X1） |  |  | ![](/help/assets/icon-blue-check.png) |
