@@ -1,12 +1,16 @@
 ---
-title: 在 Android 中实施标准元数据
-description: 介绍如何在 Android 中设置要与跟踪调用一起发送的标准视频和广告元数据。
+title: 了解如何在Android中实施标准元数据
+description: 了解如何在Android中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 76%
 
 ---
-
 
 # 在 Android 中实施标准元数据{#implement-standard-metadata-on-android}
 
