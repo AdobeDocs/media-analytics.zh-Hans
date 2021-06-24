@@ -1,12 +1,16 @@
 ---
-title: 概述
-description: 使用 Media SDK 进行错误跟踪。
+title: 跟踪错误说明
+description: 使用Media SDK深入了解错误跟踪。
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 61c5f835-d66c-4621-a0af-2e4f47a922ac
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '95'
+ht-degree: 87%
 
 ---
-
 
 # 概述{#overview}
 
@@ -23,4 +27,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >跟踪媒体播放器错误不会停止媒体跟踪会话。如果媒体播放器错误导致无法继续播放，请确保通过调用 `trackSessionEnd` 后调用 `trackError` 来关闭媒体跟踪会话。
-
