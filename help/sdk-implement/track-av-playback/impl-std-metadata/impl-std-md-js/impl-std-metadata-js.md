@@ -1,17 +1,18 @@
 ---
-title: 使用JavaScript 2.x实现标准元数据
-description: 介绍如何在浏览器应用程序 (JS) 中设置要与跟踪调用一起发送的标准视频和广告元数据。
+title: 了解如何使用JavaScript 2.x实施标准元数据
+description: 了解如何在浏览器应用程序(JS 2.x)中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+exl-id: 889c294b-ac45-4e82-abb3-88ab70abbc3d
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 80%
+source-wordcount: '69'
+ht-degree: 50%
 
 ---
 
-
-# 使用JavaScript 2.x实现标准元数据{#implement-standard-metadata-on-javascript}
+# 使用JavaScript 2.x实施标准元数据{#implement-standard-metadata-on-javascript}
 
 ## 元数据常量
 
