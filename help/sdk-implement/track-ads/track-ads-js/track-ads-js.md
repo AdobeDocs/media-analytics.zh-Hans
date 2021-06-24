@@ -1,15 +1,16 @@
 ---
-title: 使用JavaScript 2.x跟踪广告
+title: 了解如何使用JavaScript 2.x跟踪广告
 description: 使用 Media SDK 在浏览器 (JS) 应用程序中实施广告跟踪。
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 97%
+source-wordcount: '357'
+ht-degree: 96%
 
 ---
-
 
 # 使用JavaScript 2.x跟踪广告{#track-ads-on-javascript}
 
