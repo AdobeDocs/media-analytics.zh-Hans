@@ -1,14 +1,15 @@
 ---
 seo-title: 概述
-title: 概述
-description: null
+title: 流媒体收集API概述
+description: 了解媒体收集API以及播放器如何使用RESTful HTTP调用跟踪音频和视频事件。
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 92%
 
 ---
 
