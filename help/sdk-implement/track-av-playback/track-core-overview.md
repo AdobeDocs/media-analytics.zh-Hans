@@ -1,12 +1,16 @@
 ---
-title: 跟踪概述
-description: '本主题介绍如何跟踪核心播放，包括跟踪媒体载入、媒体开始、媒体暂停和媒体结束。 '
+title: 跟踪内容播放说明
+description: “了解有关跟踪核心播放的信息，包括跟踪媒体加载、媒体开始、媒体暂停和媒体结束。 "
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '894'
+ht-degree: 97%
 
 ---
-
 
 # 跟踪概述{#tracking-overview}
 
@@ -235,4 +239,3 @@ if (e.type == “buffered”) {
 ## 验证 {#validate}
 
 有关验证实施的信息，请参阅[验证](/help/sdk-implement/validation/validation-overview.md)。
-
