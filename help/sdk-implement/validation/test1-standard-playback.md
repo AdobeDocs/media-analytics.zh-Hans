@@ -5,10 +5,10 @@ uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 9fc75eb94603238aa85779b5f26f7b7de049dc8f
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -125,7 +125,7 @@ Media Analytics 实施包含两种类型的跟踪调用：
 
    有关调用参数和元数据，请参阅[测试调用详细信息](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)。
 
-1. **无中断播放主内容 10 分钟。**  **内容播放**
+1. **无中断播放主内容10秒。**  **内容播放**
 
    在主内容播放期间，Media SDK 每 10 秒会向 Media Analytics 服务器发送一次心率（播放调用）。
 
