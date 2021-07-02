@@ -5,10 +5,10 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 96%
+source-wordcount: '549'
+ht-degree: 75%
 
 ---
 
@@ -59,17 +59,17 @@ ht-degree: 96%
 
 ## 播放头值设置
 
-对于实时流，您需要将播放头设置为距节目开始时的偏移，这样在报表中，分析师便可以确定用户在 24 小时视图内加入和离开实时流的时间点。
+对于实时流，您需要将播放头值设置为自当天午夜UTC以来的秒数，以便在报表中，分析师可以确定用户在24小时视图内加入和离开实时流的时间点。
 
 ### 开始时
 
-对于实时媒体，当用户开始播放流时，您需要将 `l:event:playhead` 设置为当前的偏移（以秒为单位）。这与 VOD 相反，在 VOD 中，您需要将播放头设置为“0”。
+对于实时媒体，当用户开始播放流时，您需要将`l:event:playhead`设置为自当天午夜UTC以来的秒数。 这与 VOD 相反，在 VOD 中，您需要将播放头设置为“0”。
 
-例如，假设实时流事件从午夜开始，并且持续 24 小时（`a.media.length=86400`；`l:asset:length=86400`）。然后，再假设某位用户在中午 12:00 开始播放该实时流。在这种情况下，您应该将 `l:event:playhead` 设置为 43200（流已播放 12 小时）。
+例如，假设实时流事件从午夜开始，并且持续 24 小时（`a.media.length=86400`；`l:asset:length=86400`）。然后，再假设某位用户在中午 12:00 开始播放该实时流。在此方案中，您应将`l:event:playhead`设置为43200（自当天UTC午夜12小时起，以秒为单位）。
 
 ### 暂停时
 
-当用户暂停播放时，必须应用在播放开始时所应用的相同“实时播放头”逻辑。当用户重新播放实时流时，您必须将 `l:event:playhead` 值设置为新的偏移播放头位置，而&#x200B;_不是_&#x200B;设置为用户暂停实时流的时间点。
+当用户暂停播放时，必须应用在播放开始时所应用的相同“实时播放头”逻辑。当用户返回播放实时流时，您必须根据自UTC午夜以来的新秒数(_not_)将`l:event:playhead`值设置为用户暂停实时流的点。
 
 ## 示例代码 {#sample-code}
 
