@@ -7,8 +7,8 @@ internal: n
 snippet: y
 exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '30'
 ht-degree: 43%
@@ -19,7 +19,7 @@ ht-degree: 43%
 
 ## 发行说明{#release-notes}
 
-* [发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
+* [发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hans)
 
 <!--
 ## Documentation Updates{#documentation-updates}
