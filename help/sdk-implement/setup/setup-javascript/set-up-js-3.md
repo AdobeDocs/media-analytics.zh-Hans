@@ -3,8 +3,8 @@ title: 如何使用JavaScript 3.x设置媒体SKD
 description: 按照以下步骤在JavaScript 3.x中设置Media SDK应用程序。
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 87%
@@ -18,7 +18,7 @@ ht-degree: 87%
 * **获取有效配置参数**
 在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
 * **在媒 `AppMeasurement` 体应 `Experience Cloud Identity Service` 用程序中实施和for**
-JavaScript有关更多信息，请参 [阅使用JavaScript实](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) 施Analytics和 [实施Experience Cloud身份服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)。
+JavaScript有关更多信息，请参 [阅使用JavaScript实](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans) 施Analytics和 [实施Experience Cloud身份服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)。
 
 * **在媒体播放器中提供以下功能：**
 
