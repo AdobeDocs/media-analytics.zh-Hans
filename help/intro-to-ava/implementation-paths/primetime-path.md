@@ -3,8 +3,8 @@ title: 什么是 Adobe Primetime？
 description: 了解 Adobe Primetime 解决方案及其如何帮助从流媒体中盈利。
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 100%
