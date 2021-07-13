@@ -3,8 +3,8 @@ title: 播放器状态跟踪简介
 description: 了解播放器状态跟踪功能，包括实施和报告播放器状态的要求和准则。
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 94%
