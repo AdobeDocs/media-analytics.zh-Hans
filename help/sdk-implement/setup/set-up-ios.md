@@ -4,8 +4,8 @@ description: 按照以下步骤在iOS中设置Media SDK应用程序。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 95%
@@ -23,7 +23,7 @@ ht-degree: 95%
 * **获取 Media SDK 的有效配置参数**
 在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
 * **在应用程序中实施适用于 iOS 的 ADBMobile**
-有关 Adobe Mobile SDK 文档的更多信息，请参阅[适用于 Experience Cloud 解决方案的 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)。
+有关 Adobe Mobile SDK 文档的更多信息，请参阅[适用于 Experience Cloud 解决方案的 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=zh-Hans)。
 
    >[!IMPORTANT]
    >
