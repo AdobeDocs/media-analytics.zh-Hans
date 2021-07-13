@@ -3,8 +3,8 @@ title: 媒体并行查看者报表
 description: “了解如何使用“媒体并行查看者”面板分析并行查看者并了解并发峰值和锐减。”
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: “Media Analytics，工作区基础知识”
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 87%
