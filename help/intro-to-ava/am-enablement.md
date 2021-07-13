@@ -3,8 +3,8 @@ title: Adobe Audience Manager 支持什么？
 description: 了解如何将应用程序操作链接到媒体跟踪数据，而无需其他的处理规则和自定义变量。
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 96%
