@@ -4,11 +4,11 @@ description: 开始使用Adobe Analytics流媒体。 了解实施适用于流媒
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: “Media Analytics，系统要求”
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 87%
 
    如果您还没有实施 ID 服务，现在是时候开始考虑迁移策略了。有关 ID 服务的重要性和角色的更多信息，请参阅[为什么您应考虑使用 Identity Service](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
-   有关Experience CloudID的其他信息，请参阅[Experience CloudID概述、](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hans)和[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
+   有关Experience CloudID的其他信息，请参阅[Experience CloudID概述、](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hans)和[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。
 
 1. **启用 Adobe Analytics 报表。**
 
