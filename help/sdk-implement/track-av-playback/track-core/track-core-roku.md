@@ -101,7 +101,7 @@ ht-degree: 97%
 
    * **标准元数据**
 
-[在 Roku 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      [在 Roku 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >将标准视频元数据对象附加到媒体对象是可选的。
