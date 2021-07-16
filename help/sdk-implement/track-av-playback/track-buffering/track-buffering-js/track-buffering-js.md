@@ -5,7 +5,7 @@ uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 exl-id: 62c1d5b4-2717-42b3-8343-d41e895a9da3
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 81%
@@ -14,9 +14,11 @@ ht-degree: 81%
 
 # 使用JavaScript 2.x跟踪缓冲{#track-buffering-on-javascript}
 
+下面的说明为所有 2.x SDK 实施提供了指南。
+
 >[!IMPORTANT]
 >
->下面的说明为所有 2.x SDK 实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
+>如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
 ## 缓冲跟踪常量
 
