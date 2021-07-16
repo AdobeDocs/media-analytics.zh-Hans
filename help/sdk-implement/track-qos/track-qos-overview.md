@@ -5,7 +5,7 @@ uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 98%
@@ -14,9 +14,11 @@ ht-degree: 98%
 
 # 概述{#overview}
 
+下面的说明为所有 2.x SDK 实施提供了指南。
+
 >[!IMPORTANT]
 >
->下面的说明为所有 2.x SDK 实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
+>如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
 体验质量跟踪包括服务质量 (QoS) 和错误跟踪，在核心媒体跟踪实施中，这两项跟踪都是可选元素，而&#x200B;**不是**&#x200B;必需元素。您可以使用媒体播放器 API 来识别与 QoS 和错误跟踪相关的变量。以下是体验质量跟踪的关键元素：
 
@@ -57,20 +59,20 @@ ht-degree: 98%
 以下代码示例为 HTML5 媒体播放器使用 JavaScript 2.x SDK。您应该结合使用此代码与核心媒体播放代码。
 
 ```js
-var mediaDelegate = new MediaHeartbeatDelegate(); 
+var mediaDelegate = new MediaHeartbeatDelegate();
 ...  
- 
-// This is called periodically by MediaHeartbeat instance 
-mediaDelegate.prototype.getQoSObject = function() { 
-    return this.qosInfo; 
-}; 
- 
-if (e.type == "qos_update") { 
-    var qosInfo = MediaHeartbeat.createQoSObject(<BITRATE>,<STARTUP_TIME>,<FPS>,<DROPPED_FRAMES>); 
-    mediaDelegate.qosInfo = qosInfo; 
-}; 
- 
-if (e.type == "bitrate_change") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
+
+// This is called periodically by MediaHeartbeat instance
+mediaDelegate.prototype.getQoSObject = function() {
+    return this.qosInfo;
+};
+
+if (e.type == "qos_update") {
+    var qosInfo = MediaHeartbeat.createQoSObject(<BITRATE>,<STARTUP_TIME>,<FPS>,<DROPPED_FRAMES>);
+    mediaDelegate.qosInfo = qosInfo;
+};
+
+if (e.type == "bitrate_change") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject);
 };
 ```
