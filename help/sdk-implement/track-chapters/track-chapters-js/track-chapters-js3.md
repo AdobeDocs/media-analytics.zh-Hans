@@ -4,7 +4,7 @@ description: 了解如何在浏览器应用程序(JS)中使用Media SDK实施章
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 64%
@@ -13,9 +13,11 @@ ht-degree: 64%
 
 # 使用JavaScript 3.x跟踪章节和区段{#track-chapters-and-segments-on-javascript}
 
+以下说明为使用 3.x SDK 进行实施提供了指南。
+
 >[!IMPORTANT]
 >
->以下说明为使用 3.x SDK 进行实施提供了指南。如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
+> 如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
 
 1. 识别执行章节开始事件的时间，然后使用章节信息创建 `ChapterObject` 实例。
 
