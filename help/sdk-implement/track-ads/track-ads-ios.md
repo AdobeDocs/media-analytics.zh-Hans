@@ -5,7 +5,7 @@ uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 98%
@@ -14,9 +14,11 @@ ht-degree: 98%
 
 # 在 iOS 中跟踪广告{#track-ads-on-ios}
 
+以下说明为使用 2.x SDK 进行实施提供了指南。
+
 >[!IMPORTANT]
 >
->以下说明为使用 2.x SDK 进行实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
+>如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
 ## 广告跟踪常量
 
@@ -43,7 +45,7 @@ ht-degree: 98%
    广告时间对象创建：
 
    ```
-   id adBreakObject = [ADBMediaHeartbeat createAdBreakObjectWithName:[ADBREAK_NAME] 
+   id adBreakObject = [ADBMediaHeartbeat createAdBreakObjectWithName:[ADBREAK_NAME]
                                position:[POSITION]  
                                startTime:[START_TIME]];
    ```
@@ -51,10 +53,10 @@ ht-degree: 98%
 1. 在 `MediaHeartbeat` 实例中使用 `AdBreakStart` 调用 `trackEvent()`，以开始跟踪广告时间：
 
    ```
-   - (void)onAdBreakStart:(NSNotification *)notification { 
+   - (void)onAdBreakStart:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdBreakStart  
                         mediaObject:adBreakObject  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
@@ -72,9 +74,9 @@ ht-degree: 98%
    广告对象创建：
 
    ```
-   id adObject = [ADBMediaHeartbeat createAdObjectWithName:[AD_NAME] 
-                                    adId:[AD_ID] 
-                                    position:[POSITION] 
+   id adObject = [ADBMediaHeartbeat createAdObjectWithName:[AD_NAME]
+                                    adId:[AD_ID]
+                                    position:[POSITION]
                                     length:[LENGTH]];
    ```
 
@@ -84,9 +86,9 @@ ht-degree: 98%
    * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
 
       ```
-      NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init]; 
-      [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"]; 
-      [adDictionary setObject:@"Sample campaign" forKey:@"campaign"]; 
+      NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
+      [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
+      [adDictionary setObject:@"Sample campaign" forKey:@"campaign"];
       [adDictionary setObject:@"Sample creative" forKey:@"creative"];
       ```
 
@@ -95,30 +97,30 @@ ht-degree: 98%
    在事件调用中添加对自定义元数据变量（或空对象）的引用，以将其作为第三个参数：
 
    ```
-   - (void)onAdStart:(NSNotification *)notification { 
+   - (void)onAdStart:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdStart  
                         mediaObject:adObject  
-                        data:adDictionary]; 
+                        data:adDictionary];
    }
    ```
 
 1. 当广告播放到达广告结尾时，使用 `AdComplete` 事件调用 `trackEvent()`。
 
    ```
-   - (void)onAdComplete:(NSNotification *)notification { 
+   - (void)onAdComplete:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdComplete  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
 1. 如果由于用户选择跳过广告而使广告播放未能完成，则跟踪 `AdSkip` 事件。
 
    ```
-   - (void)onAdSkip:(NSNotification *)notification { 
+   - (void)onAdSkip:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdSkip  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
@@ -126,10 +128,10 @@ ht-degree: 98%
 1. 当广告时间结束时，使用 `AdBreakComplete` 事件进行跟踪：
 
    ```
-   - (void)onAdBreakComplete:(NSNotification *)notification { 
+   - (void)onAdBreakComplete:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdBreakComplete  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
