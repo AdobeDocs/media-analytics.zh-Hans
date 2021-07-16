@@ -4,7 +4,7 @@ description: 使用 Media SDK 在浏览器 (JS) 应用程序中实施广告跟�
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 80%
@@ -13,9 +13,11 @@ ht-degree: 80%
 
 # 使用JavaScript 3.x跟踪广告{#track-ads-on-javascript}
 
+以下说明为使用 3.x SDK 进行实施提供了指南。
+
 >[!IMPORTANT]
 >
->以下说明为使用 3.x SDK 进行实施提供了指南。如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
+>如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 广告跟踪常量
 
