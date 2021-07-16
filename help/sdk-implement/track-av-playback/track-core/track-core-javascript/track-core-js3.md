@@ -4,7 +4,7 @@ description: 了解如何使用JavaScript 3.x应用程序在浏览器中使用Me
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 95%
@@ -13,8 +13,10 @@ ht-degree: 95%
 
 # 使用 JavaScript 3.x 跟踪核心播放{#track-core-playback-on-javascript}
 
+本文档介绍 3.x 版本的 SDK 中的跟踪。
+
 >[!IMPORTANT]
->本文档介绍 3.x 版本的 SDK 中的跟踪。如果您实施的是 SDK 之前的版本，可以在此处下载开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
+> 如果您实施的是 SDK 之前的版本，可以在此处下载开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
 1. **初始跟踪设置**
 
