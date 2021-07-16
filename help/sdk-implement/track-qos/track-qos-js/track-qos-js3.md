@@ -4,7 +4,7 @@ description: “了解如何使用JavaScript 3x在浏览器应用程序中使用
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 50%
@@ -13,9 +13,11 @@ ht-degree: 50%
 
 # 使用JavaScript 3.x跟踪体验质量{#track-quality-of-experience-on-javascript}
 
+下面的说明为所有 2.x SDK 实施提供了指南。
+
 >[!IMPORTANT]
 >
->下面的说明为所有 3.x SDK 实施提供了指南。如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
+>如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 实施QOE
 
