@@ -5,7 +5,7 @@ uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 89%
@@ -14,9 +14,11 @@ ht-degree: 89%
 
 # 在 Roku 中跟踪章节和区段{#track-chapters-and-segments-on-roku}
 
+以下说明为使用 2.x SDK 进行实施提供了指南。
+
 >[!IMPORTANT]
 >
->以下说明为使用 2.x SDK 进行实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
+> 如果您实施的是 1.x 版本的 SDK，可以在此处下载开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
 ## 实施标准广告元数据
 
@@ -48,9 +50,9 @@ ht-degree: 89%
 1. 如果为章节添加了自定义元数据，请为该元数据创建上下文数据变量：
 
    ```
-   chapterContextData = {} 
-   chapterContextData["seg_type"] = "seg_type" 
-   chapterContextData["seg_name"] = "seg_name" 
+   chapterContextData = {}
+   chapterContextData["seg_type"] = "seg_type"
+   chapterContextData["seg_name"] = "seg_name"
    chapterContextData["seg_info"] = "seg_info"
    ```
 
@@ -63,14 +65,14 @@ ht-degree: 89%
 1. 当播放达到您通过自定义代码定义的章节结尾边界时，在 `MediaHeartbeat` 实例中调用 `ChapterComplete` 事件。
 
    ```
-   chapterContextData = {} 
+   chapterContextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_CHAPTER_COMPLETE, chapterInfo, chapterContextData)
    ```
 
 1. 如果由于用户选择跳过章节（例如，用户搜寻章节边界之外的内容）而使章节播放未能完成，请在 MediaHeartbeat 实例中调用 `ChapterSkip`。
 
    ```
-   chapterContextData = {} 
+   chapterContextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_CHAPTER_SKIP, chapterInfo, chapterContextData)
    ```
 
