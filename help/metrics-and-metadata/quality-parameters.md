@@ -5,10 +5,10 @@ uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: '"Media Analytics， Variables"'
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
-source-wordcount: '2976'
-ht-degree: 93%
+source-wordcount: '2997'
+ht-degree: 92%
 
 ---
 
@@ -50,11 +50,11 @@ ht-degree: 93%
 | <ul> <li> **SDK 密钥：**<br/> </li> <li> **API 密钥：**<br/> media.qoe.timeToStart </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 30,000 </li><li> **描述：**<br/>&#x200B;如果您不通过 QoSObject 设置此值，则其值默认为 0。您应以毫秒为单位设置此值。在Analysis Workspace和Reports &amp; Analytics中，该值将以时间格式(HH:MM:SS)显示。 而在数据馈送、Data Warehouse 和报表 API 中，该值将以秒数显示。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.qoe.<br/>timeToStart) </li> <li> **心率：**<br/> (:stream:lstartup_time) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;开始时间 </li> <li> **上下文数据：**<br/>(a.media.qoe.<br/>timeToStart) </li> <li> **数据馈送：**<br/> videoqoetimetostartevar </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.qoe。<br/>timeToStart) </li> </ul> |
 
 
-### FPS
+### 每秒帧数
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 密钥：**<br/> </li> <li> **API 密钥：**<br/> media.qoe.framesPerSecond </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 24 </li><li> **描述：**<br/>&#x200B;流帧率的当前值（以每秒帧数为单位）。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **心率：**<br/> (:stream:lfps) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;否 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/> </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> </li> <li> **API 密钥：**<br/> media.qoe.framesPerSecond </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 24 </li><li> **描述：**<br/>&#x200B;流帧率的当前值（以每秒帧数为单位）。该字段会映射到关闭调用中的fps字段，并可通过处理规则访问。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **心率：**<br/> (:stream:lfps) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;否 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/> </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
