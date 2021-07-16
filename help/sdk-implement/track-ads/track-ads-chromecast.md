@@ -5,7 +5,7 @@ uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 97%
@@ -14,9 +14,11 @@ ht-degree: 97%
 
 # 在 Chromecast 中跟踪广告{#track-ads-on-chromecast}
 
+以下说明为使用 2.x SDK 进行实施提供了指南。
+
 >[!IMPORTANT]
 >
->以下说明为使用 2.x SDK 进行实施提供了指南。如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
+>如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)。
 
 ## 广告跟踪常量
 
@@ -35,7 +37,7 @@ ht-degree: 97%
    广告时间对象创建：[createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdBreakObject)
 
    ```
-   adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName); 
+   adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName);
    ```
 
 1. 在 `MediaHeartbeat` 实例中使用 `AdBreakStart` 调用 `trackEvent()`，以开始跟踪广告时间：[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
@@ -49,7 +51,7 @@ ht-degree: 97%
    广告对象创建：[createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
 
    ```
-   adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
+   adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH);
    ```
 
 1. （可选）通过上下文数据变量将标准和/或广告元数据附加到媒体跟踪会话。
@@ -68,7 +70,7 @@ ht-degree: 97%
 1. 当广告资产播放到达广告结尾时，使用 `AdComplete` 事件调用 `trackEvent()`：[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
    ```
 
 1. 如果同一个 `AdBreak` 中存在任何其他广告，请重复执行步骤 3 至 6。
