@@ -4,7 +4,7 @@ description: 了解如何在浏览器应用程序(JS)中跟踪缓冲事件。
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 65%
@@ -13,9 +13,11 @@ ht-degree: 65%
 
 # 使用JavaScript 3.x跟踪缓冲{#track-buffering-on-javascript}
 
+下面的说明为所有 3.x SDK 实施提供了指南。
+
 >[!IMPORTANT]
 >
->下面的说明为所有 3.x SDK 实施提供了指南。如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
+>如果您实施的是SDK的先前版本，可以在此处下载开发人员指南：[下载SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 缓冲跟踪常量
 
