@@ -5,7 +5,7 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 97%
@@ -14,8 +14,9 @@ ht-degree: 97%
 
 # 在 Android 中跟踪核心播放{#track-core-playback-on-android}
 
+本文档介绍 2.x 版本的 SDK 中的跟踪。
 >[!IMPORTANT]
->本文档介绍 2.x 版本的 SDK 中的跟踪。如果您实施的是 1.x 版本的 SDK，可以在此处下载适用于 Android 的 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
+>如果您实施的是 1.x 版本的 SDK，可以在此处下载适用于 Android 的 1.x 开发人员指南：[下载 SDK](/help/sdk-implement/download-sdks.md)
 
 1. **初始跟踪设置**
 
@@ -74,9 +75,9 @@ ht-degree: 97%
 
       ```java
       HashMap<String, String> mediaMetadata =  
-        new HashMap<String, String>(); 
-      mediaMetadata.put("isUserLoggedIn", "false"); 
-      mediaMetadata.put("tvStation", "Sample TV Station"); 
+        new HashMap<String, String>();
+      mediaMetadata.put("isUserLoggedIn", "false");
+      mediaMetadata.put("tvStation", "Sample TV Station");
       mediaMetadata.put("programmer", "Sample programmer");
       ```
 
@@ -87,7 +88,7 @@ ht-degree: 97%
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
-       _heartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
+       _heartbeat.trackSessionStart(mediaInfo, mediaMetadata);
    }
    ```
 
@@ -109,8 +110,8 @@ ht-degree: 97%
 
    ```java
    // Video is rendered on the screen) and call trackPlay.  
-   public void onVideoPlay(Observable observable, Object data) { 
-       _heartbeat.trackPlay(); 
+   public void onVideoPlay(Observable observable, Object data) {
+       _heartbeat.trackPlay();
    }
    ```
 
@@ -119,8 +120,8 @@ ht-degree: 97%
    识别媒体播放器中的媒体播放结束事件（用户一直观看至内容的结尾）并调用 `trackComplete`：
 
    ```java
-   public void onVideoComplete(Observable observable, Object data) { 
-       _heartbeat.trackComplete(); 
+   public void onVideoComplete(Observable observable, Object data) {
+       _heartbeat.trackComplete();
    }
    ```
 
@@ -132,7 +133,7 @@ ht-degree: 97%
    // Closes the media and/or the media completed and unloaded,  
    // and call trackSessionEnd().  
    public void onMainVideoUnload(Observable observable, Object data) {  
-       _heartbeat.trackSessionEnd(); 
+       _heartbeat.trackSessionEnd();
    }
    ```
 
@@ -146,7 +147,7 @@ ht-degree: 97%
 
    ```java
    public void onVideoPause(Observable observable, Object data) {  
-       _heartbeat.trackPause(); 
+       _heartbeat.trackPause();
    }
    ```
 
@@ -162,9 +163,9 @@ ht-degree: 97%
 1. 识别播放器中的媒体播放事件和/或媒体在暂停后继续播放的事件并调用 `trackPlay`。
 
    ```java
-   // trackPlay() 
+   // trackPlay()
    public void onVideoPlay(Observable observable, Object data) {  
-       _heartbeat.trackPlay(); 
+       _heartbeat.trackPlay();
    }
    ```
 
