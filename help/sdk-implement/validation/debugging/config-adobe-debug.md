@@ -5,7 +5,7 @@ uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 97%
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 要访问 Adobe Debug，请执行以下操作：
 
-1. 转到 [Experience Cloud](https://www.marketing.adobe.com) 并创建新的 Adobe Experience Cloud 用户。
+1. 转到 [Experience Cloud](https://www.marketing.adobe.com/) 并创建新的 Adobe Experience Cloud 用户。
 
    >[!TIP]
    >
