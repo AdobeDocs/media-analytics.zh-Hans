@@ -5,10 +5,10 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 97%
+source-wordcount: '698'
+ht-degree: 87%
 
 ---
 
@@ -61,13 +61,11 @@ iOS 和 Android 移动设备支持内容跟踪。
 
 ## 会话对比示例 {#sample-session-comparison}
 
-```
-[url]/api/v1/sessions
-```
-
 ### 联机内容
 
 ```
+POST /api/v1/sessions HTTP/1.1
+
 {
   eventType: "sessionStart",
   playerTime: {
@@ -82,13 +80,49 @@ iOS 和 Android 移动设备支持内容跟踪。
 ### 下载的内容
 
 ```
+POST /api/v1/downloaded HTTP/1.1
+
 [{
     eventType: "sessionStart",
     playerTime:{
       playhead: 0,
-      ts: 1529997923478},  
+      ts: 1529997923478
+    },  
+    params:{...},
+    customMetadata:{},  
+    qoeData:{}
+},
+    {eventType: "play", playerTime:
+        {playhead: 0,  ts: 1529997928174}},
+    {eventType: "ping", playerTime:
+        {playhead: 10, ts: 1529997937503}},
+    {eventType: "ping", playerTime:
+        {playhead: 20, ts: 1529997947533}},
+    {eventType: "ping", playerTime:
+        {playhead: 30, ts: 1529997957545},},
+    {eventType: "sessionComplete", playerTime:
+        {playhead: 35, ts: 1529997960559}
+}]
+```
+
+#### 弃用说明
+
+以前，也可以将下载的内容发送到`/api/v1/sessions` API。 这种跟踪下载内容的方式是&#x200B;**已弃用**，将来将&#x200B;**删除**。
+`/api/v1/sessions` API将仅接受会话初始化事件。
+使用新API时，不再需要之前必需的`media.downloaded`标记。
+我们强烈建议使用`/api/v1/downloaded` API来实施新的下载内容，并更新依赖旧API的现有实施。
+
+
+```
+POST /api/v1/sessions HTTP/1.1
+[{
+    eventType: "sessionStart",
+    playerTime:{
+      playhead: 0,
+      ts: 1529997923478
+    },
     params:{
-        "media.downloaded": true
+        "media.downloaded": true,
         ...
     },
     customMetadata:{},  
