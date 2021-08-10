@@ -5,7 +5,7 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
+source-git-commit: 8da6889ecb50edd12b7ea4139500c35b923830f2
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 87%
@@ -105,9 +105,13 @@ POST /api/v1/downloaded HTTP/1.1
 }]
 ```
 
-#### 弃用说明
+### 弃用说明
 
-以前，也可以将下载的内容发送到`/api/v1/sessions` API。 这种跟踪下载内容的方式是&#x200B;**已弃用**，将来将&#x200B;**删除**。
+>[!IMPORTANT]
+>
+>以前，也可以将下载的内容发送到`/api/v1/sessions` API。 这种跟踪下载内容的方式是&#x200B;**已弃用**，将来将&#x200B;**删除**。
+
+
 `/api/v1/sessions` API将仅接受会话初始化事件。
 使用新API时，不再需要之前必需的`media.downloaded`标记。
 我们强烈建议使用`/api/v1/downloaded` API来实施新的下载内容，并更新依赖旧API的现有实施。
