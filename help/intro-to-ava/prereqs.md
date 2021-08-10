@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 88%
 
    如果您还没有实施 ID 服务，现在是时候开始考虑迁移策略了。有关 ID 服务的重要性和角色的更多信息，请参阅[为什么您应考虑使用 Identity Service](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
-   有关Experience CloudID的其他信息，请参阅[Experience CloudID概述、](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hans)和[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。
+   有关 Experience Cloud ID 的其他信息，请参阅 [Experience Cloud ID 概述](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html)和 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
 
 1. **启用 Adobe Analytics 报表。**
 
