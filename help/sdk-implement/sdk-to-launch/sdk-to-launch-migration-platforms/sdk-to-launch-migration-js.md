@@ -4,10 +4,10 @@ description: 了解如何从Media SDK迁移到Launch for JS。
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -47,7 +47,7 @@ Media 扩展将使用已配置的参数进行跟踪。
 
    ![](assets/launch_config_js.png)
 
-[Launch 用户指南 - 安装和配置媒体扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Launch 用户指南 - 安装和配置媒体扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
 
 ## 跟踪器创建差异
 
@@ -120,5 +120,5 @@ Launch 提供了两种创建跟踪基础结构的方法。这两种方法都使�
 
 ### Launch
 
-* [Launch 概述](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=zh-Hans)
-* [Media Analytics 扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Launch 概述](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)
+* [Media Analytics 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
