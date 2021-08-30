@@ -6,9 +6,9 @@ exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '202'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 自定义视频跟踪可利用 Analytics `appMeasurement` 中的使用自定义链接代码的手动链接跟踪。大多数情况下，自定义视频链接视频跟踪会用在需要少量视频测量的平台和设备上。
 
 * 在 JavaScript 中：`s.tl()` 函数
-* 在移动设备应用程序中：[trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html)、[trackAction() iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html) 和 [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* 在移动设备应用程序中：[trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html?lang=zh-Hans)、[trackAction() iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html?lang=zh-Hans) 和 [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * 在 Data Insertion API 中：[linktype 标记](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 要求
