@@ -6,7 +6,7 @@ breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
 sub-product: Media Analytics
 source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '829'
 ht-degree: 100%
 
@@ -78,9 +78,9 @@ ht-degree: 100%
             + [在 JavaScript 2.x 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
             + [在 JavaScript 3.x 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [在 Chromecast 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [标准元数据参数 - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+         + [标准元数据参数 — Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [在 Roku 中实施标准元数据](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [标准元数据参数 - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
+         + [标准元数据参数 — Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + 跟踪广告 {#track-ads}
       + [概述](sdk-implement/track-ads/track-ads-overview.md)
       + [在 Android 中跟踪广告](sdk-implement/track-ads/track-ads-android.md)
@@ -127,7 +127,7 @@ ht-degree: 100%
    + [选择禁用和隐私](sdk-implement/opt-out-privacy.md)
    + 跟踪方案 {#tracking-scenarios}
       + [不含广告的 VOD 播放](sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
-      + [包含前置广告的 VOD 播放](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
+      + [包含前置式广告的 VOD 播放](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
       + [跳过广告的 VOD 播放](sdk-implement/tracking-scenarios/vod-skipped-ads.md)
       + [包含一个章节的 VOD 播放](sdk-implement/tracking-scenarios/vod-one-chapter.md)
       + [跳过一个章节的 VOD 播放](sdk-implement/tracking-scenarios/vod-skipped-chapter.md)
@@ -147,8 +147,8 @@ ht-degree: 100%
          + [SDK 调试](sdk-implement/validation/debugging/sdk-debugging.md)
          + [配置 Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
          + [创建新的调试报告](sdk-implement/validation/debugging/create-new-debug-report.md)
-         + [调试功能板和报表](sdk-implement/validation/debugging/debug-dash-repts.md)
-   + OTT 应用程序中的 Analytics{#analytics-with-ott}
+         + [调试仪表板和报表](sdk-implement/validation/debugging/debug-dash-repts.md)
+   + OTT 应用程序中的 Analytics {#analytics-with-ott}
       + [跟踪应用程序状态](sdk-implement/analytics-with-ott/track-app-states.md)
       + [跟踪应用程序操作](sdk-implement/analytics-with-ott/track-app-actions.md)
       + [设置用户 ID](sdk-implement/analytics-with-ott/set-user-ids.md)
@@ -163,10 +163,10 @@ ht-degree: 100%
    + 从 Media Analytics 1.x 迁移到 2.x {#va-1x-to-2x}
       + [迁移概述](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [代码对比：1.x 与 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
-      + [从 1.x API 转换到 VHL 2.x API](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
-   + 从 Media Analytics SDK 迁移到 Launch{#sdk-to-launch}
+      + [从 1.x API 转换到 2.x API](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
+   + 从 Media Analytics SDK 迁移到 Launch {#sdk-to-launch}
       + [从 SDK 迁移到 Launch](sdk-implement/sdk-to-launch/sdk-to-launch-migration.md)
-      + 从 SDK 迁移到 Launch 平台指南 {#sdk-to-launch-migration-platforms}
+      + 《从 SDK 迁移到 Launch 平台指南》{#sdk-to-launch-migration-platforms}
          + [Android](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
@@ -190,10 +190,10 @@ ht-degree: 100%
       + [超时情况](media-collection-api/mc-api-impl/mc-api-timeout.md)
       + [控制事件的顺序](media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
       + [会话响应缓慢时对事件进行排队](media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + 媒体跟踪时间轴 {#mc-api-timelines}
-      + [时间轴 1 - 观看到内容的结尾](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
-      + [时间轴 2 - 用户放弃会话](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
-      + [时间轴 3 - 章节](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
+   + 媒体跟踪时间线 {#mc-api-timelines}
+      + [时间线 1 — 观看到内容的结尾](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
+      + [时间线 2 — 用户放弃会话](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
+      + [时间线 3 — 章节](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
 + 指南 {#media-analytics-cookbook}
    + [指南](media-analytics-cookbook/media-analytics-cookbook.md)
    + [媒体流归因](media-analytics-cookbook/media-dimensions.md)
@@ -213,7 +213,7 @@ ht-degree: 100%
       + [媒体详细信息](media-reports/media-default-reports/media-reports-detail.md)
       + [“媒体时段”报表](media-reports/media-default-reports/media-reports-daypart.md)
       + [“媒体并行查看者”报表](media-reports/media-default-reports/media-concurrent-viewers.md)
-   + 媒体工作区面板{#media-workspace-panels}
+   + 媒体工作区面板 {#media-workspace-panels}
       + [“媒体并行查看者”面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [媒体工作区模板](media-reports/media-workspace-templates.md)
    + [通过 API 获取并行查看者数据](media-reports/media-default-reports/get-concurrent-json20.md)
@@ -221,7 +221,7 @@ ht-degree: 100%
 + 播放器状态跟踪 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
    + [标准状态和自定义状态](sdk-implement/player-state-tracking/standard-and-custom-states.md)
-   + [实施与报表](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [实施与报告](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [播放器状态跟踪示例](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
 + 其他资源 {#additional-resources}
