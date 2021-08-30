@@ -1,17 +1,17 @@
 ---
-title: 媒体并行查看者报表
-description: “了解如何使用“媒体并行查看者”面板分析并行查看者并了解并发峰值和锐减。”
+title: 媒体并行查看者报告
+description: “了解如何使用‘媒体并行查看者’面板来分析并行查看者以及了解并发峰值和流失。”
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
-feature: “Media Analytics，工作区基础知识”
+feature: “Media Analytics、Workspace Basics”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# 媒体并行查看者报表{#media-concurrent-viewers}
+# 媒体并行查看者报告{#media-concurrent-viewers}
 
 通过分析并行查看者，您可以了解出现并发峰值或发生锐减的位置，从而对内容质量和查看者参与度提出有价值的见解，同时还有助于对容量和规模进行故障诊断或规划。
 
