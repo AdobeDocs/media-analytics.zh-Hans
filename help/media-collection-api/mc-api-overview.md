@@ -1,15 +1,15 @@
 ---
 seo-title: 概述
-title: 流媒体收集API概述
-description: 了解媒体收集API以及播放器如何使用RESTful HTTP调用跟踪音频和视频事件。
+title: 流媒体收集 API 概述
+description: 了解媒体收集 API 以及您的播放器如何使用 RESTful HTTP 调用跟踪音频和视频事件。
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -35,13 +35,13 @@ ht-degree: 92%
 
 ### API 调用 {#mc-api-calls}
 
-* **`sessions`-** 与服务器建立会话，并返回在后续 `events` 调用中使用的会话 ID。应用程序会在跟踪会话开始时调用一次。
+* **`sessions`—** 与服务器建立会话，并返回在后续 `events` 调用中使用的会话 ID。应用程序会在跟踪会话开始时调用一次。
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-** 发送媒体跟踪数据。
+* **`events`—** 发送媒体跟踪数据。
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
@@ -74,12 +74,12 @@ ht-degree: 92%
 }
 ```
 
-* `playerTime` - 对于所有请求而言，它是必选项。
-* `eventType` - 对于所有请求而言，它是必选项。
-* `params` - 对某些 `eventTypes` 而言，它是必选项；请检查 [JSON 验证架构](mc-api-ref/mc-api-json-validation.md)以确定哪些 eventTypes 是必选的，哪些是可选的。
+* `playerTime` — 对于所有请求而言，它是必选项。
+* `eventType` — 对于所有请求而言，它是必选项。
+* `params` — 对某些 `eventTypes` 而言，它是必选项；请检查 [JSON 验证架构](mc-api-ref/mc-api-json-validation.md)以确定哪些 eventTypes 是必选的，哪些是可选的。
 
-* `qoeData` - 对于所有请求而言，它是可选项。
-* `customMetadata` - 对于所有请求而言，它是可选项，但只通过 `sessionStart`、`adStart` 和 `chapterStart` 事件类型发送。
+* `qoeData` — 对于所有请求而言，它是可选项。
+* `customMetadata` — 对于所有请求而言，它是可选项，但只通过 `sessionStart`、`adStart` 和 `chapterStart` 事件类型发送。
 
 对于每个 `eventType`，都有一个公开可用的 [JSON 验证架构](mc-api-ref/mc-api-json-validation.md)，您应该使用它来验证参数类型，以及参数是特定事件的可选参数还是必选参数。
 
