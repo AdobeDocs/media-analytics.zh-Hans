@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '499'
 ht-degree: 98%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 * **包含 Adobe Media Analytics 扩展的 Adobe Launch**
 
-   Adobe Launch 是 Adobe 推出的下一代标记管理解决方案。Launch 为客户提供了一种简单的方式来部署和管理有助于加强相关客户体验的所有分析、营销和广告标记。要自行构建并维护与 Launch 的集成，您需要使用扩展。扩展是一种 JavaScript、HTML 和 CSS 代码包，用于扩展 Launch UI 和客户端功能。有关更多信息，请参阅 [Experience Platform Launch 用户指南](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)。
+   Adobe Launch 是 Adobe 推出的下一代标记管理解决方案。Launch 为客户提供了一种简单的方式来部署和管理有助于加强相关客户体验的所有分析、营销和广告标记。要自行构建并维护与 Launch 的集成，您需要使用扩展。扩展是一种 JavaScript、HTML 和 CSS 代码包，用于扩展 Launch UI 和客户端功能。有关更多信息，请参阅[《Experience Platform Launch 用户指南》](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)。
 
    Adobe Media Analytics (MA) 扩展添加了适用于音频和视频的核心 JavaScript Media SDK (Media 2.x SDK)。此扩展提供了将 `MediaHeartbeat` 跟踪器实例添加到 Launch 网站或项目的功能。
 
@@ -49,6 +49,6 @@ ht-degree: 98%
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK 已与 Media Analtyics (Heartbeats) SDK 集成，这使得在所有受支持的平台上都可以更便捷地实施 TVSDK。<!--Primetime also supports the partnership with Nielsen.-->要利用 Primetime，请遵循[客户端](/help/intro-to-ava/implementation-paths/client-side-path.md)中提供的相同准则和先决条件，以及以下适用于您的平台的文档：[Primetime 用户指南](https://helpx.adobe.com/cn/primetime/user-guide.html)。
+TVSDK 已与 Media Analtyics (Heartbeats) SDK 集成，这使得在所有受支持的平台上都可以更便捷地实施 TVSDK。<!--Primetime also supports the partnership with Nielsen.-->要利用 Primetime，请遵循[客户端](/help/intro-to-ava/implementation-paths/client-side-path.md)中提供的相同准则和先决条件，以及以下适用于您的平台的文档：[《Primetime 用户指南》](https://helpx.adobe.com/cn/primetime/user-guide.html)。
 
 您还应该与您的销售代表/客户经理联系，了解购买 TVSDK 所需的条件。
