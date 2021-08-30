@@ -1,14 +1,14 @@
 ---
-title: 了解如何从里程碑迁移到Media Analytics
-description: 了解如何将里程碑变量更改为Media Analytics量度，将里程碑模块方法更改为Media Analytics语法。
+title: 了解如何从里程碑迁移到 Media Analytics
+description: 了解如何将里程碑变量更改为 Media Analytics 量度，并将里程碑模块方法更改为 Media Analytics 语法。
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '692'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 96%
 | playerName | `playerName`：（必需）用于查看广告的媒体播放器名称。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | parentName | `parentName`：嵌入了广告的主内容的名称或 ID。 | 不适用 | 自动继承。 |
 | parentPod | `parentPod`：广告在主内容中播放的位置。 | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
-| parentPodPosition | `parentPodPosition`：广告在面板中播放的位置。 | 位置 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| parentPodPosition | `parentPodPosition`：广告在面板中播放的位置。 | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | CPM | `CPM`：应用于此播放的 CPM 或加密 CPM（以“~”为前缀）。 | 不适用 | 在 Media Analytics 中默认不可用。 |
 | Media.click | `s.Media.click(name, offset)` | 不适用 | 使用自定义链接分析调用来跟踪点击次数。 |
 | Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
