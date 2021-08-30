@@ -5,7 +5,7 @@ exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Primetime 通过提供用于媒体发布、广告、个性化和分析的模块�
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK 已与 Media SDK 集成，这使得在所有受支持的平台上都可以更便捷地实施 TVSDK。<!--Primetime also supports the partnership with Nielsen.-->要利用 Primetime，请遵循[客户端](/help/intro-to-ava/implementation-paths/client-side-path.md)中提供的相同准则和先决条件，以及以下适用于您的平台的文档：[Primetime 用户指南](https://helpx.adobe.com/cn/primetime/user-guide.html)。
+TVSDK 已与 Media SDK 集成，这使得在所有受支持的平台上都可以更便捷地实施 TVSDK。<!--Primetime also supports the partnership with Nielsen.-->要利用 Primetime，请遵循[客户端](/help/intro-to-ava/implementation-paths/client-side-path.md)中提供的相同准则和先决条件，以及以下适用于您的平台的文档：[《Primetime 用户指南》](https://helpx.adobe.com/cn/primetime/user-guide.html)。
 
 >[!NOTE]
 >
