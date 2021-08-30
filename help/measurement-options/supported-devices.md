@@ -1,13 +1,13 @@
 ---
 title: 了解支持的设备和平台
-description: “了解适用于流媒体的Adobe Analytics支持的主要设备，如iOS、Android、OTT设备和JavaScript浏览器。”
+description: “了解适用于流媒体的 Adobe Analytics 支持的主要设备，例如 iOS、Android、OTT 设备和 JavaScript 浏览器。”
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
