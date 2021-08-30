@@ -1,14 +1,14 @@
 ---
 title: 媒体报表启用
-description: 了解用于收集媒体量度的媒体报表包。  在发送媒体数据之前，请按照以下步骤配置媒体报表。
+description: 了解收集媒体量度的媒体报表包。在发送媒体数据之前，请执行以下步骤来配置媒体报表。
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 97%
 
    * **媒体广告**
 
-      媒体广告测量用于测量媒体内容中的广告。这将使用解决方案 eVar 来测量广告、广告播放器名称、广告面板和面板位置中的广告。解决方案事件将用于广告开始、广告结束、广告逗留时间和视频逗留时间。
+      媒体广告测量用于测量媒体内容中的广告。这将使用解决方案 eVar 来测量广告、广告播放器名称、广告面板和广告在面板中的位置。解决方案事件将用于广告开始、广告结束、广告逗留时间和视频逗留时间。
 
    * **媒体章节**
 
