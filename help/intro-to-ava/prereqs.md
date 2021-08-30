@@ -1,14 +1,14 @@
 ---
 title: 了解流媒体的先决条件
-description: 开始使用Adobe Analytics流媒体。 了解实施适用于流媒体的Adobe Analytics所需的内容。
+description: 开始使用 Adobe Analytics 流媒体。了解实施适用于流媒体的 Adobe Analytics 所需的工具。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: “Media Analytics，系统要求”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 93%
 
 在开始跟踪实施之前，您需要就哪种实施对您的情况更有帮助做一些早期决策。
 
-* **Media Analytics -** 使用最新的 Media SDK（标准、建议的实施）和/或媒体收集 API (RESTful)
-* **里程碑 -** 旧版 Adobe 跟踪实施
-* **Data Insertion API -** 无需使用 Media SDK 即可实施跟踪
+* **Media Analytics —** 使用最新的 Media SDK（标准、建议的实施）和/或媒体收集 API (RESTful)
+* **里程碑 —** 旧版 Adobe 跟踪实施
+* **Data Insertion API —** 无需使用 Media SDK 即可实施跟踪
 
 ## 任务 {#prereq-tasks}
 
@@ -44,7 +44,7 @@ ht-degree: 93%
 
    如果您还没有实施 ID 服务，现在是时候开始考虑迁移策略了。有关 ID 服务的重要性和角色的更多信息，请参阅[为什么您应考虑使用 Identity Service](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
-   有关 Experience Cloud ID 的其他信息，请参阅 [Experience Cloud ID 概述](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html)和 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
+   有关 Experience Cloud ID 的其他信息，请参阅 [Experience Cloud ID 概述](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hans)和 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。
 
 1. **启用 Adobe Analytics 报表。**
 
