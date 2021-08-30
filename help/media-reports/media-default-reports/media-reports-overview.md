@@ -1,14 +1,14 @@
 ---
 title: 媒体概览
-description: 使用“媒体概述”功能板显示聚合测量。 了解如何快速监控媒体性能。
+description: 使用“媒体概览”仪表板显示汇总测量。了解如何快速监测媒体效果。
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: “Media Analytics、Reports & Analytics基础知识”
+feature: “Media Analytics、Reports & Analytics Basics”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '112'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
