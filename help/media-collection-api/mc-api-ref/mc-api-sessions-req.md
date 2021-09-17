@@ -5,10 +5,10 @@ uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ca709046e477bd471e2f55eb6dcf45e5c3c2be17
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 80%
+source-wordcount: '130'
+ht-degree: 46%
 
 ---
 
@@ -62,8 +62,8 @@ https://{uri}/api/v1/sessions
 ```
 
 * `playerTime`（必需）
-   * `playhead` - 必须以秒为单位，但它可以是一个浮点数。
-   * `ts` - 时间戳，必须以毫秒为单位。
+   * `playhead`  — 如果内容是实时的，则播放头必须是一天中的当前秒，0  &lt;>如果记录了内容，则播放头必须是内容的当前秒数，0 &lt;=播放头&lt;内容长度。 该值可以是浮点数。
+   * `ts`  — 时间戳；必须以毫秒为单位；协调世界时(UTC)。
 * `eventType`（必需）
 
    **有效值：**`sessionStart`
