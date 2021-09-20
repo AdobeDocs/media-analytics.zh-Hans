@@ -5,10 +5,10 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 270dc48152dd77d7ceff8ce1ea9fbead0d1ce9be
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 96%
+source-wordcount: '643'
+ht-degree: 95%
 
 ---
 
@@ -137,6 +137,22 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
    | `getMarketingCloudID()` | 从访客 ID 服务中检索 Experience Cloud 访客 ID。<br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
    | `syncIdentifiers()` | 使用 Experience Cloud 访客 ID，您可以设置其他可与每个访客关联的客户 ID。访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。此方法对应于 JavaScript 库中的 `setCustomerIDs()`。例如：<br/><br/>`var identifiers = {};`<br/><br/>`identifiers["idType"] = "idValue";`<br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
+1. 对于跟踪媒体，请实施MediaDelegate协议
 
+   ```js
+    var delegate = {
+      // Replace <currentPlaybackTime> with the video player current playback time
+      getCurrentPlaybackTime = function() {
+        return <currentPlaybackTime>;
+      },
+      // Replace <bitrate>, <startuptime>, <fps> and <droppeFrames> with the current playback QoS values.
+      getQoSObject = function() {
+         return ADBMobile.media.createQoSObject(<bitrate>, <startupTime>, <fps>, <droppedFrames>);
+      }
+    }
+   
+    ADBMobile.media.setDelegate(delegate);
+   }
+   ```
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
