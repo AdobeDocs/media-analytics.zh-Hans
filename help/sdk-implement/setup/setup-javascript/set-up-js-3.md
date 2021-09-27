@@ -1,12 +1,12 @@
 ---
-title: 如何使用JavaScript 3.x设置媒体SKD
+title: 如何使用JavaScript 3.x设置Media SDK
 description: 按照以下步骤在JavaScript 3.x中设置Media SDK应用程序。
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '403'
 ht-degree: 87%
 
 ---

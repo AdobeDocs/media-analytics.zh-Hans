@@ -1,13 +1,13 @@
 ---
-title: 如何在iOS中设置媒体SKD
+title: 如何在iOS中设置Media SDK
 description: 按照以下步骤在iOS中设置Media SDK应用程序。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '763'
 ht-degree: 94%
 
 ---
