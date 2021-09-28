@@ -4,16 +4,16 @@ description: “了解如何使用“媒体播放逗留时间”面板分析播�
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
+source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '218'
 ht-degree: 8%
 
 ---
 
 # 媒体播放逗留时间 {#media-playback-time-spent}
 
-通过分析播放所用时间，您可以了解出现并发峰值或发生锐减的位置。 媒体播放逗留时间对内容质量、查看者参与度以及内容如何影响观看者超时提供了有价值的分析。 媒体播放逗留时间功能有助于对音量或规模进行疑难解答或规划。
+通过分析播放所用时间，您可以了解出现并发峰值或发生锐减的位置。 媒体播放逗留时间对内容质量、查看者参与度以及内容随时间变化对观看者的影响程度提供了有价值的分析。 媒体播放逗留时间功能有助于对音量或规模进行疑难解答或规划。
 
 ## Analysis Workspace中的“媒体播放逗留时间”面板
 
