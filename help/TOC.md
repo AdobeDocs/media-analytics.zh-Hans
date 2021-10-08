@@ -6,9 +6,9 @@ breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -215,7 +215,7 @@ ht-degree: 99%
       + [“媒体并行查看者”报表](media-reports/media-default-reports/media-concurrent-viewers.md)
    + 媒体工作区面板 {#media-workspace-panels}
       + [“媒体并行查看者”面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
-      + [“媒体播放逗留时间”面板](media-reports/media-workspace-panels/media-playback-time-spent.md)
+      + [“媒体播放耗时”面板](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [媒体工作区模板](media-reports/media-workspace-templates.md)
    + [通过 API 获取并行查看者数据](media-reports/media-default-reports/get-concurrent-json20.md)
 + [跟踪下载的内容](media-collection-api/track-downloaded-content.md)
