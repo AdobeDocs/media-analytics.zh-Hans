@@ -1,26 +1,26 @@
 ---
-title: 媒体播放逗留时间
-description: “了解如何使用“媒体播放逗留时间”面板分析播放逗留时间，并了解并发峰值和发生锐减的位置。”
+title: 媒体播放耗时
+description: '"了解如何使用“媒体播放耗时”面板分析播放耗时以及了解发生并发高峰和发生播放量下降的位置。"'
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 8%
+ht-degree: 89%
 
 ---
 
-# 媒体播放逗留时间 {#media-playback-time-spent}
+# 媒体播放耗时 {#media-playback-time-spent}
 
-通过分析播放所用时间，您可以了解出现并发峰值或发生锐减的位置。 媒体播放逗留时间对内容质量、查看者参与度以及内容随时间变化对观看者的影响程度提供了有价值的分析。 媒体播放逗留时间功能有助于对音量或规模进行疑难解答或规划。
+通过分析播放耗时，可了解发生并发高峰或发生播放量下降的位置。媒体播放逗留时间对内容质量、查看者参与度以及内容随时间变化对观看者的影响程度提供了有价值的分析。 媒体播放耗时功能有助于排除故障或规划数量或规模。
 
-## Analysis Workspace中的“媒体播放逗留时间”面板
+## Analysis Workspace 中的“媒体播放耗时”面板
 
-在Analysis Workspace中，播放逗留时间是在特定时间点查看媒体流所花费的时间，包括暂停、缓冲和开始时间。 使用“媒体播放逗留时间”，您可以按不同的时间间隔（如5分钟、15分钟、30分钟或1小时）拆分播放持续时间。
+在 Analysis Workspace 中，媒体播放耗时是在某个特定的时间点观看媒体流所耗的时长，其中包括暂停、缓冲和开始时间。通过媒体播放耗时，可按不同的时间间隔（如 5 分钟、15 分钟、30 分钟或 1 小时）拆分播放持续时间。
 
 
-媒体播放逗留时间有助于分析播放随时间的变化情况，并提供有关并发峰值和能够进行划分和比较的详细信息。 要访问“媒体播放逗留时间”面板，请导航到启用了Media Analytics组件的报表包。 然后，单击最左侧的面板图标并将面板拖放到您的 Analysis Workspace 项目中。[了解详情...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent.html)
+媒体播放耗时有助于长期分析播放，其中提供关于并发高峰的详细信息，并可进行分解和比较。要访问“媒体播放耗时”面板，请导航到启用了 Media Analytics 组件的报表包。然后，单击最左侧的面板图标，并将该面板拖入您的 Analysis Workspace 项目。[了解详情...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent.html)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
