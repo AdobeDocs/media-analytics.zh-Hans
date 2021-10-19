@@ -1,20 +1,20 @@
 ---
-title: 如何在iOS中设置Media SDK
-description: 按照以下步骤在iOS中设置Media SDK应用程序。
+title: 如何在 iOS 上设置 Media SDK
+description: 执行以下步骤，在 iOS 上设置 Media SDK 应用程序。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 设置 iOS{#set-up-ios}
 
-了解如何为iOS设备设置流媒体分析。
+了解如何设置适用于 iOS 设备的流媒体分析。
 
 >[!IMPORTANT]
 >
@@ -29,7 +29,7 @@ ht-degree: 94%
 
    >[!IMPORTANT]
    >
-   >从 iOS 9 开始，Apple 引入了 App Transport Security (ATS) 功能。此功能旨在通过确保您的应用程序仅使用行业标准协议和密码来提高网络安全性。此功能默认处于启用状态，但您的配置选项为您提供了是否使用 ATS 的选项。有关 ATS 的详细信息，请参阅 [App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)。
+   >从 iOS 9 开始，Apple 引入了 App Transport Security (ATS) 功能。此功能旨在通过确保您的应用程序仅使用行业标准协议和密码来提高网络安全性。此功能默认处于启用状态，但您的配置选项为您提供了是否使用 ATS 的选项。有关 ATS 的详细信息，请参阅 [App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=zh-Hans)。
 
 * **在媒体播放器中提供以下功能：**
 
