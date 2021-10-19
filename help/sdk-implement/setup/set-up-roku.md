@@ -1,14 +1,14 @@
 ---
-title: 如何设置适用于Roku的Media SDK
-description: 按照以下步骤在Roku中设置Media SDK应用程序。
+title: 如何设置适用于 Roku 的 Media SDK
+description: 执行以下步骤，在 Roku 上设置 Media SDK 应用程序。
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -134,7 +134,7 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
    | `visitorMarketingCloudID` | 从访客 ID 服务中检索 Experience Cloud 访客 ID。<br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | 使用 Experience Cloud 访客 ID，您可以设置其他可与每个访客关联的客户 ID。访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。此方法对应于 `setCustomerIDs`。例如：<br/><br/>`identifiers={}`<br/>`identifiers["idType"]="idValue"`<br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | 用于在 SDK 上设置 Roku ID for Advertising (RIDA)。例如：<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>使用 Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API 获取 Roku ID for Advertising (RIDA)。 |
-   | `getAllIdentifiers` | 返回由SDK存储的所有标识符列表，包括Analytics、访客、Audience Manager和自定义标识符。<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
+   | `getAllIdentifiers` | 返回由 SDK 存储的所有标识符的列表，包括 Analytics、Visitor、Audience Manager 和自定义标识符。<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
    <!--
     Roku Api Reference:
     * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
@@ -143,32 +143,38 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
 
    <br/><br/>
 
-   **其他公共API**
+   **其他公共 API**
 
    **DebugLogging**
- |方法   |描述 | | — | — | |  `setDebugLogging` |用于启用或禁用SDK的调试日志记录。<br/><br/>`ADBMobile().setDebugLogging(true)` | |  `getDebugLogging` |如果启用了调试日志记录，则返回true。   <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+|  方法   | 描述 |
+| --- | --- |
+| `setDebugLogging` | 用于启用或禁用 SDK 的调试记录。<br/><br/>`ADBMobile().setDebugLogging(true)` |
+| `getDebugLogging` | 如果启用调试记录，则返回 true。  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    <br/><br/>
 
    **PrivacyStatus**
- |常量   |描述 | | — | — | |  `PRIVACY_STATUS_OPT_IN` |在调用setPrivacyStatus以选择启用时要传递的常量。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`| |  `PRIVACY_STATUS_OPT_OUT` |在调用setPrivacyStatus以选择禁用时要传递的常量。  <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
+|  常量   | 描述 |
+| --- | --- |
+| `PRIVACY_STATUS_OPT_IN` | 在调用 setPrivacyStatus 以选择加入时要传递的常量。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`|
+| `PRIVACY_STATUS_OPT_OUT` | 在调用 setPrivacyStatus 以选择退出时要传递的常量。<br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
    <br/>
 
    |  方法   | 描述 |
    | --- | --- |
-   | `setPrivacyStatus` | 在SDK中设置隐私状态。 <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
-   | `getPrivacyStatus` | 获取在SDK中设置的当前隐私状态。 <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
+   | `setPrivacyStatus` | 在 SDK 上设置隐私状态。<br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
+   | `getPrivacyStatus` | 获取 SDK 上设置的当前隐私状态。<br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
    <br/><br/>
    >[!IMPORTANT]
    >
-   >确保每250毫秒在主事件循环中调用一次`processMessages`和`processMediaMessages`函数，以确保SDK正确发送ping。
+   >务必每 250 毫秒在主事件循环中调用一次 `processMessages` 和 `processMediaMessages` 函数以确保 SDK 正确发送 ping。
 
    |  方法   | 描述 |
    | --- | --- |
-   | `processMessages` | 负责将Analytics事件传递到SDK以进行处理。 <br/><br/>`ADBMobile().processMessages()` |
-   | `processMediaMessages` | 负责将媒体事件传递到SDK以进行处理。<br/><br/>`ADBMobile().processMediaMessages()` |
+   | `processMessages` | 负责将 Analytics 事件传递给 SDK 以进行处理。<br/><br/>`ADBMobile().processMessages()` |
+   | `processMediaMessages` | 负责将 Media 事件传递给 SDK 以进行处理。<br/><br/>`ADBMobile().processMediaMessages()` |
 
 
 <!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
