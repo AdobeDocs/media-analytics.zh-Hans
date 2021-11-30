@@ -5,10 +5,10 @@ uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 exl-id: c2de6454-8538-4d07-a099-e278b153d894
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 96%
+source-wordcount: '217'
+ht-degree: 95%
 
 ---
 
@@ -21,33 +21,33 @@ ht-degree: 96%
 ### Android
 
 ```java
-// Media Heartbeat initialization 
-MediaHeartbeatConfig config = new MediaHeartbeatConfig(); 
-config.debugLogging = true; 
+// Media Heartbeat initialization
+MediaHeartbeatConfig config = new MediaHeartbeatConfig();
+config.debugLogging = true;
 
-// Use this space for setting other config values 
-MediaHeartbeat _heartbeat = new MediaHeartbeat(this, config); 
+// Use this space for setting other config values
+MediaHeartbeat _heartbeat = new MediaHeartbeat(this, config);
 ```
 
 ### iOS
 
 ```
-// Media Heartbeat Initialization 
-ADBMediaHeartbeatConfig *config = [[ADBMediaHeartbeatConfig alloc] init]; 
-config.debugLogging = YES; 
+// Media Heartbeat Initialization
+ADBMediaHeartbeatConfig *config = [[ADBMediaHeartbeatConfig alloc] init];
+config.debugLogging = YES;
 
-// Use this space for setting other config values 
+// Use this space for setting other config values
 ADBMediaHeartbeat *_mediaHeartbeat =  
-[[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
+[[ADBMediaHeartbeat alloc] initWithDelegate:self config:config];
 ```
 
 ### JavaScript
 
 ```js
-// Media Heartbeat initialization 
-var mediaConfig = new MediaHeartbeatConfig(); 
-mediaConfig.debugLogging = true; 
-this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement); 
+// Media Heartbeat initialization
+var mediaConfig = new MediaHeartbeatConfig();
+mediaConfig.debugLogging = true;
+this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
 ```
 
 ### OTT（Chromecast、Roku）
@@ -66,27 +66,12 @@ ADBMobile().setDebugLogging(true)
 ADBMobile.config.setDebugLogging(true)
 ```
 
-## 使用 Adobe Bloodhound 测试 Chromecast 应用程序
-
-在应用程序开发期间，使用 Bloodhound 可以在本机上查看服务器调用，并可以选择将数据转发到 Adobe 收集服务器中。
-
-<!--
-For more information about Bloodhound, see the following guides:
-
-* [Bloodhound 3.x for Mac](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwiimfSUypDpAhVZHzQIHS6WDQIQFjABegQIChAD&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound%2F&usg=AOvVaw3t4s0gcvuWEpLIqBkhKdGH) 
-* [Bloodhound 2.2 for Windows](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
--->
-
->[!IMPORTANT]
->
->从 2017 年 4 月 30 日起，Adobe Bloodhound 已废止。从 2017 年 5 月 1 日开始，将不再提供其他增强功能以及额外的工程部或 Adobe Expert Care 团队支持。
-
 ## 日志消息
 
 日志消息采用以下格式：
 
 ```js
-Format: [<timestamp>] [<level>] [<tag>] [<message>] 
+Format: [<timestamp>] [<level>] [<tag>] [<message>]
 Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.startupTime: 0
 ```
 
@@ -104,14 +89,14 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 例如，在日志中过滤 `#track` 的结果如下所示：
 
 ```js
-[16:10:29 GMT­0700 (PDT).222] [INFO] [plugin::player] #trackVideoLoad() 
-[16:10:29 GMT­0700 (PDT).230] [INFO] [plugin::player] #trackSessionStart() 
-[16:10:29 GMT­0700 (PDT).250] [INFO] [plugin::player] #trackPlay() 
-[16:10:29 GMT­0700 (PDT).759] [INFO] [plugin::player] #trackChapterStart() 
-[16:10:44 GMT­0700 (PDT).769] [INFO] [plugin::player] #trackAdStart() 
-[16:10:59 GMT­0700 (PDT).752] [INFO] [plugin::player] #trackAdComplete() 
-[16:10:59 GMT­0700 (PDT).770] [INFO] [plugin::player] #trackChapterStart() 
-[16:11:29 GMT­0700 (PDT).734] [INFO] [plugin::player] #trackPause() 
-[16:11:29 GMT­0700 (PDT).764] [INFO] [plugin::player] #trackComplete() 
+[16:10:29 GMT­0700 (PDT).222] [INFO] [plugin::player] #trackVideoLoad()
+[16:10:29 GMT­0700 (PDT).230] [INFO] [plugin::player] #trackSessionStart()
+[16:10:29 GMT­0700 (PDT).250] [INFO] [plugin::player] #trackPlay()
+[16:10:29 GMT­0700 (PDT).759] [INFO] [plugin::player] #trackChapterStart()
+[16:10:44 GMT­0700 (PDT).769] [INFO] [plugin::player] #trackAdStart()
+[16:10:59 GMT­0700 (PDT).752] [INFO] [plugin::player] #trackAdComplete()
+[16:10:59 GMT­0700 (PDT).770] [INFO] [plugin::player] #trackChapterStart()
+[16:11:29 GMT­0700 (PDT).734] [INFO] [plugin::player] #trackPause()
+[16:11:29 GMT­0700 (PDT).764] [INFO] [plugin::player] #trackComplete()
 [16:11:29 GMT­0700 (PDT).766] [INFO] [plugin::player] #trackVideoUnload()
 ```

@@ -5,9 +5,9 @@ user-guide-title: 适用于流媒体的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 407f17a5b1134362c6be7c6bfae909e9e66077be
-workflow-type: ht
-source-wordcount: '840'
+source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
+workflow-type: tm+mt
+source-wordcount: '828'
 ht-degree: 100%
 
 ---
@@ -145,9 +145,6 @@ ht-degree: 100%
       + [心率参数描述](sdk-implement/validation/heartbeat-params.md)
       + 调试 {#debugging}
          + [SDK 调试](sdk-implement/validation/debugging/sdk-debugging.md)
-         + [配置 Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
-         + [创建新的调试报告](sdk-implement/validation/debugging/create-new-debug-report.md)
-         + [调试仪表板和报表](sdk-implement/validation/debugging/debug-dash-repts.md)
    + OTT 应用程序中的 Analytics {#analytics-with-ott}
       + [跟踪应用程序状态](sdk-implement/analytics-with-ott/track-app-states.md)
       + [跟踪应用程序操作](sdk-implement/analytics-with-ott/track-app-actions.md)
