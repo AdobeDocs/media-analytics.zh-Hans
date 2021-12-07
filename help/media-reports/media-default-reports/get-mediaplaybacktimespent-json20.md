@@ -1,12 +1,10 @@
 ---
 title: 使用 Analytics 2.0 API 获取媒体播放耗时 JSON 报表数据
 description: 了解如何使用 Analytics 2.0 API 获取媒体播放耗时报表数据。查看示例请求和响应。
-uuid: null
-exl-id: null
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 3118a5eeef56c7768d88df7c658468c356921aac
-workflow-type: ht
+source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
+workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
 

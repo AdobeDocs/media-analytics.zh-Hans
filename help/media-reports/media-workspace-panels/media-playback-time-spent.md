@@ -1,11 +1,10 @@
 ---
 title: 媒体播放耗时
 description: '"了解如何使用“媒体播放耗时”面板分析播放耗时以及了解发生并发高峰和发生播放量下降的位置。"'
-exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: d5769f3eed3f0c3770e427420025ff624e775f9f
-workflow-type: ht
+source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
+workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
 
