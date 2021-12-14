@@ -1,13 +1,13 @@
 ---
-title: 'Adobe Analytics 中的 Adobe 流媒体 '
+title: Adobe Analytics 中的 Adobe 流媒体
 description: “深入了解适用于内容、音频和广告的最先进的流媒体测量。了解适用于流媒体的 Adobe Analytics。”
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '880'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '930'
 ht-degree: 100%
 
 ---
@@ -37,6 +37,10 @@ ht-degree: 100%
 ## 心率测量 {#heartbeat}
 
 Adobe Analytics 使用“心率”收集视频量度。在视频播放期间，心率会发送到心率跟踪服务器以测量播放时长。每十秒发送一次心率调用。心率会生成精细的视频参与量度，以及更准确的视频流失报表。适用于流媒体的 Adobe Analytics 使用包含 Media Analytics 扩展的 Adobe Launch、Media SDK 和媒体收集 API 来测量心率。`AppMeasurement` 和 `VisitorID` 组件用于接收视频数据。
+
+>[!NOTE]
+>Adobe Experience Platform Launch 已更名为 Experience Platform 中的一套数据收集技术。因此，产品文档中的术语有一些改动。有关术语更改的综合参考，请参阅以下[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hans)。
+
 
 通过使用心率，适用于流媒体的 Adobe Analytics 具备以下优势：
 

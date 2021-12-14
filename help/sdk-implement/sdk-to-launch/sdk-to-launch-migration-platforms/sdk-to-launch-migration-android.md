@@ -4,14 +4,18 @@ description: 了解如何从Media SDK迁移到Launch for Android。
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 从独立 Media SDK 迁移到 Adobe Launch - Android
+
+>[!NOTE]
+>Adobe Experience Platform Launch 已更名为 Experience Platform 中的一套数据收集技术。因此，产品文档中的术语有一些改动。有关术语更改的综合参考，请参阅以下[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hans)。
+
 
 ## 配置
 
@@ -24,7 +28,7 @@ MediaHeartbeatConfig config = new MediaHeartbeatConfig();
 config.trackingServer = "namespace.hb.omtrdc.net";
 config.channel = "sample-channel";
 config.appVersion = "v2.0.0";
-config.ovp = "video-provider"; 
+config.ovp = "video-provider";
 config.playerName = "native-player";
 config.ssl = true;
 config.debugLogging = true;
@@ -54,25 +58,25 @@ MediaHeartbeatConfig config = new MediaHeartbeatConfig();
 config.trackingServer = "namespace.hb.omtrdc.net";
 config.channel = "sample-channel";
 config.appVersion = "v2.0";
-config.ovp = "video-provider"; 
+config.ovp = "video-provider";
 config.playerName = "native-player";
 config.ssl = true;
 config.debugLogging = true;
 
 MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
-    @Override 
+    @Override
     public MediaObject getQoSObject() {
         // When called should return the latest qos values.
         return MediaHeartbeat.createQoSObject(<bitrate>,  
                                               <startupTime>,  
                                               <fps>,  
-                                              <droppedFrames>); 
-    } 
+                                              <droppedFrames>);
+    }
 
-    @Override 
-    public Double getCurrentPlaybackTime() { 
+    @Override
+    public Double getCurrentPlaybackTime() {
         // When called should return the current player time in seconds.
-        return <currentPlaybackTime>; 
+        return <currentPlaybackTime>;
     }
 
     MediaHeartbeat tracker = new MediaHeartbeat(delegate, config);
@@ -88,7 +92,7 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 ```java
 // Register the extension once during app launch
 try {
-    // Media needs Identity and Analytics extension 
+    // Media needs Identity and Analytics extension
     // to function properly
     Identity.registerExtension();
     Analytics.registerExtension();
@@ -142,23 +146,23 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 * 标准媒体元数据：
 
    ```java
-   MediaObject mediaInfo = 
-     MediaHeartbeat.createMediaObject("media-name", 
-                                      "media-id", 
-                                      60D, 
-                                      MediaHeartbeat.StreamType.VOD, 
+   MediaObject mediaInfo =
+     MediaHeartbeat.createMediaObject("media-name",
+                                      "media-id",
+                                      60D,
+                                      MediaHeartbeat.StreamType.VOD,
                                       MediaHeartbeat.MediaType.Video);
    
    // Standard metadata keys provided by adobe.
-   Map <String, String> standardVideoMetadata = 
-     new HashMap<String, String>(); 
-   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.EPISODE, 
-                             "Sample Episode"); 
-   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SHOW, 
-                             "Sample Show"); 
-   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SEASON, 
-                             "Sample Season"); 
-   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardMediaMetadata, 
+   Map <String, String> standardVideoMetadata =
+     new HashMap<String, String>();
+   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.EPISODE,
+                             "Sample Episode");
+   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SHOW,
+                             "Sample Show");
+   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SEASON,
+                             "Sample Season");
+   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardMediaMetadata,
                       standardVideoMetadata);
    
    // Custom metadata keys
@@ -171,29 +175,29 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 * 标准广告元数据:
 
    ```java
-   MediaObject adInfo = 
-     MediaHeartbeat.createAdObject("ad-name", 
-                                   "ad-id", 
-                                   1L, 
+   MediaObject adInfo =
+     MediaHeartbeat.createAdObject("ad-name",
+                                   "ad-id",
+                                   1L,
                                    15D);
    
    // Standard metadata keys provided by adobe.
-   Map <String, String> standardAdMetadata = 
-     new HashMap<String, String>(); 
-   standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER, 
-                          "Sample Advertiser"); 
-   standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID, 
-                          "Sample Campaign"); 
-   adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata, 
-                   standardAdMetadata); 
-   
-   HashMap<String, String> adMetadata = 
+   Map <String, String> standardAdMetadata =
      new HashMap<String, String>();
-   adMetadata.put("affiliate", 
+   standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER,
+                          "Sample Advertiser");
+   standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID,
+                          "Sample Campaign");
+   adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata,
+                   standardAdMetadata);
+   
+   HashMap<String, String> adMetadata =
+     new HashMap<String, String>();
+   adMetadata.put("affiliate",
                   "Sample affiliate");
    
-   tracker.trackEvent(MediaHeartbeat.Event.AdStart, 
-                      adObject, 
+   tracker.trackEvent(MediaHeartbeat.Event.AdStart,
+                      adObject,
                       adMetadata);
    ```
 
@@ -202,20 +206,20 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 * 标准媒体元数据：
 
    ```java
-   HashMap<String, Object> mediaObject = 
-     Media.createMediaObject("media-name", 
-                             "media-id", 
-                             60D, 
-                             MediaConstants.StreamType.VOD, 
+   HashMap<String, Object> mediaObject =
+     Media.createMediaObject("media-name",
+                             "media-id",
+                             60D,
+                             MediaConstants.StreamType.VOD,
                              Media.MediaType.Video);
    
-   HashMap<String, String> mediaMetadata = 
+   HashMap<String, String> mediaMetadata =
      new HashMap<String, String>();
    
    // Standard metadata keys provided by adobe.
-   mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE, 
+   mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE,
                      "Sample Episode");
-   mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW, 
+   mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW,
                      "Sample Show");
    
    // Custom metadata keys
@@ -228,24 +232,24 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 * 标准广告元数据:
 
    ```java
-   HashMap<String, Object> adObject = 
-     Media.createAdObject("ad-name", 
-                          "ad-id", 
-                          1L, 
+   HashMap<String, Object> adObject =
+     Media.createAdObject("ad-name",
+                          "ad-id",
+                          1L,
                           15D);
-   HashMap<String, String> adMetadata = 
+   HashMap<String, String> adMetadata =
      new HashMap<String, String>();
    
    // Standard metadata keys provided by adobe.
-   adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER, 
+   adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER,
                   "Sample Advertiser");
-   adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID, 
+   adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID,
                   "Sample Campaign");
    
    // Custom metadata keys
-   adMetadata.put("affiliate", 
+   adMetadata.put("affiliate",
                   "Sample affiliate");
-   _tracker.trackEvent(Media.Event.AdStart, 
-                       adObject, 
+   _tracker.trackEvent(Media.Event.AdStart,
+                       adObject,
                        adMetadata);
    ```

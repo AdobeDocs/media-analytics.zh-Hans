@@ -5,18 +5,24 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 下载 SDK{#download-sdks}
 
+本页面上的信息包括用于下载当前3.x和2.x Media SDK的链接。 1.x旧版Media SDK和Media Analytics Launch扩展中还包含相关链接。
+
 >[!IMPORTANT]
 >
 >Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将终止对适用于 iOS 和 Android 的 Media Analytics SDK 的支持。有关更多信息，请参阅 [Media Analytics SDK 支持终止常见问题解答](/help/sdk-implement/end-of-support-faqs.md)。
+
+>[!NOTE]
+>Adobe Experience Platform Launch 已更名为 Experience Platform 中的一套数据收集技术。因此，产品文档中的术语有一些改动。有关术语更改的综合参考，请参阅以下[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hans)。
+
 
 
 ## 下载 3.x Media SDK {#download-3x-sdks}

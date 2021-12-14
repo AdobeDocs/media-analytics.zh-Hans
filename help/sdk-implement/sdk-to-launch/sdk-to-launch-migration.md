@@ -1,19 +1,22 @@
 ---
-seo-title: 从独立 Media SDK 迁移到 Adobe Launch
-title: 从独立Media SDK迁移到AdobeLaunch
-seo-description: 帮助从 Media SDK 迁移到 Launch 的说明和代码示例。
+seo-title: Migrating from the standalone Media SDK to Adobe Launch
+title: 从独立 Media SDK 迁移到 Adobe Launch
+seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
 description: 了解如何从Media SDK迁移到Launch。
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 84%
+source-wordcount: '207'
+ht-degree: 90%
 
 ---
 
 # 从独立 Media SDK 迁移到 Adobe Launch
+
+>[!NOTE]
+>Adobe Experience Platform Launch 已更名为 Experience Platform 中的一套数据收集技术。因此，产品文档中的术语有一些改动。有关术语更改的综合参考，请参阅以下[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hans)。
 
 本文档主要介绍独立 Media SDK 与 Media Analytics Launch 扩展之间的 Media Analytics 实施差异。
 

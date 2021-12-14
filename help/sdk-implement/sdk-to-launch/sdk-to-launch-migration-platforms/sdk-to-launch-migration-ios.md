@@ -4,14 +4,17 @@ description: 了解如何从 Media SDK 迁移到适用于 iOS 的 Launch。
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
-workflow-type: ht
-source-wordcount: '360'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '412'
 ht-degree: 100%
 
 ---
 
 # 从独立 Media SDK 迁移到 Adobe Launch - iOS
+
+>[!NOTE]
+>Adobe Experience Platform Launch 已更名为 Experience Platform 中的一套数据收集技术。因此，产品文档中的术语有一些改动。有关术语更改的综合参考，请参阅以下[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hans)。
 
 ## 配置
 

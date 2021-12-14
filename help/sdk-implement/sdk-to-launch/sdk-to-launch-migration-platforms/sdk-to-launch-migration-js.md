@@ -4,14 +4,17 @@ description: 了解如何从Media SDK迁移到Launch for JS。
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 89%
+source-wordcount: '453'
+ht-degree: 90%
 
 ---
 
 # 从独立 Media SDK 迁移到 Adobe Launch - Web (JS)
+
+>[!NOTE]
+>Adobe Experience Platform Launch 已更名为 Experience Platform 中的一套数据收集技术。因此，产品文档中的术语有一些改动。有关术语更改的综合参考，请参阅以下[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hans)。
 
 ## 功能差异
 
