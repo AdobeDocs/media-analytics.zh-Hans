@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: ht
+source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
+workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -141,32 +141,27 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-   <br/><br/>
-
    **其他公共 API**
 
    **DebugLogging**
-|  方法   | 描述 |
-| --- | --- |
-| `setDebugLogging` | 用于启用或禁用 SDK 的调试记录。<br/><br/>`ADBMobile().setDebugLogging(true)` |
-| `getDebugLogging` | 如果启用调试记录，则返回 true。  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
-   <br/><br/>
+   |  方法   | 描述 |
+   | --- | --- |
+   | `setDebugLogging` | 用于启用或禁用SDK的调试日志记录。  <br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | 如果启用了调试日志记录，则返回true。  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
-|  常量   | 描述 |
-| --- | --- |
-| `PRIVACY_STATUS_OPT_IN` | 在调用 setPrivacyStatus 以选择加入时要传递的常量。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`|
-| `PRIVACY_STATUS_OPT_OUT` | 在调用 setPrivacyStatus 以选择退出时要传递的常量。<br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
-   <br/>
+   |  常量   | 描述 |
+   | --- | --- |
+   | `PRIVACY_STATUS_OPT_IN` | 在调用setPrivacyStatus以选择启用时要传递的常量。 <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | 在调用setPrivacyStatus以选择禁用时要传递的常量。 <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  方法   | 描述 |
    | --- | --- |
    | `setPrivacyStatus` | 在 SDK 上设置隐私状态。<br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
    | `getPrivacyStatus` | 获取 SDK 上设置的当前隐私状态。<br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
-   <br/><br/>
    >[!IMPORTANT]
    >
    >务必每 250 毫秒在主事件循环中调用一次 `processMessages` 和 `processMediaMessages` 函数以确保 SDK 正确发送 ping。
