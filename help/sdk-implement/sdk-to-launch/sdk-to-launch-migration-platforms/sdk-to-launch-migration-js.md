@@ -1,13 +1,13 @@
 ---
-title: “从独立Media SDK迁移到AdobeLaunch - Web(JS)”
-description: 了解如何从Media SDK迁移到Launch for JS。
+title: “从独立 Media SDK 迁移到 Adobe Launch - Web (JS)”
+description: 了解如何从 Media SDK 迁移到适用于 JS 的 Launch。
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Media 扩展将使用已配置的参数进行跟踪。
 
    ![](assets/launch_config_js.png)
 
-[Launch 用户指南 - 安装和配置媒体扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
+[《Launch 用户指南》 — 安装和配置媒体扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
 
 ## 跟踪器创建差异
 
