@@ -2,14 +2,14 @@
 seo-title: Migrating from the standalone Media SDK to Adobe Launch
 title: 从独立 Media SDK 迁移到 Adobe Launch
 seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
-description: 了解如何从Media SDK迁移到Launch。
+description: 了解如何从 Media SDK 迁移到 Launch。
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
