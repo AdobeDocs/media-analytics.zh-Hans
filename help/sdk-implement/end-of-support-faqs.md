@@ -1,19 +1,19 @@
 ---
-title: 了解Media Analytics SDK终止支持常见问题解答
+title: 了解 Media Analytics SDK 支持终止常见问题解答
 description: 本主题包括关于终止支持 Media Analytics SDK 的常见问题解答。
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '723'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # Media Analytics SDK 终止支持常见问题解答
 
-Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将终止对适用于 iOS 和 Android 的 Media Analytics SDK 的支持。2021 年 8 月 31 日之后，Adobe 将不再对 Media Analytics SDK 提供修复、操作系统相关的更新或支持。在迁移到这些新Experience PlatformSDK的过程中，请记住 [Media Analytics扩展](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) 必须实施才能启用Adobe Analytics for Streaming Media。
+Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将终止对适用于 iOS 和 Android 的 Media Analytics SDK 的支持。2021 年 8 月 31 日之后，Adobe 将不再对 Media Analytics SDK 提供修复、操作系统相关的更新或支持。在迁移到这些新 Experience Platform SDK 的过程中，请牢记，必须实施 [Media Analytics 扩展](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)，才能启用 Adobe Analytics for Streaming Media。
 
 >[!NOTE]
 >Adobe Experience Platform Launch 已更名为 Experience Platform 中的一套数据收集技术。因此，产品文档中的术语有一些改动。有关术语更改的综合参考，请参阅以下[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hans)。
@@ -21,13 +21,13 @@ Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将
 
 ## 五大须知要点
 
-1. 2021 年 8 月 31 日之后，将不再支持 Mobile v4 SDK。您应该迁移到适用于iOS和Android的Adobe Experience Platform(AEP)Mobile SDK。 有关更多信息，请参阅[版本 4 Mobile SDK 支持终止常见问题解答](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。
+1. 2021 年 8 月 31 日之后，将不再支持 Mobile v4 SDK。您应该迁移到适用于 iOS 和 Android 的 Adobe Experience Platform (AEP) Mobile SDK。有关更多信息，请参阅[版本 4 Mobile SDK 支持终止常见问题解答](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。
 
-1. 适用于流媒体的Analytics实施需要安装AEP Mobile SDK以及使用Analytics和Media Analytics扩展。 从2021年9月1日开始，您应使用新的AEP Mobile SDK和扩展。  Media Analytics 扩展是使用 Adobe Launch 配置的。有关更多信息，请参阅[从独立的 Media SDK 迁移到 Adobe Launch](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+1. Analytics for Streaming Media 实施需要安装 AEP Mobile SDK 以及使用 Analytics 扩展和 Media Analytics 扩展。从 2021 年 9 月 1 日起，您应使用新的 AEP Mobile SDK 和扩展。Media Analytics 扩展是使用 Adobe Launch 配置的。有关更多信息，请参阅[从独立的 Media SDK 迁移到 Adobe Launch](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
 1. 已终止适用于 iOS 和 Android 的 Media Analytics SDK 的功能开发。从 2019 年秋季开始引入的新功能均通过 Media Analytics 扩展和媒体收集 API 启用。
 
-1. Roku SDK和Chromecast SDK仍可供Analytics用于流媒体客户。 Roku SDK 和 Chromecast SDK 将继续作为独立的 SDK 进行增强和支持。如果您使用 JS SDK for Media Analytics，则可继续使用独立的 SDK 或通过 Adobe Launch 启用 Media Analytics 扩展。
+1. Roku 和 Chromecast SDK 仍可供 Analytics for Streaming Media 客户使用。Roku SDK 和 Chromecast SDK 将继续作为独立的 SDK 进行增强和支持。如果您使用 JS SDK for Media Analytics，则可继续使用独立的 SDK 或通过 Adobe Launch 启用 Media Analytics 扩展。
 
 1. 2021 年 9 月 1 日之前，Adobe 可能会自行决定是否为具有重大技术影响或业务泄露风险的问题开发新的修复程序。Adobe 将会根据客户的意见来确定影响程度和泄露等级，以及相应的后续开发活动。
 
