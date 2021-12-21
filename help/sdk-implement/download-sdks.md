@@ -1,20 +1,20 @@
 ---
-title: 访问指向Media Analytics SDK下载的链接
+title: 访问 Media Analytics SDK 的下载链接
 description: 可用平台（包括 Android、iOS、JavaScript、Chromecast 和 Roku）的 SDK 下载链接。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '602'
+ht-degree: 100%
 
 ---
 
 # 下载 SDK{#download-sdks}
 
-本页面上的信息包括用于下载当前3.x和2.x Media SDK的链接。 1.x旧版Media SDK和Media Analytics Launch扩展中还包含相关链接。
+此页面上的信息包含当前 3.x 和 2.x Media SDK 的下载链接。还包括较旧的 1.x Media SDK 和 Media Analytics Launch 扩展的链接。
 
 >[!IMPORTANT]
 >
@@ -38,14 +38,14 @@ ht-degree: 0%
 | 2.x Media SDK | 最新 Media SDK 下载 |  API   |  文档  |
 | --- | --- | --- | --- |
 | Android/FireTV | [适用于 Android 的 Media SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [设置 Android](/help/sdk-implement/setup/set-up-android.md) |
-| iOS/AppleTV | [适用于 iOS 的 Media SDK v2.3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0)（联系[客户关怀团队](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)获取旧版 2.0 SDK） | [iOS API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [设置 iOS](/help/sdk-implement/setup/set-up-ios.md) |
+| iOS/AppleTV | [适用于 iOS 的 Media SDK v2.3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0)（联系[客户关怀部门](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)以获取旧版 2.0 SDK） | [iOS API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [设置 iOS](/help/sdk-implement/setup/set-up-ios.md) |
 | JavaScript | [适用于 JS 的 Media SDK v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [设置 JavaScript 2.x](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md) |
 | Roku | [适用于 Roku 的 Media SDK v2.2.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.3) |  | [设置 Roku](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [适用于 Chromecast 的 Media SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [设置 Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 ## Media Analytics Launch 扩展 {#media-analytics-launch-extension}
 
-| MA 启动组件   | 文档 | 示例 |
+| MA Launch 组件   | 文档 | 示例 |
 |---|---|---|
 | **Web 扩展** | [Adobe Media Analytics for Audio and Video 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html) | [Adobe Media Analytics for Audio and Video 扩展](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
 | **Web 扩展 (3.x SDK)** | [Adobe Media Analytics for Audio and Video 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html) | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
@@ -53,11 +53,11 @@ ht-degree: 0%
 
 ## 下载 1.x Media SDK {#download-the-1.x-media-sDKs}
 
-| 1.x SDK | Media SDK 下载 | 入门指南 |
+| 1.x SDK | Media SDK 下载 | 《入门指南》 |
 | --- | --- | --- |
-| Android | [适用于 Android 的 SDK v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [入门 - 适用于 Android 的 Media 1.x](setup/vhl-dev-guide-v15_android.pdf) |
-| iOS | [适用于 iOS 的 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [入门 - 适用于 iOS 的 Media 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [适用于 JavaScript 的 SDK v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [入门 - 适用于 JS 的 Media 1.x](setup/vhl-dev-guide-v15_js.pdf) |
-| TVML | [适用于 TVML 的 SDK v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [入门 - 适用于 TVML 的 Media 1.x](setup/vhl_tvml.pdf) |
-| Apple TV | 适用于 Apple TV 的 SDK v1.0.0（联系[客户关怀团队](https://helpx.adobe.com/marketing-cloud/contact-support.html)获取旧版 1.x SDK） | [入门 - 适用于 Apple TV 的 Media 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | 适用于 Chromecast 的 SDK v1.0.0（联系[客户关怀团队](https://helpx.adobe.com/marketing-cloud/contact-support.html)获取旧版 1.x SDK） | [入门 - 适用于 Chromecast 的 Media 1.x](setup/chromecast_1.x_sdk.pdf) |
+| Android | [适用于 Android 的 SDK v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [入门 — 适用于 Android 的 Media 1.x](setup/vhl-dev-guide-v15_android.pdf) |
+| iOS | [适用于 iOS 的 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [入门 — 适用于 iOS 的 Media 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [适用于 JavaScript 的 SDK v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [入门 — 适用于 JS 的 Media 1.x](setup/vhl-dev-guide-v15_js.pdf) |
+| TVML | [适用于 TVML 的 SDK v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [入门 — 适用于 TVML 的 Media 1.x](setup/vhl_tvml.pdf) |
+| Apple TV | 适用于 Apple TV 的 SDK v1.0.0（联系[客户关怀团队](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)获取旧版 1.x SDK） | [入门 — 适用于 Apple TV 的 Media 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | 适用于 Chromecast 的 SDK v1.0.0（联系[客户关怀团队](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)获取旧版 1.x SDK） | [入门 — 适用于 Chromecast 的 Media 1.x](setup/chromecast_1.x_sdk.pdf) |
