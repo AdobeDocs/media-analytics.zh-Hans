@@ -5,9 +5,9 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 下表列出了当前支持的设备和平台。要下载最新版本的 SDK，请参阅[下载 SDK](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html?lang=zh-Hans)。对于表中未列出的设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
 
-| 流平台和设备 |  | 使用AEP Mobile SDK收集数据 | Media SDK | 媒体收集 API |
+| 流平台和设备 |  | 包含 AEP Mobile SDK 的 Data Collection | Media SDK | 媒体收集 API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/移动 Web |  |  |  |  |
 |  | JavaScript 浏览器 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
