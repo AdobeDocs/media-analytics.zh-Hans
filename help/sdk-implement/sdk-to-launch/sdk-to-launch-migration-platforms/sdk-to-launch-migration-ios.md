@@ -5,7 +5,7 @@ exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Media 扩展将使用已配置的参数进行跟踪。
 
 ### 独立 Media SDK
 
-在独立 Media SDK 中，您可以手动创建 `ADBMediaHeartbeatConfig` 对象并配置跟踪参数。实施公开 `getQoSObject()` 和 `getCurrentPlaybackTime()functions.` 的委派接口
+在独立 Media SDK 中，您可以手动创建 `ADBMediaHeartbeatConfig` 对象并配置跟踪参数。实施公开 `getQoSObject()` 和 `getCurrentPlaybackTime()functions.` 的委派接口。
 
 创建用于跟踪的 MediaHeartbeat 实例：
 
@@ -93,7 +93,7 @@ ADBMediaHeartbeat* tracker =
 
 ### Launch 扩展
 
-[媒体 API 引用 - 创建媒体跟踪器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[媒体 API 引用 — 创建媒体跟踪器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
 在创建跟踪器之前，请先使用移动核心注册媒体扩展和从属扩展。
 
@@ -135,11 +135,11 @@ ADBMediaHeartbeat* tracker =
 
 该实施应通过调用跟踪器公开的 `updateCurrentPlayhead` 方法来更新当前播放器的播放头。要进行准确跟踪，您应至少每秒调用一次此方法。
 
-[媒体 API 引用 - 更新当前播放头](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[媒体 API 引用 — 更新当前播放头](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
 该实施应通过调用跟踪器公开的 `updateQoEObject` 方法来更新 QoE 信息。只要质量量度发生变化，您就应调用此方法。
 
-[媒体 API 引用 - 更新 QoE 对象](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[媒体 API 引用 — 更新 QoE 对象](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
 ## 传递标准媒体/广告元数据
 
