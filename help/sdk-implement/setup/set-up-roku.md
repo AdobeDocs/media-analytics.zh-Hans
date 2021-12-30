@@ -6,9 +6,9 @@ exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -147,15 +147,15 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
 
    |  方法   | 描述 |
    | --- | --- |
-   | `setDebugLogging` | 用于启用或禁用SDK的调试日志记录。  <br/><br/>`ADBMobile().setDebugLogging(true)` |
-   | `getDebugLogging` | 如果启用了调试日志记录，则返回true。  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+   | `setDebugLogging` | 用于启用或禁用 SDK 的调试记录。  <br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | 如果启用调试记录，则返回 true。  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
 
    |  常量   | 描述 |
    | --- | --- |
-   | `PRIVACY_STATUS_OPT_IN` | 在调用setPrivacyStatus以选择启用时要传递的常量。 <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
-   | `PRIVACY_STATUS_OPT_OUT` | 在调用setPrivacyStatus以选择禁用时要传递的常量。 <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
+   | `PRIVACY_STATUS_OPT_IN` | 在调用 setPrivacyStatus 以选择启用时要传递的常量。 <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | 在调用 setPrivacyStatus 以选择禁用时要传递的常量。<br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  方法   | 描述 |
    | --- | --- |
