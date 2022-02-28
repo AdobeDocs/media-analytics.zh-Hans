@@ -1,13 +1,13 @@
 ---
 title: 媒体平均受众访问分钟数
-description: 了解如何使用“媒体平均观看分钟数”面板分析特定内容或自定义时间段内的平均观看分钟数。
+description: 了解如何使用“媒体平均受众访问分钟数”面板来分析特定内容或自定义时段内的平均受众访问分钟数。
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
 source-git-commit: a138edbfd7b5136f038cc9397e53521110446076
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
