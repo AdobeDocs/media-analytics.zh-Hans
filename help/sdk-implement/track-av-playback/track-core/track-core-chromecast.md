@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 96%
+source-wordcount: '750'
+ht-degree: 85%
 
 ---
 
@@ -87,6 +87,14 @@ ht-degree: 96%
 
    ```
    ADBMobile.media.trackPlay();
+   ```
+
+1. **更新播放头值**
+
+   更新 `mediaUpdatePlayhead`“位置值”，则会在播放头发生更改时多次进行。 <br /> 对于视频点播(VOD)，该值以秒为单位，从媒体项目的开头起计算。 <br /> 对于实时流播放，如果播放器不提供有关内容持续时间的信息，则可以将该值指定为自当天午夜UTC以来的秒数。 <br />  注意：使用进度标记时，内容持续时间是必需的，并且需要以秒数更新播放头，以从媒体项目的开头开始（从0开始）。
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **跟踪播放的结束事件**

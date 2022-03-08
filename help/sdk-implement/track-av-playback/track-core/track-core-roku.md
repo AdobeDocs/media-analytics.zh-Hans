@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
+source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 90%
+source-wordcount: '771'
+ht-degree: 85%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 90%
 
    * **标准元数据**
 
-   [在 Roku 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[在 Roku 中实施标准元数据](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >将标准视频元数据对象附加到媒体对象是可选的。
@@ -145,7 +145,8 @@ ht-degree: 90%
 
 1. **更新播放头值**
 
-   当媒体播放头发生更改时，通过调用`mediaUpdatePlayhead` API通知SDK。 对于视频点播(VOD)，该值以秒为单位，从媒体项目的开头起计算。 对于实时流播放，该值指定为自当天UTC午夜以来经过的秒数。
+   当媒体播放头发生更改时，通过调用 `mediaUpdatePlayhead` API。 <br /> 对于视频点播(VOD)，该值以秒为单位，从媒体项目的开头起计算。 <br /> 对于实时流播放，如果播放器不提供有关内容持续时间的信息，则可以将该值指定为自当天午夜UTC以来的秒数。 <br /> 注意：使用进度标记时，内容持续时间是必需的，并且需要以秒数更新播放头，以从媒体项目的开头开始（从0开始）。
+
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
