@@ -5,14 +5,14 @@ uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 88bf699cb5b0872cefa4d6a6609c74f8fa35189a
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 97%
+source-wordcount: '1203'
+ht-degree: 96%
 
 ---
 
-# 时间轴 1 - 观看到内容的结尾{#timeline-view-to-end-of-content}
+# 时间线 1 — 观看到内容的结尾{#timeline-view-to-end-of-content}
 
 ## VOD、前置广告、暂停、缓冲、观看到内容的结尾
 
@@ -136,6 +136,8 @@ ht-degree: 97%
     }
 }
 ```
+
+**注意：在AdBreakStart事件和AdStart事件之间，不应存在任何其他播放事件。**
 
 ### 操作 5 - 广告 Ping {#Action-5}
 
