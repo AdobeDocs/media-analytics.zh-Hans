@@ -2,17 +2,17 @@
 title: Adobe Analytics for Streaming Media发行说明
 description: 查看Adobe Analytics发行说明。
 feature: Release Notes
-source-git-commit: c9a1007e0d2ae37014faeffebe89a14175c8506f
+exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
+source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 67%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-
 # Adobe Analytics for Streaming Media发行说明（2022年3月）
 
-**上次更新**:2022年3月3日
+**上次更新**:2022年3月23日
 
 ## *最新发行说明*
 
@@ -20,7 +20,7 @@ ht-degree: 67%
 
 | 功能 | 描述 | 预定日期 |
 | ----------- | ---------- | ------- |
-| **平均受众访问分钟数** | Media Analytics客户可以使用“平均观看分钟数”面板更好地了解平均内容使用情况。 <br>平均受众访问分钟数可以比较任何长度或类型的编程。此外，您还可以将数字平均观看分钟数与线性电视平均观看分钟数量度进行比较或附加。 此面板为测量自定义时间段的平均受众以及更新持续时间分类提供了更大的灵活性。  [了解详情](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | **有限版本** <br>2022年2月16日 |
+| **平均受众访问分钟数** | Media Analytics客户可以使用“平均观看分钟数”面板更好地了解平均内容使用情况。 <br>平均受众访问分钟数可以比较任何长度或类型的编程。此外，您还可以将数字平均观看分钟数与线性电视平均观看分钟数量度进行比较或附加。 此面板为测量自定义时间段的平均受众以及更新持续时间分类提供了更大的灵活性。  [了解详情](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 2022 年 16 月 3 日 |
 
 ## 适用于流媒体的Analytics帮助资源
 
