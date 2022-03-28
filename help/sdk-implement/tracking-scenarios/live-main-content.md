@@ -1,14 +1,14 @@
 ---
 title: 实时主内容
-description: 查看有关如何使用Media SDK跟踪实时内容的示例。
+description: 查看如何使用媒体 SDK 跟踪实时内容的示例。
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -59,17 +59,17 @@ ht-degree: 71%
 
 ## 播放头值设置
 
-对于实时流，您需要将播放头值设置为自当天午夜UTC以来的秒数，以便在报表中，分析师可以确定用户在24小时视图内加入和离开实时流的时间点。
+对于 LIVE 流，您需要将播放头值设置为自当天 UTC 午夜开始的秒数，以便在报告中，分析人员可以确定用户在 24 小时视图内何时加入和离开 LIVE 流。
 
 ### 开始时
 
-对于实时媒体，当用户开始播放流时，您需要设置 `l:event:playhead` 自当天午夜UTC以来的秒数。 这与 VOD 相反，在 VOD 中，您需要将播放头设置为“0”。注意：使用进度标记时，内容持续时间是必需的，并且需要以秒数更新播放头，以从媒体项目的开头开始（从0开始）。
+对于 LIVE 媒体，当用户开始播放流时，您需要将 `l:event:playhead` 设置为自当天 UTC 午夜以来的秒数。这与 VOD 相反，在 VOD 中，您需要将播放头设置为“0”。请注意：使用进度标记时，需要内容持续时间，并且播放头需要更新为从媒体项目开始的秒数，从 0 开始。
 
-例如，假设实时流事件从午夜开始，并且持续 24 小时（`a.media.length=86400`；`l:asset:length=86400`）。然后，再假设某位用户在中午 12:00 开始播放该实时流。在此方案中，您应将 `l:event:playhead` 至43200（自UTC当天午夜以来12小时，以秒为单位）。
+例如，假设实时流事件从午夜开始，并且持续 24 小时（`a.media.length=86400`；`l:asset:length=86400`）。然后，再假设某位用户在中午 12:00 开始播放该实时流。在这种场景下，您应该将 `l:event:playhead` 设置为 43200（自当天 UTC 午夜起 12 小时，以秒为单位）。
 
 ### 暂停时
 
-当用户暂停播放时，必须应用在播放开始时所应用的相同“实时播放头”逻辑。当用户返回播放实时流时，您必须将 `l:event:playhead` 值根据自UTC午夜以来的新秒数， _not_ 到用户暂停实时流的时间点。
+当用户暂停播放时，必须应用在播放开始时所应用的相同“实时播放头”逻辑。当用户返回播放 LIVE 流时，您必须根据自午夜 UTC 以来的新秒数设置 `l:event:playhead` 值，_不是_&#x200B;到用户暂停 LIVE 流的点。
 
 ## 示例代码 {#sample-code}
 
