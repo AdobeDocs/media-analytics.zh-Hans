@@ -1,18 +1,18 @@
 ---
-title: 了解从内容结尾�看媒体跟踪时间轴
-description: 深入了解播放头时间轴和相应用户�的操作。 了解每个操作及其随附请求的详细信息。
+title: 了解媒体跟踪时间线�查看到内容的结尾
+description: 深入挖掘播放头时间线和相应的用户�操作。了解每个操作的详细信息及其随附的请求。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 88bf699cb5b0872cefa4d6a6609c74f8fa35189a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1203'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# 时间线 1 — 观看到内容的结尾{#timeline-view-to-end-of-content}
+# 时间线 1 — 查看到内容的结尾{#timeline-view-to-end-of-content}
 
 ## VOD、前置广告、暂停、缓冲、观看到内容的结尾
 
@@ -137,7 +137,7 @@ ht-degree: 96%
 }
 ```
 
-**注意：在AdBreakStart事件和AdStart事件之间，不应存在任何其他播放事件。**
+**请注意：在 AdBreakStart 和 AdStart 事件之间不应有任何额外的播放事件。**
 
 ### 操作 5 - 广告 Ping {#Action-5}
 
