@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Chromecast中跟踪核心播放
-description: 了解如何在Chromecast中使用Media SDK实施核心跟踪。
+title: 了解如何在 Chromecast 上跟踪核心播放
+description: 了解如何使用 Chromecast 上的媒体 SDK 实施核心跟踪。
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 85%
 
 1. **更新播放头值**
 
-   更新 `mediaUpdatePlayhead`“位置值”，则会在播放头发生更改时多次进行。 <br /> 对于视频点播(VOD)，该值以秒为单位，从媒体项目的开头起计算。 <br /> 对于实时流播放，如果播放器不提供有关内容持续时间的信息，则可以将该值指定为自当天午夜UTC以来的秒数。 <br />  注意：使用进度标记时，内容持续时间是必需的，并且需要以秒数更新播放头，以从媒体项目的开头开始（从0开始）。
+   播放头更改时多次更新`mediaUpdatePlayhead` &#39; 位置值。<br />对于视频点播 (VOD)，该值以从媒体项开头开始的秒数指定。<br />对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天 UTC 午夜开始的秒数。<br /> 请注意：使用进度标记时，需要内容持续时间，并且播放头需要更新为从媒体项目开始的秒数，从 0 开始。
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
