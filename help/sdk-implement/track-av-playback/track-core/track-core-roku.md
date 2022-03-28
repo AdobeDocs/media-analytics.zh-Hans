@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Roku中跟踪核心播放
-description: 了解如何在Roku中使用Media SDK实施核心跟踪。
+title: 了解如何在 Roku 上跟踪核心播放
+description: 了解如何使用 Roku 上的媒体 SDK 实施核心跟踪。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -145,7 +145,7 @@ ht-degree: 85%
 
 1. **更新播放头值**
 
-   当媒体播放头发生更改时，通过调用 `mediaUpdatePlayhead` API。 <br /> 对于视频点播(VOD)，该值以秒为单位，从媒体项目的开头起计算。 <br /> 对于实时流播放，如果播放器不提供有关内容持续时间的信息，则可以将该值指定为自当天午夜UTC以来的秒数。 <br /> 注意：使用进度标记时，内容持续时间是必需的，并且需要以秒数更新播放头，以从媒体项目的开头开始（从0开始）。
+   当媒体播放头发生变化时，通过调用`mediaUpdatePlayhead` API 通知 SDK。<br />对于视频点播 (VOD)，该值以从媒体项开头开始的秒数指定。<br />对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天 UTC 午夜开始的秒数。<br />请注意：使用进度标记时，需要内容持续时间，并且播放头需要更新为从媒体项目开始的秒数，从 0 开始。
 
 
    ```
