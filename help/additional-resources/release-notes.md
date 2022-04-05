@@ -3,10 +3,10 @@ title: Adobe Analytics for Streaming Media发行说明
 description: 查看Adobe Analytics发行说明。
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
+source-git-commit: 8ca8416ba3dd8f5d3ef4ba9399e7c84335f3abf1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '525'
+ht-degree: 68%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | 功能 | 描述 | 预定日期 |
 | ----------- | ---------- | ------- |
-| **平均受众访问分钟数** | Media Analytics客户可以使用“平均观看分钟数”面板更好地了解平均内容使用情况。 <br>平均受众访问分钟数可以比较任何长度或类型的编程。此外，您还可以将数字平均观看分钟数与线性电视平均观看分钟数量度进行比较或附加。 此面板为测量自定义时间段的平均受众以及更新持续时间分类提供了更大的灵活性。  [了解详情](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 2022 年 16 月 3 日 |
+| **平均受众访问分钟数** | Media Analytics客户可以使用“平均观看分钟数”面板更好地了解平均内容使用情况。 <br>平均受众访问分钟数可以比较任何长度或类型的编程。此外，您还可以将数字平均观看分钟数与线性电视平均观看分钟数量度进行比较或附加。 此面板为测量自定义时间段的平均受众以及更新持续时间分类提供了更大的灵活性。  [了解详情](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 2022 年 3 月 16 日 |
 
 ## 适用于流媒体的Analytics帮助资源
 
@@ -48,7 +48,7 @@ Analytics 的新教程和课程
 
 | 功能 | 正式发布 | 描述 |
 | ----------- | ---------- | -------------- |
-| **媒体播放耗时** | 2021 年 9 月 28 日 | Adobe 流媒体播放耗时提供有关查看者参与的有价值见解，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的见解。您可以观察在特定时间点查看媒体流的耗时。您可以按不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。 [了解详情...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| **媒体播放耗时** | 2021 年 9 月 28 日 | Adobe 流媒体播放耗时提供有关查看者参与的有价值见解，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的见解。您可以观察在特定时间点查看媒体流的耗时。您可以按不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。 [了解详情...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) |
 
 ## 2021 年 1 月
 
@@ -65,7 +65,7 @@ Media Analytics 的新增功能
 
 | 功能 | 正式发布 | 描述 |
 | -------- | -------------------- | ----------- |
-| **工作区**&#x200B;中的“媒体并行查看者”面板 | 2020 年 9 月 17 日 | 通过“媒体并行查看者”面板，您可以了解出现并发峰值或发生锐减的位置。它为内容质量和查看者参与度提供了有价值的分析，同时有助于对批量/规模进行疑难问题解答或规划。[了解详情…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=en) |
+| **工作区**&#x200B;中的“媒体并行查看者”面板 | 2020 年 9 月 17 日 | 通过“媒体并行查看者”面板，您可以了解出现并发峰值或发生锐减的位置。它为内容质量和查看者参与度提供了有价值的分析，同时有助于对批量/规模进行疑难问题解答或规划。[了解详情…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) |
 
 
 ## 2020 年 7 月
