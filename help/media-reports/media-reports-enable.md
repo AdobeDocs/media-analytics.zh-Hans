@@ -5,16 +5,18 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '920'
-ht-degree: 100%
+source-git-commit: d2a6f9648b682079ca858e9025d41dcb9dc6554f
+workflow-type: tm+mt
+source-wordcount: '954'
+ht-degree: 96%
 
 ---
 
 # 媒体报表启用{#media-reports-enablement}
 
 收集媒体量度的每个报表包必须在发送媒体数据之前进行配置。
+
+高级客户只有在启用了媒体核心并为 [体验质量](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
 
 >[!TIP]
 >
