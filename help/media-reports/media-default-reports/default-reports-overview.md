@@ -3,11 +3,11 @@ title: 默认报表概述
 description: “了解用于跟踪网站上的媒体的报表类型和量度。探索‘媒体核心’模块提供的仪表板式报表。”
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-feature: “Media Analytics、Reports & Analytics Basics”
+feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: ht
-source-wordcount: '355'
+source-wordcount: '350'
 ht-degree: 100%
 
 ---
