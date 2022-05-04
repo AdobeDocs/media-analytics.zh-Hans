@@ -3,11 +3,11 @@ title: 媒体工作区模板
 description: 使用媒体工作区模板来分析您的跟踪数据。选择适用于客户获取或流媒体的标准模板或创建您自己的自定义模板。
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-feature: “Media Analytics、Workspace Basics”
+feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: ht
-source-wordcount: '214'
+source-wordcount: '210'
 ht-degree: 100%
 
 ---
