@@ -3,11 +3,11 @@ title: 媒体并行查看者
 description: “了解用于显示一天中的并行查看者的‘媒体并行查看者’仪表板。数据可以按内容、设备类型或国家/地区进行过滤。”
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-feature: “Media Analytics、Reports & Analytics Basics”
+feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: ht
-source-wordcount: '295'
+source-wordcount: '290'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 100%
 >[!TIP]
 >
 > 此报表基于并行活动媒体会话。要按独特访客以及通过应用区段、进行细分和比较的附加功能查看并行查看者，请使用 [Analysis Workspace 中的“媒体并行查看者”面板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=zh-Hans)。
-
 
 ![](assets/video-concurrent-viewers.png)
 
