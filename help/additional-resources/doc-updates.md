@@ -1,6 +1,6 @@
 ---
-title: Adobe Analytics的流媒体新增功能
-description: 了解Adobe Analytics中适用于流媒体的新增功能。
+title: 适用于流媒体的 Adobe Analytics 中的新增功能
+description: 了解适用于流媒体的 Adobe Analytics 中的新增功能。
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
@@ -9,9 +9,9 @@ exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
-source-wordcount: '30'
-ht-degree: 43%
+workflow-type: ht
+source-wordcount: '28'
+ht-degree: 100%
 
 ---
 
