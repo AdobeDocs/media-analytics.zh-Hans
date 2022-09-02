@@ -5,10 +5,10 @@ user-guide-title: 适用于流媒体的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 534f6f77d69a8fe3574c214cd56d2f77758c1643
-workflow-type: ht
-source-wordcount: '833'
-ht-degree: 100%
+source-git-commit: 6794ba332945047c821628b79e6e796de321fbeb
+workflow-type: tm+mt
+source-wordcount: '837'
+ht-degree: 99%
 
 ---
 
@@ -222,6 +222,7 @@ ht-degree: 100%
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
    + [标准状态和自定义状态](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [实施与报告](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [多播放器状态跟踪](sdk-implement/player-state-tracking/multiple-player-states.md)
    + [播放器状态跟踪示例](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
 + 其他资源 {#additional-resources}
