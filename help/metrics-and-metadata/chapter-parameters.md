@@ -1,11 +1,11 @@
 ---
 title: 章节参数
-description: '"了解用于实施、网络和报告的章节参数。"'
+description: "了解用于实施、网络和报告的章节参数。"
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 91%
@@ -68,8 +68,8 @@ ht-degree: 91%
 ### 章节
 
 |   实施   | 网络参数 | 报表 |
-| --- | --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;章节关闭 </li> <li> **最低 SDK 版本：** 1.3 </li> <li> **示例值：**<br/> </li><li> **描述：**<br/>&#x200B;自动生成的章节 ID。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.chapter.<br/>name) </li> <li> **心率：**<br/>(s:stream:chapter_id) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;章节 </li> <li> **上下文数据：**<br/>(a.media.chapter.<br/>name) </li> <li> **数据馈送：**<br/> videochapter </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.chapter.<br/>name) </li> <li> **XDM字段路径：**<br/> media.mediaTimed.mediaChapter。<br/>chapterAssetReference.@id </li> <li> **报告XDM字段路径：**<br/> mediaReporting.chapterDetails.chapterID </li> </ul> |
+| --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;章节关闭 </li> <li> **最低 SDK 版本：** 1.3 </li> <li> **示例值：**<br/> </li><li> **描述：**<br/>&#x200B;自动生成的章节 ID。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.chapter.<br/>name) </li> <li> **心率：**<br/>(s:stream:chapter_id) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;章节 </li> <li> **上下文数据：**<br/>(a.media.chapter.<br/>name) </li> <li> **数据馈送：**<br/> videochapter </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.chapter.<br/>name) </li> <li> **XDM字段路径：**<br/> media.mediaTimed.mediaChapter。<br/>chapterAssetReference.@id </li> <li> **报告XDM字段路径：**<br/> mediaReporting.chapterDetails.ID </li> </ul> |
 
 ## 章节量度 {#chapter-Metrics}
 

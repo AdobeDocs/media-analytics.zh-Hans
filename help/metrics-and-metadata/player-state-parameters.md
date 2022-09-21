@@ -1,11 +1,11 @@
 ---
 title: 播放器状态参数
-description: '"了解用于全屏、隐藏式字幕、静音和画中画属性的播放器状态跟踪参数。"'
+description: "了解用于全屏、隐藏式字幕、静音和画中画属性的播放器状态跟踪参数。"
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-feature: Media Analytics, Variables
+feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 94%
@@ -41,7 +41,7 @@ ht-degree: 94%
 
 ## 播放器状态属性 {#player-state-properties}
 
-播放器状态跟踪功能可以附加到音频或视频流。标准化的播放器状态跟踪量度可存储为解决方案变量。标准状态为：fullScreen、mute、closeCaption、pictureInPicture 和 inFocus。
+播放器状态跟踪功能可以附加到音频或视频流。标准化的播放器状态跟踪量度可存储为解决方案变量。标准状态为：全屏、静音、隐藏式字幕、pictureInPicture和inFocus。
 
 ### 全屏属性
 

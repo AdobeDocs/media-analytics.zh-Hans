@@ -5,7 +5,7 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '7004'
 ht-degree: 91%
@@ -272,7 +272,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/> AUTHORIZED </li> <li> **API 密钥：**<br/> media.pass.auth </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;TRUE&quot; </li> <li> **描述：**<br/>&#x200B;用户已通过 Adobe 身份验证获得授权。<br/>**重要信息：**&#x200B;如果设置此参数，只能将其设置为 true。如果不设置此参数，则不会返回任何值。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.pass.auth) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.pass.<br/>auth) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;已授权 </li> <li> **上下文数据：**<br/>(a.media.pass.auth) </li> <li> **数据馈送：**<br/> videoauthorized </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.pass.auth) </li> <li> **XDM 字段路径：**<br/> media.mediaTimed.mediaAuth </li> <li> **集合XDM字段路径：**<br/> mediaCollection.sessionDetails。<br/>isAuthenticated </li> <li> **报告XDM字段路径：**<br/> mediaReporting.sessionDetails。<br/>isAuthenticated </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> AUTHORIZED </li> <li> **API 密钥：**<br/> media.pass.auth </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;TRUE&quot; </li> <li> **描述：**<br/>&#x200B;用户已通过 Adobe 身份验证获得授权。<br/>**重要信息：**&#x200B;如果设置此参数，只能将其设置为 true。如果不设置此参数，则不会返回任何值。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.pass.auth) </li> <li> **心率：**<br/>(s:meta:<br/>a.media.pass.<br/>auth) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;已授权 </li> <li> **上下文数据：**<br/>(a.media.pass.auth) </li> <li> **数据馈送：**<br/> videoauthorized </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.pass.auth) </li> <li> **XDM 字段路径：**<br/> media.mediaTimed.mediaAuth </li> <li> **集合XDM字段路径：**<br/> mediaCollection.sessionDetails。<br/>isAuthorized </li> <li> **报告XDM字段路径：**<br/> mediaReporting.sessionDetails。<br/>isAuthorized </li> </ul> |
 
 ### 播出时段
 
