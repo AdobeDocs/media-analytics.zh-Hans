@@ -4,10 +4,10 @@ description: 了解如何将应用程序操作链接到媒体跟踪数据，而�
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: 3e996d243d060a6fd07d2ddbabf05e39eca40758
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Adobe Audience Manager (AAM) 是一种数据管理平台 (DMP)，可帮助您将受众数据资产整合在一起，从而轻松收集与网站访客相关的商业信息、创建可销售的区段，并向正确的受众提供有针对性的广告和内容。
 
-使用 AAM，您不会受到数据销售商、交换或需求侧平台的束缚。此外，AAM 对传递给您合作伙伴的数据资产完全不可知。AAM 通过访问多个数据源，使数字发布者能够使用各种第三方数据和我们的专用数据协作。要了解有关 AAM 的更多信息，请参阅 AAM 文档 [Audience Manager 产品文档](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=zh-Hans)。
+使用 AAM，您不会受到数据销售商、交换或需求侧平台的束缚。此外，AAM 对传递给您合作伙伴的数据资产完全不可知。通过访问多个数据源，AAM使数字出版商能够使用各种第三方数据。 要了解有关 AAM 的更多信息，请参阅 AAM 文档 [Audience Manager 产品文档](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=zh-Hans)。
 
 **VA 到 AAM 数据传输 —**&#x200B;对于视频内容和视频广告，使用解决方案（保留的）变量收集的量度和元数据可自动发送到 AAM。数据传输可跨所有平台使用，包括台式机、移动设备和 OTT。要启用此服务器端数据传输，您需要联系 Adobe 客户关怀团队以要求启用此源。
 
