@@ -1,22 +1,22 @@
 ---
-title: 一次更新多个播放器状态
-description: 本主题介绍多播放器状态跟踪功能。
+title: 同时更新多个播放器状态
+description: 本主题介绍多个播放器状态跟踪功能。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: fdbb777547181422b81ff6f7874bec3d317d02e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
-# 多播放器状态跟踪
+# 多个播放器状态跟踪
 
-有时，两个播放器状态同时开始和结束，或者状态的结束也是另一个状态的开始，如下图所示：
+有时两个播放器状态同时开始和结束，或者一个状态的结束也是另一个状态的开始，如下图所示：
 
 ![多个播放器状态](assets/multiple-player-states.svg)
 
-当前实施允许两种情况：
+当前实施允许这两种场景：
 - `stateStart(pictureInPicture)` - t0
 - `stateStart(mute)` - t0
 - `stateEnd(mute)` - t1
@@ -24,22 +24,22 @@ ht-degree: 9%
 - `stateStart(fullScreen)` - t1
 - `stateEnd(fullScreen)` - t2
 
-但是，这要求您发布多个 `stateStart` 和 `stateEnd` 事件来表示多个同时状态更改。 为了优化此常见行为，新 `statesUpdate` 已实施事件类型，该事件类型结束状态列表并开始新状态列表。
+但是，这需要您发出多个 `stateStart` 和 `stateEnd` 事件来表示多个同步状态更改。为了优化此常见行为，已实施一个新的 `statesUpdate` 事件类型，该类型以一组状态结束，并以一组新状态开始。
 
-使用新 `statesUpdate` 事件时，上述事件列表将变为：
+利用新的 `statesUpdate` 事件，上面的一组事件将变为：
 - `statesUpdate(statesEnd=[], statesStart=[pictureInPicture, mute])` - t0
 - `statesUpdate(statesEnd=[mute, pictureInPicture], statesStart=[fullScreen])` - t1
 - `statesUpdate(statesEnd=[fullScreen], statesStart=[])` - t2
 
-对于相同行为，状态更新调用数量已从6个减少到3个。 最后一个事件可能也很简单 `stateEnd(fullScreen)`.
+对于同一行为，状态更新调用的次数已从六次减至三次。最后一个事件也可能是一个简单的 `stateEnd(fullScreen)`。
 
 ## 媒体收集 API 实施 {#mpst-api}
 
-您可以使用媒体收集API实施多个播放器状态跟踪。
+您可以使用媒体收集 API 实施多个播放器状态跟踪。
 
 ### 示例
 
-以下显示了用于多播放器状态跟踪的媒体收集API实施示例。
+下面显示了用于多个播放器状态跟踪的媒体收集 API 实施示例。
 
 ```
 // statesUpdate (ex: mute and pictureInPicture are switched on)
@@ -111,4 +111,4 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## Media SDK 实施
 
-没有Media SDK实施。
+没有 Media SDK 实施。
