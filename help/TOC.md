@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: 适用于流媒体的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
-user-guide-description: 实施适用于流媒体的 Adobe Analytics。了解Media SDK和媒体收集API。
+user-guide-description: 实施适用于流媒体的 Adobe Analytics。了解 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 212fad8592c9f935869e55d034b17519c8b9de36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -213,16 +213,16 @@ ht-degree: 98%
    + 媒体工作区面板 {#media-workspace-panels}
    + [“媒体平均受众访问分钟数”面板](media-reports/media-workspace-panels/average-minute-audience.md)
    + [“媒体并行查看者”面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
-   + [“媒体播放耗时”面板](media-reports/media-workspace-panels/media-playback-time-spent.md)
+   + [“Media Playback 耗时”面板](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [媒体工作区模板](media-reports/media-workspace-templates.md)
    + [通过 API 获取并行查看者数据](media-reports/media-default-reports/get-concurrent-json20.md)
-   + [通过 API 获取媒体播放耗时数据](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
+   + [通过 API 获取 Media Playback 耗时数据](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
 + [跟踪下载的内容](media-collection-api/track-downloaded-content.md)
 + 播放器状态跟踪 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
    + [标准状态和自定义状态](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [实施与报告](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-   + [多播放器状态跟踪](sdk-implement/player-state-tracking/multiple-player-states.md)
+   + [多个播放器状态跟踪](sdk-implement/player-state-tracking/multiple-player-states.md)
    + [播放器状态跟踪示例](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
 + 其他资源 {#additional-resources}
