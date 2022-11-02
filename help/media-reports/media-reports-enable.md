@@ -6,8 +6,8 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: ht
-source-wordcount: '952'
+workflow-type: tm+mt
+source-wordcount: '950'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 100%
 1. 在 [Reports &amp; Analytics](https://my.omniture.com/login/) 中，单击&#x200B;**[!UICONTROL 管理员 > 报表包]。**
 1. 选择要在其中收集媒体数据的报表包，然后单击&#x200B;**[!UICONTROL 编辑设置 > 媒体管理 > 媒体报告]。**
 
-   ![](assets/media-reporting.png){width=&quot;400px&quot;}
+   ![](assets/media-reporting.png){width="400px"}
 
 1. 在&#x200B;**[!UICONTROL 媒体报告]**&#x200B;页面中，启用&#x200B;**[!UICONTROL 媒体核心]，**&#x200B;也可选择启用&#x200B;**[!UICONTROL 媒体广告]、****[!UICONTROL 媒体章节]**&#x200B;和&#x200B;**[!UICONTROL 媒体质量]。**
 
