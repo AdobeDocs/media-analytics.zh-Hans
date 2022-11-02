@@ -6,8 +6,8 @@ exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '3353'
+workflow-type: tm+mt
+source-wordcount: '3351'
 ht-degree: 100%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 100%
 
 ## 广告跟踪变量 {#ad-tracking-variables}
 
-这些变量用于结合 openAd 方法发送广告信息。请参阅 [VAST 视频广告跟踪。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)
+这些变量用于结合 openAd 方法发送广告信息。请参阅 [VAST 视频广告跟踪。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
 | 变量    | 描述 |
 | --- | --- |
@@ -125,9 +125,9 @@ ht-degree: 100%
 | `Media.complete` | **语法：** <br/><br/> `s.Media.complete(name, offset)`<br/><br/>此方法可手动跟踪结束事件。如果您在触发事件时需要使用的特殊逻辑无法使用 `Media.completeByCloseOffset` 进行处理，则可以使用此方法。<br/><br/>例如，如果您测量的实时流未定义结尾，您可能会在用户查看实时流长达 X 秒后触发一次结束。您可以使用基于内容长度和类型的百分比计算来测量完成情况。此方法采用以下参数： <ul> <li> **mediaName：**&#x200B;视频的名称。此名称必须匹配 Media.open 中使用的名称。  </li> <li> **mediaOffset：**&#x200B;应发送完整事件时视频的秒数。从零秒开始，指定基于视频的偏移。<br/><br/>如果您的媒体播放器使用毫秒跟踪，请确保将此值转化为调用 Media.complete 之前的秒数。  </li> </ul> 如果您计划手动调用 complete，请设置 <br/><br/> `s.Media.completeByCloseOffset = false`。 |
 | `Media.play` | **语法：** <br/><br/> `s.Media.play(name, offset, segmentNum, segment, segmentLength)`<br/><br/>无论视频何时开始播放，都调用此方法。在使用手动视频测量时，您可以在发送视频测量数据时提供当前区段数据。<br/><br/>无论出于什么原因，如果您的播放器从一个区段更改为另一个区段，则应该调用 `Media.stop` 和 `Media.play`。<br/><br/>此方法采用以下参数：<br/><br/> **mediaName：**&#x200B;视频的名称。此名称必须匹配 Media.open 中使用的名称。<br/><br/> **mediaOffset:**&#x200B;开始播放的视频中的秒数。从零秒开始，指定基于视频的偏移。如果您的媒体播放器使用毫秒跟踪，请确保将此值转化为调用 Media.play 之前的秒数。<br/><br/> **segmentNum：**（可选）当前区段编号，市场营销报告使用它对报表中显示的区段进行排序。segmentNum 参数必须大于零。<br/><br/> **segment：**（可选）当前区段名称。<br/><br/> **segmentLength：**（可选）<br/><br/>当前区段长度，以秒为单位。<br/><br/>例如：<br/><br/> `s.Media.play("My Video", 1800, 2,"Second Quarter", 1800)` <br/><br/> `s.Media.play("My Video", 0, 1,"Preroll", 30)` |
 | `Media.stop` | **语法：** <br/><br/> `s.Media.stop(mediaName, mediaOffset)`<br/><br/>跟踪指定视频的停止事件（停止、暂停等）。此方法采用以下参数： <ul> <li> **mediaName：**&#x200B;视频的名称。此名称必须匹配 `Media.open` 中使用的名称。  </li> <li> **mediaOffset：**&#x200B;停止或暂停事件在视频中发生的秒数。从零秒开始，指定基于视频的偏移。  </li> </ul> |
-| `Media.monitor` | **语法：** <br/><br/> `s.Media.monitor(s, media)` <br/><br/> **Silverlight 语法：**<br/><br/> `s.Media.monitor =` <br/>   `new AppMeasurement_Media_Monitor(myMediaMonitor);` <br/><br/>Silverlight 应用程序媒体监视器可实施 Objective-C 代理设计模式。`myMediaMonitor` 类方法采用 `s` 和 `media` 参数。<br/><br/>使用此方法可发送其他视频量度。您可以设置其他变量（prop、eVar、event），并基于所播放视频的当前状态使用 `Media.track` 发送它们。<br/><br/>请参阅[使用 Media.monitor 测量其他量度。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)<br/><br/>此方法采用以下参数：<br/><br/>  **s：**`AppMeasurement` 实例（或 JavaScript `s` 对象）。<br/><br/> **media：**&#x200B;包含提供视频状态的成员的对象。这些成员包括：  <ul><li> `media.name:` 视频的名称。此名称必须匹配 `Media.open` 中使用的名称； </li><li> `media.length:` 在对 `Media.open` 的调用中给定的视频长度，以秒为单位； </li><li> `media.playerName:` 在对 `Media.open` 的调用中给定的媒体播放器名称； </li><li> `media.openTime:` 一个 NSDate 对象，其中包含有关何时调用了 `Media.open` 的数据； </li><li> `media.offset:` 视频中的当前偏移，以秒为单位（视频中的实际时间点）。偏移从零开始（视频的第一秒为零秒）； </li><li> `media.percent:` 已播放视频的当前百分比，基于视频长度和当前偏移；  </li><li> `media.timePlayed:` 截至目前播放的总秒数；  </li><li> `media.eventFirstTime:` 指明这是否是第一次为该视频调用此媒体事件； </li><li> `media.mediaEvent:` 一个字符串，其中包含可导致监视器调用的事件名称。 </li></ul> |
+| `Media.monitor` | **语法：** <br/><br/> `s.Media.monitor(s, media)` <br/><br/> **Silverlight 语法：**<br/><br/> `s.Media.monitor =` <br/>   `new AppMeasurement_Media_Monitor(myMediaMonitor);` <br/><br/>Silverlight 应用程序媒体监视器可实施 Objective-C 代理设计模式。`myMediaMonitor` 类方法采用 `s` 和 `media` 参数。<br/><br/>使用此方法可发送其他视频量度。您可以设置其他变量（prop、eVar、event），并基于所播放视频的当前状态使用 `Media.track` 发送它们。<br/><br/>请参阅[使用 Media.monitor 测量其他量度。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)<br/><br/>此方法采用以下参数：<br/><br/>  **s：**`AppMeasurement` 实例（或 JavaScript `s` 对象）。<br/><br/> **media：**&#x200B;包含提供视频状态的成员的对象。这些成员包括：  <ul><li> `media.name:` 视频的名称。此名称必须匹配 `Media.open` 中使用的名称； </li><li> `media.length:` 在对 `Media.open` 的调用中给定的视频长度，以秒为单位； </li><li> `media.playerName:` 在对 `Media.open` 的调用中给定的媒体播放器名称； </li><li> `media.openTime:` 一个 NSDate 对象，其中包含有关何时调用了 `Media.open` 的数据； </li><li> `media.offset:` 视频中的当前偏移，以秒为单位（视频中的实际时间点）。偏移从零开始（视频的第一秒为零秒）； </li><li> `media.percent:` 已播放视频的当前百分比，基于视频长度和当前偏移；  </li><li> `media.timePlayed:` 截至目前播放的总秒数；  </li><li> `media.eventFirstTime:` 指明这是否是第一次为该视频调用此媒体事件； </li><li> `media.mediaEvent:` 一个字符串，其中包含可导致监视器调用的事件名称。 </li></ul> |
 |  | `media.mediaEvent` 事件： <ul><li> `OPEN:` 通过 `Media.autoTrack` 首次观察到播放，或者调用 `Media.play` 时； </li><li> `CLOSE:` 通过 `Media.autoTrack` 观察到播放在视频完成时结束，或者调用 `Media.close` 时；</li><li> `PLAY:` 通过 `Media.autoTrack` 观察到播放在暂停或推移后恢复，或者第二次调用 `Media.play` 时；</li><li> `STOP:` 通过 `Media.autoTrack` 观察到播放由于暂停或开始推移而停止，或者调用 `Media.stop` 时；</li><li> `MONITOR:` 我们的自动监视检查正在播放的视频的状态（每秒检查一次）；</li><li> `SECONDS:` 处于由 `Media.trackSeconds` 变量定义的秒数间隔时；</li><li> `MILESTONE:` 处于由 `Media.trackMilestones` 变量定义的里程碑时； </li></ul> |
-| `Media.track` | **语法：** <br/><br/> `s.Media.track(mediaName)`<br/><br/>立即发送当前视频状态，以及您定义的任何 `Media.trackVars` 和 Media.trackEvents。此方法在 `Media.monitor` 内使用。<br/><br/>请参阅[使用 Media.monitor 测量其他量度。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)<br/><br/>在调用此方法之前，应对视频调用 `Media.open` 和 `Media.play`。此方法采用以下参数： <ul> <li> **mediaName：**&#x200B;视频的名称。此名称必须匹配 `Media.open` 中使用的名称。</li> </ul> 此方法是在播放视频时发送其他变量的唯一方法。它将秒数间隔和百分比里程碑计数器重置为零以防止多次跟踪点击。 |
+| `Media.track` | **语法：** <br/><br/> `s.Media.track(mediaName)`<br/><br/>立即发送当前视频状态，以及您定义的任何 `Media.trackVars` 和 Media.trackEvents。此方法在 `Media.monitor` 内使用。<br/><br/>请参阅[使用 Media.monitor 测量其他量度。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)<br/><br/>在调用此方法之前，应对视频调用 `Media.open` 和 `Media.play`。此方法采用以下参数： <ul> <li> **mediaName：**&#x200B;视频的名称。此名称必须匹配 `Media.open` 中使用的名称。</li> </ul> 此方法是在播放视频时发送其他变量的唯一方法。它将秒数间隔和百分比里程碑计数器重置为零以防止多次跟踪点击。 |
 
 
 ## 跟踪视频播放器事件 {#track-video-player-events}
