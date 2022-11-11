@@ -1,70 +1,49 @@
 ---
-title: Adobe Analytics 中的 Adobe 流媒体
-description: “深入了解适用于内容、音频和广告的最先进的流媒体测量。了解适用于流媒体的 Adobe Analytics。”
+title: Adobe Analytics for Streaming Media概述
+description: 使用流媒体分析，对内容、音频和广告获得强大的洞察力。
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: ht
-source-wordcount: '930'
-ht-degree: 100%
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 16%
 
 ---
 
-# 在 Adobe Analytics 中测量流媒体{#measuring-audio-and-video-in-adobe-analytics}
+# Adobe Analytics for Streaming Media概述
 
 ![横幅](./assets/media_analytics_banner.png)
 
-## 关于适用于流媒体的 Adobe Analytics
+适用于流媒体的 Adobe Analytics 是 Adobe Analytics 的一个附加产品，可提供针对音频、视频和广告的强大测量工具。借助适用于流媒体的Analytics，您可以获得持续时间、停止次数和开始次数的近乎实时的精细详细信息，以便您评估和组合视频和音频量度。 通过这些洞察，您可以了解客户的查看和收听习惯，并通过高度个性化的推荐来提高参与度。
 
-适用于流媒体的 Adobe Analytics 是 Adobe Analytics 的一个附加产品，可提供针对音频、视频和广告的强大测量工具。Adobe Analytics 是 Adobe Experience Platform 的一部分。
+Adobe Analytics for Streaming Media让您能够跟踪客户在您的网站和流应用程序中的整个历程。 您可以将流媒体量度与其他Adobe Analytics功能(如Audience Analytics、移动设备或跨设备分析)结合使用。 这些量度可轻松集成到Adobe Analytics报表和其他Adobe Experience Platform产品中。 媒体测量让您可以将数据分类为多个维度和区段，从而捕获执行完整的详细分析所需的所有元数据。然后，您可以分析数据并将成功标准归因于充分使用的媒体、平均逗留时间和已完成的广告。
 
-适用于流媒体的 Adobe Analytics 让您能够跟踪客户访问您的网站的整个历程。这些量度可轻松集成到 Adobe Analytics 报表和其他 Adobe Experience Cloud 产品中。媒体测量让您可以将数据分类为多个维度和区段，从而捕获执行完整的详细分析所需的所有元数据。然后，您可以分析数据并将成功标准归因于充分使用的媒体、平均逗留时间和已完成的广告。
+您可以测量与体验质量(QoE)相关的重要交付量度，例如丢帧、缓冲所用时间和平均比特率。 这些量度可以与您的网站或应用程序数据相结合，以可视化客户路径和兴趣 — 使用Adobe Experience Platform提供增强的推荐和个性化客户体验。
 
-您可以测量与 QoS 相关的重要交付量度，例如丢帧、缓冲用时和平均比特率。这些量度可与您的网站或应用程序数据相结合，以实现客户路径和兴趣的可视化 — 通过 Adobe Experience Cloud 提供优化的推荐和个性化的客户体验。
+## 工作原理
 
-## 功能 {#features}
+使用Media SDK、媒体收集API或媒体扩展（包含标记）从播放器收集流媒体跟踪数据。 所有粒度数据（最多10秒）都会发送到Media Analytics服务，该服务会为每个单独的播放会话收集和处理数据。 播放会话结束后，计算的跟踪数据将发送到Adobe Analytics以进行存储和报告。 在Adobe Customer Journey Analytics(CJA)实施中，可以使用Analytics Data Connector(ADC)将数据发送到CJA，以便客户可以将CJA用作报表工具。
+
+<!-- ![streaming media process](./assets/streaming-process1.png) -->
+
+<div style="text-align: center;">
+<img src="./assets/streaming-process1.png" alt="流媒体流程" width="75%">
+</div>
+
+## 功能
 
 适用于流媒体的 Adobe Analytics 具备以下优势：实时监控、详细分析、切实可行的洞察信息以及盈利机会。
-* **实时分析** — 利用跨多个渠道的关键性能量度（例如，媒体启动播放），实时做出切实可行的决策。
-* **推动参与** — 通过减少缓冲事件，了解广告在内容中的播放位置和时间，以提供流畅、影响较小的体验，促进用户重复访问，从而充分吸引用户参与。
-* **全面视角** — 整合所有内容分发商的多个数据点以全面了解所有媒体活动。同时，通过 Federated Analytics 功能来测量所有可能的渠道中的参与度以及查看/收听次数。
-* **增加粒度** — 在极其精细的粒度级别上评估查看行为，包括单个访客访问的时间、每分钟的并行查看者/收听者，以及使用内容的平均时长。
-* **精确测量** — 在使用媒体的多种设备（包括 OTT、智能手机、平板电脑、台式机，等等）上测量数据以监测用户参与模式和习惯。
-* **区段划分** — 对您的播放器、设备、流派、章节和节目应用分类，以了解每个分类对内容、音频、广告和组合元素的整体查看/收听量和客户参与度有何影响。
 
-## 心率测量 {#heartbeat}
+* **实时分析**:跨多个渠道利用关键绩效量度（如媒体开始）做出实时、可操作的决策。
 
-Adobe Analytics 使用“心率”收集视频量度。在视频播放期间，心率会发送到心率跟踪服务器以测量播放时长。每十秒发送一次心率调用。心率会生成精细的视频参与量度，以及更准确的视频流失报表。适用于流媒体的 Adobe Analytics 使用包含 Media Analytics 扩展的 Adobe Launch、Media SDK 和媒体收集 API 来测量心率。`AppMeasurement` 和 `VisitorID` 组件用于接收视频数据。
+* **推动参与**:通过减少缓冲事件，了解广告在内容中的播放位置和时间，以提供流畅、影响较小的体验来交付重复访问，从而充分吸引用户。
 
->[!NOTE]
->Adobe Experience Platform Launch 已更名为 Experience Platform 中的一套数据收集技术。因此，产品文档中的术语有一些改动。有关术语更改的综合参考，请参阅以下[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hans)。
+* **全面视角**:合并所有内容分发商的多个数据点，以全面了解所有媒体活动。通过Federated Analytics功能，跨所有可能的渠道衡量参与度和查看/收听次数。
 
+* **增加了粒度**:在最精细的粒度级别评估查看行为，包括每天的单个访客时间、按分钟划分的并行查看者或收听者，以及使用内容的平均持续时间。
 
-通过使用心率，适用于流媒体的 Adobe Analytics 具备以下优势：
+* **精确测量**:在用于媒体使用情况的多种设备（包括OTT、智能手机、平板电脑、台式机等）上进行测量，以监控用户参与模式和习惯。
 
-| 功能 | 描述 |
-|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 媒体事件 | 对于主内容，每 10 秒发送一次详细事件和自定义事件；对于广告，则每 1 秒发送一次。 |
-| 量度和维度 | 跨供应商的明确标准化量度、维度和基准<br>通过跨所有平台的标准化解决方案，您可以跨所有媒体和平台使用一致的标准化变量，从而更有效地跨促销活动、设备和供应商进行比较。 |
-| 集成 | Experience Cloud ID 已链接到 Adobe Experience Cloud，以便执行交叉分析<br>通过自动集成 Adobe Experience Cloud，您可以对媒体受众进行细分、定位这些受众，并根据用户偏好提供媒体推荐。 |
-| 定价 | 透明的按媒体流跟踪（单个） |
-| 实施和支持 | 通过不断更新和改进来简化配置<br>通过简化实施流程，您可以通过播放器 API 快速映射变量并使用 Adobe Debug Tool 验证实施，以确保准确跟踪所有必要变量。 |
-| 合作伙伴共享 | Federated Analytics 和认证的量度<br>通过 Federated Analytics 共享数据，您可以利用我们业界领先的媒体共享功能，全面评估您的所有媒体分发合作伙伴（运营商、节目制作商和分发商）的数据。 |
-| 高级跟踪 | 下载内容跟踪、错误恢复跟踪和并行查看者<br>您可以跟踪在设备上下载和播放的流媒体内容，而不论该设备是否联网。 |
-
-
-
-## 安全性 {#security}
-
-Adobe 十分重视您的数字资产的安全性。从将安全性严格整合到内部软件开发流程和工具，到跨职能的事件响应团队，我们都努力做到主动和灵活。此外，我们与合作伙伴、研究人员和其他行业组织开展的协作也有助于我们了解最新的威胁和安全最佳实践，并持续将安全性构建到我们提供的产品和服务中。
-
-
-### 传输层安全性 {#transport-layer-security}
-
-**TLS 声明 —** Adobe 制定了要求终止使用旧版安全协议的安全合规标准。为了继续满足不断演变的安全协议标准，Adobe 正逐渐转为使用 TLS 1.2，以便使用最新的安全协议版本。从 2019 年 2 月 20 日起，Adobe 将仅支持 TLS 1.1 或更高版本。伴随这项变化，对于使用部署了 TLS 1.0 的较旧设备或 Web 浏览器的最终用户，Adobe 将不再收集他们的数据。迁移到 TLS 1.2 可提高安全性。您应务必了解具体细节，并且针对更改做出规划以实现顺利迁移。
-
->[!NOTE]
->
->TLS 是目前最广泛部署的安全协议，适用于 Web 浏览器和其他需要通过网络安全交换数据的应用程序。
+* **分段**:将分类应用于您的播放器、设备、流派、章节和节目，以了解每个分类对内容、音频、广告和组合内容的整体查看/收听次数和客户参与度有何影响。

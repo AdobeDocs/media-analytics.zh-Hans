@@ -3,8 +3,8 @@ title: 适用于流媒体的 Adobe Analytics 发行说明
 description: 查看 Adobe Analytics 发行说明。
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
-workflow-type: ht
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 100%
 
@@ -54,8 +54,8 @@ ht-degree: 100%
 
 | 功能 | 描述 | 预定或更新日期 |
 | ----------- | ---------- | -------------- |
-| Media Playback 耗时 | Adobe 流媒体播放耗时提供有关观众参与情况的宝贵见解，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的见解。您可以观察在特定时间点查看媒体流的耗时。可按多种不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。[了解详情...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) | 2021 年 9 月 |
-| Analytics Workspace 中的“媒体并行查看者”面板 | 了解同时观看的人数在哪里达到峰值或在哪里发生下降。获得关于内容质量和观众参与情况的宝贵洞察，并帮助进行故障排除或规划数量和规模。 [了解详情…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) <br><br>[Analytics Workspace 中的“媒体并行查看者”面板（教程）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=zh-Hans#analysis-workspace) | 2020 年 9 月<br><br><br>2021 年 1 月 |
+| Media Playback 耗时 | Adobe 流媒体播放耗时提供有关观众参与情况的宝贵见解，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的见解。您可以观察在特定时间点查看媒体流的耗时。可按多种不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。[了解详情...](/help/reporting/workspace/media-playback-time-spent.md) | 2021 年 9 月 |
+| Analytics Workspace 中的“媒体并行查看者”面板 | 了解同时观看的人数在哪里达到峰值或在哪里发生下降。获得关于内容质量和观众参与情况的宝贵洞察，并帮助进行故障排除或规划数量和规模。 [了解详情…](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Analytics Workspace 中的“媒体并行查看者”面板（教程）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=zh-Hans#analysis-workspace) | 2020 年 9 月<br><br><br>2021 年 1 月 |
 | 支持的设备和平台 | Media Launch Extension w/ AEP SDK 现在支持以下 OTT 设备： <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | 2020 年 6 月 |
 
 
