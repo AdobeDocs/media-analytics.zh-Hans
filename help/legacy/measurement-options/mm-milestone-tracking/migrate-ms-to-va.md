@@ -5,7 +5,7 @@ uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## 概述 {#overview}
 
-视频测量的核心概念与里程碑和 Media Analytics 相同，后者采用视频播放器事件并将其映射到分析方法，同时捕获播放器元数据和值并将它们映射到分析变量。Media Analytics 解决方案源自里程碑，因此许多方法和量度都与里程碑是相同的，但配置方法和代码发生了显著变化。也可以更新播放器事件代码以指向新的 Media Analytics 方法。有关实施 Media Analytics 的更多详细信息，请参阅 [SDK 概述](/help/implementation/media-sdk/setup/setup-overview.md)和[跟踪概述](/help/use-cases/track-av-playback/track-core-overview.md)。
+视频测量的核心概念与里程碑和 Media Analytics 相同，后者采用视频播放器事件并将其映射到分析方法，同时捕获播放器元数据和值并将它们映射到分析变量。Media Analytics 解决方案源自里程碑，因此许多方法和量度都与里程碑是相同的，但配置方法和代码发生了显著变化。也可以更新播放器事件代码以指向新的 Media Analytics 方法。有关实施 Media Analytics 的更多详细信息，请参阅 [SDK 概述](/help/legacy/setup/legacy-setup-overview.md)和[跟踪概述](/help/use-cases/track-av-playback/track-core-overview.md)。
 
 下表提供了“里程碑”解决方案和“Media Analytics”解决方案之间的转换。
 

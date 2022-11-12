@@ -4,7 +4,7 @@ description: 了解 Adobe Streaming Media 实施路径，包括 Adobe Experience
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 98%
@@ -42,7 +42,7 @@ Adobe Media Analytics (MA) 扩展添加了适用于音频和视频的核心 Java
 
 这些是仅限 Media Analytics 的集成。您可以选择视频心率 SDK 和/或媒体收集 API 集成。此路径可以跨任何播放器使用，包括客户和/或 OVP 播放器，如 Brightcove、Ooyala、thePlatform 等。
 
-如果 Media Analytics 是您的预期路径，请参阅 [Media SDK 实施](/help/implementation/media-sdk/setup/setup-overview.md)和[媒体收集 API](/help/media-collection-api/mc-api-overview.md)。
+如果 Media Analytics 是您的预期路径，请参阅 [Media SDK 实施](/help/legacy/setup/legacy-setup-overview.md)和[媒体收集 API](/help/implementation/media-collection-api/mc-api-overview.md)。
 
 >[!IMPORTANT]
 >要使用 Media Analytics，客户还必须使用 Adobe Analytics。
@@ -60,6 +60,6 @@ Primetime 通过提供用于视频发布、广告、个性化和分析的模块�
 * 利用 ID3 元数据集成 Nielsen DTVR（线性）支持，利用 CMS 元数据集成 DCR 支持。
 
 
-TVSDK 已与 Media Analtyics (Heartbeats) SDK 集成，这使得在所有受支持的平台上都可以更便捷地实施 TVSDK。要利用 Primetime，请遵循[客户端](/help/intro-to-ava/implementation-paths/client-side-path.md)中提供的相同准则和先决条件，以及以下适用于您的平台的文档：[《Primetime 用户指南》](https://helpx.adobe.com/cn/primetime/user-guide.html)。
+TVSDK 已与 Media Analtyics (Heartbeats) SDK 集成，这使得在所有受支持的平台上都可以更便捷地实施 TVSDK。要利用 Primetime，请遵循[客户端](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md)中提供的相同准则和先决条件，以及以下适用于您的平台的文档：[《Primetime 用户指南》](https://helpx.adobe.com/cn/primetime/user-guide.html)。
 
 您还应该与您的销售代表/客户经理联系，了解购买 TVSDK 所需的条件。
