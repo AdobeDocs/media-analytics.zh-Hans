@@ -5,9 +5,9 @@ user-guide-title: 适用于流媒体的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 1d30415b0874c1e0f35045026cb341bab1833d98
+source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '880'
 ht-degree: 78%
 
 ---
@@ -54,6 +54,10 @@ ht-degree: 78%
          + [超时情况](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
          + [控制事件的顺序](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
          + [会话响应缓慢时对事件进行排队](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+      + 媒体跟踪时间线 {#mc-api-timelines}
+         + [时间线 1 — 观看到内容的结尾](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
+         + [时间线 2 — 用户放弃会话](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
+         + [时间线 3 — 章节](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + 变量 {#variables}
       + [流媒体参数](implementation/variables/audio-video-parameters.md)
       + [广告参数](implementation/variables/ad-parameters.md)
@@ -179,8 +183,7 @@ ht-degree: 78%
    + [跟踪离线下载的内容](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [处理应用程序在播放过程中出现的中断问题](use-cases/cookbook/app-interrupts.md)
-   + [旧版SDK指南概述](use-cases/cookbook/sdk-cookbook-overview.md)
-   + [旧版 — Media Analytics指南](use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
+   + [Media SDK用例](use-cases/cookbook/sdk-cookbook-overview.md)
    + [媒体流归因](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [恢复不活动的会话](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph中的Roku跟踪](use-cases/cookbook/sdk-track-scenegraph.md)
