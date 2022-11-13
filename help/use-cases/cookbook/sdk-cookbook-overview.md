@@ -4,7 +4,7 @@ description: 了解流媒体用例
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
+source-git-commit: c569ea265f6e467b19d58a870ac7b24b8bf355b1
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 47%
@@ -14,7 +14,7 @@ ht-degree: 47%
 # 流媒体用例 {#media-sdk-use-cases}
 
 * [播放器状态跟踪](/help/use-cases/player-state-tracking/player-state-overview.md)
-* [跟踪离线下载的内容](using/media-use-cases/track-downloaded-content.html)
+* [跟踪离线下载的内容](/help/use-cases/track-downloaded-content.md)
 * [处理应用程序在播放过程中出现的中断问题](/help/use-cases/cookbook/app-interrupts.md)
 * [处理广告之间出现的差距](/help/use-cases/cookbook/fix-ad-play-ad.md)
 * [恢复不活动的会话](/help/use-cases/cookbook/resuming-inactive.md)
