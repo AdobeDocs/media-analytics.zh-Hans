@@ -1,11 +1,11 @@
 ---
-title: 了解媒体跟踪时间轴用�户放弃会话
+title: 了解媒体跟踪时间轴 — 用户放弃会话
 description: 了解视频会话被放弃时播放头时�间轴和相应用户的操作。 了解每个操作和请求的详细信息。
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 92%

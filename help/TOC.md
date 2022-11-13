@@ -5,9 +5,9 @@ user-guide-title: 适用于流媒体的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
+source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '865'
 ht-degree: 78%
 
 ---
@@ -54,10 +54,6 @@ ht-degree: 78%
          + [超时情况](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
          + [控制事件的顺序](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
          + [会话响应缓慢时对事件进行排队](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-      + 媒体跟踪时间线 {#mc-api-timelines}
-         + [时间线 1 — 观看到内容的结尾](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
-         + [时间线 2 — 用户放弃会话](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
-         + [时间线 3 — 章节](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + 变量 {#variables}
       + [流媒体参数](implementation/variables/audio-video-parameters.md)
       + [广告参数](implementation/variables/ad-parameters.md)
@@ -174,6 +170,7 @@ ht-degree: 78%
    + [通过 API 获取并行查看者数据](reporting/reports-and-analytics/get-concurrent-json20.md)
    + [通过 API 获取 Media Playback 耗时数据](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 用例 {#media-use-cases}
+   + [Media SDK用例](use-cases/cookbook/sdk-cookbook-overview.md)
    + 播放器状态跟踪 {#player-state-tracking}
       + [概述](use-cases/player-state-tracking/player-state-overview.md)
       + [标准状态和自定义状态](use-cases/player-state-tracking/standard-and-custom-states.md)
@@ -183,7 +180,6 @@ ht-degree: 78%
    + [跟踪离线下载的内容](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [处理应用程序在播放过程中出现的中断问题](use-cases/cookbook/app-interrupts.md)
-   + [Media SDK用例](use-cases/cookbook/sdk-cookbook-overview.md)
    + [媒体流归因](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [恢复不活动的会话](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph中的Roku跟踪](use-cases/cookbook/sdk-track-scenegraph.md)
