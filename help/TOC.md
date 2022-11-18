@@ -5,7 +5,7 @@ user-guide-title: 适用于流媒体的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
+source-git-commit: 7b33301495a6596ce5e343e9e720d15619da2af9
 workflow-type: tm+mt
 source-wordcount: '865'
 ht-degree: 78%
@@ -61,98 +61,6 @@ ht-degree: 78%
       + [播放器状态参数](implementation/variables/player-state-parameters.md)
       + [质量参数](implementation/variables/quality-parameters.md)
       + [计算指标](implementation/variables/calculated-metrics.md)
-+ 跟踪 {#track-av-playback}
-   + [概述](use-cases/track-av-playback/track-core-overview.md)
-   + 跟踪核心流媒体播放{#track-core}
-      + [在 Android 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-android.md)
-      + [在 iOS 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-ios.md)
-      + 在 JavaScript 中跟踪核心播放 {#track-core-javascript}
-         + [在 JavaScript 2.x 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-         + [在 JavaScript 3.x 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
-      + [在 Chromecast 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-chromecast.md)
-      + [在 Roku 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-roku.md)
-   + 跟踪缓冲 {#track-buffering}
-      + [在 Android 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-      + [在 iOS 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-      + 在 JavaScript 中跟踪缓冲 {#track-buffering-js}
-         + [在 JavaScript 2.x 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-         + [在 JavaScript 3.x 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
-      + [在 Chromecast 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
-      + [在 Roku 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
-   + 跟踪搜寻 {#track-seeking}
-      + [在 Android 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-      + [在 iOS 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-      + 在 JavaScript 中跟踪搜寻 {#track-seeking-js}
-         + [在 JavaScript 2.x 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-         + [在 JavaScript 3.x 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
-      + [在 Chromecast 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
-      + [在 Roku 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
-   + 实施标准元数据 {#impl-std-metadata}
-      + [在 Android 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-      + [在 iOS 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      + [iOS 元数据键](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-      + 在 JavaScript 中实施标准元数据 {#impl-std-md-js}
-         + [在 JavaScript 2.x 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-         + [在 JavaScript 3.x 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-      + [在 Chromecast 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-      + [标准元数据参数 — Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-      + [在 Roku 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-      + [标准元数据参数 — Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
-   + 跟踪广告 {#track-ads}
-      + [概述](use-cases/track-ads/track-ads-overview.md)
-      + [在 Android 中跟踪广告](use-cases/track-ads/track-ads-android.md)
-      + [在 iOS 中跟踪广告](use-cases/track-ads/track-ads-ios.md)
-      + 在 JavaScript 中跟踪广告 {#track-ads-js}
-         + [在 JavaScript 2.x 中跟踪广告](use-cases/track-ads/track-ads-js/track-ads-js.md)
-         + [在 JavaScript 3.x 中跟踪广告](use-cases/track-ads/track-ads-js/track-ads-js3.md)
-      + [在 Chromecast 中跟踪广告](use-cases/track-ads/track-ads-chromecast.md)
-      + [在 Roku 中跟踪广告](use-cases/track-ads/track-ads-roku.md)
-      + 实施标准广告元数据 {#impl-std-ad-metadata}
-         + [在 Android 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
-         + [在 iOS 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-         + 在 JavaScript 中实施标准广告元数据 {#impl-std-ad-md-js}
-            + [在 JavaScript 2.x 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-            + [在 JavaScript 3.x 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-         + [在 Roku 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
-   + 跟踪章节和区段 {#track-chapters}
-      + [概述](use-cases/track-chapters/track-chapters-overview.md)
-      + [在 Android 中跟踪章节和区段](use-cases/track-chapters/track-chapters-android.md)
-      + [在 iOS 中跟踪章节和区段](use-cases/track-chapters/track-chapters-ios.md)
-      + 在 JavaScript 中跟踪章节和区段 {#track-chapters-js}
-         + [在 JavaScript 2.x 中跟踪章节和区段](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
-         + [在 JavaScript 3.x 中跟踪章节和区段](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-      + [在 Chromecast 中跟踪章节和区段](use-cases/track-chapters/track-chapters-chromecast.md)
-      + [在 Roku 中跟踪章节和区段](use-cases/track-chapters/track-chapters-roku.md)
-   + 跟踪体验质量 {#track-qos}
-      + [概述](use-cases/track-qos/track-qos-overview.md)
-      + [在 Android 中跟踪体验质量](use-cases/track-qos/track-qos-android.md)
-      + [在 iOS 中跟踪体验质量](use-cases/track-qos/track-qos-ios.md)
-      + 在 JavaScript 中跟踪体验质量 {#track-qos-js}
-         + [在 JavaScript 2.x 中跟踪体验质量](use-cases/track-qos/track-qos-js/track-qos-js.md)
-         + [在 JavaScript 3.x 中跟踪体验质量](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-      + [在 Chromecast 中跟踪体验质量](use-cases/track-qos/track-qos-chromecast.md)
-      + [在 Roku 中跟踪体验质量](use-cases/track-qos/track-qos-roku.md)
-   + 跟踪错误 {#track-errors}
-      + [概述](use-cases/track-errors/track-errors-overview.md)
-      + [在 Android 中跟踪错误](use-cases/track-errors/track-errors-android.md)
-      + [在 iOS 中跟踪错误](use-cases/track-errors/track-errors-ios.md)
-      + 在 JavaScript 中跟踪错误 {#track-errors-js}
-         + [在 JavaScript 2.x 中跟踪错误](use-cases/track-errors/track-errors-js/track-errors-js.md)
-         + [在 JavaScript 3.x 中跟踪错误](use-cases/track-errors/track-errors-js/track-errors-js3.md)
-      + [在 Chromecast 中跟踪错误](use-cases/track-errors/track-errors-chromecast.md)
-      + [在 Roku 中跟踪错误](use-cases/track-errors/track-errors-roku.md)
-   + 跟踪方案 {#tracking-scenarios}
-      + [不含广告的 VOD 播放](use-cases/tracking-scenarios/vod-no-intrs-details.md)
-      + [包含前置式广告的 VOD 播放](use-cases/tracking-scenarios/vod-preroll-ads.md)
-      + [跳过广告的 VOD 播放](use-cases/tracking-scenarios/vod-skipped-ads.md)
-      + [包含一个章节的 VOD 播放](use-cases/tracking-scenarios/vod-one-chapter.md)
-      + [跳过一个章节的 VOD 播放](use-cases/tracking-scenarios/vod-skipped-chapter.md)
-      + [在主内容中进行搜寻的 VOD 播放](use-cases/tracking-scenarios/vod-seeking.md)
-      + [带有缓冲的 VOD 播放](use-cases/tracking-scenarios/vod-buffering.md)
-      + [多个并行的 VOD 跟踪器](use-cases/tracking-scenarios/vod-multi-trackers.md)
-      + [一个 VOD 跟踪器用于多个会话](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
-      + [实时主内容](use-cases/tracking-scenarios/live-main-content.md)
-      + [具有连续跟踪的实时主内容](use-cases/tracking-scenarios/live-sequential.md)
 + 报表 {#media-reports}
    + [媒体报表启用](reporting/media-reports-enable.md)
    + [关于区段](reporting/segments.md)
@@ -233,3 +141,95 @@ ht-degree: 78%
    + [跟踪API 1x到2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
    + [旧版 — AVA简介](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
    + [客户端路径](legacy/intro-to-ava/implementation-paths/client-side-path.md)
+   + 跟踪 {#track-av-playback}
+      + [概述](use-cases/track-av-playback/track-core-overview.md)
+      + 跟踪核心流媒体播放{#track-core}
+         + [在 Android 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-android.md)
+         + [在 iOS 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-ios.md)
+         + 在 JavaScript 中跟踪核心播放 {#track-core-javascript}
+            + [在 JavaScript 2.x 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
+            + [在 JavaScript 3.x 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
+         + [在 Chromecast 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-chromecast.md)
+         + [在 Roku 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-roku.md)
+      + 跟踪缓冲 {#track-buffering}
+         + [在 Android 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
+         + [在 iOS 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
+         + 在 JavaScript 中跟踪缓冲 {#track-buffering-js}
+            + [在 JavaScript 2.x 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+            + [在 JavaScript 3.x 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+         + [在 Chromecast 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
+         + [在 Roku 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
+      + 跟踪搜寻 {#track-seeking}
+         + [在 Android 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+         + [在 iOS 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+         + 在 JavaScript 中跟踪搜寻 {#track-seeking-js}
+            + [在 JavaScript 2.x 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+            + [在 JavaScript 3.x 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+         + [在 Chromecast 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
+         + [在 Roku 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
+      + 实施标准元数据 {#impl-std-metadata}
+         + [在 Android 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+         + [在 iOS 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+         + [iOS 元数据键](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + 在 JavaScript 中实施标准元数据 {#impl-std-md-js}
+            + [在 JavaScript 2.x 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+            + [在 JavaScript 3.x 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+         + [在 Chromecast 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+         + [标准元数据参数 — Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+         + [在 Roku 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+         + [标准元数据参数 — Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
+      + 跟踪广告 {#track-ads}
+         + [概述](use-cases/track-ads/track-ads-overview.md)
+         + [在 Android 中跟踪广告](use-cases/track-ads/track-ads-android.md)
+         + [在 iOS 中跟踪广告](use-cases/track-ads/track-ads-ios.md)
+         + 在 JavaScript 中跟踪广告 {#track-ads-js}
+            + [在 JavaScript 2.x 中跟踪广告](use-cases/track-ads/track-ads-js/track-ads-js.md)
+            + [在 JavaScript 3.x 中跟踪广告](use-cases/track-ads/track-ads-js/track-ads-js3.md)
+         + [在 Chromecast 中跟踪广告](use-cases/track-ads/track-ads-chromecast.md)
+         + [在 Roku 中跟踪广告](use-cases/track-ads/track-ads-roku.md)
+         + 实施标准广告元数据 {#impl-std-ad-metadata}
+            + [在 Android 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+            + [在 iOS 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+            + 在 JavaScript 中实施标准广告元数据 {#impl-std-ad-md-js}
+               + [在 JavaScript 2.x 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
+               + [在 JavaScript 3.x 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+            + [在 Roku 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+      + 跟踪章节和区段 {#track-chapters}
+         + [概述](use-cases/track-chapters/track-chapters-overview.md)
+         + [在 Android 中跟踪章节和区段](use-cases/track-chapters/track-chapters-android.md)
+         + [在 iOS 中跟踪章节和区段](use-cases/track-chapters/track-chapters-ios.md)
+         + 在 JavaScript 中跟踪章节和区段 {#track-chapters-js}
+            + [在 JavaScript 2.x 中跟踪章节和区段](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
+            + [在 JavaScript 3.x 中跟踪章节和区段](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
+         + [在 Chromecast 中跟踪章节和区段](use-cases/track-chapters/track-chapters-chromecast.md)
+         + [在 Roku 中跟踪章节和区段](use-cases/track-chapters/track-chapters-roku.md)
+      + 跟踪体验质量 {#track-qos}
+         + [概述](use-cases/track-qos/track-qos-overview.md)
+         + [在 Android 中跟踪体验质量](use-cases/track-qos/track-qos-android.md)
+         + [在 iOS 中跟踪体验质量](use-cases/track-qos/track-qos-ios.md)
+         + 在 JavaScript 中跟踪体验质量 {#track-qos-js}
+            + [在 JavaScript 2.x 中跟踪体验质量](use-cases/track-qos/track-qos-js/track-qos-js.md)
+            + [在 JavaScript 3.x 中跟踪体验质量](use-cases/track-qos/track-qos-js/track-qos-js3.md)
+         + [在 Chromecast 中跟踪体验质量](use-cases/track-qos/track-qos-chromecast.md)
+         + [在 Roku 中跟踪体验质量](use-cases/track-qos/track-qos-roku.md)
+      + 跟踪错误 {#track-errors}
+         + [概述](use-cases/track-errors/track-errors-overview.md)
+         + [在 Android 中跟踪错误](use-cases/track-errors/track-errors-android.md)
+         + [在 iOS 中跟踪错误](use-cases/track-errors/track-errors-ios.md)
+         + 在 JavaScript 中跟踪错误 {#track-errors-js}
+            + [在 JavaScript 2.x 中跟踪错误](use-cases/track-errors/track-errors-js/track-errors-js.md)
+            + [在 JavaScript 3.x 中跟踪错误](use-cases/track-errors/track-errors-js/track-errors-js3.md)
+         + [在 Chromecast 中跟踪错误](use-cases/track-errors/track-errors-chromecast.md)
+         + [在 Roku 中跟踪错误](use-cases/track-errors/track-errors-roku.md)
+      + 跟踪方案 {#tracking-scenarios}
+         + [不含广告的 VOD 播放](use-cases/tracking-scenarios/vod-no-intrs-details.md)
+         + [包含前置式广告的 VOD 播放](use-cases/tracking-scenarios/vod-preroll-ads.md)
+         + [跳过广告的 VOD 播放](use-cases/tracking-scenarios/vod-skipped-ads.md)
+         + [包含一个章节的 VOD 播放](use-cases/tracking-scenarios/vod-one-chapter.md)
+         + [跳过一个章节的 VOD 播放](use-cases/tracking-scenarios/vod-skipped-chapter.md)
+         + [在主内容中进行搜寻的 VOD 播放](use-cases/tracking-scenarios/vod-seeking.md)
+         + [带有缓冲的 VOD 播放](use-cases/tracking-scenarios/vod-buffering.md)
+         + [多个并行的 VOD 跟踪器](use-cases/tracking-scenarios/vod-multi-trackers.md)
+         + [一个 VOD 跟踪器用于多个会话](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
+         + [实时主内容](use-cases/tracking-scenarios/live-main-content.md)
+         + [具有连续跟踪的实时主内容](use-cases/tracking-scenarios/live-sequential.md)
