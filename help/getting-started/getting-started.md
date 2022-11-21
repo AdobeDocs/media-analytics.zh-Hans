@@ -4,13 +4,13 @@ description: 开始使用适用于流媒体的Adobe Analytics。
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
+source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # 快速入门 {#getting-started}
 
@@ -47,10 +47,6 @@ Adobe Analytics流媒体解决方案针对以下媒体平台提供：
 有关使用媒体收集API的信息，请参阅 [流媒体API文档](/help/implementation/media-collection-api/mc-api-overview.md).
 
 ## Adobe 扩展 {#adobe-extensions}
-
->[!NOTE]
->
->需要扩展简介
 
 * 的 [**Adobe MediumAnalytics for Audio and Video扩展**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) （Media Analytics扩展），是iOS和tvOS实施的必需项。 它提供了将跟踪器实例添加到标记站点或项目的功能。 MA扩展还需要使用Analytics扩展和Experience CloudID扩展。
 
