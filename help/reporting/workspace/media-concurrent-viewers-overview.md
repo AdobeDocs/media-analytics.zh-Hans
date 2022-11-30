@@ -5,13 +5,13 @@ exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# 媒体并行查看者概述 {#media-concurrent-viewers}
+# 同时观看媒体的人数概述 {#media-concurrent-viewers}
 
 通过分析并行查看者，您可以了解出现并发峰值或发生锐减的位置，从而对内容质量和查看者参与度提出有价值的见解，同时还有助于对容量和规模进行故障诊断或规划。
 
