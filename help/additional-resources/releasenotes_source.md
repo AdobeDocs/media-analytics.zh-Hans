@@ -35,7 +35,7 @@ Analytics 的新教程和课程
 
 | 发布日期 | 名称 | 类型 | 描述 |
 | ----------- | ---------- | ---------- | --------- |
-| 1 月 | <a href="/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en">“媒体播放耗时”面板</a> | 视频 | 了解“媒体播放耗时”面板如何使媒体用户能够通过一天中所选粒度的观看时间量来了解他们的收视率。 |
+| 1 月 | <a href="/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en">“媒体播放耗时”面板</a> | 视频 | 了解“媒体播放耗时”面板如何使媒体用户按其在所选粒度上一天内的观看时长了解其观众情况。 |
 
 
 
@@ -44,7 +44,7 @@ Analytics 的新教程和课程
 
 | 功能 | 描述 |
 | ----------- | ---------- |
-| 媒体播放耗时 | Adobe 流媒体播放耗时提供有关观众参与情况的宝贵见解，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的见解。您可以观察在特定时间点查看媒体流的耗时。您可以按不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。 [了解详情...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=ZH-CN) |
+| 媒体播放耗时 | Adobe 流媒体播放耗时提供有关观众参与情况的宝贵见解，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的见解。您可以观察在特定时间点查看媒体流的耗时。可按多种不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。[了解详情...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=zh-Hans) |
 
 
 
@@ -52,7 +52,7 @@ Analytics 的新教程和课程
 
 | 功能 | 描述 |
 | ----------- | ---------- |
-| 媒体播放耗时 | Adobe 流媒体播放耗时提供有关观众参与情况的宝贵见解，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的见解。您可以观察在特定时间点查看媒体流的耗时。您可以按不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。 [了解详情...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=ZH-CN) |
+| 媒体播放耗时 | Adobe 流媒体播放耗时提供有关观众参与情况的宝贵见解，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的见解。您可以观察在特定时间点查看媒体流的耗时。可按多种不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。[了解详情...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=zh-Hans) |
 
 ## 2021 年 1 月
 
@@ -60,7 +60,7 @@ Analytics 的新教程和课程
 
 | 发布日期 | 名称 | 类型 | 描述 |
 | ----------- | ---------- | ---------- | --------- |
-| 2021 年 1 月 6 日 | [Analysis Workspace 中的“同时观看媒体的人数”面板](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=zh-Hans#analysis-workspace) | 视频 | 了解同时观看的人数在哪里达到峰值或在哪里发生下降。获得关于内容质量和观众参与情况的宝贵见解，并帮助进行故障排除或规划数量和规模。 |
+| 2021 年 1 月 6 日 | [Analysis Workspace 中的“同时观看媒体的人数”面板](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=zh-Hans#analysis-workspace) | 视频 | 了解同时观看的人数在哪里达到峰值或在哪里发生下降。获得内容质量和观众参与的宝贵见解，并帮助进行故障排除或规划数量和规模。 |
 
 
 ## 2020 年 11 月
