@@ -26,14 +26,14 @@ Streaming Media for Adobe Analytics 还需要 Adobe Analytics 基本实施。有
 请向您的 Adobe Analytics 代表询问媒体跟踪服务器 URL。这是移动 SDK、JavaScript SDK 和 Roku 的非收藏集 API 跟踪服务器的 `collection-api-server` URL。API 实施的域名是：`[your_namespace].hb-api.omtrdc.net`。
 
 
-1. 
+1. &#x200B;
 
-1. 
+1. &#x200B;
 
-1. 
+1. &#x200B;
 
 
-##  {#implement-id}
+## {#implement-id}
 
 
 
