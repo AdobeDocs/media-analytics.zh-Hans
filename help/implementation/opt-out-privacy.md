@@ -1,14 +1,14 @@
 ---
-title: 选择禁用和隐私说明
+title: 解释选择禁用和隐私
 description: 了解如何处理选择启用、选择禁用和隐私。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -36,15 +36,15 @@ ht-degree: 88%
 
          * **Chromecast：**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
             
          * **Roku：**
 
-                &quot;
-                ADBMobile()。setPrivacyStatus(ADBMobile()。PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
+                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
+                ```
             
             >[!IMPORTANT]
             >
@@ -53,29 +53,29 @@ ht-degree: 88%
 
          * **Chromecast：**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
             
          * **Roku：**
 
-                &quot;
-                ADBMobile()。setPrivacyStatus(ADBMobile()。PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
+                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
+                ```
             * **返回当前设置：**
 
          * **Chromecast：**
 
-                &quot;
+                ```
                 ADBMobile.config.getPrivacyStatus()
-                &quot;
+                ```
             
          * **Roku：**
 
-                &quot;
-                ADBMobile()。getPrivacyStatus()
-                &quot;
-            使用 `setPrivacyStatus` 更改隐私设置后，除非再次使用此方法对该设置进行更改，或者卸载并重新安装应用程序，否则此更改将为永久性的。
+                ```
+                ADBMobile().getPrivacyStatus()
+                ```
+            使用 `setPrivacyStatus` 更改隐私设置后，更改将保持有效，直至再次使用此方法更改设置或卸载并重新安装应用程序。
 
 ## 检索存储的标识符（OTT 应用程序） {#retrieving-stored-identifiers-ott-apps}
 
