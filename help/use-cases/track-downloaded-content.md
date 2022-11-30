@@ -1,14 +1,14 @@
 ---
-title: 如何在Adobe流媒体中跟踪离线下载的内容
-description: 了解如何使用“下载的内容”功能跟踪用户离线时的媒体使用情况。
+title: 如何在 Adobe Streaming Media 中跟踪离线下载的内容
+description: 了解如何使用“下载的内容”功能在用户离线时跟踪媒体消费情况。
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 86%
 
 ## 概述 {#overview}
 
-通过“下载的内容”功能，可以跟踪用户处于脱机状态下的媒体使用情况。例如，用户在移动设备上下载并安装某个应用程序，然后使用该应用程序将内容下载到设备上的本地存储中。为了跟踪下载的数据，Adobe 开发了“下载的内容”功能。通过使用此功能，当用户播放设备存储中的内容时，便会在设备中存储跟踪数据，无论设备是否连接到网络。当用户结束播放会话，并且设备重新联机时，存储的跟踪信息便会在单个负载内发送到媒体收集 API 后端。然后，可在 Media Collection API 中像往常一样处理和报告存储的跟踪信息。
+通过“下载的内容”功能，可在用户离线时跟踪媒体消费情况。例如，用户在移动设备上下载并安装某个应用程序，然后使用该应用程序将内容下载到设备上的本地存储中。为了跟踪下载的数据，Adobe 开发了“下载的内容”功能。通过使用此功能，当用户播放设备存储中的内容时，便会在设备中存储跟踪数据，无论设备是否连接到网络。当用户结束播放会话，并且设备重新联机时，存储的跟踪信息便会在单个负载内发送到媒体收集 API 后端。然后，可在 Media Collection API 中像往常一样处理和报告存储的跟踪信息。
 
 对比两种方法：
 
@@ -105,16 +105,14 @@ POST /api/v1/downloaded HTTP/1.1
 }]
 ```
 
-### 弃用说明
+### 弃用通知
 
 >[!IMPORTANT]
 >
->以前，也可以将下载的内容发送到 `/api/v1/sessions` API。 这种跟踪下载内容的方式是 **已弃用** 和 **已删除** 未来。
+>以前还可将“下载的内容”发送到 `/api/v1/sessions` API。已&#x200B;**弃用**&#x200B;此方式跟踪下载的内容，并且未来将&#x200B;**删除**&#x200B;此方式。
 
 
-的 `/api/v1/sessions` API将仅接受会话初始化事件。
-使用新API时，以前必需的 `media.downloaded` 标记不再必需。
-我们强烈建议使用 `/api/v1/downloaded` 用于新下载内容实施的API，以及更新依赖旧API的现有实施。
+`/api/v1/sessions` API 将仅接受会话初始化事件。使用新 API 时不再需要以前强制的 `media.downloaded` 标志。我们强烈建议将 `/api/v1/downloaded` API 用于“下载的内容”的新实施，并且更新依赖旧 API 的现有实施。
 
 
 ```
