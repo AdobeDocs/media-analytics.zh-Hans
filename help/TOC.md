@@ -1,21 +1,21 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 适用于流媒体的 Adobe Analytics
+user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
-user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
+user-guide-description: 实施 Adobe Analytics for Streaming Media。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 7b33301495a6596ce5e343e9e720d15619da2af9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '865'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 
-# 适用于流媒体的 Adobe Analytics {#using}
+# Adobe Analytics for Streaming Media {#using}
 
-+ [Streaming Media Analytics指南](media-overview.md)
++ [流媒体 Analytics 指南](media-overview.md)
 + 发行说明 {#release-notes}
    + [流媒体发行说明](additional-resources/release-notes.md)
 + 快速入门 {#getting-started}
@@ -23,21 +23,21 @@ ht-degree: 78%
    + [SDK、库和扩展](getting-started/download-sdks.md)
    + [支持的设备](getting-started/supported-devices.md)
    + [前提条件](getting-started/prereqs.md)
-   + [停止支持](additional-resources/end-of-support-faqs.md)
+   + [终止支持](additional-resources/end-of-support-faqs.md)
    + [流媒体文档](getting-started/implementation-documentation.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
-   + Media SDK — 实施 {#media-sdk}
-      + [Media SDK概述](implementation/media-sdk/media-sdk-overview.md)
+   + 媒体 SDK - 实施 {#media-sdk}
+      + [媒体 SDK 概览](implementation/media-sdk/media-sdk-overview.md)
       + 安装和配置 {#setup}
-         + [安装Web SDK](implementation/media-sdk/setup/web-implementation.md)
-         + [安装Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
-         + 安装OTT SDK {#ott-setup}
-            + [安装Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
-            + [安装Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
-   + 媒体收集API — 实施 {#streaming-media-apis}
+         + [安装 Web SDK](implementation/media-sdk/setup/web-implementation.md)
+         + [安装移动 SDK](implementation/media-sdk/setup/mobile-implementation.md)
+         + 安装 OTT SDK{#ott-setup}
+            + [安装 Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
+            + [安装 Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
+   + 媒体收集 API - 实施 {#streaming-media-apis}
       + [媒体收集](implementation/media-collection-api/mc-api-overview.md)
-      + [API快速入门](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
+      + [API 快速入门](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
       + [会话请求](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
       + [事件请求](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
       + [请求参数](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
@@ -78,7 +78,7 @@ ht-degree: 78%
    + [通过 API 获取并行查看者数据](reporting/reports-and-analytics/get-concurrent-json20.md)
    + [通过 API 获取 Media Playback 耗时数据](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 用例 {#media-use-cases}
-   + [Media SDK用例](use-cases/cookbook/sdk-cookbook-overview.md)
+   + [媒体 SDK 用例](use-cases/cookbook/sdk-cookbook-overview.md)
    + 播放器状态跟踪 {#player-state-tracking}
       + [概述](use-cases/player-state-tracking/player-state-overview.md)
       + [标准状态和自定义状态](use-cases/player-state-tracking/standard-and-custom-states.md)
@@ -87,46 +87,46 @@ ht-degree: 78%
       + [播放器状态跟踪示例](use-cases/player-state-tracking/player-state-examples.md)
    + [跟踪离线下载的内容](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
-   + [处理应用程序在播放过程中出现的中断问题](use-cases/cookbook/app-interrupts.md)
+   + [处理播放期间的应用程序中断](use-cases/cookbook/app-interrupts.md)
    + [媒体流归因](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [恢复不活动的会话](use-cases/cookbook/resuming-inactive.md)
-   + [SceneGraph中的Roku跟踪](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [处理广告之间的差距](use-cases/cookbook/fix-ad-play-ad.md)
-   + 时间轴 {#timelines}
+   + [SceneGraph 中的 Roku 跟踪](use-cases/cookbook/sdk-track-scenegraph.md)
+   + [处理广告之间的间隔](use-cases/cookbook/fix-ad-play-ad.md)
+   + 时间线 {#timelines}
       + [章节开始和结束](use-cases/timelines/chapter-start-end.md)
-      + [查看内容结束](use-cases/timelines/view-to-end-of-content.md)
+      + [查看到内容结束](use-cases/timelines/view-to-end-of-content.md)
       + [放弃会话](use-cases/timelines/user-abandons-session.md)
-   + 在OTT应用程序中使用Analytics {#analytics-with-ott}
+   + 在 OTT 应用程序中使用 Analytics {#analytics-with-ott}
       + [跟踪应用程序状态](use-cases/analytics-with-ott/track-app-states.md)
       + [跟踪应用程序操作](use-cases/analytics-with-ott/track-app-actions.md)
       + [设置用户 ID](use-cases/analytics-with-ott/set-user-ids.md)
       + [OTT 和 Audience Manager](use-cases/analytics-with-ott/ott-am.md)
       + [OTT 和 Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
-+ 隐私和安全 {#streaming-media-privacy}
++ 隐私和安全性 {#streaming-media-privacy}
    + [选择禁用和隐私设置](privacy/opt-out-privacy.md)
    + [安全性](privacy/security.md)
 + 旧版实施 {#legacy-implementations}
-   + [旧版 — 概述](legacy/setup/legacy-setup-overview.md)
-   + [旧版 — 下载SDK](legacy/legacy-download-sdks.md)
-   + 旧版 — Media SDK {#legacy-media-sdks}
-      + [旧版 — Media SDK概述](legacy/media-sdk/setup/setup-overview.md)
+   + [旧版 - 概述](legacy/setup/legacy-setup-overview.md)
+   + [旧版 - 下载 SDK](legacy/legacy-download-sdks.md)
+   + 旧版 - 媒体 SDK{#legacy-media-sdks}
+      + [旧版 - 媒体 SDK 概述](legacy/media-sdk/setup/setup-overview.md)
       + [设置 Android](legacy/media-sdk/setup/set-up-android.md)
       + [设置 iOS](legacy/media-sdk/setup/set-up-ios.md)
       + 设置 JavaScript {#setup-javascript}
          + [设置 JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + 旧版 — 从Media SDK迁移到Launch {#sdk-to-launch}
+   + 旧版 - 从媒体 SDK 迁移到 Launch {#sdk-to-launch}
       + [概述](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android — 从Media SDK到Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS — 从Media SDK到Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript — 从Media SDK到Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-   + [关于心率测量](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime和流媒体分析](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-   + [Adobe受众管理启用](legacy/intro-to-ava/am-enablement.md)
+      + [Android - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+      + [iOS - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+      + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+   + [有关心率测量](legacy/heartbeat-measurement.md)
+   + [Adobe Primetime 和 Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe 受众管理启用](legacy/intro-to-ava/am-enablement.md)
    + [自定义链接实施](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + 旧版里程碑跟踪 {#legacy-milestone-tracking}
       + [旧版里程碑跟踪](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
-      + [将里程碑迁移到VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
-      + [将里程碑迁移到CL](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+      + [将里程碑迁移到 VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+      + [将里程碑迁移到 CL](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + 验证 {#validation}
       + [验证概述](legacy/validation/validation-overview.md)
       + [测试 1：标准播放](legacy/validation/test1-standard-playback.md)
@@ -135,11 +135,11 @@ ht-degree: 78%
       + [心率参数描述](legacy/validation/heartbeat-params.md)
       + 调试 {#debugging}
          + [SDK 调试](legacy/validation/debugging/sdk-debugging.md)
-   + [旧版迁移：从VHL 1.x到VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
+   + [旧版迁移：VHL 1.x 到 VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
    + [设置 JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-   + [v1.x与v2.x的代码比较](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
-   + [跟踪API 1x到2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
-   + [旧版 — AVA简介](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
+   + [代码对比 v1.x 到 v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
+   + [跟踪 API 1x 到 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
+   + [旧版 - AVA 简介](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
    + [客户端路径](legacy/intro-to-ava/implementation-paths/client-side-path.md)
    + 跟踪 {#track-av-playback}
       + [概述](use-cases/track-av-playback/track-core-overview.md)
