@@ -1,14 +1,14 @@
 ---
-title: 选择禁用和隐私说明
+title: 解释选择禁用和隐私
 description: 了解如何处理选择启用、选择禁用和隐私。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '358'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
