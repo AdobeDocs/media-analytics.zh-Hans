@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -71,4 +71,4 @@ ht-degree: 96%
 
 >[!IMPORTANT]
 >
->请勿更改量度和元数据表(例如， [音频和视频参数](/help/implementation/variables/audio-video-parameters.md) 中的“分类”。 在启用报表包进行媒体跟踪后，将定义媒体分类。Adobe 会不时添加新属性，如果添加了新属性，客户必须重新启用其报表包才能访问新的媒体属性。在更新过程中，Adobe 会通过检查变量名称来确定是否启用了分类。如果任何变量名称缺失，Adobe 会再次添加缺失的变量名称。
+>请勿更改在“指标和元数据”表（如[音频和视频参数](/help/implementation/variables/audio-video-parameters.md)）中列出的在“报表/保留的变量”下被描述为“分类”的任何变量的分类名称。在启用报表包进行媒体跟踪后，将定义媒体分类。Adobe 会不时添加新属性，如果添加了新属性，客户必须重新启用其报表包才能访问新的媒体属性。在更新过程中，Adobe 会通过检查变量名称来确定是否启用了分类。如果任何变量名称缺失，Adobe 会再次添加缺失的变量名称。
