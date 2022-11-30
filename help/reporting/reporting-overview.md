@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '915'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 >
 >要利用新功能，现有的 Media Analytics 客户应当为他们的 RSID 重新启用媒体跟踪。
 
-1. 在 [Adobe Analytics](https://experience.adobe.com) 单击 **[!UICONTROL 管理员>报表包].**
+1. 在 [Adobe Analytics](https://experience.adobe.com) 中，单击&#x200B;**[!UICONTROL 管理员 > 报表包]**。
 1. 选择要在其中收集媒体数据的报表包，然后单击&#x200B;**[!UICONTROL 编辑设置 > 媒体管理 > 媒体报告]。**
 
    ![](assets/media-reporting.png){width="400px"}
@@ -35,7 +35,7 @@ ht-degree: 97%
 
    * **媒体广告**
 
-      媒体广告测量用于测量媒体内容中的广告。这将使用解决方案eVar来测量面板位置中的广告、广告播放器名称、广告面板和广告。 解决方案事件将用于广告开始、广告结束、广告逗留时间和视频逗留时间。
+      媒体广告测量用于测量媒体内容中的广告。这样将使用 evar 解决方案测量“广告”、“广告播放器名称”、“广告面板”和“面板中的广告位置”。解决方案事件将用于广告开始、广告结束、广告逗留时间和视频逗留时间。
 
    * **媒体章节**
 
@@ -69,4 +69,4 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->请勿更改量度和元数据表（例如，[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)）中列出的在“报表/保留的变量”下描述为“分类”的任何变量的分类名称。在启用报表包进行媒体跟踪后，将定义媒体分类。Adobe 会不时添加新属性，如果添加了新属性，客户必须重新启用其报表包才能访问新的媒体属性。在更新过程中，Adobe 会通过检查变量名称来确定是否启用了分类。如果任何变量名称缺失，Adobe 会再次添加缺失的变量名称。
+>请勿更改在“指标和元数据”表（如[音频和视频参数](/help/metrics-and-metadata/audio-video-parameters.md)）中列出的在“报表/保留的变量”下被描述为“分类”的任何变量的分类名称。在启用报表包进行媒体跟踪后，将定义媒体分类。Adobe 会不时添加新属性，如果添加了新属性，客户必须重新启用其报表包才能访问新的媒体属性。在更新过程中，Adobe 会通过检查变量名称来确定是否启用了分类。如果任何变量名称缺失，Adobe 会再次添加缺失的变量名称。
