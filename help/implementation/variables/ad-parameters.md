@@ -6,7 +6,7 @@ exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2100'
 ht-degree: 100%
 
@@ -91,7 +91,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/>  [位置](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.podPosition </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/> </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 1 </li><li> **描述：**<br/>&#x200B;广告时间在内容中的索引，从 1 开始编号。此属性&#x200B;**仅**&#x200B;供 Media SDK 用于生成面板 ID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **心率：**<br/> </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;否 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/> </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager:**<br/> </li> <li> **XDM 字段路径：**<br/> advertising.adAssetViewDetails.index </li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.advertisingPodDetails.index </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.podPosition </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/> </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 1 </li><li> **描述：**<br/>&#x200B;广告时间在内容中的索引，从 1 开始编号。此属性&#x200B;**仅**&#x200B;供 Media SDK 用于生成面板 ID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **心率：**<br/> </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;否 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/> </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager:**<br/> </li> <li> **XDM 字段路径：**<br/> advertising.adAssetViewDetails.index </li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.advertisingPodDetails.index </li> </ul> |
 
 
 
@@ -99,7 +99,7 @@ ht-degree: 100%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.podSecond </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 90 </li><li> **描述：**<br/>&#x200B;广告时间在内容中的偏移，以秒为单位。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>podSecond) </li> <li> **心率：**<br/>(l:asset:pod_offset) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/>&#x200B;分类 </li> <li> **报表名称：**<br/>&#x200B;面板位置 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>podSecond) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.podSecond) </li> <li> **XDM 字段路径：**<br/> advertising.adAssetViewDetails.adBreak.<br/>offset </li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.advertisingPodDetails.<br/>偏移 </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.advertisingPodDetails.<br/>偏移 </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **API 密钥：**<br/> media.ad.podSecond </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;数值 </li> <li> **发送条件：**<br/>&#x200B;广告开始、广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> 90 </li><li> **描述：**<br/>&#x200B;广告时间在内容中的偏移，以秒为单位。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>podSecond) </li> <li> **心率：**<br/>(l:asset:pod_offset) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/>&#x200B;分类 </li> <li> **报表名称：**<br/>&#x200B;面板位置 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>podSecond) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.podSecond) </li> <li> **XDM 字段路径：**<br/> advertising.adAssetViewDetails.adBreak.<br/>offset </li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.advertisingPodDetails.<br/>offset </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.advertisingPodDetails.<br/>offset </li> </ul> |
 
 
 
