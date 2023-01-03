@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
-source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
-workflow-type: ht
-source-wordcount: '439'
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Adobe Analytics for Streaming Media 提供两种主要的实施方法，媒体 S
 * 过顶
 * 任何可用于流媒体或服务器到服务器集成的联网设备
 
-有关详细信息，请参阅[支持的设备和平台](#_Supported_devices_and)。
+有关详细信息，请参阅[支持的设备和平台](/help/getting-started/supported-devices.md)。
 
 >[!IMPORTANT]
 >
@@ -45,11 +45,3 @@ Adobe Analytics for Streaming Media 提供两种主要的实施方法，媒体 S
 通过&#x200B;**媒体收集 API**，可自定义您的媒体分析实施。使用媒体收集 API 直接调用 Adobe 的服务器以执行您可使用 SDK 执行的几乎任何操作。自定义您的数据收藏集以创建报表，这些报表探索您的流媒体数据、获取关于您的流媒体数据的见解或回答关于您的流媒体数据的重要问题。
 
 有关使用媒体收集 API 的信息，请参阅[流媒体 API 文档 ](/help/implementation/media-collection-api/mc-api-overview.md)。
-
-## Adobe 扩展 {#adobe-extensions}
-
-* iOS 和 tvOS 实施需要 [**Adobe Media Analytics for Audio and Video 扩展**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hans)（Media Analytics 扩展）。它提供将跟踪器实例添加到标记网站或项目的功能。MA 扩展还需要 Analytics 扩展和 Experience Cloud ID 扩展。
-
-* [Analytics 扩展 v1.6 或更高版本](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hans) - 通过此扩展，可加载 Adobe Experience Platform Web SDK Javascript 库以将数据发送到 Adobe 解决方案。
-
-* [Experience Cloud ID 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hans) - 此扩展实施 Experience Cloud ID 服务，该服务在所有 Experience Cloud 解决方案间标识访客。Experience Cloud ID 服务是 Adobe Experience Platform 中的个性化扩展。

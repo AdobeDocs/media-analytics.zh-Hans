@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
+workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe Analytics for Streaming Media 文档位于多个产品网站中。根据�
 | 实施 | 文档 |
 |:-----------------------:|----------------|
 | **Web** | * [流媒体的 Web 实施](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [采用 Adobe Media Analytics for Audio and Video 扩展的 Web 实施](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) |
-| **移动** | *[Adobe Experience Platform 移动 SDK 指南](https://aep-sdks.gitbook.io/docs/) <br> *[Adobe Media Analytics for Audio and Video 扩展](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)<br> *[当前的移动 SDK 版本](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions) <br> *[流媒体的移动实施](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
+| **移动** | *[Adobe Experience Platform 移动 SDK 指南](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics for Audio and Video 扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[当前的移动 SDK 版本](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[流媒体的移动实施](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
 | **OTT** | *[适用于 Adobe Marketing Cloud 解决方案的 Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[设置 Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> *[设置 Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform API** | *[媒体收集 API](/help/implementation/media-collection-api/mc-api-overview.md) |
 
@@ -33,7 +33,7 @@ Adobe Analytics for Streaming Media 文档位于多个产品网站中。根据�
 
 | 产品 | 文档 |
 |:-----------------------:|----------------|
-| **Adobe Analytics** | *[Adobe Analytics 实施指南](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)<br> *[Adobe Analytics 组件指南](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=zh-Hans)<br> *[Adobe Analytics 工具指南](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=zh-Hans)<br> *[ Adobe Analytics 教程](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hans#tutorials) <br> *[ Adobe Analytics API](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Analytics 的移动实施](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics) |
+| **Adobe Analytics** | *[Adobe Analytics 实施指南](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)<br> *[Adobe Analytics 组件指南](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=zh-Hans)<br> *[Adobe Analytics 工具指南](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=zh-Hans)<br> *[ Adobe Analytics 教程](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hans#tutorials) <br> *[ Adobe Analytics API](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Analytics 的移动实施](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
 | **标记** | *[Adobe Experience Platform 标记文档](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) |
 
 ## Adobe Enterprise 教程 {#adobe-tutorials}

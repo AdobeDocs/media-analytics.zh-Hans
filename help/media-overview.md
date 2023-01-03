@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '529'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Analytics for Streaming Media 使您能够跟踪整个网站和流媒体�
 
 ## 工作原理
 
-使用媒体 SDK、媒体收集 API 或媒体扩展（带标记）从播放器收集流媒体跟踪数据。将所有粒度的数据（最长 10 秒）发送到 Media Analytics 服务，该服务收集并处理每个播放会话的数据。回放会话结束后，将计算得出的跟踪数据发送到 Adobe Analytics 以供存储和编制报表。通过 Adobe Customer Journey Analytics (CJA) 实施，可使用 Analytics Data Connector (ADC) 将数据发送到 CJA，以使客户可使用 CJA 作为报表工具。
+使用Media SDK或Adobe Experience Platform媒体扩展和媒体收集API从播放器收集流媒体跟踪数据。 将所有粒度的数据（最长 10 秒）发送到 Media Analytics 服务，该服务收集并处理每个播放会话的数据。回放会话结束后，将计算得出的跟踪数据发送到 Adobe Analytics 以供存储和编制报表。通过 Adobe Customer Journey Analytics (CJA) 实施，可使用 Analytics Data Connector (ADC) 将数据发送到 CJA，以使客户可使用 CJA 作为报表工具。
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 

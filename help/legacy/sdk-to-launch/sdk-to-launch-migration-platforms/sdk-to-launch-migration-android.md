@@ -4,10 +4,10 @@ description: 了解如何从 Media SDK 迁移到适用于 Android 的 Launch。
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -45,7 +45,7 @@ Media 扩展将使用已配置的参数进行跟踪。
 
 ![](assets/launch_config_mobile.png)
 
-[使用移动扩展](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[使用移动扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## 创建跟踪器
 
@@ -85,7 +85,7 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 ### Launch 扩展
 
-[媒体 API 引用 — 创建媒体跟踪器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[媒体 API 引用 — 创建媒体跟踪器](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 在创建跟踪器之前，应先使用移动核心注册媒体扩展和从属扩展。
 
@@ -133,11 +133,11 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 
 该实施应通过调用跟踪器公开的 `updateCurrentPlayhead` 方法来更新当前播放器的播放头。要进行准确跟踪，您应至少每秒调用一次此方法。
 
-[媒体 API 引用 — 更新当前播放器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[媒体 API 引用 — 更新当前播放器](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 该实施应通过调用跟踪器公开的 `updateQoEObject` 方法来更新 QoE 信息。我们希望每当质量量度发生变化都要调用此方法。
 
-[媒体 API 引用 — 更新 QoE 对象](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[媒体 API 引用 — 更新 QoE 对象](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## 传递标准媒体/广告元数据
 

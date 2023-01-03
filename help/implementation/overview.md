@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
+workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 您遵循的实施路径取决于您是选择使用媒体 SDK 的内置逻辑（标准、推荐的实施），还是选择自己动手并使用简单但功能强大且可自定义的媒体收集 API (RESTful)。
 
-根据支持的平台选择实施路径。媒体 SDK 或 Adobe Experience Platform 媒体 SDK 不支持某些播放器，而媒体收集 API 提供一种方式可支持这些播放器。有关支持的设备的信息，请参阅[支持的设备和平台](/help/getting-started/supported-devices.md)。
+根据支持的平台选择实施路径。Media SDK或Adobe Experience Platform Media Extensions不支持某些播放器。 媒体收集API提供了一种支持这些播放器的方法。 有关支持的设备的信息，请参阅[支持的设备和平台](/help/getting-started/supported-devices.md)。
 
 ![媒体流](media-sdk/assets/choose-media-flow2.png)
 

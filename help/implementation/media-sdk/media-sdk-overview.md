@@ -1,15 +1,15 @@
 ---
 title: 如何实施Adobe流媒体SDK
-description: 了解如何使用Media SDK实施适用于流媒体的Adobe Analytics。
+description: 了解如何使用Media SDK实施适用于流媒体的 Adobe Analytics。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
-
 
 # Media SDK概述 {#implementation-overview}
 
@@ -17,14 +17,14 @@ ht-degree: 3%
 
 ## 支持的流媒体平台
 
-### Web实施
+### Web 实施
 
 | 平台 | 版本 |
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [适用于JavaScript的Media SDK v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
-| <img src="assets/javascript-icon.png"> | [Adobe Medium适用于Javascript v3.x的Analytics扩展(带有标记（数据收集）)](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Adobe Medium适用于Javascript v3.x的带有标记的Analytics扩展（数据收集）](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
-### 移动设备实施
+### 移动实施
 
 | 平台 | 版本 |
 |:----:|:----|

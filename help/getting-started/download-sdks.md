@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '645'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 99%
 
 ---
 
@@ -39,8 +39,8 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记�
 
 | 支持的平台 | 版本 | 文档 | 示例 |
 |:---:|---|---|---|
-| ![Android 图标](assets/android-icon.png) | Android - 媒体扩展 | [移动 SDK 文档](https://developer.adobe.com/client-sdks/documentation/) | [Adobe Analytics - Media Analytics for Audio and Video 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Apple iOS 图标](assets/ios-icon.png)<br>添加 tvOS 图标 | iOS / tvOS - 媒体扩展 | [移动 SDK 文档](https://developer.adobe.com/client-sdks/documentation/) | [Adobe Analytics - Media Analytics for Audio and Video 示例](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Android 图标](assets/android-icon.png) | Android - 媒体扩展 | [移动 SDK 文档](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
+| ![Apple iOS 图标](assets/ios-icon.png)<br>添加 tvOS 图标 | iOS / tvOS - 媒体扩展 | [移动 SDK 文档](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 示例](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 
 ### 过顶实施 {#download-ott-libraries}
 
@@ -48,25 +48,3 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记�
 |:---:|---|---|---|
 | ![Chromecast 图标](assets/chromecast-icon.png) | [适用于 Chromecast 的 SDK v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [设置适用于 Chromecast 的移动 SDK v3.x](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
 | ![Roku 图标](assets/roku-icon.png) | [适用于 Roku 的 SDK v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | [Roku API 参考](/help/implementation/media-sdk/setup/set-up-roku.md) | [设置适用于 Roku 的移动 SDK v2.x](/help/implementation/media-sdk/setup/set-up-roku.md) |
-
-## Adobe 扩展 {#adobe-extensions}
-
-### 流媒体扩展 {#streaming-media-extension}
-
-**Adobe Media Analytics for Audio and Video 扩展**&#x200B;需要 Adobe Analytics for Media 附加组件 SKU。要了解更多信息，请联系您的 Adobe 销售代表、客户经理或客户成功经理。
-
-有关安装、配置和实施 **Adobe Media Analytics for Audio and Video 扩展**&#x200B;的详细信息，请参阅 [Adobe Media Analytics for Audio and Video 扩展概述](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hans)和[配置 Media Analytics 扩展](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics#configure-the-media-analytics-extension)。
-
-### Analytics 扩展 {#analytics-extension}
-
-[Analytics 扩展 v1.6 或更高版本](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hans) - 通过此扩展，可加载 Adobe Experience Platform Web SDK Javascript 库以将数据发送到 Adobe 解决方案。需要 **Analytics 扩展** v1.6 或更高版本。
-
-有关配置此扩展的信息，请参阅[配置 Adobe Analytics 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hans)。
-
-### Experience Cloud ID 扩展 {#cloud-id-extension}
-
-[Experience Cloud ID 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hans) - 此扩展实施 Experience Cloud ID 服务，该服务在所有 Experience Cloud 解决方案间标识访客。Experience Cloud ID 服务是 Adobe Experience Platform 中的个性化扩展。
-
-使用此扩展将 Experience Cloud Identity Service 融入您的财产。通过 Experience Cloud Identity Service，可为网站访客创建并存储唯一且永久的标识符。
-
-有关配置此扩展的信息，请参阅[配置 Experience Cloud ID 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hans)。

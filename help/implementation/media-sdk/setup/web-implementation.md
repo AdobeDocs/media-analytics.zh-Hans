@@ -1,22 +1,23 @@
 ---
-title: 如何为Analytics for Streaming Media设置Web实施
+title: 如何为适用于流媒体的 Analytics设置Web实施
 description: 了解如何为Web应用程序实施Adobe流媒体。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 71%
+source-wordcount: '449'
+ht-degree: 73%
 
 ---
 
-
 # 安装Web SDK {#install-web-sdks}
 
-设置适用于JavaScript的Media SDK v3.x >> Calise希望在下载页面/链接中使用的内容
+本节包含有关如何安装Web独立SDK和设置JavaScript的信息。
 
-本节包含有关如何安装Web SDK和设置JavaScript的信息。
+* [独立Web SDK](/help/implementation/media-sdk/setup/web-implementation.md)
 
+* [Web扩展SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans){target=_blank}
 
 ## 前提条件 {#prerequesites}
 
