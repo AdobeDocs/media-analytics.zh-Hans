@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施 Adobe Analytics for Streaming Media。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
+source-git-commit: f25a661c9ad4af1aa1cd97854c26fda44cc6816e
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 98%
+source-wordcount: '894'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,13 @@ ht-degree: 98%
    + [SDK、库和扩展](getting-started/download-sdks.md)
    + [支持的设备](getting-started/supported-devices.md)
    + [前提条件](getting-started/prereqs.md)
-   + [终止支持](additional-resources/end-of-support-faqs.md)
+   + 终止支持 {#end-of-support}
+      + [Media Analytics Mobile SDK终止支持](additional-resources/end-of-support-faqs.md)
+      + 旧版 - 从媒体 SDK 迁移到 Launch {#sdk-to-launch}
+      + [概述](legacy/sdk-to-launch/sdk-to-launch-migration.md)
+      + [Android - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+      + [iOS - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+      + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [流媒体文档](getting-started/implementation-documentation.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
@@ -160,11 +166,6 @@ ht-degree: 98%
       + [设置 iOS](legacy/media-sdk/setup/set-up-ios.md)
       + 设置 JavaScript {#setup-javascript}
          + [设置 JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + 旧版 - 从媒体 SDK 迁移到 Launch {#sdk-to-launch}
-      + [概述](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [有关心率测量](legacy/heartbeat-measurement.md)
    + [Adobe Primetime 和 Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe 受众管理启用](legacy/intro-to-ava/am-enablement.md)
