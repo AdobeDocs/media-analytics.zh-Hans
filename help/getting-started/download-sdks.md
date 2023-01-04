@@ -5,9 +5,9 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+source-git-commit: a9366d5bf590f16b193c7e2905cadca0f7afd636
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '385'
 ht-degree: 99%
 
 ---
@@ -32,7 +32,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记�
 
 | 支持的平台 | 版本 |  API   |  文档  | 示例 |
 |:---:|---|---|---|---|
-| ![JavaScript 图标](assets/javascript-icon.png) | Web - [适用于 JS v3.0.2 的媒体 SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [设置适用于 JavaScript 的媒体 SDK v3.x](/help/implementation/media-sdk/setup/web-implementation.md) | [适用于 JS 的媒体 SDK v3.0.2 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript 图标](assets/javascript-icon.png) | Web - [适用于 JS v3.0.2 的媒体 SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用 JavaScript 实施 Analytics](/help/implementation/media-sdk/setup/web-implementation.md) | [适用于 JS 的媒体 SDK v3.0.2 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript 图标](assets/javascript-icon.png) | Web - 媒体扩展 |  | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展 - 使用标记（数据收集）](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 
 ### 移动实施 {#get-mobile-extension}

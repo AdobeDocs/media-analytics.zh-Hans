@@ -4,20 +4,18 @@ description: 了解如何为Web应用程序实施Adobe流媒体。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
+source-git-commit: d0ea5f9d8ee61475aa40c606fb79659dfd6b3870
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 73%
+source-wordcount: '453'
+ht-degree: 70%
 
 ---
 
-# 安装Web SDK {#install-web-sdks}
+# 使用 JavaScript 实施 Analytics {#install-web-sdks}
 
-本节包含有关如何安装Web独立SDK和设置JavaScript的信息。
+本页中的信息介绍了如何安装Web独立SDK和设置JavaScript。
 
-* [独立Web SDK](/help/implementation/media-sdk/setup/web-implementation.md)
-
-* [Web扩展SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans){target=_blank}
+或者，您也可以使用Adobe Medium分析扩展来实施Analytics，如 [使用Media Analytics扩展实施Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## 前提条件 {#prerequesites}
 
