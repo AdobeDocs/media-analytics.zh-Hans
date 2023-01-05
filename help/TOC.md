@@ -5,7 +5,7 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施 Adobe Analytics for Streaming Media。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 97d5d1df35bb282cac803500e1ddd72d654aef6e
+source-git-commit: 9ff1cf4f622f9f2d34275297ffbc3ebf92c2f1ba
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 97%
@@ -20,9 +20,10 @@ ht-degree: 97%
    + [流媒体发行说明](additional-resources/release-notes.md)
 + 快速入门 {#getting-started}
    + [概述](getting-started/getting-started.md)
-   + [SDK、库和扩展](getting-started/download-sdks.md)
-   + [支持的设备](getting-started/supported-devices.md)
    + [前提条件](getting-started/prereqs.md)
+   + [支持的设备](getting-started/supported-devices.md)
+   + [流媒体文档](getting-started/implementation-documentation.md)
+   + [SDK、库和扩展](getting-started/download-sdks.md)
    + 终止支持 {#end-of-support}
       + [Media Analytics Mobile SDK终止支持](additional-resources/end-of-support-faqs.md)
       + 旧版 - 从媒体 SDK 迁移到 Launch {#sdk-to-launch}
@@ -30,7 +31,6 @@ ht-degree: 97%
          + [Android - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-   + [流媒体文档](getting-started/implementation-documentation.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
    + 媒体 SDK - 实施 {#media-sdk}
