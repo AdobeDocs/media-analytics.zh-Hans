@@ -5,20 +5,18 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
+source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 98%
+source-wordcount: '366'
+ht-degree: 90%
 
 ---
 
 # 获取媒体 SDK、使用标记的扩展和 OTT SDK {#download-sdks}
 
-此页面上的信息包括用于下载当前媒体 SDK 和获取媒体扩展的链接。
+此页面上的信息包括用于下载当前媒体SDK和获取使用标记的媒体扩展的链接。
 
-此页面上的信息包括用于下载当前媒体 SDK 和获取使用标记的媒体扩展的链接。
-
-Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记和移动 SDK 管理功能。标记提供一种简单的方式以部署和管理强化相关客户体验所需的分析、营销和广告解决方案。有关标记的其他信息，请参阅[标记概述](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=zh-Hans)
+Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记和移动 SDK 管理功能。标记提供一种简单的方式以部署和管理强化相关客户体验所需的分析、营销和广告解决方案。有关标记的其他信息，请参阅 [标记概述](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=zh-Hans).
 
 
 >[!NOTE]

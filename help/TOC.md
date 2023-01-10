@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施 Adobe Analytics for Streaming Media。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 9ff1cf4f622f9f2d34275297ffbc3ebf92c2f1ba
+source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '895'
 ht-degree: 97%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 97%
    + [流媒体发行说明](additional-resources/release-notes.md)
 + 快速入门 {#getting-started}
    + [概述](getting-started/getting-started.md)
-   + [前提条件](getting-started/prereqs.md)
+   + [先决条件](getting-started/prereqs.md)
    + [支持的设备](getting-started/supported-devices.md)
    + [流媒体文档](getting-started/implementation-documentation.md)
    + [SDK、库和扩展](getting-started/download-sdks.md)
    + 终止支持 {#end-of-support}
       + [Media Analytics Mobile SDK终止支持](additional-resources/end-of-support-faqs.md)
-      + 旧版 - 从媒体 SDK 迁移到 Launch {#sdk-to-launch}
+      + 旧版 — 从独立Media SDK迁移到Launch {#sdk-to-launch}
          + [概述](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
@@ -34,7 +34,7 @@ ht-degree: 97%
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
    + 媒体 SDK - 实施 {#media-sdk}
-      + [媒体 SDK 概览](implementation/media-sdk/media-sdk-overview.md)
+      + [Media SDK 概述](implementation/media-sdk/media-sdk-overview.md)
       + 安装和配置 {#setup}
          + 安装 Web SDK {#install-web-sdk}
             + [使用JavaScript安装Analytics](implementation/media-sdk/setup/web-implementation.md)
@@ -74,7 +74,7 @@ ht-degree: 97%
    + [关于区段](reporting/segments.md)
    + 媒体默认报表 {#media-default-reports}
       + [默认报表概述](reporting/reports-and-analytics/default-reports-overview.md)
-      + [媒体概览](reporting/reports-and-analytics/media-reports-overview.md)
+      + [媒体概述](reporting/reports-and-analytics/media-reports-overview.md)
       + [媒体详细信息](reporting/reports-and-analytics/media-reports-detail.md)
       + [“媒体时段”报表](reporting/reports-and-analytics/media-reports-daypart.md)
       + [“媒体并行查看者”报表](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
@@ -90,7 +90,7 @@ ht-degree: 97%
    + 播放器状态跟踪 {#player-state-tracking}
       + [概述](use-cases/player-state-tracking/player-state-overview.md)
       + [标准状态和自定义状态](use-cases/player-state-tracking/standard-and-custom-states.md)
-      + [实施与报告](use-cases/player-state-tracking/implementation-and-reporting.md)
+      + [实施与报表](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [多个播放器状态跟踪](use-cases/player-state-tracking/multiple-player-states.md)
       + [播放器状态跟踪示例](use-cases/player-state-tracking/player-state-examples.md)
    + [跟踪离线下载的内容](use-cases/track-downloaded-content.md)
@@ -98,7 +98,7 @@ ht-degree: 97%
    + [处理播放期间的应用程序中断](use-cases/cookbook/app-interrupts.md)
    + [媒体流归因](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [恢复不活动的会话](use-cases/cookbook/resuming-inactive.md)
-   + [SceneGraph 中的 Roku 跟踪](use-cases/cookbook/sdk-track-scenegraph.md)
+   + [Roku - SceneGraph 中的跟踪](use-cases/cookbook/sdk-track-scenegraph.md)
    + [处理广告之间的间隔](use-cases/cookbook/fix-ad-play-ad.md)
    + 时间线 {#timelines}
       + [章节开始和结束](use-cases/timelines/chapter-start-end.md)
@@ -229,7 +229,7 @@ ht-degree: 97%
          + [在 iOS 中跟踪错误](use-cases/track-errors/track-errors-ios.md)
          + 在 JavaScript 中跟踪错误 {#track-errors-js}
             + [在 JavaScript 2.x 中跟踪错误](use-cases/track-errors/track-errors-js/track-errors-js.md)
-      + 跟踪方案 {#tracking-scenarios}
+      + 跟踪场景 {#tracking-scenarios}
          + [不含广告的 VOD 播放](use-cases/tracking-scenarios/vod-no-intrs-details.md)
          + [包含前置式广告的 VOD 播放](use-cases/tracking-scenarios/vod-preroll-ads.md)
          + [跳过广告的 VOD 播放](use-cases/tracking-scenarios/vod-skipped-ads.md)
