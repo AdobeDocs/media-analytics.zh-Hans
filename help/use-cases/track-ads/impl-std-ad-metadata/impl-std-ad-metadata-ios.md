@@ -1,14 +1,14 @@
 ---
-title: 了解如何在iOS中实施标准广告元数据
+title: 了解如何在 iOS 中实施标准广告元数据
 description: 如何在 iOS 上的广告跟踪中使用标准广告元数据。
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '65'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
