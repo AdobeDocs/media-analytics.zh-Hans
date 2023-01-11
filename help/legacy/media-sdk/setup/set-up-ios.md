@@ -6,9 +6,9 @@ exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 98%
 
    1. 验证以下软件组件存在于 `libs` 目录中：
 
-      * `ADBMediaHeartbeat.h`：用于 iOS 心率跟踪 API 的 Objective-C 头文件。
+      * `ADBMediaHeartbeat.h`：用于 iOS 心跳跟踪 API 的 Objective-C 头文件。
       * `ADBMediaHeartbeatConfig.h`：用于 SDK 配置的 Objective-C 头文件。
       * `MediaSDK.a`：启用了 bitcode 的胖二进制文件，其中包含用于 iOS 设备（armv7、armv7s、arm64）和模拟器（i386 和 x86_64）的库生成。
 
@@ -161,7 +161,7 @@ ht-degree: 98%
 
 在版本 2.x 中，所有公共方法都已合并到 `ADBMediaHeartbeat` 类中，从而更加便于开发人员使用。所有配置都已合并到 `ADBMediaHeartbeatConfig` 类中。
 
-有关从1.x迁移到2.x的信息，请参阅旧版实施文档。)
+有关从 1.x 迁移到 2.x 的信息，请参阅旧版实施文档。
 
 ## 配置适用于 tvOS 的本地应用程序
 
