@@ -1,23 +1,23 @@
 ---
-title: 了解如何使用JavaScript 3.x跟踪缓冲
-description: 了解如何在浏览器应用程序(JS)中跟踪缓冲事件。
+title: 了解如何使用 JavaScript 3.x 跟踪缓冲
+description: 了解如何跟踪浏览器应用程序 (JS) 中的缓冲事件。
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
-# 使用JavaScript 3.x跟踪缓冲{#track-buffering-on-javascript}
+# 使用 JavaScript 3.x 跟踪缓冲{#track-buffering-on-javascript}
 
-下面的说明为所有 3.x SDK 实施提供了指南。
+以下说明为所有 3.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
->如果您实施的是SDK的先前版本，可以在此处下载开发人员指南： [下载SDK。](/help/getting-started/download-sdks.md)
+>如果您实施的是 SDK 之前的版本，可以在此处下载开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)。
 
 ## 缓冲跟踪常量
 
@@ -44,4 +44,4 @@ ht-degree: 65%
    };
    ```
 
-有关更多信息，请参阅跟踪方案[带有缓冲的 VOD 播放](/help/use-cases/tracking-scenarios/vod-buffering.md)。
+有关更多信息，请参阅跟踪场景[带有缓冲的 VOD 播放](/help/use-cases/tracking-scenarios/vod-buffering.md)。
