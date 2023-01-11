@@ -1,20 +1,20 @@
 ---
-title: 多个并行的VOD跟踪器
-description: 查看有关如何使用多个并行跟踪器跟踪VOD的示例。
+title: 多个并行的 VOD 跟踪器
+description: 查看有关如何使用多个并行跟踪器跟踪 VOD 的示例。
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # 多个并行的 VOD 跟踪器{#vod-multiple-trackers-in-parallel}
 
-## 方案 {#scenario}
+## 场景 {#scenario}
 
 在此方案中，针对两个不同的媒体以并行方式运行了两个会话，这两个会话使用两个不同的 `MediaHeartbeat` 实例。
 
@@ -24,11 +24,11 @@ ht-degree: 92%
 
 ## 参数 {#parameters}
 
-### 心率会话
+### 心跳会话
 
 | 参数 | 值 | 注释   |
 |---|---|---|
-| `s:event:sid` | 唯一的会话 ID | 唯一的会话 ID 一直存在于所有心率网络调用中，直到调用 `trackSessionEnd` 方法。 |
+| `s:event:sid` | 唯一的会话 ID | 唯一的会话 ID 一直存在于所有心跳网络调用中，直到调用 `trackSessionEnd` 方法。 |
 
 ## 示例代码 {#sample-code}
 
