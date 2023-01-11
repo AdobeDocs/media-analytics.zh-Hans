@@ -1,20 +1,20 @@
 ---
-title: 了解如何在Roku中跟踪缓冲
-description: 了解如何在Roku中跟踪缓冲事件。
+title: 了解如何在 Roku 中跟踪缓冲
+description: 了解如何在 Roku 中跟踪缓冲事件。
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
 exl-id: 73b10b42-02ab-47f8-8250-58f03c5e0dd1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '117'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # 在 Roku 中跟踪缓冲{#track-buffering-on-roku}
 
-下面的说明为所有 2.x SDK 实施提供了指南。
+以下说明为所有 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
@@ -45,4 +45,4 @@ ht-degree: 87%
    ADBMobile().mediaTrackEvent(MEDIA_BUFFER_COMPLETE, bufferInfo, bufferContextData)
    ```
 
-有关更多信息，请参阅跟踪方案[带有缓冲的 VOD 播放](/help/use-cases/tracking-scenarios/vod-buffering.md)。
+有关更多信息，请参阅跟踪场景[带有缓冲的 VOD 播放](/help/use-cases/tracking-scenarios/vod-buffering.md)。
