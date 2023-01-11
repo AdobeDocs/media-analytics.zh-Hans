@@ -1,14 +1,14 @@
 ---
-title: Chromecast元数据键说明
-description: 了解如何在Chromecast中设置要与跟踪调用一起发送的标准视频和广告元数据。
+title: 解释 Chromecast 元数据键
+description: 了解如何在 Chromecast 中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '139'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 84%
 | 节目 | `a.media.show` | `ADBMobile.media.VideoMetadataKeys.SHOW` |
 | 季 | `a.media.season` | `ADBMobile.media.VideoMetadataKeys.SEASON` |
 | 剧集 | `a.media.episode` | `ADBMobile.media.VideoMetadataKeys.EPISODE` |
-| 资产 | `a.media.asset` | `ADBMobile.media.VideoMetadataKeys.TMS_ID` |
+| 资源 | `a.media.asset` | `ADBMobile.media.VideoMetadataKeys.TMS_ID` |
 | 流派 | `a.media.genre` | `ADBMobile.media.VideoMetadataKeys.GENRE` |
 | 首次播放日期 | `a.media.airDate` | `ADBMobile.media.VideoMetadataKeys.FIRST_AIR_DATE` |
 | 首次数字化播放日期 | `a.media.digitalDate` | `ADBMobile.media.VideoMetadataKeys.FIRST_DIGITAL_DATE` |
