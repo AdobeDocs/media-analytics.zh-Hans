@@ -1,18 +1,18 @@
 ---
-title: 从1.x API转换到2.x API
-description: 浏览API引用，并列出1.x和2.x版Media SDK的必需和可选跟踪API。
+title: 从版本 1.x API 转换到版本 2.x API
+description: 浏览 API 参考，并且列出了 Media SDK 版本 1.x 和 2.x 的必需和可选跟踪 API。
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# 旧版API — 从1.x转换到2.x {#one-x-to-two-x-conv}
+# 旧版 API – 从 1.x 转换到 2.x {#one-x-to-two-x-conv}
 
 ## Media SDK 2.x API 引用
 
