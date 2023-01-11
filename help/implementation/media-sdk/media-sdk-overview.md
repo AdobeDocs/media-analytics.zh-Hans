@@ -1,19 +1,19 @@
 ---
-title: 如何实施Adobe流媒体SDK
-description: 了解如何使用Media SDK实施适用于流媒体的 Adobe Analytics。
+title: 如何实施 Adobe 流媒体 SDK
+description: 了解如何使用 Media SDK 实施适用于流媒体的 Adobe Analytics。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
 source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '202'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
-# Media SDK概述 {#implementation-overview}
+# Media SDK 概述 {#implementation-overview}
 
-将流媒体SDK实施到您的视频播放器框架和视频应用程序中，以收集Web、移动设备和OTT平台的流媒体数据。  通过我们同类最佳的媒体SDK和API收集，可以轻松共享、分段和审核您收集的关键量度。 深入研究 — 将流媒体量度与其他Adobe Analytics解决方案和数据点（如受众分析或移动设备应用程序访问和人员量度）相结合。
+在视频播放器框架和视频应用程序中实施流媒体 SDK，以收集 Web、移动和 OTT 平台的流媒体数据。可通过我们同类最佳的 Media SDK 和 API 收藏集轻松共享、分段和审查您收集的关键量度。深入研究 – 将流媒体量度与其他 Adobe Analytics 解决方案和数据点相结合，例如受众分析或移动应用程序访问和人员量度。
 
 ## 支持的流媒体平台
 
@@ -21,28 +21,28 @@ ht-degree: 6%
 
 | 平台 | 版本 |
 |:----:|:----|
-| <img src="assets/javascript-icon.png"> | [适用于JavaScript的Media SDK v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
-| <img src="assets/javascript-icon.png"> | [Adobe Medium适用于Javascript v3.x的带有标记的Analytics扩展（数据收集）](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [适用于 JavaScript v3.x 的 Media SDK](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [适用于 Javascript v3.x 的包含标记（数据收集）的 Adobe Media Analytics 扩展](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
 ### 移动实施
 
 | 平台 | 版本 |
 |:----:|:----|
-| <img src="assets/android-icon.png"> | [Adobe Experience Platform Media Analytics扩展（包含标记）（数据收集）](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
-| <img src="assets/apple-ios-icon.png"> | [Adobe Experience Platform Media Analytics扩展（包含标记）（数据收集）](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
+| <img src="assets/android-icon.png"> | [包含标记（数据收集）的 Adobe Experience Platform Media Analytics 扩展](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
+| <img src="assets/apple-ios-icon.png"> | [包含标记（数据收集）的 Adobe Experience Platform Media Analytics 扩展](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 
-* iOS Media Analytics for Audio and Video扩展支持iOS、iPadOS和tvOS。
+* iOS Media Analytics for Audio and Video 扩展支持 iOS、iPadOS 和 tvOS。
 
 ### 过顶实施
 
 | 平台 | 版本 |
 |:------:|:-----|
-| <img src="assets/chromecast-icon.png"> | [适用于Chromecast v3.x的Media SDK](../../getting-started/download-sdks.md#over-the-top-implementation-download-ott-libraries) |
-| <img src="assets/roku-icon.png"> | [适用于Roku v2.x的Media SDK](../../getting-started/download-sdks.md#over-the-top-implementation-download-ott-libraries) |
+| <img src="assets/chromecast-icon.png"> | [适用于 Chromecast 的 Media SDK v3.x](../../getting-started/download-sdks.md#over-the-top-implementation-download-ott-libraries) |
+| <img src="assets/roku-icon.png"> | [适用于 Roku 的 Media SDK v2.x](../../getting-started/download-sdks.md#over-the-top-implementation-download-ott-libraries) |
 
 
 ## 其他信息
 
-有关支持的设备和平台的其他信息，请参阅 [支持的设备和平台](/help/getting-started/supported-devices.md).
+有关受支持的设备和平台的其他信息，请参阅[受支持的设备和平台](/help/getting-started/supported-devices.md)。
 
-要下载SDK，请参阅 [获取Media SDK、使用标记的扩展以及OTT SDK](/help/getting-started/download-sdks.md).
+要下载 SDK，请参阅[获取 Media SDK、使用标记的扩展和 OTT SDK](/help/getting-started/download-sdks.md)。
