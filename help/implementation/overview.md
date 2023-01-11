@@ -6,20 +6,20 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # 实施 Streaming Media for Adobe Analytics
 
-您遵循的实施路径取决于您是选择使用媒体 SDK 的内置逻辑（标准、推荐的实施），还是选择自己动手并使用简单但功能强大且可自定义的媒体收集 API (RESTful)。
+您遵循的实施路径取决于您是选择使用 Media SDK 的内置逻辑（标准、推荐的实施），还是选择自己动手并使用简单但功能强大且可自定义的媒体收集 API (RESTful)。
 
-根据支持的平台选择实施路径。Media SDK或Adobe Experience Platform Media Extensions不支持某些播放器。 媒体收集API提供了一种支持这些播放器的方法。 有关支持的设备的信息，请参阅[支持的设备和平台](/help/getting-started/supported-devices.md)。
+根据支持的平台选择实施路径。一些播放器不受 Media SDK 或 Adobe Experience Platform 媒体扩展的支持。媒体收集 API 提供了一种支持这些播放器的方法。有关支持的设备的信息，请参阅[支持的设备和平台](/help/getting-started/supported-devices.md)。
 
 ![媒体流](media-sdk/assets/choose-media-flow2.png)
 
-有关下载和安装媒体 SDK 及扩展的信息，请参阅[获取媒体 SDK、使用标记的扩展和 OTT SDK](/help/getting-started/download-sdks.md)。
+有关下载和安装 Media SDK 及扩展的信息，请参阅[获取 Media SDK、使用标记的扩展和 OTT SDK](/help/getting-started/download-sdks.md)。
 
 有关使用媒体收集 API 的信息，请参阅[媒体收集 API](media-collection-api/mc-api-overview.md)。
