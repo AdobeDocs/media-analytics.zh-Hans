@@ -1,20 +1,20 @@
 ---
-title: 了解如何在Chromecast中跟踪体验质量
-description: “了解如何在Chromecast中使用Media SDK实施体验质量(QoE、QoS)跟踪。”
+title: 了解如何在 Chromecast 中跟踪体验质量
+description: “了解如何在 Chromecast 中使用 Media SDK 实施体验质量（QoE、QoS）跟踪。”
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # 在 Chromecast 中跟踪体验质量{#track-quality-of-experience-on-chromecast}
 
-下面的说明为所有 2.x SDK 实施提供了指南。
+以下说明为所有 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
