@@ -1,14 +1,14 @@
 ---
 title: 验证事件请求
-description: 了解如何使用JSON验证架构来验证事件请求。
+description: 了解如何使用 JSON 验证架构来验证事件请求。
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '121'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
