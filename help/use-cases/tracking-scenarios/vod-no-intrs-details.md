@@ -1,35 +1,35 @@
 ---
-title: 不含广告的VOD播放
-description: 查看跟踪不含广告的VOD播放的示例。
+title: 不含广告的 VOD 播放
+description: 查看有关跟踪不含广告的 VOD 播放的示例。
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '365'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # 不含广告的 VOD 播放{#vod-playback-with-no-ads}
 
-## 方案 {#scenario}
+## 场景 {#scenario}
 
-此方案有一个不含广告的 VOD 资产，该资产将从头到尾播放一次。
+此方案有一个不含广告的 VOD 资源，该资源将从头到尾播放一次。
 
-| 触发器 | 心率方法 | 网络调用 | 注释   |
+| 触发器 | 心跳方法 | 网络调用 | 注释   |
 |---|---|---|---|
-| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 这可以是用户点击“播放”或自动播放事件。 |
-| 媒体的第一帧 | `trackPlay` | 心率内容播放 | 此方法会触发计时器，从此刻开始，在播放期间，每 10 秒将发送一次心率。 |
-| 内容播放 |  | 内容心率 |  |
-| 内容结束 | `trackComplete` | 心率内容结束 | *结束*&#x200B;表示到达播放头的结尾。 |
+| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心跳内容开始 | 这可以是用户点击“播放”或自动播放事件。 |
+| 媒体的第一帧 | `trackPlay` | 心跳内容播放 | 此方法会触发计时器，从此刻开始，在播放期间，每 10 秒将发送一次心跳。 |
+| 内容播放 |  | 内容心跳 |  |
+| 内容结束 | `trackComplete` | 心跳内容结束 | *结束*&#x200B;表示到达播放头的结尾。 |
 
 ## 参数 {#parameters}
 
-您在心率内容开始调用中看到的许多值也会在 Adobe Analytics `Content Start` 调用中看到。Adobe 使用许多参数填充各种媒体报表，但下表中仅列出了最重要的参数：
+您在心跳内容开始调用中看到的许多值也会在 Adobe Analytics `Content Start` 调用中看到。Adobe 使用许多参数填充各种媒体报表，但下表中仅列出了最重要的参数：
 
-### 心率内容开始
+### 心跳内容开始
 
 | 参数 | 值 | 注释   |
 |---|---|---|
@@ -41,7 +41,7 @@ ht-degree: 95%
 | `s:asset:media_id` | &lt;您的媒体名称> |  |
 | `s:meta:*` | 可选 | 对媒体设置的自定义元数据。 |
 
-## 心率内容播放 {#heartbeat-content-play}
+## 心跳内容播放 {#heartbeat-content-play}
 
 这些参数应当看起来与 `Heartbeat Content Start` 调用几乎完全相同，但关键的区别在于 `s:event:type` 参数。所有其他参数仍应该存在。
 
@@ -50,20 +50,20 @@ ht-degree: 95%
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## 内容心率 {#content-heartbeats}
+## 内容心跳 {#content-heartbeats}
 
-在媒体播放期间，计时器至少每 10 秒发送一次心率。这些心率包含有关播放、广告、缓冲等的信息。每个心率的确切内容超出了此文档的范围，但关键问题是在播放持续的同时始终触发心率。
+在媒体播放期间，计时器至少每 10 秒发送一次心跳。这些心跳包含有关播放、广告、缓冲等的信息。每个心跳的确切内容超出了此文档的范围，但关键问题是在播放持续的同时始终触发心跳。
 
-在内容心率中，查找以下参数：
+在内容心跳中，查找以下参数：
 
 | 参数 | 值 | 注释   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;播放头位置> 例如，50,60,70 | 此参数反映播放头的当前位置。 |
 
-## 心率内容结束 {#heartbeat-content-complete}
+## 心跳内容结束 {#heartbeat-content-complete}
 
-当播放结束（即，到达播放头的结尾）时，将发送 `Heartbeat Content Complete` 调用。此调用与其他心率调用类似，但包含一些特定参数：
+当播放结束（即，到达播放头的结尾）时，将发送 `Heartbeat Content Complete` 调用。此调用与其他心跳调用类似，但包含一些特定参数：
 
 | 参数 | 值 | 注释   |
 |---|---|---|
