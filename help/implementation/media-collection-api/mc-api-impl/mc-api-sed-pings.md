@@ -1,14 +1,14 @@
 ---
 title: 发送 Ping 事件
-description: Ping事件是流媒体分析的心率。 了解如何为主内容或广告跟踪发送定时Ping。
+description: Ping 事件是流媒体分析的心跳。 了解如何针对主要内容或广告跟踪发送定时 Ping。
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '108'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 78%
 
 **对于主内容，您必须每 10 秒触发一次 Ping 事件，从播放 10 秒之后开始，而不考虑已发送的其他 API 事件。对于广告跟踪，必须每 1 秒触发一次 Ping 事件。**
 
-Ping 事件实际上就是 Media Analytics 的“心率”。Ping 调用所需的唯一参数是 `eventType: ping` 以及 `playerTime` 对象（播放头位置和时间戳）。
+Ping 事件实际上就是媒体分析的“心跳”。Ping 调用所需的唯一参数是 `eventType: ping` 以及 `playerTime` 对象（播放头位置和时间戳）。
 
 以下代码片段显示了一种为主内容实施定时 Ping 机制的方法（10 秒间隔）：
 
