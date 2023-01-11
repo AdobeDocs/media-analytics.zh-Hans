@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Android中实施标准广告元数据
+title: 了解如何在 Android 中实施标准广告元数据
 description: 如何在 Android 上的广告跟踪中使用标准广告元数据。
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
