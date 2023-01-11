@@ -1,13 +1,13 @@
 ---
 title: 播放器状态跟踪简介
-description: 了解播放器状态跟踪功能，包括实施和报告播放器状态的要求和准则。
+description: 了解播放器状态跟踪功能，包括实现和报告播放器状态的要求和准则。
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 94%
 
 “播放器状态跟踪”需要以下数据集之一：
 * Media JS SDK 3.0+
-* 适用于Adobe Marketing Cloud解决方案的Chromecast 3.0 SDK
+* 适用于 Adobe Marketing Cloud 解决方案的 Chromecast 3.0 SDK
 * Media Analytics 扩展（与 Adobe Experience Platform (AEP) SDK 一起使用）
    * Web：Adobe Media Analytics (3.x SDK) for Audio and Video v1.0+
    * 移动设备：Adobe Media Analytics for Audio and Video v2.0+
