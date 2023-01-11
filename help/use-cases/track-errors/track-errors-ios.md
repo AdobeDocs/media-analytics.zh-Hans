@@ -1,20 +1,20 @@
 ---
-title: 了解如何在iOS中跟踪错误
-description: 了解如何在iOS上使用Media SDK实施错误跟踪。
+title: 了解如何在 iOS 中跟踪错误
+description: 了解如何在 iOS 中使用 Media SDK 实施错误跟踪。
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 exl-id: c4ce7092-a102-41da-80a6-a4359f925708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '94'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # 在 iOS 中跟踪错误{#track-errors-on-ios}
 
-下面的说明为所有 2.x SDK 实施提供了指南。
+以下说明为所有 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
