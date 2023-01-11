@@ -1,18 +1,18 @@
 ---
-title: v1.x与v2.x的代码比较
-description: 了解1.x版和2.x版Media SDK中的代码差异。
+title: 代码对比 v1.x 到 v2.x
+description: 了解 1.x 版本和 2.x 版本的 Media SDK 中代码之间的差异。
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# 旧版代码对比 — 1.x与2.x {#code-comparison-x-to-x}
+# 旧版代码对比 – 1.x 与 2.x {#code-comparison-x-to-x}
 
 现在，所有的配置参数和跟踪 API 都已合并到 `MediaHeartbeats` 和 `MediaHeartbeatConfig` 类中。
 
@@ -75,7 +75,7 @@ configData.debugLogging = true;
 this._heartbeat.configure(configData);
 ```
 
-#### 媒体心率初始化 (2.x) {#mh-init-2.x}
+#### 媒体心跳初始化 (2.x) {#mh-init-2.x}
 
 ```js
 var mediaConfig = new MediaHeartbeatConfig();
