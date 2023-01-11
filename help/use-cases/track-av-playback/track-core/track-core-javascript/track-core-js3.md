@@ -1,13 +1,13 @@
 ---
-title: 了解如何使用JavaScript v3.x跟踪核心播放
-description: 了解如何使用JavaScript 3.x应用程序在浏览器中使用Media SDK实施核心跟踪。
+title: 了解如何使用 JavaScript v3.x 跟踪核心播放
+description: 了解如何使用 JavaScript 3.x 应用程序在浏览器中使用 Media SDK 实施核心跟踪。
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 95%
 
 1. **跟踪开始播放的意图**
 
-   要开始跟踪媒体会话，请在媒体心率实例中调用 `trackSessionStart`：
+   要开始跟踪媒体会话，请在媒体心跳实例中调用 `trackSessionStart`：
 
    ```js
    var mediaObject = ADB.Media.createMediaObject("video-name",
@@ -172,5 +172,5 @@ ht-degree: 95%
    >
    >这可能与步骤 4 中所使用的事件源相同。请确保当播放继续时，每个 `trackPause()` API 调用均与随后的一个 `trackPlay()` API 调用相配对。
 
-* 跟踪方案：[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
+* 跟踪场景：[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * JavaScript SDK 随附的示例播放器提供了完整的跟踪示例。
