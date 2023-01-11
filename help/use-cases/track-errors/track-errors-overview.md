@@ -1,20 +1,20 @@
 ---
-title: 跟踪错误说明
-description: 使用Media SDK深入了解错误跟踪。
+title: 解释跟踪错误
+description: 使用 Media SDK 更深入地了解错误跟踪。
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
 exl-id: 61c5f835-d66c-4621-a0af-2e4f47a922ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # 概述{#overview}
 
-下面的说明为所有 2.x SDK 实施提供了指南。
+以下说明为所有 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
