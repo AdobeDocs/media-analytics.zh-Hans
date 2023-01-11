@@ -1,14 +1,14 @@
 ---
 title: OTT 和 Experience Cloud
-description: 浏览有关将OTT应用程序与Experience Cloud集成的详细信息。
+description: 浏览有关将 OTT 应用程序与 Experience Cloud 集成的详细信息。
 uuid: 89264403-0fc8-4c76-b001-22e20e57bef2
 exl-id: dfeb0708-e744-4ff1-a644-3d77812f736a
 feature: "Media Analytics, Experience Cloud Integration"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '41'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
