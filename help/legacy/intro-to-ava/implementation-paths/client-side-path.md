@@ -6,17 +6,17 @@ exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '150'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 客户端{#client-side}
 
-**删除此页面??**
+**删除此页面？**
 
-Media Analytics（心率）是 Adobe 的标准化媒体跟踪解决方案。
+Media Analytics（心跳）是 Adobe 的标准化媒体跟踪解决方案。
 
 客户端集成只能通过 Media Analytics 实施。您可以选择实施 Media SDK 或媒体收集 API（或同时实施两者）。客户端路径可以跨任何播放器使用，包括客户和/或 OVP 播放器，如 Brightcove、Ooyala、thePlatform 等。
 
