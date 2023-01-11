@@ -5,7 +5,7 @@ exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Adobe Primetime{#primetime}
 
-Media Analytics（心率）是 Adobe 的标准化媒体跟踪解决方案，它取代了 Adobe 的里程碑模型。
+Media Analytics（心跳）是 Adobe 的标准化媒体跟踪解决方案，它取代了 Adobe 的里程碑模型。
 
 Adobe Primetime 是一款 Adobe Experience Cloud 解决方案，可帮助内容程序员和发行商从每一个连接屏幕上的媒体中盈利。
 
