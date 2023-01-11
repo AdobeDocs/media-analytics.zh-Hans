@@ -1,22 +1,22 @@
 ---
 title: 在 SceneGraph (Roku) 中跟踪
-description: 了解如何使用Roku SceneGraph XML编程框架跟踪媒体。
+description: 了解如何使用 Roku SceneGraph XML 编程框架跟踪媒体。
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1169'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Roku — 在SceneGraph中跟踪 {#tracking-in-scenegraph-roku}
+# Roku – SceneGraph 中的跟踪 {#tracking-in-scenegraph-roku}
 
 ## 简介 {#introduction}
 
-您可以使用Roku SceneGraph XML编程框架来开发应用程序。 此框架具有两个关键概念：
+您可以使用 Roku SceneGraph XML 编程框架来开发应用程序。此框架具有两个关键概念：
 
 * 应用程序屏幕的 SceneGraph 渲染
 * SceneGraph 屏幕的 XML 配置
@@ -105,7 +105,7 @@ Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件
 |  | mediaTrackEvent | 用于在跟踪期间跟踪回放事件的 SceneGraph API。例如：广告、章节。 |
 |  | `mediaUpdatePlayhead` | 用于在视频跟踪期间，将播放头更新发送到 MediaHeartbeat 的 SceneGraph API。 |
 |  | `mediaUpdateQoS` | 用于在视频跟踪期间，将 QoS 更新发送到 MediaHeartbeat 的 SceneGraph API。 |
-|  | 有关更多信息，请参阅旧版 SDK 的“媒体心率”部分。 |  |
+|  | 有关更多信息，请参阅旧版 SDK 的“媒体心跳”部分。 |  |
 
 ### SceneGraphConstants
 
@@ -144,7 +144,7 @@ Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件
 <pre>
 response = {
   "apiName" : &lt;SceneGraphConstants.
-               API_NAME&gt; 
+               API_NAME&gt;
   "returnValue : &lt;API_RESPONSE&gt;
 }</pre>
 将为 AdobeMobileSDK 中的任何 API 调用发送此响应对象的实例，根据 API 引用指南，该 API 调用应会返回一个值。例如，visitorMarketingCloudID() 的 API 调用将返回以下响应对象：
@@ -194,7 +194,7 @@ API 签名：`ADBMobile().sgConstants()`
 | 版本控制 | `version` | 表示检索 AdobeMobileLibrary 版本信息的常量 |
 | 隐私/选择退出 | `PRIVACY_STATUS_OPT_IN` | 表示“已选择启用”隐私状态的常量 |
 |  | `PRIVACY_STATUS_OPT_OUT` | 表示“已选择退出”隐私状态的常量 |
-| MediaHeartbeat 常量 | 请参阅以下页面上的常量：<br/><br/>[媒体心率方法](/help/use-cases/track-av-playback/track-core/track-core-roku.md)。 | 将这些常量与 MediaHeartbeat API 一起使用 |
+| MediaHeartbeat 常量 | 请参阅以下页面上的常量：<br/><br/>[媒体心跳方法](/help/use-cases/track-av-playback/track-core/track-core-roku.md)。 | 将这些常量与 MediaHeartbeat API 一起使用 |
 | 标准元数据 | 请参阅以下页面上的常量：<br/><br/>[标准元数据参数](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)。 | 使用这些常量可在 MediaHeartbeat API 中附加标准视频/广告元数据 |
 
 
