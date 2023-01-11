@@ -1,13 +1,13 @@
 ---
 title: 关于标准状态和自定义状态
-description: 了解播放器状态跟踪功能，包括实施和报告标准播放器状态和自定义播放器状态的要求和准则。
+description: 了解播放器状态跟踪功能，包括实施和报告标准播放器状态与自定义播放器状态的要求和准则。
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '279'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 92%
 
 在 Analytics 报表中，标准状态和自定义状态采用相同方式计算数据，但采用不同方式存储数据。
 
-**对于标准状态** - 当您从“媒体管理”控制台的 Analytics 报表（管理员端）中启用播放器状态跟踪时，有 15 个解决方案变量可用于报表和数据导出。
+**对于标准状态** - 当您从“媒体管理”控制台的 Analytics 报告（管理员端）中启用播放器状态跟踪时，有 15 个解决方案变量可用于报表和数据导出。
 
 **对于自定义状态** - 您可以创建自己的处理规则，将经过计算的值存储到自定义事件中，然后将这些规则用于报表和数据导出。
 
