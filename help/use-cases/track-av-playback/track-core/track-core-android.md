@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Android中跟踪核心播放
-description: 了解如何在Android中使用Media SDK实施核心跟踪。
+title: 了解如何在 Android 中跟踪核心播放
+description: 了解如何使用 Android 上的 Media SDK 实施核心跟踪。
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '708'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 97%
 
 1. **跟踪开始播放的意图**
 
-   要开始跟踪媒体会话，请在媒体心率实例中调用 `trackSessionStart`。例如：
+   要开始跟踪媒体会话，请在媒体心跳实例中调用 `trackSessionStart`。例如：
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
@@ -175,5 +175,5 @@ ht-degree: 97%
 
 有关跟踪核心播放的其他信息，请参阅以下内容：
 
-* 跟踪方案：[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
+* 跟踪场景：[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * Android SDK 随附有示例播放器，用于提供完整的跟踪示例。
