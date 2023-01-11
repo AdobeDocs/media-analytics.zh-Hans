@@ -1,14 +1,14 @@
 ---
 title: 跟踪应用程序状态
-description: 应用程序状态是指您的应用程序中的不同屏幕或视图。 了解如何使用trackState调用跟踪应用程序中的应用程序状态。
+description: 应用程序状态是指您的应用程序中的不同屏幕或视图。了解如何使用 trackState 调用跟踪应用程序中的应用程序状态。
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
