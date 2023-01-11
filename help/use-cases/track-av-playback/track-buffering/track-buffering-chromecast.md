@@ -1,20 +1,20 @@
 ---
-title: 了解如何在Chromecast中跟踪缓冲
-description: 了解如何在Chromecast中跟踪缓冲事件。
+title: 了解如何在 Chromecast 中跟踪缓冲
+description: 了解如何在 Chromecast 中跟踪缓冲事件。
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 exl-id: 26fd1e2a-4103-486f-be12-36b088d28cb6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '133'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # 在 Chromecast 中跟踪缓冲{#track-buffering-on-chromecast}
 
-下面的说明为所有 2.x SDK 实施提供了指南。
+以下说明为所有 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
@@ -42,4 +42,4 @@ ht-degree: 88%
    ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
    ```
 
-有关更多信息，请参阅跟踪方案[带有缓冲的 VOD 播放](/help/use-cases/tracking-scenarios/vod-buffering.md)。
+有关更多信息，请参阅跟踪场景[带有缓冲的 VOD 播放](/help/use-cases/tracking-scenarios/vod-buffering.md)。
