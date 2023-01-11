@@ -6,27 +6,27 @@ exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
-# 设置适用于Roku的Mobile SDK v2.x {#set-up-roku}
+# 设置适用于 Roku 的 Mobile SDK v2.x {#set-up-roku}
 
-## 前提条件 {#roku-prerequisites}
+## 先决条件 {#roku-prerequisites}
 
-* **获取Media Analytics的有效配置参数**
+* **获取 Media Analytics 的有效配置参数**
 
-   在设置Media Analytics帐户后，您可以从Adobe代表处获取这些参数。
-* **在媒体播放器中包含以下API**
+   在设置 Media Analytics 帐户后，这些参数可以从 Adobe 代表获取。
+* **在媒体播放器中包含以下 API**
 
    * _用于订阅播放器事件的 API_ - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * _提供播放器信息的 API_ - 此信息包括媒体名称和播放头位置等详细信息。
 
-适用于Experience Cloud解决方案的Roku SDK 2.x允许您测量使用BrightScript编写的Roku应用程序，通过受众管理收集并利用受众数据，以及通过视频事件测量视频参与度。
+适用于 Experience Cloud 解决方案的 Roku SDK 2.x 让您能够测量使用 BrightScript 编写的 Roku 应用程序，通过受众管理收集并利用受众数据，以及通过视频事件测量视频参与。
 
-## 移动库/ SDK实施
+## 移动设备库/SDK 实施
 
 1. 将[下载](/help/getting-started/download-sdks.md)的 Roku 库添加到您的项目中。
 
@@ -37,7 +37,7 @@ ht-degree: 82%
       * `ADBMobileConfig.json`：这是为您的应用程序自定义的 SDK 配置文件。
    1. 将库文件和 JSON 配置文件添加到您的项目源。
 
-      用于配置Adobe移动的JSON具有一个用于媒体分析的专用密钥，该密钥名为 `mediaHeartbeat`. 这是媒体分析的配置参数所属的位置。
+      用于配置 Adobe Mobile 的 JSON 具有一个用于 Media Analytics 的专有密钥，其名称为 `mediaHeartbeat`。这是 Media Analytics 的配置参数所属的位置。
 
       >[!TIP]
       >
@@ -103,7 +103,7 @@ ht-degree: 82%
 
 1. 配置 Experience Cloud 访客 ID。
 
-   Experience Cloud 访客 ID 提供了一个跨 Experience Cloud 解决方案的通用访客 ID。视频事件和其他Marketing Cloud集成需要使用访客ID服务。
+   Experience Cloud 访客 ID 提供了一个跨 Experience Cloud 解决方案的通用访客 ID。视频事件和其他 Marketing Cloud 集成都需要使用访客 ID 服务。
 
    验证您的 `ADBMobileConfig` 配置包含 `marketingCloud` 组织 ID。
 
