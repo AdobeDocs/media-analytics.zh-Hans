@@ -1,20 +1,20 @@
 ---
-title: 了解如何在iOS中跟踪广告
+title: 了解如何在 iOS 中跟踪广告
 description: 使用 Media SDK 在 iOS 应用程序中实施广告跟踪。
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 在 iOS 中跟踪广告{#track-ads-on-ios}
 
-以下说明为使用 2.x SDK 进行实施提供了指南。
+以下说明为使用 2.x SDK 的实施提供了指南。
 
 >[!IMPORTANT]
 >
@@ -83,7 +83,7 @@ ht-degree: 98%
 1. （可选）通过上下文数据变量将标准和/或广告元数据附加到媒体跟踪会话。
 
    * [在 iOS 中实施标准广告元数据](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-   * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
+   * **自定义广告元数据 –** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
 
       ```
       NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
@@ -135,4 +135,4 @@ ht-degree: 98%
    }
    ```
 
-有关更多信息，请参阅跟踪方案[包含前置广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)。
+有关更多信息，请参阅跟踪场景[包含前置广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)。
