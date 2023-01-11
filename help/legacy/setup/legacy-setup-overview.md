@@ -1,22 +1,23 @@
 ---
-title: 实施旧版Media SDK说明
-description: “了解如何设置**旧版** 2.x Media SDK以在移动设备、OTT和浏览器(JS)应用程序中进行媒体跟踪。”
+title: 解释实施旧版 Media SDK
+description: 了解如何设置**旧版** 2.x Media SDK 以在您的移动应用程序、OTT 和浏览器 (JS) 应用程序中进行媒体跟踪。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# 旧版2.x流媒体SDK设置概述{#setup-overview}
+# 旧版 2.x 流媒体 SDK 设置概述{#setup-overview}
 
-本节中的说明适用于 **旧版** 2.x Media SDK。
+此部分中的说明适用于&#x200B;**旧版** 2.x Media SDK。
 
-* 有关实施1.x版本的Media SDK的信息，请参阅 [1.x Media SDK文档。](/help/getting-started/download-sdks.md)
+* 有关实施 1.x 版本的 Media SDK 的信息，请参阅 [1.x Media SDK 文档。](/help/getting-started/download-sdks.md)
 
-* 有关Primetime集成程序，请参阅 _Primetime Media SDK文档_.
+* 有关 Primetime 集成程序，请参阅 _Primetime Media SDK 文档_。
 
 >[!IMPORTANT]
 >
@@ -39,9 +40,9 @@ ht-degree: 89%
 ## 一般实施指南 {#general-implementation-guidelines}
 
 媒体跟踪涉及三个主要 SDK 组件：
-* 媒体心率配置 - 配置包含用于报表的基本设置。
-* 媒体心率委派 - 委派控制播放时间和 QoS 对象。
-* 媒体心率 - 包含成员和方法的主库。
+* 媒体心跳配置 - 配置包含用于报表的基本设置。
+* 媒体心跳委派 - 委派控制播放时间和 QoS 对象。
+* 媒体心跳 - 包含成员和方法的主库。
 
 完成以下实施步骤：
 
@@ -132,10 +133,10 @@ ht-degree: 89%
 Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 
 * 将媒体和广告开始调用直接发送到 Adobe Analytics (AppMeasurement) 服务器。
-* 将心率调用发送到 Media Analytics (Heartbeats) 跟踪服务器，在该服务器上进行处理，然后传递到 Adobe Analytics 服务器。
+* 将心跳调用发送到 Media Analytics (Heartbeats) 跟踪服务器，在该服务器上进行处理，然后传递到 Adobe Analytics 服务器。
 
 * **Adobe Analytics (AppMeasurement) 服务器**
-有关跟踪服务器选项的更多信息，请参阅[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html)。
+有关跟踪服务器选项的更多信息，请参阅[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html)。
 
    >[!IMPORTANT]
    >
@@ -153,11 +154,11 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 | Video Analytics 1.x SDK | 开发人员指南（仅 PDF） |
 | --- | --- |
 | Android | [用于 Android 的配置 ](vhl-dev-guide-v15_android.pdf) |
-| Apple TV | [用于Apple TV的配置 ](vhl-dev-guide-v1x_appletv.pdf) |
+| Apple TV | [针对 Apple TV 进行配置](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [用于 Chromecast 的配置 ](chromecast_1.x_sdk.pdf) |
 | iOS | [用于 iOS 的配置 ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [用于 JavaScript 的配置 ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android：[配置 Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html) </li> <li> DHLS：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/android/1.4/index.html) </li> <li> DHLS：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [用于 TVML 的配置 ](vhl_tvml.pdf) |
 
 ## Primetime Media SDK 文档 {#primetime-docs}
