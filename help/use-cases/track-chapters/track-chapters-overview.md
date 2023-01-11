@@ -1,20 +1,20 @@
 ---
-title: 了解如何跟踪章节和区段说明
+title: 解释了解如何跟踪章节和区段
 description: 如何使用 Media SDK 实施章节和区段跟踪。
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '325'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 概述{#overview}
 
-以下说明为使用 2.x SDK 进行实施提供了指南。
+以下说明为使用 2.x SDK 的实施提供了指南。
 
 >[!IMPORTANT]
 > 
