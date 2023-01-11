@@ -1,20 +1,20 @@
 ---
-title: 跟踪广告说明
+title: 解释跟踪广告
 description: 有关使用 Media SDK 实施广告跟踪的概述。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # 概述{#overview}
 
-以下说明为使用 2.x SDK 进行实施提供了指南。
+以下说明为使用 2.x SDK 的实施提供了指南。
 
 >[!IMPORTANT]
 >
@@ -34,9 +34,9 @@ ht-degree: 99%
 
 * 使用 `adBreakObject` 为广告时间开始事件调用 `trackEvent`。
 
-### 在每个广告资产开始时
+### 在每个广告资源开始时
 
-* 为广告资产创建一个广告对象实例。例如：`adObject`。
+* 为广告资源创建一个广告对象实例。例如：`adObject`。
 * 填充广告元数据 `adCustomMetadata`。
 * 为广告开始事件调用 `trackEvent`。
 
