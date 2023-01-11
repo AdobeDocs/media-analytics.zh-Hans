@@ -1,20 +1,20 @@
 ---
-title: 了解如何使用JavaScript 2.x跟踪广告
+title: 了解如何使用 JavaScript 2.x 跟踪广告
 description: 使用 Media SDK 在浏览器 (JS) 应用程序中实施广告跟踪。
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# 使用JavaScript 2.x跟踪广告{#track-ads-on-javascript}
+# 使用 JavaScript 2.x 跟踪广告{#track-ads-on-javascript}
 
-以下说明为使用 2.x SDK 进行实施提供了指南。
+以下说明为使用 2.x SDK 的实施提供了指南。
 
 >[!IMPORTANT]
 >
@@ -81,7 +81,7 @@ ht-degree: 96%
 1. （可选）通过上下文数据变量将标准和/或广告元数据附加到媒体跟踪会话。
 
    * [在 JavaScript 中实施标准广告元数据](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-   * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
+   * **自定义广告元数据 –** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
 
       ```js
       /* Set custom context data */
@@ -129,4 +129,4 @@ ht-degree: 96%
    };
    ```
 
-有关更多信息，请参阅跟踪方案[包含前置广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)。
+有关更多信息，请参阅跟踪场景[包含前置广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)。
