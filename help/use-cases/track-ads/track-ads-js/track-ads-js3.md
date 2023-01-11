@@ -1,23 +1,23 @@
 ---
-title: 了解如何使用JavaScript 3.x跟踪广告
+title: 了解如何使用 JavaScript 3.x 跟踪广告
 description: 使用 Media SDK 在浏览器 (JS) 应用程序中实施广告跟踪。
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-# 使用JavaScript 3.x跟踪广告{#track-ads-on-javascript}
+# 使用 JavaScript 3.x 跟踪广告{#track-ads-on-javascript}
 
-以下说明为使用 3.x SDK 进行实施提供了指南。
+以下说明为使用 3.x SDK 的实施提供了指南。
 
 >[!IMPORTANT]
 >
->如果您实施的是SDK的先前版本，可以在此处下载开发人员指南： [下载SDK。](/help/getting-started/download-sdks.md)
+>如果您实施的是 SDK 之前的版本，可以在此处下载开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)。
 
 ## 广告跟踪常量
 
@@ -37,7 +37,7 @@ ht-degree: 80%
 
    | 变量名称 | 类型 | 描述 |
    | --- | --- | --- |
-   | `name` | 字符串 | 表示广告时间名称（前置、中置和后置）的非空字符串。 |
+   | `name` | 字符串 | 非空字符串，表示广告时间名称（前置式广告、中置式广告和后置式广告）。 |
    | `position` | 数字 | 广告时间的位置编号，从 1 开始编号。 |
    | `startTime` | 数字 | 广告时间开始的播放头值。 |
 
@@ -64,8 +64,8 @@ ht-degree: 80%
    | --- | --- | --- |
    | `name` | 字符串 | 表示广告名称的非空字符串。 |
    | `adId` | 字符串 | 表示广告标识符的非空字符串。 |
-   | `position` | 数字 | 广告在广告时间中的位置编号，从1开始。 |
-   | `length` | 数字 | 表示广告长度的正数。 |
+   | `position` | 数字 | 广告时间中广告的位置编号，从 1 开始编号。 |
+   | `length` | 数字 | 正数，表示广告长度。 |
 
    广告对象创建：
 
@@ -129,4 +129,4 @@ ht-degree: 80%
    };
    ```
 
-有关更多信息，请参阅跟踪方案[包含前置广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)。
+有关更多信息，请参阅跟踪场景[包含前置广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)。
