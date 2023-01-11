@@ -1,20 +1,20 @@
 ---
-title: 了解如何在iOS中跟踪体验质量
-description: “了解如何在iOS上使用Media SDK实施体验质量(QoE、QoS)跟踪。”
+title: 了解如何在 iOS 中跟踪体验质量
+description: “了解如何在 iOS 中使用 Media SDK 实施体验质量（QoE、QoS）跟踪。”
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # 在 iOS 中跟踪体验质量{#track-quality-of-experience-on-ios}
 
-下面的说明为所有 2.x SDK 实施提供了指南。
+以下说明为所有 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
