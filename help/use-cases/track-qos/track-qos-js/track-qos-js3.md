@@ -1,29 +1,29 @@
 ---
-title: 了解如何使用JavaScript 3.x跟踪体验质量
-description: “了解如何使用JavaScript 3x在浏览器应用程序中使用Media SDK实施体验质量(QoE、QoS)跟踪。”
+title: 了解如何使用 JavaScript 3.x 跟踪体验质量
+description: “了解如何使用 JavaScript 3.x 在浏览器应用程序中使用 Media SDK 实施体验质量（QoE、QoS）跟踪。”
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
-# 使用JavaScript 3.x跟踪体验质量{#track-quality-of-experience-on-javascript}
+# 使用 JavaScript 3.x 跟踪体验质量{#track-quality-of-experience-on-javascript}
 
-下面的说明为所有 2.x SDK 实施提供了指南。
+以下说明为所有 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
->如果您实施的是SDK的先前版本，可以在此处下载开发人员指南： [下载SDK。](/help/getting-started/download-sdks.md)
+>如果您实施的是 SDK 之前的版本，可以在此处下载开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)。
 
-## 实施QOE
+## 实施 QOE
 
-1. 识别在媒体播放期间比特率发生更改的时间，并创建 `qoeObject` 实例。
+1. 识别在媒体播放期间比特率发生更改的时间，并使用 QoE 信息创建 `qoeObject` 实例。
 
-   QoEObject变量：
+   QoEObject 变量：
 
    >[!TIP]
    >
@@ -36,7 +36,7 @@ ht-degree: 49%
    | `fps` | 数字 | FPS 值 |
    | `droppedFrames` | 数字 | 丢帧的数量 |
 
-   QoE对象创建：
+   QoE 对象创建：
 
    ```js
    // Replace <bitrate>, <startuptime>, <fps> and
@@ -62,9 +62,9 @@ ht-degree: 49%
 
    >[!IMPORTANT]
    >
-   >更新QoE对象，并在每次比特率更改时调用比特率更改事件。 这可提供最准确的QoE数据。
+   >请更新 QoE 对象并在每次比特率发生更改时调用比特率更改事件。这样将可以提供最为准确的 QoE 数据。
 
-1. 确保调用 `updateQoEObject()` 方法向SDK提供最新的QoE信息。
+1. 确保调用 `updateQoEObject()` 方法以向 SDK 提供最新的 QoE 信息。
 1. 当媒体播放器遇到错误，并且错误事件可用于播放器 API 时，使用 `trackError()` 来捕获错误信息。（请参阅[概述](/help/use-cases/track-errors/track-errors-overview.md)。）
 
    >[!TIP]
