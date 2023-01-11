@@ -1,14 +1,14 @@
 ---
-title: 了解如何在iOS中实施标准元数据
-description: 了解如何在iOS中设置要与跟踪调用一起发送的标准视频和广告元数据。
+title: 了解如何在 iOS 中实施标准元数据
+description: 了解如何在 iOS 中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '100'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 75%
 
 ### 实施示例
 
-实例化一个标准元数据对象，填充所需变量，并在媒体心率对象中设置该元数据对象。例如：
+实例化一个标准元数据对象，填充所需变量，并在媒体心跳对象中设置该元数据对象。例如：
 
 ```
 // Sample implementation for using standard video metadata keys 
