@@ -1,40 +1,40 @@
 ---
-title: 带有缓冲的VOD播放
-description: 查看有关如何使用Media SDK跟踪VOD内容的示例。
+title: 带有缓冲的 VOD 播放
+description: 查看有关如何使用 Media SDK 跟踪 VOD 内容的示例。
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '229'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # 带有缓冲的 VOD 播放{#vod-playback-with-buffering}
 
-## 方案 {#scenario}
+## 场景 {#scenario}
 
 在此方案中，播放 VOD 内容时会出现一些缓冲。
 
 除非另外指定，否则此方案中的网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案中的调用相同。
 
-| 触发器   | 心率方法   | 网络调用   | 注释   |
+| 触发器   | 心跳方法   | 网络调用   | 注释   |
 |---|---|---|---|
-| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 这可以是用户点击&#x200B;**[!UICONTROL 播放]**&#x200B;或自动播放事件。 |
-| 播放视频的第一帧。 | `trackPlay` | 心率内容播放 | 此方法将触发计时器。只要继续播放，就会每 10 秒发送一次心率。 |
-| 将播放内容。 |  | 内容心率 |  |
-| 缓冲开始。 | `trackEvent:BufferStart` | 心率缓冲 |  |
-| 内容已缓冲。 |  | 内容心率 |  |
-| 缓冲结束。 | `trackEvent:BufferComplete` | 心率缓冲区，心率播放 |  |
-| 将播放内容。 |  | 内容心率 |  |
-| 内容结束播放。 | `trackComplete` | 心率内容结束 | 播放头已到达末尾。 |
+| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心跳内容开始 | 这可以是用户点击&#x200B;**[!UICONTROL 播放]**&#x200B;或自动播放事件。 |
+| 播放视频的第一帧。 | `trackPlay` | 心跳内容播放 | 此方法将触发计时器。只要继续播放，就会每 10 秒发送一次心跳。 |
+| 将播放内容。 |  | 内容心跳 |  |
+| 缓冲开始。 | `trackEvent:BufferStart` | 心跳缓冲 |  |
+| 内容已缓冲。 |  | 内容心跳 |  |
+| 缓冲结束。 | `trackEvent:BufferComplete` | 心跳缓冲区，心跳播放 |  |
+| 将播放内容。 |  | 内容心跳 |  |
+| 内容结束播放。 | `trackComplete` | 心跳内容结束 | 播放头已到达末尾。 |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户没有观看至视频结束，也必须调用此 API。 |
 
 ## 参数 {#parameters}
 
-### 心率缓冲
+### 心跳缓冲
 
 | 参数 | 值 | 注释 |
 |---|---|---|
