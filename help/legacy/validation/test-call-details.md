@@ -1,14 +1,14 @@
 ---
 title: 测试调用详细信息
-description: 浏览验证实施时必须发出的调用。
+description: 探究验证实施时必须发出的各种调用。
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 | _**`a.media.length`**_ | _**120**_ |
 | `a.media.playerName` | HTML5 |
 | _**`a.media.view`**_ | _**true**_ |
-| `a.contentType` | VOD |
+| `a.contentType` | vod |
 | _**`custom.[value]`**_ | _**自定义元数据字段**_ |
 | _**`a.media.[value]`**_ | _**标准元数据字段**_ |
 
@@ -59,9 +59,9 @@ ht-degree: 98%
 | 参数 | 值（示例） |
 |---|---|
 | `custom.metadataA` | value |
-| `custom.metadataB` | 值 |
+| `custom.metadataB` | value |
 
-### Media Analytics（心率）开始调用 {#ma-start-call}
+### Media Analytics（心跳）开始调用 {#ma-start-call}
 
 | 参数 | 值（示例） |
 |---|---|
@@ -81,7 +81,7 @@ ht-degree: 98%
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 应将视频开始时线性流的播放头位置设置为自当前节目开始后所经过的秒数，而不是设置为 0。
 
-### Media Analytics（心率）开始调用中的标准元数据 {#std-metadata-ma}
+### Media Analytics（心跳）开始调用中的标准元数据 {#std-metadata-ma}
 
 | 参数 | 值（示例） |
 |---|---|
@@ -92,22 +92,22 @@ ht-degree: 98%
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | 生产厂房 |
-| `s:meta:a.media.network` | 网络 |
+| `s:meta:a.media.originator` | production house |
+| `s:meta:a.media.network` | network |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | 已解锁 |
-| `s:meta:a.media.feed` | 无馈送 |
+| `s:meta:a.media.authorized` | unlocked |
+| `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Media Analytics（心率）开始调用中的自定义元数据 {#custom-metadata-ma}
+### Media Analytics（心跳）开始调用中的自定义元数据 {#custom-metadata-ma}
 
 | 参数 | 值（示例） |
 |---|---|
-| `s:meta:custom.metadata` | 值 |
-| `s:meta:custom.metadata` | 值 |
+| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | value |
 
-### Media Analytics（心率）Adobe Analytics 开始调用 {#ma-aa-start}
+### Media Analytics（心跳）Adobe Analytics 开始调用 {#ma-aa-start}
 
 | 参数 | 值（示例） |
 |---|---|
@@ -161,22 +161,22 @@ ht-degree: 98%
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
 | `a.media.rating` | TV-14 |
-| `a.media.originator` | 生产厂房 |
-| `a.media.network` | 网络 |
+| `a.media.originator` | production house |
+| `a.media.network` | network |
 | `a.media.ad_load` | 1 |
 | `a.media.mvpd` | mvpd |
-| `a.media.authorized` | 已解锁 |
-| `a.media.feed` | 无馈送 |
+| `a.media.authorized` | unlocked |
+| `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
 ### Adobe Analytics (AppMeasurement) 广告开始调用中的自定义元数据 {#custom-metadata-aa-ad-start}
 
 | 参数 | 值（示例） |
 |---|---|
-| `custom.metadata` | 值 |
-| `custom.metadata` | 值 |
+| `custom.metadata` | value |
+| `custom.metadata` | value |
 
-### Media Analytics（心率）广告开始调用 {#ma-ad-start-call}
+### Media Analytics（心跳）广告开始调用 {#ma-ad-start-call}
 
 | 参数 | 值（示例） |
 |---|---|
@@ -185,8 +185,8 @@ ht-degree: 98%
 | `l:event:duration` | 4 |
 | `s:asset:ad_id` | 9378 |
 | _**`l:asset:length`**_ | _**120**_ |
-| `s:stream:type` | VOD |
-| _**`s:asset:type`**_ | _**ad**_ |
+| `s:stream:type` | vod |
+| _**`s:asset:type`**_ | _**广告**_ |
 | _**`s:meta:custom.[value]`**_ | _**自定义元数据字段**_ |
 | _**`s:meta:a.media.[value]`**_ | _**标准元数据字段**_ |
 
@@ -195,7 +195,7 @@ ht-degree: 98%
 * 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
 * 广告开始时，如果未提供广告长度，广告长度可能会被设置为 -1。
 
-### Media Analytics（心率）广告开始调用中的标准元数据 {#std-metadata-ma-ad-start}
+### Media Analytics（心跳）广告开始调用中的标准元数据 {#std-metadata-ma-ad-start}
 
 | 参数 | 值（示例） |
 |---|---|
@@ -206,22 +206,22 @@ ht-degree: 98%
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | 生产厂房 |
-| `s:meta:a.media.network` | 网络 |
+| `s:meta:a.media.originator` | production house |
+| `s:meta:a.media.network` | network |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | 已解锁 |
-| `s:meta:a.media.feed` | 无馈送 |
+| `s:meta:a.media.authorized` | unlocked |
+| `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Media Analytics（心率）广告开始调用中的自定义元数据 {#custom-metadata-ma-ad-start}
+### Media Analytics（心跳）广告开始调用中的自定义元数据 {#custom-metadata-ma-ad-start}
 
 | 参数 | 值（示例） |
 |---|---|
-| `s:meta:custom.metadata` | 值 |
-| `s:meta:custom.metadata` | 值 |
+| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | value |
 
-### Media Analytics（心率）Adobe Analytics 广告开始调用 {#ma-aa-ad-start-call}
+### Media Analytics（心跳）Adobe Analytics 广告开始调用 {#ma-aa-ad-start-call}
 
 | 参数 | 值（示例） |
 |---|---|
@@ -231,9 +231,9 @@ ht-degree: 98%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | VOD |
-| `s:asset:type` | ad |
+| `s:asset:type` | 广告 |
 
-### Media Analytics（心率）广告播放调用 {#ma-ad-play-call}
+### Media Analytics（心跳）广告播放调用 {#ma-ad-play-call}
 
 | 参数 | 值（示例） |
 |---|---|
@@ -245,7 +245,7 @@ ht-degree: 98%
 | `s:stream:type` | VOD |
 | _**`s:asset:type`**_ | _**广告**_ |
 
-### Media Analytics（心率）广告暂停调用 {#ma-ad-pause-call}
+### Media Analytics（心跳）广告暂停调用 {#ma-ad-pause-call}
 
 | 参数 | 值（示例） |
 |---|---|
@@ -257,7 +257,7 @@ ht-degree: 98%
 | `s:stream:type` | VOD |
 | _**`s:asset:type`**_ | _**广告**_ |
 
-### Media Analytics（心率）Adobe Analytics 广告结束调用 {#ma-aa-ad-complete-call}
+### Media Analytics（心跳）Adobe Analytics 广告结束调用 {#ma-aa-ad-complete-call}
 
 | 参数 | 值（示例） |
 |---|---|
@@ -271,7 +271,7 @@ ht-degree: 98%
 
 ## 播放主内容 {#play-main-content}
 
-### Media Analytics（心率）播放调用 {#ma-play-call}
+### Media Analytics（心跳）播放调用 {#ma-play-call}
 
 | 参数 | 值（示例） |
 |---|---|
@@ -291,11 +291,11 @@ ht-degree: 98%
 
 ## 暂停主内容 {#pause-main-content}
 
-### Media Analytics（心率）暂停调用 {#ma-pause-call}
+### Media Analytics（心跳）暂停调用 {#ma-pause-call}
 
 | 参数 | 值（示例） |
 |---|---|
-| _**`s:event:type`**_ | _**暂停**_ |
+| _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | 剧集标题 |
