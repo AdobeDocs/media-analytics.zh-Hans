@@ -6,9 +6,9 @@ exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -121,4 +121,4 @@ ht-degree: 96%
 
 在版本 2.x 中，所有公共方法都已合并到 `ADB.va.MediaHeartbeat` 类中，从而更加便于开发人员使用。此外，所有配置现在都已合并到 `ADB.va.MediaHeartbeatConfig` 类中。
 
-有关从1.x迁移到2.x的信息，请参阅旧版实施文档。
+有关从 1.x 迁移到 2.x 的信息，请参阅旧版实施文档。
