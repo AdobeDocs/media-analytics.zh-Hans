@@ -12,7 +12,7 @@ ht-degree: 90%
 
 ---
 
-# 获取媒体 SDK、使用标记的扩展和 OTT SDK {#download-sdks}
+# 获取 Media SDK、使用标记的扩展和 OTT SDK {#download-sdks}
 
 此页面上的信息包括用于下载当前媒体SDK和获取使用标记的媒体扩展的链接。
 
@@ -24,13 +24,13 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记�
 >有关下载旧版 SDK 的信息，请参阅[旧版 - 下载 SDK](/help/legacy/legacy-download-sdks.md)。<br>
 >有关终止支持的重要信息，请参阅[终止支持常见问题解答](/help/additional-resources/end-of-support-faqs.md)。
 
-## 媒体 SDK 和移动库 {#media-sdks-libraries}
+## Media SDK 和移动库 {#media-sdks-libraries}
 
 ### Web 实施 {#download-web-sdk}
 
 | 支持的平台 | 版本 |  API   |  文档  | 示例 |
 |:---:|---|---|---|---|
-| ![JavaScript 图标](assets/javascript-icon.png) | Web - [适用于 JS v3.0.2 的媒体 SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用JavaScript安装Analytics](/help/implementation/media-sdk/setup/web-implementation.md) | [适用于 JS 的媒体 SDK v3.0.2 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript 图标](assets/javascript-icon.png) | Web - [适用于 JS v3.0.2 的 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用JavaScript安装Analytics](/help/implementation/media-sdk/setup/web-implementation.md) | [适用于 JS 的 Media SDK v3.0.2 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript 图标](assets/javascript-icon.png) | Web - 媒体扩展 |  | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展 - 使用标记（数据收集）](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 
 ### 移动实施 {#get-mobile-extension}

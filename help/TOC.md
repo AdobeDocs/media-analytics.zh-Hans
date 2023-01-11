@@ -33,7 +33,7 @@ ht-degree: 97%
          + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
-   + 媒体 SDK - 实施 {#media-sdk}
+   + Media SDK – 实施 {#media-sdk}
       + [Media SDK 概述](implementation/media-sdk/media-sdk-overview.md)
       + 安装和配置 {#setup}
          + 安装 Web SDK {#install-web-sdk}
@@ -69,15 +69,15 @@ ht-degree: 97%
       + [播放器状态参数](implementation/variables/player-state-parameters.md)
       + [质量参数](implementation/variables/quality-parameters.md)
       + [计算指标](implementation/variables/calculated-metrics.md)
-+ 报表 {#media-reports}
++ 报告 {#media-reports}
    + [媒体报表启用](reporting/media-reports-enable.md)
    + [关于区段](reporting/segments.md)
    + 媒体默认报表 {#media-default-reports}
       + [默认报表概述](reporting/reports-and-analytics/default-reports-overview.md)
       + [媒体概述](reporting/reports-and-analytics/media-reports-overview.md)
       + [媒体详细信息](reporting/reports-and-analytics/media-reports-detail.md)
-      + [“媒体时段”报表](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [“媒体并行查看者”报表](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+      + [“媒体时段”报告](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [“媒体并行查看者”报告](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + 媒体工作区面板 {#media-workspace-panels}
       + [“媒体平均受众访问分钟数”面板](reporting/workspace/average-minute-audience.md)
       + [“媒体并行查看者”面板](reporting/workspace/media-concurrent-viewers-overview.md)
@@ -86,7 +86,7 @@ ht-degree: 97%
    + [通过 API 获取并行查看者数据](reporting/reports-and-analytics/get-concurrent-json20.md)
    + [通过 API 获取 Media Playback 耗时数据](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 用例 {#media-use-cases}
-   + [媒体 SDK 用例](use-cases/cookbook/sdk-cookbook-overview.md)
+   + [Media SDK 用例](use-cases/cookbook/sdk-cookbook-overview.md)
    + 播放器状态跟踪 {#player-state-tracking}
       + [概述](use-cases/player-state-tracking/player-state-overview.md)
       + [标准状态和自定义状态](use-cases/player-state-tracking/standard-and-custom-states.md)
@@ -160,13 +160,13 @@ ht-degree: 97%
 + 旧版实施 {#legacy-implementations}
    + [旧版 - 概述](legacy/setup/legacy-setup-overview.md)
    + [旧版 - 下载 SDK](legacy/legacy-download-sdks.md)
-   + 旧版 - 媒体 SDK{#legacy-media-sdks}
-      + [旧版 - 媒体 SDK 概述](legacy/media-sdk/setup/setup-overview.md)
+   + 旧版 – Media SDK{#legacy-media-sdks}
+      + [旧版 - Media SDK 概述](legacy/media-sdk/setup/setup-overview.md)
       + [设置 Android](legacy/media-sdk/setup/set-up-android.md)
       + [设置 iOS](legacy/media-sdk/setup/set-up-ios.md)
       + 设置 JavaScript {#setup-javascript}
          + [设置 JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + [有关心率测量](legacy/heartbeat-measurement.md)
+   + [有关心跳测量](legacy/heartbeat-measurement.md)
    + [Adobe Primetime 和 Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe 受众管理启用](legacy/intro-to-ava/am-enablement.md)
    + [自定义链接实施](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
@@ -179,14 +179,14 @@ ht-degree: 97%
       + [测试 1：标准播放](legacy/validation/test1-standard-playback.md)
       + [测试 2：媒体中断](legacy/validation/test2-media-interrupt.md)
       + [测试调用详细信息](legacy/validation/test-call-details.md)
-      + [心率参数描述](legacy/validation/heartbeat-params.md)
+      + [心跳参数描述](legacy/validation/heartbeat-params.md)
       + 调试 {#debugging}
          + [SDK 调试](legacy/validation/debugging/sdk-debugging.md)
    + [旧版迁移：VHL 1.x 到 VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
    + [设置 JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [代码对比 v1.x 到 v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [跟踪 API 1x 到 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
-   + [旧版 - AVA 简介](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
+   + [旧版 – AVA 简介](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
    + [客户端路径](legacy/intro-to-ava/implementation-paths/client-side-path.md)
    + 旧版跟踪 {#track-av-playback}
       + [在 Android 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-android.md)

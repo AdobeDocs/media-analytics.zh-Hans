@@ -1,13 +1,13 @@
 ---
-title: 如何为适用于流媒体的 Analytics设置Web实施
-description: 了解如何为Web应用程序实施Adobe流媒体。
+title: 如何设置适用于流媒体的 Analytics 的 Web 实施
+description: 了解如何实施适用于 Web 应用程序的 Adobe Streaming Media。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 69%
+ht-degree: 90%
 
 ---
 
@@ -17,20 +17,20 @@ ht-degree: 69%
 
 或者，您也可以使用Adobe Medium分析扩展来实施Analytics，如 [使用Media Analytics扩展实施Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
-## 前提条件 {#prerequesites}
+## 先决条件 {#prerequesites}
 
 * **获取有效的配置参数**
 
-   在设置Analytics帐户后，您可以从Adobe代表处获取这些参数。
+   在设置分析帐户后，这些参数可以从 Adobe 代表获取。
 
-* **实施 `AppMeasurement` 和 `Experience Cloud Identity Service` 适用于媒体应用程序的JavaScript**
+* **在媒体应用程序中实施适用于 JavaScript 的 `AppMeasurement` 和 `Experience Cloud Identity Service`**
 
-   有关更多信息，请参阅 [使用JavaScript实施Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans) 和 [实施Experience Cloud标识服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hans).
+   有关更多信息，请参阅[使用 JavaScript 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans) 和[实施 Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hans)。
 
-* **在媒体播放器中包含以下API**
+* **在媒体播放器中包含以下 API**
 
-   * *用于订阅播放器事件的 API* - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
-   * *提供播放器信息的API*  — 这包括有关当前播放的媒体、广告和章节的信息。
+   * *用于订阅播放器事件的 API* – Media SDK 要求在播放器中发生事件时调用一组简单的 API。
+   * *提供播放器信息的 API* – 其中包括有关当前播放的媒体、广告和章节的信息。
 
 ## 设置 JavaScript 3.x {#set-up-javascript}
 
@@ -106,4 +106,4 @@ ht-degree: 69%
 
 有关从 2.x 迁移到 3.x 的详细信息，请参阅[从 2.x 迁移到 3.x](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)。
 
-有关旧版内容，请参阅 [旧版实施](/help/legacy/media-sdk/setup/setup-overview.md)
+有关旧版内容，请参阅[旧版实施](/help/legacy/media-sdk/setup/setup-overview.md)
