@@ -6,13 +6,13 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# 前提条件{#prerequisites}
+# 先决条件{#prerequisites}
 
 要实施 Adobe Analytics for Streaming Media，请完成以下任务：
 
@@ -24,13 +24,13 @@ Streaming Media for Adobe Analytics 还需要 Adobe Analytics 基本实施。有
 
 1. **获取媒体跟踪服务器 URL**<br>
 请向您的 Adobe Analytics 代表询问媒体跟踪服务器 URL。这是 
-`collection-api-server`Mobile SDK 的 URL、JavaScript SDK 和 Roku 的非收藏集 API 跟踪服务器。API 实施的域名是：`[your_namespace].hb-api.omtrdc.net`。
+`collection-api-server`移动 SDK 的 URL、JavaScript SDK 和 Roku 的非收藏集 API 跟踪服务器。API 实施的域名是：`[your_namespace].hb-api.omtrdc.net`。
 
-1. **下载当前的媒体 SDK 或实施所需的扩展**<br>
-根据实施路径的不同，为 Web、移动或过顶平台[下载当前 SDK](download-sdks.md)。必须实施所需的扩展才能启用适用于流媒体的 Adobe Analytics扩展路径。
+1. **下载当前的 Media SDK 或实施所需的扩展**<br>
+根据实施路径的不同，为 Web、移动或过顶平台[下载当前 SDK](download-sdks.md)。必须实施所需的扩展才能启用适用于流媒体的 Adobe Analytics 扩展路径。
 
-1. **启用 Adobe Analytics 报表**<br>
-要在 Analytics 中启用报表，并查看所收集的内容和广告数据，您必须在 Analytics 中启用报表。请参阅 [媒体报表启用](/help/reporting/media-reports-enable.md).
+1. **启用 Adobe Analytics 报告**<br>
+要在 Analytics 中启用报告，并查看所收集的内容和广告数据，您必须在 Analytics 中启用报告。请参阅[媒体报告启用](/help/reporting/media-reports-enable.md)。
 
 1. **启用 Experience Cloud**<br>
 
