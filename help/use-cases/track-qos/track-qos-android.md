@@ -1,20 +1,20 @@
 ---
-title: 了解如何在Android中跟踪体验质量
-description: “了解如何在Android中使用Media SDK实施体验质量(QoE、QoS)跟踪。”
+title: 了解如何在 Android 中跟踪体验质量
+description: “了解如何在 Android 中使用 Media SDK 实施体验质量（QoE、QoS）跟踪。”
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # 在 Android 中跟踪体验质量{#track-quality-of-experience-on-android}
 
-下面的说明为所有 2.x SDK 实施提供了指南。
+以下说明为所有 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
