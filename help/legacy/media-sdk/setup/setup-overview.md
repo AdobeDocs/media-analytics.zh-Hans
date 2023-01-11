@@ -1,34 +1,34 @@
 ---
-title: 实施媒体 SDK 解释
-description: “了解如何设置媒体 SDK 以在您的移动应用程序、OTT 和浏览器 (JS) 应用程序中进行媒体跟踪。”
+title: 实施 Media SDK 解释
+description: “了解如何设置 Media SDK 以在您的移动应用程序、OTT 和浏览器 (JS) 应用程序中进行媒体跟踪。”
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# 旧版 — Media SDK设置概述 {#setup-overview}
+# 旧版 – Media SDK 设置概述 {#setup-overview}
 
-在下载适用于视频应用程序或播放器的Media SDK后，请按照此部分中的信息来设置和实施Media SDK。
+为您的视频应用程序或播放器下载 Media SDK 后，按照此部分中的信息设置和实施 Media SDK。
 
 
 ## 一般实施指南 {#general-implementation-guidelines}
 
-Adobe流媒体跟踪中使用了三个主要SDK组件：
-* 媒体心率配置 —  `MediaHeartbeatConfig` 包含报表的基本设置。
-* 媒体心率委派 —  `MediaHeartbeatDelegate` 控制播放时间和QoS对象。
-* 媒体心率 —  `MediaHeartbeat` 是包含成员和方法的主库。
+Adobe Streaming Media 跟踪中使用三个主要 SDK 组件：
+* 媒体心跳配置 – `MediaHeartbeatConfig` 包含用于报告的基本设置。
+* 媒体心跳代理 – `MediaHeartbeatDelegate` 控制播放时间和 QoS 对象。
+* 媒体心跳：`MediaHeartbeat` 是包含成员和方法的主库。
 
-## 实施流媒体SDK
+## 实施流媒体 SDK
 
-要设置和使用流媒体SDK，请完成以下实施步骤：
+要设置和使用流媒体 SDK，请完成以下实施步骤：
 
-1. 创建 `MediaHeartbeatConfig` 实例，然后设置配置参数值。
+1. 创建一个 `MediaHeartbeatConfig` 实例，并设置您的配置参数值。
 
    |  变量名称  | 描述  | 必需 |  默认值  |
    |---|---|:---:|---|
@@ -115,10 +115,10 @@ Adobe流媒体跟踪中使用了三个主要SDK组件：
 Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 
 * 将媒体和广告开始调用直接发送到 Adobe Analytics (AppMeasurement) 服务器。
-* 将心率调用发送到 Media Analytics (Heartbeats) 跟踪服务器，在该服务器上进行处理，然后传递到 Adobe Analytics 服务器。
+* 将心跳调用发送到 Media Analytics (Heartbeats) 跟踪服务器，在该服务器上进行处理，然后传递到 Adobe Analytics 服务器。
 
 * **Adobe Analytics (AppMeasurement) 服务器**
-有关跟踪服务器选项的更多信息，请参阅[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html)。
+有关跟踪服务器选项的更多信息，请参阅[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html)。
 
    >[!IMPORTANT]
    >
