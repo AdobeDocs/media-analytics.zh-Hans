@@ -6,9 +6,9 @@ exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '158'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Media SDK 会自动跟踪媒体播放处于下列某个不活动状态的时长�
 * 停滞
 * 缓冲
 
-如果媒体跟踪会话保持不活动状态超过 30 分钟，则该会话将被自动关闭。如果用户恢复之前不活动的视频跟踪会话 (`trackPlay`)，媒体心率会使用先前使用的视频信息和元数据自动创建新的视频会话，并发送恢复心率事件。有关更多信息，请参阅[音频和视频参数](/help/implementation/variables/audio-video-parameters.md)。
+如果媒体跟踪会话保持不活动状态超过 30 分钟，则该会话将被自动关闭。如果用户恢复之前不活动的视频跟踪会话 (`trackPlay`)，媒体心跳会使用先前使用的视频信息和元数据自动创建新的视频会话，并发送恢复心跳事件。有关更多信息，请参阅[音频和视频参数](/help/implementation/variables/audio-video-parameters.md)。
 
 
 ## 手动恢复之前关闭的会话
