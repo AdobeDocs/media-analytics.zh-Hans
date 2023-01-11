@@ -1,14 +1,14 @@
 ---
-title: 流媒体收集API — 会话请求端点
-description: “媒体收集API会话请求端点参数和响应是什么？”
+title: 流媒体收集 API – 会话请求端点
+description: “媒体收集 API 会话请求端点参数和响应是什么？”
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -62,8 +62,8 @@ https://{uri}/api/v1/sessions
 ```
 
 * `playerTime`（必需）
-   * `playhead`  — 如果内容是实时的，则播放头必须是一天中的当前秒数，0 &lt;=播放头&lt; 86400。 如果记录了内容，则播放头必须是内容的当前秒数，0 &lt;=播放头&lt;内容长度。 该值可以是浮点数。
-   * `ts`  — 时间戳；必须以毫秒为单位；协调世界时(UTC)。
+   * `playhead` - 如果内容是实时的，播放头必须是当天的当前秒数，0 &lt;= 播放头 &lt; 86400。如果内容是录制的，播放头必须是内容的当前秒数，0 &lt;= 播放头 &lt; 内容长度。该值可以是浮点数。
+   * `ts` – 时间戳；必须以毫秒为单位；协调世界时 (UTC)。
 * `eventType`（必需）
 
    **有效值：**`sessionStart`
