@@ -1,14 +1,14 @@
 ---
-title: “流媒体收集API — 快速入门”
-description: 流媒体API入门。 了解如何快速验证请求数据。
+title: “流媒体收集 API – 快速启动”
+description: 开始使用流媒体 API。了解如何快速验证您的请求数据。
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
