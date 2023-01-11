@@ -1,20 +1,20 @@
 ---
-title: 了解如何使用JavaScript 2.x跟踪核心播放
-description: 了解如何使用JavaScript 2.x应用程序在浏览器中使用Media SDK实施核心跟踪。
+title: 了解如何使用 JavaScript 2.x 跟踪核心播放
+description: 了解如何使用 JavaScript 2.x 应用程序在浏览器中使用 Media SDK 实施核心跟踪。
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '689'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 使用 JavaScript 2.x 跟踪核心播放{#track-core-playback-on-javascript}
 
-以下说明为跨2.x SDK实施提供了指南。
+以下说明为 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)
@@ -91,7 +91,7 @@ ht-degree: 94%
 
 1. **跟踪开始播放的意图**
 
-   要开始跟踪媒体会话，请在媒体心率实例中调用 `trackSessionStart`：
+   要开始跟踪媒体会话，请在媒体心跳实例中调用 `trackSessionStart`：
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -164,5 +164,5 @@ ht-degree: 94%
    >
    >这可能与步骤 4 中所使用的事件源相同。请确保当播放继续时，每个 `trackPause()` API 调用均与随后的一个 `trackPlay()` API 调用相配对。
 
-* 跟踪方案：[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
+* 跟踪场景：[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * JavaScript SDK 随附的示例播放器提供了完整的跟踪示例。
