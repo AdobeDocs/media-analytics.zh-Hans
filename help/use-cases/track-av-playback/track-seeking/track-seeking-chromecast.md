@@ -1,20 +1,20 @@
 ---
-title: 了解如何在Chromecast中跟踪搜寻
-description: 了解如何在Chromecast中使用Media SDK跟踪搜寻开始和搜寻结束事件。
+title: 了解如何在 Chromecast 中跟踪搜寻
+description: 了解如何在 Chromecast 中使用 Media SDK 跟踪搜寻开始和搜寻结束事件。
 uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
 exl-id: 03be8ed3-ae3a-4e9a-b667-0d9280a844a1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '146'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # 在 Chromecast 中跟踪搜寻{#track-seeking-on-chromecast}
 
-下面的说明为所有 2.x SDK 实施提供了指南。
+以下说明为所有 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
@@ -41,4 +41,4 @@ ht-degree: 84%
    ADBMobile.media.trackEvent(ADBMobile.media.Event.SeekComplete);
    ```
 
-有关更多信息，请参阅跟踪方案[在主内容中进行搜寻的 VOD 播放](/help/use-cases/tracking-scenarios/vod-seeking.md)。
+有关更多信息，请参阅跟踪场景[在主内容中进行搜寻的 VOD 播放](/help/use-cases/tracking-scenarios/vod-seeking.md)。
