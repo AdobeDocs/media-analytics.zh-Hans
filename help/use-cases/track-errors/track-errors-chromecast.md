@@ -1,20 +1,20 @@
 ---
-title: 了解如何在Chromecast中跟踪错误
-description: 了解如何在Chromecast中使用Media SDK实施错误跟踪。
+title: 了解如何在 Chromecast 中跟踪错误
+description: 了解如何在 Chromecast 中使用 Media SDK 实施错误跟踪。
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
 exl-id: 513772c2-582d-4b4b-92ed-0c32b99d7fdc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # 在 Chromecast 中跟踪错误{#track-errors-on-chromecast}
 
-下面的说明为所有 2.x SDK 实施提供了指南。
+以下说明为所有 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
