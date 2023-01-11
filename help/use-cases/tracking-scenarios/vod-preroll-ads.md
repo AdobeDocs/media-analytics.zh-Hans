@@ -1,14 +1,14 @@
 ---
-title: “包含前置广告的VOD播放”
-description: “查看有关如何使用Media SDK跟踪包含前置广告的VOD内容的示例。”
+title: “包含前置式广告的 VOD 播放”
+description: “查看有关如何使用 Media SDK 跟踪包含前置式广告的 VOD 内容的示例。”
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,25 +16,25 @@ ht-degree: 95%
 
 在此方案中，在主内容之前插入了前置广告。除非另外指定，否则网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案中的调用相同。网络调用在同一时间发生，但负载却不同。
 
-| 触发器 | 心率方法 | 网络调用   | 注释   |
+| 触发器 | 心跳方法 | 网络调用   | 注释   |
 | --- | --- | --- | --- |
-| 用户点击[!UICONTROL 播放] | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用仍然与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
-| 广告开始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 广告开始、心率广告开始 |  |
-| 播放广告 #1 的帧。 | `trackPlay` | 心率广告播放 | 广告内容在主内容之前播放，心率在广告开始时开始。 |
-| 播放广告。 |  | 广告心率 |  |
-| 广告 #2 结束播放。 | `trackEvent:trackAdComplete` | 心率广告结束 | 到达广告的结尾。 |
-| 播放广告 2 的第一帧。 | `trackEvent:AdStart` | Analytics 广告开始、心率广告开始 |  |
-| 播放广告。 |  | 广告心率 |  |
-| 广告 #2 结束播放。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 心率广告结束 | 到达广告和面板的结尾。 |
-| 播放内容。 |  | 内容心率 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
-| 内容结束。 | `trackComplete` | 心率内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
+| 用户点击[!UICONTROL 播放] | `trackSessionStart` | Analytics 内容开始，心跳内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用仍然与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
+| 广告开始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 广告开始、心跳广告开始 |  |
+| 播放广告 #1 的帧。 | `trackPlay` | 心跳广告播放 | 广告内容在主内容之前播放，心跳在广告开始时开始。 |
+| 播放广告。 |  | 广告心跳 |  |
+| 广告 #2 结束播放。 | `trackEvent:trackAdComplete` | 心跳广告结束 | 到达广告的结尾。 |
+| 播放广告 2 的第一帧。 | `trackEvent:AdStart` | Analytics 广告开始、心跳广告开始 |  |
+| 播放广告。 |  | 广告心跳 |  |
+| 广告 #2 结束播放。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 心跳广告结束 | 到达广告和面板的结尾。 |
+| 播放内容。 |  | 内容心跳 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
+| 内容结束。 | `trackComplete` | 心跳内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
 | 会话结束 | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 参数 {#parameters}
 
-当广告播放开始时，将发送 `Heartbeat Ad Start` 调用。如果广告的开头与 10 秒计时器不一致，则 `Heartbeat Ad Start` 调用将延迟几秒钟，并转到下一个 10 秒间隔。发生此情况时，`Content Heartbeat` 将以相同的间隔发出，您可以通过检查事件类型和资产类型来区分这两种调用：
+当广告播放开始时，将发送 `Heartbeat Ad Start` 调用。如果广告的开头与 10 秒计时器不一致，则 `Heartbeat Ad Start` 调用将延迟几秒钟，并转到下一个 10 秒间隔。发生此情况时，`Content Heartbeat` 将以相同的间隔发出，您可以通过检查事件类型和资源类型来区分这两种调用：
 
-### 心率广告开始
+### 心跳广告开始
 
 | 参数 | 值 | 注释 |
 |---|---|---|
@@ -43,7 +43,7 @@ ht-degree: 95%
 
 广告遵循与 `Content Heartbeats` 相同的基本模型，因此 `Ad Play` 调用类似于 `Content Play` 调用。
 
-### 心率广告播放调用
+### 心跳广告播放调用
 
 | 参数 | 值 | 注释 |
 |---|---|---|
@@ -52,7 +52,7 @@ ht-degree: 95%
 
 这些参数类似于 `Content Heartbeats` 调用，但是 `Ad Heartbeats` 调用包含一些额外的参数：
 
-### 广告心率
+### 广告心跳
 
 | 参数 | 值 | 注释 |
 |---|---|---|
@@ -63,14 +63,14 @@ ht-degree: 95%
 
 与 `Heartbeat Content Complete` 调用类似，当广告播放结束（即，到达播放头的结尾）时，将发送 `Heartbeat Ad Complete` 调用。此调用看起来类似于其他 `Heartbeat Ad` 调用，但包含几个特定的参数：
 
-### 心率广告结束调用
+### 心跳广告结束调用
 
 | 参数 | 值 | 注释 |
 |---|---|---|
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |
 
-## 前置广告时间的示例代码 {#sample-code-for-a-pre-roll-ad-break}
+## 前置式广告时间的示例代码 {#sample-code-for-a-pre-roll-ad-break}
 
 在此方案中，VOD 包含第一段和第二段前置广告，然后播放内容。
 
