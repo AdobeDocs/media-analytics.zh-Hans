@@ -1,14 +1,14 @@
 ---
-title: 流媒体收集API事件�请求端点
-description: “媒体收集API事件请求端点参数和响应是什么？”
+title: 流媒体收集 API – 事件请求端点
+description: “媒体收集 API 事件请求端点参数和响应是什么？”
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 
 ## URI 参数
 
-`sid`:从 [会话请求](mc-api-sessions-req.md).
+`sid`：从[会话请求](mc-api-sessions-req.md)返回的会话 ID。
 
 ## 请求正文
 
@@ -70,7 +70,7 @@ Access-Control-Expose-Headers Location
 
 | HTTP 响应代码 | 描述 | 客户端操作项 |
 |---|---|---|
-| **204** | **无内容。**<br/><br/>心率调用成功。 | 不适用 |
+| **204** | **无内容。**<br/><br/>心跳调用成功。 | 不适用 |
 | **400** | **错误请求。**<br/><br/>请求格式不正确。 | 检查 [JSON 验证架构](mc-api-json-validation.md)以了解请求类型。 |
 | **404** | **未找到。**<br/><br/>在后端服务中找不到媒体会话的会话 ID。 | 客户端应用程序应使用[会话请求](mc-api-sessions-req.md) API 创建另一个媒体会话并报告对它的跟踪。 |
 | **410** | **不存在。**<br/><br/>在后端服务中找到媒体会话，但客户端无法再对该会话报告活动。 | 客户端应用程序应使用[会话请求](mc-api-sessions-req.md) API 创建另一个媒体会话并报告对它的跟踪。 |
