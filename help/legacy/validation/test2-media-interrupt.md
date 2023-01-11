@@ -1,14 +1,14 @@
 ---
-title: 测试2：媒体中断
-description: 了解验证中使用的媒体中断测试。
+title: 测试 2：媒体中断
+description: 了解验证中使用的标准中断测试。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 89%
    媒体播放器启动时，会按照以下顺序发送以下调用：
 
    1. Adobe Analytics (AppMeasurement) 开始
-   1. Media Analytics（心率）开始
-   1. 请求的 Media Analytics（心率）Adobe Analytics 开始调用
+   1. Media Analytics（心跳）开始
+   1. 请求的 Media Analytics（心跳）Adobe Analytics 开始调用
 
    上述前两个调用包含其他的元数据和变量。有关调用参数和元数据，请参阅[测试调用详细信息](/help/legacy/validation/test-call-details.md#start-the-media-player)。
 
@@ -36,11 +36,11 @@ ht-degree: 89%
 
    **内容播放**
 
-   在内容播放期间，Media SDK 每 10 秒会向 Media Analytics 服务器发送播放调用（心率）。
+   在内容播放期间，Media SDK 每 10 秒会向 Media Analytics 服务器发送播放调用（心跳）。
 
    有关调用参数和元数据，请参阅[测试调用详细信息](/help/legacy/validation/test-call-details.md#play-main-content)。
 
-   另请参阅您平台的 [跟踪广告](/help/use-cases/track-ads/track-ads-overview.md) 有关这些广告调用的其他信息的说明。
+   另请参阅您平台的[跟踪广告](/help/use-cases/track-ads/track-ads-overview.md)说明，了解这些广告调用的其他相关信息。
 
 1. **将应用程序或浏览器移至后台**
 
