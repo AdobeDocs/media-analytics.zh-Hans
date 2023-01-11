@@ -1,20 +1,20 @@
 ---
-title: 处理应用程序在播放过程中出现的中断问题
+title: 处理播放期间的应用程序中断
 description: 了解如何处理媒体播放过程中的跟踪中断问题。
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
-# 处理应用程序在播放过程中出现的中断问题{#handling-application-interrupts-during-playback}
+# 处理播放期间的应用程序中断{#handling-application-interrupts-during-playback}
 
-媒体应用程序中的播放可能会以多种方式中断。 例如，用户可以明确按“暂停”，或者用户可以将应用程序放入后台。 无论媒体播放中断的原因是什么，跟踪指令都是相同的。
+可以通过多种方式中断媒体应用程序中的播放。例如，用户可以明确地按下暂停键，或者用户可以将应用程序置于后台。不论媒体播放过程因何种原因中断，跟踪指令均相同。
 
 1. 在应用程序中断（进入后台、媒体暂停等）时，调用 **`trackPause`**。
 1. 在应用程序返回前台和/或媒体重新开始播放时，调用 **`trackPlay`**。
@@ -35,4 +35,4 @@ ht-degree: 75%
 
 * _要如何重新启动同一个会话呢？_
 
-   有关恢复跟踪会话的信息，请参阅 [恢复不活动的会话](resuming-inactive.md).SDK会发送一个“恢复”ping，以通知后端用户正在手动恢复会话。
+   有关恢复跟踪会话的信息，请参阅[恢复不活动的会话](resuming-inactive.md)。SDK 会发送恢复 Ping 以通知后端用户正在手动恢复会话。
