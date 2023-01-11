@@ -1,20 +1,20 @@
 ---
-title: 一个VOD跟踪器用于多个会话
-description: 查看有关如何使用Media SDK使用一个跟踪器跟踪多个会话的示例。
+title: 一个 VOD 跟踪器用于多个会话
+description: 查看有关如何使用 Media SDK 通过一个跟踪器来跟踪多个会话的示例。
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # 一个 VOD 跟踪器用于多个会话{#vod-one-tracker-for-multiple-sessions}
 
-## 方案 {#scenario}
+## 场景 {#scenario}
 
 在此方案中，`MediaHeartbeat` 实例用于依次创建两个不同的会话。
 
@@ -22,11 +22,11 @@ ht-degree: 87%
 
 ## 参数 {#parameters}
 
-### 心率会话
+### 心跳会话
 
 | 参数 | 值 | 注释   |
 | --- | --- | --- |
-| `s:event:sid` | 唯一的会话 ID | 唯一的会话 ID 一直存在于所有心率网络调用中，直到调用 `trackSessionEnd`。 |
+| `s:event:sid` | 唯一的会话 ID | 唯一的会话 ID 一直存在于所有心跳网络调用中，直到调用 `trackSessionEnd`。 |
 
 ## 示例代码 {#sample-code}
 
