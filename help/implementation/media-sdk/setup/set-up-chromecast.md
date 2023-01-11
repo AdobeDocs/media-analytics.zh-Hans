@@ -1,36 +1,36 @@
 ---
-title: 如何设置适用于Chromecast的Media SDK
-description: 请按照以下步骤在Chromecast中设置Media SDK应用程序。
+title: 如何设置适用于 Chromecast 的 Media SDK
+description: 执行以下步骤，在 Chromecast 上设置 Media SDK 应用程序。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# 为Chromecast设置Mobile SDK v3.x {#set-up-chromecast}
+# 设置适用于 Chromecast 的 Mobile SDK v3.x {#set-up-chromecast}
 
-本节介绍为流媒体设置Chromecast安装的先决条件。
+此部分描述为流媒体设置 Chromecast 安装的先决条件。
 
-## 前提条件
+## 先决条件
 
 * **获取有效的配置参数**
 
-   在设置Media Analytics帐户后，您可以从Adobe代表处获取这些参数。
-* **在媒体播放器中包含以下API**
+   在设置 Media Analytics 帐户后，这些参数可以从 Adobe 代表获取。
+* **在媒体播放器中包含以下 API**
 
    * *用于订阅播放器事件的 API* - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
 
 Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针对移动设备应用程序的移动营销功能整合到一起。最初，移动服务可无缝集成 Adobe Analytics 和 Adobe Target 解决方案的应用程序分析和定位功能。请参阅 [Adobe Mobile Services 文档](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=zh-Hans)，以了解更多信息。
 
-适用于Experience Cloud解决方案的ChromecastAdobe移动库v3.x允许您测量使用JavaScript编写的Chromecast应用程序，通过受众管理收集并利用受众数据，以及测量视频参与度。
+适用于 Experience Cloud 解决方案的 Adobe Mobile Library for Chromecast v3.x 让您能够测量使用 JavaScript 编写的 Chromecast 应用程序，通过受众管理收集并利用受众数据，以及测量视频参与。
 
-## 移动库/ SDK实施
+## 移动设备库/SDK 实施
 
 1. 将下载的 Chromecast 库添加到您的项目中。
 
@@ -43,7 +43,7 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
       * `ADBMobileConfig` 配置
 
          这是为您的应用程序自定义的 SDK 配置文件。随 SDK 提供了一个 `ADBMobileConfig` 实施示例（在 `samples/` 下）。请从 Adobe 代表处获取正确的设置。
-   1. 将库文件添加到 `index.html` ，然后创建 `ADBMobileConfig` 全局变量(用于为Media Analytics配置Adobe移动的全局变量具有一个名为的排他键 `mediaHeartbeat`):
+   1. 将库文件添加到 `index.html` 文件中，并按照以下方式创建 `ADBMobileConfig` 全局变量（用于配置 Adobe Mobile for Media Analytics 的全局变量具有一个名为 `mediaHeartbeat` 的排他键）：
 
       ```js
       <script>
@@ -88,7 +88,7 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
 
       >[!IMPORTANT]
       >
-      >如果 `mediaHeartbeat` 配置不正确，媒体模块会进入错误状态并将停止发送跟踪调用。
+      >如果未正确配置 `mediaHeartbeat`，则媒体模块会进入错误状态并将停止发送跟踪调用。
 
       mediaHeartbeat 键的 ADBMobile 配置参数：
    | 配置参数 | 描述     |
@@ -104,7 +104,7 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
 
 1. 配置 Experience Cloud 访客 ID。
 
-   Experience Cloud 访客 ID 提供了一个跨 Experience Cloud 解决方案的通用访客 ID。Media Analytics和其他Marketing Cloud集成需要使用访客ID服务。
+   Experience Cloud 访客 ID 提供了一个跨 Experience Cloud 解决方案的通用访客 ID。Media Analytics 和其他 Marketing Cloud 集成都需要使用访客 ID 服务。
 
    验证您的 `ADBMobileConfig` 配置包含 `marketingCloud` 组织 ID。
 
@@ -133,7 +133,7 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
    | `getMarketingCloudID()` | 从访客 ID 服务中检索 Experience Cloud 访客 ID。<br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
    | `syncIdentifiers()` | 使用 Experience Cloud 访客 ID，您可以设置其他可与每个访客关联的客户 ID。访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。此方法对应于 JavaScript 库中的 `setCustomerIDs()`。例如：<br/><br/>`var identifiers = {};`<br/><br/>`identifiers["idType"] = "idValue";`<br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
-1. 对于跟踪媒体，请实施MediaDelegate协议
+1. 对于跟踪媒体，实施 MediaDelegate 协议
 
    ```js
     var delegate = {
