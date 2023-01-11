@@ -1,20 +1,20 @@
 ---
-title: 了解如何在Android中跟踪错误
-description: 了解如何在Android中使用Media SDK实施错误跟踪。
+title: 了解如何在 Android 中跟踪错误
+description: 了解如何在 Android 中使用 Media SDK 实施错误跟踪。
 uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '90'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # 在 Android 中跟踪错误{#track-errors-on-android}
 
-以下说明为使用 2.x SDK 进行实施提供了指南。
+以下说明为使用 2.x SDK 的实施提供了指南。
 
 >[!IMPORTANT]
 >
