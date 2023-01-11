@@ -1,20 +1,20 @@
 ---
-title: 了解如何在iOS中跟踪搜寻
-description: 了解如何使用iOS上的Media SDK跟踪搜寻开始和搜寻结束事件。
+title: 了解如何在 iOS 中跟踪搜寻
+description: 了解如何在 iOS 中使用 Media SDK 跟踪搜寻开始和搜寻结束事件。
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # 在 iOS 中跟踪搜寻{#track-seeking-on-ios}
 
-下面的说明为所有 2.x SDK 实施提供了指南。
+以下说明为所有 2.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
@@ -49,4 +49,4 @@ ht-degree: 82%
    }
    ```
 
-有关更多信息，请参阅跟踪方案[在主内容中进行搜寻的 VOD 播放](/help/use-cases/tracking-scenarios/vod-seeking.md)。
+有关更多信息，请参阅跟踪场景[在主内容中进行搜寻的 VOD 播放](/help/use-cases/tracking-scenarios/vod-seeking.md)。
