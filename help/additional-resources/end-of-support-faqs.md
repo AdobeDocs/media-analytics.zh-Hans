@@ -5,9 +5,9 @@ exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '691'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe 将在 2021 年 8 月 31 日终止支持版本 4 移动 SDK，届时还将
 
 1. **迁移到 Media Analytics 扩展需要耗费多少工作量？**
 
-   LOE取决于每个客户的实施，因此会有所不同。  查看下面的迁移文档后，请咨询顾问和/或客户关怀团队以获得其他支持。
+   LOE 取决于每位客户的实施，因此会有所不同。查看下面的迁移文档后，请咨询顾问和/或客户关怀团队以获得其他支持。
 
 [Media Analytics 扩展：Android 迁移](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
 
@@ -52,14 +52,14 @@ Adobe 将在 2021 年 8 月 31 日终止支持版本 4 移动 SDK，届时还将
 
    [Media Analytics 扩展：新实施](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
-1. **是否需要将 Launch 作为标签管理系统？如果我不想使用 Launch，应该怎么办？**
+1. **是否需要将 Launch 作为标记管理系统？如果我不想使用 Launch，应该怎么办？**
 
-   对于移动应用程序用例，不能使用 Launch 作为标签管理系统，因为它适用于 Web 用例。配置 SDK 扩展需要使用 Launch UI。这与您使用 Adobe Mobile Services UI 配置 Mobile v4 SDK 的方式相似。对于安装而言，使用 Launch 的好处是它可以根据您选择的扩展为您提供自定义的安装说明。
+   对于移动应用程序用例，不能使用 Launch 作为标记管理系统，因为它适用于 Web 用例。配置 SDK 扩展需要使用 Launch UI。这与您使用 Adobe Mobile Services UI 配置 Mobile v4 SDK 的方式相似。对于安装而言，使用 Launch 的好处是它可以根据您选择的扩展为您提供自定义的安装说明。
 
 1. **终止支持是否会影响适用于 tvOS 的 SDK？**
 
-   是，对于 tvOS（版本 10+），建议的实施是迁移到 Media Analytics 扩展。有关其他信息，请参阅[从独立的媒体 SDK 迁移到 Adobe Launch - iOS](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)。
+   是，对于 tvOS（版本 10+），建议的实施是迁移到 Media Analytics 扩展。有关其他信息，请参阅[从独立的 Media SDK 迁移到 Adobe Launch - iOS](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)。
 
 1. **此项终止支持是否影响适用于 Fire TV 和 AndroidTV 的 SDK？**
 
-   是，对于 Fire TV 和 AndroidTV，建议的实施是迁移到 Media Analytics 扩展。有关其他信息，请参阅[从独立的媒体 SDK 迁移到 Adobe Launch - Android](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)。
+   是，对于 Fire TV 和 AndroidTV，建议的实施是迁移到 Media Analytics 扩展。有关其他信息，请参阅[从独立的 Media SDK 迁移到 Adobe Launch - Android](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)。
