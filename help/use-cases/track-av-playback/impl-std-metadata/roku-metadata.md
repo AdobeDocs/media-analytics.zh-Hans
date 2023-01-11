@@ -1,14 +1,14 @@
 ---
-title: Roku元数据键说明
-description: 了解可用的Roku元数据键，并查看标准元数据常量的完整列表。
+title: 解释 Roku 元数据键
+description: 了解可用的 Roku 元数据键并查看标准元数据常量的完整列表。
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '470'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 | 节目 | `a.media.show` | `MEDIA_VideoMetadataKeySHOW` |
 | 季 | `a.media.season` | `MEDIA_VideoMetadataKeySEASON` |
 | 剧集 | `a.media.episode` | `MEDIA_VideoMetadataKeyEPISODE` |
-| 资产 | `a.media.asset` | `MEDIA_VideoMetadataKeyASSET_ID` |
+| 资源 | `a.media.asset` | `MEDIA_VideoMetadataKeyASSET_ID` |
 | 流派 | `a.media.genre` | `MEDIA_VideoMetadataKeyGENRE` |
 | 首次播放日期 | `a.media.airDate` | `MEDIA_VideoMetadataKeyFIRST_AIR_DATE` |
 | 首次数字化播放日期 | `a.media.digitalDate` | `MEDIA_VideoMetadataKeyFIRST_DIGITAL_DATE` |
@@ -76,7 +76,7 @@ ht-degree: 95%
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | 用于在 `MediaInfo` `trackLoad` 上设置元数据的常量 |
 | `MEDIA_STANDARD_AD_METADATA` | 用于在 `EventData` `trackEvent` 上设置广告元数据的常量 |
-| `MEDIA_RESUMED` | 用于发送视频恢复心率的常量。要恢复先前已停止内容的视频跟踪，您需要在调用 `mediaTrackLoad` 时，在 `mediaInfo` 对象中设置 `MEDIA_RESUMED` 属性。（您无法使用 `mediaTrackEvent` API 跟踪 `MEDIA_RESUMED` 事件。）当应用程序想要继续跟踪用户之前停止观看但现在打算继续观看的内容时，应将 `MEDIA_RESUMED` 设置为 true。<br/><br/>例如，假设一位用户只观看了 30% 的内容，然后关闭了应用程序。此操作将导致会话结束。之后，如果同一用户返回到相同的内容，并且应用程序允许从先前停止的位置恢复会话，则应用程序应该在调用 `mediaTrackLoad` API 时将 `MEDIA_RESUMED` 设置为“true”。其结果是，同一视频内容的这两个不同媒体会话可以链接在一起。以下是实施示例： <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)`<br/><br/>这将为视频创建一个新会话，但它也会导致 SDK 发送事件类型为“resume”的心率请求，该事件类型可用于进行报告，以将两个不同的媒体会话关联在一起。 |
+| `MEDIA_RESUMED` | 用于发送视频恢复心跳的常量。要恢复先前已停止内容的视频跟踪，您需要在调用 `mediaTrackLoad` 时，在 `mediaInfo` 对象中设置 `MEDIA_RESUMED` 属性。（您无法使用 `mediaTrackEvent` API 跟踪 `MEDIA_RESUMED` 事件。）当应用程序想要继续跟踪用户之前停止观看但现在打算继续观看的内容时，应将 `MEDIA_RESUMED` 设置为 true。<br/><br/>例如，假设一位用户只观看了 30% 的内容，然后关闭了应用程序。此操作将导致会话结束。之后，如果同一用户返回到相同的内容，并且应用程序允许从先前停止的位置恢复会话，则应用程序应该在调用 `mediaTrackLoad` API 时将 `MEDIA_RESUMED` 设置为“true”。其结果是，同一视频内容的这两个不同媒体会话可以链接在一起。以下是实施示例： <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>这将为视频创建一个新会话，但它也会导致 SDK 发送事件类型为“resume”的心跳请求，该事件类型可用于报告，以将两个不同的媒体会话关联在一起。 |
 
 ### 内容类型常量
 
