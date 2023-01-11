@@ -1,14 +1,14 @@
 ---
-title: iOS元数据键说明
-description: 了解可用的iOS元数据键。
+title: 解释 iOS 元数据键
+description: 了解可用的 iOS 元数据键。
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 90%
 | `ADBVideoMetadataKeySHOW` | 节目 | 视频 |
 | `ADBVideoMetadataKeySEASON` | 季 | 视频 |
 | `ADBVideoMetadataKeyEPISODE` | 剧集 | 视频 |
-| `ADBVideoMetadataKeyASSET_ID` | 资产 | 视频 |
+| `ADBVideoMetadataKeyASSET_ID` | 资源 | 视频 |
 | `ADBVideoMetadataKeyGENRE` | 流派 | 视频 |
 | `ADBVideoMetadataKeyFIRST_AIR_DATE` | 首次播放日期 | 视频 |
 | `ADBVideoMetadataKeyFIRST_DIGITAL_DAT` | 首次数字化日期 | 视频 |
@@ -35,7 +35,7 @@ ht-degree: 90%
 | `ADBVideoMetadataKeySHOW_TYPE` | 显示类型 | 视频 |
 | `ADBVideoMetadataKeyAD_LOAD` | 广告载入 | 视频 |
 | `ADBVideoMetadataKeyMVPD` | mvpd | 视频 |
-| `ADBVideoMetadataKeyAUTHORIZED` | Authorization | 视频 |
+| `ADBVideoMetadataKeyAUTHORIZED` | 授权 | 视频 |
 | `ADBVideoMetadataKeyDAY_PART` | 播出时段 | 视频 |
 | `ADBVideoMetadataKeyFEED` | 信息源 | 视频 |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | 流格式 | 视频 |
@@ -48,7 +48,7 @@ ht-degree: 90%
 | `ADBAudioMetadataKeyARTIST` | 季 | 音频 |
 | `ADBAudioMetadataKeyAUTHOR` | 季 | 音频 |
 | `ADBAudioMetadataKeyLABEL` | 剧集 | 音频 |
-| `ADBAudioMetadataKeyPUBLISHER` | 资产 | 音频 |
+| `ADBAudioMetadataKeyPUBLISHER` | 资源 | 音频 |
 | `ADBAudioMetadataKeySTATION` | 流派 | 音频 |
 
 ## 广告元数据键
