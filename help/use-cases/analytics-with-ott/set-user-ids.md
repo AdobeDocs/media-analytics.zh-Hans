@@ -6,7 +6,7 @@ exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
 feature: "Media Analytics, API"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '53'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 在 ADBMobile SDK 上设置并获取唯一的用户 ID，如下所示：
 
-* **已设置:**
+* **已设置：**
 
    * **Roku:**
 
