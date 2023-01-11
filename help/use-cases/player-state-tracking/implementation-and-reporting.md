@@ -5,9 +5,9 @@ exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 * `a.media.states.[state.name].count = 4` - 标识在每次播放流时某种状态出现的次数
 * `a.media.states.[state.name].time = 240` - 标识在每次播放流时持续的时长（以秒为单位）
 
-## 报表
+## 报告
 
 为播放器状态跟踪启用报表包后，所有播放器状态量度都可用于 Analysis Workspace 或组件（区段、计算量度）中提供的任何报告可视化。可以从 Admin Console 中使用“媒体报告设置”（“编辑设置”>“媒体管理”>“媒体报告”）为每个报告启用新量度。
 
