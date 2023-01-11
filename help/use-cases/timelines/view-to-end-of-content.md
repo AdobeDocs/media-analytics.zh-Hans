@@ -1,14 +1,14 @@
 ---
-title: 了解媒体跟踪时间轴
-description: 深入了解播放头时间轴和相应用户的操作。 了解每个操作的详细信息及其随附的请求。
+title: 了解媒体跟踪时间线
+description: 深入挖掘播放头时间线和相应的用户的操作。了解每个操作的详细信息及其随附的请求。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1074'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 97%
 
 下图说明了播放头时间轴和用户操作的相应时间轴。每项操作及其随附请求的详细信息如下所述。
 
-![API内容](assets/va_api_content.png)
+![API 内容](assets/va_api_content.png)
 
-![API操作](assets/va_api_actions.png)
+![API 操作](assets/va_api_actions.png)
 
 ## 操作详细信息
 
@@ -34,7 +34,7 @@ ht-degree: 97%
 
 它会向客户端返回一个会话 ID (`{sid}`)，用于标识会话中的所有后续跟踪调用。播放器状态不是“正在播放”，而是“正在启动”。
 
-强制会话参数必须包含在请求正文中的 `params` 映射中。有关会话的信息，请参阅媒体收集API文档。
+强制会话参数必须包含在请求正文中的 `params` 映射中。有关会话的信息，请参阅媒体收集 API 文档。
 
 在后端，此调用会生成一个 Adobe Analytics 启动调用。
 
@@ -197,7 +197,7 @@ ht-degree: 97%
 | --- | :---: | :---: | --- |
 | 跟踪前置广告 1 结束 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-跟踪第一个前置广告的结束。
+跟踪第一个前置式广告的结束。
 
 ```json
 {
@@ -215,7 +215,7 @@ ht-degree: 97%
 | --- | :---: | :---: | --- |
 | 跟踪前置广告 2 开始 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-跟踪第二个前置广告的开始，其时长为 7 秒。
+跟踪第二个前置式广告的开始，其时长为 7 秒。
 
 ```json
 {
@@ -265,7 +265,7 @@ ht-degree: 97%
 | --- | :---: | :---: | --- |
 | 跟踪前置广告 2 结束 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-跟踪第二个前置广告的结束。
+跟踪第二个前置式广告的结束。
 
 ```json
 {
@@ -389,7 +389,7 @@ ht-degree: 97%
 | --- | :---: | :---: | --- |
 | 跟踪中置广告时间开始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-持续时间为 8 秒的中置广告：发送 `adBreakStart`。
+持续时间为 8 秒的中置式广告：发送 `adBreakStart`。
 
 ```json
 {
@@ -412,7 +412,7 @@ ht-degree: 97%
 | --- | :---: | :---: | --- |
 | 跟踪中置广告 3 开始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-跟踪中置广告。
+跟踪中置式广告。
 
 ```json
 {
@@ -461,7 +461,7 @@ ht-degree: 97%
 | --- | :---: | :---: | --- |
 | 跟踪中置广告 1 结束 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-中置广告完成。
+中置式广告完成。
 
 ```json
 {
@@ -584,7 +584,7 @@ ht-degree: 97%
 | --- | :---: | :---: | --- |
 | 用户完成对内容的观看。 | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
-将 `sessionComplete` 发送到后端，以表明用户完成了对整个内容的观看。
+将 `sessionComplete` 发送到后端，表明用户已观看全部内容。
 
 ```json
 {
@@ -597,4 +597,4 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->**无搜寻事件？-** 媒体收集 API 中没有明确支持 `seekStart` 或 `seekComplete` 事件。这是因为在终端用户进行清理时，某些播放器会生成大量此类事件，而几百个用户很容易就会阻塞后端服务的网络带宽。Adobe 根据设备时间戳而不是播放头位置来计算心率持续时间，以明确支持搜寻事件。
+>**无搜寻事件？-** 媒体收集 API 中没有明确支持 `seekStart` 或 `seekComplete` 事件。这是因为在终端用户进行清理时，某些播放器会生成大量此类事件，而几百个用户很容易就会阻塞后端服务的网络带宽。Adobe 根据设备时间戳而不是播放头位置来计算心跳持续时间，以明确支持搜寻事件。
