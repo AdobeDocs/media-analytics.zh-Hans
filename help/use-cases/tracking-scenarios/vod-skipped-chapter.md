@@ -1,41 +1,41 @@
 ---
-title: 跳过一个章节的VOD播放
-description: 查看有关如何使用Media SDK跟踪用户跳过一个章节的VOD内容的示例。
+title: 跳过一个章节的 VOD 播放
+description: 查看有关如何使用 Media SDK 跟踪用户跳过了一个章节的 VOD 内容的示例。
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # 跳过一个章节的 VOD 播放{#vod-playback-with-a-skipped-chapter}
 
-## 方案 {#scenario}
+## 场景 {#scenario}
 
 在此方案中，用户将跳过主内容中的一章。
 
 此方案与[包含一个章节的 VOD 播放](/help/use-cases/tracking-scenarios/vod-one-chapter.md)方案相同，但此例中的用户希望从章节中搜寻，从而跳过该章节以进入主内容。
 
-| 触发器 | 心率方法 | 网络调用   | 注释 |
+| 触发器 | 心跳方法 | 网络调用   | 注释 |
 |---|---|---|---|
-| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心率内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与 [iOS 种不含广告的播放](vod-no-intrs-details.md)方案完全相同。 |
-| 章节开始。 | `trackEvent:ChapterStart` | 心率章节开始 |  |
-| 将播放章节的第一帧。 | `trackPlay` | 心率章节播放 | 当章节内容在主内容之前播放时，我们希望在章节开始时开始播放心率。 |
-| 将播放章节。 |  | 章节心率 |  |
-| 搜寻开始跳过第一章。 | `trackEvent:trackSeekStart` |  | 搜寻期间没有心率 |
-| 搜寻结束。 | `trackEvent:trackSeekComplete` |  | 心率会继续发布此内容。 |
+| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心跳内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与 [iOS 种不含广告的播放](vod-no-intrs-details.md)方案完全相同。 |
+| 章节开始。 | `trackEvent:ChapterStart` | 心跳章节开始 |  |
+| 将播放章节的第一帧。 | `trackPlay` | 心跳章节播放 | 当章节内容在主内容之前播放时，我们希望在章节开始时开始播放心跳。 |
+| 将播放章节。 |  | 章节心跳 |  |
+| 搜寻开始跳过第一章。 | `trackEvent:trackSeekStart` |  | 搜寻期间没有心跳 |
+| 搜寻结束。 | `trackEvent:trackSeekComplete` |  | 心跳会继续发布此内容。 |
 | 应用程序可实现用户从常规的章节边界进行搜寻。 | `trackEvent:trackChapterSkip` |  |  |
-| 将播放内容。 |  | 内容心率 |  |
-| 内容结束播放。 | `trackComplete` | 心率内容结束 | 此网络调用与 [iOS 中没有中断的播放](vod-no-intrs-details.md)方案完全相同。 |
+| 将播放内容。 |  | 内容心跳 |  |
+| 内容结束播放。 | `trackComplete` | 心跳内容结束 | 此网络调用与 [iOS 中没有中断的播放](vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户没有观看至媒体结束，也必须调用此 API。 |
 
 ## 参数 {#parameters}
 
-在章节播放过程中使用的参数与[包含一个章节的 VOD 播放](/help/use-cases/tracking-scenarios/vod-one-chapter.md)方案中的参数相同，不同之处在于没有章节结束网络调用。
+在章节播放过程中使用的参数与[包含一个章节的 VOD 播放](/help/use-cases/tracking-scenarios/vod-one-chapter.md)场景中的参数相同，不同之处仅在于没有章节结束网络调用。
 
 ## 示例代码 {#sample-code}
 
