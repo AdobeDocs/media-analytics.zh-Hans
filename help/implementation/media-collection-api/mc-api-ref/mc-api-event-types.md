@@ -1,14 +1,14 @@
 ---
 title: 流媒体事件类型和描述
-description: “媒体收集事件类型和描述是什么？ “
+description: “什么是媒体收集事件类型和描述？”
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '353'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
