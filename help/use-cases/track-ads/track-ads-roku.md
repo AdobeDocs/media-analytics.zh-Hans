@@ -1,20 +1,20 @@
 ---
-title: 了解如何在Roku中跟踪广告
+title: 了解如何在 Roku 中跟踪广告
 description: 使用 Media SDK 在 Roku 应用程序中实施广告跟踪。
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 在 Roku 中跟踪广告{#track-ads-on-roku}
 
-以下说明为使用 2.x SDK 进行实施提供了指南。
+以下说明为使用 2.x SDK 的实施提供了指南。
 
 >[!IMPORTANT]
 >
@@ -57,7 +57,7 @@ ht-degree: 97%
    ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_START, adBreakInfo, contextData)
    ```
 
-1. 识别广告资产的开始时间，然后使用广告信息创建 `AdObject` 实例。
+1. 识别广告资源的开始时间，然后使用广告信息创建 `AdObject` 实例。
 
    ```
    adInfo =  
@@ -70,7 +70,7 @@ ht-degree: 97%
 1. （可选）通过上下文数据变量将标准和/或广告元数据附加到媒体跟踪会话。
 
    * [在 Roku 中实施标准广告元数据](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
-   * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告资产的数据进行填充：
+   * **自定义广告元数据 –** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告资源的数据进行填充：
 
       ```
       contextData = {}
@@ -84,7 +84,7 @@ ht-degree: 97%
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_START, adInfo, contextData)
    ```
 
-1. 当广告资产播放到达广告结尾时，使用 `AdComplete` 事件调用 `trackEvent()`。
+1. 当广告资源播放到达广告结尾时，使用 `AdComplete` 事件调用 `trackEvent()`。
 
    ```
    standardAdMetadata = {}
@@ -107,4 +107,4 @@ ht-degree: 97%
    ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_COMPLETE, adBreakInfo, contextData)
    ```
 
-有关更多信息，请参阅跟踪方案[包含前置广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)。
+有关更多信息，请参阅跟踪场景[包含前置广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)。
