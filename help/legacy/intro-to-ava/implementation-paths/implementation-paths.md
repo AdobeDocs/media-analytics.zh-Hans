@@ -5,9 +5,9 @@ exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '650'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
 扩展是一种用于扩展标记功能的代码包（JavaScript、HTML 和 CSS）。使用几乎自助的界面构建、管理和更新您的集成。您可以将扩展视为用于完成任务的应用程序。有关更多信息，请参阅 [Adobe Experience Platform 文档](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)中的&#x200B;*标记概述*&#x200B;一文。
 
-Adobe Media Analytics (MA) 扩展添加了适用于音频和视频的核心 JavaScript Media SDK (Media 2.x SDK)。此扩展提供了将 `MediaHeartbeat` 跟踪器实例添加到 Data Collection 网站或项目的功能。
+Adobe Media Analytics (MA) 扩展添加了适用于音频和视频的核心 JavaScript Media SDK (Media 2.x SDK)。此扩展提供了将 `MediaHeartbeat` 跟踪器实例添加到数据收集网站或项目的功能。
 
 包含 Media Analytics 扩展的 Adobe Data Collection 要求：
 * 您必须是 Adobe Experience Cloud 客户。
@@ -40,7 +40,7 @@ Adobe Media Analytics (MA) 扩展添加了适用于音频和视频的核心 Java
 
 ## 客户端
 
-这些是仅限 Media Analytics 的集成。您可以选择视频心率 SDK 和/或媒体收集 API 集成。此路径可以跨任何播放器使用，包括客户和/或 OVP 播放器，如 Brightcove、Ooyala、thePlatform 等。
+这些是仅限 Media Analytics 的集成。您可以选择视频心跳 SDK 和/或媒体收集 API 集成。此路径可以跨任何播放器使用，包括客户和/或 OVP 播放器，如 Brightcove、Ooyala、thePlatform 等。
 
 如果 Media Analytics 是您的预期路径，请参阅 [Media SDK 实施](/help/legacy/setup/legacy-setup-overview.md)和[媒体收集 API](/help/implementation/media-collection-api/mc-api-overview.md)。
 
