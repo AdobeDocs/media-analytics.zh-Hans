@@ -1,23 +1,23 @@
 ---
-title: 了解如何使用JavaScript 3.x跟踪搜寻
-description: 了解如何使用浏览器应用程序(JS 3.x)中的Media SDK跟踪搜寻开始和搜寻结束事件。
+title: 了解如何使用 JavaScript 3.x 跟踪搜寻
+description: 了解如何在浏览器应用程序 (JS 3.x) 中使用 Media SDK 跟踪搜寻开始和搜寻结束事件。
 exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '134'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
-# 使用JavaScript 3.x跟踪搜寻{#track-seeking-on-javascript}
+# 使用 JavaScript 3.x 跟踪搜寻{#track-seeking-on-javascript}
 
-下面的说明为所有 3.x SDK 实施提供了指南。
+以下说明为所有 3.x SDK 实施提供了指南。
 
 >[!IMPORTANT]
 >
->如果您实施的是SDK的先前版本，可以在此处下载开发人员指南： [下载SDK。](/help/getting-started/download-sdks.md)
+>如果您实施的是 SDK 之前的版本，可以在此处下载开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)。
 
 ## 搜寻跟踪常量
 
@@ -44,4 +44,4 @@ ht-degree: 61%
    };
    ```
 
-有关更多信息，请参阅跟踪方案[在主内容中进行搜寻的 VOD 播放](/help/use-cases/tracking-scenarios/vod-seeking.md)。
+有关更多信息，请参阅跟踪场景[在主内容中进行搜寻的 VOD 播放](/help/use-cases/tracking-scenarios/vod-seeking.md)。
