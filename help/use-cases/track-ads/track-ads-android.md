@@ -1,20 +1,20 @@
 ---
-title: 了解如何在Android中跟踪广告
+title: 了解如何在 Android 中跟踪广告
 description: 使用 Media SDK 在 Android 应用程序中实施广告跟踪。
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 在 Android 中跟踪广告{#track-ads-on-android}
 
-以下说明为使用 2.x SDK 进行实施提供了指南。
+以下说明为使用 2.x SDK 的实施提供了指南。
 
 >[!IMPORTANT]
 >
@@ -88,7 +88,7 @@ ht-degree: 96%
 
    help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md
 
-   * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
+   * **自定义广告元数据 –** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
 
       ```java
       // Setting Ad Metadata
@@ -135,4 +135,4 @@ ht-degree: 96%
    }
    ```
 
-有关更多信息，请参阅跟踪方案[包含前置广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)。
+有关更多信息，请参阅跟踪场景[包含前置广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)。
