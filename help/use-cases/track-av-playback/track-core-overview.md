@@ -1,14 +1,14 @@
 ---
 title: 跟踪内容播放说明
-description: “了解有关跟踪核心播放的信息，包括跟踪媒体加载、媒体开始、媒体暂停和媒体结束。 “
+description: “了解如何跟踪核心播放，包括跟踪媒体载入、媒体开始、媒体暂停和媒体结束。”
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 96%
 
 ## 实施 {#implement}
 
-1. **初始跟踪设置 -**&#x200B;识别用户何时触发播放意图（用户点击“播放”和/或自动播放开启），并使用媒体的内容名称、内容 ID、内容时长和流类型信息，创建 `MediaObject` 实例。
+1. **初始跟踪设置 –**&#x200B;识别用户何时触发播放意图（用户点击“播放”和/或自动播放开启），并使用媒体的内容名称、内容 ID、内容时长和流类型信息，创建 `MediaObject` 实例。
 
    **`MediaObject`引用：**
 
@@ -111,7 +111,7 @@ ht-degree: 96%
       >
       >将标准元数据对象附加到媒体对象是可选的。
 
-      实例化一个标准元数据对象，填充所需变量，并在媒体心率对象中设置该元数据对象。
+      实例化一个标准元数据对象，填充所需变量，并在媒体心跳对象中设置该元数据对象。
 
       请在此处查看元数据的完整列表：[音频和视频参数。](../../implementation/variables/audio-video-parameters.md)
 
@@ -242,4 +242,4 @@ if (e.type == "buffered") {
 
 ## 验证 {#validate}
 
-有关验证 *旧版* 实施，请参阅 [旧版验证。](/help/legacy/validation/validation-overview.md)
+有关验证&#x200B;*旧版*&#x200B;实施的信息，请参阅[旧版验证。](/help/legacy/validation/validation-overview.md)
