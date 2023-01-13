@@ -6,17 +6,17 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # 获取 Media SDK、使用标记的扩展和 OTT SDK {#download-sdks}
 
-此页面上的信息包括用于下载当前媒体SDK和获取使用标记的媒体扩展的链接。
+此页面上的信息包括用于下载当前 Media SDK 和获取使用标记的媒体扩展的链接。
 
-Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记和移动 SDK 管理功能。标记提供一种简单的方式以部署和管理强化相关客户体验所需的分析、营销和广告解决方案。有关标记的其他信息，请参阅 [标记概述](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=zh-Hans).
+Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记和移动 SDK 管理功能。标记提供一种简单的方式以部署和管理强化相关客户体验所需的分析、营销和广告解决方案。有关标记的其他信息，请参阅[标记概述](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=zh-Hans)。
 
 
 >[!NOTE]
@@ -30,7 +30,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记�
 
 | 支持的平台 | 版本 |  API   |  文档  | 示例 |
 |:---:|---|---|---|---|
-| ![JavaScript 图标](assets/javascript-icon.png) | Web - [适用于 JS v3.0.2 的 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用JavaScript安装Analytics](/help/implementation/media-sdk/setup/web-implementation.md) | [适用于 JS 的 Media SDK v3.0.2 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript 图标](assets/javascript-icon.png) | Web - [适用于 JS v3.0.2 的 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用 JavaScript 安装 Analytics](/help/implementation/media-sdk/setup/web-implementation.md) | [适用于 JS 的 Media SDK v3.0.2 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript 图标](assets/javascript-icon.png) | Web - 媒体扩展 |  | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展 - 使用标记（数据收集）](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 
 ### 移动实施 {#get-mobile-extension}
