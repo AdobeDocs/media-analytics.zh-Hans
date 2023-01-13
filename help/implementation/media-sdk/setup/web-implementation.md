@@ -5,17 +5,17 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# 使用JavaScript安装Analytics {#install-web-sdks}
+# 使用 JavaScript 安装 Analytics {#install-web-sdks}
 
-本页中的信息介绍了如何安装Web独立SDK和设置JavaScript。
+本页上的信息描述如何安装 Web 独立 SDK 和设置 JavaScript。
 
-或者，您也可以使用Adobe Medium分析扩展来实施Analytics，如 [使用Media Analytics扩展实施Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+或者，还可使用 Adobe Media Analytics 扩展实施 Analytics，如[使用 Media Analytics 扩展实施 Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md) 中所述。
 
 ## 先决条件 {#prerequesites}
 
