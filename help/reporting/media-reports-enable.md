@@ -5,9 +5,9 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '950'
+source-git-commit: e0a8d2d16a746a717d54bdb171f66f3a7d112251
+workflow-type: tm+mt
+source-wordcount: '940'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 收集媒体量度的每个报表包必须在发送媒体数据之前进行配置。
 
-只有在启用“媒体核心”并为[体验质量](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=zh-Hans)启用跟踪后，高级客户才能使用 Analysis Workspace 中的媒体面板。
+只有在启用“媒体核心”并为[体验质量](/help/use-cases/track-qos/track-qos-overview.md)启用跟踪后，高级客户才能使用 Analysis Workspace 中的媒体面板。
 
 >[!TIP]
 >
