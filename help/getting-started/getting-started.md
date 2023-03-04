@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '298'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Analytics for Streaming Media 提供两种主要的实施方法，媒体 S
 
 >[!IMPORTANT]
 >
->要实施 Adobe Analytics Streaming Media，请联系您的 Adobe 销售代表或客户经理以确您的产品组合包含流媒体。
+>要实施Adobe Analytics Streaming Media，请联系您的Adobe销售代表或Adobe客户团队，以确保Streaming Media包含在您的产品组合中。
 
 ## 适用于流媒体的媒体 SDK {#media-sdks}
 

@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '486'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 要实施 Adobe Analytics for Streaming Media，请完成以下任务：
 
 1. **确认您的流媒体定价模型**<br>
-当前的定价模型基于视频流。如有必要，请联系您的销售代表或客户经理以签订新的销售订单，因为 Streaming Media Analytics 与 Adobe Analytics 是分开销售的。
+当前的定价模型基于视频流。如有必要，请联系您的销售代表或Adobe客户团队以签署新的销售订单，因为Streaming Media Analytics与Adobe Analytics是分开销售。
 
 1. **确认您正在实施 Adobe Analytics**<br>
 Streaming Media for Adobe Analytics 还需要 Adobe Analytics 基本实施。有关更多信息，请参阅[实施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)。

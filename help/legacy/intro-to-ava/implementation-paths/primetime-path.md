@@ -4,10 +4,10 @@ description: 了解 Adobe Primetime 解决方案及其如何帮助从流媒体�
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 82%
 
 ---
 
@@ -31,4 +31,4 @@ TVSDK 已与 Media SDK 集成，这使得在所有受支持的平台上都可以
 
 >[!NOTE]
 >
->对于此实施路径，由于 Media Analytics 具有独有的 SKU，其定价模型已由基于服务器调用的模型变为基于媒体流的模型，因此客户将需要联系他们的销售代表/客户经理来签署新的销售订单。您还应该联系销售代表/帐户管理员，讨论购买 TVSDK 的相关事宜。
+>对于此实施路径，由于Media Analytics具有独有的SKU，其定价模型已由基于服务器调用的模型变为基于媒体流的模型，因此客户将需要联系他们的销售代表/Adobe客户团队来签署新的销售订单。 您还应该联系销售代表/帐户管理员，讨论购买 TVSDK 的相关事宜。
