@@ -4,14 +4,14 @@ description: 了解如何实施适用于 Web 应用程序的 Adobe Streaming Med
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
-workflow-type: ht
-source-wordcount: '453'
-ht-degree: 100%
+source-git-commit: 9d7886a67e426089977cbe322d310c36604646d0
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 98%
 
 ---
 
-# 使用 JavaScript 安装 Analytics {#install-web-sdks}
+# 使用JavaScript安装Media Analytics {#install-web-sdks}
 
 本页上的信息描述如何安装 Web 独立 SDK 和设置 JavaScript。
 
