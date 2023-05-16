@@ -45,6 +45,7 @@ ht-degree: 100%
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
             ```
+
          >[!IMPORTANT]
          >
          >当用户选择禁用跟踪时，所有保留的设备数据和 ID 将被清除，除非用户重新选择启用。
@@ -62,6 +63,7 @@ ht-degree: 100%
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
+
       * **返回当前设置：**
 
          * **Chromecast：**
@@ -75,6 +77,7 @@ ht-degree: 100%
             ```
             ADBMobile().getPrivacyStatus()
             ```
+
    使用 `setPrivacyStatus` 更改隐私设置后，更改将保持有效，直至再次使用此方法更改设置或卸载并重新安装应用程序。
 
 ## 检索存储的标识符（OTT 应用程序） {#retrieving-stored-identifiers-ott-apps}
