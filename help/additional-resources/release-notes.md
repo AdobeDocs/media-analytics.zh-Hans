@@ -3,16 +3,16 @@ title: 适用于流媒体的 Adobe Analytics 发行说明
 description: 查看 Adobe Analytics 发行说明。
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 0c02fec77d6484774ea81e997529accddb19d175
+source-git-commit: 328a62fa0f0f895f81a101f1e0225f7090d9a3ca
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '921'
 ht-degree: 92%
 
 ---
 
-# 适用于流媒体的 Adobe Analytics 发行说明（2022 年 9 月）
+# 適用於流媒體的 Adobe Analytics發行說明（2023年5月）
 
-**上次更新日期**：2022 年 9 月 22 日
+**上次更新日期**：2023 年 5 月 12 日
 
 ## 相关资源
 
@@ -30,7 +30,7 @@ ht-degree: 92%
 
 | 功能 | 描述 | 预定日期 |
 | ----------- | ---------- | ------- |
-| 媒体收集：与Experience Edge（API和Mobile SDK）集成 | 您现在可以使用Experience Edge API和Mobile SDK来实施流媒体，从而允许您构建更个性化的促销活动并提供更个性化的内容，从而生成要报告的更多跟踪数据。<p>此增强功能可跨所有解决方案（如CJA报告、RT-CDP、AJO和事件转发）提供统一的收集方法。  [了解详情](/help/implementation/media-sdk/implementation-edge.md) | 2023年5月底 |
+| Media Collection：與Experience Edge （API和Mobile SDK）整合 | 您現在可以使用Experience Edge API和Mobile SDK實作串流媒體，讓您建立更個人化的行銷活動，並提供更個人化的內容，產生更多可報告的追蹤資料。<p>此增強功能提供跨所有解決方案的統一收集方法，例如CJA報告、RT-CDP、AJO和事件轉送。  [了解详情](/help/implementation/implementation-edge.md) | 2023 年 5 月 12 日 |
 | “媒体并行查看者”面板 | 了解同时观看的人数在哪里达到峰值或在哪里发生下降。获得关于内容质量和观众参与情况的宝贵洞察，并帮助进行故障排除或规划数量和规模。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=en) | 2022 年 8 月 9 日 |
 | “Media Playback 耗时”面板 | Media Playback 耗时提供有关查看者参与情况的宝贵洞察，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的洞察。 您可以观察在特定时间点查看媒体流的耗时。您可以按不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | 2022 年 8 月 9 日 |
 | 在移动记分卡中共享批注 | 您可以在移动记分卡中显示在工作区中创建的批注。这允许您直接在移动记分卡项目中共享有关您的组织和活动的上下文数据细微差别和见解，可在 Analytics 功能板移动应用程序中查看。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=en) | 2022 年 6 月 15 日 |

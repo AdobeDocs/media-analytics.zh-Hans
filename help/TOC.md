@@ -5,7 +5,7 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施 Adobe Analytics for Streaming Media。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 9b448c75604abe2683ab4d522a7197dfe1af55be
+source-git-commit: 129818d73bdcc63fcf922d295e3f360ab1375dbe
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 99%
@@ -40,10 +40,10 @@ ht-degree: 99%
             + [使用 JavaScript 安装 Analytics](implementation/media-sdk/setup/web-implementation.md)
             + [使用 Media Analytics 扩展安装 Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [安装移动 SDK](implementation/media-sdk/setup/mobile-implementation.md)
-         + [使用Adobe Experience Platform Edge安装Analytics](implementation/media-sdk/implementation-edge.md)
          + 安装 OTT SDK{#ott-setup}
             + [安装 Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
             + [安装 Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
+   + [使用Adobe Experience Platform Edge安裝Analytics](implementation/implementation-edge.md)
    + 媒体收集 API - 实施 {#streaming-media-apis}
       + [媒体收集](implementation/media-collection-api/mc-api-overview.md)
       + [API 快速入门](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
