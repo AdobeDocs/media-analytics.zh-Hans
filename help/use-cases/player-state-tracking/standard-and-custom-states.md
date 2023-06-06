@@ -4,9 +4,9 @@ description: 了解播放器状态跟踪功能，包括实施和报告标准播�
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '279'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '278'
 ht-degree: 100%
 
 ---
@@ -42,4 +42,4 @@ ht-degree: 100%
 
 利用创建自定义状态的功能，您可以在播放会话期间捕获自定义操作和更新自定义元数据。
 
-有关创建自定义状态的信息，请参参阅 [Media API 参考指南：`createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+有关创建自定义状态的信息，请参参阅 [Media API 参考指南：`createStateObject`](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)

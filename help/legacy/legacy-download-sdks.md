@@ -4,10 +4,10 @@ description: 可用平台（包括 Android、iOS、JavaScript、Chromecast 和 R
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Media Analytics 扩展添加了适用于音频和视频的核心 JavaScrip
 * 您必须是 Adobe Experience Cloud 客户。
 * 您必须在网页上部署 Data Collection 或 DTM 嵌入代码。
 * 您必须配置 [Analytics 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hans)。
-* 您必须配置 [Adobe Media Analytics for Audio and Video Launch 扩展](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)。
+* 您必须配置 [Adobe Media Analytics for Audio and Video 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)。
 * 您必须配置 [Experience Cloud ID 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hans)。
 
 ## 下载 2.x Media SDK {#download-2x-sdks}
