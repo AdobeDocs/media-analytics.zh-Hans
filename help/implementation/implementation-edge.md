@@ -1,26 +1,27 @@
 ---
-title: 設定適用於流媒體的 Analytics實作的首要步驟
-description: 瞭解如何實作Adobe串流媒體。
+title: 为适用于流媒体的 Analytics设置实施的首要步骤
+description: 了解如何实施Adobe流媒体。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a5d458f6c2826941cb01d1cbd5850851c769a2ab
+exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
+source-git-commit: e3380ad898b551b6e0bbf5624d8419c5a95496f6
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 10%
+source-wordcount: '1892'
+ht-degree: 11%
 
 ---
 
-# 安裝Media Analytics與Experience Platform Edge
+# 安装Media Analytics和Experience Platform边缘
 
 Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送到一个集中的位置。 Experience Edge 将适当的信息转发给所需的产品。 此概念允许您整合实施工作，尤其是跨多个数据解决方案进行整合。
 
-下圖說明使用Experience Platform邊緣的Media Analytics實作：
+下图说明了使用Experience Platform边缘的Media Analytics实施：
 
-![Edge實施](assets/media-analytics-implementation-overview.png)
+![Edge实施](assets/media-analytics-implementation-overview.png)
 
 >[!IMPORTANT]
 >
->目前，您只能使用Adobe Experience Platform Mobile SDK傳送資料給Experience Edge。
+>目前，您只能使用Adobe Experience Platform Mobile SDK将数据发送到Experience Edge。
 
 
 <!-- Replace the above sentence with this after it web releases: You can send data to Experience Edge using any of the following implementation methods:
@@ -33,208 +34,207 @@ Regardless of which Experience Edge implementation method you use for configurin
 
 -->
 
-完成下列章節，以使用Experience Platform Edge實作Media Analytics：
+完成以下部分以使用Experience Platform边缘实施Media Analytics：
 
-* [定義報表套裝](#define-a-report-suite)
-* [在Adobe Experience Platform中設定結構描述](#set-up-the-schema-in-adobe-experience-platform)
-* [在Adobe Experience Platform中建立資料集](#create-a-dataset-in-adobe-experience-platform)
-* [在Adobe Experience Platform中設定資料串流](#configure-a-datastream-in-adobe-experience-platform)
+* [定义报表包](#define-a-report-suite)
+* [在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform)
+* [在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform)
+* [在Adobe Experience Platform中配置数据流](#configure-a-datastream-in-adobe-experience-platform)
 * [在 Customer Journey Analytics 中创建连接](#create-a-connection-in-customer-journey-analytics)
-* [以Customer Journey Analytics建立資料檢視](#create-a-data-view-in-customer-journey-analytics)
-* [在Customer Journey Analytics中建立及設定專案](#create-and-configure-a-project-in-customer-journey-analytics)
-* [使用Edge擴充功能傳送資料給Experience Platform Edge](#send-data-to-experience-platform-edge-with-the-edge-extension)
+* [在Customer Journey Analytics中创建数据视图](#create-a-data-view-in-customer-journey-analytics)
+* [在Customer Journey Analytics中创建和配置项目](#create-and-configure-a-project-in-customer-journey-analytics)
+* [使用Edge扩展将数据发送到Experience PlatformEdge](#send-data-to-experience-platform-edge-with-the-edge-extension)
 
-## 定義報表套裝
+## 定义报表包
 
 >[!NOTE]
 >
->只有當您使用Adobe Analytics時，才需要報表套裝。 如果您打算使用Customer Journey Analytics來製作報表，則不需要報表套裝。
+>仅当使用Adobe Analytics时，才需要报表包。 如果您计划将Customer Journey Analytics用于报表，则不需要报表包。
 
-如果您打算使用Adobe Analytics製作報表，則需要有可搭配串流媒體實作使用的報表套裝。 如需定義報表套裝的相關資訊，請參閱 [報表套裝管理員](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
+如果您计划使用Adobe Analytics进行报告，则需要具有用于流媒体实施的报告包。 有关定义报表包的信息，请参阅 [报表包管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
 
-定義報表套裝後，繼續使用 [在Adobe Experience Platform中設定結構描述](#set-up-the-schema-in-adobe-experience-platform).
+定义报表包后，继续执行 [在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform).
 
-## 在Adobe Experience Platform中設定結構描述
+## 在Adobe Experience Platform中设置架构
 
 为了标准化数据收集以在利用 Adobe Experience Platform 的应用程序中使用，Adobe 创建了开放且公开记录的标准，即体验数据模型 (XDM)。
 
-若要建立及設定綱要：
+要创建并设置架构，请执行以下操作：
 
-1. 在Adobe Experience Platform中，依照中的說明開始建立結構描述 [在UI中建立和編輯結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
+1. 在Adobe Experience Platform中，开始创建架构，如中所述 [在UI中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-   建立結構描述時，請選擇 [!UICONTROL **XDM ExperienceEvent**] 從 [!UICONTROL **建立結構描述**] 下拉式功能表。
+   创建架构时，选择 [!UICONTROL **XDM ExperienceEvent**] 从 [!UICONTROL **创建架构**] 下拉菜单。
 
-1. 在 [!UICONTROL **組合**] 區域，在 [!UICONTROL **欄位群組**] 區段，選取 [!UICONTROL **新增**]，然後搜尋下列新欄位群組並將其新增至結構描述：
+1. 在 [!UICONTROL **合成**] 区域，在 [!UICONTROL **字段组**] 部分，选择 [!UICONTROL **添加**]，然后搜索以下新字段组并将其添加到架构中：
    * `Adobe Analytics ExperienceEvent Template`
    * `Implementation Details`
    * `MediaAnalytics Interaction Details`
 
-   新增欄位群組後，這些群組應會顯示在 [!UICONTROL **欄位群組**] 區段，如下所示：
+   添加字段组后，它们应显示在 [!UICONTROL **字段组**] 部分，如下所示：
 
-   ![已新增欄位群組](assets/schema-field-groups-added.png)
+   ![已添加字段组](assets/schema-field-groups-added.png)
 
-1. 在 [!UICONTROL **結構**] 區域，選取 `endUserIds` > `_experience` 欄位群組，然後選取 [!UICONTROL **管理相關欄位**].
+1. 在 [!UICONTROL **结构**] 区域，选择 `endUserIds` > `_experience` 字段组，然后选择 [!UICONTROL **管理相关字段**].
 
-   ![管理相關欄位按鈕](assets/manage-related-fields.png)
+   ![“管理相关字段”按钮](assets/manage-related-fields.png)
 
-1. 更新結構，如下所示：
+1. 按如下方式更新架构：
 
-   * 在 `Adobe Analytics ExperienceEvent Template` 欄位群組，隱藏所有欄位，但 `EndUserIDs`.
+   * 在 `Adobe Analytics ExperienceEvent Template` 字段组，隐藏所有字段，但 `EndUserIDs`.
 
-   * 在 `endUserIds` > `_experience` > `Adobe Advertising Cloud end user IDs` 欄位群組，隱藏所有欄位 `Identifier` 欄位。
+   * 在 `endUserIds` > `_experience` > `Adobe Advertising Cloud end user IDs` 字段组，隐藏除 `Identifier` 字段。
 
-   * 在 `endUserIds` > `_experience` > `Adobe Analytics Cloud Custom end user IDs` 欄位群組，隱藏所有欄位 `Identifier` 欄位。
+   * 在 `endUserIds` > `_experience` > `Adobe Analytics Cloud Custom end user IDs` 字段组，隐藏除 `Identifier` 字段。
 
-      ![要隱藏的欄位](assets/schema-hide-fields.png)
+     ![要隐藏的字段](assets/schema-hide-fields.png)
 
-1. 選取 [!UICONTROL **確認**] 以儲存變更。
+1. 选择 [!UICONTROL **确认**] 以保存更改。
 
-1. 在 [!UICONTROL **結構**] 區域，選取 `Implementation Details` 欄位群組，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+1. 在 [!UICONTROL **结构**] 区域，选择 `Implementation Details` 字段组，选择 [!UICONTROL **管理相关字段**]，然后更新架构，如下所示：
 
-   * 在 `Implementation Details` > `Implementation details` 欄位群組，隱藏所有欄位，但 `version`.
+   * 在 `Implementation Details` > `Implementation details` 字段组，隐藏所有字段，但 `version`.
 
-      ![要隱藏的欄位](assets/schema-hide-fields2.png)
+     ![要隐藏的字段](assets/schema-hide-fields2.png)
 
-1. 選取 [!UICONTROL **確認**] 以儲存變更。
+1. 选择 [!UICONTROL **确认**] 以保存更改。
 
-1. 在 [!UICONTROL **結構**] 區域，選取 `Media Collection Details` 欄位群組，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+1. 在 [!UICONTROL **结构**] 区域，选择 `Media Collection Details` 字段组，选择 [!UICONTROL **管理相关字段**]，然后更新架构，如下所示：
 
-   * 在 `Media Collection Details` 欄位群組，隱藏 `List Of States` 欄位群組。
+   * 在 `Media Collection Details` 字段组，隐藏 `List Of States` 字段组。
 
-      ![隱藏媒體收集狀態](assets/schema-hide-media-collection-states.png)
+     ![隐藏媒体收集状态](assets/schema-hide-media-collection-states.png)
 
-   * 在 `Media Collection Details` > `Advertising Details` 欄位群組，隱藏下列報表欄位： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
+   * 在 `Media Collection Details` > `Advertising Details` 字段组，隐藏以下报表字段： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
 
-   * 在 `Media Collection Details` > `Advertising Pod Details` 欄位群組，隱藏下列報表欄位： `Ad Break ID`
+   * 在 `Media Collection Details` > `Advertising Pod Details` 字段组，隐藏以下报告字段： `Ad Break ID`
 
-   * 在 `Media Collection Details` > `Chapter Details` 欄位群組，隱藏下列報表欄位： `Chapter ID`， `Chapter Completed`， `Chapter Started`、和 `Chapter Time Played`.
+   * 在 `Media Collection Details` > `Chapter Details` 字段组，隐藏以下报表字段： `Chapter ID`， `Chapter Completed`， `Chapter Started`、和 `Chapter Time Played`.
 
-   * 在 `Media Collection Details` > `Qoe Data Details` 欄位群組，隱藏下列報表欄位： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Changes`， `Buffer Events`， `Total Buffer Duration`， `Errors`， `External Error IDs`， `Bitrate Change Impacted Streams`， `Buffer Impacted Streams`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Stalling Impacted Streams`， `Drops Before Starts`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`、和 `Total Stalling Duration`.
+   * 在 `Media Collection Details` > `Qoe Data Details` 字段组，隐藏以下报表字段： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Changes`， `Buffer Events`， `Total Buffer Duration`， `Errors`， `External Error IDs`， `Bitrate Change Impacted Streams`， `Buffer Impacted Streams`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Stalling Impacted Streams`， `Drops Before Starts`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`、和 `Total Stalling Duration`.
 
-   * 在 `Media Collection Details` > `Session Details` 欄位群組，隱藏下列報表欄位： `Media Session ID`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Estimated Streams`， `Pause Impacted Streams`， `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Media Segment Views`， `Content Completes`， `Media Downloaded Flag`， `Federated Data`， `Content Starts`， `Media Starts`， `Pause Events`， `Total Pause Duration`， `Media Session Server Timeout`， `Video Segment`， `Content Time Spent`， `Media Time Spent`， `Unique Time Played`， `Pev3`、和 `Pccr`.
+   * 在 `Media Collection Details` > `Session Details` 字段组，隐藏以下报表字段： `Media Session ID`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Estimated Streams`， `Pause Impacted Streams`， `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Media Segment Views`， `Content Completes`， `Media Downloaded Flag`， `Federated Data`， `Content Starts`， `Media Starts`， `Pause Events`， `Total Pause Duration`， `Media Session Server Timeout`， `Video Segment`， `Content Time Spent`， `Media Time Spent`， `Unique Time Played`， `Pev3`、和 `Pccr`.
 
-   * 在 `Media Collection Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 欄位群組，隱藏下列報表欄位： `Player State Count`， `Player State Set`、和 `Player State Time`.
+   * 在 `Media Collection Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 字段组，隐藏以下报表字段： `Player State Count`， `Player State Set`、和 `Player State Time`.
 
-      ![要隱藏的欄位](assets/schema-hide-listofstates.png)
+     ![要隐藏的字段](assets/schema-hide-listofstates.png)
 
-1. 選取 [!UICONTROL **確認**] 以儲存變更。
+1. 选择 [!UICONTROL **确认**] 以保存更改。
 
-1. 在 [!UICONTROL **結構**] 區域，選取 `List Of Media Collection Downloaded Content Events` 欄位群組，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+1. 在 [!UICONTROL **结构**] 区域，选择 `List Of Media Collection Downloaded Content Events` 字段组，选择 [!UICONTROL **管理相关字段**]，然后更新架构，如下所示：
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` 欄位群組，隱藏 `List Of States` 欄位群組。
+   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` 字段组，隐藏 `List Of States` 字段组。
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` 欄位群組，隱藏下列報表欄位： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
+   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` 字段组，隐藏以下报表字段： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 欄位群組，隱藏下列報表欄位： `Ad Break ID`
+   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 字段组，隐藏以下报告字段： `Ad Break ID`
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 欄位群組，隱藏下列報表欄位： `Chapter ID`， `Chapter Completed`， `Chapter Started`、和 `Chapter Time Played`.
+   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 字段组，隐藏以下报表字段： `Chapter ID`， `Chapter Completed`， `Chapter Started`、和 `Chapter Time Played`.
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 欄位群組，隱藏下列報表欄位： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Changes`， `Buffer Events`， `Total Buffer Duration`， `Errors`， `External Error IDs`， `Bitrate Change Impacted Streams`， `Buffer Impacted Streams`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Stalling Impacted Streams`， `Drops Before Starts`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`、和 `Total Stalling Duration`.
+   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 字段组，隐藏以下报表字段： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Changes`， `Buffer Events`， `Total Buffer Duration`， `Errors`， `External Error IDs`， `Bitrate Change Impacted Streams`， `Buffer Impacted Streams`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Stalling Impacted Streams`， `Drops Before Starts`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`、和 `Total Stalling Duration`.
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 欄位群組，隱藏下列報表欄位： `Media Session ID`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Estimated Streams`， `Pause Impacted Streams`， `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Media Segment Views`， `Content Completes`， `Media Downloaded Flag`， `Federated Data`， `Content Starts`， `Media Starts`， `Pause Events`， `Total Pause Duration`， `Media Session Server Timeout`， `Video Segment`， `Content Time Spent`， `Media Time Spent`， `Unique Time Played`， `Pev3`、和 `Pccr`.
+   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 字段组，隐藏以下报表字段： `Media Session ID`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Estimated Streams`， `Pause Impacted Streams`， `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Media Segment Views`， `Content Completes`， `Media Downloaded Flag`， `Federated Data`， `Content Starts`， `Media Starts`， `Pause Events`， `Total Pause Duration`， `Media Session Server Timeout`， `Video Segment`， `Content Time Spent`， `Media Time Spent`， `Unique Time Played`， `Pev3`、和 `Pccr`.
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 欄位群組，隱藏下列報表欄位： `Player State Count`， `Player State Set`、和 `Player State Time`.
+   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 字段组，隐藏以下报表字段： `Player State Count`， `Player State Set`、和 `Player State Time`.
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details`  欄位群組，隱藏 `Media Session ID` 欄位。
+   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details`  字段组，隐藏 `Media Session ID` 字段。
 
-1. 選取 [!UICONTROL **確認**] 以儲存變更。
+1. 选择 [!UICONTROL **确认**] 以保存更改。
 
-1. 在 [!UICONTROL **結構**] 區域，選取 `Media Reporting Details` 欄位群組，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+1. 在 [!UICONTROL **结构**] 区域，选择 `Media Reporting Details` 字段组，选择 [!UICONTROL **管理相关字段**]，然后更新架构，如下所示：
 
-   * 在 `Media Reporting Details` 欄位群組，隱藏下列欄位群組： `Error Details`， `List Of States End`， `List of States Start`， `Playhead`、和 `Media Session ID`.
+   * 在 `Media Reporting Details` 字段组，隐藏以下字段组： `Error Details`， `List Of States End`， `List of States Start`， `Playhead`、和 `Media Session ID`.
 
-1. 選取 [!UICONTROL **確認**] > [!UICONTROL **儲存**]  以儲存變更。
+1. 选择 [!UICONTROL **确认**] > [!UICONTROL **保存**]  以保存更改。
 
-1. 繼續使用 [在Adobe Experience Platform中建立資料集](#create-a-dataset-in-adobe-experience-platform).
+1. 继续使用 [在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform).
 
-## 在Adobe Experience Platform中建立資料集
+## 在Adobe Experience Platform中创建数据集
 
-1. 請確定您設定了結構描述，如所述 [在Adobe Experience Platform中設定結構描述](#set-up-the-schema-in-adobe-experience-platform).
+1. 确保按照中的说明设置架构 [在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform).
 
-1. 在Adobe Experience Platform中，依照中的說明開始建立資料集 [資料集UI指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh_Hans#create).
+1. 在Adobe Experience Platform中，开始创建数据集，如中所述 [数据集UI指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh_Hans#create).
 
-   為資料集選取結構描述時，請選擇您先前建立的結構描述，如中所述 [在Adobe Experience Platform中設定結構描述](#set-up-the-schema-in-adobe-experience-platform).
+   为数据集选择架构时，请选择之前创建的架构，如中所述 [在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform).
 
-1. 繼續使用 [在Customer Journey Analytics中設定資料串流](#configure-a-datastream-in-adobe-experience-platform).
+1. 继续使用 [在Customer Journey Analytics中配置数据流](#configure-a-datastream-in-adobe-experience-platform).
 
-## 在Adobe Experience Platform中設定資料串流
+## 在Adobe Experience Platform中配置数据流
 
-1. 請確定您已建立資料集，如所述 [在Adobe Experience Platform中建立資料集](#create-a-dataset-in-adobe-experience-platform).
+1. 确保已按照中的说明创建数据集 [在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform).
 
-1. 建立新的資料串流，如所述 [設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans).
+1. 按照中的说明创建新数据流 [配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans).
 
-   建立資料串流時，請務必進行下列設定選擇：
+   创建数据流时，请确保您进行了以下配置选择：
 
-   * 在 [!UICONTROL **事件結構描述**] 欄位建立資料流時，請確定您選取之前在中建立的結構描述 [在Adobe Experience Platform中設定結構描述](#set-up-the-schema-in-adobe-experience-platform). 选择&#x200B;[!UICONTROL **保存**]。
+   * 在 [!UICONTROL **事件架构**] 字段创建数据流时，请确保选择您在中创建的架构 [在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform). 选择&#x200B;[!UICONTROL **保存**]。
 
-      >[!IMPORTANT]
-          >
-      >不要選取 [!UICONTROL **儲存並新增對應**] 因為這樣做會導致「時間戳記」欄位的對應錯誤。
-      
+     >[!IMPORTANT]
+     >
+         >不选择 [!UICONTROL **保存并添加映射**] 因为这样做会导致“时间戳”字段的映射错误。
+     
+     ![创建数据流并选择架构](assets/datastream-create-schema.png)
 
-      ![建立資料流並選取結構描述](assets/datastream-create-schema.png)
+   * 根据您使用的是Adobe Analytics还是Customer Journey Analytics，将以下任一服务添加到数据流：
 
-   * 根據您使用的是Adobe Analytics還是Customer Journey Analytics，將以下任一服務新增至資料流：
+      * [!UICONTROL **Adobe Analytics**] (如果使用Adobe Analytics)
 
-      * [!UICONTROL **Adobe Analytics**] (若使用Adobe Analytics)
+        如果您使用的是Adobe Analytics，请确保定义了一个报表包，如一节中所述 [定义报表包](#define-a-report-suite) 本文章中。
 
-         如果您使用Adobe Analytics，請務必定義報表套裝，如區段所述 [定義報表套裝](#define-a-report-suite) 本文章內容。
+      * [!UICONTROL **Adobe Experience Platform**] (如果使用Customer Journey Analytics)
 
-      * [!UICONTROL **Adobe Experience Platform**] (若使用Customer Journey Analytics)
-      如需如何將服務新增至資料流的詳細資訊，請參閱以下主題中的「將服務新增至資料流」一節： [設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+     有关如何将服务添加到数据流的信息，请参阅中的“将服务添加到数据流”部分 [配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
-      ![新增Adobe Analytics服務](assets/datastream-add-service.png)
+     ![添加Adobe Analytics服务](assets/datastream-add-service.png)
 
-   * 展開 [!UICONTROL **進階選項**]，然後啟用 [!UICONTROL **媒體分析**] 選項。
+   * 展开 [!UICONTROL **高级选项**]，然后启用 [!UICONTROL **媒体分析**] 选项。
 
-      ![媒體分析選項](assets/datastream-media-check.png)
+     ![媒体分析选项](assets/datastream-media-check.png)
 
-
-1. 繼續使用 [在Customer Journey Analytics中建立連線](#create-a-connection-in-customer-journey-analytics).
+1. 继续使用 [在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics).
 
 ## 在 Customer Journey Analytics 中创建连接
 
 >[!NOTE]
 >
->只有在使用Customer Journey Analytics時，才需要執行下列程式。
+>只有在使用Customer Journey Analytics时，才需要执行以下过程。
 
 
-1. 請確定您已建立資料串流，如所述 [在Customer Journey Analytics中設定資料串流](#configure-a-datastream-in-adobe-experience-platform).
+1. 确保已按照中的说明创建数据流 [在Customer Journey Analytics中配置数据流](#configure-a-datastream-in-adobe-experience-platform).
 
-1. 在Customer Journey Analytics中建立連線，如所述 [建立連線](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans).
+1. 在Customer Journey Analytics中，创建连接，如中所述 [创建连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans).
 
-   建立連線時，實作串流媒體需要下列設定選項：
+   创建连接时，需要以下配置选项才能实施流媒体：
 
-   1. 選取您先前建立的資料集，如所述 [在Adobe Experience Platform中建立資料集](#create-a-dataset-in-adobe-experience-platform).
+   1. 选择您之前创建的数据集，如中所述 [在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform).
 
-   1. 確保 [!UICONTROL **匯入所有新資料**] 設定已啟用。
+   1. 确保 [!UICONTROL **导入所有新数据**] 设置已启用。
 
-1. 繼續使用 [以Customer Journey Analytics建立資料檢視](#create-a-new-data-view-in-customer-journey-analytics).
+1. 继续使用 [在Customer Journey Analytics中创建数据视图](#create-a-new-data-view-in-customer-journey-analytics).
 
-## 以Customer Journey Analytics建立資料檢視
+## 在Customer Journey Analytics中创建数据视图
 
 >[!NOTE]
 >
->只有在使用Customer Journey Analytics時，才需要執行下列程式。
+>只有在使用Customer Journey Analytics时，才需要执行以下过程。
 
-1. 請確定您已在Customer Journey Analytics中建立連線，如所述 [在Customer Journey Analytics中建立連線](#create-a-connection-in-customer-journey-analytics).
+1. 确保在Customer Journey Analytics中创建了连接，如中所述 [在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics).
 
-1. 在Customer Journey Analytics中，建立資料檢視，如所述 [建立或編輯資料檢視](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans).
+1. 在“客户历程分析”中，创建数据视图，如中所述 [创建或编辑数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans).
 
-   建立資料檢視時，實作串流媒體需要以下設定選項：
+   创建数据视图时，需要以下配置选择才能实施流媒体：
 
-   1. 在 [!UICONTROL **連線**] 欄位中，選取您先前建立的連線，如所述 [在Customer Journey Analytics中建立連線](#create-a-connection-in-customer-journey-analytics).
+   1. 在 [!UICONTROL **连接**] 字段中，选择您之前创建的连接，如中所述 [在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics).
 
-      您建立的連線最多可能需要15分鐘才能選取。
+      最多可能需要15分钟才能选择您创建的连接。
 
-   1. 於 [!UICONTROL **元件**] 標籤，在 [!UICONTROL **結構描述欄位**] 區段，搜尋下表中列出的每個元件，並將其拖曳至 [!UICONTROL **量度**] 面板。 如果存在多個相同名稱的欄位，請使用XDM路徑來確保它是正確的欄位。
+   1. 在 [!UICONTROL **组件**] 选项卡，在 [!UICONTROL **架构字段**] 部分，搜索下表中列出的每个组件，并将其拖动到 [!UICONTROL **量度**] 面板。 如果存在多个同名字段，请使用XDM路径以确保它是正确的字段。
 
-      **主要內容 — 內容量度**
+      **主要内容 — 内容量度**
 
-      | 组件名称 | XDM路徑 |
+      | 组件名称 | XDM路径 |
       |----------|---------|
       | 媒体开始 | mediaReporting.sessionDetails.isViewed |
-      | 媒體區段檢視次數 | mediaReporting.sessionDetails.hasSegmentView |
+      | 媒体区段查看次数 | mediaReporting.sessionDetails.hasSegmentView |
       | 内容开始 | mediaReporting.sessionDetails.isPlayed |
       | 内容结束 | mediaReporting.sessionDetails.isCompleted |
       | 内容逗留时间 | mediaReporting.sessionDetails.timePlayed |
@@ -244,24 +244,24 @@ Regardless of which Experience Edge implementation method you use for configurin
       | 平均受众访问分钟数 | mediaReporting.sessionDetails.averageMinuteAudience |
 
 
-      **章節與廣告 — 章節與廣告量度**
+      **章节和广告 — 章节和广告量度**
 
-      | 组件名称 | XDM路徑 |
+      | 组件名称 | XDM路径 |
       |----------|---------|
-      | 章節已開始 | mediaReporting.chapterDetails.isStarted |
-      | 章節已完成 | mediaReporting.chapterDetails.isCompleted |
-      | 章節時間已播放 | mediaReporting.chapterDetails.timePlayed |
-      | 廣告已開始 | mediaReporting.advertisingDetails.isStarted |
-      | 廣告完成 | mediaReporting.advertisingDetails.isCompleted |
+      | 章节开始 | mediaReporting.chapterDetails.isStarted |
+      | 章节已完成 | mediaReporting.chapterDetails.isCompleted |
+      | 章节播放时间 | mediaReporting.chapterDetails.timePlayed |
+      | 广告已开始 | mediaReporting.advertisingDetails.isStarted |
+      | 广告已完成 | mediaReporting.advertisingDetails.isCompleted |
       | 广告播放时间 | mediaReporting.advertisingDetails.timePlayed |
 
 
       **QoE - QoE量度**
 
-      | 组件名称 | XDM路徑 |
+      | 组件名称 | XDM路径 |
       |----------|---------|
       | 开始时间 | mediaReporting.qoeDataDetails.timeToStart |
-      | 開始前掉格 | mediaReporting.qoeDataDetails.isDroppedBeforeStart |
+      | 开始前丢帧 | mediaReporting.qoeDataDetails.isDroppedBeforeStart |
       | 受缓冲影响的流 | mediaReporting.qoeDataDetails.hasBufferImpactedStreams |
       | 受比特率更改影响的流 | mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams |
       | 比特率更改 | mediaReporting.qoeDataDetails.bitrateChangeCount |
@@ -272,425 +272,85 @@ Regardless of which Experience Edge implementation method you use for configurin
       | 受丢帧影响的流 | mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams |
 
 
-      **播放器狀態 — 播放器狀態量度**
+      **播放器状态 — 播放器状态量度**
 
-      | 组件名称 | XDM路徑 |
+      | 组件名称 | XDM路径 |
       |----------|---------|
-      | 播放器狀態設定 | mediaReporting.states.isSet |
-      | 播放器狀態計數 | mediaReporting.states.count |
-      | 播放器狀態時間 | mediaReporting.states.time |
+      | 播放器状态集 | mediaReporting.states.isSet |
+      | 播放器状态计数 | mediaReporting.states.count |
+      | 播放器状态时间 | mediaReporting.states.time |
 
 
-   1. 更新標籤(在 [!UICONTROL **內容標籤**] 下拉式功能表)。 搜尋並拖曳量度面板中尚未的任何元件至面板。
+   1. 更新标签(在 [!UICONTROL **上下文标签**] 下拉菜单)。 搜索指标面板中尚未包含的任何组件并将其拖到面板中。
 
       | 组件名称 | 上下文标签 |
       |---------|----------|
-      | 媒體工作階段伺服器逾時 | 媒體：自上次呼叫以來的秒數 |
-      | 平均逗留时间 | 媒體：媒體逗留時間 |
-      | 缓冲总持续时间 | 媒體：總緩衝期間 |
-      | 开始时间 | 媒體：開始時間 |
-      | 暂停总持续时间 | 媒體：總暫停期間 |
+      | 媒体会话服务器超时 | 媒体：上次调用后经过的秒数 |
+      | 平均逗留时间 | 媒体：媒体逗留时间 |
+      | 缓冲总持续时间 | 媒体：缓冲总持续时间 |
+      | 开始时间 | 媒体：开始时间 |
+      | 暂停总持续时间 | 媒体：总暂停持续时间 |
 
-   1. 若要在Customer Journey Analytics專案中新增劃分，請將下列維度新增至 [!UICONTROL **Dimension**] 面板：
+   1. 要将划分添加到Customer Journey Analytics项目，请将以下维度添加到 [!UICONTROL **Dimension**] 面板：
 
-      | XDM路徑 | 组件名称 |
+      | XDM路径 | 组件名称 |
       |---------|----------|
-      | mediaReporting.states.name | 播放器狀態名稱 |
+      | mediaReporting.states.name | 播放器状态名称 |
       | mediaReporting.sessionDetails.ID | 媒体会话 ID |
 
-      除了此表格中的維度外，您也可以新增任何其他維度，以便在Customer Journey Analytics專案中篩選資料。
+      除了此表中的维外，您还可以添加任何其他要使其可用于在Customer Journey Analytics项目中过滤数据的维。
 
-1. 選取 [!UICONTROL **儲存並繼續**] > [!UICONTROL **儲存並完成**] 以儲存變更。
+1. 选择 [!UICONTROL **保存并继续**] > [!UICONTROL **保存并完成**] 以保存更改。
 
-1. 繼續使用 [在Customer Journey Analytics中建立及設定專案](#create-and-configure-a-project-in-customer-journey-analytics).
+1. 继续使用 [在Customer Journey Analytics中创建和配置项目](#create-and-configure-a-project-in-customer-journey-analytics).
 
-## 在Customer Journey Analytics中建立及設定專案
+## 在Customer Journey Analytics中创建和配置项目
 
-1. 請確定您已依照「 」中的說明以Customer Journey Analytics建立資料檢視 [以Customer Journey Analytics建立資料檢視](#create-a-new-data-view-in-customer-journey-analytics).
+1. 确保您已按照Customer Journey Analytics中的说明创建数据视图 [在Customer Journey Analytics中创建数据视图](#create-a-new-data-view-in-customer-journey-analytics).
 
-1. 在Customer Journey Analytics中、在 [!UICONTROL **Workspace**] 標籤，在 [!UICONTROL **專案**] 區域，選取 [!UICONTROL **建立專案**].
+1. 在Customer Journey Analytics中，在 [!UICONTROL **工作区**] 选项卡，在 [!UICONTROL **项目**] 区域，选择 [!UICONTROL **创建项目**].
 
-1. 選取 [!UICONTROL **空白專案**] > [!UICONTROL **建立**].
+1. 选择 [!UICONTROL **空白项目**] > [!UICONTROL **创建**].
 
-1. 在新專案中，選取您先前建立的資料檢視。
+1. 在新项目中，选择之前创建的数据视图。
 
-   在專案中建立面板時，您可以使用新增至資料檢視的任何元件，如中所述 [以Customer Journey Analytics建立資料檢視](#create-a-new-data-view-in-customer-journey-analytics).
+   在项目中创建面板时，您可以使用添加到数据视图的任何组件，如中所述 [在Customer Journey Analytics中创建数据视图](#create-a-new-data-view-in-customer-journey-analytics).
 
-   以下4個面板是您可以建立的面板範例：
+   以下4个面板是您可以创建的面板示例：
 
-   ![主要內容面板](assets/main-content-panel.png)
+   ![主内容面板](assets/main-content-panel.png)
 
-   ![章節和廣告面板](assets/chapter-and-ads-panel.png)
+   ![章节和广告面板](assets/chapter-and-ads-panel.png)
 
    ![QoE面板](assets/qoe-panel.png)
 
-   ![平板狀態面板](assets/player-state-panel.png)
+   ![平板状态面板](assets/player-state-panel.png)
 
-1. 選取 **面板** 圖示拖曳至「 」，接著將「 」 [!UICONTROL **媒體同時檢閱者**] 面板和 [!UICONTROL **媒體播放時間**] 面板。
+1. 选择 **面板** 图标，然后拖入 [!UICONTROL **媒体并行查看者**] 面板和 [!UICONTROL **媒体播放耗时**] 面板。
 
-   這兩個面板看起來應該像這樣：
+   这两个面板应如下所示：
 
-   ![媒體同時檢閱者面板](assets/media-concurrent-viewers-panels.png)
+   ![“媒体并行查看者”面板](assets/media-concurrent-viewers-panels.png)
 
-   ![「媒體播放時間」面板](assets/media-playback-time-spent-panels.png)
+   ![“媒体播放耗时”面板](assets/media-playback-time-spent-panels.png)
 
-1. 共用專案，如所述 [共用專案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
+1. 按照中的说明共享项目 [共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
 
    >[!NOTE]
    >
-   >   如果您要共用的使用者無法使用，請確認該使用者是否擁有Adobe Admin ConsoleCustomer Journey Analytics的使用者和管理員存取權。
+   >   如果您要与之共享的用户不可用，请确保这些用户拥有在Adobe Admin Console中Customer Journey Analytics的用户和管理员访问权限。
 
-1. 繼續使用 [傳送資料給Experience Platform Edge](#send-data-to-experience-platform-edge).
+1. 继续使用 [将数据发送到Experience Platform边缘](#send-data-to-experience-platform-edge).
 
-## 使用AEP Mobile SDK傳送資料給Experience Platform Edge
+## 使用AEP Mobile SDK将数据发送到Experience Platform边缘
 
-您可以使用Adobe Experience Platform mobile SDK將行動資料傳送至Experience Platform Edge。 (或者，您也可以使用邊緣API的自訂實作。<!-- I guess we don't need/want to document this? -->)
+您可以使用Adobe Experience Platform Mobile SDK将移动数据发送到Experience Platform Edge。 (或者，您也可以使用边缘API的自定义实施。<!-- I guess we don't need/want to document this? -->)
 
-使用下列檔案資源完成實作：
+使用以下文档资源完成iOS和Android的实施：
 
+* [快速入门](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
-| 行動作業系統 | 资源 |
-|---------|----------|
-| **iOS** | 下列資源可用於傳送iOS行動資料： <ul><li>[使用資料收集UI設定Mobile SDK](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/getting-started.md)</li><li>[從Media SDK移轉至Edge Media SDK](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/migration-guide.md)</li><li>[Edge Media API參考](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/api-reference.md)</li></ul> |
-| **Android** | 下列資源可用於傳送Android行動資料： <ul><li>[使用資料收集UI設定Mobile SDK](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/getting-started.md)</li><li>[從Media SDK移轉至Edge Media SDK](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/migration-guide.md)</li><li>[Edge Media API參考](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/api-reference.md)</li></ul> |
+* [API 引用](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-
-<!--
-
-+++Adobe Experience Platform Mobile SDK
-
-If you plan to use the Mobile SDK extension in Adobe Experience Platform Data Collection to send data to Edge, complete the following sections:
-
-### Create a mobile property
-
-Create a mobile property, as described in [Set up a mobile property](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/). 
-
-Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/mobile-sdk/overview.html?lang=en 
-
-The Adobe Experience Platform Mobile SDK helps power Adobe's Experience Cloud solutions and services in your mobile apps. It is available for Android, iOS, and various cross-platform development frameworks. Configuration is handled through Adobe Experience Platform Data Collection.
->[!IMPORTANT]
->
->An Adobe Analytics extension is also available in Adobe Experience Platform Data Collection. If you install this extension, you do not take advantage of XDM or the Edge Network.
-
-### Register the extensions and load your tag configuration
-
-Use code in your app to register the necessary extensions and load your tag configuration. For more information, see [Set up the configuration](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration) in [Getting started with Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration).
-
-### Implement and test fuctionality
-
-Implement and test app functionality using a combination of tags data elements, rules, additional extensions, and SDK API calls. Inspect, validate, and debug data collection and experiences for your mobile application.
-
-For more information, see [Use the sample application](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application) in [Getting started with Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration).
-
-### Extend and validate your mobile app implementation
-
-Before pushing the mobile app extension to your production environment, first validate that it works.
-
-(What are the steps to do this?)
-
--->
-
-<!--
-
-+++Adobe Experience Platform Web SDK (Coming soon)
-
->[!NOTE]
->
->The Adobe Experience Platform Web SDK is not yet available. This page will be updated when it becomes available.
-
-<!-- Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/web-sdk/overview.html?lang=en -->
-
-<!-- Use the Web SDK extension in Adobe Experience Platform Data Collection to send data to Edge.
-
-You can use the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/sdk/overview.html) to send data to Adobe Analytics. This implementation method works by translating the [Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) into a format used by Analytics.
-
-You can send data to Experience Edge directly using the Web SDK, or through the Web SDK extension in Tags. -->
-
-<!-- ### Web SDK
-
-A high-level overview of the implementation tasks:
-
-![Implement Adobe Analytics using Web SDK workflow](../../assets/websdk-annotated.png)
-
-<table style="width:100%">
-
-<tr>
-<th style="width:5%"></th><th style="width:60%"><b>Task</b></th><th style="width:35%"><b>More Information</b></th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Ensure you have <b>defined a report suite</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
-</tr>
-
-<tr>
-<td>2</td>
-<td><b>Setup schemas and datasets</b>. To standardize data collection for use across applications that leverage Adobe Experience Platform, Adobe has created the open and publicly documented standard, Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Schemas UI overview</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Datasets UI overview</a></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td><b>Create a data layer</b> to manage the tracking of the data on your website.</td>
-<td><a href="../../prepare/data-layer.md">Create a data layer</a></td>
-</tr>
-
-<tr>
-<td> 4</td>
-<td><b>Install the prebuilt standalone version</b>. You can reference the library (<code>alloy.js</code>) on the CDN directly on your page or download and host it on your own infrastructure. Alternatively, you can use the NPM package.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en#option-2%3A-installing-the-prebuilt-standalone-version">Installing the prebuilt standalone version</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en#option-3%3A-using-the-npm-package">Using the NPM package</a></td>
-</tr>
-
-<tr>
-<td>5</td>
-<td><b>Configure a datastream</b>. A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web SDK.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en">Configure a datastream<a></td> 
-</tr>
-
-<td>6</td>
-<td><b>Add an Adobe Analytics service</b> to your datastream. That service controls whether and how data is sent to Adobe Analytics.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics">Add Adobe Analytics service to a datastream</a></td>
-</tr>
-
-<tr>
-<td>7</td>
-<td><b>Configure the Web SDK</b>. Ensure the library that you installed in step 4 is properly configured with the datastream ID (formerly known as edge configuration id (<code>edgeConfigId</code>)), organization id (<code>orgId</code>), and other available options.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=en">Configure the Web SDK</a></td>
-</tr>
-
-<tr>
-<td>8</td>
-<td><b>Execute commands</b> and/or <b>track events</b>. After the base code has been implemented on your webpage, you can begin executing commands and tracking events with the SDK.
-</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/executing-commands.html?lang=en">Execute commands</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en">Track events</a></td>
-</tr>
-
-<tr>
-<td>9</td><td><b>Extend and validate your implementation</b> before pushing it out to production.</td><td></td> 
-</tr>
-</table>
-
-
-### Web SDK extension
-
-A high-level overview of the implementation tasks:
-
-![Implement Adobe Analytics using Web SDK extension workflow](../../assets/websdk-extension-annotated.png)
-
-<table style="width:100%">
-
-<tr>
-<th style="width:5%"></th><th style="width:60%"><b>Task</b></th><th style="width:35%"><b>More Information</b></th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Ensure you have <b>defined a report suite</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
-</tr>
-
-<tr>
-<td>2</td>
-<td><b>Setup schemas and datasets</b>. To standardize data collection for use across applications that leverage Adobe Experience Platform, Adobe has created the open and publicly documented standard, Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Schemas UI overview</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Datasets UI overview</a></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td><b>Create a data layer</b> to manage the tracking of the data on your website.</td>
-<td><a href="../../prepare/data-layer.md">Create a data layer</a></td>
-</tr>
-
-<tr>
-<td>4</td>
-<td><b>Configure a datastream</b>. A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web SDK.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en">Configure a datastream<a></td> 
-</tr>
-
-<tr>
-<td>5</td> 
-<td><b>Add an Adobe Analytics service</b> to your datastream. That service controls whether and how data is sent to Adobe Analytics.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics">Add Adobe Analytics service to a datastream</a></td>
-</tr>
-
-<tr>
-<td>6</td>
-<td><b>Create a tag property</b>. Properties are overarching containers used to reference tag management data.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#for-web">Create or configure a tag property for web</a></td>
-</tr>
-
-<tr>
-<td>7</td> 
-<td><b>Install and configure the Web SDK extension</b> in your tag property. Configure the Web SDK extension to send data to the datastream configured in step 4.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/sdk/overview.html?lang=en">Adobe Experience Platform Web SDK extension overview</a></td>
-</tr>
-
-<tr>
-<td>8</td>
-<td><b>Iterate, validate, and publish</b> to production. Add the tag property to your web site. Then use data elements, rules, and so on, to customize your implementation.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=en">Publishing overview</a></td>
-</tr>
-
-</table>
-
-
-### Additional resources
-
-Tags can be highly customized. Learn more about how you can get the most out of Adobe Analytics by including the right data in your implementation.
-
--   [Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#): Learn how the interface works and what extensions are available.
-
--   [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/web-sdk.html?lang=en)
-
-
-+++
-
--->
-
-
-<!--
-
-### Adobe Experience Platform SDK
-
-A high-level overview of the implementation tasks:
-
-![Adobe Analytics using the Analytics extension workflow](../../assets/mobilesdk-annotated.png)
-
-<table style="width:100%">
-
-<tr>
-<th style="width:5%"></th><th style="width:60%"><b>Task</b></th><th style="width:35%"><b>More Information</b></th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Ensure you have <b>defined a report suite</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
-</tr>
-
-<tr>
-<td>2</td>
-<td><b>Setup schemas and datasets</b>. To standardize data collection for use across applications that leverage Adobe Experience Platform, Adobe has created the open and publicly documented standard, Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Schemas UI overview</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Datasets UI overview</a></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td><b>Configure a datastream</b>. A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web SDK.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en">Configure a datastream<a></td> 
-</tr>
-
-<td>4</td>
-<td><b>Add an Adobe Analytics service</b> to your datastream. That service controls whether and how data is sent to Adobe Analytics.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics">Add Adobe Analytics service to a datastream</a></td>
-</tr>
-
-<tr>
-<td>5</td>
-<td><b>Create a mobile property</b>. A property is a container that you fill with extensions, rules, data elements, and libraries.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/">Set up a mobile property</a></tr>
-
-<tr>
-<td>6</td>
-<td><b>Install the Adobe Experience Platform Edge Network extension</b> in the mobile tag property and configure the datastream in the extension.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/edge-network/">Adobe Experience Platform Edge Network</a>
-</tr>
-
-<tr>
-<td>7</td>
-<td><b>Use code in your app</b> to register the necessary extensions and load your tag configuration.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration">Set up the configuration</a></td>
-</tr>
-
-<tr>
-<td>8</td>
-<td><b>Implement and test functionality</b> using combination of tag's data elements, rules, additional extensions, and SDK API calls in your app. Inspect, validate, and debug data collection and experiences for your mobile application.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application">Use the sample application</a>
-</tr>
-
-<tr>
-<td>9</td>
-<td><b>Extend and validate your mobile app implementation</b> before pushing it out to production.</td>
-<td></td> 
-</tr>
-
-</table>
-
-
-### Adobe Analytics extension.
-
-A high-level overview of the implementation tasks:
-
-![Adobe Analytics using the Analytics extension workflow](../../assets/mobilesdk-analytics-annotated.png)
-
-<table style="width:100%">
-
-<tr>
-<th style="width:5%"></th><th style="width:60%"><b>Task</b></th><th style="width:35%"><b>More Information</b></th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Ensure you have <b>defined a report suite</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
-</tr>
-
-<tr>
-<td>2</td>
-<td><b>Setup schemas and datasets</b>. To standardize data collection for use across applications that leverage Adobe Experience Platform, Adobe has created the open and publicly documented standard, Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Schemas UI overview</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Datasets UI overview</a></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td><b>Install the Adobe Analytics extension</b> in the mobile tag property and configure the extension to point to your report suite.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/adobe-analytics/">Adobe Analytics extension for mobile property</a>
-</tr>
-
-<tr>
-<td>4</td>
-<td><b>Use code in your app</b> to register the necessary extensions and load your tag configuration.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration">Set up the configuration</a></td>
-</tr>
-
-<tr>
-<td>5</td>
-<td><b>Implement and test functionality</b> using combination of tag's data elements, rules, additional extensions, and SDK API calls in your app. Inspect, validate, and debug data collection and experiences for your mobile application.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application">Use the sample application</a>
-</tr>
-
-<tr>
-<td>6</td>
-<td><b>Extend and validate your mobile app implementation</b> before pushing it out to production.</td>
-<td></td> 
-</tr>
-
-</table>
-
-### Additional resources
-
--   [Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#)
-
--   [Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/)
-
--->
-
-<!--
-
-+++
-
-+++Edge Network Server API
-
-Send data directly to Edge using an API.
-
-Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/edge-api/overview.html?lang=en 
-
-If you are unable to use the Adobe Experience Platform [Web SDK](../web-sdk/overview.md) or [Mobile SDK](../mobile-sdk/overview.md), you can send data to the Edge Network directly through an API.
-
-See [Edge Network Server API documentation](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html), and an example [integrating with Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/interacting-other-adobe-solutions/interacting-adobe-analytics.html).
-
-+++ 
-
--->
+* [迁移到Adobe流媒体for Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) （适用于从Media扩展迁移到Edge的用户）
 
