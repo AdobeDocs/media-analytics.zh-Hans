@@ -4,10 +4,10 @@ description: 了解如何实施适用于移动应用程序的 Adobe Streaming Me
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '187'
-ht-degree: 100%
+source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,9 @@ ht-degree: 100%
 
 * **Adobe Experience Platform Mobile SDK**
 
-   要收集数据，请使用 Adobe Experience Platform 中的标记。Adobe Experience Platform 中的标记是一款标记管理解决方案，可让您在满足其他标记要求的同时部署 Analytics 代码。
+  要收集数据，请使用以下任一选项：
+   * Adobe Experience Platform 中的标记. Adobe Experience Platform 中的标记是一款标记管理解决方案，可让您在满足其他标记要求的同时部署 Analytics 代码。
+   * Adobe Experience Platform Edge
 
 * **适用于 Android 的 Media SDK** 或&#x200B;**适用于 iOS 的 Media SDK**
 
@@ -27,7 +29,7 @@ ht-degree: 100%
 
 * **获取有效的配置参数**
 
-   在设置分析帐户后，这些参数可以从 Adobe 代表获取。
+  在设置分析帐户后，这些参数可以从 Adobe 代表获取。
 
 * **在媒体播放器中包含以下 API**
 

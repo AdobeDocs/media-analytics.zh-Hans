@@ -4,10 +4,10 @@ description: 了解如何实施Adobe流媒体。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
+source-git-commit: 547c47b09b2cc18ee155953eaad314599fa8d749
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,45 +15,17 @@ ht-degree: 10%
 
 Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送到一个集中的位置。 Experience Edge 将适当的信息转发给所需的产品。 此概念允许您整合实施工作，尤其是跨多个数据解决方案进行整合。
 
-下图说明了使用Experience Platform边缘的Media Analytics实施：
+下图说明了Media Analytics实施如何使用Experience Platform边缘在Analysis Workspace中使数据可用(在Adobe Analytics或Customer Journey Analytics中)：
 
-![Edge实施](assets/media-analytics-implementation-overview.png)
+![CJA 工作流](assets/cja-implementation.png)
+
+有关所有实施选项(包括不使用Experience Platform边缘的实施方法)的概述，请参阅 [实施Streaming Media for Adobe Analytics或Customer Journey Analytics](/help/implementation/overview.md).
 
 >[!IMPORTANT]
 >
->目前，您只能使用Adobe Experience Platform Mobile SDK将数据发送到Experience Edge。
+>流媒体尚未与AEP Web SDK集成。
 
-
-<!-- Replace the above sentence with this after it web releases: You can send data to Experience Edge using any of the following implementation methods:
-
-* Adobe Experience Platform Web SDK (Coming soon)
-* Adobe Experience Platform Mobile SDK
-* Edge Network Server API
-
-Regardless of which Experience Edge implementation method you use for configuring media tracking, you must first complete the following sections:
-
--->
-
-完成以下部分以使用Experience Platform边缘实施Media Analytics：
-
-* [定义报表包](#define-a-report-suite)
-* [在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform)
-* [在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform)
-* [在Adobe Experience Platform中配置数据流](#configure-a-datastream-in-adobe-experience-platform)
-* [在 Customer Journey Analytics 中创建连接](#create-a-connection-in-customer-journey-analytics)
-* [在Customer Journey Analytics中创建数据视图](#create-a-data-view-in-customer-journey-analytics)
-* [在Customer Journey Analytics中创建和配置项目](#create-and-configure-a-project-in-customer-journey-analytics)
-* [使用Edge扩展将数据发送到Experience PlatformEdge](#send-data-to-experience-platform-edge-with-the-edge-extension)
-
-## 定义报表包
-
->[!NOTE]
->
->仅当使用Adobe Analytics时，才需要报表包。 如果您计划将Customer Journey Analytics用于报表，则不需要报表包。
-
-如果您计划使用Adobe Analytics进行报告，则需要具有用于流媒体实施的报告包。 有关定义报表包的信息，请参阅 [报表包管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
-
-定义报表包后，继续执行 [在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform).
+无论您使用Mobile SDK还是API来使用Experience Edge实施流媒体，都必须首先完成以下部分：
 
 ## 在Adobe Experience Platform中设置架构
 
@@ -353,7 +325,6 @@ Regardless of which Experience Edge implementation method you use for configurin
 * [API 引用](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
 * [迁移到Adobe流媒体for Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
-
 
 或者，您可以使用以下资源来自定义Edge API实施：
 

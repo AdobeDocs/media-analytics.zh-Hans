@@ -4,10 +4,10 @@ description: 了解如何使用 Media SDK 实施适用于流媒体的 Adobe Anal
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
-source-git-commit: e75eb6ddbcf693cd200159392dd3026ca55fc22d
+source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [适用于 JavaScript v3.x 的 Media SDK](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 | <img src="assets/javascript-icon.png"> | [适用于 Javascript v3.x 的包含标记（数据收集）的 Adobe Media Analytics 扩展](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
-| <img src="assets/javascript-icon.png"> | [Experience Platform边缘](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Experience Platform边缘](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) （即将推出） |
 
 ### 移动实施
 
