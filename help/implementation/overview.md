@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: ade20d7ae3cbb525b3a8390a27e1d93201d83003
+source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '403'
+ht-degree: 13%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 ## 边缘实施方法
 
-在大多数情况下，我们建议为所有新的Adobe Analytics或Customer Journey Analytics (CJA)客户实施Media Analytics时使用Edge。
+在大多数情况下，我们建议为所有新的Adobe Analytics或Customer Journey Analytics客户实施Media Analytics时使用Edge。
 
-* **Media for Edge Network SDK/扩展：** 从iOS和Android设备收集数据并将其发送给Edge。 然后，可以将数据发送到CJA或Adobe Analytics。
+* **Media for Edge Network SDK/扩展：** 从iOS和Android设备收集数据并将其发送给Edge。 然后，可以将数据发送到Customer Journey Analytics或Adobe Analytics。
 
   有关Media for Edge Network SDK/扩展的更多信息，请参阅 [安装Media Analytics和Experience Platform边缘](/help/implementation/implementation-edge.md).
 
@@ -28,7 +28,7 @@ ht-degree: 0%
   >
   >此实施方法当前不支持Web SDK或Roku。 但是，在使用Media Edge API实施时，这两种方法都受支持。
 
-* **Media Edge API：** 可以自定义以从任何设备或格式（包括移动设备、Web设备和过顶设备）收集数据，并将数据发送到Edge。 然后，可以将数据发送到CJA或Adobe Analytics。
+* **Media Edge API：** 可以自定义以从任何设备或格式（包括移动设备、Web设备和过顶设备）收集数据，并将数据发送到Edge。 然后，可以将数据发送到Customer Journey Analytics或Adobe Analytics。
 
   <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 
 ## 其他实施方法
 
-在大多数情况下，建议将上述边缘实施方法用于CJA和Adobe Analytics，尤其是新实施。
+在大多数情况下，建议将上述边缘实施方法用于Customer Journey Analytics和Adobe Analytics，尤其是新实施。
 
-除了Edge实施方法之外，还可以使用其他实施方法。 这些实施方法最初旨在与Adobe Analytics结合使用。 但是，具有以下任何实施方法的客户仍然可以通过创建 [Analytics源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans).
+除了Edge实施方法之外，还可以使用其他实施方法。 这些实施方法最初旨在与Adobe Analytics结合使用。 Customer Journey Analytics但是，具有以下任何实施方法的客户仍然可以通过创建 [Analytics源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans).
 
 * **带有标记的Media扩展：** Adobe Medium Analytics for Audio and Video扩展提供了将媒体跟踪器实例添加到启用了标记的网站或项目的功能。 数据会发送到Adobe Analytics。
 
