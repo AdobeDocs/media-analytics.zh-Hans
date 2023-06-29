@@ -4,7 +4,7 @@ description: “了解 Adobe Analytics for Streaming Media 支持的主要设备
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: deae677d9e8b4dc241765cf5d168fcd71b9c8310
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 58%
@@ -25,7 +25,7 @@ ht-degree: 58%
 
 下表列出当前支持的设备。如果未列出某个设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
 
-有关在Edge上实施媒体的更多信息，请参阅 [安装Media Analytics和Experience Platform边缘](/help/implementation/implementation-edge.md).
+有关在Edge上实施媒体的更多信息，请参阅 [安装Media Analytics和Experience Platform边缘](/help/implementation/edge/implementation-edge.md).
 
 | 流平台和设备 | | Media for Edge Network SDK/扩展 | Media Edge API | 带有标记或AEP Mobile SDK的Media扩展 | Media SDK | 媒体收集 API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '398'
 ht-degree: 13%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 13%
 
 ## 边缘实施方法
 
-在大多数情况下，我们建议为所有新的Adobe Analytics或Customer Journey Analytics客户实施Media Analytics时使用Edge。
+我们建议在为所有新的Adobe Analytics或Customer Journey Analytics客户实施Media Analytics时使用Edge。
 
 * **Media for Edge Network SDK/扩展：** 从iOS和Android设备收集数据并将其发送给Edge。 然后，可以将数据发送到Customer Journey Analytics或Adobe Analytics。
 
-  有关Media for Edge Network SDK/扩展的更多信息，请参阅 [安装Media Analytics和Experience Platform边缘](/help/implementation/implementation-edge.md).
+  有关Media for Edge Network SDK/扩展的更多信息，请参阅 [安装Media Analytics和Experience Platform边缘](/help/implementation/edge/implementation-edge.md).
 
   >[!NOTE]
   >
@@ -34,11 +34,11 @@ ht-degree: 13%
 
 ![CJA 工作流](assets/cja-implementation.png)
 
-## 其他实施方法
+## 仅限Adobe Analytics的实施方法
 
-在大多数情况下，建议将上述边缘实施方法用于Customer Journey Analytics和Adobe Analytics，尤其是新实施。
+建议将上述边缘实施方法用于Customer Journey Analytics和Adobe Analytics，尤其是新实施。
 
-除了Edge实施方法之外，还可以使用其他实施方法。 这些实施方法最初旨在与Adobe Analytics结合使用。 Customer Journey Analytics但是，具有以下任何实施方法的客户仍然可以通过创建 [Analytics源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans).
+除了Edge实施方法之外，还可以使用其他实施方法。 这些实施方法旨在与Adobe Analytics结合使用。 Customer Journey Analytics但是，具有以下任何实施方法的现有客户仍然可以通过创建 [Analytics源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans).
 
 * **带有标记的Media扩展：** Adobe Medium Analytics for Audio and Video扩展提供了将媒体跟踪器实例添加到启用了标记的网站或项目的功能。 数据会发送到Adobe Analytics。
 

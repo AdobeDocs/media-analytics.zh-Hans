@@ -5,8 +5,8 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->播放头位置作为安装和配置代码的一部分来设置。有关 `getCurrentPlayheadTime` 的更多信息，请参阅[概述：一般实施指南](/help/implementation/media-sdk/media-sdk-overview.md)。
+>播放头位置作为安装和配置代码的一部分来设置。有关 `getCurrentPlayheadTime` 的更多信息，请参阅[概述：一般实施指南](/help/implementation/media-sdk-overview.md)。
 
 
 ## 实施 {#implement}
@@ -107,13 +107,13 @@ ht-degree: 100%
 
    * **标准元数据 -**
 
-      >[!NOTE]
-      >
-      >将标准元数据对象附加到媒体对象是可选的。
+     >[!NOTE]
+     >
+     >将标准元数据对象附加到媒体对象是可选的。
 
-      实例化一个标准元数据对象，填充所需变量，并在媒体心跳对象中设置该元数据对象。
+     实例化一个标准元数据对象，填充所需变量，并在媒体心跳对象中设置该元数据对象。
 
-      请在此处查看元数据的完整列表：[音频和视频参数。](../../implementation/variables/audio-video-parameters.md)
+     请在此处查看元数据的完整列表：[音频和视频参数。](../../implementation/variables/audio-video-parameters.md)
 
    * **自定义元数据 -** 为自定义变量创建变量对象，然后使用此内容的数据进行填充。
 
