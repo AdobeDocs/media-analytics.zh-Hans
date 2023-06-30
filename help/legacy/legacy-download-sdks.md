@@ -4,16 +4,16 @@ description: 可用平台（包括 Android、iOS、JavaScript、Chromecast 和 R
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 97%
+source-wordcount: '339'
+ht-degree: 80%
 
 ---
 
 # 旧版 – 下载 SDK{#legacy-download-sdks}
 
-此页面上的信息包含&#x200B;**旧版** 2.x Media SDK 和 1.x 旧版 Media SDK 的下载链接。
+此页面上的信息包括用于下载 **legacy**  2.x Media SDK和 **legacy** 1.x Media SDK。
 
 有关下载&#x200B;**当前** SDK 的信息，请参阅[下载 SDK](/help/getting-started/download-sdks.md)。
 
@@ -34,8 +34,8 @@ Adobe Media Analytics 扩展添加了适用于音频和视频的核心 JavaScrip
 
 | 2.x Media SDK | 最新 Media SDK 下载 |  API   |  文档  |
 | --- | --- | --- | --- |
-| Android/Fire TV | [适用于 Android 的 Media SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [设置 Android](/help/legacy/media-sdk/setup/set-up-android.md) |
-| iOS/Apple TV | [适用于 iOS 的 Media SDK v2.3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0)（联系[客户关怀部门](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)以获取旧版 2.0 SDK） | [iOS API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [设置 iOS](/help/legacy/media-sdk/setup/set-up-ios.md) |
-| JavaScript | [适用于 JS 的 Media SDK v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [设置 JavaScript 2.x](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md) |
-| Roku | [适用于 Roku 的 Media SDK v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [设置 Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
-| Chromecast | [适用于 Chromecast 的 Media SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [设置 Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
+| Android/Fire TV | [适用于Android的旧版Media SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [设置 Android](/help/legacy/media-sdk/setup/set-up-android.md) |
+| iOS/Apple TV | [适用于iOS v2.3.0的旧版Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) (联系人 [客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html) 获取旧版2.0 SDK) | [iOS API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [设置 iOS](/help/legacy/media-sdk/setup/set-up-ios.md) |
+| JavaScript | [适用于JS的旧版Media SDK v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [设置 JavaScript 2.x](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md) |
+| Roku | [适用于Roku的旧版Media SDK v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | | [设置 Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| Chromecast | [适用于Chromecast的旧版Media SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 引用](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [设置 Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md) |

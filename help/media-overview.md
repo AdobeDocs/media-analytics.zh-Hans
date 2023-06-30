@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 72%
+source-wordcount: '563'
+ht-degree: 68%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 72%
 
 ![横幅](./assets/media_analytics_banner.png)
 
-Adobe Analytics for Streaming Media 是 Adobe Analytics 的一个附加产品，可提供针对音频、视频和广告的强大测量工具。借助适用于流媒体的 Analytics，您可以获得关于持续时间、停止和开始的近乎实时、精细的详细信息，以便您评估和组合视频和音频量度。 这些洞察信息使您能够了解客户的观看和收听习惯，并通过高度个性化的推荐提高参与度。
+适用于流媒体的 Adobe Analytics是Adobe Analytics和Customer Journey Analytics的一个附加产品，可提供针对音频、视频和广告的强大测量工具。 借助适用于流媒体的 Analytics，您可以获得关于持续时间、停止和开始的近乎实时、精细的详细信息，以便您评估和组合视频和音频量度。 这些洞察信息使您能够了解客户的观看和收听习惯，并通过高度个性化的推荐提高参与度。
 
 Adobe Analytics for Streaming Media 使您能够跟踪整个网站和流媒体应用程序的客户历程。您可以将流媒体指标与其他 Adobe Analytics 功能（例如 Audience Analytics、Mobile 或跨设备分析）结合使用。这些指标可轻松地集成到 Adobe Analytics 报表和其他 Adobe Experience Platform 产品中。媒体测量让您可以将数据分类为多个维度和区段，从而捕获执行完整的详细分析所需的所有元数据。然后，您可以分析数据并将成功标准归因于充分使用的媒体、平均逗留时间和已完成的广告。
 
