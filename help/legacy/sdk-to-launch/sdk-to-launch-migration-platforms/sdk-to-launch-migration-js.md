@@ -4,9 +4,9 @@ description: 了解如何从 Media SDK 迁移到适用于 JS 的 Launch。
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '453'
+source-git-commit: 73ef5e55c9ab57a5a2ba22aa1e4b646c530cc53f
+workflow-type: tm+mt
+source-wordcount: '449'
 ht-degree: 100%
 
 ---
@@ -115,7 +115,6 @@ Launch 提供了两种创建跟踪基础结构的方法。这两种方法都使�
 ### Media SDK
 
 * [设置 JavaScript 2.x](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-* [设置 JavaScript 3.x](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch

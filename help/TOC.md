@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施 Adobe Analytics for Streaming Media。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: cb45048d77edc188b5fdbd60ae89c165ff9befa0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '900'
 ht-degree: 96%
 
 ---
@@ -169,7 +169,7 @@ ht-degree: 96%
       + [设置 Android](legacy/media-sdk/setup/set-up-android.md)
       + [设置 iOS](legacy/media-sdk/setup/set-up-ios.md)
       + 设置 JavaScript {#setup-javascript}
-         + [设置 JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
+         + [设置 JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [有关心跳测量](legacy/heartbeat-measurement.md)
    + [Adobe Primetime 和 Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe 受众管理启用](legacy/intro-to-ava/am-enablement.md)
@@ -187,7 +187,6 @@ ht-degree: 96%
       + 调试 {#debugging}
          + [SDK 调试](legacy/validation/debugging/sdk-debugging.md)
    + [旧版迁移：VHL 1.x 到 VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
-   + [设置 JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [代码对比 v1.x 到 v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [跟踪 API 1x 到 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
    + [旧版 – AVA 简介](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
