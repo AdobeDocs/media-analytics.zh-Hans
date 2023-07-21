@@ -5,9 +5,9 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: 0d53e62069a65b252e004e21943ecdbd011a3658
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '874'
 ht-degree: 100%
 
 ---
@@ -63,10 +63,6 @@ ht-degree: 100%
 ### 在缓冲结束时
 
 * 调用 `trackEvent(BufferComplete);`
-
->[!TIP]
->
->播放头位置作为安装和配置代码的一部分来设置。有关 `getCurrentPlayheadTime` 的更多信息，请参阅[概述：一般实施指南](/help/implementation/media-sdk-overview.md)。
 
 
 ## 实施 {#implement}
