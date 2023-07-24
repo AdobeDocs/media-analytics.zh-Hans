@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 13%
+source-wordcount: '471'
+ht-degree: 11%
 
 ---
 
@@ -44,11 +44,13 @@ ht-degree: 13%
 
   有关安装、配置和实施带标记的媒体扩展的信息，请参阅 [Adobe Medium Analytics (3.x SDK) for Audio and Video扩展概述](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html).
 
-* **Media SDK：**  数据会发送到Adobe Analytics。
+* **Media SDK：**  Media SDK允许您测量多种媒体平台，包括网站、手机、联网电视、平板电脑、OTT设备、机顶盒和游戏机。 (有关更多信息，请参阅 [支持的设备和平台](/help/getting-started/supported-devices.md).)
+
+  Media SDK使用媒体收集API进行跟踪。 数据会发送到Adobe Analytics。
 
   有关下载和安装 Media SDK 及扩展的信息，请参阅[获取 Media SDK、使用标记的扩展和 OTT SDK](/help/getting-started/download-sdks.md)。
 
-* **媒体收集API：** 使用RESTful HTTP调用跟踪音频和视频事件。 数据会发送到Adobe Analytics。
+* **媒体收集API：** 由于媒体收集API是可自定义的，因此可用于需要自定义跟踪功能的应用程序以及Media SDK不支持的设备。 媒体收集API使用RESTful HTTP调用跟踪音频和视频事件。 数据会发送到Adobe Analytics。
 
   有关使用媒体收集 API 的信息，请参阅[媒体收集 API](media-collection-api/mc-api-overview.md)。
 
