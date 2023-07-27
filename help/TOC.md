@@ -1,19 +1,19 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Adobe Analytics for Streaming Media
+user-guide-title: 适用于流媒体的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
-user-guide-description: 实施 Adobe Analytics for Streaming Media。包括 Media SDK 和 Media Collection API。
+user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Adobe Analytics for Streaming Media {#using}
+# 适用于流媒体的 Adobe Analytics {#using}
 
 + [流媒体 Analytics 指南](media-overview.md)
 + 发行说明 {#release-notes}
@@ -32,17 +32,17 @@ ht-degree: 96%
          + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
-   + Edge实施（推荐） {#edge-recommended}
-      + Media Edge SDK/扩展 {#media-edge-sdk}
-         + [Media Edge SDK/扩展设置](/help/implementation/edge/implementation-edge.md)
+   + Edge 实施（推荐）{#edge-recommended}
+      + Media Edge SDK / 扩展 {#media-edge-sdk}
+         + [Media Edge SDK / 扩展设置](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
-   + 仅限Adobe Analytics的实施 {#analytics-only}
-      + Media SDK/扩展 {#media-sdk}
+   + 仅使用 Adobe Analytics 的实施{#analytics-only}
+      + Media SDK / 扩展 {#media-sdk}
          + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
-         + [Media Analytics扩展](implementation/media-sdk/setup/web-implementation-tags.md)
+         + [Media Analytics 扩展](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
-         + OTT SDK {#ott-setup}
+         + OTT SDK{#ott-setup}
             + [安装 Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
             + [安装 Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
       + 媒体收集 API - 实施 {#streaming-media-apis}
