@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
-workflow-type: ht
-source-wordcount: '405'
-ht-degree: 100%
+source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 91%
 
 ---
 
@@ -28,24 +28,24 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记�
 
 ### Web 实施 {#download-web-sdk}
 
-| 支持的平台 | 版本 |  API   |  文档  | 示例 |
-|:---:|---|---|---|---|
-| ![JavaScript 图标](assets/javascript-icon.png) | Web - [适用于 JS v3.0.2 的 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用 JavaScript 安装 Analytics](/help/implementation/media-sdk/setup/web-implementation.md) | [适用于 JS 的 Media SDK v3.0.2 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
-| ![JavaScript 图标](assets/javascript-icon.png) | Web - 媒体扩展 |  | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展 - 使用标记（数据收集）](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![JavaScript 图标](assets/javascript-icon.png) | Web - Experience Platform Edge（即将推出） |  | [使用 Experience Platform Edge 安装 Analytics](/help/implementation/edge/implementation-edge.md) | |
+| 支持的平台 | 支持的解决方案 | 实施方法 | 版本 |  API   |  文档  | 示例 |
+|:---:|---|---|---|---| ---| ---|
+| ![JavaScript 图标](assets/javascript-icon.png) | Adobe Analytics | 仅限Analytics | Web - [适用于 JS v3.0.2 的 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用JavaScript安装Media Analytics](/help/implementation/media-sdk/setup/web-implementation.md) | [适用于 JS 的 Media SDK v3.0.2 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript 图标](assets/javascript-icon.png) | Adobe Analytics | 仅限Analytics | Web - 媒体扩展 |  | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展 - 使用标记（数据收集）](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| ![JavaScript 图标](assets/javascript-icon.png) | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web - Experience Platform Edge（即将推出） |  | [安装Media Analytics和Experience Platform边缘](/help/implementation/edge/implementation-edge.md) | |
 
 ### 移动实施 {#get-mobile-extension}
 
-| 支持的平台 | 版本 | 文档 | 示例 |
-|:---:|---|---|---|
-| ![Android 图标](assets/android-icon.png) | Android - 媒体扩展 | [移动 SDK 文档](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Apple iOS 图标&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - 媒体扩展 | [移动 SDK 文档](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 示例](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Android 图标](assets/android-icon.png) | Android - Experience Platform Edge | [使用 Experience Platform Edge 安装 Analytics](/help/implementation/edge/implementation-edge.md) | |
-| ![Apple iOS 图标&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Experience Platform Edge | [使用 Experience Platform Edge 安装 Analytics](/help/implementation/edge/implementation-edge.md) |  |
+| 支持的平台 | 支持的解决方案 | 实施方法 | 版本 | 文档 | 示例 |
+|:---:|---|---|---|---|---|
+| ![Android 图标](assets/android-icon.png) | Adobe Analytics | 仅限Analytics | Android - 媒体扩展 | [移动 SDK 文档](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
+| ![Apple iOS 图标&#x200B;](assets/ios-icon.png)<br>**tvOS** | Adobe Analytics | 仅限Analytics | iOS / tvOS - 媒体扩展 | [移动 SDK 文档](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 示例](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Android 图标](assets/android-icon.png) | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Android - Experience Platform Edge | [安装Media Analytics和Experience Platform边缘](/help/implementation/edge/implementation-edge.md) | |
+| ![Apple iOS 图标&#x200B;](assets/ios-icon.png)<br>**tvOS** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | iOS / tvOS - Experience Platform Edge | [安装Media Analytics和Experience Platform边缘](/help/implementation/edge/implementation-edge.md) |  |
 
 ### 过顶实施 {#download-ott-libraries}
 
-| 支持的平台 | 版本 |  API   |  文档  |
-|:---:|---|---|---|
-| ![Chromecast 图标](assets/chromecast-icon.png) | [适用于 Chromecast 的 SDK v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [设置适用于 Chromecast 的移动 SDK v3.x](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
-| ![Roku 图标](assets/roku-icon.png) | [适用于 Roku 的 SDK v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | [Roku API 参考](/help/implementation/media-sdk/setup/set-up-roku.md) | [设置适用于 Roku 的移动 SDK v2.x](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| 支持的平台 | 支持的解决方案 | 实施方法 | 版本 |  API   |  文档  |
+|:---:|---|---|---|---|---|
+| ![Chromecast 图标](assets/chromecast-icon.png) | Adobe Analytics | 仅限Analytics | [适用于 Chromecast 的 SDK v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [设置适用于 Chromecast 的移动 SDK v3.x](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
+| ![Roku 图标](assets/roku-icon.png) | Adobe Analytics | 仅限Analytics | [适用于 Roku 的 SDK v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | [Roku API 参考](/help/implementation/media-sdk/setup/set-up-roku.md) | [设置适用于 Roku 的移动 SDK v2.x](/help/implementation/media-sdk/setup/set-up-roku.md) |

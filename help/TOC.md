@@ -5,9 +5,9 @@ user-guide-title: 适用于流媒体的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: b33a6205d5c6921c4ee0fcfc968593c62461c2a0
+source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '897'
 ht-degree: 100%
 
 ---
@@ -33,11 +33,13 @@ ht-degree: 100%
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
    + Edge 实施（推荐）{#edge-recommended}
+      + [先决条件](/help/implementation/edge/prerequisites-edge.md)
       + Media Edge SDK / 扩展 {#media-edge-sdk}
          + [Media Edge SDK / 扩展设置](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + 仅使用 Adobe Analytics 的实施{#analytics-only}
+      + [先决条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + Media SDK / 扩展 {#media-sdk}
          + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
          + [Media Analytics 扩展](implementation/media-sdk/setup/web-implementation-tags.md)
