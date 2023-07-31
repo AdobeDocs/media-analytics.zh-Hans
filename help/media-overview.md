@@ -6,7 +6,7 @@ exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '589'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->要实施 Adobe Analytics 流媒体，请联系您的 Adobe 销售代表或 Adobe 帐户团队，确保您的产品组合包含流媒体。
+>要实施 Adobe Analytics Streaming Media，请联系您的 Adobe 销售代表或 Adobe 账户团队以确保 Streaming Media 是您的产品组合的一部分。
 
 
 ## 工作原理
