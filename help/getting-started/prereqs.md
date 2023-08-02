@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 74%
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 74%
 在开始实施流媒体之前，请完成以下任务：
 
 1. **查看流媒体概述**<br>
-在开始实施流媒体之前，请查看 [流媒体概述](/help/media-overview.md) 确保流媒体满足您的需求。
+在开始实施流媒体之前，请查看[流媒体概述](/help/media-overview.md)以确保流媒体能够满足您的需求。
 
 1. **确认您的流媒体定价模型**<br>
 当前的定价模型基于视频流。如有必要，请联系您的销售代表或Adobe客户团队，因为流媒体是作为Adobe Analytics的附加组件单独销售的。<!--update when media SKUs are added to other AEP apps -->
@@ -25,7 +25,7 @@ ht-degree: 74%
 1. **启用 Adobe Analytics 报告**<br>
 要在 Analytics 中启用报告，并查看所收集的内容和广告数据，您必须在 Analytics 中启用报告。请参阅[媒体报告启用](/help/reporting/media-reports-enable.md)。
 
-1. **在Experience Cloud中实施Adobe Experience Platform Identity服务**
+1. **在 Experience Cloud 中实施 Adobe Experience Platform Identity Service**
 
    通过 **Identity Service**，可实现 Experience Cloud 核心服务、解决方案和客户属性以及人员核心服务中的受众通用的识别框架。Identity Service 通过向网站访客分配一个唯一的永久性 ID 来工作。当您的组织实施 ID 服务时，此 ID 允许您在不同的 Experience Cloud 解决方案中识别同一站点访客及其数据。
 
@@ -41,10 +41,10 @@ ht-degree: 74%
 
 1. **查看实施方法的其他先决条件**
 
-   根据您计划实施流媒体的方式，查看以下任一实施方法的先决条件：
+   根据您计划的流媒体实施方式，查看以下任一实施方法的先决条件：
 
-   * [仅限Adobe Analytics实施的先决条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+   * [仅 Adobe Analytics 实施的先决条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
-   * [Edge实施的先决条件](/help/implementation/edge/prerequisites-edge.md)
+   * [Edge 实施的先决条件](/help/implementation/edge/prerequisites-edge.md)
 
    使用 [实施概述](/help/implementation/overview.md) 以确定适合您的实施方法。
