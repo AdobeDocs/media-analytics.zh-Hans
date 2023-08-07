@@ -6,9 +6,9 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 92%
 在开始实施流媒体之前，请查看[流媒体概述](/help/media-overview.md)以确保流媒体能够满足您的需求。
 
 1. **确认您的流媒体定价模型**<br>
-当前的定价模型基于视频流。如有必要，请联系您的销售代表或Adobe客户团队，因为流媒体是作为Adobe Analytics的附加组件单独销售的。<!--update when media SKUs are added to other AEP apps -->
+当前的定价模型基于视频流。由于作为 Adobe Analytics 的附加组件单独出售流媒体，因此如有必要，请联系您的销售代表或 Adobe 帐户团队。<!--update when media SKUs are added to other AEP apps -->
 
 1. **启用 Adobe Analytics 报告**<br>
 要在 Analytics 中启用报告，并查看所收集的内容和广告数据，您必须在 Analytics 中启用报告。请参阅[媒体报告启用](/help/reporting/media-reports-enable.md)。
@@ -47,4 +47,4 @@ ht-degree: 92%
 
    * [Edge 实施的先决条件](/help/implementation/edge/prerequisites-edge.md)
 
-   使用 [实施概述](/help/implementation/overview.md) 以确定适合您的实施方法。
+   使用[实施概述](/help/implementation/overview.md)确定何种实施方法适合您。
