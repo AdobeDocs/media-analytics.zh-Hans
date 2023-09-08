@@ -5,25 +5,41 @@ uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '210'
-ht-degree: 100%
+source-git-commit: 41de1573b001deb65f525af9c5c648d85cac8629
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 11%
 
 ---
 
-# 媒体工作区模板{#media-workspace-templates}
+# Analysis Workspace中的媒体报表 {#media-workspace-templates}
 
-Adobe Analytics 工作区使您能够快速设置用于分析跟踪数据的仪表板。创建新项目时，或进入工作区以管理现有项目时，您可以从包含常见的一般跟踪方案（如客户获取、流媒体使用情况等）的标准模板中进行选择。您还可以创建、修改和保存您自己的自定义模板。
+>[!NOTE]
+>
+>*报表* 在工作区中，以前称为 *模板*.
 
-在创建或管理项目时，您可以从 Adobe Analytics 的“工作区”选项卡中使用模板。首次进入工作区时，您会看到创建新项目或打开现有项目的选项：
+Analysis Workspace提供了一组默认可用的预建报表，您可以使用这些报表来分析数据。 有关所有可用默认报表的更多信息，请参阅 [查看报表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) 在 [Adobe Analytics登录页面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hans).
 
-* **创建新项目 —**&#x200B;在单击工作区中的&#x200B;**[!UICONTROL 新建项目]**&#x200B;按钮时，系统将显示一个对话框，您可以从该对话框的模板集合（包括标准模板和自定义模板）中进行选择：
+其中某些报表在分析流媒体数据时特别有用，如以下部分所述。
 
-   ![](/help/reporting/assets/all-templates-audio.png)
+## 了解默认媒体报表
 
-   例如，如果选择&#x200B;**[!UICONTROL 音频使用情况]**&#x200B;模板，则将呈现一个项目，其中具有以下以音频为导向的功能板：
+以下是分析流媒体数据时有用的默认报表列表：
 
-   ![](/help/reporting/assets/aa-workspace.png)
+* [!UICONTROL **媒体内容使用**]：创建一个报表，以显示最常使用且吸引用户的哪些内容。
 
-* **管理项目 —**&#x200B;在现有项目中，您可以修改呈现的数据并将其另存为模板，以创建自己的自定义模板集合。
+* [!UICONTROL **流媒体使用**]：创建具有功能板的报表，如以下示例所示。
+
+* [!UICONTROL **媒体回访间隔、频度、忠诚度**]：创建一个报表，其中显示回访间隔（自上次访问后间隔了多少天）、频率（每位访客访问了多少次）和忠诚度（同类群组用户返回网站的频率）
+
+例如，如果您选择  [!UICONTROL **流媒体使用**] 报表中，呈现了以下功能板项目：
+
+![](/help/reporting/assets/aa-workspace.png)
+
+## 使用默认媒体报表
+
+您可以通过以下方式使用默认媒体报表：创建新项目时。 修改现有项目时，您还可以或。
+
+* **创建新项目时：** 有关如何从默认报表创建新项目的信息，请参阅 [从空白项目或报表创建项目](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) 在 [在Analysis Workspace中创建项目](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+
+* **创建自定义公司报表时：** 有关如何创建自定义公司报表的信息，请参阅 [创建自定义公司报表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) 在 [Adobe Analytics登录页面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hans).
