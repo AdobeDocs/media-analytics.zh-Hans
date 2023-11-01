@@ -4,8 +4,8 @@ description: 了解如何使用 JavaScript 3.x 应用程序在浏览器中使用
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
+workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 100%
 
@@ -16,7 +16,8 @@ ht-degree: 100%
 本文档介绍 3.x 版本的 SDK 中的跟踪。
 
 >[!IMPORTANT]
-> 如果您实施的是 SDK 之前的版本，可以在此处下载开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)。
+>
+>如果您实施的是 SDK 之前的版本，可以在此处下载开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)。
 
 1. **初始跟踪设置**
 
@@ -29,8 +30,8 @@ ht-degree: 100%
    | `name` | 字符串 | 表示媒体名称的非空字符串。 |
    | `id` | 字符串 | 表示唯一媒体标识符的非空字符串。 |
    | `length` | 数字 | 正数，表示媒体长度（秒）。如果长度未知，则使用 0 表示。 |
-   | `streamType` | 字符串 |  |
-   | `mediaType` |  | 媒体类型（音频或视频）。 |
+   | `streamType` | 字符串 |   |
+   | `mediaType` | | 媒体类型（音频或视频）。 |
 
    **`StreamType`常量：**
 
@@ -60,30 +61,30 @@ ht-degree: 100%
 
    * **标准元数据**
 
-      >[!NOTE]
-      >
-      >附加标准元数据是可选操作。
+     >[!NOTE]
+     >
+     >附加标准元数据是可选操作。
 
       * 媒体元数据键 API 引用 - [标准元数据键 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         请在此处查看可用元数据的完整集合：[音频和视频参数](/help/implementation/variables/audio-video-parameters.md)
+        请在此处查看可用元数据的完整集合：[音频和视频参数](/help/implementation/variables/audio-video-parameters.md)
+
    * **自定义元数据**
 
-      为自定义变量创建变量对象，然后使用此媒体的数据进行填充。例如：
+     为自定义变量创建变量对象，然后使用此媒体的数据进行填充。例如：
 
-      ```js
-      /* Set context data */
-       var contextData = {};
-      
-       //Standard metadata
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
-      
-       //Custom metadata
-       contextData["isUserLoggedIn"] = "false";
-       contextData["tvStation"] = "Sample TV Station";
-      ```
-
+     ```js
+     /* Set context data */
+      var contextData = {};
+     
+      //Standard metadata
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
+     
+      //Custom metadata
+      contextData["isUserLoggedIn"] = "false";
+      contextData["tvStation"] = "Sample TV Station";
+     ```
 
 1. **跟踪开始播放的意图**
 

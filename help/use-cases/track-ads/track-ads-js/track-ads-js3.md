@@ -4,10 +4,10 @@ description: 使用 Media SDK 在浏览器 (JS) 应用程序中实施广告跟�
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '362'
-ht-degree: 100%
+source-git-commit: fd9f0a7f4592c01082bcad015351d9128df2f8c9
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 88%
 
 ---
 
@@ -80,19 +80,19 @@ ht-degree: 100%
 1. （可选）通过上下文数据变量将标准和/或广告元数据附加到媒体跟踪会话。
 
    * [在 JavaScript 中实施标准广告元数据](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-   * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
+   * **自定义广告元数据 –** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
 
-      ```js
-      /* Set context data */
-      // Standard metadata keys provided by adobe.
-      adMetadata[ADB.Media.AdMetadataKeys]  ="Sample Advertiser";
-      adMetadata[ADB.Media.AdMetadataKeys] = "Sample Campaign";
-      
-      // Custom metadata keys
-      adMetadata["affiliate"] = "Sample affiliate";
-      adMetadata["campaign"] = "Sample ad campaign";
-      adMetadata["creative"] = "Sample creative";
-      ```
+     ```js
+     /* Set context data */
+     // Standard metadata keys provided by adobe.
+     adMetadata[ADB.Media.AdMetadataKeys]  ="Sample Advertiser";
+     adMetadata[ADB.Media.AdMetadataKeys] = "Sample Campaign";
+     
+     // Custom metadata keys
+     adMetadata["affiliate"] = "Sample affiliate";
+     adMetadata["campaign"] = "Sample ad campaign";
+     adMetadata["creative"] = "Sample creative";
+     ```
 
 1. 在 `MediaHeartbeat` 实例中使用 `AdStart` 事件调用 `trackEvent()`，以开始跟踪广告播放。
 
@@ -130,3 +130,33 @@ ht-degree: 100%
    ```
 
 有关更多信息，请参阅跟踪场景[包含前置广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)。
+
+## 粒度广告跟踪
+
+您可以设置粒度广告跟踪以启用 `1 second` 广告跟踪。
+
+在启动跟踪会话时，必须提供此信息。
+
+>[!NOTE]
+>
+>   默认广告ping间隔为 `10 seconds`.
+
+
+**语法**
+
+```javascript
+ADB.Media.MediaObjectKey = {
+   GranularAdTracking: "media.granularadtracking"
+   }
+```
+
+**示例**
+
+```javascript
+var mediaObject = ADB.Media.createMediaObject("media-name", "media-id", 60, ADB.Media.StreamType.VOD, ADB.Media.MediaType.Video);
+
+// Enable granular ad tracking
+mediaObject[ADB.Media.MediaObjectKey.GranularAdTracking] = true;
+
+tracker.trackSessionStart(mediaObject);
+```
