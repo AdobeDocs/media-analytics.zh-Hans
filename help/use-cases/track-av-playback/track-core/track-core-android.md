@@ -5,8 +5,8 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 100%
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 
 本文档介绍 2.x 版本的 SDK 中的跟踪。
 >[!IMPORTANT]
+>
 >如果您实施的是 1.x 版本的 SDK，可以在此处下载适用于 Android 的 1.x 开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)
 
 1. **初始跟踪设置**
@@ -61,26 +62,26 @@ ht-degree: 100%
 
    * **标准元数据**
 
-      [在 Android 中实施标准元数据](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+     [在 Android 中实施标准元数据](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
-      >[!NOTE]
-      >
-      >将标准元数据对象附加到媒体对象是可选的。
+     >[!NOTE]
+     >
+     >将标准元数据对象附加到媒体对象是可选的。
 
       * 媒体元数据键 API 引用 - [标准元数据键 - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
       * 请在此处查看可用视频元数据的完整集合：[音频和视频参数](/help/implementation/variables/audio-video-parameters.md)
+
    * **自定义元数据**
 
-      为自定义变量创建字典，然后使用此媒体的数据进行填充。例如：
+     为自定义变量创建字典，然后使用此媒体的数据进行填充。例如：
 
-      ```java
-      HashMap<String, String> mediaMetadata =  
-        new HashMap<String, String>();
-      mediaMetadata.put("isUserLoggedIn", "false");
-      mediaMetadata.put("tvStation", "Sample TV Station");
-      mediaMetadata.put("programmer", "Sample programmer");
-      ```
-
+     ```java
+     HashMap<String, String> mediaMetadata =  
+       new HashMap<String, String>();
+     mediaMetadata.put("isUserLoggedIn", "false");
+     mediaMetadata.put("tvStation", "Sample TV Station");
+     mediaMetadata.put("programmer", "Sample programmer");
+     ```
 
 1. **跟踪开始播放的意图**
 

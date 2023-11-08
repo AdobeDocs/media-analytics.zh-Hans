@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '750'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '770'
+ht-degree: 93%
 
 ---
 
@@ -46,24 +46,24 @@ ht-degree: 100%
 
    * **标准视频元数据**
 
-      [在 Chromecast 中实施标准元数据](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+     [在 Chromecast 中实施标准元数据](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
 
-      >[!NOTE]
-      >
-      >将标准视频元数据对象附加到媒体对象是可选的。
+     >[!NOTE]
+     >
+     >将标准视频元数据对象附加到媒体对象是可选的。
 
    * **自定义元数据**
 
-      为自定义变量创建变量对象，然后使用此视频的数据进行填充。例如：
+     为自定义变量创建变量对象，然后使用此视频的数据进行填充。例如：
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
 1. **跟踪开始播放的意图**
 
@@ -91,11 +91,17 @@ ht-degree: 100%
 
 1. **更新播放头值**
 
-   播放头更改时多次更新`mediaUpdatePlayhead` &#39; 位置值。<br />对于视频点播 (VOD)，该值以从媒体项开头开始的秒数指定。<br />对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天 UTC 午夜开始的秒数。<br /> 请注意：使用进度标记时，需要内容持续时间，并且播放头需要更新为从媒体项目开始的秒数，从 0 开始。
+   播放头更改时多次更新`mediaUpdatePlayhead` &#39; 位置值。<br />对于视频点播 (VOD)，该值以从媒体项开头开始的秒数指定。<br />对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天 UTC 午夜开始的秒数。
 
    ```
-   ADBMobile().mediaUpdatePlayhead(position)
+   ADBMobile().media.updatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >调用 `media.updatePlayhead` API：
+   >* 使用进度标记时，需要内容持续时间，并且播放头需要更新为从媒体项目开始的秒数，从0开始。
+   >* 使用Media SDK时，必须调用 `media.updatePlayhead` API至少每秒执行一次。
 
 1. **跟踪播放的结束事件**
 

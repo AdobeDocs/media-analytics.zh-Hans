@@ -5,8 +5,8 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 100%
 
@@ -17,6 +17,7 @@ ht-degree: 100%
 本文档介绍 2.x 版本的 SDK 中的跟踪。
 
 >[!IMPORTANT]
+>
 >如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)
 
 1. **初始跟踪设置**
@@ -70,24 +71,23 @@ ht-degree: 100%
 
       * [在 iOS 中实施标准元数据](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **视频元数据键**
-
-         [iOS 元数据键](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+        [iOS 元数据键](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
       * 请在此处查看视频元数据的完整列表：[音频和视频参数](/help/implementation/variables/audio-video-parameters.md)
-      >[!NOTE]
-      >
-      >将标准视频元数据对象附加到媒体对象是可选的。
+
+     >[!NOTE]
+     >
+     >将标准视频元数据对象附加到媒体对象是可选的。
 
    * **自定义元数据**
 
-      为自定义变量创建变量对象，然后使用此视频的数据进行填充。例如：
+     为自定义变量创建变量对象，然后使用此视频的数据进行填充。例如：
 
-      ```
-      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
-      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-      [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-      ```
-
+     ```
+     NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+     [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+     [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+     ```
 
 1. **跟踪开始播放的意图**
 

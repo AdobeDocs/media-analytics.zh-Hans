@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 92%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 100%
 本文档介绍 2.x 版本的 SDK 中的跟踪。
 
 >[!IMPORTANT]
+>
 >如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)
 
 1. **初始跟踪设置**
@@ -105,18 +106,19 @@ ht-degree: 100%
 
 [在 Roku 中实施标准元数据](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
-      >[!NOTE]
-      >将标准视频元数据对象附加到媒体对象是可选的。
+     >[!NOTE]
+     >
+     >将标准视频元数据对象附加到媒体对象是可选的。
 
    * **自定义元数据**
 
-      为自定义变量创建变量对象，然后使用此视频的数据进行填充。例如：
+     为自定义变量创建变量对象，然后使用此视频的数据进行填充。例如：
 
-      ```
-      mediaContextData = {}
-      mediaContextData["cmk1"] = "cmv1"
-      mediaContextData["cmk2"] = "cmv2"
-      ```
+     ```
+     mediaContextData = {}
+     mediaContextData["cmk1"] = "cmv1"
+     mediaContextData["cmk2"] = "cmv2"
+     ```
 
 1. **跟踪开始播放的意图**
 
@@ -127,12 +129,15 @@ ht-degree: 100%
    ```
 
    >[!TIP]
+   >
    >第二个值是您在步骤 2 中创建的自定义视频元数据对象名称。
 
    >[!IMPORTANT]
+   >
    >`trackSessionStart` 跟踪的是用户的播放意图，而不是播放的开始。此 API 用于加载视频数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
 
    >[!NOTE]
+   >
    >如果不使用自定义视频元数据，则只需在 `trackSessionStart` 中为 `data` 参数发送一个空对象，如上面 iOS 示例中注释掉的行所示。
 
 1. **跟踪播放的实际开始事件**
@@ -145,12 +150,18 @@ ht-degree: 100%
 
 1. **更新播放头值**
 
-   当媒体播放头发生变化时，通过调用`mediaUpdatePlayhead` API 通知 SDK。<br />对于视频点播 (VOD)，该值以从媒体项开头开始的秒数指定。<br />对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天 UTC 午夜开始的秒数。<br />请注意：使用进度标记时，需要内容持续时间，并且播放头需要更新为从媒体项目开始的秒数，从 0 开始。
-
+   当媒体播放头发生变化时，通过调用 `mediaUpdatePlayhead` API。 <br />对于视频点播 (VOD)，该值以从媒体项开头开始的秒数指定。<br />对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天 UTC 午夜开始的秒数。
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >调用 `mediaUpdatePlayhead` API：
+   >* 使用进度标记时，需要内容持续时间，并且播放头需要更新为从媒体项目开始的秒数，从0开始。
+   >* 使用Media SDK时，必须调用 `mediaUpdatePlayhead` API至少每秒执行一次。
+
 
 1. **跟踪播放的结束事件**
 
