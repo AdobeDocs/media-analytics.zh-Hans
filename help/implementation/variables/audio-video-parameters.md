@@ -5,7 +5,7 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 268b381e6c28f0ebcbb9d31777b6d23a46be70bc
 workflow-type: tm+mt
 source-wordcount: '6995'
 ht-degree: 97%
@@ -186,7 +186,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;js-2.0.1.88-c8c0b1&quot; </li> <li> **描述：**<br/>&#x200B;用于跟踪会话的 Media SDK 版本。<br/><br/>客户必须自行创建处理规则才能在报表中使用此值。<br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.<br/>vhlVersion) </li> <li> **心率：**<br/> (<code>s:sp:hb_version</code>) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;使用自定义处理规则 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;自定义 </li> <li> **上下文数据：**<br/>(a.media.vhlVersion) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.vhlVersion) </li> <li> **XDM 字段路径：**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>vhlVersion </li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.implementationDetails.<br/>version </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.implementationDetails.<br/>version </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;js-2.0.1.88-c8c0b1&quot; </li> <li> **描述：**<br/>&#x200B;用于跟踪会话的 Media SDK 版本。<br/><br/>客户必须自行创建处理规则才能在报表中使用此值。<br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.<br/>vhlVersion) </li> <li> **心率：**<br/> (<code>s:sp:hb_version</code>) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;使用自定义处理规则 </li> <li> **保留的变量：**<br/>&#x200B;不适用 </li> <li> **报表名称：**<br/>&#x200B;自定义 </li> <li> **上下文数据：**<br/>(a.media.vhlVersion) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.vhlVersion) </li> <li> **XDM 字段路径：**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>vhlVersion </li> <li> **收集XDM字段路径：**<br/> implementationdetails.<br/>version </li> <li> **报告XDM字段路径：**<br/> implementationdetails.<br/>version </li> </ul> |
 
 ## 标准流媒体元数据 {#standard-audio-and-video-metadata}
 
