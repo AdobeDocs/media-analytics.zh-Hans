@@ -4,9 +4,9 @@ description: 了解如何使用Experience Platform Edge实施Adobe流媒体。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 68710e8d68266c62ded94a14892ddc78a0807a49
+source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1807'
 ht-degree: 9%
 
 ---
@@ -307,9 +307,11 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
 
 1. 继续 [将数据发送到Experience Platform边缘](#send-data-to-experience-platform-edge).
 
-## 使用AEP Mobile SDK将数据发送到Experience Platform边缘
+## 将数据发送到Experience Platform边缘
 
-您可以使用Adobe Experience Platform Mobile SDK向Experience PlatformEdge发送移动数据。
+根据要发送到Experience Platform边缘的数据类型，您可以使用以下任一方法：
+
+### Mobile：使用Adobe Experience Platform Mobile SDK
 
 使用以下文档资源完成iOS和Android的实施：
 
@@ -319,7 +321,21 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
 
 * [迁移到Adobe Streaming Media for Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
-或者，您可以使用以下资源来自定义Edge API实施：
+### Roku：Adobe Experience Platform Roku SDK
+
+* [入门指南](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+
+* [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)
+
+* [迁移到Adobe Streaming Media for Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+
+### API： Web和其他
+
+API是当前唯一受支持的将Web数据发送到Experience Platform边缘的方法。
+
+如果您要使用Edge API的自定义实施，则该API也可用。
+
+有关media Edge API的更多信息，请参阅以下资源：
 
 * [Media Edge API概述](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
