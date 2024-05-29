@@ -4,9 +4,9 @@ description: “了解 Adobe Analytics for Streaming Media 支持的主要设备
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
+source-git-commit: b538b973509ee2a2c2010da300cbed1ce06ec2af
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 100%
 | 流平台和设备 | | Media for Edge Network SDK/扩展 | Media Edge API | 带有标记或 AEP 移动 SDK 的媒体扩展 | Media SDK | 媒体收集 API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web/移动 Web | | | | | |
-| | JavaScript 浏览器 | （即将推出） | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) |
+| | JavaScript 浏览器 | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) |
 | 移动设备应用程序 | | | | | |
 | | iOS 设备 | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | | ![支持](/help/assets/icon-blue-check.png) | |
 | | Android 设备 | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | | ![支持](/help/assets/icon-blue-check.png) |

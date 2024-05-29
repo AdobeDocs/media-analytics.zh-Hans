@@ -5,14 +5,14 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: ht
-source-wordcount: '471'
-ht-degree: 100%
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 81%
 
 ---
 
-# 实施 Streaming Media for Adobe Analytics或 Customer Journey Analytics
+# 为 Adob&#x200B;e Analytics 或 Customer Journey Analytics 实施流媒体
 
 实施流媒体的方法有很多种。有关本页描述的实施方法所支持的设备和平台的详细比较，请参阅[支持的设备和平台。](/help/getting-started/supported-devices.md)
 
@@ -20,19 +20,15 @@ ht-degree: 100%
 
 我们建议在为所有新的 Adob&#x200B;e Analytics 或 Customer Journey Analytics 客户实施 Media Analytics 时使用 Edge。
 
-* **Media for Edge Network SDK / 扩展：**&#x200B;从 iOS 和 Android 设备收集数据并将其发送到 Edge。然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
+* **适用于Edge NetworkSDK/扩展的媒体：** 从Web、iOS和Android设备或Roku设备收集数据并将其发送给Edge Network。 然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
 
-  有关 Media for Edge Network SDK/扩展的更多信息，请参阅[使用 Experience Platform Edge 安装 Media Analytics。](/help/implementation/edge/implementation-edge.md)
+  有关Media for Edge Network SDK/扩展的更多信息，请参阅 [安装Media Analytics和Experience Platform边缘](/help/implementation/edge/implementation-edge.md).
 
-  >[!NOTE]
-  >
-  >该实施方式目前不支持 Web SDK 或 Roku。但是，在使用 Media Edge API 实施时，两者均受支持。
+* **Media Edge API：** 可以自定义以从任何设备或格式（包括移动设备、Web设备和过顶设备）收集数据并将数据发送到Edge Network。 然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
 
-* **Media Edge API：**&#x200B;可以定制为从任何设备或格式（包括移动、网络和 OTT 设备）收集数据，并将数据发送到 Edge。然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
+  有关Media Edge API的更多信息，请参阅 [Media Edge API概述](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
-  <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
-
-![CJA 工作流](assets/cja-implementation.png)
+![CJA 工作流](assets/streaming-media-edge.png)
 
 ## 仅限 Adob&#x200B;e Analytics 的实施方法
 

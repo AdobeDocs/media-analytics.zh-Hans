@@ -4,9 +4,9 @@ description: 了解如何使用Experience Platform Edge实施Adobe流媒体。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1837'
 ht-degree: 9%
 
 ---
@@ -17,15 +17,11 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
 
 下图说明了Media Analytics实施可以如何使用Experience PlatformEdge在Analysis Workspace中使数据在Adobe Analytics或Customer Journey Analytics中可用：
 
-![CJA 工作流](assets/cja-implementation.png)
+![CJA 工作流](assets/streaming-media-edge.png)
 
 有关所有实施选项(包括不使用Experience Platform边缘的实施方法)的概述，请参阅 [实施Streaming Media for Adobe Analytics或Customer Journey Analytics](/help/implementation/overview.md).
 
->[!IMPORTANT]
->
->流媒体尚未与AEP Web SDK集成。
-
-无论您使用Mobile SDK还是API来使用Experience Edge实施流媒体，都必须首先完成以下部分：
+无论您是使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK还是API来使用Experience Edge实施流媒体，都必须首先完成以下部分：
 
 ## 在Adobe Experience Platform中设置架构
 
@@ -35,7 +31,13 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
 
 1. 在Adobe Experience Platform中，开始创建架构，如中所述 [在UI中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-   创建架构时，选择 [!UICONTROL **XDM ExperienceEvent**] 从 [!UICONTROL **创建架构**] 下拉菜单。
+1. 在创建方案时，在“方案详细资料”页上，选择 [!UICONTROL **体验事件**] 在为架构选择基类时。
+
+   ![已添加字段组](assets/schema-experience-event.png)
+
+1. 选择&#x200B;[!UICONTROL **下一步**]。
+
+1. 指定架构显示名称和说明，然后选择 [!UICONTROL **完成**].
 
 1. 在 [!UICONTROL **合成**] 区域，在 [!UICONTROL **字段组**] 部分，选择 [!UICONTROL **添加**]，然后搜索并将以下新字段组添加到该架构中：
    * `Adobe Analytics ExperienceEvent Template`
@@ -46,7 +48,7 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
 
    ![已添加字段组](assets/schema-field-groups-added.png)
 
-1. 选择 [!UICONTROL **确认**] 以保存更改。
+1. 选择 [!UICONTROL **保存**] 以保存更改。
 
 1. （可选）您可以隐藏Media Edge API未使用的某些字段。 隐藏这些字段使架构更易于阅读和理解，但并非必需。 这些字段仅指以下内容： `MediaAnalytics Interaction Details` 字段组。
 
@@ -141,7 +143,7 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
 
       * [!UICONTROL **Adobe Analytics**] (如果使用Adobe Analytics)
 
-        如果您使用的是Adobe Analytics，请确保您定义了报表包，如一节中所述 [定义报表包](#define-a-report-suite) 本文章中。
+        如果您使用的是Adobe Analytics，请确保您定义了报表包，如中所述 [创建报表包](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * [!UICONTROL **Adobe Experience Platform**] (如果使用Customer Journey Analytics)
 
@@ -310,6 +312,10 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
 ## 将数据发送到Experience Platform边缘
 
 根据要发送到Experience Platform边缘的数据类型，您可以使用以下任一方法：
+
+### Web：使用Adobe Experience Platform Web SDK
+
+
 
 ### Mobile：使用Adobe Experience Platform Mobile SDK
 
