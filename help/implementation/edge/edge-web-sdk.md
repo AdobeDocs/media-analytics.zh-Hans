@@ -3,7 +3,7 @@ title: 使用Adobe Experience Platform Web SDK将Web数据发送到Edge
 description: 了解如何使用Adobe Experience Platform Web SDK将Adobe流媒体数据发送到Experience Platform Edge。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4e6ae687175b45680d8de071dbc3011f18921a44
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -75,7 +75,7 @@ alloy("configure", {
 
 [!DNL Web SDK] 包括用于检索Media Analytics跟踪器的命令。 您可以使用此命令创建一个对象实例，然后使用与提供的相同API [Media JS库](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)，跟踪媒体事件。
 
-请参阅 [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getMediaAnalyticsTracker) 文档，以了解有关所支持方法的完整详细信息。
+请参阅 [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) 文档，以了解有关所支持方法的完整详细信息。
 
 以下代码片段显示了如何在Media JS中检索媒体跟踪器实例。
 

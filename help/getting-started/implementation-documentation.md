@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
-workflow-type: ht
-source-wordcount: '293'
-ht-degree: 100%
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 67%
 
 ---
 
@@ -22,9 +22,9 @@ Adobe Analytics for Streaming Media 文档位于多个产品网站中。根据�
 
 | 实施 | 文档 |
 |:-----------------------:|----------------|
-| **Web** | * [流媒体的 Web 实施](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [采用 Adobe Media Analytics for Audio and Video 扩展的 Web 实施](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) |
-| **移动** | *[Adobe Experience Platform 移动 SDK 指南](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics for Audio and Video 扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[当前的移动 SDK 版本](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[流媒体的移动实施](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
-| **OTT** | *[适用于 Adobe Marketing Cloud 解决方案的 Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[设置 Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> *[设置 Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| **Web** | * [使用Adobe Experience Platform Web SDK将Web数据发送到Edge](/help/implementation/edge/edge-web-sdk.md) <br> * [流媒体的Web实施](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [带有Adobe Medium Analytics for Audio and Video扩展的Web实施](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) |
+| **移动** | * [使用Adobe Experience Platform Mobile SDK将移动数据发送到Edge](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform Mobile SDK指南](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Medium Analytics for Audio and Video扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[当前Mobile SDK版本](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[流媒体的移动实施](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **OTT** | *[适用于Adobe Marketing Cloud解决方案的Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[设置Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[设置Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform API** | *[媒体收集 API](/help/implementation/media-collection-api/mc-api-overview.md) |
 
 ## 其他文档 {#additional-documentation}
