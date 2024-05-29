@@ -4,7 +4,7 @@ description: 查看 Adobe Analytics 发行说明。
 feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 3c5fa1dd0cb795f0d908b7aa61d8c09f803e94f2
+source-git-commit: 9c138248ed8494aa5edb398370ac0100f8cdaa49
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 84%
@@ -31,7 +31,7 @@ ht-degree: 84%
 
 | 功能 | 描述 | 预定日期 |
 | ----------- | ---------- | ------- |
-| 使用Web SDK将Web数据发送到Adobe Experience PlatformEdge Network | 您现在可以 [使用Adobe Experience Platform Web SDK将流媒体Web数据发送到Adobe Experience PlatformEdge Network](/help/implementation/edge/edge-web-sdk.md)，可让您构建更个性化的促销活动并提供更个性化的内容，从而产生要报告的更多跟踪数据。<p>此增强功能为所有平台解决方案（例如 Customer Journey Analytics、RT-CDP、AJO 和事件转发）的 Web 实现提供了统一的收集方法。以前，将流媒体网络数据发送到 Edge Network 的唯一方法是使用 Edge Network API。 | 2024 年 5 月 31 日 |
+| 使用Web SDK将Web数据发送到Adobe Experience PlatformEdge Network | 您现在可以 [使用Adobe Experience Platform Web SDK将流媒体Web数据发送到Adobe Experience PlatformEdge Network](/help/implementation/edge/edge-web-sdk.md)，可让您构建更个性化的促销活动并提供更个性化的内容，从而产生要报告的更多跟踪数据。<p>此增强功能为所有平台解决方案（例如 Customer Journey Analytics、RT-CDP、AJO 和事件转发）的 Web 实现提供了统一的收集方法。以前，将流媒体网络数据发送到 Edge Network 的唯一方法是使用 Edge Network API。 | 2024年5月29日 |
 | 将Roku数据发送到Adobe Experience Platform Edge | 现在，当 [使用 Experience Platform Edge 安装 Media Analytics ](/help/implementation/edge/implementation-edge.md)时，您可以使用 Adobe Experience Platform Roku SDK 将流媒体数据发送到 Adobe Experience Platform。 | 2024 年 4 月 12 日 |
 | 媒体收集：与Experience Edge （API和移动SDK）的集成 | 您现在可以使用Experience Edge API和Mobile SDK实施流媒体，从而构建更加个性化的促销活动并提供更加个性化的内容，进而产生要报告的更多跟踪数据。<p>此增强功能提供了跨所有解决方案(例如Customer Journey Analytics报告、RT-CDP、AJO和事件转发)的统一收集方法。  [了解详情](/help/implementation/edge/implementation-edge.md) | 2023年5月12日 |
 | “媒体并行查看者”面板 | 了解同时观看的人数在哪里达到峰值或在哪里发生下降。获得关于内容质量和观众参与情况的宝贵洞察，并帮助进行故障排除或规划数量和规模。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=en) | 2022 年 8 月 9 日 |
