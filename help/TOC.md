@@ -5,10 +5,10 @@ user-guide-title: 适用于流媒体的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: b5a95af55d782a14fc5fd6b8d5b9f206c797212e
+source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 99%
+source-wordcount: '900'
+ht-degree: 98%
 
 ---
 
@@ -99,13 +99,13 @@ ht-degree: 99%
       + [实施与报表](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [多个播放器状态跟踪](use-cases/player-state-tracking/multiple-player-states.md)
       + [播放器状态跟踪示例](use-cases/player-state-tracking/player-state-examples.md)
-   + [跟踪离线下载的内容](use-cases/track-downloaded-content.md)
+   + [跟踪下载的内容](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [处理播放期间的应用程序中断](use-cases/cookbook/app-interrupts.md)
    + [媒体流归因](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [恢复不活动的会话](use-cases/cookbook/resuming-inactive.md)
-   + [Roku - SceneGraph 中的跟踪](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [处理广告之间的间隔](use-cases/cookbook/fix-ad-play-ad.md)
+   + [SceneGraph中的Roku跟踪](use-cases/cookbook/sdk-track-scenegraph.md)
+   + [处理广告之间的间隙](use-cases/cookbook/fix-ad-play-ad.md)
    + 时间线 {#timelines}
       + [章节开始和结束](use-cases/timelines/chapter-start-end.md)
       + [查看到内容结束](use-cases/timelines/view-to-end-of-content.md)
