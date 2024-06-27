@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## 一般实施指南 {#general-implementation-guidelines}
 
-Adobe Streaming Media 跟踪中使用三个主要 SDK 组件：
+使用流媒体收集加载项进行跟踪时使用三个主要SDK组件：
 * 媒体心跳配置 – `MediaHeartbeatConfig` 包含用于报告的基本设置。
 * 媒体心跳代理 – `MediaHeartbeatDelegate` 控制播放时间和 QoS 对象。
 * 媒体心跳：`MediaHeartbeat` 是包含成员和方法的主库。
@@ -120,11 +120,11 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 * **Adobe Analytics (AppMeasurement) 服务器**
 有关跟踪服务器选项的更多信息，请参阅[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html)。
 
-   >[!IMPORTANT]
-   >
-   >Experience Cloud 访客 ID 服务需要一个 RDC 跟踪服务器或解析为 RDC 服务器的 CNAME。
+  >[!IMPORTANT]
+  >
+  >Experience Cloud 访客 ID 服务需要一个 RDC 跟踪服务器或解析为 RDC 服务器的 CNAME。
 
-   分析跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该为一个 CNAME。
+  分析跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该为一个 CNAME。
 
 * ** Media Analytics (Heartbeats) 服务器**
 其格式始终为“`[your_namespace].hb.omtrdc.net`”。“`[your_namespace]`”的值指定您的公司，由 Adobe 提供。

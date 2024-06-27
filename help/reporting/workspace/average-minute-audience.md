@@ -4,10 +4,10 @@ description: 了解如何使用“媒体平均受众访问分钟数”面板来�
 feature: Media Analytics, Workspace Basics
 role: User, Admin
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -22,4 +22,4 @@ Media Analytics 客户可以使用平均受众访问分钟数面板来更好地
 
 如果使用分类提供持续时间，则“媒体平均受众访问分钟数”面板按所选特定内容提供平均受众访问分钟数分析。
 
-“平均受众访问分钟数”面板还提供选定时段内的分析（可以按特定内容过滤），无论持续时间是否可使用分类获得。要访问“媒体平均受众访问分钟数”面板，请导航到启用了 Media Analytics 组件的报表包。然后，单击最左侧的面板图标，并将该面板拖入您的 Analysis Workspace 项目。[了解详情...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=zh-Hans)
+“平均受众访问分钟数”面板还提供选定时段内的分析（可以按特定内容过滤），无论持续时间是否可使用分类获得。要访问“媒体平均受众访问分钟数”面板，请导航到启用了流媒体组件的报表包。 然后，单击最左侧的面板图标，并将该面板拖入您的 Analysis Workspace 项目。[了解详情...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=zh-Hans)

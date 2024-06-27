@@ -5,16 +5,16 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '763'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 94%
 
 ---
 
 # 设置 iOS{#set-up-ios}
 
-了解如何设置适用于 iOS 设备的流媒体分析。
+了解如何为iOS设备设置流媒体收集加载项。
 
 >[!IMPORTANT]
 >
@@ -27,9 +27,9 @@ ht-degree: 100%
 * **在应用程序中实施适用于 iOS 的 ADBMobile**
 有关 Adobe Mobile SDK 文档的更多信息，请参阅[适用于 Experience Cloud 解决方案的 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=zh-Hans)。
 
-   >[!IMPORTANT]
-   >
-   >从 iOS 9 开始，Apple 引入了 App Transport Security (ATS) 功能。此功能旨在通过确保您的应用程序仅使用行业标准协议和密码来提高网络安全性。此功能默认处于启用状态，但您的配置选项为您提供了是否使用 ATS 的选项。有关 ATS 的详细信息，请参阅 [App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=zh-Hans)。
+  >[!IMPORTANT]
+  >
+  >从 iOS 9 开始，Apple 引入了 App Transport Security (ATS) 功能。此功能旨在通过确保您的应用程序仅使用行业标准协议和密码来提高网络安全性。此功能默认处于启用状态，但您的配置选项为您提供了是否使用 ATS 的选项。有关 ATS 的详细信息，请参阅 [App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=zh-Hans)。
 
 * **在媒体播放器中提供以下功能：**
 
@@ -57,11 +57,12 @@ ht-degree: 100%
       * `ADBMediaHeartbeatConfig.h`：用于 SDK 配置的 Objective-C 头文件。
       * `MediaSDK.a`：启用了 bitcode 的胖二进制文件，其中包含用于 iOS 设备（armv7、armv7s、arm64）和模拟器（i386 和 x86_64）的库生成。
 
-         当目标面向 iOS 应用程序时，应该关联此二进制文件。
+        当目标面向 iOS 应用程序时，应该关联此二进制文件。
 
       * `MediaSDK_TV.a`：启用了 bitcode 的胖二进制文件，其中包含用于新 Apple TV 设备 (arm64) 和模拟器 (x86_64) 的库生成。
 
-         当目标面向 Apple TV (tvOS) 应用程序时，应该关联此二进制文件。
+        当目标面向 Apple TV (tvOS) 应用程序时，应该关联此二进制文件。
+
    1. 将库添加到您的项目中：
 
       1. 启动 Xcode IDE 并打开您的应用程序。
@@ -87,11 +88,8 @@ ht-degree: 100%
          * **MediaSDK_TV.a**
          * **libsqlite3.0.tbd**
          * **SystemConfiguration.framework**
+
       1. 确认您的应用程序在生成时没有出现错误。
-
-
-
-
 
 1. 导入库。
 
@@ -169,9 +167,9 @@ ht-degree: 100%
 
 在您的 Xcode 项目中执行以下步骤。本指南的编写假定您的项目具有针对 tvOS 的 Apple TV 应用程序：
 
-1. 将 `VideoHeartbeat_TV.a` 库文件拖到您项目的 `lib` 文件夹中。
+1. 拖动 `VideoHeartbeat_TV.a` 库文件放入您项目的 `lib` 文件夹。
 
-1. 在 tvOS 应用程序目标的&#x200B;**[!UICONTROL 构建阶段]**&#x200B;选项卡中，展开&#x200B;**[!UICONTROL 链接二进制文件和库]**&#x200B;部分，并添加以下库:
+1. 在 **[!UICONTROL 构建阶段]** 选项卡，展开 **[!UICONTROL 将二进制文件与库关联]** 部分并添加以下库：
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

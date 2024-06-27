@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 适用于流媒体的 Adobe Analytics
-breadcrumb-title: Media Analytics 指南
-user-guide-description: 实施适用于流媒体的 Adobe Analytics。包括 Media SDK 和 Media Collection API。
+user-guide-title: 流媒体收集加载项
+breadcrumb-title: 流媒体收集指南
+user-guide-description: 实施流媒体。 包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 98%
+source-wordcount: '895'
+ht-degree: 94%
 
 ---
 
 
-# 适用于流媒体的 Adobe Analytics {#using}
+# 流媒体收集加载项 {#using}
 
-+ [流媒体 Analytics 指南](media-overview.md)
++ [流媒体收集指南](media-overview.md)
 + 发行说明 {#release-notes}
-   + [流媒体发行说明](additional-resources/release-notes.md)
-+ 快速入门 {#getting-started}
+   + [流媒体收藏集发行说明](additional-resources/release-notes.md)
++ 开始使用 {#getting-started}
    + [先决条件](getting-started/prereqs.md)
    + [支持的设备](getting-started/supported-devices.md)
-   + [流媒体文档](getting-started/implementation-documentation.md)
+   + [流媒体收集实施文档](getting-started/implementation-documentation.md)
    + [SDK、库和扩展](getting-started/download-sdks.md)
    + 终止支持 {#end-of-support}
       + [Media Analytics Mobile SDK 终止支持](additional-resources/end-of-support-faqs.md)
@@ -37,7 +37,7 @@ ht-degree: 98%
       + Media Edge SDK / 扩展 {#media-edge-sdk}
          + [Media Edge SDK / 扩展设置](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
-         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
+         + [Media Edge移动SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + 仅使用 Adobe Analytics 的实施{#analytics-only}
       + [先决条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
@@ -172,7 +172,7 @@ ht-degree: 98%
       + 设置 JavaScript {#setup-javascript}
          + [设置 JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [有关心跳测量](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime 和 Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe Primetime](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe 受众管理启用](legacy/intro-to-ava/am-enablement.md)
    + [自定义链接实施](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + 旧版里程碑跟踪 {#legacy-milestone-tracking}

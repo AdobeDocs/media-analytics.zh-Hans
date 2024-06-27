@@ -1,28 +1,28 @@
 ---
-title: 为 Adob​e Analytics 或 Customer Journey Analytics 实施流媒体
-description: 了解有关流媒体实施路径的信息。
+title: 实施流媒体收集加载项
+description: 了解流媒体收集加载项的实施路径。
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 81%
+source-wordcount: '459'
+ht-degree: 69%
 
 ---
 
-# 为 Adob&#x200B;e Analytics 或 Customer Journey Analytics 实施流媒体
+# 实施流媒体收集加载项
 
-实施流媒体的方法有很多种。有关本页描述的实施方法所支持的设备和平台的详细比较，请参阅[支持的设备和平台。](/help/getting-started/supported-devices.md)
+可通过多种方式实施Adobe流媒体收集加载项。 有关本页描述的实施方法所支持的设备和平台的详细比较，请参阅[支持的设备和平台。](/help/getting-started/supported-devices.md)
 
 ## Edge 实施方法
 
-我们建议在为所有新的 Adob&#x200B;e Analytics 或 Customer Journey Analytics 客户实施 Media Analytics 时使用 Edge。
+我们建议在为所有新Adobe Analytics或Customer Journey Analytics客户实施流媒体收集加载项时使用Edge。
 
 * **适用于Edge NetworkSDK/扩展的媒体：** 从Web、iOS和Android设备或Roku设备收集数据并将其发送给Edge Network。 然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
 
-  有关Media for Edge Network SDK/扩展的更多信息，请参阅 [安装Media Analytics和Experience Platform边缘](/help/implementation/edge/implementation-edge.md).
+  有关Media for Edge Network SDK/扩展的更多信息，请参阅 [使用Edge Network实施流媒体收集加载项](/help/implementation/edge/implementation-edge.md).
 
 * **Media Edge API：** 可以自定义以从任何设备或格式（包括移动设备、Web设备和过顶设备）收集数据并将数据发送到Edge Network。 然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
 

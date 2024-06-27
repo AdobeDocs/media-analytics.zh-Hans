@@ -1,14 +1,14 @@
 ---
-title: 如何在 Adobe Streaming Media 中跟踪离线下载的内容
+title: 如何在流媒体收集加载项中跟踪离线下载的内容
 description: 了解如何使用“下载的内容”功能在用户离线时跟踪媒体消费情况。
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '697'
+ht-degree: 98%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 100%
 
 * 联机
 
-   使用这种实时方法时，媒体播放器会发送每个播放器事件的跟踪数据，每 10 秒（广告为每 1 秒）就会发送一次网络 ping，并且是逐一发送到后端。
+  使用这种实时方法时，媒体播放器会发送每个播放器事件的跟踪数据，每 10 秒（广告为每 1 秒）就会发送一次网络 ping，并且是逐一发送到后端。
 
 * 脱机（“下载的内容”功能）
 
-   使用这种批处理方法时，需要生成相同的会话事件，但是这些事件会存储在设备上，直至它们作为单个会话发送到后端为止（请参阅以下示例）。
+  使用这种批处理方法时，需要生成相同的会话事件，但是这些事件会存储在设备上，直至它们作为单个会话发送到后端为止（请参阅以下示例）。
 
 每种方法各有其优点和缺点：
 * 联机方案会实时跟踪；这要求在发出每次网络调用之前进行网络连接检查。

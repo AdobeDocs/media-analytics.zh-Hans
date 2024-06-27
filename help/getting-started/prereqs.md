@@ -1,29 +1,29 @@
 ---
-title: 了解流媒体的先决条件
-description: 开始使用 Adobe Analytics 流媒体。了解实施 Adobe Analytics for Streaming Media 所需的工具。
+title: 了解Adobe流媒体收集加载项的先决条件
+description: 开始使用流媒体收集加载项。 了解实施所需的内容。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: ht
-source-wordcount: '442'
-ht-degree: 100%
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
+source-wordcount: '435'
+ht-degree: 62%
 
 ---
 
 # 先决条件 {#prerequisites}
 
-在开始实施流媒体之前，请完成以下任务：
+在开始实施Adobe流媒体收集加载项之前，请完成以下任务：
 
-1. **查看流媒体概述**<br>
-在开始实施流媒体之前，请查看[流媒体概述](/help/media-overview.md)以确保流媒体能够满足您的需求。
+1. **查看流媒体收集加载项概述**<br>
+在开始实施流媒体收集加载项之前，请查看 [流媒体收集加载项概述](/help/media-overview.md) 以确保它能满足您的需求。
 
-1. **确认您的流媒体定价模型**<br>
-当前的定价模型基于视频流。由于作为 Adobe Analytics 的附加组件单独出售流媒体，因此如有必要，请联系您的销售代表或 Adobe 帐户团队。<!--update when media SKUs are added to other AEP apps -->
+1. **确认您的定价模型**<br>
+Adobe流媒体收集加载项的当前定价模型基于视频流。 如有必要，请联系您的销售代表或Adobe客户团队，因为此加载项是针对Adobe Analytics和Adobe Experience Platform单独销售的。
 
-1. **启用 Adobe Analytics 报告**<br>
-要在 Analytics 中启用报告，并查看所收集的内容和广告数据，您必须在 Analytics 中启用报告。请参阅[媒体报告启用](/help/reporting/media-reports-enable.md)。
+1. **启用Adobe Analytics报表**<br>
+要在Analytics或Customer Journey Analytics中启用报表，并查看所收集的内容和广告数据，您必须启用报表。 请参阅[媒体报告启用](/help/reporting/media-reports-enable.md)。
 
 1. **在 Experience Cloud 中实施 Adobe Experience Platform Identity Service**
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. **查看实施方法的其他先决条件**
 
-   根据您计划的流媒体实施方式，查看以下任一实施方法的先决条件：
+   根据您计划实施流媒体收集加载项的方式，查看以下任一实施方法的先决条件：
 
    * [仅 Adobe Analytics 实施的先决条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 

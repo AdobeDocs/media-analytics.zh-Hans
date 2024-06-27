@@ -5,16 +5,16 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '445'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '443'
+ht-degree: 97%
 
 ---
 
 # 设置 Android{#set-up-android}
 
-了解如何设置适用于 Android 设备的流媒体分析。
+了解如何为Android设备设置流媒体收集加载项。
 
 >[!IMPORTANT]
 >
@@ -63,7 +63,6 @@ ht-degree: 100%
       1. 单击&#x200B;**[!UICONTROL 顺序]**&#x200B;和&#x200B;**[!UICONTROL 导出]**&#x200B;选项卡。
 
       1. 确保选中 `MediaSDK.jar` 文件。
-
 
 1. 导入库。
 

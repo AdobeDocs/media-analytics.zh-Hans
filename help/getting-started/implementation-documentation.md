@@ -5,20 +5,20 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 67%
+source-wordcount: '259'
+ht-degree: 45%
 
 ---
 
-# 流媒体实施文档 {#streaming-media-documentation}
+# 流媒体收集附加组件实施文档 {#streaming-media-documentation}
 
-Adobe Analytics for Streaming Media 文档位于多个产品网站中。根据如何实施 Streaming Media Analytics 的不同，可能需要参考一个或多个文档集。
+流媒体收集加载项的文档位于多个产品网站中。 根据您实施流媒体收藏集的方式，您可能需要引用一个或多个文档集。
 
 使用下表中的信息查找所选实施方法的文档。
 
-## 流媒体实施文档 {#media-documentation}
+## 实施文档 {#media-documentation}
 
 | 实施 | 文档 |
 |:-----------------------:|----------------|
@@ -29,7 +29,7 @@ Adobe Analytics for Streaming Media 文档位于多个产品网站中。根据�
 
 ## 其他文档 {#additional-documentation}
 
-下表列出与 Streaming Media Analytics 配合使用的 Adobe 产品的文档。
+下表列出了与流媒体收集加载项一起使用的Adobe产品的文档。
 
 | 产品 | 文档 |
 |:-----------------------:|----------------|

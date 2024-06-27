@@ -5,25 +5,25 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '575'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 97%
 
 ---
 
 # 设置适用于 Chromecast 的 Mobile SDK v3.x {#set-up-chromecast}
 
-此部分描述为流媒体设置 Chromecast 安装的先决条件。
+此部分介绍为流媒体收集加载项设置Chromecast安装的先决条件。
 
 ## 先决条件
 
 * **获取有效的配置参数**
 
-   在设置 Media Analytics 帐户后，这些参数可以从 Adobe 代表获取。
+  在设置 Media Analytics 帐户后，这些参数可以从 Adobe 代表获取。
 * **在媒体播放器中包含以下 API**
 
-   * *用于订阅播放器事件的 API* - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
+   * *用于订阅播放器事件的 API* – Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
 
 Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针对移动设备应用程序的移动营销功能整合到一起。最初，移动服务可无缝集成 Adobe Analytics 和 Adobe Target 解决方案的应用程序分析和定位功能。请参阅 [Adobe Mobile Services 文档](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=zh-Hans)，以了解更多信息。
@@ -38,11 +38,12 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
 
       * `adbmobile-chromecast.min.js`：
 
-         此库文件将包含在您的 Chromecast 应用程序源文件夹中。
+        此库文件将包含在您的 Chromecast 应用程序源文件夹中。
 
       * `ADBMobileConfig` 配置
 
-         这是为您的应用程序自定义的 SDK 配置文件。随 SDK 提供了一个 `ADBMobileConfig` 实施示例（在 `samples/` 下）。请从 Adobe 代表处获取正确的设置。
+        这是为您的应用程序自定义的 SDK 配置文件。随 SDK 提供了一个 `ADBMobileConfig` 实施示例（在 `samples/` 下）。请从 Adobe 代表处获取正确的设置。
+
    1. 将库文件添加到 `index.html` 文件中，并按照以下方式创建 `ADBMobileConfig` 全局变量（用于配置 Adobe Mobile for Media Analytics 的全局变量具有一个名为 `mediaHeartbeat` 的排他键）：
 
       ```js
@@ -91,6 +92,7 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
       >如果未正确配置 `mediaHeartbeat`，则媒体模块会进入错误状态并将停止发送跟踪调用。
 
       mediaHeartbeat 键的 ADBMobile 配置参数：
+
    | 配置参数 | 描述     |
    | --- | --- |
    | `server` | 表示后端跟踪端点的 URL 的字符串。 |

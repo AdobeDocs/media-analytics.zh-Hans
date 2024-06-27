@@ -5,10 +5,10 @@ uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '258'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 调用 `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
-## 实施 QoS
+## 实施QOS
 
 1. 识别在媒体播放期间任何 QoS 量度发生更改的时间，使用 QoS 信息创建 `MediaObject`，并更新新的 QoS 信息。
 

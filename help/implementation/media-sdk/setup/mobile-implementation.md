@@ -4,21 +4,21 @@ description: 了解如何实施适用于移动应用程序的 Adobe Streaming Me
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '198'
+ht-degree: 81%
 
 ---
 
 # 安装移动 SDK {#install-mobile-sdks}
 
-要在 Android 或 iOS 上实施适用于移动应用程序的流媒体，请安装和配置：
+要在Android或iOS上实施适用于移动应用程序的流媒体收集加载项，请安装和配置以下内容：
 
 * **Adobe Experience Platform Mobile SDK**
 
   要收集数据，请使用以下任一选项：
-   * Adobe Experience Platform 中的标记. Adobe Experience Platform 中的标记是一款标记管理解决方案，可让您在满足其他标记要求的同时部署 Analytics 代码。
+   * Adobe Experience Platform中的标记。 Adobe Experience Platform 中的标记是一款标记管理解决方案，可让您在满足其他标记要求的同时部署 Analytics 代码。
    * Adobe Experience Platform Edge
 
 * **适用于 Android 的 Media SDK** 或&#x200B;**适用于 iOS 的 Media SDK**

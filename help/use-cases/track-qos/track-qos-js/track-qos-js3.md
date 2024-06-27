@@ -4,10 +4,10 @@ description: “了解如何使用 JavaScript 3.x 在浏览器应用程序中使
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >
 >如果您实施的是 SDK 之前的版本，可以在此处下载开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)。
 
-## 实施 QOE
+## 实施QOE
 
 1. 识别在媒体播放期间比特率发生更改的时间，并使用 QoE 信息创建 `qoeObject` 实例。
 

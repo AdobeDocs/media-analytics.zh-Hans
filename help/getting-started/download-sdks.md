@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 89%
+source-wordcount: '427'
+ht-degree: 81%
 
 ---
 
@@ -30,9 +30,9 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记�
 
 | 支持的平台 | 支持的解决方案 | 实施方法 | 版本 |  API   |  文档  | 示例 |
 |:---:|---|---|---|---| ---| ---|
-| ![JavaScript图标&#x200B;](assets/javascript-icon.png)</br>**JavaScript API** | Adobe Analytics | 仅 Analytics | Web - [适用于 JS v3.0.2 的 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用 JavaScript 安装 Media Analytics](/help/implementation/media-sdk/setup/web-implementation.md) | [适用于 JS 的 Media SDK v3.0.2 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
-| ![JavaScript图标&#x200B;](assets/javascript-icon.png)</br>**JavaScript API** | Adobe Analytics | 仅 Analytics | Web - 媒体扩展 |  | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展 - 使用标记（数据收集）](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web -Experience Platform边缘 |  | [使用 Experience Platform Edge 安装 Media Analytics](/help/implementation/edge/implementation-edge.md) <p>和</p><p>[使用Adobe Experience Platform Web SDK将Web数据发送到Edge](/help/implementation/edge/edge-web-sdk.md)</p> | |
+| ![JavaScript图标&#x200B;](assets/javascript-icon.png)</br>**JAVASCRIPT API** | Adobe Analytics | 仅 Analytics | Web - [适用于 JS v3.0.2 的 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用JavaScript安装Media SDK](/help/implementation/media-sdk/setup/web-implementation.md) | [适用于 JS 的 Media SDK v3.0.2 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript图标&#x200B;](assets/javascript-icon.png)</br>**JAVASCRIPT API** | Adobe Analytics | 仅 Analytics | Web - 媒体扩展 |  | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展 - 使用标记（数据收集）](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web -Experience PlatformEdge |  | [使用Edge Network实施流媒体收集加载项](/help/implementation/edge/implementation-edge.md) <p>和</p><p>[使用Adobe Experience Platform Web SDK将Web数据发送到Edge](/help/implementation/edge/edge-web-sdk.md)</p> | |
 
 ### 移动实施 {#get-mobile-extension}
 
@@ -40,8 +40,8 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记�
 |:---:|---|---|---|---|---|
 | ![Android图标&#x200B;](assets/android-icon.png)</br>**Android** | Adobe Analytics | 仅 Analytics | Android - 媒体扩展 | [移动 SDK 文档](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
 | ![Apple iOS 图标&#x200B;](assets/ios-icon.png)<br>**tvOS** | Adobe Analytics | 仅 Analytics | iOS / tvOS - 媒体扩展 | [移动 SDK 文档](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 示例](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Android图标&#x200B;](assets/android-icon.png)</br>**Android** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Android - Experience Platform Edge | [使用 Experience Platform Edge 安装 Media Analytics](/help/implementation/edge/implementation-edge.md) | |
-| ![Apple iOS 图标&#x200B;](assets/ios-icon.png)<br>**tvOS** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | iOS/tvOS - Experience Platform Edge | [使用 Experience Platform Edge 安装 Media Analytics](/help/implementation/edge/implementation-edge.md) |  |
+| ![Android图标&#x200B;](assets/android-icon.png)</br>**Android** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Android - Experience Platform Edge | [使用JavaScript安装Media SDK](/help/implementation/edge/implementation-edge.md) | |
+| ![Apple iOS 图标&#x200B;](assets/ios-icon.png)<br>**tvOS** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | iOS/tvOS - Experience Platform Edge | [使用JavaScript安装Media SDK](/help/implementation/edge/implementation-edge.md) |  |
 
 ### 过顶实施 {#download-ott-libraries}
 
@@ -49,4 +49,4 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记�
 |:---:|---|---|---|---|---|
 | ![Chromecast图标&#x200B;](assets/chromecast-icon.png)</br>**Chromecast** | Adobe Analytics | 仅 Analytics | [适用于 Chromecast 的 SDK v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [设置适用于 Chromecast 的移动 SDK v3.x](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
 | ![Roku图标&#x200B;](assets/roku-icon.png)</br>**Roku** | Adobe Analytics | 仅 Analytics | [适用于 Roku 的 SDK v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [设置适用于 Roku 的移动 SDK v2.x](/help/implementation/media-sdk/setup/set-up-roku.md) |
-| ![Roku图标&#x200B;](assets/roku-icon.png)</br>**Roku** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main) |  | [使用 Experience Platform Edge 安装 Media Analytics](/help/implementation/edge/implementation-edge.md) |
+| ![Roku图标&#x200B;](assets/roku-icon.png)</br>**Roku** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main) |  | [使用JavaScript安装Media SDK](/help/implementation/edge/implementation-edge.md) |

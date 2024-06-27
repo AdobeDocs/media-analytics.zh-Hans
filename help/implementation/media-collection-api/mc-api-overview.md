@@ -6,18 +6,18 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# 媒体收集 API 概述{#overview}
+# 媒体收集 API 概述 {#overview}
 
 媒体收集 API 是 Adobe 的客户端 Media SDK 的 RESTful 替代方法。借助媒体收集 API，您的播放器可以使用 RESTful HTTP 调用来跟踪音频和视频事件。
 
-媒体收集 API 本质上是一个适配器，可充当 Media SDK 的服务器端版本。这意味着，Media SDK 文档的某些方面也与媒体收集 API 相关。例如，两个解决方案使用了相同的[流媒体参数](../variables/audio-video-parameters.md)，并且收集的流媒体跟踪数据最终获得相同的[报表和分析](/help/reporting/media-reports-enable.md)。
+媒体收集 API 本质上是一个适配器，可充当 Media SDK 的服务器端版本。这意味着，Media SDK 文档的某些方面也与媒体收集 API 相关。例如，两个解决方案使用相同的 [流媒体参数](../variables/audio-video-parameters.md)，并且收集的流媒体跟踪数据会得到相同的 [报表和分析。](/help/reporting/media-reports-enable.md)
 
 ## 媒体跟踪数据流 {#media-tracking-data-flows}
 
@@ -37,11 +37,11 @@ ht-degree: 100%
 
 * **`sessions`—** 与服务器建立会话，并返回在后续 `events` 调用中使用的会话 ID。应用程序会在跟踪会话开始时调用一次。
 
-   `{uri}/api/v1/sessions`
+  `{uri}/api/v1/sessions`
 
 * **`events`—** 发送媒体跟踪数据。
 
-   `{uri}/api/v1/sessions/{session-id}/events`
+  `{uri}/api/v1/sessions/{session-id}/events`
 
 ### 请求正文 {#mc-api-request-body}
 

@@ -1,14 +1,14 @@
 ---
 title: 超时情况
-description: 了解流媒体收集 API 超时情况。
+description: 了解媒体收集API超时情况。
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
 exl-id: 0b494b27-a4a6-4af7-84c1-c44b33b6da8f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '162'
-ht-degree: 100%
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 95%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 100%
 
 * **10 分钟：无 API 事件**
 
-   如果后端未收到任何 API 事件，则后端将关闭会话。
+  如果后端未收到任何 API 事件，则后端将关闭会话。
 * **30 分钟：无播放头更改**
 
-   如果播放头持续 30 分钟没有移动（例如，用户点击暂停并走开），则后端将关闭会话。
+  如果播放头持续 30 分钟没有移动（例如，用户点击暂停并走开），则后端将关闭会话。
 
 >[!NOTE]
 >

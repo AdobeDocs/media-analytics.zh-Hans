@@ -1,27 +1,27 @@
 ---
-title: 安装Media Analytics和Experience Platform边缘
-description: 了解如何使用Experience Platform Edge实施Adobe流媒体。
+title: 使用Edge Network实施流媒体收集加载项
+description: 了解如何使用Experience PlatformEdge实施流媒体收集加载项。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1883'
 ht-degree: 9%
 
 ---
 
-# 安装Media Analytics和Experience Platform边缘
+# 使用Edge Network实施流媒体收集加载项
 
-Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送到一个集中的位置。 Experience Edge 将适当的信息转发给所需的产品。 此概念允许您整合实施工作，尤其是跨多个数据解决方案进行整合。
+Adobe Experience Platform Edge Network 允许您将发送到多个产品的数据发送到一个集中的位置。 Experience Edge 将适当的信息转发给所需的产品。 此概念允许您整合实施工作，尤其是跨多个数据解决方案进行整合。
 
-下图说明了Media Analytics实施可以如何使用Experience PlatformEdge在Analysis Workspace中使数据在Adobe Analytics或Customer Journey Analytics中可用：
+下图说明了如何实施Adobe流媒体收集加载项，以使用Experience PlatformEdge在Adobe Analytics或Customer Journey Analytics中使数据在Analysis Workspace中可用：
 
 ![CJA 工作流](assets/streaming-media-edge.png)
 
-有关所有实施选项(包括不使用Experience Platform边缘的实施方法)的概述，请参阅 [实施Streaming Media for Adobe Analytics或Customer Journey Analytics](/help/implementation/overview.md).
+有关所有实施选项(包括不使用Experience PlatformEdge的实施方法)的概述，请参阅 [实施流媒体收集加载项](/help/implementation/overview.md).
 
-无论您是使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK还是API来使用Experience Edge实施流媒体，都必须首先完成以下部分：
+无论您是使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK还是API来使用Experience Edge实施流媒体收集加载项，都必须首先完成以下部分：
 
 ## 在Adobe Experience Platform中设置架构
 
@@ -170,7 +170,7 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
 
 1. 在Customer Journey Analytics中，创建连接，如中所述 [创建连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans).
 
-   创建连接时，需要以下配置选择才能实施流媒体：
+   创建连接时，需要以下配置选择才能实施流媒体收集加载项：
 
    1. 选择您之前创建的数据集，如中所述 [在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform).
 
@@ -188,7 +188,7 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
 
 1. 在客户历程分析中，创建数据视图，如中所述 [创建或编辑数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans).
 
-   创建数据视图时，需要以下配置选择才能实施流媒体：
+   创建数据视图时，需要以下配置选择才能实施流媒体收集加载项：
 
    1. 在 [!UICONTROL **连接**] 字段中，选择您之前创建的连接，如中所述 [在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics).
 
@@ -275,7 +275,7 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
 
 1. 确保您已按照中的说明在Customer Journey Analytics中创建数据视图 [在Customer Journey Analytics中创建数据视图](#create-a-new-data-view-in-customer-journey-analytics).
 
-1. 在Customer Journey Analytics中，在 [!UICONTROL **工作区**] 选项卡，在 [!UICONTROL **项目**] 区域，选择 [!UICONTROL **创建项目**].
+1. 在Customer Journey Analytics中，在 [!UICONTROL **Workspace**] 选项卡，在 [!UICONTROL **项目**] 区域，选择 [!UICONTROL **创建项目**].
 
 1. 选择 [!UICONTROL **空白项目**] > [!UICONTROL **创建**].
 
@@ -307,11 +307,11 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
    >
    >   如果要与共享的用户不可用，请确保这些用户具有在Adobe Admin Console中Customer Journey Analytics的用户和管理员访问权限。
 
-1. 继续 [将数据发送到Experience Platform边缘](#send-data-to-experience-platform-edge).
+1. 继续 [将数据发送到Experience PlatformEdge](#send-data-to-experience-platform-edge).
 
-## 将数据发送到Experience Platform边缘
+## 将数据发送到Experience PlatformEdge
 
-根据要发送到Experience Platform边缘的数据类型，您可以使用以下任一方法：
+根据要发送到Experience PlatformEdge的数据类型，您可以使用以下任一方法：
 
 ### Web：使用Adobe Experience Platform Web SDK
 
@@ -341,9 +341,9 @@ Adobe Experience Platform Edge 允许您将发送到多个产品的数据发送�
 
 ### API： Web和其他
 
-API是当前唯一受支持的将Web数据发送到Experience Platform边缘的方法。
+此API是当前唯一受支持的将Web数据发送到Experience PlatformEdge的方法。
 
-如果您要使用Edge API的自定义实施，则该API也可用。
+如果您要使用Edge API的自定义实施，则该API也将可用。
 
 有关media Edge API的更多信息，请参阅以下资源：
 
@@ -353,4 +353,4 @@ API是当前唯一受支持的将Web数据发送到Experience Platform边缘的�
 
 * [Media Edge API疑难解答指南](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
-* [使用适用于Media Edge API的Open API规范文件](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
+* [使用Media Edge API的Open API规范文件](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
