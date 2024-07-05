@@ -1,21 +1,21 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 流媒体收集加载项
-breadcrumb-title: 流媒体收集指南
-user-guide-description: 实施流媒体。 包括 Media SDK 和 Media Collection API。
+user-guide-title: 流媒体收藏集附加组件
+breadcrumb-title: 流媒体收藏集指南
+user-guide-description: 实施流媒体。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
 
-# 流媒体收集加载项 {#using}
+# 流媒体收藏集附加组件 {#using}
 
-+ [流媒体收集指南](media-overview.md)
++ [流媒体收藏集指南](media-overview.md)
 + 发行说明 {#release-notes}
    + [流媒体收藏集发行说明](additional-resources/release-notes.md)
 + 开始使用 {#getting-started}
