@@ -15,7 +15,7 @@ ht-degree: 92%
 
 本页上的信息描述如何安装 Web 独立 SDK 和设置 JavaScript。
 
-或者，您可以使用Adobe MediumAnalytics扩展来实施Adobe流媒体收集加载项，如中所述 [使用Media Analytics扩展实施Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+或者，还可使用Adobe MediumAnalytics扩展实施Adobe流媒体收集加载项，如[使用Media Analytics扩展实施Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md)中所述。
 
 ## 先决条件 {#prerequesites}
 

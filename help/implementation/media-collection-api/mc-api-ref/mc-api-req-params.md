@@ -6,8 +6,8 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1329'
+workflow-type: tm+mt
+source-wordcount: '1337'
 ht-degree: 100%
 
 ---
@@ -149,17 +149,17 @@ ht-degree: 100%
 
 * **analytics.aid：**
 
-   此键的值必须是表示 Analytics 旧版用户 ID 的字符串
+  此键的值必须是表示 Analytics 旧版用户 ID 的字符串
 * **visitor.customerIDs：**
 
-   此键的值必须是以下格式的对象：
+  此键的值必须是以下格式的对象：
 
-   ```js
-   "<<insert your ID name here>>": {  
-     "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>>
-   }
-   ```
+  ```js
+  "<<insert your ID name here>>": {  
+    "id": " <<insert your id here>>",  
+     "authState": <<insert one of 0, 1, 2>>
+  }
+  ```
 
 请注意，`visitor.customerIDs` 值可以包含所呈现格式的任意数量的对象。
 

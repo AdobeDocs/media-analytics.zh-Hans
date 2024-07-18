@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 93%
+source-wordcount: '346'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 您可以控制是否允许在特定设备上进行跟踪活动。
 
 * **移动应用程序 –** 媒体扩展尊重数据收集中的隐私设置。要选择退出跟踪，您需要将隐私设置为[在标记中选择退出](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property)或[更新 Mobile SDK 中的隐私状态](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus)。
-* **JavaScript/浏览器应用程序 -** VA 库遵循 `VisitorAPI` 隐私和选择禁用设置。要选择禁用跟踪，您需要在访客 API 服务中选择禁用。有关选择禁用和隐私的更多信息，请参阅 [Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans).
+* **JavaScript/浏览器应用程序 -** VA 库遵循 `VisitorAPI` 隐私和选择禁用设置。要选择禁用跟踪，您需要在访客 API 服务中选择禁用。有关选择退出和隐私的更多信息，请参阅[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。
 * **OTT 应用程序（Chromecast、Roku）-** OTT SDK 提供了通用数据保护条例 (GDPR) 就绪 API，允许您为数据收集和传输设置 `opt` 状态标记，并检索本地存储的身份。
 
   >[!NOTE]

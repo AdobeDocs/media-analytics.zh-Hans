@@ -68,4 +68,4 @@ Adobe流媒体收集加载项为流媒体内容（例如音频、视频和广告
 >通过实施 Customer Journey Analytics，可以使用 Experience Edge 或使用 Analytics Data Connector (ADC) 将数据发送到 Customer Journey Analytics。
 
 
-有关各种实施方法的详细信息，请参阅 [实施适用于Adobe Analytics或Customer Journey Analytics的流媒体收集加载项](/help/implementation/overview.md).
+有关各种实施方法的详细信息，请参阅[为Adobe Analytics或Customer Journey Analytics实施流媒体收集加载项](/help/implementation/overview.md)。

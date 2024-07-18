@@ -167,9 +167,9 @@ ht-degree: 94%
 
 在您的 Xcode 项目中执行以下步骤。本指南的编写假定您的项目具有针对 tvOS 的 Apple TV 应用程序：
 
-1. 拖动 `VideoHeartbeat_TV.a` 库文件放入您项目的 `lib` 文件夹。
+1. 将`VideoHeartbeat_TV.a`库文件拖到您项目的`lib`文件夹中。
 
-1. 在 **[!UICONTROL 构建阶段]** 选项卡，展开 **[!UICONTROL 将二进制文件与库关联]** 部分并添加以下库：
+1. 在tvOS应用程序目标的&#x200B;**[!UICONTROL 生成阶段]**&#x200B;选项卡中，展开&#x200B;**[!UICONTROL 将二进制文件与库关联]**&#x200B;部分，然后添加以下库：
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

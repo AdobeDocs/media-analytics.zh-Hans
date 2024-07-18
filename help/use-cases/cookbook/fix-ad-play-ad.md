@@ -6,8 +6,8 @@ exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '448'
+workflow-type: tm+mt
+source-wordcount: '450'
 ht-degree: 100%
 
 ---
@@ -52,9 +52,9 @@ ht-degree: 100%
 
 * **调用`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >应仅在前一个广告未完成时调用此实例。请考虑使用布尔值维护前一个广告的“`isinAd`”状态。
+  >[!NOTE]
+  >
+  >应仅在前一个广告未完成时调用此实例。请考虑使用布尔值维护前一个广告的“`isinAd`”状态。
 
 * 为广告资源创建广告对象实例：例如，`adObject`。
 * 填充广告元数据 `adCustomMetadata`。
@@ -65,9 +65,9 @@ ht-degree: 100%
 
 * **请勿进行调用**
 
-   >[!NOTE]
-   >
-   >如果应用程序知道该资源是广告时间的最后一个广告，请在此时调用 `trackEvent:AdComplete`，并在 `trackEvent:AdBreakComplete` 中跳过设置 `trackEvent:AdComplete`
+  >[!NOTE]
+  >
+  >如果应用程序知道该资源是广告时间的最后一个广告，请在此时调用 `trackEvent:AdComplete`，并在 `trackEvent:AdBreakComplete` 中跳过设置 `trackEvent:AdComplete`
 
 **在广告跳过时：**
 
@@ -77,8 +77,8 @@ ht-degree: 100%
 
 * **调用`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >如果前面在上一次 `trackEvent:AdComplete` 调用中已经执行此步骤，那么可以跳过此调用。
+  >[!NOTE]
+  >
+  >如果前面在上一次 `trackEvent:AdComplete` 调用中已经执行此步骤，那么可以跳过此调用。
 
 * 调用 `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`。

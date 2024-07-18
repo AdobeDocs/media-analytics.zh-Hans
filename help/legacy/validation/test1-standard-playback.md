@@ -6,8 +6,8 @@ exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '838'
+workflow-type: tm+mt
+source-wordcount: '847'
 ht-degree: 100%
 
 ---
@@ -43,41 +43,40 @@ Media Analytics 实施包含两种类型的跟踪调用：
 
    * **Adobe Analytics 开始调用**
 
-      | 参数 | 值（示例） |
-      |---|---|
-      | `pev2` | ms_s |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | 参数 | 值（示例） |
+     |---|---|
+     | `pev2` | ms_s |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **网站页面调用**
 
-      | 参数 | 值（示例） |
-      |---|---|
-      | `mid` | 30250035503789876473484580554595324209 |
+     | 参数 | 值（示例） |
+     |---|---|
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **生命周期调用**
 
-      | 参数 | 值（示例） |
-      |---|---|
-      | `pev2` | ADBINTERNAL:Lifecycle |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | 参数 | 值（示例） |
+     |---|---|
+     | `pev2` | ADBINTERNAL:Lifecycle |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Media Analytics 开始调用**
 
-      | 参数 | 值（示例） |
-      |---|---|
-      | `s:event:type` | start |
+     | 参数 | 值（示例） |
+     |---|---|
+     | `s:event:type` | start |
 
-      >[!NOTE]
-      >
-      >在进行 Media Analytics 开始调用 (`s:event:type=start`) 时，`mid` 值可能不存在。这是正常的。它们可能直到进行 Media Analytics 播放调用 (`s:event:type=play`) 才会出现。
+     >[!NOTE]
+     >
+     >在进行 Media Analytics 开始调用 (`s:event:type=start`) 时，`mid` 值可能不存在。这是正常的。它们可能直到进行 Media Analytics 播放调用 (`s:event:type=play`) 才会出现。
 
    * **Media Analytics 播放调用**
 
-      | 参数 | 值（示例） |
-      |---|---|
-      | `s:event:type` | play |
-      | `s:user:mid` | 30250035503789876473484580554595324209 |
-
+     | 参数 | 值（示例） |
+     |---|---|
+     | `s:event:type` | play |
+     | `s:user:mid` | 30250035503789876473484580554595324209 |
 
 1. **启动媒体播放器**
 
@@ -107,13 +106,11 @@ Media Analytics 实施包含两种类型的跟踪调用：
 
    * **广告播放**
 
-      在广告播放期间，Media Analytics SDK 每秒会向 Media Analytics 服务器发送一次“广告”类型的播放事件。
+     在广告播放期间，Media Analytics SDK 每秒会向 Media Analytics 服务器发送一次“广告”类型的播放事件。
 
    * **广告结束**
 
-      当广告播放到 100% 时，则应发送 Media Analytics 结束调用。
-
-
+     当广告播放到 100% 时，则应发送 Media Analytics 结束调用。
 
 1. **暂停广告播放 30 秒（如果可用）。**  **广告暂停**
 
@@ -134,7 +131,7 @@ Media Analytics 实施包含两种类型的跟踪调用：
    * 每发起一次播放调用，播放头位置应增加 10 秒。
    * `l:event:duration` 值表示自上次跟踪调用后所经过的毫秒数，该参数在每次 10 秒调用中的值应该大致相同。
 
-      有关调用参数和元数据，请参阅[测试调用详细信息](/help/legacy/validation/test-call-details.md#play-main-content)。
+     有关调用参数和元数据，请参阅[测试调用详细信息](/help/legacy/validation/test-call-details.md#play-main-content)。
 
 1. **播放期间暂停至少 30 秒。**&#x200B;在媒体播放器暂停时，SDK 每 10 秒会向 Media Analytics 服务器发送一次暂停事件调用。暂停结束后，播放事件应该恢复。
 

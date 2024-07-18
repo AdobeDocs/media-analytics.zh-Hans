@@ -6,8 +6,8 @@ exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '614'
+workflow-type: tm+mt
+source-wordcount: '608'
 ht-degree: 100%
 
 ---
@@ -242,7 +242,7 @@ ht-degree: 100%
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `s:stream:type` | VOD |
+| `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**广告**_ |
 
 ### Media Analytics（心跳）广告暂停调用 {#ma-ad-pause-call}
@@ -254,7 +254,7 @@ ht-degree: 100%
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `s:stream:type` | VOD |
+| `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**广告**_ |
 
 ### Media Analytics（心跳）Adobe Analytics 广告结束调用 {#ma-aa-ad-complete-call}
@@ -266,7 +266,7 @@ ht-degree: 100%
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `s:stream:type` | VOD |
+| `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**广告**_ |
 
 ## 播放主内容 {#play-main-content}

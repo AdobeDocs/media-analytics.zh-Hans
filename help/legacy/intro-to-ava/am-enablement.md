@@ -5,8 +5,8 @@ exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '402'
+workflow-type: tm+mt
+source-wordcount: '397'
 ht-degree: 100%
 
 ---
@@ -33,84 +33,84 @@ Adobe Audience Manager (AAM) 是一种数据管理平台 (DMP)，可帮助您将
 
 * `getVisitorProfile() -`
 
-   返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
+  返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
 
-   ```js
-   ADBMobile.audienceManager.getVisitorProfile();
-   ```
+  ```js
+  ADBMobile.audienceManager.getVisitorProfile();
+  ```
 
 * `getDpid() -`
 
-   返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
+  返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
 
-   ```js
-   ADBMobile.audienceManager.getDpid();
-   ```
+  ```js
+  ADBMobile.audienceManager.getDpid();
+  ```
 
 * `getDpuuid() -`
 
-   返回当前 DPUUID。
+  返回当前 DPUUID。
 
-   ```js
-   ADBMobile.audienceManager.getDpuuid();
-   ```
+  ```js
+  ADBMobile.audienceManager.getDpuuid();
+  ```
 
 * `setDpidAndDpuuid() -`
 
-   设置 DPID 和 DPUUID。如果设置了 DPID 和 DPUUID，则它们将随每个信号一起发送。
+  设置 DPID 和 DPUUID。如果设置了 DPID 和 DPUUID，则它们将随每个信号一起发送。
 
-   ```js
-   ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
-   ```
+  ```js
+  ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
+  ```
 
 * `submitSignal() -`
 
-   向受众管理发送具有特征的信号。
+  向受众管理发送具有特征的信号。
 
-   ```js
-   ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
-   ```
+  ```js
+  ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
+  ```
 
 ### Roku {#am-roku}
 
 * `audienceVisitorProfile -`
 
-   返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
+  返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
 
-   ```js
-   ADBMobile().audienceVisitorProfile()
-   ```
+  ```js
+  ADBMobile().audienceVisitorProfile()
+  ```
 
 * `audienceDpid -`
 
-   返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
+  返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
 
-   ```js
-   ADBMobile().audienceDpid()
-   ```
+  ```js
+  ADBMobile().audienceDpid()
+  ```
 
 * `audienceDpuuid -`
 
-   返回当前 DPUUID。
+  返回当前 DPUUID。
 
-   ```js
-   ADBMobile().audienceDpuuid()
-   ```
+  ```js
+  ADBMobile().audienceDpuuid()
+  ```
 
 * `audienceSetDpidAndDpuuid -`
 
-   设置 DPID 和 DPUUID。如果设置了 DPID 和 DPUUID，则它们将随每个信号一起发送。
+  设置 DPID 和 DPUUID。如果设置了 DPID 和 DPUUID，则它们将随每个信号一起发送。
 
-   ```js
-   ADBMobile().audienceSetDpidAndDpuuid("myDpid", "myDpuuid")
-   ```
+  ```js
+  ADBMobile().audienceSetDpidAndDpuuid("myDpid", "myDpuuid")
+  ```
 
 * `audienceSubmitSignal -`
 
-   向受众管理发送具有特征的信号。
+  向受众管理发送具有特征的信号。
 
-   ```js
-   traitData = {}
-   traitData["sampleTrait"] = "sampleValue"
-   ADBMobile().audienceSubmitSignal(traitData)
-   ```
+  ```js
+  traitData = {}
+  traitData["sampleTrait"] = "sampleValue"
+  ADBMobile().audienceSubmitSignal(traitData)
+  ```

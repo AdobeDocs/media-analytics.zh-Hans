@@ -6,8 +6,8 @@ exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '689'
+workflow-type: tm+mt
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
@@ -66,28 +66,28 @@ ht-degree: 100%
 
    * **标准元数据**
 
-      [在 JavaScript 中实施标准元数据](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+     [在 JavaScript 中实施标准元数据](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
 
-      >[!NOTE]
-      >
-      >将标准元数据对象附加到媒体对象是可选的。
+     >[!NOTE]
+     >
+     >将标准元数据对象附加到媒体对象是可选的。
 
       * 媒体元数据键 API 引用 - [标准元数据键 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         请在此处查看可用元数据的完整集合：[音频和视频参数](/help/implementation/variables/audio-video-parameters.md)
+        请在此处查看可用元数据的完整集合：[音频和视频参数](/help/implementation/variables/audio-video-parameters.md)
+
    * **自定义元数据**
 
-      为自定义变量创建变量对象，然后使用此媒体的数据进行填充。例如：
+     为自定义变量创建变量对象，然后使用此媒体的数据进行填充。例如：
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
 1. **跟踪开始播放的意图**
 

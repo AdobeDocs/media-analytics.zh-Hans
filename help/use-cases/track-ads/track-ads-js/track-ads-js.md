@@ -6,8 +6,8 @@ exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '355'
+workflow-type: tm+mt
+source-wordcount: '359'
 ht-degree: 100%
 
 ---
@@ -83,14 +83,14 @@ ht-degree: 100%
    * [在 JavaScript 中实施标准广告元数据](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
    * **自定义广告元数据 –** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
 
-      ```js
-      /* Set custom context data */
-      var adCustomMetadata = {
-          affiliate: "Sample affiliate",
-          campaign: "Sample ad campaign",
-          creative: "Sample creative"
-      };
-      ```
+     ```js
+     /* Set custom context data */
+     var adCustomMetadata = {
+         affiliate: "Sample affiliate",
+         campaign: "Sample ad campaign",
+         creative: "Sample creative"
+     };
+     ```
 
 1. 在 `MediaHeartbeat` 实例中使用 `AdStart` 事件调用 `trackEvent()`，以开始跟踪广告播放。
 

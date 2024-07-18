@@ -6,9 +6,9 @@ exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '470'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 100%
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | 用于在 `MediaInfo` `trackLoad` 上设置元数据的常量 |
 | `MEDIA_STANDARD_AD_METADATA` | 用于在 `EventData` `trackEvent` 上设置广告元数据的常量 |
-| `MEDIA_RESUMED` | 用于发送视频恢复心跳的常量。要恢复先前已停止内容的视频跟踪，您需要在调用 `mediaTrackLoad` 时，在 `mediaInfo` 对象中设置 `MEDIA_RESUMED` 属性。（您无法使用 `mediaTrackEvent` API 跟踪 `MEDIA_RESUMED` 事件。）当应用程序想要继续跟踪用户之前停止观看但现在打算继续观看的内容时，应将 `MEDIA_RESUMED` 设置为 true。<br/><br/>例如，假设一位用户只观看了 30% 的内容，然后关闭了应用程序。此操作将导致会话结束。之后，如果同一用户返回到相同的内容，并且应用程序允许从先前停止的位置恢复会话，则应用程序应该在调用 `mediaTrackLoad` API 时将 `MEDIA_RESUMED` 设置为“true”。其结果是，同一视频内容的这两个不同媒体会话可以链接在一起。以下是实施示例： <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>这将为视频创建一个新会话，但它也会导致 SDK 发送事件类型为“resume”的心跳请求，该事件类型可用于报告，以将两个不同的媒体会话关联在一起。 |
+| `MEDIA_RESUMED` | 用于发送视频恢复心跳的常量。要恢复先前已停止内容的视频跟踪，您需要在调用 `mediaTrackLoad` 时，在 `mediaInfo` 对象中设置 `MEDIA_RESUMED` 属性。（您无法使用 `mediaTrackEvent` API 跟踪 `MEDIA_RESUMED` 事件。）当应用程序想要继续跟踪用户之前停止观看但现在打算继续观看的内容时，应将 `MEDIA_RESUMED` 设置为 true。<br/><br/>例如，假设一位用户只观看了 30% 的内容，然后关闭了应用程序。此操作将导致会话结束。之后，如果同一用户返回到相同的内容，并且应用程序允许从先前停止的位置恢复会话，则应用程序应该在调用 `mediaTrackLoad` API 时将 `MEDIA_RESUMED` 设置为“true”。其结果是，同一视频内容的这两个不同媒体会话可以链接在一起。以下是实施示例：<br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>这将为视频创建一个新会话，但它也会导致 SDK 发送事件类型为“resume”的心跳请求，该事件类型可用于报告，以将两个不同的媒体会话关联在一起。 |
 
 ### 内容类型常量
 

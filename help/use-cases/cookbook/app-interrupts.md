@@ -21,7 +21,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->呼叫 `trackSessionStart` 如果应用程序从后台返回，可能会导致迄今为止的播放不计入总播放时间，并且之前的进度标记、区段丢失，等等。 因此，在应用程序返回前台和/或媒体重新开始播放时，应调用 `trackPlay`。
+>在应用程序从后台返回时调用`trackSessionStart`可能会导致截至该时间为止的播放未计入总播放时间，同时还会丢失之前的进度标记、区段等。 因此，在应用程序返回前台和/或媒体重新开始播放时，应调用 `trackPlay`。
 
 ## 有关处理应用程序中断的常见问题解答： {#faq-about-handling-application-interrupts}
 

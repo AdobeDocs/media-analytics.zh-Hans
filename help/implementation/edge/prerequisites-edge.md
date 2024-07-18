@@ -16,7 +16,7 @@ ht-degree: 10%
 本节中介绍的先决条件特定于通过Edge实施实施Adobe流媒体收集加载项。
 
 1. **完成常规先决条件**<br>
-无论您是实施适用于仅Adobe Analytics实施还是Edge实施的流媒体收集加载项，请确保您满足以下条件 [常规先决条件](/help/getting-started/prereqs.md).
+无论您是实施适用于仅Adobe Analytics实施还是Edge实施的流媒体收集加载项，请确保您满足[一般先决条件](/help/getting-started/prereqs.md)。
 
 1. **确认您正在实施与Edge Network和流媒体收集加载项兼容的Adobe解决方案**<br>
 在使用Edge实施流媒体收集加载项时，您还必须具有有效的Customer Journey Analytics、Adobe Analytics、Adobe Journey Optimizer或Real-time Customer Data Platform实施。 有关更多信息，请参阅以下文档资源：
@@ -26,7 +26,7 @@ ht-degree: 10%
    * [Real-time Customer Data Platform文档](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
 
 1. **获取媒体跟踪服务器URL**<br>
-请向您的Customer Journey Analytics代表询问媒体跟踪服务器URL。 <!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->
+请向您的Customer Journey Analytics代表询问媒体跟踪服务器URL。<!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->
 
-1. **使用Edge Network实施流媒体收集加载项**<br>
-请按照中的步骤操作 [使用Edge Network实施流媒体收集加载项](/help/implementation/edge/implementation-edge.md).
+1. **使用Edge Network实施流媒体收藏集加载项**<br>
+按照[使用Edge Network](/help/implementation/edge/implementation-edge.md)实施流媒体收集加载项中的步骤操作。

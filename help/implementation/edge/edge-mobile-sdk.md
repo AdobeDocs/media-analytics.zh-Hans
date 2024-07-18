@@ -15,10 +15,10 @@ ht-degree: 3%
 
 您可以使用Adobe Experience Platform Mobile SDK将移动流媒体数据发送到Experience PlatformEdge。
 
-在将移动流媒体数据发送到Edge之前，请先完成中的步骤 [通过Experience PlatformEdge安装流媒体收集加载项](/help/implementation/edge/implementation-edge.md)，然后使用以下文档资源完成iOS和Android的实施：
+在将移动流媒体数据发送到Edge之前，请先完成[使用Experience PlatformEdge安装流媒体收集加载项](/help/implementation/edge/implementation-edge.md)中的步骤，然后使用以下文档资源完成iOS和Android的实施：
 
 * [入门指南](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
 * [API 参考](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [迁移到Adobe Streaming Media for Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [迁移至Adobe流媒体以获取Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)

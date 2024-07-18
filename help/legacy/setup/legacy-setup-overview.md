@@ -5,9 +5,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
 source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 99%
 
 ---
 
@@ -138,11 +138,11 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 * **Adobe Analytics (AppMeasurement) 服务器**
 有关跟踪服务器选项的更多信息，请参阅[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html)。
 
-   >[!IMPORTANT]
-   >
-   >Experience Cloud 访客 ID 服务需要一个 RDC 跟踪服务器或解析为 RDC 服务器的 CNAME。
+  >[!IMPORTANT]
+  >
+  >Experience Cloud 访客 ID 服务需要一个 RDC 跟踪服务器或解析为 RDC 服务器的 CNAME。
 
-   分析跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该为一个 CNAME。
+  分析跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该为一个 CNAME。
 
 * ** Media Analytics (Heartbeats) 服务器**
 其格式始终为“`[your_namespace].hb.omtrdc.net`”。“`[your_namespace]`”的值指定您的公司，由 Adobe 提供。
@@ -153,13 +153,13 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 
 | Video Analytics 1.x SDK | 开发人员指南（仅 PDF） |
 | --- | --- |
-| Android | [用于 Android 的配置 ](vhl-dev-guide-v15_android.pdf) |
-| Apple TV | [针对 Apple TV 进行配置](vhl-dev-guide-v1x_appletv.pdf) |
+| Android | [用于 Android 的配置](vhl-dev-guide-v15_android.pdf) |
+| Apple TV | 为Apple TV配置[](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [用于 Chromecast 的配置 ](chromecast_1.x_sdk.pdf) |
-| iOS | [用于 iOS 的配置 ](vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [用于 JavaScript 的配置 ](vhl-dev-guide-v15_js.pdf) |
+| iOS | [用于 iOS 的配置](vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [用于 JavaScript 的配置](vhl-dev-guide-v15_js.pdf) |
 | Primetime | <ul> <li> Android：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/android/1.4/index.html) </li> <li> DHLS：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
-| TVML | [用于 TVML 的配置 ](vhl_tvml.pdf) |
+| TVML | [用于 TVML 的配置](vhl_tvml.pdf) |
 
 ## Primetime Media SDK 文档 {#primetime-docs}
 

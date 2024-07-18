@@ -6,8 +6,8 @@ exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '520'
+workflow-type: tm+mt
+source-wordcount: '526'
 ht-degree: 100%
 
 ---
@@ -24,11 +24,11 @@ ht-degree: 100%
 | --- | --- | --- | --- |
 | 用户点击[!UICONTROL 播放] | trackSessionStart | Analytics 内容开始，心跳内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
 | 播放内容的第一帧。 | trackPlay | 心跳内容播放 | 当章节内容在主内容之前播放时，心跳在章节开始时开始。 |
-| 内容播放 |  | 内容心跳 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 内容播放 | | 内容心跳 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | Session1 结束（Episode1 结束） | trackComplete / trackSessionEnd | 心跳内容结束 | “结束”是指第 1 集的 session1 已完全观看结束。在开始下一集的会话之前，必须结束此会话。 |
 | Episode2 开始（Session2 开始） | trackSessionStart | Analytics 内容开始，心跳内容开始 | 这是因为用户观看了第 1 集并继续观看另一剧集 |
 | 媒体的第 1 帧 | trackPlay | 心跳内容播放 | 此方法将触发计时器，从这一刻开始，只要继续播放，就会每 10 秒发送一次心跳。 |
-| 内容播放 |  | 内容心跳 |  |
+| 内容播放 | | 内容心跳 | |
 | 会话结束（Episode2 结束） | trackComplete / trackSessionEnd | 心跳内容结束 | “结束”是指第 2 集的 session2 已完全观看结束。在开始下一集的会话之前，必须结束此会话。 |
 
 ## 参数 {#parameters}

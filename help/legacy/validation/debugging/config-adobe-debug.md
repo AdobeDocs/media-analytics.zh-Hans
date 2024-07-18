@@ -6,8 +6,8 @@ exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '651'
+workflow-type: tm+mt
+source-wordcount: '618'
 ht-degree: 100%
 
 ---
@@ -73,18 +73,17 @@ ht-degree: 100%
    1. 完成以下步骤之一：
 
       * [将证书添加到本地计算机的受信任的根证书颁发机构进行存储](https://technet.microsoft.com/zh-cn/library/cc754841.aspx#BKMK_addlocal)
+
    1. 对于 Firefox，请完成[在 Mozilla Firefox 中安装根证书](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)中的步骤。
 
       您可能需要退出并重新打开 Firefox 才能看到更改。
+
    **iOS 设备**
    1. 通过单击&#x200B;**[!UICONTROL 设置应用程序]** **>** **[!UICONTROL Wifi 设置]**，将 iOS 设备设置为使用 Adobe Debug 作为其 HTTP 代理。
 
    1. 在 Safari 中，转到 [Debug](https://proxy.debug.adobe.com/ssl)。
 
       Safari 将提示您安装 SSL 证书。
-
-
-
 
 ## 为移动设备安装 SSL 证书 {#install-sSL-for-mobile-device}
 

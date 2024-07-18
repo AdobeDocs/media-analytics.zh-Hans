@@ -6,8 +6,8 @@ exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1169'
+workflow-type: tm+mt
+source-wordcount: '1152'
 ht-degree: 100%
 
 ---
@@ -59,42 +59,42 @@ Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件
 
 | 类别 | 方法名称 | 描述 |
 |---|---|---|
-| **常量** |  |  |
+| **常量** | |  |
 |  | `sceneGraphConstants` | 返回包含 `SceneGraphConstants` 的对象。有关详细信息，请参阅上表。 |
-|  |  |  |
-| **调试日志记录** |  |  |
+|  | | |
+| **调试日志记录** | | |
 |  | `setDebugLogging` | 用于在 ADBMobile SDK 中设置调试日志记录的 SceneGraph API。 |
 |  | `getDebugLogging` | 用于从 ADBMobile SDK 获取调试日志记录的 SceneGraph API。 |
-|  | 有关更多信息，请参阅旧版 SDK 的“调试日志记录”部分。 |  |
-|  |  |  |
-| **隐私状态/选择禁用** |  |  |
+|  | 有关更多信息，请参阅旧版 SDK 的“调试日志记录”部分。 | |
+|  | | |
+| **隐私状态/选择禁用** | | |
 |  | `setPrivacyStatus` | 用于在 ADBMobile SDK 中设置隐私状态的 SceneGraph API。 |
 |  | `getPrivacyStatus` | 用于从 ADBMobile SDK 获取隐私状态的 SceneGraph API。 |
-|  | 有关更多信息，请参阅旧版 SDK 的“选择禁用/隐私状态”部分。 |  |
-|  |  |  |
-| **Analytics** |  |  |
+|  | 有关更多信息，请参阅旧版 SDK 的“选择禁用/隐私状态”部分。 | |
+|  | | |
+| **Analytics** | | |
 |  | `trackState` | 用于在 ADBMobile SDK 中跟踪状态的 SceneGraph API。 |
 |  | `trackAction` | 用于在 ADBMobile SDK 中跟踪操作的 SceneGraph API。 |
 |  | `trackingIdentifier` | 用于从 ADBMobile SDK 获取跟踪标识符的 SceneGraph API。 |
 |  | `userIdentifier` | 用于从 ADBMobile SDK 获取用户标识符的 SceneGraph API。 |
 |  | `setUserIdentifier` | 用于在 ADBMobile SDK 中设置用户标识符的 SceneGraph API。 |
 |  | `getAllIdentifiers` | 可检索 Roku SDK 已知并保留的所有用户标识的 SceneGraph API。 |
-|  | 有关更多信息，请参阅旧版 SDK 的 Analytics 部分。 |  |
-|  |  |  |
-| **Experience Cloud** |  |  |
+|  | 有关更多信息，请参阅旧版 SDK 的 Analytics 部分。 | |
+|  | | |
+| **Experience Cloud** | | |
 |  | `visitorSyncIdentifiers` | 用于在 ADBMobile SDK 中同步 Experience Cloud 标识符的 SceneGraph API。 |
 |  | `visitorMarketingCloudID` | 用于从 ADBMobile SDK 获取访客 Experience Cloud ID 的 SceneGraph API。 |
-|  | 有关更多信息，请参阅旧版 SDK 的 Experience Cloud 部分。 |  |
-|  |  |  |
-| **Audience Manager** |  |  |
+|  | 有关更多信息，请参阅旧版 SDK 的 Experience Cloud 部分。 | |
+|  | | |
+| **Audience Manager** | | |
 |  | `audienceSubmitSignal` | 用于发送含特征的受众管理信号的 SceneGraph API。 |
 |  | `audienceVisitorProfile` | 用于从 ADBMobile SDK 获取 Audience Manager 访客配置文件的 SceneGraph API。 |
 |  | `audienceDpid` | 用于从 ADBMobile SDK 获取受众 Dpid 的 SceneGraph API。 |
 |  | `audienceDpuuid` | 用于从 ADBMobile SDK 获取受众 Dpuuid 的 SceneGraph API。 |
 |  | `audienceSetDpidAndDpuuid` | 用于在 ADBMobile SDK 中设置受众 Dpid 和 Dpuuid 的 SceneGraph API。 |
-|  | 有关更多信息，请参阅旧版 SDK 的 Audience Manager 部分。 |  |
-|  |  |  |
-| **MediaHeartbeat** |  |  |
+|  | 有关更多信息，请参阅旧版 SDK 的 Audience Manager 部分。 | |
+|  | | |
+| **MediaHeartbeat** | | |
 |  | `mediaTrackLoad` | 用于为 MediaHeartbeat 跟踪加载视频内容的 SceneGraph API。 |
 |  | mediaTrackStart | 用于使用 MediaHeartbeat 开始视频跟踪会话的 SceneGraph API。 |
 |  | `mediaTrackUnload` | 用于从 MediaHeartbeat 跟踪中卸载视频内容的 SceneGraph API。 |
@@ -105,7 +105,7 @@ Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件
 |  | mediaTrackEvent | 用于在跟踪期间跟踪回放事件的 SceneGraph API。例如：广告、章节。 |
 |  | `mediaUpdatePlayhead` | 用于在视频跟踪期间，将播放头更新发送到 MediaHeartbeat 的 SceneGraph API。 |
 |  | `mediaUpdateQoS` | 用于在视频跟踪期间，将 QoS 更新发送到 MediaHeartbeat 的 SceneGraph API。 |
-|  | 有关更多信息，请参阅旧版 SDK 的“媒体心跳”部分。 |  |
+|  | 有关更多信息，请参阅旧版 SDK 的“媒体心跳”部分。 | |
 
 ### SceneGraphConstants
 
@@ -193,7 +193,7 @@ API 签名：`ADBMobile().sgConstants()`
 |---|---|---|
 | 版本控制 | `version` | 表示检索 AdobeMobileLibrary 版本信息的常量 |
 | 隐私/选择退出 | `PRIVACY_STATUS_OPT_IN` | 表示“已选择启用”隐私状态的常量 |
-|  | `PRIVACY_STATUS_OPT_OUT` | 表示“已选择退出”隐私状态的常量 |
+|   | `PRIVACY_STATUS_OPT_OUT` | 表示“已选择退出”隐私状态的常量 |
 | MediaHeartbeat 常量 | 请参阅以下页面上的常量：<br/><br/>[媒体心跳方法](/help/use-cases/track-av-playback/track-core/track-core-roku.md)。 | 将这些常量与 MediaHeartbeat API 一起使用 |
 | 标准元数据 | 请参阅以下页面上的常量：<br/><br/>[标准元数据参数](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)。 | 使用这些常量可在 MediaHeartbeat API 中附加标准视频/广告元数据 |
 

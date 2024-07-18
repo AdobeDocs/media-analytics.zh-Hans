@@ -20,13 +20,13 @@ ht-degree: 69%
 
 我们建议在为所有新Adobe Analytics或Customer Journey Analytics客户实施流媒体收集加载项时使用Edge。
 
-* **适用于Edge NetworkSDK/扩展的媒体：** 从Web、iOS和Android设备或Roku设备收集数据并将其发送给Edge Network。 然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
+* **用于Edge NetworkSDK/扩展的Media：**&#x200B;从Web、iOS和Android设备或Roku设备收集数据并将其发送给Edge Network。 然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
 
-  有关Media for Edge Network SDK/扩展的更多信息，请参阅 [使用Edge Network实施流媒体收集加载项](/help/implementation/edge/implementation-edge.md).
+  有关Media for Edge Network SDK/扩展的更多信息，请参阅[使用Edge Network实施流媒体收集加载项](/help/implementation/edge/implementation-edge.md)。
 
-* **Media Edge API：** 可以自定义以从任何设备或格式（包括移动设备、Web设备和过顶设备）收集数据并将数据发送到Edge Network。 然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
+* **Media Edge API：**&#x200B;可自定义为从任何设备或格式（包括移动设备、Web设备和过顶设备）收集数据并将数据发送到Edge Network。 然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
 
-  有关Media Edge API的更多信息，请参阅 [Media Edge API概述](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
+  有关Media Edge API的更多信息，请参阅[Media Edge API概述](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)。
 
 ![CJA 工作流](assets/streaming-media-edge.png)
 

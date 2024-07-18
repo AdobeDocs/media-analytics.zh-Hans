@@ -6,8 +6,8 @@ exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '360'
+workflow-type: tm+mt
+source-wordcount: '364'
 ht-degree: 100%
 
 ---
@@ -90,13 +90,12 @@ ht-degree: 100%
 
    * **自定义广告元数据 –** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
 
-      ```java
-      // Setting Ad Metadata
-      HashMap<String, String> adMetadata = new HashMap<String, String>();
-      adMetadata.put("affiliate", "Sample affiliate");
-      adMetadata.put("campaign", "Sample ad campaign");
-      ```
-
+     ```java
+     // Setting Ad Metadata
+     HashMap<String, String> adMetadata = new HashMap<String, String>();
+     adMetadata.put("affiliate", "Sample affiliate");
+     adMetadata.put("campaign", "Sample ad campaign");
+     ```
 
 1. 在 `MediaHeartbeat` 实例中使用 `AdStart` 事件调用 `trackEvent()`，以开始跟踪广告播放。
 

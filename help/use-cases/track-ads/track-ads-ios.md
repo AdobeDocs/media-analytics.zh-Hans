@@ -6,8 +6,8 @@ exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '355'
+workflow-type: tm+mt
+source-wordcount: '359'
 ht-degree: 100%
 
 ---
@@ -85,12 +85,12 @@ ht-degree: 100%
    * [在 iOS 中实施标准广告元数据](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **自定义广告元数据 –** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充：
 
-      ```
-      NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
-      [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
-      [adDictionary setObject:@"Sample campaign" forKey:@"campaign"];
-      [adDictionary setObject:@"Sample creative" forKey:@"creative"];
-      ```
+     ```
+     NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
+     [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
+     [adDictionary setObject:@"Sample campaign" forKey:@"campaign"];
+     [adDictionary setObject:@"Sample creative" forKey:@"creative"];
+     ```
 
 1. 在 `MediaHeartbeat` 实例中使用 `AdStart` 事件调用 `trackEvent()`，以开始跟踪广告播放。
 

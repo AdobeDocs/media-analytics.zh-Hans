@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '398'
 ht-degree: 88%
 
 ---
@@ -133,9 +133,9 @@ ht-degree: 88%
 
 ## 粒度广告跟踪
 
-默认广告ping间隔为 `10 seconds`.
+默认广告Ping间隔为`10 seconds`。
 
-您可以设置粒度广告跟踪以启用 `1 second` 广告跟踪。
+您可以设置粒度广告跟踪以启用`1 second`广告跟踪。
 
 >[!IMPORTANT]
 >

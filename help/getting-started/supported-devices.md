@@ -25,7 +25,7 @@ Adobe流媒体收集加载项支持所有主要设备，包括：
 
 下表列出当前支持的设备。如果未列出某个设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
 
-有关在Edge上实施Media的更多信息，请参阅 [通过Experience PlatformEdge安装流媒体收集加载项](/help/implementation/edge/implementation-edge.md).
+有关在Edge上实施媒体的详细信息，请参阅[使用Experience PlatformEdge安装流媒体收集加载项](/help/implementation/edge/implementation-edge.md)。
 
 | 流平台和设备 | | Media for Edge Network SDK/扩展 | Media Edge API | 带有标记或 AEP 移动 SDK 的媒体扩展 | Media SDK | 媒体收集 API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

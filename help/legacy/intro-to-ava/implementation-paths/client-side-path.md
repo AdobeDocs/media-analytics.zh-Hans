@@ -18,4 +18,4 @@ Media Analytics（心率）是Adobe的标准化媒体跟踪解决方案。
 
 客户端集成只能通过 Media Analytics 实施。您可以选择实施 Media SDK 或媒体收集 API（或同时实施两者）。客户端路径可以跨任何播放器使用，包括客户和/或 OVP 播放器，如 Brightcove、Ooyala、thePlatform 等。
 
-如果Media Analytics是您的预期路径，请参阅 [获取Media SDK、使用标记的扩展和OTT SDK](/help/getting-started/download-sdks.md) 和 [媒体收集API。](/help/implementation/media-collection-api/mc-api-overview.md)
+如果Media Analytics是您的预期路径，请参阅[获取Media SDK、使用标记的扩展和OTT SDK](/help/getting-started/download-sdks.md)以及[媒体收集API。](/help/implementation/media-collection-api/mc-api-overview.md)

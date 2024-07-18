@@ -6,7 +6,7 @@ exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 
@@ -24,11 +24,11 @@ ht-degree: 100%
 | --- | --- | --- | --- |
 | 用户点击[!UICONTROL 播放] | `trackSessionStart` | Analytics 内容开始，心跳内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
 | 播放内容的第一帧。 | `trackPlay` | 心跳内容播放 | 当章节内容在主内容之前播放时，心跳在章节开始时开始。 |
-| 内容播放 |  | 内容心跳 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
-| 用户开始对内容进行搜寻操作 | `trackSeekStart` |  | 在搜寻结束（例如，`trackSeekComplete`）前，不发出任何心跳 |
-| 搜寻操作结束 | `trackSeekComplete` |  | 搜寻完成后心跳即开始发出。提示：播放头值应该表示搜寻后正确的新播放头。 |
+| 内容播放 | | 内容心跳 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 用户开始对内容进行搜寻操作 | `trackSeekStart` | | 在搜寻结束（例如，`trackSeekComplete`）前，不发出任何心跳 |
+| 搜寻操作结束 | `trackSeekComplete` | | 搜寻完成后心跳即开始发出。提示：播放头值应该表示搜寻后正确的新播放头。 |
 | 内容结束 | `trackComplete` | 心跳内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
-| 会话结束 | `trackSessionEnd` |  | `SessionEnd` |
+| 会话结束 | `trackSessionEnd` | | `SessionEnd` |
 
 ## 示例代码 {#sample-code}
 

@@ -7,13 +7,13 @@ exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
 source-wordcount: '982'
-ht-degree: 75%
+ht-degree: 80%
 
 ---
 
 # 流媒体收集附加组件发行说明（2023年5月）
 
-**上次更新**：2024年5月29日
+**上次更新日期**： 2024年5月29日
 
 ## 相关资源
 
@@ -31,8 +31,8 @@ ht-degree: 75%
 
 | 功能 | 描述 | 预定日期 |
 | ----------- | ---------- | ------- |
-| 使用Web SDK将Web数据发送到Adobe Experience PlatformEdge Network | 您现在可以 [使用Adobe Experience Platform Web SDK将流媒体Web数据发送到Adobe Experience PlatformEdge Network](/help/implementation/edge/edge-web-sdk.md)，可让您构建更个性化的促销活动并提供更个性化的内容，从而产生要报告的更多跟踪数据。<p>此增强功能为所有平台解决方案（例如 Customer Journey Analytics、RT-CDP、AJO 和事件转发）的 Web 实现提供了统一的收集方法。以前，将流媒体Web数据发送到Edge Network的唯一方法是使用Media Edge API。 | 2024 年 5 月 29 日 |
-| 将Roku数据发送到Adobe Experience Platform Edge | 现在，当 [使用Experience PlatformEdge安装流媒体收集加载项](/help/implementation/edge/implementation-edge.md)中，您可以使用Adobe Experience Platform Roku SDK将流媒体数据发送到Adobe Experience Platform。 | 2024 年 4 月 12 日 |
+| 使用Web SDK将Web数据发送到Adobe Experience PlatformEdge Network | 您现在可以[使用Adobe Experience Platform Web SDK将流媒体Web数据发送到Adobe Experience PlatformEdge Network](/help/implementation/edge/edge-web-sdk.md)，从而允许您构建更个性化的促销活动并提供更个性化的内容，从而产生要报告的更多跟踪数据。<p>此增强功能为所有平台解决方案（例如 Customer Journey Analytics、RT-CDP、AJO 和事件转发）的 Web 实现提供了统一的收集方法。以前，将流媒体网络数据发送到 Edge Network 的唯一方法是使用 Edge Network API。 | 2024 年 5 月 29 日 |
+| 将Roku数据发送到Adobe Experience Platform Edge | 现在，当[使用 Experience Platform Edge 安装流媒体收藏集附加组件](/help/implementation/edge/implementation-edge.md)时，您可以使用 Adobe Experience Platform Roku SDK 将流媒体数据发送到 Adobe Experience Platform。 | 2024 年 4 月 12 日 |
 | 媒体收集：与Experience Edge （API和移动SDK）的集成 | 您现在可以使用Experience Edge API和Mobile SDK实施Adobe流媒体收集加载项，从而构建更个性化的促销活动并提供更个性化的内容，从而产生要报告的更多跟踪数据。<p>此增强功能提供了跨所有解决方案(如Customer Journey Analytics报告、RT-CDP、AJO和事件转发)的统一收集方法。  [了解详情](/help/implementation/edge/implementation-edge.md) | 2023年5月12日 |
 | “媒体并行查看者”面板 | 了解同时观看的人数在哪里达到峰值或在哪里发生下降。获得关于内容质量和观众参与情况的宝贵洞察，并帮助进行故障排除或规划数量和规模。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=en) | 2022 年 8 月 9 日 |
 | “Media Playback 耗时”面板 | Media Playback 耗时提供有关查看者参与情况的宝贵洞察，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的洞察。 您可以观察在特定时间点查看媒体流的耗时。您可以按不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | 2022 年 8 月 9 日 |

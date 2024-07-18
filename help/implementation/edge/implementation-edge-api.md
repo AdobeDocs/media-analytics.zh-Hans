@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 使用Edge NetworkAPI实施流媒体收集加载项
 
-如果您无法使用 [Adobe Experience Platform移动SDK](/help/implementation/edge/implementation-edge.md)，您可以通过API直接将数据发送到Adobe Experience PlatformEdge Network。
+如果您无法使用[Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md)，可以直接通过API将数据发送到Adobe Experience PlatformEdge Network。
 
 有关如何自定义实施Edge API的信息，请使用以下资源：
 

@@ -6,7 +6,7 @@ exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
 
@@ -25,13 +25,13 @@ ht-degree: 100%
 | 触发器   | 心跳方法  | 网络调用   | 注释   |
 | --- | --- | --- | --- |
 | 用户点击[!UICONTROL 播放] | `trackSessionStart()` | Analytics 内容开始，心跳内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
-| 广告开始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 广告开始、心跳广告开始 |  |
+| 广告开始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 广告开始、心跳广告开始 | |
 | 将播放广告的第一帧。 | `trackPlay()` | 心跳广告播放 | 当广告内容在主内容之前播放时，心跳将在广告开始播放时开始。 |
-| 将播放广告。 |  | 广告心跳 |  |
-| 跳过广告。 | `trackEvent:trackAdSkip` |  | 没有广告结束网络调用。 |
-| 将播放内容。 |  | 内容心跳 | 这些网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 将播放广告。 | | 广告心跳 | |
+| 跳过广告。 | `trackEvent:trackAdSkip` | | 没有广告结束网络调用。 |
+| 将播放内容。 | | 内容心跳 | 这些网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 内容结束播放。 | `trackComplete()` | 心跳内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
-| 会话结束。 | `trackSessionEnd()` |  | `SessionEnd` |
+| 会话结束。 | `trackSessionEnd()` | | `SessionEnd` |
 
 ## 参数 {#parameters}
 

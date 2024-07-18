@@ -19,7 +19,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 ![CJA 工作流](assets/streaming-media-edge.png)
 
-有关所有实施选项(包括不使用Experience PlatformEdge的实施方法)的概述，请参阅 [实施流媒体收集加载项](/help/implementation/overview.md).
+有关所有实施选项的概述，包括不使用Experience PlatformEdge的实施方法，请参阅[实施流媒体收集加载项](/help/implementation/overview.md)。
 
 无论您是使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK还是API来使用Experience Edge实施流媒体收集加载项，都必须首先完成以下部分：
 
@@ -29,135 +29,135 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 创建和设置方案：
 
-1. 在Adobe Experience Platform中，开始创建架构，如中所述 [在UI中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
+1. 在Adobe Experience Platform中，按照[在UI中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)中的说明开始创建架构。
 
-1. 在创建方案时，在“方案详细资料”页上，选择 [!UICONTROL **体验事件**] 在为架构选择基类时。
+1. 在创建架构时，请在“架构详细信息”页面上，为架构选择基类时选择&#x200B;[!UICONTROL **体验事件**]。
 
    ![已添加字段组](assets/schema-experience-event.png)
 
 1. 选择&#x200B;[!UICONTROL **下一步**]。
 
-1. 指定架构显示名称和说明，然后选择 [!UICONTROL **完成**].
+1. 指定架构显示名称和说明，然后选择&#x200B;[!UICONTROL **完成**]。
 
-1. 在 [!UICONTROL **合成**] 区域，在 [!UICONTROL **字段组**] 部分，选择 [!UICONTROL **添加**]，然后搜索并将以下新字段组添加到该架构中：
+1. 在&#x200B;[!UICONTROL **构成**]&#x200B;区域的&#x200B;[!UICONTROL **字段组**]&#x200B;部分中，选择&#x200B;[!UICONTROL **添加**]，然后搜索并将以下新字段组添加到架构中：
    * `Adobe Analytics ExperienceEvent Template`
    * `Implementation Details`
    * `MediaAnalytics Interaction Details`
 
-   添加字段组后，它们应显示在 [!UICONTROL **字段组**] 部分，如下所示：
+   添加字段组后，它们应显示在&#x200B;[!UICONTROL **字段组**]&#x200B;部分，如下所示：
 
    ![已添加字段组](assets/schema-field-groups-added.png)
 
-1. 选择 [!UICONTROL **保存**] 以保存更改。
+1. 选择&#x200B;[!UICONTROL **保存**]&#x200B;以保存更改。
 
-1. （可选）您可以隐藏Media Edge API未使用的某些字段。 隐藏这些字段使架构更易于阅读和理解，但并非必需。 这些字段仅指以下内容： `MediaAnalytics Interaction Details` 字段组。
+1. （可选）您可以隐藏Media Edge API未使用的某些字段。 隐藏这些字段使架构更易于阅读和理解，但并非必需。 这些字段仅引用`MediaAnalytics Interaction Details`字段组中的字段。
 
 +++ 展开此处可查看有关可隐藏字段的说明。
 
-   1. 在 [!UICONTROL **结构**] 区域，选择 `Media Collection Details` 字段，然后选择 [!UICONTROL **管理相关字段**].
+   1. 在&#x200B;[!UICONTROL **结构**]&#x200B;区域中，选择`Media Collection Details`字段，然后选择&#x200B;[!UICONTROL **管理相关字段**]。
 
       ![管理相关字段](assets/manage-related-fields.png)
 
-   1. 启用该选项 [!UICONTROL **显示字段的显示名称**]，然后更新架构，如下所示：
+   1. 启用该选项以&#x200B;[!UICONTROL **显示字段**]&#x200B;的显示名称，然后按如下方式更新架构：
 
-      * 在 `Media Collection Details` > `Advertising Details` 字段中，隐藏以下报表字段： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
+      * 在`Media Collection Details` > `Advertising Details`字段中，隐藏以下报表字段： `Ad Completed`、`Ad Started`和`Ad Time Played`。
 
-      * 在 `Media Collection Details` > `Advertising Pod Details` 字段中，隐藏以下报表字段： `Ad Break ID`
+      * 在`Media Collection Details` > `Advertising Pod Details`字段中，隐藏以下报告字段： `Ad Break ID`
 
-      * 在 `Media Collection Details` > `Chapter Details` 字段中，隐藏以下报表字段： `Chapter Completed`， `Chapter ID`， `Chapter Started`、和 `Chapter Time Played`.
+      * 在`Media Collection Details` > `Chapter Details`字段中，隐藏以下报告字段： `Chapter Completed`、`Chapter ID`、`Chapter Started`和`Chapter Time Played`。
 
-      * 在 `Media Collection Details` 字段，隐藏 `List Of States` 字段。
+      * 在`Media Collection Details`字段中，隐藏`List Of States`字段。
 
         ![隐藏媒体收集状态](assets/schema-hide-media-collection-states.png)
 
-      * 在 `Media Collection Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 字段中，隐藏以下报表字段： `Player State Count`， `Player State Set`、和 `Player State Time`.
+      * 在`Media Collection Details` > `List Of States End`和`Media Collection Details` > `List Of States Start`字段中，隐藏以下报告字段： `Player State Count`、`Player State Set`和`Player State Time`。
 
-        ![要隐藏的字段](assets/schema-hide-listofstates.png)
+        要隐藏的![字段](assets/schema-hide-listofstates.png)
 
-      * 在 `Media Collection Details` > `Qoe Data Details` 字段中，隐藏以下报表字段： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Change Impacted Streams`， `Bitrate Changes`， `Buffer Impacted Streams`， `Buffer Events`， `Dropped Frame Impacted Streams`， `Drops Before Starts`， `Errors`， `External Error IDs`， `Error Impacted Streams`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Impacted Streams`， `Stalling Events`， `Total Buffer Duration`、和 `Total Stalling Duration`.
+      * 在`Media Collection Details` > `Qoe Data Details`字段中，隐藏以下报告字段： `Average Bitrate`、`Average Bitrate Bucket`、`Bitrate Change Impacted Streams`、`Bitrate Changes`、`Buffer Impacted Streams`、`Buffer Events`、`Dropped Frame Impacted Streams`、`Drops Before Starts`、`Errors`、`External Error IDs`、`Error Impacted Streams`、`Media SDK Error IDs`、`Player SDK Error IDs`、`Stalling Impacted Streams`、`Stalling Events`、`Total Buffer Duration`和`Total Stalling Duration`。
 
-      * 在 `Media Collection Details` > `Session Details` 字段中，隐藏以下报表字段： `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Ad Count`， `Average Minute Audience`， `Content Completes`， `Chapter Count`， `Content Starts`， `Content Time Spent`， `Estimated Streams`， `Federated Data`， `Media Segment Views`， `Media Downloaded Flag`， `Media Starts`， `Media Session ID`， `Media Session Server Timeout`， `Media Time Spent`， `Pause Events`， `Pause Impacted Streams`， `Pev3`， `Pccr`， `Total Pause Duration`， `Unique Time Played`、和 `Video Segment`.
+      * 在`Media Collection Details` > `Session Details`字段中，隐藏以下报告字段： `10% Progress Marker`、`25% Progress Marker`、`50% Progress Marker`、`75% Progress Marker`、`95% Progress Marker`、`Ad Count`、`Average Minute Audience`、`Content Completes`、`Chapter Count`、`Content Starts`、`Content Time Spent`、`Estimated Streams`、`Federated Data`、`Media Segment Views`、`Media Downloaded Flag`、`Media Starts`、`Media Session ID`、`Media Session Server Timeout`、`Media Time Spent`、`Pause Events`、`Pause Impacted Streams`、`Pev3`、`Pccr`、`Total Pause Duration`、`Unique Time Played`和`Video Segment`。
 
-   1. 选择 [!UICONTROL **确认**] 以保存更改。
+   1. 选择&#x200B;[!UICONTROL **确认**]&#x200B;以保存更改。
 
-   1. 在 [!UICONTROL **结构**] 区域，启用选项 [!UICONTROL **显示字段的显示名称**]，然后选择 `List Of Media Collection Downloaded Content Events` 字段。
+   1. 在&#x200B;[!UICONTROL **结构**]&#x200B;区域中，启用选项&#x200B;[!UICONTROL **显示字段的显示名称**]，然后选择`List Of Media Collection Downloaded Content Events`字段。
 
-   1. 选择 [!UICONTROL **管理相关字段**]，然后更新架构，如下所示：
+   1. 选择&#x200B;[!UICONTROL **管理相关字段**]，然后按如下方式更新架构：
 
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` 字段中，隐藏以下报表字段： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
+      * 在`List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details`字段中，隐藏以下报告字段： `Ad Completed`、`Ad Started`和`Ad Time Played`。
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 字段中，隐藏以下报表字段： `Ad Break ID`
+      * 在`List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details`字段中，隐藏以下报告字段： `Ad Break ID`
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 字段中，隐藏以下报表字段： `Chapter Completed`， `Chapter ID`， `Chapter Started`、和 `Chapter Time Played`.
+      * 在`List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details`字段中，隐藏以下报告字段： `Chapter Completed`、`Chapter ID`、`Chapter Started`和`Chapter Time Played`。
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` 字段，隐藏 `List Of States` 字段。
+      * 在`List Of Media Collection Downloaded Content Events` > `Media Details`字段中，隐藏`List Of States`字段。
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 字段中，隐藏以下报表字段： `Player State Count`， `Player State Set`、和 `Player State Time`.
+      * 在`List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End`和`Media Collection Details` > `List Of States Start`字段中，隐藏以下报告字段： `Player State Count`、`Player State Set`和`Player State Time`。
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 字段中，隐藏以下报表字段： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Change Impacted Streams`， `Bitrate Changes`， `Buffer Events`， `Buffer Impacted Streams`， `Drops Before Starts`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Errors`， `External Error IDs`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`， `Stalling Impacted Streams`， `Total Buffer Duration`、和 `Total Stalling Duration`.
+      * 在`List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details`字段中，隐藏以下报告字段： `Average Bitrate`、`Average Bitrate Bucket`、`Bitrate Change Impacted Streams`、`Bitrate Changes`、`Buffer Events`、`Buffer Impacted Streams`、`Drops Before Starts`、`Dropped Frame Impacted Streams`、`Error Impacted Streams`、`Errors`、`External Error IDs`、`Media SDK Error IDs`、`Player SDK Error IDs`、`Stalling Events`、`Stalling Impacted Streams`、`Total Buffer Duration`和`Total Stalling Duration`。
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 字段中，隐藏以下报表字段： `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Content Completes`， `Content Starts`， `Content Time Spent`， `Estimated Streams`， `Federated Data`， `Media Downloaded Flag`， `Media Segment Views`， `Media Session ID`， `Media Session Server Timeout`， `Media Starts`， `Media Time Spent`， `Pause Events`， `Pause Impacted Streams`， `Pccr`， `Pev3`， `Total Pause Duration`， `Unique Time Played`、和 `Video Segment`.
+      * 在`List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details`字段中，隐藏以下报告字段： `10% Progress Marker`、`25% Progress Marker`、`50% Progress Marker`、`75% Progress Marker`、`95% Progress Marker`、`Ad Count`、`Average Minute Audience`、`Chapter Count`、`Content Completes`、`Content Starts`、`Content Time Spent`、`Estimated Streams`、`Federated Data`、`Media Downloaded Flag`、`Media Segment Views`、`Media Session ID`、`Media Session Server Timeout`、`Media Starts`、`Media Time Spent`、`Pause Events`、`Pause Impacted Streams`、`Pccr`、`Pev3`、`Total Pause Duration`、`Unique Time Played`和`Video Segment`。
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details`  字段，隐藏 `Media Session ID` 字段。
+      * 在`List Of Media Collection Downloaded Content Events` > `Media Details`字段中，隐藏`Media Session ID`字段。
 
-   1. 选择 [!UICONTROL **确认**] 以保存更改。
+   1. 选择&#x200B;[!UICONTROL **确认**]&#x200B;以保存更改。
 
-   1. 在 [!UICONTROL **结构**] 区域，选择 `Media Reporting Details` 字段，选择 [!UICONTROL **管理相关字段**].
+   1. 在&#x200B;[!UICONTROL **结构**]&#x200B;区域，选择`Media Reporting Details`字段，选择&#x200B;[!UICONTROL **管理相关字段**]。
 
-   1. 启用该选项 [!UICONTROL **显示字段的显示名称**]，然后更新架构，如下所示：
+   1. 启用该选项以&#x200B;[!UICONTROL **显示字段**]&#x200B;的显示名称，然后按如下方式更新架构：
 
-      * 在 `Media Reporting Details` 字段中，隐藏以下字段： `Error Details`， `List Of States End`， `List of States Start`、和 `Media Session ID`.
+      * 在`Media Reporting Details`字段中，隐藏以下字段： `Error Details`、`List Of States End`、`List of States Start`和`Media Session ID`。
 
-   1. 选择 [!UICONTROL **确认**] > [!UICONTROL **保存**]  以保存更改。
+   1. 选择&#x200B;[!UICONTROL **确认**] > [!UICONTROL **保存**]&#x200B;以保存更改。
 
-1. 继续 [在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform).
+1. 继续[在Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)中创建数据集。
 
 ## 在Adobe Experience Platform中创建数据集
 
-1. 请确保按照中的说明设置架构 [在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform).
+1. 请确保按照[在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform)中所述设置架构。
 
-1. 在Adobe Experience Platform中，按照中的说明开始创建数据集 [数据集UI指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh_Hans#create).
+1. 在Adobe Experience Platform中，按照[数据集UI指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh_Hans#create)中的说明开始创建数据集。
 
-   为数据集选择架构时，请选择之前创建的架构，如中所述 [在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform).
+   为数据集选择架构时，请选择您之前创建的架构，如[在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform)中所述。
 
-1. 继续 [在Customer Journey Analytics中配置数据流](#configure-a-datastream-in-adobe-experience-platform).
+1. 继续[在Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform)中配置数据流。
 
 ## 在Adobe Experience Platform中配置数据流
 
-1. 请确保已按照中的说明创建数据集 [在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform).
+1. 请确保按照[在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform)中的说明创建了数据集。
 
-1. 创建新数据流，如中所述 [配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans).
+1. 按照[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans)中的说明创建新数据流。
 
    创建数据流时，请确保您进行了以下配置选择：
 
-   * 在 [!UICONTROL **事件架构**] 字段创建数据流时，请确保选择您在中创建的架构 [在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform). 选择&#x200B;[!UICONTROL **保存**]。
+   * 创建数据流时，在&#x200B;[!UICONTROL **事件架构**]&#x200B;字段中，确保选择您在[中创建的架构。在Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)中设置架构。 选择&#x200B;[!UICONTROL **保存**]。
 
      >[!IMPORTANT]
      >
-         >不选择 [!UICONTROL **保存并添加映射**] 因为这样做会导致时间戳字段出现映射错误。
+         >     不要选择[!UICONTROL **保存并添加映射**]，因为这样做会导致时间戳字段出现映射错误。
      
      ![创建数据流并选择架构](assets/datastream-create-schema.png)
 
    * 根据您使用的是Adobe Analytics还是Customer Journey Analytics，将以下任一服务添加到数据流：
 
-      * [!UICONTROL **Adobe Analytics**] (如果使用Adobe Analytics)
+      * [!UICONTROL **Adobe Analytics**](如果使用Adobe Analytics)
 
-        如果您使用的是Adobe Analytics，请确保您定义了报表包，如中所述 [创建报表包](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+        如果您使用的是Adobe Analytics，请确保定义报表包，如[创建报表包](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述。
 
-      * [!UICONTROL **Adobe Experience Platform**] (如果使用Customer Journey Analytics)
+      * [!UICONTROL **Adobe Experience Platform**](如果使用Customer Journey Analytics)
 
-     有关如何将服务添加到数据流的信息，请参阅中的“将服务添加到数据流”部分 [配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+     有关如何将服务添加到数据流的信息，请参阅[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)中的“将服务添加到数据流”部分。
 
      ![添加Adobe Analytics服务](assets/datastream-add-service.png)
 
-   * 展开 [!UICONTROL **高级选项**]，然后启用 [!UICONTROL **媒体分析**] 选项。
+   * 展开&#x200B;[!UICONTROL **高级选项**]，然后启用&#x200B;[!UICONTROL **Media Analytics**]&#x200B;选项。
 
-     ![媒体分析选项](assets/datastream-media-check.png)
+     ![Media Analytics选项](assets/datastream-media-check.png)
 
-1. 您现在可以实施 [Media Edge API](/help/implementation/edge/implementation-edge-api.md) 或 [Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md) 以开始收集media analytics数据。
+1. 您现在可以实施[Media Edge API](/help/implementation/edge/implementation-edge-api.md)或[Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md)以开始收集Media Analytics数据。
 
-   收集一些数据后，您可以 [在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics).
+   收集一些数据后，您可以[在Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics)中创建连接。
 
 ## 在 Customer Journey Analytics 中创建连接
 
@@ -166,17 +166,17 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 >只有在使用Customer Journey Analytics时，才需要执行以下过程。
 
 
-1. 确保已按照中的说明创建数据流 [在Customer Journey Analytics中配置数据流](#configure-a-datastream-in-adobe-experience-platform).
+1. 请确保按照[在Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform)中配置数据流中的说明创建了数据流。
 
-1. 在Customer Journey Analytics中，创建连接，如中所述 [创建连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans).
+1. 在Customer Journey Analytics中，按照[创建连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)中的说明创建连接。
 
    创建连接时，需要以下配置选择才能实施流媒体收集加载项：
 
-   1. 选择您之前创建的数据集，如中所述 [在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform).
+   1. 选择您之前创建的数据集，如[在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform)中所述。
 
-   1. 确保 [!UICONTROL **导入所有新数据**] 设置已启用。
+   1. 确保已启用&#x200B;[!UICONTROL **导入所有新数据**]&#x200B;设置。
 
-1. 继续 [在Customer Journey Analytics中创建数据视图](#create-a-new-data-view-in-customer-journey-analytics).
+1. 继续[在Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics)中创建数据视图。
 
 ## 在Customer Journey Analytics中创建数据视图
 
@@ -184,19 +184,19 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 >
 >只有在使用Customer Journey Analytics时，才需要执行以下过程。
 
-1. 请确保在Customer Journey Analytics中创建了连接，如中所述 [在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics).
+1. 请确保在Customer Journey Analytics中创建了连接，如[在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics)中所述。
 
-1. 在客户历程分析中，创建数据视图，如中所述 [创建或编辑数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans).
+1. 在客户历程分析中，按照[创建或编辑数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans)中的说明创建数据视图。
 
    创建数据视图时，需要以下配置选择才能实施流媒体收集加载项：
 
-   1. 在 [!UICONTROL **连接**] 字段中，选择您之前创建的连接，如中所述 [在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics).
+   1. 在&#x200B;[!UICONTROL **连接**]&#x200B;字段中，选择您之前创建的连接，如[在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics)中所述。
 
       最多可能需要15分钟才能选择您创建的连接。
 
-   1. 在 [!UICONTROL **组件**] 选项卡，在 [!UICONTROL **架构字段**] 部分，搜索下表列出的每个组件，并将其拖到 [!UICONTROL **量度**] 面板。 如果存在多个同名字段，请使用XDM路径以确保它是正确的字段。
+   1. 在&#x200B;[!UICONTROL **组件**]&#x200B;选项卡的&#x200B;[!UICONTROL **架构字段**]&#x200B;部分中，搜索下表列出的每个组件，并将其拖到&#x200B;[!UICONTROL **量度**]&#x200B;面板中。 如果存在多个同名字段，请使用XDM路径以确保它是正确的字段。
 
-      **主要内容 — 内容量度**
+      **主内容 — 内容量度**
 
       | 组件名称 | XDM 路径 |
       |----------|---------|
@@ -248,7 +248,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
       | 播放器状态时间 | mediaReporting.states.time |
 
 
-   1. 更新标签(在 [!UICONTROL **上下文标签**] 下拉菜单)中列出的所有组件。 搜索指标面板中尚未出现的任何组件，并将其拖到面板中。
+   1. 更新下表中组件的标签（在&#x200B;[!UICONTROL **上下文标签**]&#x200B;下拉菜单中）。 搜索指标面板中尚未出现的任何组件，并将其拖到面板中。
 
       | 组件名称 | 上下文标签 |
       |---------|----------|
@@ -258,7 +258,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
       | 开始时间 | Media：开始时间 |
       | 暂停总持续时间 | 媒体：暂停总持续时间 |
 
-   1. 要将划分添加到Customer Journey Analytics项目，请将以下维度添加到 [!UICONTROL **Dimension**] 面板：
+   1. 要将划分添加到Customer Journey Analytics项目，请将以下维度添加到&#x200B;[!UICONTROL **Dimension**]&#x200B;面板：
 
       | XDM 路径 | 组件名称 |
       |---------|----------|
@@ -267,21 +267,21 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
       除了此表中的维外，您还可以添加任何其他要用于在Customer Journey Analytics项目中过滤数据的维。
 
-1. 选择 [!UICONTROL **保存并继续**] > [!UICONTROL **保存并完成**] 以保存更改。
+1. 选择&#x200B;[!UICONTROL **保存并继续**] > [!UICONTROL **保存并完成**]&#x200B;以保存更改。
 
-1. 继续 [在Customer Journey Analytics中创建并配置项目](#create-and-configure-a-project-in-customer-journey-analytics).
+1. 继续[在Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics)中创建并配置项目。
 
 ## 在Customer Journey Analytics中创建并配置项目
 
-1. 确保您已按照中的说明在Customer Journey Analytics中创建数据视图 [在Customer Journey Analytics中创建数据视图](#create-a-new-data-view-in-customer-journey-analytics).
+1. 请确保已按照[在Customer Journey Analytics中创建数据视图](#create-a-new-data-view-in-customer-journey-analytics)中的说明在Customer Journey Analytics中创建数据视图。
 
-1. 在Customer Journey Analytics中，在 [!UICONTROL **Workspace**] 选项卡，在 [!UICONTROL **项目**] 区域，选择 [!UICONTROL **创建项目**].
+1. 在Customer Journey Analytics的&#x200B;[!UICONTROL **Workspace**]&#x200B;选项卡的&#x200B;[!UICONTROL **项目**]&#x200B;区域，选择&#x200B;[!UICONTROL **创建项目**]。
 
-1. 选择 [!UICONTROL **空白项目**] > [!UICONTROL **创建**].
+1. 选择&#x200B;[!UICONTROL **空白项目**] > [!UICONTROL **创建**]。
 
 1. 在新项目中，选择您之前创建的数据视图。
 
-   在项目中创建面板时，您可以使用添加到数据视图的任何组件，如中所述 [在Customer Journey Analytics中创建数据视图](#create-a-new-data-view-in-customer-journey-analytics).
+   在项目中创建面板时，您可以使用添加到数据视图的任何组件，如[在Customer Journey Analytics中创建数据视图](#create-a-new-data-view-in-customer-journey-analytics)中所述。
 
    以下4个面板是您可以创建的面板示例：
 
@@ -293,21 +293,21 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
    ![平板状态面板](assets/player-state-panel.png)
 
-1. 选择 **面板** 图标，然后拖入 [!UICONTROL **媒体并行查看者**] 面板和 [!UICONTROL **媒体播放耗时**] 面板。
+1. 选择左边栏中的&#x200B;**面板**&#x200B;图标，然后拖入&#x200B;[!UICONTROL **媒体并行查看者**]&#x200B;面板和&#x200B;[!UICONTROL **媒体播放耗时**]&#x200B;面板。
 
    这两个面板应当如下所示：
 
-   ![“媒体并行查看者”面板](assets/media-concurrent-viewers-panels.png)
+   ![媒体并行查看者面板](assets/media-concurrent-viewers-panels.png)
 
-   ![“媒体播放耗时”面板](assets/media-playback-time-spent-panels.png)
+   ![媒体播放耗时面板](assets/media-playback-time-spent-panels.png)
 
-1. 按照中的说明共享项目 [共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
+1. 按照[共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)中的说明共享项目。
 
    >[!NOTE]
    >
    >   如果要与共享的用户不可用，请确保这些用户具有在Adobe Admin Console中Customer Journey Analytics的用户和管理员访问权限。
 
-1. 继续 [将数据发送到Experience PlatformEdge](#send-data-to-experience-platform-edge).
+1. 继续[将数据发送到Experience PlatformEdge](#send-data-to-experience-platform-edge)。
 
 ## 将数据发送到Experience PlatformEdge
 
@@ -319,7 +319,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 * [使用Adobe Experience Platform Web SDK将Web数据发送到Edge](/help/implementation/edge/edge-web-sdk.md)
 
-* [迁移到Adobe Streaming Media for Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [迁移至Adobe流媒体以获取Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Mobile：使用Adobe Experience Platform Mobile SDK
 
@@ -329,7 +329,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 * [API 参考](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [迁移到Adobe Streaming Media for Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [迁移至Adobe流媒体以获取Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Roku：Adobe Experience Platform Roku SDK
 
@@ -337,7 +337,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 * [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)
 
-* [迁移到Adobe Streaming Media for Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+* [迁移至Adobe流媒体以获取Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
 
 ### API： Web和其他
 

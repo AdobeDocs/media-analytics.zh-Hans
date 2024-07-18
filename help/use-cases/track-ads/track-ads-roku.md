@@ -6,8 +6,8 @@ exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '295'
+workflow-type: tm+mt
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -72,11 +72,11 @@ ht-degree: 100%
    * [在 Roku 中实施标准广告元数据](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **自定义广告元数据 –** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告资源的数据进行填充：
 
-      ```
-      contextData = {}
-      contextData["adinfo1"] = "adinfo2"
-      contextData["adinfo2"] = "adinfo2"
-      ```
+     ```
+     contextData = {}
+     contextData["adinfo1"] = "adinfo2"
+     contextData["adinfo2"] = "adinfo2"
+     ```
 
 1. 在 `MediaHeartbeat` 实例中使用 `AdStart` 事件调用 `trackEvent()`，以开始跟踪广告播放：
 

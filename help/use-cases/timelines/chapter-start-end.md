@@ -6,8 +6,8 @@ exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1106'
+workflow-type: tm+mt
+source-wordcount: '1159'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 应用程序启动 Ping 事件计时器 | 0 | 0 |  |
+| 应用程序启动 Ping 事件计时器 | 0 | 0 | |
 
 启动 Ping 计时器。如果有前置广告，则第一个 Ping 事件应在 1 秒后触发，否则应在 10 秒后触发。
 

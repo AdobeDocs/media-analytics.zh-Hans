@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 93%
+source-wordcount: '719'
+ht-degree: 88%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 93%
 
 1. **更新播放头值**
 
-   播放头更改时多次更新`mediaUpdatePlayhead` &#39; 位置值。<br />对于视频点播 (VOD)，该值以从媒体项开头开始的秒数指定。<br />对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天 UTC 午夜开始的秒数。
+   播放头更改时多次更新`mediaUpdatePlayhead` &#39; 位置值。<br />对于视频点播 (VOD)，该值以从媒体项开头开始的秒数指定。<br />对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天UTC午夜开始的秒数。
 
    ```
    ADBMobile().media.updatePlayhead(position)
@@ -99,9 +99,9 @@ ht-degree: 93%
 
    >[!NOTE]
    >
-   >调用 `media.updatePlayhead` API：
+   >调用`media.updatePlayhead` API时，请考虑以下事项：
    >* 使用进度标记时，需要内容持续时间，并且播放头需要更新为从媒体项目开始的秒数，从0开始。
-   >* 使用Media SDK时，必须调用 `media.updatePlayhead` API至少每秒执行一次。
+   >* 使用Media SDK时，必须每秒至少调用一次`media.updatePlayhead` API。
 
 1. **跟踪播放的结束事件**
 

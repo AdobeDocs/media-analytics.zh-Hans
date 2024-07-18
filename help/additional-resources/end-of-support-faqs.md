@@ -15,7 +15,7 @@ ht-degree: 76%
 
 随着版本4 Mobile SDK于2021年8月31日停止支持，Adobe也终止了对Media Analytics Mobile SDK即iOS和Android的支持。 (这不包括仍受支持的Media Analytics SDK for Web (JS)以及Chromecast和Roku等OTT平台。)
 
-这意味着Adobe不再为Media Analytics Mobile SDK提供修复、与操作系统相关的更新或支持。 迁移到新Experience PlatformSDK时，请注意 [Media Analytics扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) 必须实施才能启用Adobe流媒体收集加载项。
+这意味着Adobe不再为Media Analytics Mobile SDK提供修复、与操作系统相关的更新或支持。 迁移到新Experience PlatformSDK时，请注意，必须实施[Media Analytics扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)，才能启用Adobe流媒体收集加载项。
 
 
 ## 五大须知要点

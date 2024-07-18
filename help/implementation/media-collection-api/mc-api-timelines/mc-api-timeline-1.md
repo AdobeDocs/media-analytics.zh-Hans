@@ -6,9 +6,9 @@ exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1064'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1120'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 它会向客户端返回一个会话 ID (`{sid}`)，用于标识会话中的所有后续跟踪调用。播放器状态不是“正在播放”，而是“正在启动”。
 
-[强制会话参数](../mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的 `params` 映射中。
+[强制会话参数](../mc-api-ref/mc-api-sessions-req.md)必须包含在请求正文中的`params`映射中。
 
 在后端，此调用会生成一个 Adobe Analytics 启动调用。
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 应用程序启动 Ping 事件计时器 | 0 | 0 | `/api/v1/sessions/{sid}/events` |  |
+| 应用程序启动 Ping 事件计时器 | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
 
 启动应用程序的 Ping 计时器。如果有前置广告，则第一个 Ping 事件应在 1 秒后触发，否则应在 10 秒后触发。
 
