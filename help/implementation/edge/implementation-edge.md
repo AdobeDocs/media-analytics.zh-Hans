@@ -4,10 +4,10 @@ description: 了解如何使用Experience PlatformEdge实施流媒体收集加�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 3963cd62b7c190464fe5314198107f273a225503
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 9%
+source-wordcount: '2154'
+ht-degree: 8%
 
 ---
 
@@ -111,6 +111,30 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
    1. 选择&#x200B;[!UICONTROL **确认**] > [!UICONTROL **保存**]&#x200B;以保存更改。
 
++++
+
+1. （可选）您可以将自定义元数据添加到架构中。 这允许您包含其他用户定义的元数据，这些元数据可以根据特定需求或上下文进行自定义。 在现有架构未涵盖所需数据点的情况下，此灵活性非常有用。 (您还可以将自定义元数据与Media Edge API结合使用。 有关详细信息，请参阅[使用Media Edge API创建自定义元数据](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/)。)
+
++++ 展开此处可查看有关如何将自定义元数据添加到架构的说明。
+
+   1. 通过选择&#x200B;[!UICONTROL **帐户信息**] > [!UICONTROL **分配的组织**] > [!UICONTROL _**组织名称**_] > [!UICONTROL **租户**]，找到组织租户的名称。
+
+      将通过此路径接收这些自定义字段。 (例如，租户名称： _dcbl → myCustomField path： _dcbl.myCustomField。)
+
+   1. 将自定义字段组添加到您定义的媒体架构。
+
+      ![add-custom-metadata](assets/add-custom-metadata-fieldgroup.png)
+
+   1. 将您要跟踪的任何自定义字段添加到字段组。
+
+      ![add-custom-metadata](assets/add-custom-fields.png)
+
+   1. [为请求有效负载中的自定义字段使用生成的路径](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)。
+
+      ![add-custom-metadata](assets/custom-fields-path.png)
+
++++
+
 1. 继续[在Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)中创建数据集。
 
 ## 在Adobe Experience Platform中创建数据集
@@ -135,8 +159,8 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
      >[!IMPORTANT]
      >
-         >     不要选择[!UICONTROL **保存并添加映射**]，因为这样做会导致时间戳字段出现映射错误。
-     
+     >请勿选择&#x200B;[!UICONTROL **保存并添加映射**]，因为这样做会导致时间戳字段出现映射错误。
+
      ![创建数据流并选择架构](assets/datastream-create-schema.png)
 
    * 根据您使用的是Adobe Analytics还是Customer Journey Analytics，将以下任一服务添加到数据流：
@@ -151,7 +175,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
      ![添加Adobe Analytics服务](assets/datastream-add-service.png)
 
-   * 展开&#x200B;[!UICONTROL **高级选项**]，然后启用&#x200B;[!UICONTROL **Media Analytics**]&#x200B;选项。
+      * 展开&#x200B;[!UICONTROL **高级选项**]，然后启用&#x200B;[!UICONTROL **Media Analytics**]&#x200B;选项。
 
      ![Media Analytics选项](assets/datastream-media-check.png)
 
@@ -164,7 +188,6 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 >[!NOTE]
 >
 >只有在使用Customer Journey Analytics时，才需要执行以下过程。
-
 
 1. 请确保按照[在Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform)中配置数据流中的说明创建了数据流。
 
@@ -301,11 +324,22 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
    ![媒体播放耗时面板](assets/media-playback-time-spent-panels.png)
 
+1. （视情况而定）如果您向架构添加了自定义元数据，如[在Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)中设置架构的步骤8中所述，那么您需要为自定义字段设置持久性，如Customer Journey Analytics指南中的[持久性组件设置](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)中所述。
+
+   当数据到达Customer Journey Analytics时，自定义用户ID维度将可用。
+
+   ![setup-custom-metadata](assets/custom-metadata-dimension.png)
+
+   >[!NOTE]
+   >
+   >如果您将Adobe Analytics设置为数据流的上游，则自定义元数据也会出现在ContextData中，其名称为您在架构中设置的（不带租户前缀，例如myCustomField）。 这使得可以使用所有可用于ContextData的Adobe Analytics功能，例如[创建处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)。
+
 1. 按照[共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)中的说明共享项目。
 
    >[!NOTE]
    >
    >   如果要与共享的用户不可用，请确保这些用户具有在Adobe Admin Console中Customer Journey Analytics的用户和管理员访问权限。
+
 
 1. 继续[将数据发送到Experience PlatformEdge](#send-data-to-experience-platform-edge)。
 
