@@ -4,10 +4,10 @@ description: 了解流媒体用例
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '78'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 94%
 * [媒体流归因](/help/use-cases/media-analytics-cookbook/media-dimensions.md)
 
 * Federated
-   * [Federated Analytics](/help/use-cases/federated-analytics.md)
+   * [联合媒体](/help/use-cases/federated-media.md)
 
 * 时间线
    * [章节开始和结束](/help/use-cases/timelines/chapter-start-end.md)

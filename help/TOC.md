@@ -5,10 +5,10 @@ user-guide-title: 流媒体收藏集附加组件
 breadcrumb-title: 流媒体收藏集指南
 user-guide-description: 实施流媒体。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 97%
       + [多个播放器状态跟踪](use-cases/player-state-tracking/multiple-player-states.md)
       + [播放器状态跟踪示例](use-cases/player-state-tracking/player-state-examples.md)
    + [跟踪下载的内容](use-cases/track-downloaded-content.md)
-   + [Federated Analytics](use-cases/federated-analytics.md)
+   + [联合媒体](use-cases/federated-media.md)
    + [处理播放期间的应用程序中断](use-cases/cookbook/app-interrupts.md)
    + [媒体流归因](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [恢复不活动的会话](use-cases/cookbook/resuming-inactive.md)
