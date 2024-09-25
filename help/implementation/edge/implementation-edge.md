@@ -4,7 +4,7 @@ description: 了解如何使用Experience PlatformEdge实施流媒体收集加�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 3963cd62b7c190464fe5314198107f273a225503
+source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
 workflow-type: tm+mt
 source-wordcount: '2154'
 ht-degree: 8%
@@ -387,4 +387,4 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 * [Media Edge API疑难解答指南](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
-* [使用Media Edge API的Open API规范文件](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
+* [使用Media Edge API的Open API规范文件](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
