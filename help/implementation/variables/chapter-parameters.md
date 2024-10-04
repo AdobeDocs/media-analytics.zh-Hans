@@ -5,9 +5,9 @@ uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 019d2381eebb0eff92f1cd2a4e6246c6df2f0c28
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1140'
 ht-degree: 96%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 96%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/>  [name](./chapter-parameters.md#related_apis_section) </li> <li> **API 密钥：**<br/> media.chapter.friendlyName </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;章节开始、章节关闭 </li> <li> **最低 SDK 版本：** 1.3 </li> <li> **示例值：**<br/>&quot;The Big Bang Chapter 2 - Dating&quot; </li><li> **描述：**<br/>&#x200B;章节和/或区段的名称。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.chapter.<br/>friendlyName) </li> <li> **心率：**<br/> (<code>s:stream:chapter_name</code>) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;默认创建...  </li> <li> **保留的变量：**<br/>&#x200B;分类 </li> <li> **报表名称：**<br/>&#x200B;章节名称 </li> <li> **上下文数据：**<br/>(a.media.chapter.<br/>friendlyName) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.chapter.<br/>friendlyName) </li> <li> **XDM 字段路径：**<br/> media.mediaTimed.mediaChapter.<br/>chapterAssetReference.dc:title </li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.chapterDetails.friendlyName </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.chapterDetails.friendlyName </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [name](./chapter-parameters.md#related_apis_section) </li> <li> **API 密钥：**<br/> media.chapter.friendlyName </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;章节关闭 </li> <li> **最低 SDK 版本：** 1.3 </li> <li> **示例值：**<br/>&quot;The Big Bang Chapter 2 - Dating&quot; </li><li> **描述：**<br/>&#x200B;章节和/或区段的名称。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.chapter.<br/>friendlyName) </li> <li> **心率：**<br/> (<code>s:stream:chapter_name</code>) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;默认创建...  </li> <li> **保留的变量：**<br/>&#x200B;分类 </li> <li> **报表名称：**<br/>&#x200B;章节名称 </li> <li> **上下文数据：**<br/>(a.media.chapter.<br/>friendlyName) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.chapter.<br/>friendlyName) </li> <li> **XDM 字段路径：**<br/> media.mediaTimed.mediaChapter.<br/>chapterAssetReference.dc:title </li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.chapterDetails.friendlyName </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.chapterDetails.friendlyName </li> </ul> |
 
 ### 章节位置
 
@@ -77,7 +77,7 @@ ht-degree: 96%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置  </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;章节开始 </li> <li> **最低 SDK 版本：** 1.3 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;章节开始的次数。**重要信息：**&#x200B;如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.chapter.<br/>view) </li> <li> **心率：**<br/> (<code>s:event:</code><br/>type=chapter_start) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;章节开始</li> <li> **上下文数据：**<br/>(a.media.chapter.<br/>view) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.chapter.<br/>view) </li> <li> **XDM 字段路径：**<br/> media.mediaTimed.chapterCount.<br/>value > 0 => &quot;TRUE&quot; </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.chapterDetails.isStarted </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置  </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;章节关闭 </li> <li> **最低 SDK 版本：** 1.3 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;章节开始的次数。**重要信息：**&#x200B;如果设置此事件，则唯一可能的值为 TRUE。如果不设置此事件，则不会发送任何值。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.chapter.<br/>view) </li> <li> **心率：**<br/> (<code>s:event:</code><br/>type=chapter_start) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;章节开始</li> <li> **上下文数据：**<br/>(a.media.chapter.<br/>view) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.chapter.<br/>view) </li> <li> **XDM 字段路径：**<br/> media.mediaTimed.chapterCount.<br/>value > 0 => &quot;TRUE&quot; </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.chapterDetails.isStarted </li> </ul> |
 
 ### 章节结束
 
