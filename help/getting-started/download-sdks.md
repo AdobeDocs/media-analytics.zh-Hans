@@ -5,9 +5,9 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '426'
 ht-degree: 81%
 
 ---
@@ -32,7 +32,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记�
 |:---:|---|---|---|---| ---| ---|
 | ![JavaScript图标&#x200B;](assets/javascript-icon.png)</br>**JavaScript API** | Adobe Analytics | 仅 Analytics | Web - [适用于 JS v3.0.2 的 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 参考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用JavaScript安装Media SDK](/help/implementation/media-sdk/setup/web-implementation.md) | [适用于 JS 的 Media SDK v3.0.2 示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript图标&#x200B;](assets/javascript-icon.png)</br>**JavaScript API** | Adobe Analytics | 仅 Analytics | Web - 媒体扩展 |  | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展 - 使用标记（数据收集）](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) | [Adobe Media Analytics (3.x SDK) for Audio and Video 扩展示例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web -Experience PlatformEdge |  | [使用Edge Network实施流媒体收藏集加载项](/help/implementation/edge/implementation-edge.md) <p>和</p><p>[使用Adobe Experience Platform Web SDK将Web数据发送到Edge](/help/implementation/edge/edge-web-sdk.md)</p> | |
+| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web -Experience PlatformEdge |  | [使用Edge Network实施流媒体收集](/help/implementation/edge/implementation-edge.md) <p>和</p><p>[使用Adobe Experience Platform Web SDK将Web数据发送到Edge](/help/implementation/edge/edge-web-sdk.md)</p> | |
 
 ### 移动实施 {#get-mobile-extension}
 

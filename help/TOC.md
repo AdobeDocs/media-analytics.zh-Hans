@@ -1,19 +1,19 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 流媒体集合附加组件
+user-guide-title: 流媒体收集
 breadcrumb-title: 流媒体集合指南
 user-guide-description: 实施流媒体。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '893'
 ht-degree: 96%
 
 ---
 
 
-# 流媒体集合附加组件 {#using}
+# 流媒体收集 {#using}
 
 + [流媒体集合指南](media-overview.md)
 + 发行说明 {#release-notes}
@@ -37,7 +37,7 @@ ht-degree: 96%
       + Media Edge SDK / 扩展 {#media-edge-sdk}
          + [Media Edge SDK / 扩展设置](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
-         + [Media Edge移动SDK](/help/implementation/edge/edge-mobile-sdk.md)
+         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + 仅使用 Adobe Analytics 的实施{#analytics-only}
       + [先决条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)

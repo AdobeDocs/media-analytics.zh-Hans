@@ -4,9 +4,9 @@ description: 了解如何使用Adobe Experience Platform Web SDK将Adobe流媒�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -23,18 +23,18 @@ ht-degree: 0%
 
 要使用Web SDK的`streamingMedia`组件，您必须满足以下先决条件：
 
-* 在将流媒体数据发送到Edge之前，请先完成[使用Experience PlatformEdge安装流媒体收集加载项](/help/implementation/edge/implementation-edge.md)中的步骤。
+* 在将流媒体数据发送到Edge之前，请先完成[使用Experience PlatformEdge安装流媒体收藏集](/help/implementation/edge/implementation-edge.md)中的步骤。
 * 确保您有权访问Adobe Experience Platform和/或Adobe Analytics。
 * 您必须使用Web SDK版本2.20.0或更高版本。 请参阅[Web SDK安装概述](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)，了解如何安装最新版本。
 * 为您正在使用的数据流启用&#x200B;**[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)**&#x200B;选项。
 * 确保数据流使用的架构包括媒体收集架构字段。
 * 通过[标记扩展](#tag-extension)或通过[JavaScript库](#library)在Web SDK配置中配置流媒体功能，如本页所示。
 
-按照本页中描述的步骤，将您的流媒体收集加载项实施从Media JS迁移到Web SDK。
+按照本页中描述的步骤，将您的流媒体收集实施从Media JS迁移到Web SDK。
 
 ### 步骤1：安装Experience PlatformWeb SDK
 
-请参阅[专用文档](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)，了解如何在Web属性上安装Web SDK。
+请参阅[专用文档](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)，了解如何在Web资产上安装Web SDK。
 
 ### 步骤2：配置Web SDK `streamingMedia`组件。
 

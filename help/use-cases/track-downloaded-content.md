@@ -1,13 +1,13 @@
 ---
-title: 如何在流媒体收集加载项中跟踪离线下载的内容
+title: 如何跟踪流媒体收藏集中的离线下载内容
 description: 了解如何使用“下载的内容”功能在用户离线时跟踪媒体消费情况。
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '696'
 ht-degree: 98%
 
 ---

@@ -1,23 +1,23 @@
 ---
-title: 了解Adobe流媒体收集加载项的先决条件
-description: 开始使用流媒体收集加载项。 了解实施所需的内容。
+title: 了解Adobe流媒体收集的先决条件
+description: 流媒体收藏集入门。 了解实施所需的内容。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 62%
+source-wordcount: '428'
+ht-degree: 64%
 
 ---
 
 # 先决条件 {#prerequisites}
 
-在开始实施Adobe流媒体收集加载项之前，请完成以下任务：
+在开始实施Adobe流媒体收集之前，请完成以下任务：
 
-1. **查看流媒体收藏集加载项概述**<br>
-在开始实施流媒体收集加载项之前，请查看[流媒体收集加载项概述](/help/media-overview.md)，确保它满足您的需求。
+1. **查看流媒体收藏集概述**<br>
+在开始实施流媒体收集之前，请查看[流媒体收集概述](/help/media-overview.md)，确保它满足您的需求。
 
 1. **确认您的定价模型**<br>
 Adobe流媒体收集加载项的当前定价模型基于视频流。 如有必要，请联系您的销售代表或Adobe客户团队，因为此加载项是针对Adobe Analytics和Adobe Experience Platform单独销售的。
@@ -41,7 +41,7 @@ Adobe流媒体收集加载项的当前定价模型基于视频流。 如有必�
 
 1. **查看实施方法的其他先决条件**
 
-   根据您计划实施流媒体收集加载项的方式，查看以下任一实施方法的先决条件：
+   根据您计划实施流媒体收集的方式，查看以下任一实施方法的先决条件：
 
    * [仅 Adobe Analytics 实施的先决条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 

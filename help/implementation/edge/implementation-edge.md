@@ -1,27 +1,27 @@
 ---
-title: 使用Edge Network实施流媒体收集加载项
-description: 了解如何使用Experience PlatformEdge实施流媒体收集加载项。
+title: 使用Edge Network实施流媒体收集
+description: 了解如何使用Experience PlatformEdge实施流媒体收集。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2146'
 ht-degree: 8%
 
 ---
 
-# 使用Edge Network实施流媒体收集加载项
+# 使用Edge Network实施流媒体收集
 
 Adobe Experience Platform Edge Network 允许您将发送到多个产品的数据发送到一个集中的位置。 Experience Edge 将适当的信息转发给所需的产品。 此概念允许您整合实施工作，尤其是跨多个数据解决方案进行整合。
 
-下图说明了如何实施Adobe流媒体收集加载项，以使用Experience PlatformEdge在Adobe Analytics或Customer Journey Analytics中使数据在Analysis Workspace中可用：
+下图说明了如何实施Adobe流媒体收集，以便使用Experience PlatformEdge在Analysis Workspace中使数据在Adobe Analytics或Customer Journey Analytics中可用：
 
 ![CJA 工作流](assets/streaming-media-edge.png)
 
-有关所有实施选项的概述，包括不使用Experience PlatformEdge的实施方法，请参阅[实施流媒体收集加载项](/help/implementation/overview.md)。
+有关所有实施选项的概述，包括不使用Experience PlatformEdge的实施方法，请参阅[实施流媒体收集](/help/implementation/overview.md)。
 
-无论您是使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK还是API来使用Experience Edge实施流媒体收集加载项，都必须首先完成以下部分：
+无论您是使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK还是API来使用Experience Edge实施流媒体收集，都必须首先完成以下部分：
 
 ## 在Adobe Experience Platform中设置架构
 
@@ -179,7 +179,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
      ![Media Analytics选项](assets/datastream-media-check.png)
 
-1. 您现在可以实施[Media Edge API](/help/implementation/edge/implementation-edge-api.md)或[Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md)以开始收集Media Analytics数据。
+1. 您现在可以实施[Media Edge API](/help/implementation/edge/implementation-edge-api.md)或[Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md)以开始收集媒体分析数据。
 
    收集一些数据后，您可以[在Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics)中创建连接。
 
@@ -193,7 +193,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 1. 在Customer Journey Analytics中，按照[创建连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)中的说明创建连接。
 
-   创建连接时，需要以下配置选择才能实施流媒体收集加载项：
+   创建连接时，需要以下配置选择才能实施流媒体收集：
 
    1. 选择您之前创建的数据集，如[在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform)中所述。
 
@@ -211,7 +211,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 1. 在客户历程分析中，按照[创建或编辑数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans)中的说明创建数据视图。
 
-   创建数据视图时，需要以下配置选择才能实施流媒体收集加载项：
+   创建数据视图时，需要以下配置选择才能实施流媒体收集：
 
    1. 在&#x200B;[!UICONTROL **连接**]&#x200B;字段中，选择您之前创建的连接，如[在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics)中所述。
 
@@ -365,7 +365,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 * [迁移至Adobe流媒体以获取Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
-### Roku：Adobe Experience Platform Roku SDK
+### Roku： Adobe Experience Platform Roku SDK
 
 * [入门指南](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 

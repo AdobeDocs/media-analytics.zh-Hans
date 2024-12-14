@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 1375fb3260d5c4ca703827b3d73174f4e475f76d
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 93%
+source-wordcount: '664'
+ht-degree: 94%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 93%
 
 ## 先决条件 {#roku-prerequisites}
 
-* **获取适用于流媒体收藏集加载项的有效配置参数**
+* **获取适用于流媒体收藏集的有效配置参数**
 
-  在设置Adobe流媒体收集附加帐户后，这些参数可以从Adobe代表获取。
+  在设置Adobe流媒体收集帐户后，这些参数可以从Adobe代表获取。
 * **在媒体播放器中包含以下 API**
 
    * _用于订阅播放器事件的 API_ – Media SDK 要求在播放器中发生事件时调用一组简单的 API。

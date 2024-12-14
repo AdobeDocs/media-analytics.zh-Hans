@@ -1,14 +1,14 @@
 ---
 title: 实施 Media SDK 解释
-description: “了解如何设置 Media SDK 以在您的移动应用程序、OTT 和浏览器 (JS) 应用程序中进行媒体跟踪。”
+description: 了解如何设置Media SDK以在您的移动应用程序、OTT和浏览器(JS)应用程序中进行媒体跟踪。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 97%
+source-wordcount: '617'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 ## 一般实施指南 {#general-implementation-guidelines}
 
-使用流媒体收集加载项进行跟踪时使用三个主要SDK组件：
+使用流媒体收藏集进行跟踪时，会使用三个主要的SDK组件：
 * 媒体心跳配置 – `MediaHeartbeatConfig` 包含用于报告的基本设置。
 * 媒体心跳代理 – `MediaHeartbeatDelegate` 控制播放时间和 QoS 对象。
 * 媒体心跳：`MediaHeartbeat` 是包含成员和方法的主库。

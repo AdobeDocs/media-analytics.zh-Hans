@@ -4,16 +4,16 @@ description: 了解如何实施适用于移动应用程序的 Adobe Streaming Me
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 81%
+source-wordcount: '197'
+ht-degree: 82%
 
 ---
 
 # 安装移动 SDK {#install-mobile-sdks}
 
-要在Android或iOS上实施适用于移动应用程序的流媒体收集加载项，请安装和配置以下内容：
+要在Android或iOS上实施适用于移动应用程序的流媒体收藏集，请安装和配置以下内容：
 
 * **Adobe Experience Platform Mobile SDK**
 
