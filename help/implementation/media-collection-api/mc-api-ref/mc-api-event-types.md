@@ -1,14 +1,14 @@
 ---
 title: 流媒体事件类型和描述
-description: “什么是媒体收集事件类型和描述？”
+description: '什么是媒体收集事件类型和描述？ '
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+source-git-commit: 98722998606af3761652e282c31338bb966eb654
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 88%
+source-wordcount: '394'
+ht-degree: 79%
 
 ---
 
@@ -90,3 +90,15 @@ Ping 事件应该&#x200B;*不*&#x200B;包含请求正文中的 `params` 映射�
 >[!IMPORTANT]
 >
 >对于每个事件类型，您应该参考 [JSON 验证架构](mc-api-json-validation.md)，以验证正确的事件参数类型和要求。
+
+## stateStart
+
+表示播放器状态跟踪的开始。
+
+有关详细信息，请参阅[实施和报告](/help/use-cases/player-state-tracking/implementation-and-reporting.md)。
+
+## stateEnd
+
+表示播放器状态跟踪的结束。
+
+有关详细信息，请参阅[实施和报告](/help/use-cases/player-state-tracking/implementation-and-reporting.md)。

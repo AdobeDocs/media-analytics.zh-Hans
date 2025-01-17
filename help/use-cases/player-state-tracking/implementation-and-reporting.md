@@ -4,25 +4,25 @@ description: 了解如何实施播放器状态跟踪功能，包括。
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 78%
 
 ---
 
 # 实施与报表
 
-在播放会话期间，必须单独跟踪每个状态的出现情况（从开始到结束）。Media SDK 和媒体收集 API 为实现这项功能提供了新的跟踪方法。
+在播放会话期间，必须单独跟踪每个状态的出现情况（从开始到结束）。Media SDK和媒体收集API提供了针对此功能的跟踪方法。
 
-Media SDK 包含两种进行自定义状态跟踪的新方法：
+Media SDK包括两种自定义状态跟踪方法：
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-媒体收集 API 包含两个新事件，它们将 `media.stateName` 作为必需参数：
+媒体收集API包含两个事件，它们将`media.stateName`作为必需参数：
 
 `stateStart` 和 `stateEnd`
 
@@ -91,14 +91,14 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## 报告
 
-为播放器状态跟踪启用报表包后，所有播放器状态量度都可用于 Analysis Workspace 或组件（区段、计算量度）中提供的任何报告可视化。可以从 Admin Console 中使用“媒体报告设置”（“编辑设置”>“媒体管理”>“媒体报告”）为每个报告启用新量度。
+为播放器状态跟踪启用报表包后，所有播放器状态量度都可用于 Analysis Workspace 或组件（区段、计算量度）中提供的任何报告可视化。可以使用“媒体报表设置”（“编辑设置”>“媒体管理”>“媒体报表”）从Admin Console为每个单独的报表启用这些指标。
 
 ![](assets/report-setup.png)
 
-在 Analytics 工作区中，所有新属性都位于“量度”面板中。例如，您可以在“量度”面板中搜索 `full screen` 以查看全屏数据。
+在Analysis Workspace中，所有新资产都位于“指标”面板中。 例如，您可以在“量度”面板中搜索 `full screen` 以查看全屏数据。
 
 ![](assets/full-screen-report.png)
 
 ## 将播放器规定的量度导入 Adobe Experience Platform
 
-存储在 Analytics 中的数据可用于任何目的，并且可以使用 XDM 将播放器状态量度导入到 Adobe Experience Platform 中，用于 Customer Journey Analytics。标准状态属性具有特定属性，而自定义状态属性可使用自定义事件获得。有关标准状态属性的更多信息，请参阅[播放器状态参数](/help/implementation/variables/player-state-parameters.md)页面上的 *XDM 标识的属性列表*&#x200B;部分。
+存储在 Analytics 中的数据可用于任何目的，并且可以使用 XDM 将播放器状态量度导入到 Adobe Experience Platform 中，用于 Customer Journey Analytics。标准状态属性具有特定属性，而自定义状态属性可使用自定义事件获得。有关标准状态属性的更多信息，请参阅[播放器状态参数](/help/implementation/variables/player-state-parameters.md)页面上的 *XDM 身份标识的属性列表*&#x200B;部分。
