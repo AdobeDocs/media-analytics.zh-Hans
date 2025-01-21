@@ -1,7 +1,7 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 流媒体收集
+user-guide-title: 流媒体收藏集
 breadcrumb-title: 流媒体集合指南
 user-guide-description: 实施流媒体。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
@@ -13,7 +13,7 @@ ht-degree: 96%
 ---
 
 
-# 流媒体收集 {#using}
+# 流媒体收藏集 {#using}
 
 + [流媒体集合指南](media-overview.md)
 + 发行说明 {#release-notes}
