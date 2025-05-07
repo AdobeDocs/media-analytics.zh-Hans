@@ -1,13 +1,13 @@
 ---
 title: 使用Edge Network实施流媒体收集
-description: 了解如何使用Experience PlatformEdge实施流媒体收集。
+description: 了解如何使用Experience Platform Edge实施流媒体收集。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: c7e9b7ca9dedbd0389240cb045d274ee6995ecbe
 workflow-type: tm+mt
 source-wordcount: '2146'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 8%
 
 Adobe Experience Platform Edge Network 允许您将发送到多个产品的数据发送到一个集中的位置。 Experience Edge 将适当的信息转发给所需的产品。 此概念允许您整合实施工作，尤其是跨多个数据解决方案进行整合。
 
-下图说明了如何实施Adobe流媒体收集，以便使用Experience PlatformEdge在Analysis Workspace中使数据在Adobe Analytics或Customer Journey Analytics中可用：
+下图说明了如何实施Adobe流媒体收集，以便使用Experience Platform Edge在Adobe Analytics或Customer Journey Analytics中使Analysis Workspace中的数据可用：
 
 ![CJA 工作流](assets/streaming-media-edge.png)
 
-有关所有实施选项的概述，包括不使用Experience PlatformEdge的实施方法，请参阅[实施流媒体收集](/help/implementation/overview.md)。
+有关所有实施选项的概述，包括不使用Experience Platform Edge的实施方法，请参阅[实施流媒体收集](/help/implementation/overview.md)。
 
 无论您是使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK还是API来使用Experience Edge实施流媒体收集，都必须首先完成以下部分：
 
@@ -29,7 +29,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 创建和设置方案：
 
-1. 在Adobe Experience Platform中，按照[在UI中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)中的说明开始创建架构。
+1. 在Adobe Experience Platform中，按照[在UI中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)中的说明开始创建架构。
 
 1. 在创建架构时，请在“架构详细信息”页面上，为架构选择基类时选择&#x200B;[!UICONTROL **体验事件**]。
 
@@ -40,7 +40,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 1. 指定架构显示名称和说明，然后选择&#x200B;[!UICONTROL **完成**]。
 
 1. 在&#x200B;[!UICONTROL **构成**]&#x200B;区域的&#x200B;[!UICONTROL **字段组**]&#x200B;部分中，选择&#x200B;[!UICONTROL **添加**]，然后搜索并将以下新字段组添加到架构中：
-   * `Adobe Analytics ExperienceEvent Template`
+   * `End User ID Details`
    * `Implementation Details`
    * `MediaAnalytics Interaction Details`
 
@@ -129,7 +129,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [为请求有效负载中的自定义字段使用生成的路径](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)。
+   1. [为请求有效负载中的自定义字段使用生成的路径](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -137,7 +137,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 1. 继续[在Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)中创建数据集。
 
-## 在Adobe Experience Platform中创建数据集
+## 在 Adobe Experience Platform 中创建数据集
 
 1. 请确保按照[在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform)中所述设置架构。
 
@@ -165,13 +165,13 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
    * 根据您使用的是Adobe Analytics还是Customer Journey Analytics，将以下任一服务添加到数据流：
 
-      * [!UICONTROL **Adobe Analytics**] (如果使用Adobe Analytics)
+      * [!UICONTROL **Adobe Analytics**](如果使用Adobe Analytics)
 
-        如果您使用的是Adobe Analytics，请确保定义报表包，如[创建报表包](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述。
+        如果您使用的是Adobe Analytics，请确保定义报表包，如[创建报表包](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述。
 
-      * [!UICONTROL **Adobe Experience Platform**] (如果使用Customer Journey Analytics)
+      * [!UICONTROL **Adobe Experience Platform**](如果使用Customer Journey Analytics)
 
-     有关如何将服务添加到数据流的信息，请参阅[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans#view-details)中的“将服务添加到数据流”部分。
+     有关如何将服务添加到数据流的信息，请参阅[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)中的“将服务添加到数据流”部分。
 
      ![添加Adobe Analytics服务](assets/datastream-add-service.png)
 
@@ -181,7 +181,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 1. 您现在可以实施[Media Edge API](/help/implementation/edge/implementation-edge-api.md)或[Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md)以开始收集媒体分析数据。
 
-   收集一些数据后，您可以[在Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics)中创建连接。
+   收集一些数据后，您可以[在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics)。
 
 ## 在 Customer Journey Analytics 中创建连接
 
@@ -189,7 +189,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 >
 >只有在使用Customer Journey Analytics时，才需要执行以下过程。
 
-1. 请确保按照[在Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform)中配置数据流中的说明创建了数据流。
+1. 请确保按照[在Customer Journey Analytics中配置数据流](#configure-a-datastream-in-adobe-experience-platform)中的说明创建了数据流。
 
 1. 在Customer Journey Analytics中，按照[创建连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)中的说明创建连接。
 
@@ -201,13 +201,13 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 1. 继续[在Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics)中创建数据视图。
 
-## 在Customer Journey Analytics中创建数据视图
+## 在 Customer Journey Analytics 中创建数据视图
 
 >[!NOTE]
 >
 >只有在使用Customer Journey Analytics时，才需要执行以下过程。
 
-1. 请确保在Customer Journey Analytics中创建了连接，如[在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics)中所述。
+1. 请确保您已按照[在Customer Journey Analytics中创建连接](#create-a-connection-in-customer-journey-analytics)中的说明在Customer Journey Analytics中创建连接。
 
 1. 在客户历程分析中，按照[创建或编辑数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans)中的说明创建数据视图。
 
@@ -281,14 +281,14 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
       | 开始时间 | Media：开始时间 |
       | 暂停总持续时间 | 媒体：暂停总持续时间 |
 
-   1. 要将划分添加到Customer Journey Analytics项目，请将以下维度添加到&#x200B;[!UICONTROL **Dimension**]&#x200B;面板：
+   1. 要将划分添加到Customer Journey Analytics项目，请将以下维度添加到&#x200B;[!UICONTROL **维度**]&#x200B;面板：
 
       | XDM 路径 | 组件名称 |
       |---------|----------|
       | mediaReporting.states.name | 播放器状态名称 |
       | mediaReporting.sessionDetails.ID | 媒体会话 ID |
 
-      除了此表中的维外，您还可以添加任何其他要用于在Customer Journey Analytics项目中过滤数据的维。
+      除了此表中的维度外，您还可以添加任何其他要使其可用于在Customer Journey Analytics项目中过滤数据的维度。
 
 1. 选择&#x200B;[!UICONTROL **保存并继续**] > [!UICONTROL **保存并完成**]&#x200B;以保存更改。
 
@@ -296,7 +296,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 ## 在Customer Journey Analytics中创建并配置项目
 
-1. 请确保已按照[在Customer Journey Analytics中创建数据视图](#create-a-new-data-view-in-customer-journey-analytics)中的说明在Customer Journey Analytics中创建数据视图。
+1. 请确保您已按照[在Customer Journey Analytics中创建数据视图](#create-a-new-data-view-in-customer-journey-analytics)中的说明在Customer Journey Analytics中创建数据视图。
 
 1. 在Customer Journey Analytics的&#x200B;[!UICONTROL **Workspace**]&#x200B;选项卡的&#x200B;[!UICONTROL **项目**]&#x200B;区域，选择&#x200B;[!UICONTROL **创建项目**]。
 
@@ -324,7 +324,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
    ![媒体播放耗时面板](assets/media-playback-time-spent-panels.png)
 
-1. （视情况而定）如果您向架构添加了自定义元数据，如[在Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)中设置架构的步骤8中所述，那么您需要为自定义字段设置持久性，如Customer Journey Analytics指南中的[持久性组件设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)中所述。
+1. （视情况而定）如果您向架构添加了自定义元数据，如[在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform)的步骤8中所述，那么您需要为自定义字段设置持久性，如Customer Journey Analytics指南中的[持久性组件设置](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)中所述。
 
    当数据到达Customer Journey Analytics时，自定义用户ID维度将可用。
 
@@ -332,20 +332,20 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
    >[!NOTE]
    >
-   >如果您将Adobe Analytics设置为数据流的上游，则自定义元数据也会出现在ContextData中，其名称为您在架构中设置的（不带租户前缀，例如myCustomField）。 这使得可以使用所有可用于ContextData的Adobe Analytics功能，例如[创建处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)。
+   >如果您将Adobe Analytics设置为数据流的上游，则自定义元数据也会出现在ContextData中，其名称为您在架构中设置的（不带租户前缀，例如myCustomField）。 这使得可以使用所有可用于ContextData的Adobe Analytics功能，例如[创建处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)。
 
-1. 按照[共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=zh-Hans)中的说明共享项目。
+1. 按照[共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)中的说明共享项目。
 
    >[!NOTE]
    >
-   >   如果要与共享的用户不可用，请确保这些用户具有在Adobe Admin Console中Customer Journey Analytics的用户和管理员访问权限。
+   >   如果要与共享的用户不可用，请确保这些用户在Adobe Admin Console中拥有Customer Journey Analytics的用户和管理员访问权限。
 
 
-1. 继续[将数据发送到Experience PlatformEdge](#send-data-to-experience-platform-edge)。
+1. 继续[将数据发送到Experience Platform Edge](#send-data-to-experience-platform-edge)。
 
-## 将数据发送到Experience PlatformEdge
+## 将数据发送到Experience Platform Edge
 
-根据要发送到Experience PlatformEdge的数据类型，您可以使用以下任一方法：
+根据要发送到Experience Platform Edge的数据类型，您可以使用以下任一方法：
 
 ### Web：使用Adobe Experience Platform Web SDK
 
@@ -353,7 +353,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 * [使用Adobe Experience Platform Web SDK将Web数据发送到Edge](/help/implementation/edge/edge-web-sdk.md)
 
-* [迁移至Adobe流媒体以获取Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [迁移到Adobe Streaming Media for Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Mobile：使用Adobe Experience Platform Mobile SDK
 
@@ -363,7 +363,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 * [API 参考](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [迁移至Adobe流媒体以获取Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [迁移到Adobe Streaming Media for Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Roku： Adobe Experience Platform Roku SDK
 
@@ -371,20 +371,20 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 * [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)
 
-* [迁移至Adobe流媒体以获取Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+* [迁移到Adobe Streaming Media for Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
 
 ### API： Web和其他
 
-此API是当前唯一受支持的将Web数据发送到Experience PlatformEdge的方法。
+此API是当前唯一受支持的将Web数据发送到Experience Platform Edge的方法。
 
 如果您要使用Edge API的自定义实施，则该API也将可用。
 
 有关media Edge API的更多信息，请参阅以下资源：
 
-* [Media Edge API概述](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html?lang=zh-Hans)
+* [Media Edge API概述](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
-* [Media Edge API快速入门](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html?lang=zh-Hans)
+* [Media Edge API快速入门](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
-* [Media Edge API疑难解答指南](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html?lang=zh-Hans)
+* [Media Edge API疑难解答指南](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
 * [使用Media Edge API的Open API规范文件](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
