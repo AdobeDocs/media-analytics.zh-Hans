@@ -165,11 +165,11 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
    * 根据您使用的是Adobe Analytics还是Customer Journey Analytics，将以下任一服务添加到数据流：
 
-      * [!UICONTROL **Adobe Analytics**](如果使用Adobe Analytics)
+      * [!UICONTROL **Adobe Analytics**] (如果使用Adobe Analytics)
 
         如果您使用的是Adobe Analytics，请确保定义报表包，如[创建报表包](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述。
 
-      * [!UICONTROL **Adobe Experience Platform**](如果使用Customer Journey Analytics)
+      * [!UICONTROL **Adobe Experience Platform**] (如果使用Customer Journey Analytics)
 
      有关如何将服务添加到数据流的信息，请参阅[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)中的“将服务添加到数据流”部分。
 
