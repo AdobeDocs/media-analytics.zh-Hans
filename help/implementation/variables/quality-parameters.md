@@ -5,7 +5,7 @@ uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: ebabbe52fe673e3fb6f13da40bbc3c87aef1c7bd
+source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
 workflow-type: tm+mt
 source-wordcount: '3314'
 ht-degree: 90%
@@ -185,7 +185,7 @@ ht-degree: 90%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;用户在视频开始前退出视频的次数。只有在没有任何内容呈现的情况下（不论是否有广告），此量度才设置为 1。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.qoe.<br/>dropBeforeStart) </li> <li> **心率：**<br/> (<code>s:event:</code><br/>type=aa_start) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;开始前丢帧 </li> <li> **上下文数据：**<br/>(a.media.qoe.<br/>dropBeforeStart) </li> <li> **数据馈送：**<br/> videoqoedropbeforestart </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **XDM字段路径：** （已弃用）<br/>media.mediaTimed.primaryAssetViewDetails.<br/>qoe.dropBeforeStarts.value >= 1 => &quot;TRUE&quot;</li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.qoeDataDetails.<br/>isDroppedBeforeStart </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;用户在视频开始前退出视频的次数。只有在没有任何内容呈现的情况下（不论是否有广告），此量度才设置为 1。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.qoe.<br/>dropBeforeStart) </li> <li> **心率：**<br/> (<code>s:event:</code><br/>type=aa_start) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;开始前丢帧 </li> <li> **上下文数据：**<br/>(a.media.qoe.<br/>dropBeforeStart) </li> <li> **数据馈送：**<br/> videoqoedropbeforestart </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **XDM字段路径：** （已弃用）<br/>media.mediaTimed.dropBeforeStarts。<br/>value >= 1 => &quot;TRUE&quot;</li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.qoeDataDetails.<br/>isDroppedBeforeStart </li> </ul> |
 
 
 

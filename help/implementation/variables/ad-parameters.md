@@ -5,9 +5,9 @@ uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ebabbe52fe673e3fb6f13da40bbc3c87aef1c7bd
+source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2036'
 ht-degree: 89%
 
 ---
@@ -176,7 +176,7 @@ ht-degree: 89%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;视频广告开始的次数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>view) </li> <li> **心率：**<br/> (<code>s:event:type=start</code>)<br/> (<code>s:asset:type=ad<code>) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;广告开始 </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>view) </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.view) </li> <li> **XDM字段路径：**（已弃用）<br/> advertising.starts.value > 0 => &quot;TRUE&quot; </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.advertisingDetails.isStarted </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告开始 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;视频广告开始的次数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>view) </li> <li> **心率：**<br/> (<code>s:event:type=start</code>)<br/> (<code>s:asset:type=ad<code>) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;广告开始 </li> <li> **数据馈送：**<br/> videoadstart </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>view) </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.view) </li> <li> **XDM字段路径：**（已弃用）<br/> advertising.impressions.value > 0 => &quot;TRUE&quot; </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.advertisingDetails.isStarted </li> </ul> |
 
 
 
@@ -184,7 +184,7 @@ ht-degree: 89%
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;视频广告完成的次数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>complete) </li> <li> **心率：**<br/> (<code>s:event:type=complete</code>)<br/> (<code>s:asset:type=ad</code>)  </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;广告结束 </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>complete) </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.complete) </li> <li> **XDM字段路径：**（已弃用）<br/> advertising.completes.value > 0 => &quot;TRUE&quot; </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.advertisingDetails.<br/>isCompleted </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>&#x200B;自动设置 </li> <li> **API 密钥：**<br/>&#x200B;不适用 </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;广告关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/> TRUE </li><li> **描述：**<br/>&#x200B;视频广告完成的次数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.ad.<br/>complete) </li> <li> **心率：**<br/> (<code>s:event:type=complete</code>)<br/> (<code>s:asset:type=ad</code>)  </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> event </li> <li> **报表名称：**<br/>&#x200B;广告结束 </li> <li> **数据馈送：**<br/> videoadcomplete </li> <li> **上下文数据：**<br/>(a.media.ad.<br/>complete) </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.ad.complete) </li> <li> **XDM字段路径：**（已弃用）<br/> advertising.completes.value > 0 => &quot;TRUE&quot; </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.advertisingDetails.<br/>isCompleted </li> </ul> |
 
 
 

@@ -5,7 +5,7 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ebabbe52fe673e3fb6f13da40bbc3c87aef1c7bd
+source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
 workflow-type: tm+mt
 source-wordcount: '7067'
 ht-degree: 92%
@@ -218,7 +218,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/> ASSET_ID </li> <li> **API 密钥：**<br/> media.assetId </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;89745363&quot; </li> <li> **描述：**<br/>&#x200B;此参数是媒体资产内容的唯一标识符，例如电视剧剧集标识符、电影资产标识符或直播赛事标识符。通常，这些 ID 是从元数据颁发机构（如 EIDR、TMS/Gracenote 或 Rovi）派生的。这些标识符也可以来自其他专有或内部系统。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.asset) </li> <li> **心率：**<br/> (<code>s:meta:</code><br/>a.media.asset) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/>&#x200B;分类 </li> <li> **报表名称：**<br/>&#x200B;资产 ID </li> <li> **上下文数据：**<br/>(a.media.asset) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.asset) </li> <li> **XDM字段路径：** （已弃用）<br/>media.mediaTimed.primaryAssetReference.<br/>@id </li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.sessionDetails.assetID </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.sessionDetails.assetID </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/> ASSET_ID </li> <li> **API 密钥：**<br/> media.assetId </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 </li> <li> **示例值：**<br/>&quot;89745363&quot; </li> <li> **描述：**<br/>&#x200B;此参数是媒体资产内容的唯一标识符，例如电视剧剧集标识符、电影资产标识符或直播赛事标识符。通常，这些 ID 是从元数据颁发机构（如 EIDR、TMS/Gracenote 或 Rovi）派生的。这些标识符也可以来自其他专有或内部系统。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.asset) </li> <li> **心率：**<br/> (<code>s:meta:</code><br/>a.media.asset) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/>&#x200B;分类 </li> <li> **报表名称：**<br/>&#x200B;资产 ID </li> <li> **上下文数据：**<br/>(a.media.asset) </li> <li> **数据馈送：**<br/>&#x200B;不适用 </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.asset) </li> <li> **XDM字段路径：** （已弃用）<br/>media.mediaTimed.primaryAssetReference.<br/>_id </li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.sessionDetails.assetID </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.sessionDetails.assetID </li> </ul> |
 
 ### 流派
 
