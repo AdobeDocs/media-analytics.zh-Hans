@@ -1,54 +1,54 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 流媒体收藏集
-breadcrumb-title: 流媒体集合指南
-user-guide-description: 实施流媒体。包括 Media SDK 和 Media Collection API。
+user-guide-title: 流式处理媒体收藏集
+breadcrumb-title: 流式处理媒体集合指南
+user-guide-description: 实施流式处理媒体。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
 source-wordcount: '893'
-ht-degree: 96%
+ht-degree: 84%
 
 ---
 
 
-# 流媒体收藏集 {#using}
+# 流式处理媒体收藏集 {#using}
 
-+ [流媒体集合指南](media-overview.md)
++ [流式处理媒体集合指南](media-overview.md)
 + 发行说明 {#release-notes}
    + [流媒体收藏集发行说明](additional-resources/release-notes.md)
-+ 开始使用 {#getting-started}
++ 快速入门 {#getting-started}
    + [先决条件](getting-started/prereqs.md)
    + [支持的设备](getting-started/supported-devices.md)
    + [流媒体收集实施文档](getting-started/implementation-documentation.md)
    + [SDK、库和扩展](getting-started/download-sdks.md)
    + 终止支持 {#end-of-support}
       + [Media Analytics Mobile SDK 终止支持](additional-resources/end-of-support-faqs.md)
-      + 旧版 - 从独立媒体 SDK 迁移到 Launch {#sdk-to-launch}
+      + 旧版 — 从独立媒体SDK迁移到Launch {#sdk-to-launch}
          + [概述](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
-   + Edge 实施（推荐）{#edge-recommended}
+   + Edge实施（推荐） {#edge-recommended}
       + [先决条件](/help/implementation/edge/prerequisites-edge.md)
-      + Media Edge SDK / 扩展 {#media-edge-sdk}
+      + Media Edge SDK/扩展 {#media-edge-sdk}
          + [Media Edge SDK / 扩展设置](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
-   + 仅使用 Adobe Analytics 的实施{#analytics-only}
+   + 仅限Adobe Analytics的实施 {#analytics-only}
       + [先决条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
-      + Media SDK / 扩展 {#media-sdk}
+      + 媒体SDK/扩展 {#media-sdk}
          + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
          + [Media Analytics 扩展](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
-         + OTT SDK{#ott-setup}
+         + OTT SDK {#ott-setup}
             + [安装 Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
             + [安装 Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
-      + 媒体收集 API - 实施 {#streaming-media-apis}
+      + 媒体收集API — 实施 {#streaming-media-apis}
          + [媒体收集](implementation/media-collection-api/mc-api-overview.md)
          + [API 快速入门](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
          + [会话请求](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -76,19 +76,19 @@ ht-degree: 96%
       + [计算指标](implementation/variables/calculated-metrics.md)
 + 报告 {#media-reports}
    + [媒体报表启用](reporting/media-reports-enable.md)
-   + Workspace 中的媒体面板 {#media-workspace-panels}
+   + Workspace中的媒体面板 {#media-workspace-panels}
       + [“媒体平均受众访问分钟数”面板](reporting/workspace/average-minute-audience.md)
       + [“媒体并行查看者”面板](reporting/workspace/media-concurrent-viewers-overview.md)
-      + [“Media Playback 耗时”面板](reporting/workspace/media-playback-time-spent.md)
+      + [“媒体播放耗时”面板](reporting/workspace/media-playback-time-spent.md)
    + [Workspace 中的媒体报表](reporting/workspace/media-workspace-templates.md)
    + [媒体分段](reporting/segments.md)
    + 默认媒体报表 {#media-default-reports}
       + [默认报表概述](reporting/reports-and-analytics/default-reports-overview.md)
-      + [媒体概览](reporting/reports-and-analytics/media-reports-overview.md)
+      + [媒体概述](reporting/reports-and-analytics/media-reports-overview.md)
       + [媒体详细信息](reporting/reports-and-analytics/media-reports-detail.md)
       + [媒体时段报表](reporting/reports-and-analytics/media-reports-daypart.md)
       + [媒体并行查看者报表](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + 媒体 API {#media-api}
+   + 媒体API {#media-api}
       + [获取并行查看者数据](reporting/reports-and-analytics/get-concurrent-json20.md)
       + [获取 Media Playback 耗时数据](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 用例 {#media-use-cases}
@@ -118,7 +118,7 @@ ht-degree: 96%
       + [OTT 和 Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + 跟踪 {#tracking}
    + [概述](use-cases/track-av-playback/track-core-overview.md)
-   + 跟踪核心流媒体播放{#track-core}
+   + 跟踪核心流媒体播放 {#track-core}
       + [在 JavaScript 3.x 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
       + [在 Chromecast 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-chromecast.md)
       + [在 Roku 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-roku.md)
@@ -165,7 +165,7 @@ ht-degree: 96%
 + 旧版实施 {#legacy-implementations}
    + [旧版 - 概述](legacy/setup/legacy-setup-overview.md)
    + [旧版 - 下载 SDK](legacy/legacy-download-sdks.md)
-   + 旧版 – Media SDK{#legacy-media-sdks}
+   + 旧版 — Media SDK {#legacy-media-sdks}
       + [旧版 - Media SDK 概述](legacy/media-sdk/setup/setup-overview.md)
       + [设置 Android](legacy/media-sdk/setup/set-up-android.md)
       + [设置 iOS](legacy/media-sdk/setup/set-up-ios.md)
@@ -195,45 +195,45 @@ ht-degree: 96%
    + 旧版跟踪 {#track-av-playback}
       + [在 Android 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-android.md)
       + [在 iOS 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-ios.md)
-      + 在 JavaScript 中跟踪核心播放 {#track-core-javascript}
+      + 在JavaScript中跟踪核心播放 {#track-core-javascript}
          + [在 JavaScript 2.x 中跟踪核心播放](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
          + [在 Android 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
          + [在 iOS 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-         + 在 JavaScript 中跟踪缓冲 {#track-buffering-js}
+         + 在JavaScript中跟踪缓冲 {#track-buffering-js}
             + [在 JavaScript 2.x 中跟踪缓冲](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
          + [在 Android 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
          + [在 iOS 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-         + 在 JavaScript 中跟踪搜寻 {#track-seeking-js}
+         + 在JavaScript中跟踪搜寻 {#track-seeking-js}
             + [在 JavaScript 2.x 中跟踪搜寻](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
          + [在 Android 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [在 iOS 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS 元数据键](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-         + 在 JavaScript 中实施标准元数据 {#impl-std-md-js}
+         + 在JavaScript中实施标准元数据 {#impl-std-md-js}
             + [在 JavaScript 2.x 中实施标准元数据](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + 跟踪广告 {#track-ads}
          + [在 Android 中跟踪广告](use-cases/track-ads/track-ads-android.md)
          + [在 iOS 中跟踪广告](use-cases/track-ads/track-ads-ios.md)
-         + 在 JavaScript 中跟踪广告 {#track-ads-js}
+         + 在JavaScript中跟踪广告 {#track-ads-js}
             + [在 JavaScript 2.x 中跟踪广告](use-cases/track-ads/track-ads-js/track-ads-js.md)
             + [在 Android 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
             + [在 iOS 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-            + 在 JavaScript 中实施标准广告元数据 {#impl-std-ad-md-js}
+            + 在JavaScript中实施标准广告元数据 {#impl-std-ad-md-js}
                + [在 JavaScript 2.x 中实施标准广告元数据](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
       + 跟踪章节和区段 {#track-chapters}
          + [在 Android 中跟踪章节和区段](use-cases/track-chapters/track-chapters-android.md)
          + [在 iOS 中跟踪章节和区段](use-cases/track-chapters/track-chapters-ios.md)
-         + 在 JavaScript 中跟踪章节和区段 {#track-chapters-js}
+         + 在JavaScript中跟踪章节和区段 {#track-chapters-js}
             + [在 JavaScript 2.x 中跟踪章节和区段](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
          + [在 Android 中跟踪体验质量](use-cases/track-qos/track-qos-android.md)
          + [在 iOS 中跟踪体验质量](use-cases/track-qos/track-qos-ios.md)
-         + 在 JavaScript 中跟踪体验质量 {#track-qos-js}
+         + 在JavaScript中跟踪体验质量 {#track-qos-js}
             + [在 JavaScript 2.x 中跟踪体验质量](use-cases/track-qos/track-qos-js/track-qos-js.md)
       + 跟踪错误 {#track-errors}
          + [在 Android 中跟踪错误](use-cases/track-errors/track-errors-android.md)
          + [在 iOS 中跟踪错误](use-cases/track-errors/track-errors-ios.md)
-         + 在 JavaScript 中跟踪错误 {#track-errors-js}
+         + 在JavaScript中跟踪错误 {#track-errors-js}
             + [在 JavaScript 2.x 中跟踪错误](use-cases/track-errors/track-errors-js/track-errors-js.md)
-      + 跟踪场景 {#tracking-scenarios}
+      + 跟踪方案 {#tracking-scenarios}
          + [不含广告的 VOD 播放](use-cases/tracking-scenarios/vod-no-intrs-details.md)
          + [包含前置式广告的 VOD 播放](use-cases/tracking-scenarios/vod-preroll-ads.md)
          + [跳过广告的 VOD 播放](use-cases/tracking-scenarios/vod-skipped-ads.md)
