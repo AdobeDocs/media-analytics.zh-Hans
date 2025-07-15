@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 使用Adobe Experience Platform Web SDK将Web数据发送到Edge
 
-从版本2.20.0开始，Adobe Experience Platform `streamingMedia`Web SDK[的](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)组件允许您收集与网站上的媒体会话相关的数据。 收集的数据可以包括有关媒体回放、暂停、完成和其他相关事件的信息。
+从版本2.20.0开始，Adobe Experience Platform `streamingMedia`Web SDK[的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/home)组件允许您收集与网站上的媒体会话相关的数据。 收集的数据可以包括有关媒体回放、暂停、完成和其他相关事件的信息。
 
 收集数据后，您可以将其发送到Adobe Experience Platform和/或Adobe Analytics以生成报表。 此功能为跟踪和了解您网站上的媒体消费行为提供了全面的解决方案。
 
@@ -68,7 +68,7 @@ alloy("configure", {
 });
 ```
 
-有关如何配置Web SDK `streamingMedia`组件的完整详细信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
+有关如何配置Web SDK `streamingMedia`组件的完整详细信息，请参阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
 
 ### 步骤3：从Media JS SDK迁移时获取媒体跟踪器实例
 
@@ -76,7 +76,7 @@ alloy("configure", {
 
 [!DNL Web SDK]包含用于检索Media Analytics跟踪器的命令。 您可以使用此命令创建对象实例，然后使用与[媒体JS库](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)提供的API相同的API跟踪媒体事件。
 
-有关受支持方法的完整详细信息，请参阅[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)文档。
+有关受支持方法的完整详细信息，请参阅[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)文档。
 
 以下代码片段显示了如何在Media JS中检索媒体跟踪器实例。
 

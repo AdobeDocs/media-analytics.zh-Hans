@@ -21,9 +21,9 @@ ht-degree: 10%
 1. **确认您正在实施与Edge Network和流媒体收藏集兼容的Adobe解决方案**<br>
 在使用Edge实施流媒体收集时，您还必须具有有效的Customer Journey Analytics、Adobe Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform实施。 有关更多信息，请参阅以下文档资源：
    * [Customer Journey Analytics 指南](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hans)
-   * [实施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)
+   * [实施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)
    * [Adobe Journey Optimizer文档](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hans)
-   * [Real-Time Customer Data Platform文档](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
+   * [Real-Time Customer Data Platform文档](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hans)
 
 1. **获取媒体跟踪服务器URL**<br>
 向您的Customer Journey Analytics代表询问媒体跟踪服务器URL。<!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->
