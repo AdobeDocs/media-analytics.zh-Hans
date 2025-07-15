@@ -2,9 +2,9 @@
 title: 了解支持的设备和平台
 description: 了解流媒体收藏集支持的主要设备，例如iOS、Android、OTT设备和JavaScript浏览器。
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 77%
@@ -25,7 +25,7 @@ Adobe流媒体收藏集支持所有主要设备，包括：
 
 下表列出当前支持的设备。如果未列出某个设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
 
-有关在Edge上实施媒体的详细信息，请参阅[使用Experience PlatformEdge安装流媒体收藏集](/help/implementation/edge/implementation-edge.md)。
+有关在Edge上实施媒体的详细信息，请参阅[使用Experience Platform Edge安装流媒体收藏集](/help/implementation/edge/implementation-edge.md)。
 
 | 流平台和设备 | | Media for Edge Network SDK/扩展 | Media Edge API | 带有标记或 AEP 移动 SDK 的媒体扩展 | Media SDK | 媒体收集 API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

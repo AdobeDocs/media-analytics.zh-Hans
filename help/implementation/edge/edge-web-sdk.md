@@ -1,19 +1,19 @@
 ---
 title: 使用Adobe Experience Platform Web SDK将Web数据发送到Edge
-description: 了解如何使用Adobe Experience Platform Web SDK将Adobe流媒体数据发送到Experience PlatformEdge。
-feature: Media Analytics
+description: 了解如何使用Adobe Web SDK将Adobe Experience Platform Streaming Media数据发送到Experience Platform Edge。
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 使用Adobe Experience Platform Web SDK将Web数据发送到Edge
 
-从版本2.20.0开始，Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/home)的`streamingMedia`组件允许您收集与网站上的媒体会话相关的数据。 收集的数据可以包括有关媒体回放、暂停、完成和其他相关事件的信息。
+从版本2.20.0开始，Adobe Experience Platform `streamingMedia`Web SDK[的](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)组件允许您收集与网站上的媒体会话相关的数据。 收集的数据可以包括有关媒体回放、暂停、完成和其他相关事件的信息。
 
 收集数据后，您可以将其发送到Adobe Experience Platform和/或Adobe Analytics以生成报表。 此功能为跟踪和了解您网站上的媒体消费行为提供了全面的解决方案。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 要使用Web SDK的`streamingMedia`组件，您必须满足以下先决条件：
 
-* 在将流媒体数据发送到Edge之前，请先完成[使用Experience PlatformEdge安装流媒体收藏集](/help/implementation/edge/implementation-edge.md)中的步骤。
+* 在将流媒体数据发送到Edge之前，请先完成[使用Experience Platform Edge安装流媒体收藏集](/help/implementation/edge/implementation-edge.md)中的步骤。
 * 确保您有权访问Adobe Experience Platform和/或Adobe Analytics。
 * 您必须使用Web SDK版本2.20.0或更高版本。 请参阅[Web SDK安装概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/overview)，了解如何安装最新版本。
 * 为您正在使用的数据流启用&#x200B;**[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure)**&#x200B;选项。
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 按照本页中描述的步骤，将您的流媒体收集实施从Media JS迁移到Web SDK。
 
-### 步骤1：安装Experience PlatformWeb SDK
+### 步骤1：安装Experience Platform Web SDK
 
 请参阅[专用文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/overview)，了解如何在Web资产上安装Web SDK。
 
@@ -68,7 +68,7 @@ alloy("configure", {
 });
 ```
 
-有关如何配置Web SDK `streamingMedia`组件的完整详细信息，请参阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
+有关如何配置Web SDK `streamingMedia`组件的完整详细信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
 
 ### 步骤3：从Media JS SDK迁移时获取媒体跟踪器实例
 
@@ -76,7 +76,7 @@ alloy("configure", {
 
 [!DNL Web SDK]包含用于检索Media Analytics跟踪器的命令。 您可以使用此命令创建对象实例，然后使用与[媒体JS库](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)提供的API相同的API跟踪媒体事件。
 
-有关受支持方法的完整详细信息，请参阅[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)文档。
+有关受支持方法的完整详细信息，请参阅[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)文档。
 
 以下代码片段显示了如何在Media JS中检索媒体跟踪器实例。
 

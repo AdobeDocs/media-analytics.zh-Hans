@@ -3,9 +3,9 @@ title: 了解如何在 Android 中实施标准元数据
 description: 了解如何在 Android 中设置要与跟踪调用一起发送的标准视频和广告元数据。
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 100%

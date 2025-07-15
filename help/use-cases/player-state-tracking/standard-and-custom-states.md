@@ -2,9 +2,9 @@
 title: 关于标准状态和自定义状态
 description: 了解播放器状态跟踪功能，包括实施和报告标准播放器状态与自定义播放器状态的要求和准则。
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 99%

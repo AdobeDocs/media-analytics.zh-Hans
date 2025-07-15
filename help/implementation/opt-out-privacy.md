@@ -3,9 +3,9 @@ title: 解释选择禁用和隐私
 description: 了解如何处理选择启用、选择禁用和隐私。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 您可以控制是否允许在特定设备上进行跟踪活动。
 
-* **移动设备应用程序 -** VA 库遵循 `AdobeMobile` 库的隐私和选择禁用设置。要选择禁用跟踪，您需要使用 `AdobeMobile` 库。有关 `AdobeMobile` 库的选择禁用和隐私设置的更多信息，请参阅[选择禁用和隐私设置](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=zh-Hans)。
+* **移动设备应用程序 -** VA 库遵循 `AdobeMobile` 库的隐私和选择禁用设置。要选择禁用跟踪，您需要使用 `AdobeMobile` 库。有关 `AdobeMobile` 库的选择禁用和隐私设置的更多信息，请参阅[选择禁用和隐私设置](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html)。
 * **JavaScript/浏览器应用程序 -** VA 库遵循 `VisitorAPI` 隐私和选择禁用设置。要选择禁用跟踪，您需要在访客 API 服务中选择禁用。有关选择禁用和隐私的更多信息，请参阅 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。
-* **OTT 应用程序（Chromecast、Roku）-** OTT SDK 提供了通用数据保护条例 (GDPR) 就绪 API，允许您为数据收集和传输设置 `opt` 状态标记，并检索本地存储的身份。
+* **OTT 应用程序（Chromecast、Roku）-** OTT SDK 提供了通用数据保护条例 (GDPR) 就绪 API，允许您为数据收集和传输设置 `opt` 状态标记，并检索本地存储的身份标识。
 
   >[!NOTE]
   >
@@ -82,13 +82,13 @@ ht-degree: 100%
 
 ## 检索存储的标识符（OTT 应用程序） {#retrieving-stored-identifiers-ott-apps}
 
-此信息可帮助您从 Roku 应用程序中检索本地存储的用户身份。
+此信息可帮助您从 Roku 应用程序中检索本地存储的用户身份标识。
 
 >[!IMPORTANT]
 >
->用于检索所有标识符的方法将获取 SDK 已知并且保留的所有用户身份。必须&#x200B;**先**&#x200B;调用此方法，用户才能选择退出。
+>用于检索所有身份标识符的方法将获取 SDK 已知并且保留的所有用户身份标识。必须&#x200B;**先**&#x200B;调用此方法，用户才能选择退出。
 
-将在 JSON 字符串中返回本地存储的身份，该字符串可能包含：
+将在 JSON 字符串中返回本地存储的身份标识，该字符串可能包含：
 
 * 公司上下文 - IMS 组织 ID
 * 用户 ID

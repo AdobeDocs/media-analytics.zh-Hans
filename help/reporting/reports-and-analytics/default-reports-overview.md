@@ -1,14 +1,14 @@
 ---
 title: 默认报表概述
-description: “了解用于跟踪网站上的媒体的报表类型和量度。探索‘媒体核心’模块提供的仪表板式报表。”
+description: 了解用于跟踪您网站上的媒体的报表类型和量度。 探索媒体核心模块提供的功能板样式报表。
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-feature: "Media Analytics, Reports & Analytics Basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Analytics 提供多种报告和量度，用于跟踪您网站上的媒体�
 
 | 媒体报表 | 描述     | 常见商业分析       |
 | --- | --- | --- |
-| [媒体概览](media-reports-overview.md) | 显示多个聚合度量，以快速监视媒体是否正在按预期方式执行。图表会在广告展示次数旁显示媒体开始次数，以便快速查看和比较这些量度。 | <ul> <li>热门量度的总数，包括内容开始、完成率、流平均时间和每次访问观看的平均媒体项目数。  </li> <li>按设备类型或国家/地区过滤的媒体内容和广告开始总数。  </li> </ul> |
+| [媒体概述](media-reports-overview.md) | 显示多个聚合度量，以快速监视媒体是否正在按预期方式执行。图表会在广告展示次数旁显示媒体开始次数，以便快速查看和比较这些量度。 | <ul> <li>热门量度的总数，包括内容开始、完成率、流平均时间和每次访问观看的平均媒体项目数。  </li> <li>按设备类型或国家/地区过滤的媒体内容和广告开始总数。  </li> </ul> |
 | [媒体详细信息](media-reports-detail.md) | 显示所有媒体项目的详细量度，包括开始、并行查看者、完成率、播放百分比和广告展示次数。 | <ul> <li>热门量度总数，包括媒体开始次数、内容和广告开始次数以及每次访问观看的平均内容数。  </li> <li>按设备类型或国家/地区过滤的媒体内容和广告开始总数。  </li> </ul> |
 | [媒体时段](media-reports-daypart.md) | 显示按时间划分的内容开始次数，以便您能够在受众参与时快速进行查看。 | <ul> <li>按时间划分的受众参与。  </li> <li>将受众参与与以前的日期范围相比。  </li> </ul> |
 | [媒体并行查看者](media-concurrent-viewers-reports.md) | 显示一天内并行查看者。数据不能按内容、设备类型或国家/地区进行过滤。 | <ul> <li>在 24 小时间隔内的每分钟受众参与。  </li> </ul> |

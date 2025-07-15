@@ -3,12 +3,12 @@ title: 在 SceneGraph (Roku) 中跟踪
 description: 了解如何使用 Roku SceneGraph XML 编程框架跟踪媒体。
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,7 @@ Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件
 |  | `trackingIdentifier` | 用于从 ADBMobile SDK 获取跟踪标识符的 SceneGraph API。 |
 |  | `userIdentifier` | 用于从 ADBMobile SDK 获取用户标识符的 SceneGraph API。 |
 |  | `setUserIdentifier` | 用于在 ADBMobile SDK 中设置用户标识符的 SceneGraph API。 |
-|  | `getAllIdentifiers` | 可检索 Roku SDK 已知并保留的所有用户标识的 SceneGraph API。 |
+|  | `getAllIdentifiers` | 可检索 Roku SDK 已知并保留的所有用户身份标识的 SceneGraph API。 |
 |  | 有关更多信息，请参阅旧版 SDK 的 Analytics 部分。 | |
 |  | | |
 | **Experience Cloud** | | |
@@ -88,7 +88,7 @@ Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件
 |  | | |
 | **Audience Manager** | | |
 |  | `audienceSubmitSignal` | 用于发送含特征的受众管理信号的 SceneGraph API。 |
-|  | `audienceVisitorProfile` | 用于从 ADBMobile SDK 获取 Audience Manager 访客配置文件的 SceneGraph API。 |
+|  | `audienceVisitorProfile` | 用于从 ADBMobile SDK 获取 Audience Manager 访客轮廓的 SceneGraph API。 |
 |  | `audienceDpid` | 用于从 ADBMobile SDK 获取受众 Dpid 的 SceneGraph API。 |
 |  | `audienceDpuuid` | 用于从 ADBMobile SDK 获取受众 Dpuuid 的 SceneGraph API。 |
 |  | `audienceSetDpidAndDpuuid` | 用于在 ADBMobile SDK 中设置受众 Dpid 和 Dpuuid 的 SceneGraph API。 |

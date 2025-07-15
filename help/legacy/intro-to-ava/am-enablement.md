@@ -2,9 +2,9 @@
 title: Adobe Audience Manager 支持什么？
 description: 了解如何将应用程序操作链接到媒体跟踪数据，而无需其他的处理规则和自定义变量。
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 100%
@@ -33,7 +33,7 @@ Adobe Audience Manager (AAM) 是一种数据管理平台 (DMP)，可帮助您将
 
 * `getVisitorProfile() -`
 
-  返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
+  返回最近获取的访客轮廓。如果尚未提交信号，则返回空对象。
 
   ```js
   ADBMobile.audienceManager.getVisitorProfile();
@@ -41,7 +41,7 @@ Adobe Audience Manager (AAM) 是一种数据管理平台 (DMP)，可帮助您将
 
 * `getDpid() -`
 
-  返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
+  返回最近获取的访客轮廓。如果尚未提交信号，则返回空对象。
 
   ```js
   ADBMobile.audienceManager.getDpid();
@@ -75,7 +75,7 @@ Adobe Audience Manager (AAM) 是一种数据管理平台 (DMP)，可帮助您将
 
 * `audienceVisitorProfile -`
 
-  返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
+  返回最近获取的访客轮廓。如果尚未提交信号，则返回空对象。
 
   ```js
   ADBMobile().audienceVisitorProfile()
@@ -83,7 +83,7 @@ Adobe Audience Manager (AAM) 是一种数据管理平台 (DMP)，可帮助您将
 
 * `audienceDpid -`
 
-  返回最近获取的访客资料。如果尚未提交信号，则返回空对象。
+  返回最近获取的访客轮廓。如果尚未提交信号，则返回空对象。
 
   ```js
   ADBMobile().audienceDpid()

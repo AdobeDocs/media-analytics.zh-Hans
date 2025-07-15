@@ -1,14 +1,14 @@
 ---
-title: “包含前置式广告的 VOD 播放”
-description: “查看有关如何使用 Media SDK 跟踪包含前置式广告的 VOD 内容的示例。”
+title: 包含前置式广告的VOD播放
+description: 查看有关如何使用Media SDK跟踪包含前置广告的VOD内容的示例。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 

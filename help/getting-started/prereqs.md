@@ -1,11 +1,11 @@
 ---
-title: 了解Adobe流媒体收集的先决条件
+title: 了解Adobe流媒体收藏集的先决条件
 description: 流媒体收藏集入门。 了解实施所需的内容。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: "Media Analytics, System Requirements"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: 0b0b4a373b15191dcb37dc436413f68cdc70768e
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 64%
@@ -14,7 +14,7 @@ ht-degree: 64%
 
 # 先决条件 {#prerequisites}
 
-在开始实施Adobe流媒体收集之前，请完成以下任务：
+在开始实施Adobe流媒体收藏集之前，请完成以下任务：
 
 1. **查看流媒体收藏集概述**<br>
 在开始实施流媒体收集之前，请查看[流媒体收集概述](/help/media-overview.md)，确保它满足您的需求。

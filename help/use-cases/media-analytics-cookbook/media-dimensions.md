@@ -2,9 +2,9 @@
 title: 什么是媒体流归因？
 description: 了解如何将应用程序操作链接到媒体跟踪数据，而无需其他的处理规则和自定义变量。
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 88%
@@ -42,8 +42,8 @@ s.tl(this,'o','Hero Banner');
 
 以下示例显示了以下内容的用例：
 
-* 类别投放位置
-* 主页投放位置
+* 类别放置环境
+* 主页放置环境
 * 参与
 * 订阅
 

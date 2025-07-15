@@ -1,14 +1,14 @@
 ---
 title: 媒体详细信息
-description: “在‘媒体详细信息’仪表板上查看并行查看者或收听者数量、内容开始播放次数、完成率、逗留时间和广告开始次数的详细量度。”
+description: 在“媒体详细信息”仪表板上查看并行查看者或收听者数量、内容开始播放次数、完成率、逗留时间和广告开始次数的详细量度。
 uuid: 57d7f5b0-41dd-41d7-9a5a-474528839be5
 exl-id: 3c707539-95a4-4e16-97f0-f3fe0be4fe74
-feature: "Media Analytics, Reports & Analytics Basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '50'
-ht-degree: 100%
+ht-degree: 56%
 
 ---
 

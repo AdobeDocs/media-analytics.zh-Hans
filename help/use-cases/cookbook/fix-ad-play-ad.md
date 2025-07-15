@@ -1,14 +1,14 @@
 ---
 title: 解决在广告之间出现 main:play 的问题
-description: “了解如何处理在广告之间出现的意外 main:play 调用。”
+description: 了解如何处理在广告之间出现的意外main：play调用。
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

@@ -3,9 +3,9 @@ title: 了解媒体跟踪时间线
 description: 深入挖掘播放头时间线和相应的用户的操作。了解每个操作的详细信息及其随附的请求。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a1c3bdbec223ab0141d922dce07ba2128b52e794
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 99%
@@ -179,7 +179,7 @@ ht-degree: 99%
 >[!NOTE]
 >
 >时间轴中的后续广告将跳过显示一秒钟 Ping 系列
->（这是为了简短起见）……
+>>（这是为了简短起见）……
 
 ```json
 {

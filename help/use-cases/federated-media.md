@@ -3,9 +3,9 @@ title: 联合媒体
 description: 联合媒体服务提供用于在两个合作伙伴之间共享流媒体数据的系统。
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 61%
@@ -44,7 +44,7 @@ ht-degree: 61%
 * **媒体流合同：**&#x200B;接收者和发件人必须已签订适用于媒体流的 Adobe Analytics 合同，然后才能在 Adobe Analytics 中访问音频和视频数据。有关更多详细信息，请与您的帐户团队联系。
 * **联合附录：**&#x200B;在发送或接收数据之前，每个发件人和接收者都必须拥有 Adobe 的已签名附录。要求每个客户一个附录，而不是每个合作伙伴一个附录。有关更多详细信息，请与您的帐户团队联系。
 
-* **流媒体收集实施：**&#x200B;发件人必须在将成为联合数据集一部分的所有播放器上实施流媒体收集。 只有流媒体数据可用于联合。 有关详细信息，请参阅[Adobe流媒体收藏集概述](/help/media-overview.md)。
+* **流媒体收集实施：**&#x200B;发件人必须在将成为联合数据集一部分的所有播放器上实施流媒体收集。 只有流媒体数据可用于联合。 有关详细信息，请参阅[Adobe流媒体收藏概述](/help/media-overview.md)。
 
 * **Adobe 咨询合同：**&#x200B;在初始设置发送者与接收者之间的联合规则时，该合同对于与咨询服务部合作来审查数据和创建数据共享协议，非常有价值。
 

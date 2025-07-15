@@ -4,9 +4,9 @@ title: 流媒体收集 API 概述
 description: 了解媒体收集 API 以及您的播放器如何使用 RESTful HTTP 调用跟踪音频和视频事件。
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 7a1ae72af231659bd794fb18ce9e76685e6beff4
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 93%

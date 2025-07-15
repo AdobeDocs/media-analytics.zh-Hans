@@ -2,9 +2,9 @@
 title: 提供有哪些流媒体实施路径？
 description: 了解 Adobe Streaming Media 实施路径，包括 Adobe Experience Platform Data Collection。
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 92%

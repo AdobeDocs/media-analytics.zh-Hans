@@ -3,9 +3,9 @@ title: 媒体工作区模板
 description: 使用媒体工作区模板来分析您的跟踪数据。选择适用于客户获取或流媒体的标准模板或创建您自己的自定义模板。
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-feature: "Media Analytics, Workspace Basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 9%
@@ -18,7 +18,7 @@ ht-degree: 9%
 >
 >Workspace中的&#x200B;*报告*&#x200B;以前称为&#x200B;*模板*。
 
-Analysis Workspace提供了一组默认可用的预建报表，您可以使用这些报表来分析数据。 有关所有可用默认报表的更多信息，请参阅[Adobe Analytics登录页面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hans)中的[查看报表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hans#menus)。
+Analysis Workspace提供了一组默认可用的预建报表，您可以使用这些报表来分析数据。 有关所有可用默认报表的更多信息，请参阅[Adobe Analytics登录页面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus)中的[查看报表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-hans)。
 
 其中某些报表在分析流媒体数据时特别有用，如以下部分所述。
 
@@ -41,6 +41,6 @@ Analysis Workspace提供了一组默认可用的预建报表，您可以使用�
 您可以通过以下方式使用默认媒体报表：
 创建新项目时。 修改现有项目时，您还可以或。
 
-* **创建新项目时：**&#x200B;有关如何从默认报告创建新项目的信息，请参阅[在Analysis Workspace中创建项目](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=zh-Hans#create-a-project-from-a-blank-project-or-a-report)中的[从空白项目或报告创建项目](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=zh-Hans#create-a-project-from-a-blank-project-or-a-report)。
+* **创建新项目时：**&#x200B;有关如何从默认报告创建新项目的信息，请参阅[在Analysis Workspace中创建项目](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report)中的[从空白项目或报告创建项目](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report)。
 
-* **创建自定义公司报告时：**&#x200B;有关如何创建自定义公司报告的信息，请参阅[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hans#company-report)在[Adobe Analytics登录页](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hans)中创建自定义公司报告。
+* **创建自定义公司报告时：**&#x200B;有关如何创建自定义公司报告的信息，请参阅[在](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report)Adobe Analytics登录页[中创建自定义公司报告](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-hans)。

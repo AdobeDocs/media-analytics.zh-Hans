@@ -1,18 +1,18 @@
 ---
-title: 媒体概览
-description: 使用“媒体概览”仪表板显示汇总测量。了解如何快速监测媒体效果。
+title: 媒体概述
+description: 使用“媒体概述”仪表板显示汇总测量。了解如何快速监测媒体效果。
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: "Media Analytics, Reports & Analytics Basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 媒体概览{#media-overview}
+# 媒体概述{#media-overview}
 
 “媒体概览”功能板旨在让您监测整个网站中的媒体。“媒体概览”屏幕显示了若干汇总测量，这样您便可以快速监测媒体是否如期执行。图表会在广告开始次数旁显示内容开始次数，以便快速查看每个媒体项目的这些量度。
 

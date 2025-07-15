@@ -1,11 +1,11 @@
 ---
 title: Adobe流媒体收集概述
-description: 使用流媒体收藏集获得对内容、音频和广告的强大见解。
+description: 使用流媒体收藏集获得针对内容、音频和广告的强大insight。
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 65%
@@ -16,7 +16,7 @@ ht-degree: 65%
 
 ![横幅](./assets/media_analytics_banner.png)
 
-Adobe流媒体收藏集为流媒体内容（例如音频、视频和面向流媒体提供商的广告）提供强大的收藏集、测量和个性化工具。 您可以将流媒体量度与Audience Analytics、移动或跨设备分析等功能结合使用。
+Adobe流媒体收藏集为流媒体内容（如适用于流媒体提供商的音频、视频和广告）提供强大的收藏集、测量和个性化工具。 您可以将流媒体量度与Audience Analytics、Mobile或Cross-Device Analytics等功能结合使用。
 
 流媒体数据可轻松集成到以下Adobe Experience Platform产品中：
 
@@ -68,4 +68,4 @@ Adobe流媒体收藏集为流媒体内容（例如音频、视频和面向流媒
 >通过实施 Customer Journey Analytics，可以使用 Experience Edge 或使用 Analytics Data Connector (ADC) 将数据发送到 Customer Journey Analytics。
 
 
-有关各种实现方法的详细信息，请参阅[实现Adobe Analytics或Customer Journey Analytics的流媒体收集](/help/implementation/overview.md)。
+有关各种实施方法的详细信息，请参阅[实施Adobe Analytics或Customer Journey Analytics的流媒体收藏集](/help/implementation/overview.md)。

@@ -3,9 +3,9 @@ title: 了解如何从里程碑迁移到 Media Analytics
 description: 了解如何将里程碑变量更改为 Media Analytics 量度，并将里程碑模块方法更改为 Media Analytics 语法。
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 96%

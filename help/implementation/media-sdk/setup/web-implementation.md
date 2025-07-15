@@ -1,10 +1,10 @@
 ---
 title: 如何设置适用于流媒体的 Analytics 的 Web 实施
 description: 了解如何实施适用于 Web 应用程序的 Adobe Streaming Media。
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 92%
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 本页上的信息描述如何安装 Web 独立 SDK 和设置 JavaScript。
 
-或者，还可使用Adobe MediumAnalytics扩展实施Adobe流媒体收集，如[使用Media Analytics扩展实施Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md)中所述。
+或者，还可使用Adobe Media Analytics扩展实施Adobe流媒体收集，如[使用Media Analytics扩展实施Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md)中所述。
 
 ## 先决条件 {#prerequesites}
 
