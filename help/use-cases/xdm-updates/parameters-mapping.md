@@ -12,7 +12,7 @@ ht-degree: 44%
 
 # Adobe Experience Platform和Customer Journey Analytics的Media Analytics参数映射
 
-本文档全面列出了Adobe Experience Platform和Customer Journey Analytics中使用的所有Media Analytics参数。 它旨在支持将通过[Analytics Source Connector](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications)从Adobe Analytics导入的数据集成到Platform，并将每个参数映射到其相应的XDM字段路径。
+本文档全面列出了Adobe Experience Platform和Customer Journey Analytics中使用的所有Media Analytics参数。 它旨在支持将通过[Analytics Source Connector](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/classifications)从Adobe Analytics导入的数据集成到Platform，并将每个参数映射到其相应的XDM字段路径。
 
 ## Media Analytics保留变量
 
