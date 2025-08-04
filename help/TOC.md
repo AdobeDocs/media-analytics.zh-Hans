@@ -5,10 +5,10 @@ user-guide-title: 流式处理媒体收藏集
 breadcrumb-title: 流式处理媒体集合指南
 user-guide-description: 实施流式处理媒体。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 84%
+source-wordcount: '922'
+ht-degree: 81%
 
 ---
 
@@ -103,6 +103,13 @@ ht-degree: 84%
    + [联合媒体](use-cases/federated-media.md)
    + [处理播放期间的应用程序中断](use-cases/cookbook/app-interrupts.md)
    + [媒体流归因](use-cases/media-analytics-cookbook/media-dimensions.md)
+   + 为Analytics源连接器迁移XDM字段 {#xdm-updates}
+      + [将源连接器更新到新的XDM流媒体字段](/help/use-cases/xdm-updates/updated-xdm-fields.md)
+      + [迁移受众](/help/use-cases/xdm-updates/migrate-audiences.md)
+      + [迁移CJA设置](/help/use-cases/xdm-updates/migrate-cja-setup.md)
+      + [迁移数据准备](/help/use-cases/xdm-updates/migrate-dataprep.md)
+      + [迁移配置文件](/help/use-cases/xdm-updates/migrate-profiles.md)
+      + [媒体参数映射](/help/use-cases/xdm-updates/parameters-mapping.md)
    + [恢复不活动的会话](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph中的Roku跟踪](use-cases/cookbook/sdk-track-scenegraph.md)
    + [处理广告之间的间隙](use-cases/cookbook/fix-ad-play-ad.md)
