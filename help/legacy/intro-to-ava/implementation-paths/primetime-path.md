@@ -1,19 +1,19 @@
 ---
 title: 什么是 Adobe Primetime？
-description: 了解 Adobe Primetime 解决方案及其如何帮助从流媒体中盈利。
+description: 了解Adobe Primetime解决方案及其如何帮助从流媒体服务中盈利。
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 82%
+source-wordcount: '255'
+ht-degree: 71%
 
 ---
 
 # Adobe Primetime{#primetime}
 
-Media Analytics（心跳）是 Adobe 的标准化媒体跟踪解决方案，它取代了 Adobe 的里程碑模型。
+Media Analytics（心率）是Adobe的标准化媒体跟踪解决方案，它取代了Adobe的里程碑模型。
 
 Adobe Primetime 是一款 Adobe Experience Cloud 解决方案，可帮助内容程序员和发行商从每一个连接屏幕上的媒体中盈利。
 

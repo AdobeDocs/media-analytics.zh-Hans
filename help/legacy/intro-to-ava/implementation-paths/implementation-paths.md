@@ -4,10 +4,10 @@ description: 了解 Adobe Streaming Media 实施路径，包括 Adobe Experience
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 92%
+source-wordcount: '630'
+ht-degree: 90%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 **此内容已移至当前实施路径文件**
 
-对于每个实施路径，由于Streaming Media Analytics具有独有的SKU，其定价模型已由基于服务器调用的模型变为基于视频流的模型，因此客户将需要联系他们的销售代表/Adobe客户团队来签署新的销售订单。
+对于每个实施路径，由于Customer Journey Analytics Streaming Media Collection和Adobe Analytics for Streaming Media具有独有的SKU，其定价模型已由基于服务器调用的模型变为基于视频流的模型，因此客户将需要联系他们的销售代表或Adobe客户团队来签署新的销售订单。
 
 ## 包含 Adobe Media Analytics 扩展的 Adobe Experience Platform Data Collection
 

@@ -1,13 +1,13 @@
 ---
-source-git-commit: e534d44f9d03b99153fde23b2c587f8607ceea72
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '613'
+ht-degree: 98%
 
 ---
 # 流媒体发行说明 - 源文本
 
-以下内容已从 Experience Cloud 发行说明中复制。这些内容将移至新的流媒体发行说明。
+以下内容已从 Experience Cloud 发行说明中复制。这些内容将移至新的流媒体服务发行说明。
 
 
 了解 [Adobe Experience Cloud 产品](https://business.adobe.com/products/adobe-experience-cloud-products.html)的最新版本更新。在 Experience League 上获取最新的自助文档、教程和课程。
@@ -21,7 +21,7 @@ Media Analytics 的新增功能
 
 | 功能 | 正式发布 | 描述 |
 | -------- | -------------------- | ----------- |
-| Workspace 中的“媒体平均受众访问分钟数”面板 | 2022 年 3 月<br>（小范围测试） | “媒体平均受众访问分钟数”面板使 Media Analytics 客户可以更好地了解内容的平均使用情况。平均受众访问分钟数可以比较任何长度或类型的编程。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数指标进行比较或附加到其上。此面板提供了更大的灵活性来衡量自定义时间段的平均受众访问，以及持续时间分类在事后更新的时间。[了解详情…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=zh-Hans) |
+| Workspace 中的“媒体平均受众访问分钟数”面板 | 2022 年 3 月<br>（小范围测试） | “媒体平均受众访问分钟数”面板使 Media Analytics 客户可以更好地了解内容的平均使用情况。受众平均逗留分钟数可以比较任何长度或类型的编程。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数指标进行比较或附加到其上。此面板提供了更大的灵活性来衡量自定义时间段的平均受众访问，以及持续时间分类在事后更新的时间。[了解详情…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=zh-Hans) |
 
 
 

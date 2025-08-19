@@ -1,24 +1,26 @@
 ---
-title: 实施流媒体收集
-description: 了解流媒体收藏集的实施路径。
+title: 实施适用于Adobe Analytics或Customer Journey Analytics的流媒体服务
+description: 了解Adobe流媒体服务的实施路径。
 uuid: null
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 69%
+source-wordcount: '484'
+ht-degree: 65%
 
 ---
 
-# 实施流媒体收集
+# 实施适用于Adobe Analytics或Customer Journey Analytics的流媒体服务
 
-可通过多种方式实施Adobe流媒体收藏集。 有关本页描述的实施方法所支持的设备和平台的详细比较，请参阅[支持的设备和平台。](/help/getting-started/supported-devices.md)
+可通过多种方法来实施Adobe流媒体服务。 有关本页描述的实施方法所支持的设备和平台的详细比较，请参阅[支持的设备和平台。](/help/getting-started/supported-devices.md)
 
 ## Edge 实施方法
 
-我们建议在为所有新Adobe Analytics或Customer Journey Analytics客户实施流媒体收集时使用Edge。
+我们建议在为所有新Adobe Analytics或Edge客户实施流媒体服务时使用Customer Journey Analytics。
+
+Edge实施方法使用流媒体收集加载项。
 
 * **Media for Edge Network SDK /扩展：**&#x200B;从Web、iOS和Android设备或Roku设备收集数据并将其发送到Edge Network。 然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
 
@@ -34,11 +36,13 @@ ht-degree: 69%
 
 建议将上述 Edge 实施方法用于 Customer Journey Analytics 和 Adob&#x200B;e Analytics，特别是对于新的实施。
 
-除了 Edge 实施方法之外，还有其他实施方法。这些实施方法专为与 Adob&#x200B;e Analytics 配合使用而设计。但是，采用以下任何实施方法的现有客户仍然可以通过创建[ Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)使数据在 Customer Journey Analytics 中可用。
+除了 Edge 实施方法之外，还有其他实施方法。这些实施方法专为与 Adob&#x200B;e Analytics 配合使用而设计。但是，采用以下任何实施方法的现有客户仍然可以通过创建[ Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)使数据在 Customer Journey Analytics 中可用。
+
+仅限Adobe Analytics的实施方法使用Adobe Analytics for Streaming Media加载项。
 
 * **带有标签的媒体扩展：**&#x200B;适用于音频和视频的 Adobe Media Analytics 扩展提供了将媒体跟踪器实例添加到启用标签的网站或项目的功能。数据发送到 Adobe Analytics。
 
-  有关安装、配置和实施带有标签的媒体扩展的信息，请参阅[适用于音频和视频的 Adob&#x200B;e Media Analytics (3.x SDK) 扩展概述。](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=zh-Hans)
+  有关安装、配置和实施带有标签的媒体扩展的信息，请参阅[适用于音频和视频的 Adob&#x200B;e Media Analytics (3.x SDK) 扩展概述。](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)
 
 * **Media SDK：**&#x200B;通过 Media SDK 可测量多种媒体平台，包括网站、手机、联网电视、平板电脑、OTT 设备、机顶盒和游戏机。（有关详细信息，请参阅[支持的设备和平台](/help/getting-started/supported-devices.md)。）
 

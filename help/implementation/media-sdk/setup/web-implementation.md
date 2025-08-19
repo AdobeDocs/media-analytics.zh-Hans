@@ -4,7 +4,7 @@ description: 了解如何实施适用于 Web 应用程序的 Adobe Streaming Med
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 92%
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 本页上的信息描述如何安装 Web 独立 SDK 和设置 JavaScript。
 
-或者，还可使用Adobe Media Analytics扩展实施Adobe流媒体收集，如[使用Media Analytics扩展实施Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md)中所述。
+或者，还可使用Adobe Media Analytics扩展实施流媒体服务，如[使用Media Analytics扩展安装流媒体服务](/help/implementation/media-sdk/setup/web-implementation-tags.md)中所述。
 
 ## 先决条件 {#prerequesites}
 
@@ -25,7 +25,7 @@ ht-degree: 92%
 
 * **在媒体应用程序中实施适用于 JavaScript 的 `AppMeasurement` 和 `Experience Cloud Identity Service`**
 
-  有关更多信息，请参阅[使用 JavaScript 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans) 和[实施 Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hans)。
+  有关更多信息，请参阅[使用 JavaScript 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans) 和[实施 Experience Cloud 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hans)。
 
 * **在媒体播放器中包含以下 API**
 

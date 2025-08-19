@@ -5,18 +5,26 @@ uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 61%
+source-wordcount: '593'
+ht-degree: 58%
 
 ---
 
 # 联合媒体{#federated-media}
 
-联合媒体服务提供用于在两个合作伙伴之间共享流媒体数据（音频和视频）的系统。
-由流媒体收集创建的标准化测量数据是联合媒体的标志，这使得来自多个源的相同数据可以进入单个报表。
+>[!AVAILABILITY]
+>
+>Federated Analytics服务仅在通过Adobe Analytics使用流媒体功能时可用。 Federated Analytics在Customer Journey Analytics中不可用。
+
+
+Federated Analytics服务提供一个用于在两个合作伙伴之间共享流媒体数据（音频和视频）的系统。
+
+流媒体服务创建的标准化测量数据是联合媒体的标志，这使得来自多个源的相同数据可以进入单个报表。
+
 通过管理联合媒体的规则和逻辑，可以轻松地控制和个性化数据，以满足每个合作伙伴的需要。
+
 联合媒体使音频和视频测量更高效、更简单和更可操作。
 
 
@@ -44,7 +52,7 @@ ht-degree: 61%
 * **媒体流合同：**&#x200B;接收者和发件人必须已签订适用于媒体流的 Adobe Analytics 合同，然后才能在 Adobe Analytics 中访问音频和视频数据。有关更多详细信息，请与您的帐户团队联系。
 * **联合附录：**&#x200B;在发送或接收数据之前，每个发件人和接收者都必须拥有 Adobe 的已签名附录。要求每个客户一个附录，而不是每个合作伙伴一个附录。有关更多详细信息，请与您的帐户团队联系。
 
-* **流媒体收集实施：**&#x200B;发件人必须在将成为联合数据集一部分的所有播放器上实施流媒体收集。 只有流媒体数据可用于联合。 有关详细信息，请参阅[Adobe流媒体收藏概述](/help/media-overview.md)。
+* **流媒体收集实施：**&#x200B;发件人必须在将成为联合数据集一部分的所有播放器上实施流媒体服务。 只有流媒体数据可用于联合。 有关详细信息，请参阅[Adobe流媒体服务概述](/help/media-overview.md)。
 
 * **Adobe 咨询合同：**&#x200B;在初始设置发送者与接收者之间的联合规则时，该合同对于与咨询服务部合作来审查数据和创建数据共享协议，非常有价值。
 

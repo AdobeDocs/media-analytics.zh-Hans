@@ -4,10 +4,10 @@ description: 本主题包括关于终止支持 Media Analytics SDK 的常见问�
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 76%
+source-wordcount: '614'
+ht-degree: 69%
 
 ---
 
@@ -15,18 +15,18 @@ ht-degree: 76%
 
 随着版本4 Mobile SDK于2021年8月31日停止支持，Adobe也终止了对适用于iOS和Android的Media Analytics Mobile SDK的支持。 (这不包括仍受支持的Media Analytics SDK for Web (JS)以及Chromecast和Roku等OTT平台。)
 
-这意味着Adobe不再为Media Analytics Mobile SDK提供修复、与操作系统相关的更新或支持。 迁移到新的Experience Platform SDK时，请注意，必须实施[Media Analytics扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)才能启用Adobe流媒体收集。
+这意味着Adobe不再为Media Analytics Mobile SDK提供修复、与操作系统相关的更新或支持。 迁移到新的Experience Platform SDK时，请注意，必须实施[Media Analytics扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)，才能启用Adobe流媒体服务。
 
 
 ## 五大须知要点
 
 1. 自2021年8月31日起，将不再支持Mobile v4 SDK。 您应该迁移到适用于iOS和Android的Adobe Experience Platform (AEP) Mobile SDK。
 
-1. Analytics for Streaming Media 实施需要安装 AEP Mobile SDK 以及使用 Analytics 扩展和 Media Analytics 扩展。自2021年9月1日起，您应使用新的AEP Mobile SDK和扩展。  使用 Adobe 标记（数据收藏集）配置 Media Analytics 扩展。有关更多信息，请参阅[从独立的 Media SDK 迁移到 Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
+1. Adobe流媒体服务实施需要AEP Mobile SDK，并且需要使用Analytics扩展和Media Analytics扩展。 自2021年9月1日起，您应使用新的AEP Mobile SDK和扩展。  使用 Adobe 标记（数据收藏集）配置 Media Analytics 扩展。有关更多信息，请参阅[从独立的 Media SDK 迁移到 Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
 
 1. 已终止适用于 iOS 和 Android 的 Media Analytics SDK 的功能开发。从 2019 年秋季开始引入的新功能均通过 Media Analytics 扩展和媒体收集 API 启用。
 
-1. Roku 和 Chromecast SDK 仍可供 Analytics for Streaming Media 客户使用。将继续以独立 SDK 的形式增强和支持 Roku SDK 和 Chromecast SDK。如果您使用 JS SDK for Media Analytics，则可继续使用独立的 SDK 或使用 Adobe 数据收藏集（以前称为 Adobe Launch）启用 Media Analytics 扩展。
+1. 客户可以使用Roku SDK和Chromecast SDK以及Adobe Analytics for Streaming Media加载项和Customer Journey Analytics Streaming Media Collection加载项。 将继续以独立 SDK 的形式增强和支持 Roku SDK 和 Chromecast SDK。如果您使用 JS SDK for Media Analytics，则可继续使用独立的 SDK 或使用 Adobe 数据收藏集（以前称为 Adobe Launch）启用 Media Analytics 扩展。
 
 如果您有任何问题，请联系您的Adobe客户团队。
 

@@ -1,19 +1,19 @@
 ---
 title: 了解支持的设备和平台
-description: 了解流媒体收藏集支持的主要设备，例如iOS、Android、OTT设备和JavaScript浏览器。
+description: 了解Adobe流媒体服务支持的主要设备，例如iOS、Android、OTT设备和JavaScript浏览器。
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 77%
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
 # 支持的设备和平台 {#devices-supported}
 
-Adobe流媒体收藏集支持所有主要设备，包括：
+Adobe流媒体服务支持所有主要设备，包括：
 
 * iOS 和 Android 智能手机和平板电脑
 * 适用于 Roku、Fire TV 和 Android TV 的 OTT 设备
@@ -21,7 +21,7 @@ Adobe流媒体收藏集支持所有主要设备，包括：
 
 发布设备的新版本时例行更新 SDK，您可使用 SDK 与每个平台的原生播放器或任何其他可用的媒体播放器集成。
 
-对于当前不支持 SDK 的设备，或者在您可能需要自定义实施的情况下，您可以使用媒体收集 API 或 Media Edge API。这些API允许您直接从设备向流媒体收集后端进行RESTful API调用。
+对于当前不支持 SDK 的设备，或者在您可能需要自定义实施的情况下，您可以使用媒体收集 API 或 Media Edge API。这些API允许您直接从设备向Adobe流媒体服务的后端进行RESTful API调用。
 
 下表列出当前支持的设备。如果未列出某个设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
 

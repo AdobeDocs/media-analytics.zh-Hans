@@ -5,10 +5,10 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '7067'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -110,7 +110,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   实施   | 网络参数 | 报表 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 密钥：**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 密钥：**<br/> media.contentType </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;有限制的字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/>&quot;vod&quot; </li> <li> **描述：**<br/>&#x200B;每种&#x200B;**流类型**&#x200B;的可用值：<br/> _音频：_“song”、“podcast”、“audiobook”、“radio”<br/> _视频：_“VoD”、“实时”、“线性”、“UGC”、“DVoD”<br/>客户可以为此参数提供自定义值。此值等同于 `s:stream:type.` 如果未设置，则等同于 `missing_content_type.` </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.contentType) </li> <li> **心率：**<br/> (<code>s:stream:类型</code>) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;内容类型 </li> <li> **上下文数据：**<br/>(a.contentType) </li> <li> **数据馈送：**<br/> videocontenttype </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.contentType) </li> <li> **XDM字段路径：** （已弃用）<br/>media.mediaTimed.primaryAssetViewDetails.<br/>broadcastContentType</li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.sessionDetails.contentType </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.sessionDetails.contentType </li> </ul> |
+| <ul> <li> **SDK 密钥：**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 密钥：**<br/> media.contentType </li> <li> **必需：**<br/>&#x200B;是 </li> <li> **类型：**<br/>&#x200B;有限制的字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：**&#x200B;任何版本 </li> <li> **示例值：**<br/>&quot;vod&quot; </li> <li> **描述：**<br/>&#x200B;每个&#x200B;**流类型**&#x200B;的可用值：<br/> _Audio :_&quot;song&quot;、&quot;podcast&quot;、&quot;audiobook&quot;、&quot;radio&quot; <br/> _Video:_ &quot;VoD&quot;、&quot;Live&quot;、&quot;Linear&quot;、&quot;UGC&quot;、&quot;DVoD&quot; <br/>客户可以为此参数提供自定义值。 此值等同于 `s:stream:type.` 如果未设置，则等同于 `missing_content_type.` </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.contentType) </li> <li> **心率：**<br/> (<code>s:stream:类型</code>) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;内容类型 </li> <li> **上下文数据：**<br/>(a.contentType) </li> <li> **数据馈送：**<br/> videocontenttype </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.contentType) </li> <li> **XDM字段路径：** （已弃用）<br/>media.mediaTimed.primaryAssetViewDetails.<br/>broadcastContentType</li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.sessionDetails.contentType </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.sessionDetails.contentType </li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
@@ -322,7 +322,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <ul> <li> **SDK 密钥：**<br/> </li> <li> **API 密钥：**<br/> media.publisher </li> <li> **必需：**<br/>&#x200B;否 </li> <li> **类型：**<br/>&#x200B;字符串 </li> <li> **发送条件：**<br/>&#x200B;媒体开始、媒体关闭 </li> <li> **最低 SDK 版本：** 1.5.7 <br/>可从以下位置获取：[媒体收集概述](/help/implementation/media-collection-api/mc-api-overview.md)或[下载 SDK - 版本 2.2](/help/getting-started/download-sdks.md)。  </li> <li> **示例值：**<br/>&quot;Random Bauhaus&quot; </li> <li> **描述：**<br/>&#x200B;音频内容发布者的名称。<br/> **发行日期：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>(a.media.publisher) </li> <li> **心率：**<br/> (<code>s:meta:</code><br/>a.media.publisher) </li> </ul> | <ul> <li> **可用：**<br/>&#x200B;是 </li> <li> **保留的变量：**<br/> eVar </li> <li> **过期时间：**<br/>&#x200B;点击时 </li> <li> **报表名称：**<br/>&#x200B;自定义 </li> <li> **上下文数据：**<br/>(a.media.publisher) </li> <li> **数据馈送：**<br/> videoaudiopublisher </li> <li> **Audience Manager：**<br/>(c_contextdata.<br/>a.media.publisher) </li> <li> **XDM字段路径：** （已弃用）<br/>media.mediaTimed.primaryAssetReference.<br/>_id3.audio._id3.TPUB</li> <li> **收集 XDM 字段路径：**<br/> mediaCollection.sessionDetails.publisher </li> <li> **报告 XDM 字段路径：**<br/> mediaReporting.sessionDetails.publisher </li> </ul> |
 
-## 流媒体指标 {#audio-and-video-metrics}
+## 流媒体量度 {#audio-and-video-metrics}
 
 ### 媒体开始
 

@@ -1,16 +1,17 @@
 ---
-title: 将Analytics源连接器实施迁移到更新的XDM流媒体字段
+title: 将Analytics源连接器实施更新为适用于流媒体服务的新XDM字段
 description: 了解如何将Analytics源连接器实施迁移到更新的XDM流媒体字段
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+exl-id: d239b203-71ce-4307-884f-9d11cc623d04
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# 将Analytics源连接器实施更新为适用于流媒体的新XDM字段
+# 将Analytics源连接器实施更新为适用于流媒体服务的新XDM字段
 
 >[!NOTE]
 >
@@ -26,13 +27,13 @@ ht-degree: 0%
 
 ## 替换旧的XDM字段路径
 
-所有将流媒体数据从Adobe Analytics传输到Adobe Experience Platform的Adobe数据收集（Analytics源连接器）流当前都在发送新`mediaReporting` XDM字段路径和旧`media.mediaTimed` XDM字段路径的数据。 这两个外地路径将在三个月内（截至2025年10月底）可用。 10月之后，`media.mediaTimed`字段将完全弃用，10月之后摄取的数据将仅包含`mediaReporting`。 弃用后，`media.mediaTimed`字段将不再显示在Adobe Experience Platform架构UI中，并且这些字段上的数据摄取将停止。 因此，这些字段将不再可用于任何Adobe Experience Platform服务。
+所有将流媒体数据从Adobe Analytics传输到Adobe Experience Platform的Adobe数据收集(Analytics Source Connector)流当前都在发送新`mediaReporting` XDM字段路径和旧`media.mediaTimed` XDM字段路径的数据。 这两个外地路径将在三个月内（截至2025年10月底）可用。 10月之后，`media.mediaTimed`字段将完全弃用，10月之后摄取的数据将仅包含`mediaReporting`。 弃用后，`media.mediaTimed`字段将不再显示在Adobe Experience Platform架构UI中，并且这些字段上的数据摄取将停止。 因此，这些字段将不再可用于任何Adobe Experience Platform服务。
 
 在此日期之前摄取的数据将仍可用于报告。
 
 ## 与新XDM字段路径的其他差异
 
-借助适用于流媒体的全新Adobe源连接器实施，来自Adobe Analytics的保持活动调用现在引入到Adobe Experience Platform中。
+通过适用于流媒体的新的Adobe Source Connector实施，来自Adobe Analytics的保持活动调用现在被引入到Adobe Experience Platform中。
 
 以前，这些调用不反映在Customer Journey Analytics等Platform应用程序中。 因此，您的组织可能会在报表中发现以下差异：
 
@@ -87,4 +88,3 @@ ht-degree: 0%
 所有使用Adobe Data Collection for Streaming Media的客户都必须在指定的过渡期内完成迁移。
 
 如有任何问题或需要支持，请随时联系Adobe支持团队。
-

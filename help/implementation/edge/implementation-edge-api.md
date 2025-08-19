@@ -1,17 +1,17 @@
 ---
-title: 使用Edge Network API实施流媒体收集
+title: 使用Adobe API实施Edge Network流媒体服务
 description: 有关将Media Analytics与Experience Platform Edge API一起安装的资源。
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-# 使用Edge Network API实施流媒体收集
+# 使用Adobe API实施Edge Network流媒体服务
 
 如果您无法使用[Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md)，可以直接通过API将数据发送到Adobe Experience Platform Edge Network。
 

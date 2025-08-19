@@ -4,10 +4,10 @@ description: 可用平台（包括 Android、iOS、JavaScript、Chromecast 和 R
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 73%
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 73%
 
 有关终止支持的重要信息，请参阅[终止支持常见问题解答](/help/additional-resources/end-of-support-faqs.md)。
 
-## 流媒体和 Adobe Media Analytics 扩展
+## 流媒体和Adobe Media Analytics扩展
 
 Adobe Media Analytics 扩展添加了适用于音频和视频的核心 JavaScript Media SDK (Media 2.x SDK)。此扩展提供了将 `MediaHeartbeat` 跟踪器实例添加到数据收集网站或项目的功能。
 
@@ -27,7 +27,7 @@ Adobe Media Analytics 扩展添加了适用于音频和视频的核心 JavaScrip
 * 您必须是 Adobe Experience Cloud 客户。
 * 您必须在网页上部署 Data Collection 或 DTM 嵌入代码。
 * 您必须配置 [Analytics 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hans)。
-* 必须配置[Adobe Media Analytics for Audio and Video扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=zh-Hans)。
+* 必须配置[Adobe Media Analytics for Audio and Video扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)。
 * 您必须配置 [Experience Cloud ID 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hans)。
 
 ## 下载 2.x Media SDK {#download-2x-sdks}

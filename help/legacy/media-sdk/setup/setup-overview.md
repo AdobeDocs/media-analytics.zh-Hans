@@ -5,9 +5,9 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '616'
 ht-degree: 94%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 94%
 
 ## 一般实施指南 {#general-implementation-guidelines}
 
-使用流媒体收藏集进行跟踪时，会使用三个主要的SDK组件：
+使用流媒体服务跟踪时，将使用三个主要的SDK组件：
 * 媒体心跳配置 – `MediaHeartbeatConfig` 包含用于报告的基本设置。
 * 媒体心跳代理 – `MediaHeartbeatDelegate` 控制播放时间和 QoS 对象。
 * 媒体心跳：`MediaHeartbeat` 是包含成员和方法的主库。
@@ -118,7 +118,7 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 * 将心跳调用发送到 Media Analytics (Heartbeats) 跟踪服务器，在该服务器上进行处理，然后传递到 Adobe Analytics 服务器。
 
 * **Adobe Analytics (AppMeasurement) 服务器**
-有关跟踪服务器选项的更多信息，请参阅[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html)。
+有关跟踪服务器选项的更多信息，请参阅[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html)。
 
   >[!IMPORTANT]
   >
@@ -126,7 +126,7 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 
   分析跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该为一个 CNAME。
 
-* **&#x200B; Media Analytics (Heartbeats) 服务器**
+* ** Media Analytics (Heartbeats) 服务器**
 其格式始终为“`[your_namespace].hb.omtrdc.net`”。“`[your_namespace]`”的值指定您的公司，由 Adobe 提供。
 
 媒体跟踪在所有平台、桌面和移动设备上的工作方式都是相同的。音频跟踪当前适用于移动设备平台。在所有跟踪调用中，有一些需要验证的关键通用变量：

@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 94%
+source-wordcount: '675'
+ht-degree: 92%
 
 ---
 
@@ -16,9 +16,10 @@ ht-degree: 94%
 
 ## 先决条件 {#roku-prerequisites}
 
-* **获取适用于流媒体收藏集的有效配置参数**
+* **获取Adobe流媒体服务的有效配置参数**
 
-  在设置Adobe流媒体收集帐户后，这些参数可以从Adobe代表获取。
+  为Adobe流媒体收集加载项或Adobe Analytics for Streaming Media加载项设置帐户后，这些参数可以从Adobe Analytics代表获取。
+
 * **在媒体播放器中包含以下 API**
 
    * _用于订阅播放器事件的 API_ – Media SDK 要求在播放器中发生事件时调用一组简单的 API。
@@ -171,4 +172,4 @@ ht-degree: 94%
    | `processMediaMessages` | 负责将 Media 事件传递给 SDK 以进行处理。<br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=zh-Hans) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

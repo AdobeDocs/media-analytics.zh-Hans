@@ -1,19 +1,19 @@
 ---
-title: 如何使用适用于流媒体的标记设置移动 SDK
-description: 了解如何实施适用于移动应用程序的 Adobe Streaming Media。
+title: 如何使用适用于流媒体服务的标记设置移动SDK
+description: 了解如何为移动应用程序实施Adobe流媒体服务。
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 82%
+source-wordcount: '199'
+ht-degree: 70%
 
 ---
 
 # 安装移动 SDK {#install-mobile-sdks}
 
-要在Android或iOS上实施适用于移动应用程序的流媒体收藏集，请安装和配置以下内容：
+要在Android或iOS上实施适用于移动应用程序的Adobe流媒体服务，请安装和配置以下内容：
 
 * **Adobe Experience Platform Mobile SDK**
 

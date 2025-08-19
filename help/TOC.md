@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 流式处理媒体收藏集
-breadcrumb-title: 流式处理媒体集合指南
-user-guide-description: 实施流式处理媒体。包括 Media SDK 和 Media Collection API。
+user-guide-title: 流媒体服务指南
+breadcrumb-title: 流媒体服务指南
+user-guide-description: 实施流媒体服务。 包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 81%
+source-wordcount: '926'
+ht-degree: 79%
 
 ---
 
 
-# 流式处理媒体收藏集 {#using}
+# 流媒体服务指南 {#using}
 
-+ [流式处理媒体集合指南](media-overview.md)
++ [Adobe流媒体服务指南](media-overview.md)
 + 发行说明 {#release-notes}
-   + [流媒体收藏集发行说明](additional-resources/release-notes.md)
+   + [流媒体服务发行说明](additional-resources/release-notes.md)
 + 快速入门 {#getting-started}
    + [先决条件](getting-started/prereqs.md)
    + [支持的设备](getting-started/supported-devices.md)
-   + [流媒体收集实施文档](getting-started/implementation-documentation.md)
+   + [流媒体服务实施文档](getting-started/implementation-documentation.md)
    + [SDK、库和扩展](getting-started/download-sdks.md)
    + 终止支持 {#end-of-support}
       + [Media Analytics Mobile SDK 终止支持](additional-resources/end-of-support-faqs.md)

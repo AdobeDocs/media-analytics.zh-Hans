@@ -4,18 +4,18 @@ description: 了解如何使用心跳收集视频量度。
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '312'
 ht-degree: 75%
 
 ---
 
 # 有关心跳测量
 
-Adobe流媒体收藏集使用“心率”收集视频量度。 在视频播放期间，心跳会发送到心跳跟踪服务器以测量播放时长。每十秒发送一次心跳调用。心跳会生成精细的视频参与量度，以及更准确的视频流失报表。流媒体使用包含Media Analytics扩展的Adobe Launch、Media SDK和媒体收集API来测量心率。 `AppMeasurement` 和 `VisitorID` 组件用于接收视频数据。
+Adobe流媒体服务使用“心率”收集视频量度。 在视频播放期间，心跳会发送到心跳跟踪服务器以测量播放时长。每十秒发送一次心跳调用。心跳会生成精细的视频参与量度，以及更准确的视频流失报表。流媒体服务使用包含Media Analytics扩展的Adobe Launch、Media SDK和媒体收集API来测量心率。 `AppMeasurement` 和 `VisitorID` 组件用于接收视频数据。
 
-在流媒体收藏集中使用心跳具有以下优势：
+在流媒体服务中使用心率具有以下优势：
 
 | 功能 | 描述 |
 |---|---|

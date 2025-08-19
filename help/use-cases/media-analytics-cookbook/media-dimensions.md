@@ -4,7 +4,7 @@ description: 了解如何将应用程序操作链接到媒体跟踪数据，而�
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 88%
@@ -23,7 +23,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->媒体量度&#x200B;_不_&#x200B;可用于媒体跟踪之外，因为大多数媒体量度是由流媒体收集基于心率事件计算的。 此外，媒体量度不应被不同的实施夸大，这一点也很重要。
+>媒体量度&#x200B;_不_&#x200B;可用于媒体跟踪之外，因为大多数媒体量度是由流媒体服务基于心率事件计算的。 此外，媒体量度不应被不同的实施夸大，这一点也很重要。
 
 ## 使用媒体流归因
 

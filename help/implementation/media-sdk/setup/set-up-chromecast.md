@@ -5,7 +5,7 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 97%
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 # 设置适用于 Chromecast 的 Mobile SDK v3.x {#set-up-chromecast}
 
-此部分介绍为流媒体收藏集设置Chromecast安装的先决条件。
+此部分介绍为Adobe流媒体服务设置Chromecast安装的先决条件。
 
 ## 先决条件
 
@@ -153,4 +153,4 @@ Adobe Mobile Services 提供了新的 UI，以将 Adobe Marketing Cloud 中针�
    }
    ```
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=zh-Hans) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
