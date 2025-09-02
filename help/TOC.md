@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: 流媒体服务指南
 breadcrumb-title: 流媒体服务指南
-user-guide-description: 实施流媒体服务。 包括 Media SDK 和 Media Collection API。
+user-guide-description: 实施流媒体服务。包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
