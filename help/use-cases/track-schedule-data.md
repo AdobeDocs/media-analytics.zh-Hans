@@ -140,7 +140,7 @@ ht-degree: 2%
 
    1. 推送包含使用批次ID的程序计划数据记录的.json文件。
 
-      要推送计划信息，您应使用AEP批处理API，如[批处理摄取API概述](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)中所述。
+      要推送计划信息，您应使用AEP批处理API，如[批处理摄取API概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/batch/overview)中所述。
 
       考虑以下使用cURL推送包含计划记录的文件示例：
 
@@ -300,9 +300,9 @@ ht-degree: 2%
 
    请考虑以下维度示例，您可以在Customer Journey Analytics中创建并报告维度：
 
-   * **[“_剧集名称_”](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：此维度可以帮助您了解特定系列中的哪些剧集表现最佳。
+   * **[“_剧集名称_”](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：此维度可以帮助您了解特定系列中的哪些剧集表现最佳。
 
-   * **[资产ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[资产ID](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. 继续[在Customer Journey Analytics](#analyze-data-in-customer-journey-analytics)中分析数据。
 
