@@ -13,15 +13,15 @@ ht-degree: 2%
 
 # 将受众迁移到新的流媒体字段
 
-本文档介绍应如何迁移使用Adobe流媒体服务数据类型“媒体”中的字段的受众，以便使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
+本文档介绍应如何迁移使用Adobe流媒体服务数据类型“媒体”中的字段的受众，以便使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
 
 ## 迁移受众
 
-要将受众从名为“媒体”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须编辑受众，并在每个规则中将已弃用数据类型的旧字段替换为新数据类型的相应字段：
+要将受众从名为“媒体”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须编辑受众，并在每个规则中将已弃用数据类型的旧字段替换为新数据类型的相应字段：
 
 1. 查找包含来自已弃用“媒体”数据类型的字段的规则。 这是以路径`media.mediaTimed`开头的所有字段。
 
-1. 使用新“[媒体报告详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”数据类型的字段复制这些规则。
+1. 使用新“[媒体报告详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”数据类型的字段复制这些规则。
 
 1. 将这两个规则都保留在适当位置，直到您验证受众是否按预期工作。
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 1. 验证受众是否仍在按预期工作。
 
-查看[音频和视频参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id)页面上的[内容ID](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)参数，以便在旧字段和新字段之间映射。 旧字段路径位于“XDM字段路径”属性下，而新字段路径位于“报告XDM字段路径”属性下。
+查看[音频和视频参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id)页面上的[内容ID](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)参数，以便在旧字段和新字段之间映射。 旧字段路径位于“XDM字段路径”属性下，而新字段路径位于“报告XDM字段路径”属性下。
 
 ![旧和新XDM字段路径](assets/field-paths-updated.jpeg)
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
    ![编辑受众](assets/audience-edit5.jpeg)
 
-1. 请参阅要在旧字段之间映射的[音频和视频参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)页。 旧字段路径可在“XDM字段路径”属性下找到，而新字段路径可在“报告XDM字段路径”属性下找到。 例如，对于[Media Starts](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts)参数，`media.mediaTimed.impressions.value`的通讯对方是`mediaReporting.sessionDetails.isViewed`。
+1. 请参阅要在旧字段之间映射的[音频和视频参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)页。 旧字段路径可在“XDM字段路径”属性下找到，而新字段路径可在“报告XDM字段路径”属性下找到。 例如，对于[Media Starts](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts)参数，`media.mediaTimed.impressions.value`的通讯对方是`mediaReporting.sessionDetails.isViewed`。
 
    ![已更新XDM路径](assets/updated-xdm-path.jpeg)
 

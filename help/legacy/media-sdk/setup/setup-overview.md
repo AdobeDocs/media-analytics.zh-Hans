@@ -118,7 +118,7 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 * 将心跳调用发送到 Media Analytics (Heartbeats) 跟踪服务器，在该服务器上进行处理，然后传递到 Adobe Analytics 服务器。
 
 * **Adobe Analytics (AppMeasurement) 服务器**
-有关跟踪服务器选项的更多信息，请参阅[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/analytics/kb/determining-data-center.html)。
+有关跟踪服务器选项的更多信息，请参阅[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html)。
 
   >[!IMPORTANT]
   >
