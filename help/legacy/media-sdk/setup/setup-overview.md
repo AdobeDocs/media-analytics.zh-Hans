@@ -126,7 +126,7 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 
   分析跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该为一个 CNAME。
 
-* ** Media Analytics (Heartbeats) 服务器**
+* **&#x200B; Media Analytics (Heartbeats) 服务器**
 其格式始终为“`[your_namespace].hb.omtrdc.net`”。“`[your_namespace]`”的值指定您的公司，由 Adobe 提供。
 
 媒体跟踪在所有平台、桌面和移动设备上的工作方式都是相同的。音频跟踪当前适用于移动设备平台。在所有跟踪调用中，有一些需要验证的关键通用变量：
