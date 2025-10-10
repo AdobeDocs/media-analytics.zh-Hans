@@ -52,7 +52,7 @@ ht-degree: 94%
    | `fps` | FPS 值 | 是 |
    | `droppedFrames` | 丢帧的数量 | 是 |
 
-   **QoS 对象创建：**&#x200B;[createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createQoSObject)
+   **QoS 对象创建：**[createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createQoSObject)
 
    ```
    qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10);

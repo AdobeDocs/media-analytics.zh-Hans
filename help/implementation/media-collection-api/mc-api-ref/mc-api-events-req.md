@@ -49,7 +49,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->***广告跟踪 -**&#x200B;您只能跟踪`adBreak`* 内的广告。
+>***广告跟踪 -**您只能跟踪`adBreak`* 内的广告。
 >
 >在广告头尾没有 `adBreakStart` 和 `adBreakComplete`“书挡”的情况下，`adStart` 和 `adComplete` 事件将被忽略，并且会将相应的广告持续时间作为主内容持续时间进行跟踪。这可能会对 Adobe Analytics 中可用的聚合数据产生重大影响。
 

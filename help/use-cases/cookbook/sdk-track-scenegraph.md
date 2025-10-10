@@ -7,8 +7,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1152'
+ht-degree: 100%
 
 ---
 
@@ -142,28 +142,28 @@ Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件
 <td> 无效 </td>
 <td> 只读。在 AdobeMobileSDK 中执行的所有 API 都将返回此字段中的响应。注册侦听此字段更新的回调，以接收响应对象。以下是响应对象的格式：  
 <pre>
-response = &lbrace;
+response = {
   "apiName" : &lt;SceneGraphConstants.
                API_NAME&gt;
   "returnValue : &lt;API_RESPONSE&gt;
-&rbrace;</pre>
+}</pre>
 将为 AdobeMobileSDK 中的任何 API 调用发送此响应对象的实例，根据 API 引用指南，该 API 调用应会返回一个值。例如，visitorMarketingCloudID() 的 API 调用将返回以下响应对象：
 <pre>
-response = &lbrace;
+response = {
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : "07050x25671x33760x72644x14"  
-&rbrace;
+}
 </pre>
 或者，响应数据也可能无效：
 <pre>
-response = &lbrace;  
+response = {  
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : invalid
-&rbrace;
+}
 </pre>
 </td>
 </tr>

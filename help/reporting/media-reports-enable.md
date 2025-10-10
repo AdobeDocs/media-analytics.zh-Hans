@@ -27,7 +27,7 @@ ht-degree: 98%
 
    ![](assets/media-reporting.png)
 
-1. 在&#x200B;**[!UICONTROL 媒体报告]**&#x200B;页面中，启用&#x200B;**[!UICONTROL 媒体核心]，**&#x200B;也可选择启用&#x200B;**[!UICONTROL 媒体广告]、**&#x200B;**[!UICONTROL 媒体章节]**&#x200B;和&#x200B;**[!UICONTROL 媒体质量]。**
+1. 在&#x200B;**[!UICONTROL 媒体报告]**&#x200B;页面中，启用&#x200B;**[!UICONTROL 媒体核心]，**&#x200B;也可选择启用&#x200B;**[!UICONTROL 媒体广告]、****[!UICONTROL 媒体章节]**&#x200B;和&#x200B;**[!UICONTROL 媒体质量]。**
 
    媒体测量包括以下模块：
 

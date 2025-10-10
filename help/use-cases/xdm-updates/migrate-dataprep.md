@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 将自定义字段的数据准备迁移至新的流媒体字段
 
-本文档介绍了迁移数据准备服务的过程，该数据准备服务位于为Adobe流媒体收集数据启用的Adobe数据收集流之上。 迁移会从名为“Media”的Adobe Streaming Media Collection数据类型转换数据准备映射，以使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
+本文档介绍了迁移数据准备服务的过程，该数据准备服务位于为Adobe流媒体收集数据启用的Adobe数据收集流之上。 迁移会从名为“Media”的Adobe Streaming Media Collection数据类型转换数据准备映射，以使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
 
 ## 迁移自定义字段的数据准备
 
-要将数据准备映射从名为“媒体”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须编辑数据准备映射：
+要将数据准备映射从名为“媒体”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须编辑数据准备映射：
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 验证映射是否仍在按预期工作。
 
-查看[音频和视频参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id)页面上的[内容ID](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)参数，以便在旧字段和新字段之间映射。 旧字段路径位于“XDM字段路径”属性下，而新字段路径位于“报告XDM字段路径”属性下。
+查看[音频和视频参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id)页面上的[内容ID](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)参数，以便在旧字段和新字段之间映射。 旧字段路径位于“XDM字段路径”属性下，而新字段路径位于“报告XDM字段路径”属性下。
 
 ## 示例
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 在上述示例中，涉及的所有数据类型都是字符串，因此映射替换是直接的。
 
-如果源字段数据类型不同于目标字段数据类型，则需要遵循[数据准备故障排除指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/troubleshooting-guide)、[使用数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/data-handling)处理数据格式和[数据准备映射函数](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/data-handling)中的准则。
+如果源字段数据类型不同于目标字段数据类型，则需要遵循[数据准备故障排除指南](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide)、[使用数据准备](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)处理数据格式和[数据准备映射函数](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)中的准则。
 
 例如，如果源类型是字符串而目标类型是布尔值，则数据准备可以自动解析该值并将源值转换为布尔值。
 

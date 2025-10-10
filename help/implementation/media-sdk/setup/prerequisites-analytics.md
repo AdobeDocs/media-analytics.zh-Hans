@@ -19,7 +19,7 @@ ht-degree: 43%
 无论您是实施适用于仅Adobe Analytics实施还是Edge实施的流媒体服务，请确保您满足[一般先决条件](/help/getting-started/prereqs.md)。
 
 1. **确认您具有Adobe Analytics实施**<br>
-为仅Analytics实施实施Adobe Analytics for Streaming Media插件时，还需要Adobe Analytics基本实施。 有关更多信息，请参阅[实施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)。
+为仅Analytics实施实施Adobe Analytics for Streaming Media插件时，还需要Adobe Analytics基本实施。 有关更多信息，请参阅[实施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)。
 
 1. **获取媒体跟踪服务器 URL**<br>
 请向您的 Adobe Analytics 代表询问媒体跟踪服务器 URL。这是Mobile SDK的`collection-api-server` URL、JavaScript SDK和Roku的非收藏集API跟踪服务器。 API 实施的域名是：`[your_namespace].hb-api.omtrdc.net`。

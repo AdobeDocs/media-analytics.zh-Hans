@@ -7,8 +7,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 对于 LIVE 媒体，当用户开始播放流时，您需要将 `l:event:playhead` 设置为自当天 UTC 午夜以来的秒数。这与 VOD 相反，在 VOD 中，您需要将播放头设置为“0”。请注意：使用进度标记时，需要内容持续时间，并且播放头需要更新为从媒体项目开始的秒数，从 0 开始。
 
-例如，假设实时流事件从午夜开始，并且持续 24 小时（`a.media.length=86400`；`l:asset:length=86400`）。然后，再假设某位用户在中午 12:00 开始播放该实时流。在这种场景下，您应该将 `l:event:playhead` 设置为 43200（自当天 UTC 午夜起 12 小时，以秒为单位）。
+例如，假设实时流事件从午夜开始，并且持续 24 小时（`a.media.length=86400`；`l:asset:length=86400`）。然后，假设用户在12:00pm开始播放该LIVE流。 在这种场景下，您应该将 `l:event:playhead` 设置为 43200（自当天 UTC 午夜起 12 小时，以秒为单位）。
 
 ### 暂停时
 

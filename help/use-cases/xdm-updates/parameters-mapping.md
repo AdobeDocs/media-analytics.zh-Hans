@@ -3,7 +3,8 @@ title: 将受众迁移到新的Adobe Analytics for Streaming Media数据类型
 description: 了解如何将受众迁移到新的Adobe Analytics for Streaming Media数据类型
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 3056a384535b3f5f2a9bc2d950bd5ee3410ec0a5
+exl-id: 79203a2f-8158-44f2-83b2-146179be9180
+source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 44%
@@ -12,7 +13,7 @@ ht-degree: 44%
 
 # Adobe Experience Platform和Customer Journey Analytics的Media Analytics参数映射
 
-本文档全面列出了Adobe Experience Platform和Customer Journey Analytics中使用的所有Media Analytics参数。 它旨在支持将通过[Analytics Source Connector](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/classifications)从Adobe Analytics导入的数据集成到Platform，并将每个参数映射到其相应的XDM字段路径。
+本文档全面列出了Adobe Experience Platform和Customer Journey Analytics中使用的所有Media Analytics参数。 它旨在支持将通过[Analytics Source Connector](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications)从Adobe Analytics导入的数据集成到Platform，并将每个参数映射到其相应的XDM字段路径。
 
 ## Media Analytics保留变量
 
@@ -237,9 +238,3 @@ Media Analytics分类通过名为ACDC的单独流程引入AEP。 下表列出的
 | 停滞总持续时间 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
 
 {style="table-layout:auto"}
-
-
-
-
-
-

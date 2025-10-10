@@ -8,8 +8,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ Launch 客户可在应用商店中获取这些扩展，从而可以快速安装�
 
 Adobe Media Analytics for Audio and Video 可用作 Web 和移动的 Launch 扩展：
 
-* [Web Launch 文档](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hans)
+* [Web Launch 文档](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
 * [移动 Launch 文档](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## 平台

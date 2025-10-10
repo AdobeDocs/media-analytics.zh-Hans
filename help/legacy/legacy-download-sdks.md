@@ -27,7 +27,7 @@ Adobe Media Analytics 扩展添加了适用于音频和视频的核心 JavaScrip
 * 您必须是 Adobe Experience Cloud 客户。
 * 您必须在网页上部署 Data Collection 或 DTM 嵌入代码。
 * 您必须配置 [Analytics 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hans)。
-* 必须配置[Adobe Media Analytics for Audio and Video扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=zh-Hans)。
+* 必须配置[Adobe Media Analytics for Audio and Video扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)。
 * 您必须配置 [Experience Cloud ID 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hans)。
 
 ## 下载 2.x Media SDK {#download-2x-sdks}

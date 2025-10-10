@@ -14,7 +14,7 @@ ht-degree: 89%
 
 # 媒体分段{#segments}
 
-您可以使用区段根据特性或网站交互来确定访客子集。利用流媒体区段，您可以确定访客流类型，例如音频流、实时流或播客流。有关 Adobe Analytics 区段的信息，请参阅“Adobe Analytics 组件指南”中的[关于区段和容器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=zh-Hans)。
+您可以使用区段根据特性或网站交互来确定访客子集。利用流媒体区段，您可以确定访客流类型，例如音频流、实时流或播客流。有关 Adobe Analytics 区段的信息，请参阅“Adobe Analytics 组件指南”中的[关于区段和容器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en)。
 
 >[!NOTE]
 >
