@@ -10,7 +10,7 @@ ht-degree: 98%
 以下内容已从 Experience Cloud 发行说明中复制。这些内容将移至新的流媒体服务发行说明。
 
 
-了解 [Adobe Experience Cloud 产品](https://business.adobe.com/products/adobe-experience-cloud-products.html)的最新版本更新。在 Experience League 上获取最新的自助文档、教程和课程。
+了解 [Adobe Experience Cloud 产品](https://business.adobe.com/cn/products/adobe-experience-cloud-products.html)的最新版本更新。在 Experience League 上获取最新的自助文档、教程和课程。
 
 了解 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=zh-Hans) 的最新版本更新。在 Experience League 上获取最新的自助文档、教程和课程。
 

@@ -21,7 +21,7 @@ ht-degree: 78%
 
 * [Adobe Analytics 发行说明](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=zh-Hans)
 * [Customer Journey Analytics 发行说明](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=zh-Hans)
-* [Adobe Experience Cloud 产品](https://business.adobe.com/products/adobe-experience-cloud-products.html)的最新版本更新
+* [Adobe Experience Cloud 产品](https://business.adobe.com/cn/products/adobe-experience-cloud-products.html)的最新版本更新
 
 * [Adobe Analytics 教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=zh-Hans)
 
