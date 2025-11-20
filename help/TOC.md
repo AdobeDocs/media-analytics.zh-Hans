@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
 workflow-type: tm+mt
 source-wordcount: '929'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 80%
       + [Media Analytics Mobile SDK 终止支持](additional-resources/end-of-support-faqs.md)
       + 旧版 — 从独立媒体SDK迁移到Launch {#sdk-to-launch}
          + [概述](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-         + [Android - 从 Media SDK 到 Launch &#x200B;](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-         + [iOS - 从 Media SDK 到 Launch &#x200B;](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [JavaScript - 从 Media SDK 到 Launch &#x200B;](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [Android - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+         + [iOS - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+         + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
    + Edge实施（推荐） {#edge-recommended}
@@ -55,7 +55,7 @@ ht-degree: 80%
          + [事件请求](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
          + [请求参数](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
          + [事件类型和描述](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
-         + 实施 API {#mc-api-impl}
+         + 实施API {#mc-api-impl}
             + [在播放器中设置 HTTP 请求类型](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
             + [获取会话 ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
             + [实施事件请求](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
