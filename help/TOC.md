@@ -27,9 +27,9 @@ ht-degree: 78%
       + [Media Analytics Mobile SDK 终止支持](additional-resources/end-of-support-faqs.md)
       + 旧版 — 从独立媒体SDK迁移到Launch {#sdk-to-launch}
          + [概述](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-         + [Android - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-         + [iOS - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [Android - 从 Media SDK 到 Launch &#x200B;](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+         + [iOS - 从 Media SDK 到 Launch &#x200B;](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+         + [JavaScript - 从 Media SDK 到 Launch &#x200B;](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
    + Edge实施（推荐） {#edge-recommended}
