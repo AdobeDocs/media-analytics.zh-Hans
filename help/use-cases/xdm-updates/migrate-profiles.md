@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 将用户档案迁移到新的流媒体字段
 
-本文档介绍了迁移配置文件筛选服务的过程，该服务位于为Adobe Analytics启用的Adobe数据收集流程之上，适用于流媒体数据。 迁移将使用名为“Media”的Adobe流媒体服务数据类型转换配置文件筛选服务，以使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
+本文档介绍了迁移配置文件筛选服务的过程，该服务位于为Adobe Analytics启用的Adobe数据收集流程之上，适用于流媒体数据。 迁移将使用名为“Media”的Adobe流媒体服务数据类型转换配置文件筛选服务，以使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
 
 ## 迁移配置文件
 
-要将配置文件筛选从名为“媒体”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须编辑现有的配置文件筛选规则：
+要将配置文件筛选从名为“媒体”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须编辑现有的配置文件筛选规则：
 
 1. 在Adobe Experience Platform中的&#x200B;[!UICONTROL **源**]&#x200B;部分下，转到&#x200B;[!UICONTROL **数据流**]&#x200B;选项卡。
 

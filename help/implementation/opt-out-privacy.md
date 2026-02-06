@@ -18,7 +18,7 @@ ht-degree: 92%
 
 您可以控制是否允许在特定设备上进行跟踪活动。
 
-* **移动设备应用程序 —** VA库遵循`AdobeMobile`库的隐私和选择退出设置。 要选择禁用跟踪，您需要使用 `AdobeMobile` 库。有关`AdobeMobile`库的选择退出和隐私设置的详细信息，请参阅[选择退出和隐私设置](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html)。
+* **移动设备应用程序 —** VA库遵循`AdobeMobile`库的隐私和选择退出设置。 要选择禁用跟踪，您需要使用 `AdobeMobile` 库。有关`AdobeMobile`库的选择退出和隐私设置的详细信息，请参阅[选择退出和隐私设置](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=zh-Hans)。
 * **JavaScript/浏览器应用程序 -** VA 库遵循 `VisitorAPI` 隐私和选择禁用设置。要选择禁用跟踪，您需要在访客 API 服务中选择禁用。有关选择禁用和隐私的更多信息，请参阅 [Adobe Experience Platform 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。
 * **OTT 应用程序（Chromecast、Roku）-** OTT SDK 提供了通用数据保护条例 (GDPR) 就绪 API，允许您为数据收集和传输设置 `opt` 状态标记，并检索本地存储的身份标识。
 

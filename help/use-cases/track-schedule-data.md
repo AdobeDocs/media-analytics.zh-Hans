@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->本文中描述的功能处于发布的有限测试阶段，因此可能在您的环境中尚不可用。当该功能正式发布时，将删除此说明。有关发布过程的信息，请参阅[Customer Journey Analytics功能发布](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases)。
+>本文中描述的功能处于发布的有限测试阶段，因此可能在您的环境中尚不可用。当该功能正式发布时，将删除此说明。有关发布过程的信息，请参阅[Customer Journey Analytics功能发布](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/releases/releases)。
 
 您可以上传过去实时流媒体内容的计划数据，以更轻松准确地跟踪实时内容的收视率。 您可以跟踪各个项目甚至特定主题或项目群区段的收视率。
 
@@ -143,7 +143,7 @@ ht-degree: 5%
 
    1. 推送包含使用批次ID的程序计划数据记录的.json文件。
 
-      要推送计划信息，您应使用AEP批处理API，如[批处理摄取API概述](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)中所述。
+      要推送计划信息，您应使用AEP批处理API，如[批处理摄取API概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/batch/overview)中所述。
 
       考虑以下使用cURL推送包含计划记录的文件示例：
 
