@@ -144,7 +144,7 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 
   分析跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该为一个 CNAME。
 
-* ** Media Analytics (Heartbeats) 服务器**
+* **&#x200B; Media Analytics (Heartbeats) 服务器**
 其格式始终为“`[your_namespace].hb.omtrdc.net`”。“`[your_namespace]`”的值指定您的公司，由 Adobe 提供。
 
 媒体跟踪在所有平台、桌面和移动设备上的工作方式都是相同的。音频跟踪当前适用于移动设备平台。在所有跟踪调用中，有一些需要验证的关键通用变量：
@@ -153,11 +153,11 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 
 | Video Analytics 1.x SDK | 开发人员指南（仅 PDF） |
 | --- | --- |
-| Android | 为Android配置[](vhl-dev-guide-v15_android.pdf) |
-| Apple TV | 为Apple TV配置[](vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | 为Chromecast配置[](chromecast_1.x_sdk.pdf) |
-| iOS | 为iOS配置[](vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | 为JavaScript配置[](vhl-dev-guide-v15_js.pdf) |
+| Android | 为Android配置[&#128279;](vhl-dev-guide-v15_android.pdf) |
+| Apple TV | 为Apple TV配置[&#128279;](vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | 为Chromecast配置[&#128279;](chromecast_1.x_sdk.pdf) |
+| iOS | 为iOS配置[&#128279;](vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | 为JavaScript配置[&#128279;](vhl-dev-guide-v15_js.pdf) |
 | Primetime | <ul> <li> Android：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/android/1.4/index.html) </li> <li> DHLS：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [为TVML配置](vhl_tvml.pdf) |
 
