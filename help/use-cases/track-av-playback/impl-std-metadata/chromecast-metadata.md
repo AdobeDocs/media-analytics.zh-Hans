@@ -5,16 +5,16 @@ uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 100%
+ht-degree: 55%
 
 ---
 
 # Chromecast 元数据键{#chromecast-metadata-keys}
 
-可以分别在媒体和广告信息对象上设置标准视频和广告元数据。调用跟踪 API 之前，使用视频/广告元数据的常量键设置包含信息对象中标准元数据的字典。有关标准元数据常量的完整列表，请参阅下表，随后是对应的示例。
+标准视频和广告元数据可以分别在媒体和广告信息对象中进行设置。 使用视频/广告元数据的常量键，在调用跟踪API之前设置包含信息对象上标准元数据的字典。 有关标准元数据常量的完整列表，请参阅下表，之后提供示例。
 
 ## 元数据常量 {#video-metadata-constants}
 
