@@ -3,8 +3,8 @@ title: 了解如何使用 JavaScript 3.x 实施标准元数据
 description: 了解如何在浏览器应用程序 (JS 3.x) 中设置要与跟踪调用一起发送的标准视频和广告元数据。
 exl-id: 228ba000-10e2-4906-8417-265a03367a9b
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 100%

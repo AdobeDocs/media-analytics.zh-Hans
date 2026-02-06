@@ -4,11 +4,11 @@ description: 了解可用的 iOS 元数据键。
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -28,15 +28,15 @@ ht-degree: 100%
 | `ADBVideoMetadataKeyASSET_ID` | 资源 | 视频 |
 | `ADBVideoMetadataKeyGENRE` | 流派 | 视频 |
 | `ADBVideoMetadataKeyFIRST_AIR_DATE` | 首次播放日期 | 视频 |
-| `ADBVideoMetadataKeyFIRST_DIGITAL_DAT` | 首次数字化日期 | 视频 |
+| `ADBVideoMetadataKeyFIRST_DIGITAL_DAT` | 第一个数字日期 | 视频 |
 | `ADBVideoMetadataKeyRATING` | 评级 | 视频 |
 | `ADBVideoMetadataKeyORIGINATOR` | 创作者 | 视频 |
 | `ADBVideoMetadataKeyNETWORK` | 网络 | 视频 |
-| `ADBVideoMetadataKeySHOW_TYPE` | 显示类型 | 视频 |
-| `ADBVideoMetadataKeyAD_LOAD` | 广告载入 | 视频 |
+| `ADBVideoMetadataKeySHOW_TYPE` | 节目类型 | 视频 |
+| `ADBVideoMetadataKeyAD_LOAD` | 广告加载 | 视频 |
 | `ADBVideoMetadataKeyMVPD` | mvpd | 视频 |
 | `ADBVideoMetadataKeyAUTHORIZED` | 授权 | 视频 |
-| `ADBVideoMetadataKeyDAY_PART` | 播出时段 | 视频 |
+| `ADBVideoMetadataKeyDAY_PART` | 时段 | 视频 |
 | `ADBVideoMetadataKeyFEED` | 信息源 | 视频 |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | 流格式 | 视频 |
 
@@ -56,8 +56,8 @@ ht-degree: 100%
 | 常量名称 | 描述 | 类型 |
 |---|---|---|
 | `ADBAdMetadataKeyADVERTISER` | 广告商 | 广告 |
-| `ADBAdMetadataKeyCAMPAIGN_ID` | 营销活动 ID | 广告 |
-| `ADBAdMetadataKeyCREATIVE_ID` | 创作 ID | 广告 |
-| `ADBAdMetadataKeyPLACEMENT_ID` | 版面 ID | 广告 |
-| `ADBAdMetadataKeySITE_ID` | 网站 ID | 广告 |
-| `ADBAdMetadataKeyCREATIVE_URL` | 创作 URL | 广告 |
+| `ADBAdMetadataKeyCAMPAIGN_ID` | 营销活动ID | 广告 |
+| `ADBAdMetadataKeyCREATIVE_ID` | Creative Id | 广告 |
+| `ADBAdMetadataKeyPLACEMENT_ID` | 版面ID | 广告 |
+| `ADBAdMetadataKeySITE_ID` | 站点ID | 广告 |
+| `ADBAdMetadataKeyCREATIVE_URL` | Creative Url | 广告 |

@@ -2,18 +2,18 @@
 title: 将受众迁移到新的Adobe Analytics for Streaming Media数据类型
 description: 了解如何将受众迁移到新的Adobe Analytics for Streaming Media数据类型
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1346'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
 # Adobe Experience Platform和Customer Journey Analytics的Media Analytics参数映射
 
-本文档全面列出了Adobe Experience Platform和Customer Journey Analytics中使用的所有Media Analytics参数。 它旨在支持将通过[Analytics Source Connector](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/classifications)从Adobe Analytics导入的数据集成到Platform，并将每个参数映射到其相应的XDM字段路径。
+本文档全面列出了Adobe Experience Platform和Customer Journey Analytics中使用的所有Media Analytics参数。 它旨在支持将通过[Analytics Source Connector](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/cn/docs/experience-platform/sources/connectors/adobe-applications/classifications)从Adobe Analytics导入的数据集成到Platform，并将每个参数映射到其相应的XDM字段路径。
 
 ## Media Analytics保留变量
 
@@ -116,13 +116,13 @@ ht-degree: 44%
 
 | 字段名称 | 当前XDM字段路径（已弃用） | 报告XDM字段路径 | 数据类型 | 派生字段 | 注释 |
 |------------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
-| 平均比特率 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateAverage.value | mediaReporting.qoeDataDetails.bitrateAverage | Both | 平均比特率 |           |
-| 开始时间 | media.mediaTimed.primaryAssetViewDetails.qoe.timeToStart.value | mediaReporting.qoeDataDetails.timeToStart | Both | 开始时间 |           |
-| 丢帧 | media.mediaTimed.primaryAssetViewDetails.qoe.droppedFrames.value | mediaReporting.qoeDataDetails.droppedFrames | Both | 丢帧 |           |
-| 缓冲事件 | media.mediaTimed.primaryAssetViewDetails.qoe.buffers.value | mediaReporting.qoeDataDetails.bufferCount | Both | 缓冲事件 |           |
-| 缓冲总持续时间 | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime | Both | 缓冲总持续时间 |     |
-| 比特率更改 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount | Both | 比特率更改 |         |
-| 错误/错误事件 | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount | Both | 错误/错误事件 |  |
+| 平均比特率 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateAverage.value | mediaReporting.qoeDataDetails.bitrateAverage | 两者 | 平均比特率 |           |
+| 开始时间 | media.mediaTimed.primaryAssetViewDetails.qoe.timeToStart.value | mediaReporting.qoeDataDetails.timeToStart | 两者 | 开始时间 |           |
+| 丢帧 | media.mediaTimed.primaryAssetViewDetails.qoe.droppedFrames.value | mediaReporting.qoeDataDetails.droppedFrames | 两者 | 丢帧 |           |
+| 缓冲事件 | media.mediaTimed.primaryAssetViewDetails.qoe.buffers.value | mediaReporting.qoeDataDetails.bufferCount | 两者 | 缓冲事件 |           |
+| 缓冲总持续时间 | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime | 两者 | 缓冲总持续时间 |     |
+| 比特率更改 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount | 两者 | 比特率更改 |         |
+| 错误/错误事件 | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount | 两者 | 错误/错误事件 |  |
 | 播放器 SDK 错误 ID | media.mediaTimed.primaryAssetViewDetails.qoe.playerSdkErrors | mediaReporting.qoeDataDetails.playerSdkErrors | 维度 | 不支持 | 使用mediaReporting字段 |
 | 外部错误 ID | media.mediaTimed.primaryAssetViewDetails.qoe.externalSdkErrors | mediaReporting.qoeDataDetails.externalErrors | 维度 | 不支持 | 使用mediaReporting字段 |
 | 开始前丢帧 | media.mediaTimed.dropBeforeStarts.value | mediaReporting.qoeDataDetails.isDroppedBeforeStart | 量度 | 开始前丢帧 |     |
@@ -189,7 +189,7 @@ Media Analytics分类通过名为ACDC的单独流程引入AEP。 下表列出的
 | videoad | 广告名称 | `<_sandbox>.ad_name` |
 | videoad | 创作 ID | `<_sandbox>.creative_id` |
 | videoadpod | 键/广告面板ID | `<_sandbox>.key` |
-| videoadpod | 面板位置 | `<_sandbox>.pod_position` |
+| videoadpod | Pod位置 | `<_sandbox>.pod_position` |
 | videoadpod | 面板名称 | `<_sandbox>.pod_name` |
 | videochapter | 键/章节 | `<_sandbox>.key` |
 | videochapter | 章节长度 | `<_sandbox>.chapter_length` |
@@ -223,7 +223,7 @@ Media Analytics分类通过名为ACDC的单独流程引入AEP。 下表列出的
 | 流格式 | `_experience.analytics.customDimensions.eVars.eVar<number>` | 维度 |
 | 首次播放日期 | `_experience.analytics.customDimensions.eVars.eVar<number>` | 维度 |
 | 首次数字化日期 | `_experience.analytics.customDimensions.eVars.eVar<number>` | 维度 |
-| 联合数据 | `_experience.analytics.customDimensions.eVars.eVar<number>` 和 `_experience.analytics.event<x>to<y>.event<number>.value` | Both |
+| 联合数据 | `_experience.analytics.customDimensions.eVars.eVar<number>` 和 `_experience.analytics.event<x>to<y>.event<number>.value` | 两者 |
 | 预计的流 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
 | 广告计数 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
 | 章节计数 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
@@ -231,7 +231,7 @@ Media Analytics分类通过名为ACDC的单独流程引入AEP。 下表列出的
 | 网站 ID | `_experience.analytics.customDimensions.eVars.eVar<number>` | 维度 |
 | 创作 URL | `_experience.analytics.customDimensions.eVars.eVar<number>` | 维度 |
 | 版面 ID | `_experience.analytics.customDimensions.eVars.eVar<number>` | 维度 |
-| 每秒帧数 | `_experience.analytics.customDimensions.eVars.eVar<number>` 和 `_experience.analytics.event<x>to<y>.event<number>.value` | Both |
+| 每秒帧数 | `_experience.analytics.customDimensions.eVars.eVar<number>` 和 `_experience.analytics.event<x>to<y>.event<number>.value` | 两者 |
 | Media SDK 错误 ID | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
 | 受停滞影响的流 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
 | 停滞事件 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |

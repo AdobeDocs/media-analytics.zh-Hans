@@ -4,7 +4,7 @@ description: 了解Adobe流媒体服务支持的主要设备，例如iOS、Andro
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 75%
@@ -27,12 +27,12 @@ Adobe流媒体服务支持所有主要设备，包括：
 
 有关在Edge上实施媒体的详细信息，请参阅[使用Experience Platform Edge安装流媒体收藏集](/help/implementation/edge/implementation-edge.md)。
 
-| 流平台和设备 | | Media for Edge Network SDK/扩展 | Media Edge API | 带有标记或 AEP 移动 SDK 的媒体扩展 | Media SDK | 媒体收集 API |
+| 流平台和设备 |  | Media for Edge Network SDK/扩展 | Media Edge API | 带有标记或 AEP 移动 SDK 的媒体扩展 | Media SDK | 媒体收集 API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
-| Web/移动 Web | | | | | |
+| Web/移动 Web | | | | | | |
 | | JavaScript 浏览器 | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) |
-| 移动设备应用程序 | | | | | |
-| | iOS 设备 | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | | ![支持](/help/assets/icon-blue-check.png) | |
+| 移动设备应用程序 | | | | | | |
+| | iOS 设备 | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | | ![支持](/help/assets/icon-blue-check.png) |
 | | Android 设备 | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | | ![支持](/help/assets/icon-blue-check.png) |
 | | Windows 设备 | | ![支持](/help/assets/icon-blue-check.png) | | | ![支持](/help/assets/icon-blue-check.png) |
 | OTT | | | | | | |

@@ -4,8 +4,8 @@ description: 深入挖掘播放头时间线和相应的用户的操作。了解�
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 98%
@@ -65,7 +65,7 @@ ht-degree: 98%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 应用程序启动 Ping 事件计时器 | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
+| 应用程序启动 Ping 事件计时器 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 启动应用程序的 Ping 计时器。如果有前置广告，则第一个 Ping 事件应在 1 秒后触发，否则应在 10 秒后触发。
 
@@ -179,7 +179,7 @@ ht-degree: 98%
 >[!NOTE]
 >
 >时间轴中的后续广告将跳过显示一秒钟 Ping 系列
->&#x200B;>（这是为了简短起见）……
+>（这是为了简短起见）……
 
 ```json
 {

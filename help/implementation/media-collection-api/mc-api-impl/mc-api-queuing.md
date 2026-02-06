@@ -4,11 +4,11 @@ description: 了解在播放器触发事件后返回会话 ID 时该怎么做。
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '205'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >[事件请求](../mc-api-ref/mc-api-events-req.md)不会将数据返回给 HTTP 响应代码之外的客户端。
 
-在接收会话 ID 之前，请查看发行版中的引用播放器，以找到一种处理事件的方法。例如：
+在接收会话ID之前，检查分发中的引用播放器，了解一种处理事件的方式。 例如：
 
 ```js
 var eventData = {};            // JSON payload 
@@ -75,7 +75,7 @@ VideoPlayer.prototype.getPlayerTime = function() {
 };
 ```
 
-**处理所有排队的事件 -**&#x200B;引用播放器处理排队的事件，如下所示：
+**处理任何排队的事件 —**&#x200B;引用播放器按如下方式处理排队的事件：
 
 ```js
     […] 
@@ -92,4 +92,4 @@ VideoPlayer.prototype._processPendingEvents =
 }
 ```
 
-在发生跟踪事件时继续进行处理。
+在发生跟踪事件时继续处理这些事件。

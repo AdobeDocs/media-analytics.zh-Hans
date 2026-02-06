@@ -4,8 +4,8 @@ description: 了解与媒体流类型相关的报表区段，包括媒体流类�
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: "Streaming Media, Segmentation"
-role: User, Admin, Data Engineer
-source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 89%
@@ -14,7 +14,7 @@ ht-degree: 89%
 
 # 媒体分段{#segments}
 
-您可以使用区段根据特性或网站交互来确定访客子集。利用流媒体区段，您可以确定访客流类型，例如音频流、实时流或播客流。有关 Adobe Analytics 区段的信息，请参阅“Adobe Analytics 组件指南”中的[关于区段和容器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=zh-Hans)。
+您可以使用区段根据特性或网站交互来确定访客子集。利用流媒体区段，您可以确定访客流类型，例如音频流、实时流或播客流。有关 Adobe Analytics 区段的信息，请参阅“Adobe Analytics 组件指南”中的[关于区段和容器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en)。
 
 >[!NOTE]
 >

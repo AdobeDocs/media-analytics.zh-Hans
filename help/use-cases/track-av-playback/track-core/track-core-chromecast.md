@@ -4,11 +4,11 @@ description: 了解如何使用 Chromecast 上的媒体 SDK 实施核心跟踪�
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 88%
+ht-degree: 81%
 
 ---
 
@@ -138,7 +138,7 @@ ht-degree: 88%
    * 用户在应用程序中明确点击暂停。
    * 播放器将其置于“暂停”状态。
    * （*移动应用程序*）- 用户将应用程序放入后台，但您希望应用程序保持会话打开。
-   * （*移动应用程序*）- 发生导致应用程序被置于后台运行的任何类型的系统中断。例如，用户接收到一个调用，或者出现来自其他应用程序的弹出窗口，但您希望应用程序将会话保持活动状态，以便用户有机会从中断点继续观看视频。
+   * （*移动应用程序*）- 发生导致应用程序被置于后台运行的任何类型的系统中断。例如，用户接到电话，或其他应用程序出现弹出窗口，但您希望应用程序保持会话的活动状态，以便用户有机会从中断点恢复视频。
 
 1. 识别播放器中的视频播放事件和/或视频在暂停后继续播放的事件并调用 [trackPlay](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)：
 
@@ -151,4 +151,4 @@ ht-degree: 88%
    >这可能与步骤 4 中所使用的事件源相同。请确保当视频播放继续时，每个 `trackPause()` API 调用均与随后的一个 `trackPlay()` API 调用相配对。
 
 * 跟踪方案：[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Chromecast SDK 随附有示例播放器，用于提供完整的跟踪示例。
+* Chromecast SDK随附的示例播放器提供了完整的跟踪示例。

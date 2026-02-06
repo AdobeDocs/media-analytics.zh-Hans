@@ -4,11 +4,11 @@ description: 使用 Media SDK 在 iOS 应用程序中实施广告跟踪。
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '359'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 100%
 
    | 变量名称 | 描述 | 必需 |
    | --- | --- | :---: |
-   | `name` | 广告时间的名称，例如前置广告、中置广告或后置广告。 | 是 |
-   | `position` | 内容中广告时间的位置编号，从 1 开始编号。 | 是 |
+   | `name` | 广告时间名称，例如前置广告、中置广告和后置广告。 | 是 |
+   | `position` | 广告时间在内容中的位置编号，从1开始编号。 | 是 |
    | `startTime` | 广告时间开始的播放头值。 | 是 |
 
    广告时间对象创建：
@@ -68,7 +68,7 @@ ht-degree: 100%
    | --- | --- | :---: |
    | `name` | 广告的友好名称. | 是 |
    | `adId` | 广告的唯一标识符。 | 是 |
-   | `position` | 广告时间中广告的位置编号，从 1 开始编号。 | 是 |
+   | `position` | 广告时间中广告的位置编号，从1开始编号。 | 是 |
    | `length` | 广告长度 | 是 |
 
    广告对象创建：

@@ -4,11 +4,11 @@ description: 了解如何创建新的调试报告。
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 84%
+ht-degree: 44%
 
 ---
 
@@ -20,16 +20,16 @@ ht-degree: 84%
 
    ![](assets/create-new-debug-report.png)
 
-1. 使用以下信息填写各个字段：
+1. 在字段中填写以下信息：
 
-   * **命名报告** - 输入播放器名称和日期，以便在认证过程中可以轻松地跟踪播放器，并将品牌与平台区分开。
+   * **为报告命名** — 输入播放器名称和日期，以便在认证期间轻松跟踪播放器，并将品牌和平台分开。
    * **Adobe Analytics**
 
-      * [!UICONTROL 用户名]和[!UICONTROL 共享密钥] - 这两个字段为可选字段，但您可以将 Web 服务 API 凭据添加到 Adobe Debug，以显示报表包的变量名称和变量设置。
+      * [!UICONTROL 用户名]和[!UICONTROL 共享密钥] — 这些字段是可选的，但您可以将网站服务API凭据添加到Adobe Debug以显示报表包的变量名称和变量设置。
 
-        您可以通过以下方法之一访问相应设置：
+        您可以通过以下方式之一进行访问：
 
-         * [!UICONTROL Analytics > 管理员 > 公司设置 > Web 服务]
+         * [!UICONTROL Analytics >管理员>公司设置> Web服务]
          * [!UICONTROL Analytics >管理员>用户管理>用户>个人用户设置]若要为新用户创建Web服务API凭据，请在[!UICONTROL 用户管理]中，将该用户添加到&#x200B;**Web服务访问**&#x200B;用户组。
 
       * [!UICONTROL 默认端点] – 此字段中的数据由 Adobe 提供，无法更改。

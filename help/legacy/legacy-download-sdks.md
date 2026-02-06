@@ -2,9 +2,9 @@
 title: 访问旧版 - Media SDK 的链接
 description: 可用平台（包括 Android、iOS、JavaScript、Chromecast 和 Roku）的旧版 SDK 下载链接。
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 70%
@@ -27,7 +27,7 @@ Adobe Media Analytics 扩展添加了适用于音频和视频的核心 JavaScrip
 * 您必须是 Adobe Experience Cloud 客户。
 * 您必须在网页上部署 Data Collection 或 DTM 嵌入代码。
 * 您必须配置 [Analytics 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hans)。
-* 必须配置[Adobe Media Analytics for Audio and Video扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=zh-Hans)。
+* 必须配置[Adobe Media Analytics for Audio and Video扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)。
 * 您必须配置 [Experience Cloud ID 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hans)。
 
 ## 下载 2.x Media SDK {#download-2x-sdks}

@@ -4,11 +4,11 @@ description: 探究验证实施时必须发出的各种调用。
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 100%
 
 **注释：**
 
-* 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
-* 线性流的长度应设置为当前节目的最佳预计长度。
+* 其他上下文数据变量应存在并包含元数据。 请参阅下面的元数据详细信息。
+* 线性流的长度应该设置为当前节目的最佳估计值。
 
 ### Adobe Analytics (AppMeasurement) 开始调用中的标准元数据 {#std-metadata-aa}
 
@@ -78,8 +78,8 @@ ht-degree: 100%
 
 **注释：**
 
-* 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
-* 应将视频开始时线性流的播放头位置设置为自当前节目开始后所经过的秒数，而不是设置为 0。
+* 其他上下文数据变量应存在并包含元数据。 请参阅下面的元数据详细信息。
+* 视频开始时的线性流播放头位置应设置为自当前节目开始以来经过的秒数，而不是0。
 
 ### Media Analytics（心跳）开始调用中的标准元数据 {#std-metadata-ma}
 
@@ -125,7 +125,7 @@ ht-degree: 100%
 * 此调用表示 Media SDK 已请求将 Adobe Analytics `pev2=ms_s` 调用发送到 Adobe Analytics (AppMeasurement) 服务器。
 * 此调用不包含自定义元数据。
 
-## 观看广告播放 {#view-ad-playback}
+## 查看广告播放 {#view-ad-playback}
 
 ### Adobe Analytics (AppMeasurement) 广告开始调用 {#aa-ad-start-call}
 
@@ -147,8 +147,8 @@ ht-degree: 100%
 
 **注释：**
 
-* 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
-* 广告开始时，如果未提供广告长度，广告长度可能会被设置为 -1。
+* 其他上下文数据变量应存在并包含元数据。 请参阅下面的元数据详细信息。
+* 如果广告开始时不可用，广告长度可设置为–1。
 
 ### Adobe Analytics (AppMeasurement) 广告开始调用中的标准元数据 {#std-metadata-aa-ad-start}
 
@@ -192,8 +192,8 @@ ht-degree: 100%
 
 **注释：**
 
-* 其他上下文数据变量应该存在并包含元数据。请参阅下面的元数据详细信息。
-* 广告开始时，如果未提供广告长度，广告长度可能会被设置为 -1。
+* 其他上下文数据变量应存在并包含元数据。 请参阅下面的元数据详细信息。
+* 如果广告开始时不可用，广告长度可设置为–1。
 
 ### Media Analytics（心跳）广告开始调用中的标准元数据 {#std-metadata-ma-ad-start}
 

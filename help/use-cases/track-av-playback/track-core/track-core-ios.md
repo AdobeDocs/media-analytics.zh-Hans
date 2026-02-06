@@ -4,11 +4,11 @@ description: 了解如何使用 iOS 上的 Media SDK 实施核心跟踪。
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '704'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -163,7 +163,7 @@ ht-degree: 100%
    * 用户在应用程序中明确点击暂停。
    * 播放器将其置于“暂停”状态。
    * （*移动应用程序*）- 用户将应用程序放入后台，但您希望应用程序保持会话打开。
-   * （*移动应用程序*）- 发生导致应用程序被置于后台运行的任何类型的系统中断。例如，用户接收到一个调用，或者出现来自其他应用程序的弹出窗口，但您希望应用程序将会话保持活动状态，以便用户有机会从中断点继续观看视频。
+   * （*移动应用程序*）- 发生导致应用程序被置于后台运行的任何类型的系统中断。例如，用户接到电话，或其他应用程序出现弹出窗口，但您希望应用程序保持会话的活动状态，以便用户有机会从中断点恢复视频。
 
 1. 识别播放器中的视频播放事件和/或视频在暂停后继续播放的事件并调用 `trackPlay`：
 
@@ -180,4 +180,4 @@ ht-degree: 100%
 有关跟踪核心播放的其他信息，请参阅以下内容：
 
 * 跟踪场景：[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* iOS SDK 随附有示例播放器，用于提供完整的跟踪示例。
+* iOS SDK随附的示例播放器提供了完整的跟踪示例。

@@ -4,8 +4,8 @@ description: 可用平台（包括 Android、iOS、JavaScript、Chromecast 和 R
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 81%
@@ -22,7 +22,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代网站标记�
 >[!NOTE]
 >
 >有关下载旧版 SDK 的信息，请参阅[旧版 - 下载 SDK](/help/legacy/legacy-download-sdks.md)。<br>
->&#x200B;>有关终止支持的重要信息，请参阅[终止支持常见问题解答](/help/additional-resources/end-of-support-faqs.md)。
+>有关终止支持的重要信息，请参阅[终止支持常见问题解答](/help/additional-resources/end-of-support-faqs.md)。
 
 ## Media SDK 和移动库 {#media-sdks-libraries}
 

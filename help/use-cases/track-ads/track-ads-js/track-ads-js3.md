@@ -3,8 +3,8 @@ title: 了解如何使用 JavaScript 3.x 跟踪广告
 description: 使用 Media SDK 在浏览器 (JS) 应用程序中实施广告跟踪。
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 88%

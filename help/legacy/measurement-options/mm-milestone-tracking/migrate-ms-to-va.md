@@ -4,8 +4,8 @@ description: 了解如何将里程碑变量更改为 Media Analytics 量度，�
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 96%
@@ -35,7 +35,7 @@ ht-degree: 96%
 
 ### 媒体模块变量
 
-| 里程碑 | 里程碑语法 | Media Analytics | Media Analytics 语法 |
+| 里程碑 | 里程碑语法 | 媒体分析 | Media Analytics 语法 |
 | --- | --- | --- | --- |
 | Media.trackUsingContextData | `s.Media.trackUsingContextData` <br> `  = true;` | 不适用 | 所有 Media Analytics 数据仅使用上下文数据发送。 |
 | Media.contextDataMapping | `s.Media.contextDataMapping = {` <br> `  "a.media.name":"eVar2,prop2",` <br> `  "a.media.segment":"eVar3",` <br> `  "a.contentType":"eVar1",` <br> `  "a.media.timePlayed":"event3",` <br> `  "a.media.view":"event1",` <br> `  "a.media.segmentView":"event2",` <br> `  "a.media.complete":"event7",` <br> `  "a.media.milestones": {` <br> `    25:"event4",` <br> `    50:"event5",` <br> `    75:"event6"` <br> `  }` <br> `};` | 不适用 | Media Analytics 上下文数据会自动填充到保留变量中。实施代码中不再需要映射到 eVar、prop 和事件。客户可以使用处理规则将上下文数据映射到变量。 |
@@ -44,7 +44,7 @@ ht-degree: 96%
 
 ### 可选变量
 
-| 里程碑 | 里程碑语法 | Media Analytics | Media Analytics 语法 |
+| 里程碑 | 里程碑语法 | 媒体分析 | Media Analytics 语法 |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | 不适用 | 我们不再提供预建的播放器映射。 |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | 不适用 | 我们不再提供预建的播放器映射。 |
@@ -59,7 +59,7 @@ ht-degree: 96%
 
 ### 广告跟踪变量
 
-| 里程碑 | 里程碑语法 | Media Analytics | Media Analytics 语法 |
+| 里程碑 | 里程碑语法 | 媒体分析 | Media Analytics 语法 |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 不适用 | 对于内容，Media Analytics 设置为 10 秒；对于广告，设置为 1 秒。无其他选项可用。 |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 不适用 | 默认情况下，广告不提供进度标记。请使用计算量度来构建广告进度标记。 |
@@ -69,7 +69,7 @@ ht-degree: 96%
 
 ### 媒体模块方法
 
-| 里程碑 | 里程碑语法 | Media Analytics | Media Analytics 语法 |
+| 里程碑 | 里程碑语法 | 媒体分析 | Media Analytics 语法 |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`：（必需）您希望在视频报表中显示的视频名称。 | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |

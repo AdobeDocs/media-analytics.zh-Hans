@@ -2,9 +2,9 @@
 title: 使用Edge Network实施Adobe流媒体服务
 description: 了解如何使用Experience Platform Edge实施Adobe流媒体服务。
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 8%
@@ -29,7 +29,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
 创建和设置方案：
 
-1. 在Adobe Experience Platform中，按照[在UI中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)中的说明开始创建架构。
+1. 在Adobe Experience Platform中，按照[在UI中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)中的说明开始创建架构。
 
 1. 在创建架构时，请在“架构详细信息”页面上，为架构选择基类时选择&#x200B;[!UICONTROL **体验事件**]。
 
@@ -129,7 +129,7 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [为请求有效负载中的自定义字段使用生成的路径](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)。
+   1. [为请求有效负载中的自定义字段使用生成的路径](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -165,13 +165,13 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
    * 根据您使用的是Adobe Analytics还是Customer Journey Analytics，将以下任一服务添加到数据流：
 
-      * [!UICONTROL **Adobe Analytics**] (如果使用Adobe Analytics)
+      * [!UICONTROL **Adobe Analytics**](如果使用Adobe Analytics)
 
-        如果您使用的是Adobe Analytics，请确保定义报表包，如[创建报表包](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述。
+        如果您使用的是Adobe Analytics，请确保定义报表包，如[创建报表包](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述。
 
-      * [!UICONTROL **Adobe Experience Platform**] (如果使用Customer Journey Analytics)
+      * [!UICONTROL **Adobe Experience Platform**](如果使用Customer Journey Analytics)
 
-     有关如何将服务添加到数据流的信息，请参阅[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans#view-details)中的“将服务添加到数据流”部分。
+     有关如何将服务添加到数据流的信息，请参阅[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)中的“将服务添加到数据流”部分。
 
      ![添加Adobe Analytics服务](assets/datastream-add-service.png)
 
@@ -332,9 +332,9 @@ Adobe Experience Platform Edge Network 允许您将发送到多个产品的数�
 
    >[!NOTE]
    >
-   >如果您将Adobe Analytics设置为数据流的上游，则自定义元数据也会出现在ContextData中，其名称为您在架构中设置的（不带租户前缀，例如myCustomField）。 这使得可以使用所有可用于ContextData的Adobe Analytics功能，例如[创建处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)。
+   >如果您将Adobe Analytics设置为数据流的上游，则自定义元数据也会出现在ContextData中，其名称为您在架构中设置的（不带租户前缀，例如myCustomField）。 这使得可以使用所有可用于ContextData的Adobe Analytics功能，例如[创建处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)。
 
-1. 按照[共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=zh-Hans)中的说明共享项目。
+1. 按照[共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)中的说明共享项目。
 
    >[!NOTE]
    >

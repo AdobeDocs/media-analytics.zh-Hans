@@ -4,8 +4,8 @@ description: 使用Adobe流媒体解决方案获得针对内容、音频和广�
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 59%
@@ -38,7 +38,7 @@ Adobe流媒体服务为流媒体内容（如音频、视频和广告）提供强
 
 * **实时分析**：在多个渠道间利用关键性能指标（如媒体开始播放次数）做出实时、切实可行的决策。
 
-  借助流媒体服务，您可以获得关于持续时间、停止和开始的近乎实时、精细的详细信息，以便您评估和组合视频和音频量度。 通过这些见解，可了解客户的观看和收听习惯，并通过高度个性化的推荐提高参与度。
+  借助流媒体服务，您可以获得关于持续时间、停止和开始的近乎实时、精细的详细信息，以便您评估和组合视频和音频量度。 通过这些洞察，可了解客户的观看和收听习惯，并通过高度个性化的推荐提高参与度。
 
 * **促进参与**：通过减少缓冲事件以及通过了解应在内容中的何时何处播放广告以提供流畅、不那么令人反感的体验，促使用户重复访问，从而充分吸引用户参与。
 

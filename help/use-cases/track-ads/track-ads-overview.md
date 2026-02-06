@@ -4,11 +4,11 @@ description: 有关使用 Media SDK 实施广告跟踪的概述。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '510'
+ht-degree: 79%
 
 ---
 
@@ -30,13 +30,13 @@ ht-degree: 0%
 >[!NOTE]
 >包括前置广告
 
-* 为广告时间创建一个 `adBreak` 对象实例。例如：`adBreakObject`。
+* 为广告时间创建一个 `adBreak` 对象实例。例如，`adBreakObject`。
 
 * 使用 `adBreakObject` 为广告时间开始事件调用 `trackEvent`。
 
 ### 在每个广告资源开始时
 
-* 为广告资源创建一个广告对象实例。例如：`adObject`。
+* 为广告资源创建一个广告对象实例。例如，`adObject`。
 * 填充广告元数据 `adCustomMetadata`。
 * 为广告开始事件调用 `trackEvent`。
 
@@ -72,8 +72,8 @@ ht-degree: 0%
 
    | 变量名称 | 描述 | 必需 |
    | --- | --- | :---: |
-   | `name` | 广告时间的名称，例如前置广告、中置广告或后置广告。 | 是 |
-   | `position` | 内容中广告时间的位置编号，从 1 开始编号。 | 是 |
+   | `name` | 广告时间名称，例如前置广告、中置广告和后置广告。 | 是 |
+   | `position` | 广告时间在内容中的位置编号，从1开始编号。 | 是 |
    | `startTime` | 广告时间开始的播放头值。 | 是 |
 
 1. 在 `MediaHeartbeat` 实例中使用 `AdBreakStart` 调用 `trackEvent()`，以开始跟踪广告时间。
@@ -86,13 +86,13 @@ ht-degree: 0%
    | --- | --- | :---: |
    | `name` | 广告的友好名称. | 是 |
    | `adId` | 广告的唯一标识符。 | 是 |
-   | `position` | 广告时间中广告的位置编号，从 1 开始编号。 | 是 |
+   | `position` | 广告时间中广告的位置编号，从1开始编号。 | 是 |
    | `length` | 广告长度 | 是 |
 
 1. （可选）通过上下文数据变量将标准和/或广告元数据附加到跟踪会话。
 
-   * **标准广告元数据 -** 对于标准广告元数据，请使用适用于您的平台的键创建标准广告元数据键值对的字典。
-   * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充。
+   * **标准广告元数据 —**&#x200B;对于标准广告元数据，请使用平台的键创建标准广告元数据键值对的字典。
+   * **自定义广告元数据 —**&#x200B;对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告的数据进行填充。
 
 1. 在 `MediaHeartbeat` 实例中使用 `AdStart` 事件调用 `trackEvent()`，以开始跟踪广告播放。
 

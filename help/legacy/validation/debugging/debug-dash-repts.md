@@ -4,19 +4,19 @@ description: 了解 Adobe 调试仪表板。
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
 feature: "Streaming Media, Analytics Dashboards"
-role: User, Admin, Data Engineer
-source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '82'
-ht-degree: 100%
+ht-degree: 39%
 
 ---
 
 # 调试仪表板和报告{#debug-dashboards-and-reports}
 
-Adobe Debug 可实时提供报表，以便您可以查看在视频播放期间正在发送的点击量和元数据。所有这类报表都可以保存在 Debug 中。
+Adobe Debug提供实时报表，以便您查看在视频播放期间发送的点击和元数据。 其中每个报表都可以保存在Debug中。
 
-如果要进行认证，只需通过复制 URL 并发送该链接（在 ZenDesk 票证中），便可以共享这些报表。
+为了认证，这些报告可以通过简单地复制URL并发送链接（例如，在ZenDesk票证中）来共享。
 
 >[!NOTE]
 >

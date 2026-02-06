@@ -4,17 +4,17 @@ description: 了解如何使用 JSON 验证架构来验证事件请求。
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '121'
+ht-degree: 72%
 
 ---
 
 # 验证事件请求{#validating-event-requests}
 
-可在后端使用 JSON 架构对每个事件类型的 JSON 请求正文进行验证。当 API 调用验证失败时，HTTP 响应正文将填充错误消息。
+在后端使用JSON架构验证每个事件类型的JSON请求正文。 当API调用的验证失败时，会使用错误消息填充HTTP响应正文。
 
 可在此处公开访问每个事件类型的 JSON 验证架构：`{uri}/api/v1/schemas/{eventType}`（例如，`{uri}/api/v1/schemas/sessionEnd`）。这些 JSON 验证架构是绝对的权威，其可为每个事件类型确定正确的请求正文参数。
 

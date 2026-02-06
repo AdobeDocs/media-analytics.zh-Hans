@@ -4,11 +4,11 @@ description: 了解如何从 Media SDK 的 1.x 版本迁移到 2.x 版本。
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '216'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 以下是 1.x 与 2.x 之间的主要差异：
 
 * **插件、代理 -**&#x200B;您不再需要实施 Analytics、VideoPlayer 和心跳的插件和代理。
-* **配置 -**&#x200B;您不再需要实例化 1.x 插件的配置。
+* **配置 —**&#x200B;您不再需要实例化1.x插件的配置。
 
 ## 2.x 的优势 {#benefits-of-two-x}
 

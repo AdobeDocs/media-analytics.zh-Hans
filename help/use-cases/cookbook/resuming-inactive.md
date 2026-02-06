@@ -4,11 +4,11 @@ description: 了解如何恢复不活动的会话。
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '159'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 Media SDK 会自动跟踪媒体播放处于下列某个不活动状态的时长：
 
-* 暂停
+* 已暂停
 * 搜寻
-* 停滞
+* 已搁置
 * 缓冲
 
 如果媒体跟踪会话保持不活动状态超过 30 分钟，则该会话将被自动关闭。如果用户恢复之前不活动的视频跟踪会话 (`trackPlay`)，媒体心跳会使用先前使用的视频信息和元数据自动创建新的视频会话，并发送恢复心跳事件。有关更多信息，请参阅[音频和视频参数](/help/implementation/variables/audio-video-parameters.md)。

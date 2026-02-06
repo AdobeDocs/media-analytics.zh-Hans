@@ -4,11 +4,11 @@ description: 了解如何处理在广告之间出现的意外main：play调用�
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 97%
+ht-degree: 75%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 在一些广告跟踪场景中，您可能会遇到在一个广告结束与另一个广告开始之间意外发生 `main:play` 调用的情况。如果广告完成调用与下一个广告开始调用之间的延迟超过 250 毫秒，则 Media SDK 将回退到发送 `main:play` 调用。如果这种回退到 `main:play` 的情况发生在前置广告时间，则内容开始量度可能会提前引入。
 
-对于如上所述的广告空白，由于它与任何广告内容均不存在重叠，因此 Media SDK 会将其解读为主内容。Media SDK 上未引入任何广告信息，并且播放器处于播放状态。如果没有广告信息并且播放器处于播放状态，那么 Media SDK 会默认将出现的空白时长计入主内容的时长。VA SDK 不能将该播放时长计为无广告信息的时长。
+上述广告之间的间隙由Media SDK解释为主内容，因为此间隙与任何广告内容都不重叠。 Media SDK上未设置任何广告信息，并且播放器处于播放状态。 如果没有广告信息，并且播放器状态为正在播放，则Media SDK默认将间隙的持续时间计入主内容。 VA SDK 不能将该播放时长计为无广告信息的时长。
 
 ## 识别
 
@@ -40,7 +40,7 @@ ht-degree: 97%
 
 ***延迟触发广告完成调用。***
 
-在播放器内部处理此空白：延迟为第一个广告调用 `trackEvent:AdComplete`，然后紧接着为第二个广告调用 `trackEvent:AdStart`。当第一个广告完成后，应用程序应延迟调用 `AdComplete` 事件。请确保在广告时间为上一个广告调用 `trackEvent:AdComplete`。如果播放器能识别出当前的广告资源是广告时间的最后一个广告，则可立即调用 `trackEvent:AdComplete`。此解决办法将导致计入前一个广告单元的广告用时额外多出，多出的时间不会超过 1 秒。
+在播放器内部处理此空白：延迟为第一个广告调用 `trackEvent:AdComplete`，然后紧接着为第二个广告调用 `trackEvent:AdStart`。当第一个广告完成后，应用程序应延迟调用 `AdComplete` 事件。请确保在广告时间为上一个广告调用 `trackEvent:AdComplete`。如果播放器能识别出当前的广告资源是广告时间的最后一个广告，则可立即调用 `trackEvent:AdComplete`。此分辨率将导致不到1秒的额外广告时间归属于上一个广告单元。
 
 **在广告时间（包括前置广告）开始时：**
 

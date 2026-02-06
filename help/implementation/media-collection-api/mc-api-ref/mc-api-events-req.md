@@ -4,8 +4,8 @@ description: 媒体收集API事件请求端点参数和响应是什么？
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 95%
@@ -49,7 +49,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->***广告跟踪 -**&#x200B;您只能跟踪`adBreak`* 内的广告。
+>***广告跟踪 -**您只能跟踪`adBreak`* 内的广告。
 >
 >在广告头尾没有 `adBreakStart` 和 `adBreakComplete`“书挡”的情况下，`adStart` 和 `adComplete` 事件将被忽略，并且会将相应的广告持续时间作为主内容持续时间进行跟踪。这可能会对 Adobe Analytics 中可用的聚合数据产生重大影响。
 

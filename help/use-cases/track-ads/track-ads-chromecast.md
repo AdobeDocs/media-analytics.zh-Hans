@@ -4,11 +4,11 @@ description: 使用 Media SDK 在 Chromecast 应用程序中实施广告跟踪�
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 100%
 
 1. （可选）通过上下文数据变量将标准和/或广告元数据附加到媒体跟踪会话。
 
-   * **标准广告元数据 -** 对于标准广告元数据，请使用适用于您的平台的键创建标准广告元数据键值对的字典：
+   * **标准广告元数据 —**&#x200B;对于标准广告元数据，请使用平台的键创建标准广告元数据键值对的字典：
    * **自定义广告元数据 -** 对于自定义元数据，请为自定义数据变量创建变量对象，然后使用当前广告资源的数据进行填充：
 
 1. 使用 `AdStart` 事件调用 `trackEvent()`，以开始跟踪广告播放。

@@ -4,8 +4,8 @@ description: 了解如何使用 Roku SceneGraph XML 编程框架跟踪媒体。
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件不适用于在 SceneGraph 上运行的应用程序（例如线程）。因此，计划使用 SceneGraph 框架的 Roku 应用程序开发人员无法调用 Adobe Mobile SDK API（后者类似于旧版 BrightScript 应用程序中提供的 API）。
 
-## 体系结构 {#architecture}
+## 结构 {#architecture}
 
 为了向 AdobeMobile SDK 添加 SceneGraph 支持，Adobe 已添加了一个新的 API，通过此 API，可在 AdobeMobile SDK 和 `adbmobileTask` 之间创建一个连接器桥。后者是用于 SDK API 执行的 SceneGraph 节点。（在本文档的其他部分中对 `adbmobileTask` 的用法进行了详细解释。）
 

@@ -4,11 +4,11 @@ description: 了解如何使用 Android 上的 Media SDK 实施核心跟踪。
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '689'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -68,8 +68,8 @@ ht-degree: 100%
      >
      >将标准元数据对象附加到媒体对象是可选的。
 
-      * 媒体元数据键 API 引用 - [标准元数据键 - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * 请在此处查看可用视频元数据的完整集合：[音频和视频参数](/help/implementation/variables/audio-video-parameters.md)
+      * 媒体元数据键API引用 — [标准元数据键 — Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+      * 请在此处查看可用视频元数据的完整集合： [音频和视频参数](/help/implementation/variables/audio-video-parameters.md)
 
    * **自定义元数据**
 
@@ -177,4 +177,4 @@ ht-degree: 100%
 有关跟踪核心播放的其他信息，请参阅以下内容：
 
 * 跟踪场景：[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Android SDK 随附有示例播放器，用于提供完整的跟踪示例。
+* Android SDK随附的示例播放器提供了完整的跟踪示例。

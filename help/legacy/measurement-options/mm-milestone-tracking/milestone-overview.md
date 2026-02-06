@@ -4,11 +4,11 @@ description: 已弃用 � 了解如何为里程碑实施设置视频报表
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3369'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ### 里程碑视频配置
 
-要跟踪视频，请指定一组&#x200B;*“自定义转化变量”*(eVar) 和&#x200B;*“自定义事件”*，以用于跟踪和报告。有一个&#x200B;*“自定义分析”*&#x200B;变量 (`s.prop`) 也用于路径分析。
+要跟踪视频，请指定一组&#x200B;*“自定义转化变量”*(eVar) 和&#x200B;*“自定义事件”*，以用于跟踪和报告。有一个“自定义洞察”**&#x200B;变量 (`s.prop`) 也用于路径分析。
 
 将您为每个量度选择的变量添加到视频配置页面。这样，系统就可以自动生成标准视频报告并设置其格式。*视频名称* eVar 和&#x200B;*视频查看次数* 计数器都是必需的。其他变量是可选的，但建议使用这些变量来完成测量。启用视频跟踪后，您可以查看基于使用视频跟踪报告的视频数据生成的报表。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 | 变量    | 描述 |
 | --- | --- |
 | `Media.trackUsingContextData` | **语法：** <br/><br/> `s.Media.trackUsingContextData = true;`<br/>此选项可启用集成的视频跟踪。如果设置为 true，则媒体模块会生成用于媒体跟踪的上下文数据，而不是旧版 `pev3`。<br/>可使用 `Media.contextDataMapping` 将上下文数据映射到选定的 eVar 和 event。<br/>默认值：`false` |
-| `Media.contextDataMapping` | **语法：** <br/><br/> `s.Media.contextDataMapping = {`<br/>      `"a.media.name":"eVar2, prop2",` <br/>     `"a.media.segment":"eVar3",` <br/>     `"a.contentType":"eVar1",` <br/>     `"a.media.timePlayed":"event3",` <br/>     `"a.media.view":"event1",` <br/>     `"a.media.segmentView":"event2",` <br/>     `"a.media.complete":"event7",` <br/>     `"a.media.milestones":{` <br/>         `25:"event4",` <br/>         `50:"event5",` <br/>         `75:"event6"` <br/>     ` }` <br/> `};`<br/><br/>一个对象，可定义映射到要用于视频测量的 eVar 和 event 的变量。此对象必须映射以下字段：<br/><br/> **a.media.name：**（必需）在变量中填充视频名称。提供您选择用来存储视频名称的 eVar，以及要用于视频路径的“自定义分析视频”变量 (`s.prop`)。以逗号分隔列表的形式提供值。<br/><br/> **a.media.segment：**（可选）要用于存储媒体区段名称的 eVar。a.contentType：（可选）要用于存储视频值的 eVar，其中包含已启用的用于生成视频访问和访客报表的访问和访客跟踪。您选择的变量可能已用于存储文章幻灯片或产品页面之类的数据 <br/><br/> **a.media.view：**（必需）要用于计数媒体查看次数的事件。<br/><br/> **a.media.segmentView：**（可选）要用于计数区段查看次数的事件。<br/><br/> **a.media.complete：**（可选）要用于计数完整查看次数的事件。<br/><br/> **a.media.timePlayed：**（可选，但强烈推荐）要用于存储已播放视频秒数的数字事件。<br/><br/> **a.media.milestones：**（可选）一个对象，可将 s.Media.trackMilestones 里程碑映射到计数器事件。如果您定义里程碑，则应将 Media.segmentByMilestones 设置为 true。<br/><br/> **广告跟踪** 要跟踪广告，可使用以下上下文数据变量：<br/> **a.media.ad.name：**（必需）在变量中填充广告名称。提供您选择用来存储广告名称的 eVar，以及要用于路径的“自定义分析视频”变量 (`s.prop`)。以逗号分隔列表的形式提供值。<br/><br/> **a.media.ad.pod：**&#x200B;广告在主内容中播放的位置。<br/><br/> **a.media.ad.podPosition**：广告在面板中播放的位置。<br/><br/> **a.media.ad.CPM**：应用于此播放的 CPM 或加密 CPM（具有前缀“~”）。<br/><br/> **a.media.ad.view：**&#x200B;与 `a.media.view` 的工作方式相同<br/><br/> **a.media.ad.clicked：**&#x200B;计数广告的点击次数（`Media.click` 调用）<br/><br/> **a.media.ad.timePlayed：**&#x200B;与 `a.media.timePlayed` 的工作方式相同<br/><br/> **a.media.ad.complete：**&#x200B;与 `a.media.complete` 的工作方式相同 a.media.ad.segment：与 `a.media.segment` 的工作方式相同<br/><br/> **a.media.ad.segmentView：**&#x200B;与 `a.media.segmentView` 的工作方式相同<br/><br/> **a.media.ad.milestones：**&#x200B;与 `a.media.milestones` 的工作方式相同<br/><br/> **a.media.ad.offsetMilestones：**&#x200B;与 `a.media.offsetMilestones` 的工作方式相同 |
+| `Media.contextDataMapping` | **语法：** <br/><br/> `s.Media.contextDataMapping = {`<br/>      `"a.media.name":"eVar2, prop2",` <br/>     `"a.media.segment":"eVar3",` <br/>     `"a.contentType":"eVar1",` <br/>     `"a.media.timePlayed":"event3",` <br/>     `"a.media.view":"event1",` <br/>     `"a.media.segmentView":"event2",` <br/>     `"a.media.complete":"event7",` <br/>     `"a.media.milestones":{` <br/>         `25:"event4",` <br/>         `50:"event5",` <br/>         `75:"event6"` <br/>     ` }` <br/> `};`<br/><br/>一个对象，可定义映射到要用于视频测量的 eVar 和 event 的变量。此对象必须映射以下字段：<br/><br/> **a.media.name：**（必需）在变量中填充视频名称。提供您选择用来存储视频名称的 eVar，以及要用于视频路径的“自定义洞察视频”变量 (`s.prop`)。以逗号分隔列表的形式提供值。<br/><br/> **a.media.segment：**（可选）要用于存储媒体区段名称的 eVar。a.contentType：（可选）要用于存储视频值的 eVar，其中包含已启用的用于生成视频访问和访客报表的访问和访客跟踪。您选择的变量可能已用于存储文章幻灯片或产品页面之类的数据 <br/><br/> **a.media.view：**（必需）要用于计数媒体查看次数的事件。<br/><br/> **a.media.segmentView：**（可选）要用于计数区段查看次数的事件。<br/><br/> **a.media.complete：**（可选）要用于计数完整查看次数的事件。<br/><br/> **a.media.timePlayed：**（可选，但强烈推荐）要用于存储已播放视频秒数的数字事件。<br/><br/> **a.media.milestones：**（可选）一个对象，可将 s.Media.trackMilestones 里程碑映射到计数器事件。如果您定义里程碑，则应将 Media.segmentByMilestones 设置为 true。<br/><br/> **广告跟踪** 要跟踪广告，可使用以下上下文数据变量：<br/> **a.media.ad.name：**（必需）在变量中填充广告名称。提供您选择用来存储广告名称的 eVar，以及要用于路径的“自定义洞察视频”变量 (`s.prop`)。以逗号分隔列表的形式提供值。<br/><br/> **a.media.ad.pod：**&#x200B;广告在主内容中播放的位置。<br/><br/> **a.media.ad.podPosition**：广告在面板中播放的位置。<br/><br/> **a.media.ad.CPM**：应用于此播放的 CPM 或加密 CPM（具有前缀“~”）。<br/><br/> **a.media.ad.view：**&#x200B;与 `a.media.view` 的工作方式相同<br/><br/> **a.media.ad.clicked：**&#x200B;计数广告的点击次数（`Media.click` 调用）<br/><br/> **a.media.ad.timePlayed：**&#x200B;与 `a.media.timePlayed` 的工作方式相同<br/><br/> **a.media.ad.complete：**&#x200B;与 `a.media.complete` 的工作方式相同 a.media.ad.segment：与 `a.media.segment` 的工作方式相同<br/><br/> **a.media.ad.segmentView：**&#x200B;与 `a.media.segmentView` 的工作方式相同<br/><br/> **a.media.ad.milestones：**&#x200B;与 `a.media.milestones` 的工作方式相同<br/><br/> **a.media.ad.offsetMilestones：**&#x200B;与 `a.media.offsetMilestones` 的工作方式相同 |
 | `Media.trackVars` | **语法：** <br/><br/> `s.Media.trackVars =` <br/>    `"events,` `prop2,` `eVar1,` `eVar2,` `eVar3";` <br/><br/>在您的视频跟踪代码中设置的所有变量的逗号分隔列表。 |
 | `Media.trackEvents` | **语法：** <br/><br/> `s.Media.trackEvents =` <br/>    `"event1,` `event2,` `event3,` `event4,` `event5,` `event6,` `event7"` <br/><br/>在您的视频跟踪代码中设置的所有事件的逗号分隔列表。 |
 

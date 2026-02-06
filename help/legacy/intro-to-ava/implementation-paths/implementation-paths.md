@@ -3,11 +3,11 @@ title: 提供有哪些流媒体实施路径？
 description: 了解 Adobe Streaming Media 实施路径，包括 Adobe Experience Platform Data Collection。
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -57,7 +57,7 @@ Primetime 通过提供用于视频发布、广告、个性化和分析的模块�
 * 支持在包含（或不含）动态广告插入时测量广告时间。
 * TVSDK 的无缝广告插入模型允许 Analytics 直接测量广告播放，从而提高准确性。
 * 可靠的事件和元数据集可确保跨 QoS 缓冲或移动连接中断问题和最终用户交互（如搜索、暂停和后台）之间的准确性。
-* 利用 ID3 元数据集成 Nielsen DTVR（线性）支持，利用 CMS 元数据集成 DCR 支持。
+* 集成了对带有ID3元数据的Nielsen DTVR（线性）和带有CMS元数据的DCR的支持。
 
 
 TVSDK 已与 Media Analtyics (Heartbeats) SDK 集成，这使得在所有受支持的平台上都可以更便捷地实施 TVSDK。要利用 Primetime，请遵循[客户端](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md)中提供的相同准则和先决条件，以及以下适用于您的平台的文档：[《Primetime 用户指南》](https://helpx.adobe.com/cn/primetime/user-guide.html)。

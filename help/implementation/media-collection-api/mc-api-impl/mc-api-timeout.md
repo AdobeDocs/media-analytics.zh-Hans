@@ -4,11 +4,11 @@ description: 了解媒体收集API超时情况。
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
 exl-id: 0b494b27-a4a6-4af7-84c1-c44b33b6da8f
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 95%
+ht-degree: 60%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 **媒体收集 API 超时条件**
 
-媒体收集 API 是无状态的，因此它在出现超时情况时发出新会话 ID 的机制与 Media SDK 并不相同。出现超时情况时，后端将关闭会话，并且将删除使用该会话 ID 进行的所有后续调用。处理会话超时的逻辑必须在客户端中对进行处理。也就是说，播放器必须监控超时情况，并在超时发生时获取新的会话 ID。
+媒体收集 API 是无状态的，因此它在出现超时情况时发出新会话 ID 的机制与 Media SDK 并不相同。当发生超时情况时，后端将关闭会话，并且所有随后使用该会话ID进行的调用都将被丢弃。 必须在客户端中处理处理处理会话超时的逻辑。 也就是说，播放器必须监控超时情况，并在发生超时时获取新的会话ID。
 
 * **10 分钟：无 API 事件**
 

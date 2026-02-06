@@ -4,11 +4,11 @@ description: 使用 Media SDK 在 Roku 应用程序中实施广告跟踪。
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '298'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
    | 变量名称 | 描述 | 必需 |
    | --- | --- | :---: |
-   | `name` | 广告时间的名称，例如前置广告、中置广告或后置广告。 | 是 |
+   | `name` | 广告时间名称，例如前置广告、中置广告和后置广告。 | 是 |
    | `position` | 广告时间的位置编号，从 1 开始编号。 | 是 |
    | `startTime` | 广告时间开始的播放头值。 | 是 |
 

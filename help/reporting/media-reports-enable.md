@@ -4,8 +4,8 @@ description: 了解收集媒体量度的媒体报表包。在发送媒体数据�
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 98%
@@ -27,7 +27,7 @@ ht-degree: 98%
 
    ![](assets/media-reporting.png)
 
-1. 在&#x200B;**[!UICONTROL 媒体报告]**&#x200B;页面中，启用&#x200B;**[!UICONTROL 媒体核心]，**&#x200B;也可选择启用&#x200B;**[!UICONTROL 媒体广告]、**&#x200B;**[!UICONTROL 媒体章节]**&#x200B;和&#x200B;**[!UICONTROL 媒体质量]。**
+1. 在&#x200B;**[!UICONTROL 媒体报告]**&#x200B;页面中，启用&#x200B;**[!UICONTROL 媒体核心]，**&#x200B;也可选择启用&#x200B;**[!UICONTROL 媒体广告]、****[!UICONTROL 媒体章节]**&#x200B;和&#x200B;**[!UICONTROL 媒体质量]。**
 
    媒体测量包括以下模块：
 
