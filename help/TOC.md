@@ -5,7 +5,7 @@ user-guide-title: 流媒体服务指南
 breadcrumb-title: 流媒体服务指南
 user-guide-description: 实施流媒体服务。 包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
+source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 79%
@@ -29,7 +29,7 @@ ht-degree: 79%
          + [概述](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - 从 Media SDK 到 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - 从 Media SDK 到 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [JavaScript - 从 Media SDK 到 Launch &#x200B;](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
    + Edge实施（推荐） {#edge-recommended}
@@ -39,7 +39,7 @@ ht-degree: 79%
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
-      + [自定义元数据支持](/help/implementation/edge/implementation-edge-custom-metadata.md)
+      + [自定义元数据支持](implementation/edge/implementation-edge-custom-metadata.md)
    + 仅限Adobe Analytics的实施 {#analytics-only}
       + [先决条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + 媒体SDK/扩展 {#media-sdk}
