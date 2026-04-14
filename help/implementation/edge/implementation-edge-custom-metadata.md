@@ -3,7 +3,7 @@ title: 自定义元数据支持 — XDM格式
 description: 了解如何使用Experience Edge XDM格式发送带有媒体跟踪事件的自定义元数据。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 1a6ce0ddca6e52f3ad10bd69210e52e634641272
+source-git-commit: da2fe856a32f9056752b9e2c2e339d43be20372a
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
