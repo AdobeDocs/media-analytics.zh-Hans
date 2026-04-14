@@ -3,7 +3,7 @@ title: 自定义元数据支持 — XDM格式
 description: 了解如何使用Experience Edge XDM格式发送带有媒体跟踪事件的自定义元数据。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: da2fe856a32f9056752b9e2c2e339d43be20372a
+source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -301,6 +301,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 ```
 
 在此示例中：
+
 - `_mycompany.league`→发送到Analytics和AEP
 - `debugMode`和`testFlag`（在`_data.__adobe.analytics.contextData`下）仅→发送到Analytics
 
@@ -312,11 +313,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 `xdm.mediaCollection.customMetadata`是用于随事件发送自定义元数据的&#x200B;**入站API路径**。 处理后，数据将作为上下文数据变量转发到Adobe Analytics，并存储在`mediaReporting.customMetadata`下的Adobe Experience Platform中以及作为顶级拼合字段。
 
 **Adobe Analytics:**
+
 - 处理后，自定义元数据将作为上下文数据变量转发到Adobe Analytics。 `_tenant`前缀被自动去除，因此处理规则仅引用`_tenant`之后的字段路径（例如，`_mycompany.contentCategory`变为`contentCategory`）
 - 通过`_data`发送的数据也将转发到Adobe Analytics，并可通过处理规则使用
 - 使用处理规则将上下文数据变量映射到eVar、prop或其他Analytics变量。 有关详细信息，请参阅Adobe Experience Platform Edge Network的[数据变量映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/data-var-mapping)。
 
 **Adobe Experience Platform：**
+
 - 自定义元数据字段必须定义为XDM架构中的自定义字段（例如，`_mycompany`），并且它们可以在AEP中作为拼合字段存储和查询
 
   ![XDM架构中的自定义字段定义](assets/custom_metadata.png)
@@ -336,6 +339,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 - [自定义元数据支持](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)。 — MC API（JSON格式）
 - [媒体收集详细信息数据类型](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details) — XDM架构引用
 - [Adobe Experience Platform Edge Network的数据变量映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/data-var-mapping) — XDM字段的Analytics上下文数据映射
+
 <!--
 - [Session endpoints](sessions.md) — Session lifecycle management
 - [Ad endpoints](ads.md) — Track advertising impressions
