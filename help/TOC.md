@@ -30,7 +30,7 @@ sub-product: media analytics
          + [概述](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - 从 Media SDK 到 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - 从 Media SDK 到 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [JavaScript - 从 Media SDK 到 Launch &#x200B;](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
    + 变量 {#variables}
