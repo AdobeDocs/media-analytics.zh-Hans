@@ -24,7 +24,7 @@ ht-degree: 12%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.podFriendlyName` |
-| **XDM集合字段** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM集合字段** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **必需** | 是(Mobile SDK)；否（Edge、媒体收集API） |
 | **发送条件** | 广告开始、广告关闭 |
 

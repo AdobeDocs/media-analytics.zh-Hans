@@ -24,7 +24,7 @@ season变量是节目的季编号（通常是诸如`"2"`之类的字符串整数
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.season` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **必需** | 否 |
 | **发送条件** | 会话开始，会话关闭 |
 

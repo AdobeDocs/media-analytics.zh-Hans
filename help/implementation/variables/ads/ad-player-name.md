@@ -24,7 +24,7 @@ ht-degree: 11%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.playerName` |
-| **XDM集合字段** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **必需** | 是 |
 | **发送条件** | 广告开始、广告关闭 |
 
