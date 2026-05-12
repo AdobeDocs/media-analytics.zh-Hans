@@ -1,0 +1,172 @@
+---
+title: 媒体下载标志
+description: 将会话标记为已下载的离线播放，以便与流式传输会话分开报告。
+feature: Streaming Media
+role: Developer
+source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 10%
+
+---
+
+
+# 媒体下载标志
+
+>[!BEGINSHADEBOX]
+
+*本页介绍&#x200B;**Media downloaded flag**变量的数据收集。 查看相应报表维度的[下载的媒体](/help/reporting/dimensions/media-downloaded-flag.md)。*
+
+>[!ENDSHADEBOX]
+
+媒体已下载标记指示会话是先前下载的离线内容的播放，而不是来自Internet的实时流的播放。 在初始化跟踪器(Mobile SDK)时设置它，或将其包含在`sessionStart`有效负载（Edge/媒体收集API）中。 使用此标记可在报告中将离线播放与流式处理会话分开。
+
+| 属性 | 值 |
+| --- | --- |
+| **上下文数据变量** | `a.media.downloaded` |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **必需** | 否 |
+| **发送条件** | 会话开始，会话关闭 |
+
+## Web SDK
+
+调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`mediaCollection.sessionDetails`内将`isDownloaded`设置为`true`：
+
+```javascript
+alloy("sendEvent", {
+  xdm: {
+    eventType: "media.sessionStart",
+    mediaCollection: {
+      sessionDetails: {
+        name: "video-123",
+        length: 128,
+        contentType: "vod",
+        playerName: "HTML5 Player",
+        channel: "Sports",
+        streamType: "video",
+        isDownloaded: true
+      },
+      playhead: 0
+    }
+  }
+});
+```
+
+## Mobile SDK
+
+使用`MediaConstants.TrackerConfig.DOWNLOADED_CONTENT`创建跟踪器时，在跟踪器配置中设置下载内容标志。
+
+**iOS (Swift)**
+
+```swift
+var config: [String: Any] = [:]
+config[MediaConstants.TrackerConfig.PLAYER_NAME] = "HTML5 Player"
+config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
+config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
+
+Media.createTrackerWith(config: config) { tracker in
+    self.tracker = tracker
+}
+```
+
+**Android (Kotlin)**
+
+```kotlin
+val config = HashMap<String, Any>()
+config[MediaConstants.TrackerConfig.PLAYER_NAME] = "HTML5 Player"
+config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
+config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
+
+val tracker = Media.createTracker(config)
+```
+
+## Roku (BrightScript)
+
+调用`createMediaSession`时，在`mediaCollection.sessionDetails`内将`isDownloaded`设置为`true`：
+
+```brightscript
+m.aepSdk.createMediaSession({
+    "xdm": {
+        "eventType": "media.sessionStart",
+        "mediaCollection": {
+            "sessionDetails": {
+                "name": "video-123",
+                "length": 128,
+                "contentType": "vod",
+                "playerName": "Roku Player",
+                "channel": "Sports",
+                "streamType": "video",
+                "isDownloaded": true
+            },
+            "playhead": 0
+        }
+    }
+})
+```
+
+## Media Edge API
+
+在设备返回联机状态后调用[已下载](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/#downloaded)终结点，在`mediaDownloadedEvents`内批量处理完整的脱机会话。 Adobe自动将`isDownloaded`设置为`true`并分配会话ID；请勿在有效负载中包含任一会话ID。
+
+```json
+{
+  "events": [{
+    "xdm": {
+      "eventType": "media.downloaded",
+      "mediaDownloadedEvents": [
+        {
+          "mediaEventTimestamp": "YYYY-09-26T15:52:24+00:00",
+          "mediaEventType": "media.sessionStart",
+          "mediaCollection": {
+            "sessionDetails": {
+              "name": "video-123",
+              "length": 128,
+              "contentType": "vod",
+              "playerName": "HTML5 Player",
+              "channel": "Sports"
+            },
+            "playhead": 0
+          }
+        },
+        {
+          "mediaEventTimestamp": "YYYY-09-26T15:54:32+00:00",
+          "mediaEventType": "media.sessionComplete",
+          "mediaCollection": {
+            "playhead": 128
+          }
+        }
+      ]
+    }
+  }]
+}
+```
+
+## Media SDK
+
+在创建跟踪器之前在`ADB.MediaConfig`上设置`downloadedContent`：
+
+```javascript
+var mediaConfig = new ADB.MediaConfig();
+mediaConfig.trackingServer = "your.tracking.server";
+mediaConfig.playerName = "HTML5 Player";
+mediaConfig.channel = "Sports";
+mediaConfig.downloadedContent = true;
+
+var tracker = ADB.Media.getInstance(mediaConfig);
+```
+
+## 媒体收集 API
+
+在`sessionStart` POST请求的`params`对象中包括`media.downloaded`：
+
+```json
+{
+  "playerTime": { "playhead": 0, "ts": 1699523820000 },
+  "eventType": "sessionStart",
+  "params": {
+    "media.downloaded": true
+  }
+}
+```
+
+有关完整请求结构，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
