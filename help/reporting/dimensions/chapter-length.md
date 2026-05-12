@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*此页涵盖&#x200B;**章节长度**报告维度。 有关如何收集此变量，请参阅[章节长度](/help/implementation/variables/chapters/chapter-length.md)。*
+*此页涵盖&#x200B;**章节长度**&#x200B;报告维度。 有关如何收集此变量，请参阅[章节长度](/help/implementation/variables/chapters/chapter-length.md)。*
 
 >[!ENDSHADEBOX]
 
