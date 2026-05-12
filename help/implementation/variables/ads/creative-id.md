@@ -15,7 +15,7 @@ ht-degree: 18%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Creative ID**变量的数据收集。 查看相应报表维度的[Creative ID](/help/reporting/dimensions/creative-id.md)。*
+*本页介绍&#x200B;**Creative ID**&#x200B;变量的数据收集。 查看相应报表维度的[Creative ID](/help/reporting/dimensions/creative-id.md)。*
 
 >[!ENDSHADEBOX]
 

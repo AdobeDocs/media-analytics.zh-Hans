@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**媒体馈送类型**变量的数据收集。 有关相应的报表维度，请参阅[媒体馈送类型](/help/reporting/dimensions/media-feed-type.md)。*
+*本页介绍&#x200B;**媒体馈送类型**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[媒体馈送类型](/help/reporting/dimensions/media-feed-type.md)。*
 
 >[!ENDSHADEBOX]
 

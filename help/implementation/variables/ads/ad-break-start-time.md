@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告时间开始时间**变量的数据收集。 查看相应报表维度的[面板位置](/help/reporting/dimensions/pod-position.md)。*
+*本页介绍&#x200B;**广告时间开始时间**&#x200B;变量的数据收集。 查看相应报表维度的[面板位置](/help/reporting/dimensions/pod-position.md)。*
 
 >[!ENDSHADEBOX]
 

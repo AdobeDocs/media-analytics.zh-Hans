@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**隐藏式字幕**播放器状态的数据收集。 查看受隐藏式字幕影响的流数量[](/help/reporting/metrics/closed-captioning-streams-impacted.md)、[隐藏式字幕数量](/help/reporting/metrics/closed-captioning-count.md)和[隐藏式字幕总持续时长](/help/reporting/metrics/closed-captioning-total-duration.md)以了解相应的报表量度。*
+*本页介绍&#x200B;**隐藏式字幕**&#x200B;播放器状态的数据收集。 查看受隐藏式字幕影响的流数量[&#128279;](/help/reporting/metrics/closed-captioning-streams-impacted.md)、[隐藏式字幕数量](/help/reporting/metrics/closed-captioning-count.md)和[隐藏式字幕总持续时长](/help/reporting/metrics/closed-captioning-total-duration.md)以了解相应的报表量度。*
 
 >[!ENDSHADEBOX]
 

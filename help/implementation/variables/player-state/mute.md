@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**静音**播放器状态的数据收集。 查看受静音影响的[流](/help/reporting/metrics/mute-streams-impacted.md)、[静音计数](/help/reporting/metrics/mute-count.md)以及相应报表量度的[静音总持续时间](/help/reporting/metrics/mute-total-duration.md)。*
+*本页介绍&#x200B;**静音**&#x200B;播放器状态的数据收集。 查看受静音影响的[流](/help/reporting/metrics/mute-streams-impacted.md)、[静音计数](/help/reporting/metrics/mute-count.md)以及相应报表量度的[静音总持续时间](/help/reporting/metrics/mute-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 

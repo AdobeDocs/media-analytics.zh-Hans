@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**聚焦**播放器状态的数据收集。 查看受聚焦影响的[流](/help/reporting/metrics/in-focus-streams-impacted.md)、[聚焦计数](/help/reporting/metrics/in-focus-count.md)和[聚焦总持续时间](/help/reporting/metrics/in-focus-total-duration.md)以了解相应的报表量度。*
+*本页介绍&#x200B;**聚焦**&#x200B;播放器状态的数据收集。 查看受聚焦影响的[流](/help/reporting/metrics/in-focus-streams-impacted.md)、[聚焦计数](/help/reporting/metrics/in-focus-count.md)和[聚焦总持续时间](/help/reporting/metrics/in-focus-total-duration.md)以了解相应的报表量度。*
 
 >[!ENDSHADEBOX]
 

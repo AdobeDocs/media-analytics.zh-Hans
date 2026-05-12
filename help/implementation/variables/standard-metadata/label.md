@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**标签**变量的数据收集。 查看相应报表维度的[标签](/help/reporting/dimensions/label.md)。*
+*本页介绍&#x200B;**标签**&#x200B;变量的数据收集。 查看相应报表维度的[标签](/help/reporting/dimensions/label.md)。*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**资产ID**变量的数据收集。 查看对应报表维度的[资产ID](/help/reporting/dimensions/asset-id.md)。*
+*本页介绍&#x200B;**资产ID**&#x200B;变量的数据收集。 查看对应报表维度的[资产ID](/help/reporting/dimensions/asset-id.md)。*
 
 >[!ENDSHADEBOX]
 

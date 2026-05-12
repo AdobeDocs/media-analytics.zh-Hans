@@ -15,7 +15,7 @@ ht-degree: 17%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Album**变量的数据收集。 有关相应的报表维度，请参阅[相册](/help/reporting/dimensions/album.md)。*
+*本页介绍&#x200B;**Album**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[相册](/help/reporting/dimensions/album.md)。*
 
 >[!ENDSHADEBOX]
 
