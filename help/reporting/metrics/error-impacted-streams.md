@@ -1,0 +1,26 @@
+---
+title: 受错误影响的流
+description: 计算至少发生一个错误的会话数。
+feature: Metrics
+role: User, Admin
+source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 9%
+
+---
+
+
+# 受错误影响的流
+
+**错误影响的流**&#x200B;量度计算至少发生一个错误（`trackError`被调用或触发了`media.error`事件）的会话。 量度是会话级别的布尔值 — 在一个受影响的流中，相同的会话计为多个错误。 对于总错误量，请使用[错误](/help/reporting/dimensions/errors.md)。
+
+## 如何计算此指标
+
+媒体后端在会话期间首次收到`media.error`事件时设置`mediaReporting.qoeDataDetails.hasErrorImpactedStreams = true`。 该量度在结束调用时报告。
+
+| 报告系统 | 来源 |
+| --- | --- |
+| Adobe Analytics | 启用[[!UICONTROL 媒体质量]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.qoe.error`收集。 |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasErrorImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| 数据馈送 | `event_list`，`post_event_list` （请参阅[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
