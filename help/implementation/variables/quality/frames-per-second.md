@@ -18,7 +18,7 @@ ht-degree: 12%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | 无（Adobe Analytics没有为帧速率分配保留的上下文数据键） |
-| **XDM集合字段** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合字段** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **必需** | 否 |
 | **发送条件** | 质量事件，会话关闭 |
 
