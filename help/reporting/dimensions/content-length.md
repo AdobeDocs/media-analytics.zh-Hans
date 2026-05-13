@@ -28,12 +28,12 @@ ht-degree: 6%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体核心]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.length`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 数据馈送 | `videolength, post_videolength` |
 
 >[!NOTE]
 >
->在Adobe Analytics中，此值还对应于[Content](content.md)维度上的&#x200B;**视频长度**&#x200B;分类。 您负责单独填充和维护该分类。 Customer Journey Analytics直接使用此维度。 如果需要，您可以使用[值分段](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)。
+>在Adobe Analytics中，此值还对应于[Content](content.md)维度上的&#x200B;**视频长度**&#x200B;分类。 您负责单独填充和维护该分类。 Customer Journey Analytics直接使用此维度。 如果需要，您可以使用[值分段](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)。
 
 >[!IMPORTANT]
 >
