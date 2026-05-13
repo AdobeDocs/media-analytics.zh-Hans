@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**发布者**报告维度。 有关如何收集此变量，请参阅[发布者](/help/implementation/variables/standard-metadata/publisher.md)。*
+*本页介绍&#x200B;**发布者**&#x200B;报告维度。 有关如何收集此变量，请参阅[发布者](/help/implementation/variables/standard-metadata/publisher.md)。*
 
 >[!ENDSHADEBOX]
 

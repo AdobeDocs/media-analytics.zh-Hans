@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**Artist**报告维度。 请参阅[艺术家](/help/implementation/variables/standard-metadata/artist.md)以了解如何收集此变量。*
+*此页面涵盖&#x200B;**Artist**&#x200B;报告维度。 请参阅[艺术家](/help/implementation/variables/standard-metadata/artist.md)以了解如何收集此变量。*
 
 >[!ENDSHADEBOX]
 

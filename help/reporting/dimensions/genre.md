@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**流派**报告维度。 有关如何收集此变量的信息，请参阅[流派](/help/implementation/variables/standard-metadata/genre.md)。*
+*本页介绍&#x200B;**流派**&#x200B;报告维度。 有关如何收集此变量的信息，请参阅[流派](/help/implementation/variables/standard-metadata/genre.md)。*
 
 >[!ENDSHADEBOX]
 

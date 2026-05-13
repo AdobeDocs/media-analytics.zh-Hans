@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**时段**报告维度。 请参阅[日期部分](/help/implementation/variables/standard-metadata/day-part.md)以了解如何收集此变量。*
+*此页面涵盖&#x200B;**时段**&#x200B;报告维度。 请参阅[日期部分](/help/implementation/variables/standard-metadata/day-part.md)以了解如何收集此变量。*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**平均比特率**事件度量，该度量报告每个会话的原始加权平均比特率。 请参阅分段维度的平均比特率（维度）[](/help/reporting/dimensions/average-bitrate.md)。 有关如何收集此变量，请参阅[比特率](/help/implementation/variables/quality/bitrate.md)。*
+*本页介绍&#x200B;**平均比特率**&#x200B;事件度量，该度量报告每个会话的原始加权平均比特率。 请参阅分段维度的平均比特率（维度）[&#128279;](/help/reporting/dimensions/average-bitrate.md)。 有关如何收集此变量，请参阅[比特率](/help/implementation/variables/quality/bitrate.md)。*
 
 >[!ENDSHADEBOX]
 

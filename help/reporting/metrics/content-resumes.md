@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**内容继续**报告量度。 有关如何收集此变量，请参阅[内容继续](/help/implementation/variables/core/content-resumes.md)。*
+*此页面涵盖&#x200B;**内容继续**&#x200B;报告量度。 有关如何收集此变量，请参阅[内容继续](/help/implementation/variables/core/content-resumes.md)。*
 
 >[!ENDSHADEBOX]
 

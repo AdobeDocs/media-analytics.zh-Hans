@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**内容**报告维度。 有关如何收集此变量，请参阅[内容ID](/help/implementation/variables/core/content-id.md)。*
+*此页面涵盖&#x200B;**内容**&#x200B;报告维度。 有关如何收集此变量，请参阅[内容ID](/help/implementation/variables/core/content-id.md)。*
 
 >[!ENDSHADEBOX]
 

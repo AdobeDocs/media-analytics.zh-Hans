@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页涵盖受焦点影响的&#x200B;**流**报表量度。 请参阅[焦点](/help/implementation/variables/player-state/in-focus.md)以了解如何收集此变量。*
+*本页涵盖受焦点影响的&#x200B;**流**&#x200B;报表量度。 请参阅[焦点](/help/implementation/variables/player-state/in-focus.md)以了解如何收集此变量。*
 
 >[!ENDSHADEBOX]
 

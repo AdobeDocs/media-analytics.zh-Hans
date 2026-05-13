@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*本页涵盖&#x200B;**开始时间**维度。 Adobe Analytics从同一`a.media.qoe.timeToStart`上下文数据变量自动填充配对的[开始时间（指标）](/help/reporting/metrics/time-to-start.md)。 Customer Journey Analytics公开单个`mediaReporting.qoeDataDetails.timeToStart`字段，您可以将其用作维度或指标。 有关如何收集此变量，请参阅[开始时间](/help/implementation/variables/quality/time-to-start.md)。*
+*本页涵盖&#x200B;**开始时间**&#x200B;维度。 Adobe Analytics从同一`a.media.qoe.timeToStart`上下文数据变量自动填充配对的[开始时间（指标）](/help/reporting/metrics/time-to-start.md)。 Customer Journey Analytics公开单个`mediaReporting.qoeDataDetails.timeToStart`字段，您可以将其用作维度或指标。 有关如何收集此变量，请参阅[开始时间](/help/implementation/variables/quality/time-to-start.md)。*
 
 >[!ENDSHADEBOX]
 

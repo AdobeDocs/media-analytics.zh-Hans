@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*此页涵盖&#x200B;**标签**报告维度。 有关如何收集此变量，请参阅[标签](/help/implementation/variables/standard-metadata/label.md)。*
+*此页涵盖&#x200B;**标签**&#x200B;报告维度。 有关如何收集此变量，请参阅[标签](/help/implementation/variables/standard-metadata/label.md)。*
 
 >[!ENDSHADEBOX]
 

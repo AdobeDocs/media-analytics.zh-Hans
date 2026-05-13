@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此页涵盖&#x200B;**工作站**报告维度。 请参阅[工作站](/help/implementation/variables/standard-metadata/station.md)以了解如何收集此变量。*
+*此页涵盖&#x200B;**工作站**&#x200B;报告维度。 请参阅[工作站](/help/implementation/variables/standard-metadata/station.md)以了解如何收集此变量。*
 
 >[!ENDSHADEBOX]
 

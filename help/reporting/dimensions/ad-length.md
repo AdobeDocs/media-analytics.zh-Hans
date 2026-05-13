@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**广告长度**报告维度。 有关如何收集此变量，请参阅[广告长度](/help/implementation/variables/ads/ad-length.md)。*
+*此页面涵盖&#x200B;**广告长度**&#x200B;报告维度。 有关如何收集此变量，请参阅[广告长度](/help/implementation/variables/ads/ad-length.md)。*
 
 >[!ENDSHADEBOX]
 

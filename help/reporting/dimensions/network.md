@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*此页涵盖&#x200B;**网络**报告维度。 有关如何收集此变量，请参阅[网络](/help/implementation/variables/standard-metadata/network.md)。*
+*此页涵盖&#x200B;**网络**&#x200B;报告维度。 有关如何收集此变量，请参阅[网络](/help/implementation/variables/standard-metadata/network.md)。*
 
 >[!ENDSHADEBOX]
 

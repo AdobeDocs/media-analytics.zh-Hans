@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**画中画计数**报告量度。 有关如何收集此变量，请参阅[画中画](/help/implementation/variables/player-state/picture-in-picture.md)。*
+*此页面涵盖&#x200B;**画中画计数**&#x200B;报告量度。 有关如何收集此变量，请参阅[画中画](/help/implementation/variables/player-state/picture-in-picture.md)。*
 
 >[!ENDSHADEBOX]
 

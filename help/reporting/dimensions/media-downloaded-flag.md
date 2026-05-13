@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**下载的媒体**报告维度。 有关如何收集此变量，请参阅[媒体下载标志](/help/implementation/variables/core/media-downloaded-flag.md)。*
+*本页介绍&#x200B;**下载的媒体**&#x200B;报告维度。 有关如何收集此变量，请参阅[媒体下载标志](/help/implementation/variables/core/media-downloaded-flag.md)。*
 
 >[!ENDSHADEBOX]
 
