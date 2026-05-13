@@ -43,7 +43,7 @@ Launch客户可在应用商店中获取这些扩展，因此他们
 
 Adobe Media Analytics for Audio and Video 可用作 Web 和移动的 Launch 扩展：
 
-* [Web Launch文档](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
+* [Web Launch文档](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hans)
 * [Mobile Launch文档](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## 平台
