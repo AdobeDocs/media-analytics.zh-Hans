@@ -4,10 +4,16 @@ description: 了解如何实施适用于 Web 应用程序的 Adobe Streaming Med
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/UBY26SeGZbGWHjwOm6-YZNET8fe5Gvvco7aIZ9Z7rZg
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 92%
+source-wordcount: 472
+ht-degree: 93%
 
 ---
 
@@ -34,18 +40,18 @@ ht-degree: 92%
 
 ## 设置 JavaScript 3.x {#set-up-javascript}
 
-1. 将[下载](/help/getting-started/download-sdks.md)的库添加到您的项目中。为方便起见，请创建对类的本地引用。
+1. 将[下载](/help/getting-started/download-sdks.md)的库添加到您的项目中。 为方便起见，请创建对类的本地引用。
 
    1. 展开您下载的 `MediaSDK-js-v3*.zip` 文件。
    1. 验证 `MediaSDK.js` 文件存在于 `libs` 目录中。
 
    1. 托管 `MediaSDK.js` 文件。
 
-      此核心 JavaScript 文件必须在一个您站点的所有页面都能访问的 Web 服务器上托管。您需要具有这些文件的路径才能进行下一步操作。
+      此核心 JavaScript 文件必须在一个您站点的所有页面都能访问的 Web 服务器上托管。 您需要具有这些文件的路径才能进行下一步操作。
 
    1. 在所有网站页面上引用 `MediaSDK.js`。
 
-      通过将下面一行代码添加到每个页面的 `<head>` 或 `<body>` 标记中，加入适用于 JavaScript 的 `MediaSDK`。例如：
+      通过将下面一行代码添加到每个页面的 `<head>` 或 `<body>` 标记中，加入适用于 JavaScript 的 `MediaSDK`。 例如：
 
       ```html
       <script type="text/javascript" src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/MediaSDK.js"></script>
@@ -73,7 +79,7 @@ ht-degree: 92%
 
    >[!IMPORTANT]
    >
-   > Media SDK (3.x) 使用媒体收集 API 跟踪媒体，该 API 与 2.x SDK 中使用的 HB 端点不同。请与 Adobe 代表联系以获取更多信息。
+   > Media SDK (3.x) 使用媒体收集 API 跟踪媒体，该 API 与 2.x SDK 中使用的 HB 端点不同。 请与 Adobe 代表联系以获取更多信息。
 
    以下是 `MediaConfig` 初始化示例：
 
@@ -100,7 +106,7 @@ ht-degree: 92%
 
    >[!IMPORTANT]
    >
-   >在媒体会话结束前，请确保您的 `tracker` 实例可以访问且未被取消分配。此实例将用于跟踪该会话的以下所有事件。
+   >在媒体会话结束前，请确保您的 `tracker` 实例可以访问且未被取消分配。 此实例将用于跟踪该会话的以下所有事件。
 
 ## 从 JavaScript 2.x 迁移到 3.x
 

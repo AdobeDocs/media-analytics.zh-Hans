@@ -4,20 +4,25 @@ description: 了解如何将受众迁移到新的Adobe Analytics for Streaming M
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 67e67a4b-bd61-4247-93b7-261bd348d29b
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/Y-Y-xWKm-zOzaQm8kMbgGx8r6BTNLl-Q5AltlF5v7aA
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: 759
 ht-degree: 1%
 
 ---
 
 # 迁移Customer Journey Analytics以使用新的流媒体字段
 
-本文档介绍了应如何更新使用名为“Media”的Adobe流媒体服务数据类型的Customer Journey Analytics设置，以便使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
+本文档介绍了应如何更新使用名为“Media”的Adobe流媒体服务数据类型的Customer Journey Analytics设置，以便使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
 
 ## 迁移Customer Journey Analytics
 
-要将Customer Journey Analytics安装程序从名为“Media”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须更新以下使用旧数据类型的安装程序：
+要将Customer Journey Analytics安装程序从名为“Media”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须更新以下使用旧数据类型的安装程序：
 
 * 数据视图
 
@@ -43,7 +48,7 @@ ht-degree: 1%
 
 1. 将派生字段中的所有旧字段替换为“媒体报告详细信息”中的新对应字段。
 
-查看[音频和视频参数](https://experienceleague.adobe.com/cn/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id)页面上的[内容ID](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)参数，以便在旧字段和新字段之间映射。 旧字段路径位于“XDM字段路径”属性下，而新字段路径位于“报告XDM字段路径”属性下。
+查看[内容ID](/help/reporting/dimensions/content.md)参数以及[流媒体服务](/help/media-overview.md)下记录的其余流媒体变量，以便在旧字段和新字段之间映射。 旧字段路径位于“XDM字段路径”属性下，而新字段路径位于“报告XDM字段路径”属性下。
 
 ![旧和新XDM字段路径](assets/field-paths-updated.jpeg)
 
@@ -61,7 +66,7 @@ ht-degree: 1%
 
    数据视图中的![旧字段路径](assets/old-field-data-view.jpeg)
 
-1. 检查[章节参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset)文章中[章节偏移](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/chapter-parameters)节中对应的新字段。
+1. 检查[章节偏移](/help/reporting/dimensions/chapter-offset.md)文章中对应的新字段。
 
 1. 在数据视图中查找新的对应字段。
 
@@ -81,7 +86,7 @@ ht-degree: 1%
 
    ![自定义新字段以创建数据视图](assets/create-derived-field2.jpeg)
 
-1. 使用&#x200B;[!UICONTROL **报告XDM字段路径**]&#x200B;的值填充&#x200B;**If**&#x200B;子句，如[章节参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name)页面上的[章节名称](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/chapter-parameters)参数中所示。
+1. 使用&#x200B;**报告XDM字段路径**&#x200B;的值填充&#x200B;[!UICONTROL **If**]&#x200B;子句，如[章节名称](/help/reporting/dimensions/chapter-name.md)页面中所示。
 
    ![章节名称](assets/chapter-name.jpeg)
 
@@ -111,7 +116,7 @@ ht-degree: 1%
 
    ![查找具有旧数据类型的字段](assets/locate-fields-with-old-datatype.jpeg)
 
-1. 查看[流媒体参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable)文章的[内容名称（变量）](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable)部分中的相应新字段。
+1. 检查[内容名称](/help/reporting/dimensions/content-name.md)文章中对应的新字段。
 
 1. 用新字段替换旧字段。
 

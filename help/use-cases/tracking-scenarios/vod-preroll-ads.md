@@ -5,16 +5,22 @@ uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/Yw1UIjZr5ZKx6AWU4anAo5kux5EoVtnQMoFLs5T2nas
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: 544
 ht-degree: 95%
 
 ---
 
 # 包含前置式广告的 VOD 播放{#vod-playback-with-pre-roll-ads}
 
-在此方案中，在主内容之前插入了前置广告。除非另外指定，否则网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案中的调用相同。网络调用在同一时间发生，但负载却不同。
+在此方案中，在主内容之前插入了前置广告。 除非另外指定，否则网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案中的调用相同。 网络调用在同一时间发生，但负载却不同。
 
 | 触发器 | 心跳方法 | 网络调用   | 注释   |
 | --- | --- | --- | --- |
@@ -32,7 +38,7 @@ ht-degree: 95%
 
 ## 参数 {#parameters}
 
-当广告播放开始时，将发送 `Heartbeat Ad Start` 调用。如果广告的开头与 10 秒计时器不一致，则 `Heartbeat Ad Start` 调用将延迟几秒钟，并转到下一个 10 秒间隔。发生此情况时，`Content Heartbeat` 将以相同的间隔发出，您可以通过检查事件类型和资源类型来区分这两种调用：
+当广告播放开始时，将发送 `Heartbeat Ad Start` 调用。 如果广告的开头与 10 秒计时器不一致，则 `Heartbeat Ad Start` 调用将延迟几秒钟，并转到下一个 10 秒间隔。 发生此情况时，`Content Heartbeat` 将以相同的间隔发出，您可以通过检查事件类型和资源类型来区分这两种调用：
 
 ### 心跳广告开始
 
@@ -61,7 +67,7 @@ ht-degree: 95%
 | `s:asset:ad_id` | &lt;广告 ID> |  |
 | `s:asset:pod_id` | &lt;广告面板 ID> |  |
 
-与 `Heartbeat Content Complete` 调用类似，当广告播放结束（即，到达播放头的结尾）时，将发送 `Heartbeat Ad Complete` 调用。此调用看起来类似于其他 `Heartbeat Ad` 调用，但包含几个特定的参数：
+与 `Heartbeat Content Complete` 调用类似，当广告播放结束（即，到达播放头的结尾）时，将发送 `Heartbeat Ad Complete` 调用。 此调用看起来类似于其他 `Heartbeat Ad` 调用，但包含几个特定的参数：
 
 ### 心跳广告结束调用
 

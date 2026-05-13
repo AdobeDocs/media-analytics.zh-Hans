@@ -5,10 +5,16 @@ uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/VR-udMMg3tOMsbxnt-f0zjkGVZNgnCON0diYrhhMuoE
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 94%
+source-wordcount: 303
+ht-degree: 95%
 
 ---
 
@@ -22,7 +28,7 @@ ht-degree: 94%
 
 ## 概述 {#overview}
 
-体验质量跟踪包括服务质量 (QoS) 和错误跟踪，在核心媒体跟踪实施中，这两项跟踪都是可选元素，而&#x200B;**不是**&#x200B;必需元素。您可以使用媒体播放器 API 来识别与 QoS 和错误跟踪相关的变量。
+体验质量跟踪包括服务质量 (QoS) 和错误跟踪，在核心媒体跟踪实施中，这两项跟踪都是可选元素，而&#x200B;**不是**&#x200B;必需元素。 您可以使用媒体播放器 API 来识别与 QoS 和错误跟踪相关的变量。
 
 ## 播放器事件 {#player-events}
 
@@ -52,7 +58,7 @@ ht-degree: 94%
    | `fps` | FPS 值 | 是 |
    | `droppedFrames` | 丢帧的数量 | 是 |
 
-   **QoS 对象创建：**&#x200B;[createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createQoSObject)
+   **QoS 对象创建：**[createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createQoSObject)
 
    ```
    qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10);
@@ -66,11 +72,11 @@ ht-degree: 94%
 
    >[!IMPORTANT]
    >
-   >请更新 QoS 对象并在每次比特率发生更改时调用比特率更改事件。这样将可以提供最为准确的 QoS 数据。
+   >请更新 QoS 对象并在每次比特率发生更改时调用比特率更改事件。 这样将可以提供最为准确的 QoS 数据。
 
 1. 确保 `getQoSObject()` 方法返回最新的 QoS 信息。
-1. 当媒体播放器遇到错误，并且错误事件可用于播放器 API 时，使用 `trackError()` 来捕获错误信息。（请参阅[概述](/help/use-cases/track-errors/track-errors-overview.md)。）
+1. 当媒体播放器遇到错误，并且错误事件可用于播放器 API 时，使用 `trackError()` 来捕获错误信息。 （请参阅[概述](/help/use-cases/track-errors/track-errors-overview.md)。）
 
    >[!TIP]
    >
-   >跟踪媒体播放器错误不会停止媒体跟踪会话。如果媒体播放器错误导致无法继续播放，请确保通过调用 `trackSessionEnd()` 后调用 `trackError()` 来关闭媒体跟踪会话。
+   >跟踪媒体播放器错误不会停止媒体跟踪会话。 如果媒体播放器错误导致无法继续播放，请确保通过调用 `trackSessionEnd()` 后调用 `trackError()` 来关闭媒体跟踪会话。

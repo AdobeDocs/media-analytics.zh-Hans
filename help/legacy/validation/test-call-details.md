@@ -5,9 +5,15 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/98Oa98xntOkB9Fe3NQ30FUdvVk0JNKJMyzjgSTvncdI
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: 616
 ht-degree: 78%
 
 ---
@@ -18,17 +24,17 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 开始调用 {#aa-start-call}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | 剧集标题 |
-| _&#x200B;**`a.media.name`**&#x200B;_ | _&#x200B;**123456**&#x200B;_ |
-| _&#x200B;**`a.media.length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
+| _**`a.media.name`**_ | _**123456**_ |
+| _**`a.media.length`**_ | _**120**_ |
 | `a.media.playerName` | HTML5 |
-| _&#x200B;**`a.media.view`**&#x200B;_ | _&#x200B;**true**&#x200B;_ |
-| `a.contentType` | vod |
-| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**自定义元数据字段**&#x200B;_ |
-| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**标准元数据字段**&#x200B;_ |
+| _**`a.media.view`**_ | _**true**_ |
+| `a.contentType` | VOD |
+| _**`custom.[value]`**_ | _**自定义元数据字段**_ |
+| _**`a.media.[value]`**_ | _**标准元数据字段**_ |
 
 **注释：**
 
@@ -37,7 +43,7 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 开始调用中的标准元数据 {#std-metadata-aa}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
 | `a.media.show` | 节目标题 |
 | `a.media.season` | 6 |
@@ -56,25 +62,25 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 开始调用中的自定义元数据 {#custom-metadata-aa}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
 ### Media Analytics（心跳）开始调用 {#ma-start-call}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
 | `s:event:type` | start |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**0**&#x200B;_ |
+| _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
 | `s:asset:name` | 剧集标题 |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
 | `s:asset:type` | main |
-| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**自定义元数据字段**&#x200B;_ |
-| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**标准元数据字段**&#x200B;_ |
+| _**`s:meta:custom.[value]`**_ | _**自定义元数据字段**_ |
+| _**`s:meta:a.media.[value]`**_ | _**标准元数据字段**_ |
 
 **注释：**
 
@@ -83,7 +89,7 @@ ht-degree: 78%
 
 ### Media Analytics（心跳）开始调用中的标准元数据 {#std-metadata-ma}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
 | `s:meta:a.media.show` | 节目 |
 | `s:meta:a.media.season` | 6 |
@@ -102,16 +108,16 @@ ht-degree: 78%
 
 ### Media Analytics（心跳）开始调用中的自定义元数据 {#custom-metadata-ma}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
 ### Media Analytics（心跳）Adobe Analytics 开始调用 {#ma-aa-start}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_start**&#x200B;_ |
+| _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:name` | 剧集标题 |
@@ -129,21 +135,21 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 广告开始调用 {#aa-ad-start-call}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
-| _&#x200B;**`pev2`**&#x200B;_ | _&#x200B;**msa_s**&#x200B;_ |
+| _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
-| _&#x200B;**`a.media.ad.name`**&#x200B;_ | _&#x200B;**9378**&#x200B;_ |
+| _**`a.media.ad.name`**_ | _**9378**_ |
 | `a.media.ad.friendlyName` | Video_VPAID_DFA |
 | `a.media.ad.podFriendlyName` | preroll |
-| _&#x200B;**`a.media.ad.length`**&#x200B;_ | _&#x200B;**15**&#x200B;_ |
+| _**`a.media.ad.length`**_ | _**15**_ |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0.0 |
-| _&#x200B;**`a.media.ad.view`**&#x200B;_ | _&#x200B;**True**&#x200B;_ |
-| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**元数据字段**&#x200B;_ |
-| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**标准元数据字段**&#x200B;_ |
+| _**`a.media.ad.view`**_ | _**True**_ |
+| _**`custom.[value]`**_ | _**元数据字段**_ |
+| _**`a.media.[value]`**_ | _**标准元数据字段**_ |
 
 **注释：**
 
@@ -152,7 +158,7 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 广告开始调用中的标准元数据 {#std-metadata-aa-ad-start}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
 | `a.media.show` | 节目标题 |
 | `a.media.season` | 6 |
@@ -171,24 +177,24 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 广告开始调用中的自定义元数据 {#custom-metadata-aa-ad-start}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
 ### Media Analytics（心跳）广告开始调用 {#ma-ad-start-call}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**start**&#x200B;_ |
+| _**`s:event:type`**_ | _**start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:ad_id` | 9378 |
-| _&#x200B;**`l:asset:length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
-| `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**广告**&#x200B;_ |
-| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**自定义元数据字段**&#x200B;_ |
-| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**标准元数据字段**&#x200B;_ |
+| _**`l:asset:length`**_ | _**120**_ |
+| `s:stream:type` | VOD |
+| _**`s:asset:type`**_ | _**广告**_ |
+| _**`s:meta:custom.[value]`**_ | _**自定义元数据字段**_ |
+| _**`s:meta:a.media.[value]`**_ | _**标准元数据字段**_ |
 
 **注释：**
 
@@ -197,7 +203,7 @@ ht-degree: 78%
 
 ### Media Analytics（心跳）广告开始调用中的标准元数据 {#std-metadata-ma-ad-start}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
 | `s:meta:a.media.show` | 节目 |
 | `s:meta:a.media.season` | 6 |
@@ -216,16 +222,16 @@ ht-degree: 78%
 
 ### Media Analytics（心跳）广告开始调用中的自定义元数据 {#custom-metadata-ma-ad-start}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
 ### Media Analytics（心跳）Adobe Analytics 广告开始调用 {#ma-aa-ad-start-call}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_ad_start**&#x200B;_ |
+| _**`s:event:type`**_ | _**aa_ad_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
@@ -235,49 +241,49 @@ ht-degree: 78%
 
 ### Media Analytics（心跳）广告播放调用 {#ma-ad-play-call}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**play**&#x200B;_ |
+| _**`s:event:type`**_ | _**play**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**广告**&#x200B;_ |
+| `s:stream:type` | VOD |
+| _**`s:asset:type`**_ | _**广告**_ |
 
 ### Media Analytics（心跳）广告暂停调用 {#ma-ad-pause-call}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pause**&#x200B;_ |
+| _**`s:event:type`**_ | _**pause**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**广告**&#x200B;_ |
+| `s:stream:type` | VOD |
+| _**`s:asset:type`**_ | _**广告**_ |
 
 ### Media Analytics（心跳）Adobe Analytics 广告结束调用 {#ma-aa-ad-complete-call}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**complete**&#x200B;_ |
+| _**`s:event:type`**_ | _**complete**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**广告**&#x200B;_ |
+| `s:stream:type` | VOD |
+| _**`s:asset:type`**_ | _**广告**_ |
 
 ## 播放主内容 {#play-main-content}
 
 ### Media Analytics（心跳）播放调用 {#ma-play-call}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
 | `s:event:type` | play |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
-| _&#x200B;**`l:event:duration`**&#x200B;_ | _&#x200B;**10189**&#x200B;_ |
+| _**`l:event:playhead`**_ | _**29**_ |
+| _**`l:event:duration`**_ | _**10189**_ |
 | `s:asset:name` | 剧集标题 |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
@@ -293,10 +299,10 @@ ht-degree: 78%
 
 ### Media Analytics（心跳）暂停调用 {#ma-pause-call}
 
-| 参数 | 值（示例） |
+| 参数 |  值（示例）  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pause**&#x200B;_ |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
+| _**`s:event:type`**_ | _**pause**_ |
+| _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | 剧集标题 |
 | `s:asset:video_id` | 123456 |

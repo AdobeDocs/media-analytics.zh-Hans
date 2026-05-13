@@ -5,9 +5,15 @@ uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ypN5kYhjEzqtO-Zt3mah1H5I5f9s12NnFFBk6hYy7MI
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: 285
 ht-degree: 100%
 
 ---
@@ -24,12 +30,12 @@ ht-degree: 100%
 
 | 触发器   | 心跳方法  | 网络调用   | 注释   |
 | --- | --- | --- | --- |
-| 用户点击[!UICONTROL 播放] | `trackSessionStart()` | Analytics 内容开始，心跳内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 用户点击[!UICONTROL 播放] | `trackSessionStart()` | Analytics 内容开始，心跳内容开始 | 测量库不知道存在一个前置广告。 这些网络调用仍然与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 广告开始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 广告开始、心跳广告开始 | |
 | 将播放广告的第一帧。 | `trackPlay()` | 心跳广告播放 | 当广告内容在主内容之前播放时，心跳将在广告开始播放时开始。 |
-| 将播放广告。 | | 广告心跳 | |
+| 播放广告。 | | 广告心跳 | |
 | 跳过广告。 | `trackEvent:trackAdSkip` | | 没有广告结束网络调用。 |
-| 将播放内容。 | | 内容心跳 | 这些网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 播放内容。 | | 内容心跳 | 这些网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 内容结束播放。 | `trackComplete()` | 心跳内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束。 | `trackSessionEnd()` | | `SessionEnd` |
 

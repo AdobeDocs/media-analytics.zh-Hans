@@ -5,10 +5,16 @@ uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/mYfKt95xUE59MuMFOzGro6fPsJsdy4wcy2F2J--JaW8
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 100%
+source-wordcount: 408
+ht-degree: 89%
 
 ---
 
@@ -16,28 +22,28 @@ ht-degree: 100%
 
 ## 先决条件
 
-* **获取有效配置参数**
-在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
-* **在媒体应用程序中实施适用于 JavaScript 的 `AppMeasurement`**
-有关 Adobe Mobile SDK 文档的更多信息，请参阅[使用 JavaScript 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans)。
+* **获取有效的配置参数**
+在设置Analytics帐户后，这些参数可以从Adobe代表获取。
+* 在媒体应用程序中为JavaScript实施&#x200B;**的`AppMeasurement`**
+有关Adobe Mobile SDK文档的更多信息，请参阅[使用JavaScript实施Analytics。](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans)
 
 * **在媒体播放器中提供以下功能：**
 
-   * *用于订阅播放器事件的 API* - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
+   * *用于订阅播放器事件的 API* – Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
 
-1. 将[下载](/help/getting-started/download-sdks.md)的库添加到您的项目中。为方便起见，请创建对类的本地引用。
+1. 将[下载](/help/getting-started/download-sdks.md)的库添加到您的项目中。 为方便起见，请创建对类的本地引用。
 
    1. 展开您下载的 `MediaSDK-js-v2.*.zip` 文件。
    1. 验证 `MediaSDK.min.js` 文件存在于 `libs` 目录中：
 
    1. 托管 `MediaSDK.min.js` 文件。
 
-      此核心 JavaScript 文件必须在一个您站点的所有页面都能访问的 Web 服务器上托管。您需要具有这些文件的路径才能进行下一步操作。
+      此核心 JavaScript 文件必须在一个您站点的所有页面都能访问的 Web 服务器上托管。 您需要具有这些文件的路径才能进行下一步操作。
 
    1. 在所有网站页面上引用 `MediaSDK.min.js`。
 
-      通过将下面一行代码添加到每个页面的 `<head>` 或 `<body>` 标记中，加入适用于 JavaScript 的 `MediaSDK`。例如：
+      通过将下面一行代码添加到每个页面的 `<head>` 或 `<body>` 标记中，加入适用于 JavaScript 的 `MediaSDK`。 例如：
 
       ```
       <script type="text/javascript"
@@ -102,11 +108,11 @@ ht-degree: 100%
 
    >[!IMPORTANT]
    >
-   >在媒体会话结束前，请确保您的 `MediaHeartbeat` 实例可以访问且未被取消分配。此实例将用于以下所有的跟踪事件。
+   >在媒体会话结束前，请确保您的 `MediaHeartbeat` 实例可以访问且未被取消分配。 此实例将用于以下所有的跟踪事件。
 
    >[!TIP]
    >
-   >`MediaHeartbeat` 需要 `AppMeasurement` 的实例，才能向 Adobe Analytics 发送调用。以下是 `AppMeasurement` 实例的示例：
+   >`MediaHeartbeat` 需要 `AppMeasurement` 的实例，才能向 Adobe Analytics 发送调用。 以下是 `AppMeasurement` 实例的示例：
 
    ```js
    var appMeasurement = new AppMeasurement();
@@ -119,6 +125,6 @@ ht-degree: 100%
 
 ## 从 JavaScript 1.x 迁移到 2.x
 
-在版本 2.x 中，所有公共方法都已合并到 `ADB.va.MediaHeartbeat` 类中，从而更加便于开发人员使用。此外，所有配置现在都已合并到 `ADB.va.MediaHeartbeatConfig` 类中。
+在版本 2.x 中，所有公共方法都已合并到 `ADB.va.MediaHeartbeat` 类中，从而更加便于开发人员使用。 此外，所有配置现在都已合并到 `ADB.va.MediaHeartbeatConfig` 类中。
 
 有关从 1.x 迁移到 2.x 的信息，请参阅旧版实施文档。

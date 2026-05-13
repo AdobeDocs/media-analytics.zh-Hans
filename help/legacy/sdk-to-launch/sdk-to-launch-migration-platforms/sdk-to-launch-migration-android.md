@@ -4,24 +4,30 @@ description: 了解如何从 Media SDK 迁移到适用于 Android 的 Launch。
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/HawnzTGV1nsGCibAtXkl3cAB5NjO2VfUpQODm6-w-qk
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 97%
+source-wordcount: 428
+ht-degree: 48%
 
 ---
 
 # 从独立 Media SDK 迁移到 Adobe Launch - Android
 
 >[!NOTE]
->Adobe Experience Platform Launch 已更名为 Experience Platform 中的一套数据收集技术。因此，产品文档中的术语有一些改动。有关术语更改的综合参考，请参阅以下[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hans)。
+>Adobe Experience Platform Launch 已更名为 Experience Platform 中的一套数据收集技术。 因此，产品文档中的术语有一些改动。 有关术语更改的综合参考，请参阅以下[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hans)。
 
 
 ## 配置
 
 ### 独立 Media SDK
 
-在独立 Media SDK 中，您可以在应用程序中配置跟踪，并在创建跟踪器时将其传递给 SDK。
+在独立Media SDK中，您可以在应用程序中配置跟踪，并将其传递给
+创建跟踪器时的SDK 。
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -38,8 +44,10 @@ MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 
 ### Launch 扩展
 
-1. 在 Experience Platform Launch 中，单击适用于您的移动属性的[!UICONTROL 扩展]选项卡。
-1. 在[!UICONTROL 目录]选项卡上，找到 Adobe Media Analytics for Audio and Video 扩展，然后单击[!UICONTROL 安装]。
+1. 在Experience Platform Launch中，单击的[!UICONTROL 扩展]选项卡，
+移动资产。
+1. 在[!UICONTROL 目录]选项卡上，找到Adobe Media Analytics for Audio
+和Video扩展，然后单击[!UICONTROL 安装]。
 1. 在扩展设置页面中，配置跟踪参数。
 Media 扩展将使用已配置的参数进行跟踪。
 
@@ -51,7 +59,10 @@ Media 扩展将使用已配置的参数进行跟踪。
 
 ### 独立 Media SDK
 
-在独立 Media SDK 中，您可以手动创建 `MediaHeartbeatConfig` 对象并配置跟踪参数。实施公开 `getQoSObject()` 和 `getCurrentPlaybackTime()functions.` 的委派接口。创建用于跟踪的 `MediaHeartbeat` 实例。
+在独立Media SDK中，手动创建`MediaHeartbeatConfig`对象
+并配置跟踪参数。 实施公开的委派接口
+`getQoSObject()`和 `getCurrentPlaybackTime()functions.`
+创建用于跟踪的`MediaHeartbeat`实例。
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -85,9 +96,10 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 ### Launch 扩展
 
-[媒体 API 引用 — 创建媒体跟踪器](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
+[媒体API引用 — 创建媒体跟踪器](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
-在创建跟踪器之前，应先使用移动核心注册媒体扩展和从属扩展。
+在创建跟踪器之前，您应该注册媒体扩展和
+具有移动核心的依赖扩展。
 
 ```java
 // Register the extension once during app launch
@@ -127,17 +139,24 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 
 ### 独立 Media SDK
 
-在独立 Media SDK 中，在创建跟踪器期间传递实施 `MediaHeartbeartDelegate` 接口的委派对象。每当跟踪器调用 `getQoSObject()` 和 `getCurrentPlaybackTime()` 接口方法时，该实施应返回最新的 QoE 和播放头。
+在独立Media SDK中，传递实施
+创建跟踪器期间的`MediaHeartbeartDelegate`接口。  实现
+当跟踪器调用
+`getQoSObject()`和`getCurrentPlaybackTime()`接口方法。
 
 ### Launch 扩展
 
-该实施应通过调用跟踪器公开的 `updateCurrentPlayhead` 方法来更新当前播放器的播放头。要进行准确跟踪，您应至少每秒调用一次此方法。
+该实施应通过调用
+跟踪器公开的`updateCurrentPlayhead`方法。 实现准确跟踪
+您应每秒至少调用一次此方法。
 
-[媒体 API 引用 — 更新当前播放器](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
+[媒体API引用 — 更新当前播放器](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
-该实施应通过调用跟踪器公开的 `updateQoEObject` 方法来更新 QoE 信息。我们希望每当质量量度发生变化都要调用此方法。
+该实施应通过调用 `updateQoEObject`
+跟踪器公开的方法。 我们希望每当出现以下情况时都调用此方法
+是质量量度的变化。
 
-[媒体 API 引用 — 更新 QoE 对象](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
+[媒体API引用 — 更新QoE对象](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## 传递标准媒体/广告元数据
 

@@ -5,9 +5,14 @@ uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/dJKiHSFFHaoCvHZQUgPJFZagzcM3tZdhji3DuYJZiMs
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: 121
 ht-degree: 72%
 
 ---
@@ -16,7 +21,7 @@ ht-degree: 72%
 
 在后端使用JSON架构验证每个事件类型的JSON请求正文。 当API调用的验证失败时，会使用错误消息填充HTTP响应正文。
 
-可在此处公开访问每个事件类型的 JSON 验证架构：`{uri}/api/v1/schemas/{eventType}`（例如，`{uri}/api/v1/schemas/sessionEnd`）。这些 JSON 验证架构是绝对的权威，其可为每个事件类型确定正确的请求正文参数。
+可在此处公开访问每个事件类型的 JSON 验证架构：`{uri}/api/v1/schemas/{eventType}`（例如，`{uri}/api/v1/schemas/sessionEnd`）。 这些 JSON 验证架构是绝对的权威，其可为每个事件类型确定正确的请求正文参数。
 
 例如，对 `sessionStart` 验证架构的请求响应类似于此示例（为方便阅读，此处格式略有改动）：
 

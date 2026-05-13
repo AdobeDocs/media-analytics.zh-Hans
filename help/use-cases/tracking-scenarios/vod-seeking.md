@@ -5,9 +5,15 @@ uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/tuQKZx3-sYhbRWOcamQ15n3sTEOwZmiXxgIFe4-kGQ0
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: 276
 ht-degree: 100%
 
 ---
@@ -26,7 +32,7 @@ ht-degree: 100%
 | 播放内容的第一帧。 | `trackPlay` | 心跳内容播放 | 当章节内容在主内容之前播放时，心跳在章节开始时开始。 |
 | 内容播放 | | 内容心跳 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 用户开始对内容进行搜寻操作 | `trackSeekStart` | | 在搜寻结束（例如，`trackSeekComplete`）前，不发出任何心跳 |
-| 搜寻操作结束 | `trackSeekComplete` | | 搜寻完成后心跳即开始发出。提示：播放头值应该表示搜寻后正确的新播放头。 |
+| 搜寻操作结束 | `trackSeekComplete` | | 搜寻完成后心跳即开始发出。  提示：播放头值应该表示搜寻后正确的新播放头。 |
 | 内容结束 | `trackComplete` | 心跳内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束 | `trackSessionEnd` | | `SessionEnd` |
 

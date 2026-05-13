@@ -1,20 +1,24 @@
 ---
 title: 跟踪应用程序状态
-description: 应用程序状态是指您的应用程序中的不同屏幕或视图。了解如何使用 trackState 调用跟踪应用程序中的应用程序状态。
+description: 应用程序状态是指您的应用程序中的不同屏幕或视图。 了解如何使用 trackState 调用跟踪应用程序中的应用程序状态。
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/fVNQ4CIqXbSYyi32rBlB2B9S6YTsBwxJhD3XaeDcDIE
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: 188
 ht-degree: 100%
 
 ---
 
 # 跟踪应用程序状态{#track-app-states}
 
-状态是指您的应用程序中的不同屏幕或视图。每次在应用程序中显示新状态时，都应发送 `trackState` 调用。例如，当用户从主页导航到视频详细信息屏幕时，应发送 `trackState` 调用。状态通常使用路径报表来查看，以便您能够查看用户在应用程序中导航的方式以及最常查看的状态。
+状态是指您的应用程序中的不同屏幕或视图。 每次在应用程序中显示新状态时，都应发送 `trackState` 调用。 例如，当用户从主页导航到视频详细信息屏幕时，应发送 `trackState` 调用。 状态通常使用路径报表来查看，以便您能够查看用户在应用程序中导航的方式以及最常查看的状态。
 
 ## trackState 调用
 
@@ -32,7 +36,7 @@ ADBMobile().trackState("State Name", {})
 ADBMobile.analytics.trackState("State Name",{});
 ```
 
-在 Adobe Mobile Services 中，状态名称将在“视图状态”变量中进行报告，并且每个 `trackState` 调用均会记录一个视图。在其他 Analytics 界面中，“视图状态”将被报告为“页面名称”，“状态查看次数”将被报告为“页面查看次数”。
+在 Adobe Mobile Services 中，状态名称将在“视图状态”变量中进行报告，并且每个 `trackState` 调用均会记录一个视图。 在其他 Analytics 界面中，“视图状态”将被报告为“页面名称”，“状态查看次数”将被报告为“页面查看次数”。
 
 ## 发送上下文数据
 

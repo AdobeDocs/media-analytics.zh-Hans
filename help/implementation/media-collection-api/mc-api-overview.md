@@ -6,22 +6,27 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/79XLYzuvi3neUuCrt3LcGEwnnaR038-mWHMuSrY797M
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 93%
+source-wordcount: 331
+ht-degree: 96%
 
 ---
 
 # 媒体收集 API 概述 {#overview}
 
-媒体收集 API 是 Adobe 的客户端 Media SDK 的 RESTful 替代方法。借助媒体收集 API，您的播放器可以使用 RESTful HTTP 调用来跟踪音频和视频事件。
+媒体收集 API 是 Adobe 的客户端 Media SDK 的 RESTful 替代方法。 借助媒体收集 API，您的播放器可以使用 RESTful HTTP 调用来跟踪音频和视频事件。
 
-媒体收集 API 本质上是一个适配器，可充当 Media SDK 的服务器端版本。这意味着，Media SDK 文档的某些方面也与媒体收集 API 相关。例如，两个解决方案使用了相同的[流媒体参数](../variables/audio-video-parameters.md)，并且收集的流媒体跟踪数据最终获得相同的[报表和分析。](/help/reporting/media-reports-enable.md)
+媒体收集 API 本质上是一个适配器，可充当 Media SDK 的服务器端版本。 收集的流媒体跟踪数据指向相同的[Reporting and Analysis](/help/reporting/media-reports-enable.md)。
 
 ## 媒体跟踪数据流 {#media-tracking-data-flows}
 
-实施媒体收集 API 的媒体播放器会直接对媒体跟踪后端服务器进行 RESTful API 跟踪调用，而实施 Media SDK 的播放器会对播放器应用程序内的 SDK API 进行跟踪调用。通过 Web 进行调用的一个效果是，实施媒体收集 API 的播放器需要处理 Media SDK 自动处理的一些进程。（[媒体收集实施](mc-api-impl/mc-api-quick-start.md)中的详细信息。）
+实施媒体收集 API 的媒体播放器会直接对媒体跟踪后端服务器进行 RESTful API 跟踪调用，而实施 Media SDK 的播放器会对播放器应用程序内的 SDK API 进行跟踪调用。 通过 Web 进行调用的一个效果是，实施媒体收集 API 的播放器需要处理 Media SDK 自动处理的一些进程。 （[媒体收集实施](mc-api-impl/mc-api-quick-start.md)中的详细信息。）
 
 与在 Media SDK 播放器中捕获的跟踪数据相比，虽然使用媒体收集 API 捕获的跟踪数据采用不同的方式进行发送和初始处理，但这两个解决方案在后端使用相同的处理引擎。
 
@@ -35,7 +40,7 @@ ht-degree: 93%
 
 ### API 调用 {#mc-api-calls}
 
-* **`sessions`—** 与服务器建立会话，并返回在后续 `events` 调用中使用的会话 ID。应用程序会在跟踪会话开始时调用一次。
+* **`sessions`—** 与服务器建立会话，并返回在后续 `events` 调用中使用的会话 ID。 应用程序会在跟踪会话开始时调用一次。
 
   `{uri}/api/v1/sessions`
 

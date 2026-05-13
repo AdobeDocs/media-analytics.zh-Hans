@@ -5,10 +5,16 @@ uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ChiE4jNDe-8GnbzNp8f9epCCFi6Hq9FkwrLzZEbcxcU
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: e7d92df1-c5ba-4e93-85df-f83171b889beid: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 99%
+source-wordcount: 854
+ht-degree: 84%
 
 ---
 
@@ -33,13 +39,13 @@ Media Analytics 实施包含两种类型的跟踪调用：
 
    **跟踪服务器**（适用于所有网站和移动设备应用程序）：
 
-   * **Adobe Analytics (AppMeasurement) 服务器 -** Experience Cloud 访客 ID 服务需要一个 RDC 跟踪服务器或可解析为 RDC 跟踪服务器的 CNAME。Adobe Analytics 跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该是一个 CNAME。
+   * **Adobe Analytics (AppMeasurement) 服务器 -** Experience Cloud 访客 ID 服务需要一个 RDC 跟踪服务器或可解析为 RDC 跟踪服务器的 CNAME。 Adobe Analytics 跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该是一个 CNAME。
 
-   * **Media Analytics（心跳）服务器 -** 此服务器的格式始终为“`[namespace].hb.omtrdc.net`”，其中 `[namespace]` 指定您的公司名称。此名称由 Adobe 提供。
+   * **Media Analytics（心跳）服务器 -** 此服务器的格式始终为“`[namespace].hb.omtrdc.net`”，其中 `[namespace]` 指定您的公司名称。 此名称由 Adobe 提供。
 
    您需要验证在所有跟踪调用中通用的某些关键变量：
 
-   **Adobe 访客 ID (`mid`)：**`mid` 变量用于捕获 AMCV Cookie 中设置的值。`mid` 变量是网站和移动设备应用程序的主要标识值，它还指示已正确设置 Experience Cloud 访客 ID 服务。此变量在 Adobe Analytics (AppMeasurement) 调用和 Media Analytics（心跳）调用中均可找到。
+   **Adobe 访客 ID (`mid`)：**`mid` 变量用于捕获 AMCV Cookie 中设置的值。 `mid` 变量是网站和移动设备应用程序的主要标识值，它还指示已正确设置 Experience Cloud 访客 ID 服务。 此变量在 Adobe Analytics (AppMeasurement) 调用和 Media Analytics（心跳）调用中均可找到。
 
    * **Adobe Analytics 开始调用**
 
@@ -69,7 +75,7 @@ Media Analytics 实施包含两种类型的跟踪调用：
 
      >[!NOTE]
      >
-     >在进行 Media Analytics 开始调用 (`s:event:type=start`) 时，`mid` 值可能不存在。这是正常的。它们可能直到进行 Media Analytics 播放调用 (`s:event:type=play`) 才会出现。
+     >在进行 Media Analytics 开始调用 (`s:event:type=start`) 时，`mid` 值可能不存在。 这是正常的。 它们可能直到进行 Media Analytics 播放调用 (`s:event:type=play`) 才会出现。
 
    * **Media Analytics 播放调用**
 
@@ -86,7 +92,7 @@ Media Analytics 实施包含两种类型的跟踪调用：
    1. Media Analytics 服务器 - 开始调用
    1. Media Analytics 服务器 -“请求的 Adobe Analytics 开始调用”
 
-   上述前两个调用包含其他的元数据和变量。有关调用参数和元数据，请参阅[测试调用详细信息](/help/legacy/validation/test-call-details.md#start-the-media-player)。
+   上述前两个调用包含其他的元数据和变量。 有关调用参数和元数据，请参阅[测试调用详细信息](/help/legacy/validation/test-call-details.md#start-the-media-player)。
 
    上述第三个调用告知 Media Analytics 服务器，Media SDK 已请求将 Adobe Analytics 开始调用 (`pev2=ms_s`) 发送到 Adobe Analytics 服务器。
 
@@ -100,7 +106,7 @@ Media Analytics 实施包含两种类型的跟踪调用：
    1. Media Analytics 服务器 - 广告开始调用
    1. Media Analytics 服务器 -“请求的 Adobe Analytics 广告开始调用”
 
-   前两个调用包含其他的元数据和变量。有关调用参数和元数据，请参阅[测试调用详细信息](/help/legacy/validation/test-call-details.md#view-ad-playback)。
+   前两个调用包含其他的元数据和变量。 有关调用参数和元数据，请参阅[测试调用详细信息](/help/legacy/validation/test-call-details.md#view-ad-playback)。
 
    第三个调用告知 Media Analytics 服务器，Media SDK 已请求将 Adobe Analytics 广告开始调用 (`pev2=msa_s`) 发送到 Adobe Analytics 服务器。
 
@@ -133,14 +139,14 @@ Media Analytics 实施包含两种类型的跟踪调用：
 
      有关调用参数和元数据，请参阅[测试调用详细信息](/help/legacy/validation/test-call-details.md#play-main-content)。
 
-1. **播放期间暂停至少 30 秒。**&#x200B;在媒体播放器暂停时，SDK 每 10 秒会向 Media Analytics 服务器发送一次暂停事件调用。暂停结束后，播放事件应该恢复。
+1. **播放期间暂停至少30秒。** 在媒体播放器暂停时，SDK每10秒会向Media Analytics服务器发送一次暂停事件调用。 暂停结束后，播放事件应该恢复。
 
    有关调用参数和元数据，请参阅[测试调用详细信息](/help/legacy/validation/test-call-details.md#pause-main-content)。
 
-1. **搜寻/推移媒体。**&#x200B;在推移媒体播放头时，不会发送任何特殊的跟踪调用，但是在推移后媒体播放恢复时，播放头值应反映主内容中的新位置。
+1. **搜寻/推移媒体。** 在推移媒体播放头时，不会发送任何特殊的跟踪调用，但是在推移后媒体播放恢复时，播放头值应反映主内容中的新位置。
 
-1. **重新播放媒体（仅限 VOD）。**&#x200B;重新播放媒体时，应发送一组新的“媒体开始”调用（就像它是一个全新的开始）。
+1. **重播媒体（仅限VOD）。** 重新播放媒体时，应发送一组新的“媒体开始”调用（就像它是一个全新的开始）。
 
-1. **观看播放列表中的下一个媒体。**&#x200B;在播放列表中的下一个媒体开始播放时，应发送一组新的“媒体开始”调用。
+1. **观看播放列表中的下一个媒体。** 开始播放播放列表中的下一个媒体时，应发送一组新的“媒体开始”调用。
 
-1. **切换媒体或流。**&#x200B;在切换实时流时，不应发送第一个流的 Media Analytics 结束调用。媒体开始调用和播放调用应该以新的节目和流名称开始，并以新节目的正确播放头和持续时间值开始。
+1. **切换媒体或流。** 在切换实时流时，不应发送第一个流的Media Analytics结束调用。 媒体开始调用和播放调用应该以新的节目和流名称开始，并以新节目的正确播放头和持续时间值开始。

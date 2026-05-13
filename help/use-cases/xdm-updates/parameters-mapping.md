@@ -4,10 +4,15 @@ description: 了解如何将受众迁移到新的Adobe Analytics for Streaming M
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 43%
+source-wordcount: 1376
+ht-degree: 44%
 
 ---
 
@@ -49,8 +54,8 @@ ht-degree: 43%
 | 专辑 | media.mediaTimed.primaryAssetReference._xmpDM.album | mediaReporting.sessionDetails.album | 维度 | 专辑 |                                                                       |
 | 标签 | 不支持 | mediaReporting.sessionDetails.label | 维度 | 标签 |                                                                       |
 | 作者 | 不支持 | mediaReporting.sessionDetails.author | 维度 | 作者 |                                                                       |
-| 电台/电视台 | media.mediaTimed.primaryAssetReference._id3.音频。_id3.TRSN | mediaReporting.sessionDetails.station | 维度 | 电台/电视台 |                                                                       |
-| 发布者 | media.mediaTimed.primaryAssetReference._id3.音频。_id3.TPUB | mediaReporting.sessionDetails.publisher | 维度 | 发布者 |                                                                       |
+| 电台/电视台 | media.mediaTimed.primaryAssetReference._id3.Audio._id3.TRSN | mediaReporting.sessionDetails.station | 维度 | 电台/电视台 |                                                                       |
+| 发布者 | media.mediaTimed.primaryAssetReference._id3.Audio._id3.TPUB | mediaReporting.sessionDetails.publisher | 维度 | 发布者 |                                                                       |
 | 媒体开始 | media.mediaTimed.impressions.value | mediaReporting.sessionDetails.isViewed | 量度 | 媒体开始 |                                                                       |
 | 内容开始 | media.mediaTimed.starts.value | mediaReporting.sessionDetails.isPlayed | 量度 | 内容开始 |                                                                       |
 | 内容结束 | media.mediaTimed.completes.value | mediaReporting.sessionDetails.isCompleted | 量度 | 内容结束 |                                                                       |
@@ -144,7 +149,7 @@ Media Analytics分类通过名为ACDC的单独流程引入AEP。 下表列出的
 - 导航到&#x200B;**连接**&#x200B;选项卡，然后选择&#x200B;**新建连接**。
 - 在“连接”界面中，选择&#x200B;**添加数据集**，并找到Media Analytics事件数据集（用于通过ADC导入媒体数据）以及四个相关的分类数据集。
 
-### 配置详细信息
+### 配置详情
 
 对于每个查找数据集（分类数据集），请如下配置：
 
@@ -189,7 +194,7 @@ Media Analytics分类通过名为ACDC的单独流程引入AEP。 下表列出的
 | videoad | 广告名称 | `<_sandbox>.ad_name` |
 | videoad | 创作 ID | `<_sandbox>.creative_id` |
 | videoadpod | 键/广告面板ID | `<_sandbox>.key` |
-| videoadpod | Pod位置 | `<_sandbox>.pod_position` |
+| videoadpod | 面板位置 | `<_sandbox>.pod_position` |
 | videoadpod | 面板名称 | `<_sandbox>.pod_name` |
 | videochapter | 键/章节 | `<_sandbox>.key` |
 | videochapter | 章节长度 | `<_sandbox>.chapter_length` |

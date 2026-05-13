@@ -4,20 +4,25 @@ description: 了解如何将用户档案迁移到新的流媒体字段
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 0f75e594-5216-4ac1-91bd-fa89ab4b2110
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/c1WHnEeZnI3PP6aO40pDHpJCi2Z0ERiNY8lCj4wyMiU
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: 533
 ht-degree: 0%
 
 ---
 
 # 将用户档案迁移到新的流媒体字段
 
-本文档介绍了迁移配置文件筛选服务的过程，该服务位于为Adobe Analytics启用的Adobe数据收集流程之上，适用于流媒体数据。 迁移将使用名为“Media”的Adobe流媒体服务数据类型转换配置文件筛选服务，以使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
+本文档介绍了迁移配置文件筛选服务的过程，该服务位于为Adobe Analytics启用的Adobe数据收集流程之上，适用于流媒体数据。 迁移将使用名为“Media”的Adobe流媒体服务数据类型转换配置文件筛选服务，以使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
 
 ## 迁移配置文件
 
-要将配置文件筛选从名为“媒体”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须编辑现有的配置文件筛选规则：
+要将配置文件筛选从名为“媒体”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须编辑现有的配置文件筛选规则：
 
 1. 在Adobe Experience Platform中的&#x200B;[!UICONTROL **源**]&#x200B;部分下，转到&#x200B;[!UICONTROL **数据流**]&#x200B;选项卡。
 
@@ -33,7 +38,7 @@ ht-degree: 0%
 
 1. 验证配置文件是否仍按预期工作。
 
-查看[音频和视频参数](https://experienceleague.adobe.com/cn/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id)页面上的[内容ID](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)参数，以便在旧字段和新字段之间映射。 旧字段路径可在“XDM字段路径”属性下找到，而新字段路径可在“报告XDM字段路径”属性下找到。
+查看[内容ID](/help/reporting/dimensions/content.md)参数以及[流媒体服务](/help/media-overview.md)下记录的其余流媒体变量，以便在旧字段和新字段之间映射。 旧字段路径可在“XDM字段路径”属性下找到，而新字段路径可在“报告XDM字段路径”属性下找到。
 
 ## 示例
 
@@ -56,7 +61,7 @@ ht-degree: 0%
    ![AEP数据流筛选规则](assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   对于使用meda.mediaTimed对象的每个筛选器，使用`mediaReporting`音频和视频参数[页面在](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)对象中查找其对应项，以在旧字段和新字段之间进行映射。 旧字段路径位于“XDM字段路径”属性下，而新字段路径位于“报告XDM字段路径”属性下。 例如，对于[Media Starts](https://experienceleague.adobe.com/cn/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts)，`media.mediaTimed.impressions.value`的通讯对方是`mediaReporting.sessionDetails.isViewed`。
+   对于使用meda.mediaTimed对象的每个筛选器，使用[流媒体服务](/help/media-overview.md)下记录的流媒体变量在`mediaReporting`对象中查找其对应项，以在旧字段和新字段之间进行映射。 旧字段路径位于“XDM字段路径”属性下，而新字段路径位于“报告XDM字段路径”属性下。 例如，对于[Media Starts](/help/reporting/metrics/media-starts.md)，`media.mediaTimed.impressions.value`的通讯对方是`mediaReporting.sessionDetails.isViewed`。
 
    ![新旧的XDM字段](assets/xdm-fields-new-and-old.jpeg)
 

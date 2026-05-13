@@ -5,10 +5,15 @@ uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/yaQY00G4Tz-rR-Vs--nQXJ05ruXyD3oUwP2BPyocYDM
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: 1168
+ht-degree: 97%
 
 ---
 
@@ -16,20 +21,20 @@ ht-degree: 100%
 
 ## 简介 {#introduction}
 
-您可以使用 Roku SceneGraph XML 编程框架来开发应用程序。此框架具有两个关键概念：
+您可以使用 Roku SceneGraph XML 编程框架来开发应用程序。 此框架具有两个关键概念：
 
 * 应用程序屏幕的 SceneGraph 渲染
 * SceneGraph 屏幕的 XML 配置
 
-Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件不适用于在 SceneGraph 上运行的应用程序（例如线程）。因此，计划使用 SceneGraph 框架的 Roku 应用程序开发人员无法调用 Adobe Mobile SDK API（后者类似于旧版 BrightScript 应用程序中提供的 API）。
+Adobe Mobile SDK for Roku 使用 BrightScript 编写。 SDK 使用的许多组件不适用于在 SceneGraph 上运行的应用程序（例如线程）。 因此，计划使用 SceneGraph 框架的 Roku 应用程序开发人员无法调用 Adobe Mobile SDK API（后者类似于旧版 BrightScript 应用程序中提供的 API）。
 
 ## 结构 {#architecture}
 
-为了向 AdobeMobile SDK 添加 SceneGraph 支持，Adobe 已添加了一个新的 API，通过此 API，可在 AdobeMobile SDK 和 `adbmobileTask` 之间创建一个连接器桥。后者是用于 SDK API 执行的 SceneGraph 节点。（在本文档的其他部分中对 `adbmobileTask` 的用法进行了详细解释。）
+为了向 AdobeMobile SDK 添加 SceneGraph 支持，Adobe 已添加了一个新的 API，通过此 API，可在 AdobeMobile SDK 和 `adbmobileTask` 之间创建一个连接器桥。 后者是用于 SDK API 执行的 SceneGraph 节点。 （在本文档的其他部分中对 `adbmobileTask` 的用法进行了详细解释。）
 
 连接器桥旨在执行以下操作：
 
-* 桥会返回 AdobeMobile SDK 的与 SceneGraph 兼容的实例。与 SceneGraph 兼容的 SDK 具有旧版 SDK 公开的所有 API。
+* 桥会返回 AdobeMobile SDK 的与 SceneGraph 兼容的实例。 与 SceneGraph 兼容的 SDK 具有旧版 SDK 公开的所有 API。
 * 在 SceneGraph 中使用 Adobe Mobile SDK API 的方式与使用旧版 API 的方式非常相似。
 * 桥还公开了一种机制来侦听返回某些数据的 API 的回调。
 
@@ -60,7 +65,7 @@ Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件
 | 类别 | 方法名称 | 描述 |
 |---|---|---|
 | **常量** | |  |
-|  | `sceneGraphConstants` | 返回包含 `SceneGraphConstants` 的对象。有关详细信息，请参阅上表。 |
+|  | `sceneGraphConstants` | 返回包含 `SceneGraphConstants` 的对象。 有关详细信息，请参阅上表。 |
 |  | | |
 | **调试日志记录** | | |
 |  | `setDebugLogging` | 用于在 ADBMobile SDK 中设置调试日志记录的 SceneGraph API。 |
@@ -102,7 +107,7 @@ Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件
 |  | mediaTrackPause | 用于跟踪暂停的视频内容的 SceneGraph API。 |
 |  | `mediaTrackComplete` | 用于跟踪视频内容播放结束的 SceneGraph API。 |
 |  | `mediaTrackError` | 用于跟踪播放错误的 SceneGraph API。 |
-|  | mediaTrackEvent | 用于在跟踪期间跟踪回放事件的 SceneGraph API。例如：广告、章节。 |
+|  | mediaTrackEvent | 用于在跟踪期间跟踪回放事件的 SceneGraph API。 例如：广告、章节。 |
 |  | `mediaUpdatePlayhead` | 用于在视频跟踪期间，将播放头更新发送到 MediaHeartbeat 的 SceneGraph API。 |
 |  | `mediaUpdateQoS` | 用于在视频跟踪期间，将 QoS 更新发送到 MediaHeartbeat 的 SceneGraph API。 |
 |  | 有关更多信息，请参阅旧版 SDK 的“媒体心跳”部分。 | |
@@ -134,35 +139,35 @@ Adobe Mobile SDK for Roku 使用 BrightScript 编写。SDK 使用的许多组件
 <td> adbmobileApiCall </td>
 <td> assocarray </td>
 <td> 无效 </td>
-<td> 请勿修改该字段或让应用程序使用该字段。ADBMobile SceneGraphConnector 使用该字段来通过 SceneGraph 节点路由 API 调用并获取响应。因此，这是 AdobeMobileSDK 为兼容 SceneGraph 而保留的键/字段。<b>重要信息：</b>对此字段的任何修改都可能导致 AdobeMobileSDK 无法正常运行。</td>
+<td> 请勿修改该字段或让应用程序使用该字段。 ADBMobile SceneGraphConnector 使用该字段来通过 SceneGraph 节点路由 API 调用并获取响应。 因此，这是 AdobeMobileSDK 为兼容 SceneGraph 而保留的键/字段。 <b>重要信息：</b>对此字段的任何修改都可能导致 AdobeMobileSDK 无法正常运行。</td>
 </tr>
 <tr>
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> 无效 </td>
-<td> 只读。在 AdobeMobileSDK 中执行的所有 API 都将返回此字段中的响应。注册侦听此字段更新的回调，以接收响应对象。以下是响应对象的格式：  
+<td> 只读。在 AdobeMobileSDK 中执行的所有 API 都将返回此字段中的响应。 注册侦听此字段更新的回调，以接收响应对象。 以下是响应对象的格式：  
 <pre>
-response = {
-  "apiName" : &lt;SceneGraphConstants.
-               API_NAME&gt;
-  "returnValue : &lt;API_RESPONSE&gt;
+响应= {
+  "apiName" ： &lt;SceneGraphConstants.
+               API名称&gt;
+  "returnValue ： &lt;API_RESPONSE&gt;
 }</pre>
-将为 AdobeMobileSDK 中的任何 API 调用发送此响应对象的实例，根据 API 引用指南，该 API 调用应会返回一个值。例如，visitorMarketingCloudID() 的 API 调用将返回以下响应对象：
+将为 AdobeMobileSDK 中的任何 API 调用发送此响应对象的实例，根据 API 引用指南，该 API 调用应会返回一个值。 例如，visitorMarketingCloudID() 的 API 调用将返回以下响应对象：
 <pre>
-response = {
-  "apiName" : m.
-              adbmobileConstants.
+响应= {
+  "apiName" ：m.
+              adbmobileConstants。
               VISITOR_MARKETING_CLOUD_ID  
-  "returnValue : "07050x25671x33760x72644x14"  
+  "returnValue ： "07050x25671x33760x72644x14"  
 }
 </pre>
 或者，响应数据也可能无效：
 <pre>
-response = {  
-  "apiName" : m.
-              adbmobileConstants.
+响应= {  
+  "apiName" ：m.
+              adbmobileConstants。
               VISITOR_MARKETING_CLOUD_ID  
-  "returnValue : invalid
+  "returnValue ：无效
 }
 </pre>
 </td>
@@ -175,12 +180,12 @@ response = {
 #### `getADBMobileConnectorInstance`
 
 API 签名：`ADBMobile().getADBMobileConnectorInstance()`\
-输入：`adbmobileTask`
-返回类型：`ADBMobileConnector`
+输入： `adbmobileTask`
+返回类型： `ADBMobileConnector`
 
 #### `sgConstants`
 
-API 签名：`ADBMobile().sgConstants()`
+API签名： `ADBMobile().sgConstants()`
 输入：无\
 返回类型：`SceneGraphConstants`
 
@@ -199,7 +204,7 @@ API 签名：`ADBMobile().sgConstants()`
 
 
 
-旧版 AdobeMobileLibrary 中全局定义的实用程序 `MediaHeartbeat` API 可在 SceneGraph 环境中“照常”**&#x200B;进行访问，因为它们未使用任何无法在 SceneGraph 节点中使用的 Brightscript 组件。有关这些方法的更多信息，请参阅下表：
+旧版 AdobeMobileLibrary 中全局定义的实用程序 `MediaHeartbeat` API 可在 SceneGraph 环境中“照常”**&#x200B;进行访问，因为它们未使用任何无法在 SceneGraph 节点中使用的 Brightscript 组件。 有关这些方法的更多信息，请参阅下表：
 
 ### 适用于 MediaHeartbeat 的全局方法
 

@@ -1,13 +1,17 @@
 ---
 title: 了解媒体跟踪时间线 – 用户放弃会话
-description: 了解放弃视频会话时的播放头时间线和相应的用户操作。了解每个操作和请求的详细信息。
+description: 了解放弃视频会话时的播放头时间线和相应的用户操作。 了解每个操作和请求的详细信息。
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/e0p6PwQPp5P2RG5M-0IeWtSebVa8rH20SZBRExC9Q7c
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: 642
 ht-degree: 100%
 
 ---
@@ -16,7 +20,7 @@ ht-degree: 100%
 
 ## VOD、前置广告、中置广告、用户提前放弃内容
 
-下图说明了播放头时间轴和用户操作的相应时间轴。每项操作及其随附请求的详细信息如下所述。
+下图说明了播放头时间轴和用户操作的相应时间轴。 每项操作及其随附请求的详细信息如下所述。
 
 ![API 内容](assets/va_api_content_2.png)
 
@@ -30,7 +34,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 按下“自动播放”或“播放”按钮 | 0 | 0 | `/api/v1/sessions` |
 
-此调用表示&#x200B;_用户播放视频的意图_。它会向客户端返回一个会话 ID (`{sid}`)，用于标识会话中的所有后续跟踪调用。播放器状态不是“正在播放”，而是“正在启动”。强制会话参数必须包含在请求正文中的 `params` 映射中。在后端，此调用会生成一个 Adobe Analytics 启动调用。有关会话的信息，请参阅媒体收集 API 文档。
+此调用表示&#x200B;_用户播放视频的意图_。 它会向客户端返回一个会话 ID (`{sid}`)，用于标识会话中的所有后续跟踪调用。 播放器状态不是“正在播放”，而是“正在启动”。  强制会话参数必须包含在请求正文中的 `params` 映射中。  在后端，此调用会生成一个 Adobe Analytics 启动调用。 有关会话的信息，请参阅媒体收集 API 文档。
 
 ```json
 {
@@ -62,7 +66,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 应用程序启动 Ping 事件计时器 | 0 | 0 | |
 
-启动应用程序的 Ping 计时器。如果有前置广告，则第一个 Ping 事件应在 1 秒后触发，否则应在 10 秒后触发。
+启动应用程序的 Ping 计时器。 如果有前置广告，则第一个 Ping 事件应在 1 秒后触发，否则应在 10 秒后触发。
 
 ### 操作 3 - 广告时间开始 {#Action-3}
 
@@ -70,7 +74,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 跟踪前置广告时间开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-必须跟踪前置广告。只能在广告时间期间跟踪广告。
+必须跟踪前置广告。 只能在广告时间期间跟踪广告。
 
 ```json
 {
@@ -125,7 +129,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 应用程序发送 Ping 事件 | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
-每 1 秒对后端执行一次 Ping 操作。（为简短起见，不显示后续广告 Ping。）
+每 1 秒对后端执行一次 Ping 操作。 （为简短起见，不显示后续广告 Ping。）
 
 ```json
 {
@@ -161,7 +165,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 跟踪前置广告时间结束 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
-广告时间结束。在整个广告时间内，播放器一直处于“正在播放”状态。
+广告时间结束。 在整个广告时间内，播放器一直处于“正在播放”状态。
 
 ```json
 {
@@ -340,7 +344,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 用户关闭应用程序。应用程序确定用户已放弃查看，并且未返回到此会话。 | 48 | 33 | `/api/v1/sessions/{sid}/events` |
+| 用户关闭应用程序。 应用程序确定用户已放弃查看，并且未返回到此会话。 | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
 将 `sessionEnd` 发送到 VA 后端，以指示应立即关闭会话，无需进一步处理。
 

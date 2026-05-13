@@ -5,9 +5,15 @@ uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/oCoZuJHBMNOe3I6ITBqIQO6BSTNSWpbsjzXGuzd9KyU
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: 526
 ht-degree: 100%
 
 ---
@@ -25,11 +31,11 @@ ht-degree: 100%
 | 用户点击[!UICONTROL 播放] | trackSessionStart | Analytics 内容开始，心跳内容开始 | 测量库不知道存在一个前置广告，因此这些网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同。 |
 | 播放内容的第一帧。 | trackPlay | 心跳内容播放 | 当章节内容在主内容之前播放时，心跳在章节开始时开始。 |
 | 内容播放 | | 内容心跳 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
-| Session1 结束（Episode1 结束） | trackComplete / trackSessionEnd | 心跳内容结束 | “结束”是指第 1 集的 session1 已完全观看结束。在开始下一集的会话之前，必须结束此会话。 |
+| Session1 结束（Episode1 结束） | trackComplete / trackSessionEnd | 心跳内容结束 | “结束”是指第 1 集的 session1 已完全观看结束。 在开始下一集的会话之前，必须结束此会话。 |
 | Episode2 开始（Session2 开始） | trackSessionStart | Analytics 内容开始，心跳内容开始 | 这是因为用户观看了第 1 集并继续观看另一剧集 |
 | 媒体的第 1 帧 | trackPlay | 心跳内容播放 | 此方法将触发计时器，从这一刻开始，只要继续播放，就会每 10 秒发送一次心跳。 |
 | 内容播放 | | 内容心跳 | |
-| 会话结束（Episode2 结束） | trackComplete / trackSessionEnd | 心跳内容结束 | “结束”是指第 2 集的 session2 已完全观看结束。在开始下一集的会话之前，必须结束此会话。 |
+| 会话结束（Episode2 结束） | trackComplete / trackSessionEnd | 心跳内容结束 | “结束”是指第 2 集的 session2 已完全观看结束。 在开始下一集的会话之前，必须结束此会话。 |
 
 ## 参数 {#parameters}
 
@@ -48,7 +54,7 @@ ht-degree: 100%
 
 ## 心跳内容播放 {#heartbeat-content-play}
 
-这应当看起来与心跳内容开始调用几乎完全相似，但关键的区别在于“s:event:type”参数。所有参数仍应位于此处。
+这应当看起来与心跳内容开始调用几乎完全相似，但关键的区别在于“s:event:type”参数。 所有参数仍应位于此处。
 
 | 参数 | 值 | 注释 |
 |---|---|---|
@@ -57,7 +63,7 @@ ht-degree: 100%
 
 ## 内容心跳 {#content-heartbeats}
 
-在媒体播放期间，有一个计时器将会每 10 秒发送一次主内容的一个或多个心跳，每 1 秒发送一次广告的一个或多个心跳。这些心跳将包含有关播放、广告、缓冲和许多其他内容的信息。每个心跳的确切内容不在本文档涵盖的范围之内，验证的关键内容是在持续播放期间始终触发心跳。
+在媒体播放期间，有一个计时器将会每 10 秒发送一次主内容的一个或多个心跳，每 1 秒发送一次广告的一个或多个心跳。 这些心跳将包含有关播放、广告、缓冲和许多其他内容的信息。 每个心跳的确切内容不在本文档涵盖的范围之内，验证的关键内容是在持续播放期间始终触发心跳。
 
 在内容心跳中，查找一些特定的内容：
 
@@ -68,7 +74,7 @@ ht-degree: 100%
 
 ## 心跳内容结束 {#heartbeat-content-complete}
 
-当任何给定剧集的播放结束时（播放头跨越剧集边界），将发送“心跳内容结束”调用。此调用看起来类似于其他心跳调用，但包含几个特定的参数：
+当任何给定剧集的播放结束时（播放头跨越剧集边界），将发送“心跳内容结束”调用。 此调用看起来类似于其他心跳调用，但包含几个特定的参数：
 
 | 参数 | 值 | 注释 |
 |---|---|---|

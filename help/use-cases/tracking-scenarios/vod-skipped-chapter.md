@@ -5,9 +5,15 @@ uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/hAoksavM6bSmrMzE1O99tCai7A3tBZUvRuhGPmNr4o8
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: 314
 ht-degree: 100%
 
 ---
@@ -22,16 +28,16 @@ ht-degree: 100%
 
 | 触发器 | 心跳方法 | 网络调用   | 注释 |
 |---|---|---|---|
-| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心跳内容开始 | 测量库不知道存在一个前置广告。这些网络调用仍然与 [iOS 种不含广告的播放](vod-no-intrs-details.md)方案完全相同。 |
+| 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心跳内容开始 | 测量库不知道存在一个前置广告。 这些网络调用仍然与 [iOS 种不含广告的播放](vod-no-intrs-details.md)方案完全相同。 |
 | 章节开始。 | `trackEvent:ChapterStart` | 心跳章节开始 |  |
 | 将播放章节的第一帧。 | `trackPlay` | 心跳章节播放 | 当章节内容在主内容之前播放时，我们希望在章节开始时开始播放心跳。 |
 | 将播放章节。 |  | 章节心跳 |  |
 | 搜寻开始跳过第一章。 | `trackEvent:trackSeekStart` |  | 搜寻期间没有心跳 |
 | 搜寻结束。 | `trackEvent:trackSeekComplete` |  | 心跳会继续发布此内容。 |
 | 应用程序可实现用户从常规的章节边界进行搜寻。 | `trackEvent:trackChapterSkip` |  |  |
-| 将播放内容。 |  | 内容心跳 |  |
+| 播放内容。 |  | 内容心跳 |  |
 | 内容结束播放。 | `trackComplete` | 心跳内容结束 | 此网络调用与 [iOS 中没有中断的播放](vod-no-intrs-details.md)方案完全相同。 |
-| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户没有观看至媒体结束，也必须调用此 API。 |
+| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。 即使用户没有观看至媒体结束，也必须调用此 API。 |
 
 ## 参数 {#parameters}
 
