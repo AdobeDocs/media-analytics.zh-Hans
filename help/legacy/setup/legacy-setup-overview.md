@@ -5,11 +5,26 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
 TQID: https://experienceleague.adobe.com/8wkHfEeGx3TtATwf9TH7B6exw2lV5xkgOm-z5GCqajQ
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: c77ba355-6681-41fe-b719-563d3f507fdbid: c8add8f2-4250-4fd9-9cde-9707036c567did: e7d92df1-c5ba-4e93-85df-f83171b889be
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c77ba355-6681-41fe-b719-563d3f507fdb
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
 source-wordcount: 805
@@ -150,7 +165,7 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 
   分析跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该为一个 CNAME。
 
-* ** Media Analytics（心率）服务器**
+* **&#x200B; Media Analytics（心率）服务器**
 格式始终为“`[your_namespace].hb.omtrdc.net`”。 “`[your_namespace]`”的值指定您的公司，由 Adobe 提供。
 
 媒体跟踪在所有平台、桌面和移动设备上的工作方式都是相同的。 音频跟踪当前适用于移动设备平台。 在所有跟踪调用中，有一些需要验证的关键通用变量：
@@ -159,11 +174,11 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 
 | Video Analytics 1.x SDK  |  开发人员指南（仅 PDF） |
 | --- | --- |
-| Android | 为Android配置[](vhl-dev-guide-v15_android.pdf) |
-| Apple TV | 为Apple TV配置[](vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | 为Chromecast配置[](chromecast_1.x_sdk.pdf) |
-| iOS | 为iOS配置[](vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | 为JavaScript配置[](vhl-dev-guide-v15_js.pdf) |
+| Android | 为Android配置[&#128279;](vhl-dev-guide-v15_android.pdf) |
+| Apple TV | 为Apple TV配置[&#128279;](vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | 为Chromecast配置[&#128279;](chromecast_1.x_sdk.pdf) |
+| iOS | 为iOS配置[&#128279;](vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | 为JavaScript配置[&#128279;](vhl-dev-guide-v15_js.pdf) |
 | Primetime | <ul> <li> Android：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/android/1.4/index.html) </li> <li> DHLS：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：[配置 Media Analytics](https://help.adobe.com/zh_CN/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [为TVML配置](vhl_tvml.pdf) |
 
