@@ -3,10 +3,10 @@ title: 流派
 description: 将内容流派设置为以逗号分隔的字符串。 多流派内容在报告中的行项目之间拆分。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 13%
+source-wordcount: '226'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**流派**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[流派](/help/reporting/dimensions/genre.md)。*
+*本页介绍&#x200B;**流派**变量的数据收集。 有关相应的报表维度，请参阅[流派](/help/reporting/dimensions/genre.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,9 +28,10 @@ ht-degree: 13%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.genre` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.genre` |
 | **必需** | 否 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

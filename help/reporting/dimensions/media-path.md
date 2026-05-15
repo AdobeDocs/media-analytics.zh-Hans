@@ -3,10 +3,10 @@ title: 媒体路径
 description: 将内容ID捕获为流量变量，以进行路径分析。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 4%
+source-wordcount: '229'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,12 @@ ht-degree: 4%
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体核心]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.name`中收集流量变量(prop)。 |
 | Customer Journey Analytics | 不适用 — 使用[内容](content.md)进行路径分析 |
-| 数据馈送 | `videopath, post_videopath` |
+| 数据馈送 | `videopath`, `post_videopath` |
+| Audience Manager | `c_contextdata.a.media.name` |
+
+>[!NOTE]
+>
+>Adobe Analytics prop具有100字节的限制。 长度超过100字节的值会被截断。
 
 >[!IMPORTANT]
 >

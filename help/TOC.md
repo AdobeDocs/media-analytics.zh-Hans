@@ -1,18 +1,17 @@
 ---
-source-git-commit: c9c4287b4b330ebc1a1ec8b7197b42ee45f7ff48
-workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 61%
-
----
-﻿---
 product: adobe analytics
 audience: end-user
 user-guide-title: 流媒体服务指南
 breadcrumb-title: 流媒体服务指南
 user-guide-description: 实施流媒体服务。 包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
+source-git-commit: 84574afd9d39e0643e7f12f44e8729e947c2ec1b
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 59%
+
 ---
+
 
 # 流媒体服务指南 {#using}
 
@@ -30,9 +29,35 @@ sub-product: media analytics
          + [概述](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - 从 Media SDK 到 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - 从 Media SDK 到 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [JavaScript - 从 Media SDK 到 Launch &#x200B;](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [JavaScript - 从 Media SDK 到 Launch ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
+   + 事件 {#events}
+      + [事件概述](implementation/events/overview.md)
+      + 会话 {#session}
+         + [会话开始](implementation/events/session/session-start.md)
+         + [会话结束](implementation/events/session/session-complete.md)
+         + [会话结束](implementation/events/session/session-end.md)
+      + 播放 {#playback}
+         + [播放](implementation/events/playback/play.md)
+         + [暂停开始](implementation/events/playback/pause-start.md)
+         + [缓冲开始](implementation/events/playback/buffer-start.md)
+         + [比特率更改](implementation/events/playback/bitrate-change.md)
+         + [Ping](implementation/events/playback/ping.md)
+      + 广告 {#ads}
+         + [广告时间开始](implementation/events/ads/ad-break-start.md)
+         + [广告开始](implementation/events/ads/ad-start.md)
+         + [广告结束](implementation/events/ads/ad-complete.md)
+         + [广告跳过](implementation/events/ads/ad-skip.md)
+         + [广告时间结束](implementation/events/ads/ad-break-complete.md)
+      + 章节 {#chapters}
+         + [章节开始](implementation/events/chapters/chapter-start.md)
+         + [章节结束](implementation/events/chapters/chapter-complete.md)
+         + [章节跳过](implementation/events/chapters/chapter-skip.md)
+      + 播放器状态 {#player-state}
+         + [状态开始](implementation/events/player-state/state-start.md)
+         + [状态结束](implementation/events/player-state/state-end.md)
+      + [错误](implementation/events/error.md)
    + 变量 {#variables}
       + Core {#core}
          + [内容渠道](implementation/variables/core/content-channel.md)
@@ -121,7 +146,6 @@ sub-product: media analytics
          + [会话请求](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
          + [事件请求](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
          + [请求参数](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-         + [事件类型和描述](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
          + 实施API {#mc-api-impl}
             + [在播放器中设置 HTTP 请求类型](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
             + [获取会话 ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
@@ -239,6 +263,8 @@ sub-product: media analytics
       + [画中画计数](reporting/metrics/picture-in-picture-count.md)
       + [画中画总时长](reporting/metrics/picture-in-picture-total-duration.md)
       + [进度标记](reporting/metrics/progress-markers.md)
+      + [停止事件](reporting/metrics/stall-events.md)
+      + [受停滞影响的流](reporting/metrics/stall-impacted-streams.md)
       + [受隐藏式字幕影响的流数量](reporting/metrics/closed-captioning-streams-impacted.md)
       + [受全屏影响的流数量](reporting/metrics/full-screen-streams-impacted.md)
       + [受聚焦影响的流数量](reporting/metrics/in-focus-streams-impacted.md)
@@ -247,6 +273,7 @@ sub-product: media analytics
       + [开始时间（量度）](reporting/metrics/time-to-start.md)
       + [缓冲总持续时间（量度）](reporting/metrics/total-buffer-duration.md)
       + [暂停总持续时间](reporting/metrics/total-pause-duration.md)
+      + [总停滞持续时间](reporting/metrics/total-stalling-duration.md)
       + [独特播放时间](reporting/metrics/unique-time-played.md)
    + [计算量度](reporting/calculated-metrics.md)
    + [媒体报表启用](reporting/media-reports-enable.md)

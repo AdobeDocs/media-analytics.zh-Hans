@@ -3,10 +3,10 @@ title: 焦点
 description: 跟踪播放器何时在查看者的屏幕中处于焦点状态，以便后端可以报告焦点参与度。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 9%
+source-wordcount: '290'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**聚焦**&#x200B;播放器状态的数据收集。 查看受聚焦影响的[流](/help/reporting/metrics/in-focus-streams-impacted.md)、[聚焦计数](/help/reporting/metrics/in-focus-count.md)和[聚焦总持续时间](/help/reporting/metrics/in-focus-total-duration.md)以了解相应的报表量度。*
+*本页介绍&#x200B;**聚焦**播放器状态的数据收集。 查看受聚焦影响的[流](/help/reporting/metrics/in-focus-streams-impacted.md)、[聚焦计数](/help/reporting/metrics/in-focus-count.md)和[聚焦总持续时间](/help/reporting/metrics/in-focus-total-duration.md)以了解相应的报表量度。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 9%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.states.infocus.set`, `a.media.states.infocus.count`, `a.media.states.infocus.time` |
-| **XDM集合字段** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details) （带有`name: "inFocus"`的条目） |
+| **XDM集合字段** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （带有`name: "inFocus"`的条目） |
+| **Audience Manager特征** | `c_contextdata.a.media.states.infocus.set`, `c_contextdata.a.media.states.infocus.count`, `c_contextdata.a.media.states.infocus.time` |
 | **必需** | 否 |
-| **发送条件** | 状态开始、状态结束 |
+| **发送条件** | [状态开始](/help/implementation/events/player-state/state-start.md)，[状态结束](/help/implementation/events/player-state/state-end.md) |
 
 ## Web SDK
 

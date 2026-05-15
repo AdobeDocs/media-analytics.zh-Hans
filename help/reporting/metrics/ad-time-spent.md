@@ -3,10 +3,10 @@ title: 广告逗留时间
 description: 报告每个会话的活动广告播放总秒数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 8%
+source-wordcount: '162'
+ht-degree: 9%
 
 ---
 
@@ -22,5 +22,6 @@ ht-degree: 8%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体广告]](/help/reporting/media-reports-enable.md)时，从上下文数据`a.media.ad.timePlayed`自动收集。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.timePlayed`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| 数据馈送 | `event_list`，`post_event_list` （请参阅[`event.tsv`](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.timePlayed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| 数据馈送 | `event_list`，`post_event_list` （请参阅[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Audience Manager | `c_contextdata.a.media.ad.timePlayed` |

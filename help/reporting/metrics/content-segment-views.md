@@ -3,10 +3,10 @@ title: 内容区段视图
 description: 计算发生活动主内容播放的区段。
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 7%
+source-wordcount: '183'
+ht-degree: 9%
 
 ---
 
@@ -17,10 +17,11 @@ ht-degree: 7%
 
 ## 如何计算此指标
 
-媒体后端为任何涵盖区段的结束调用设置`mediaReporting.sessionDetails.hasSegmentView = true`，在该区段中至少接收到了主内容的一个`media.play`事件。 该量度在结束调用时报告。 在Media Edge API路径上，区段视图是在与内容启动相同的条件下触发的。 两者都需要主内容上的`media.play`。
+媒体后端为任何关闭调用设置`mediaReporting.sessionDetails.hasSegmentView = true`，该关闭调用所涵盖的区段至少接收了一个主内容的[播放](/help/implementation/events/playback/play.md)事件。 该量度在结束调用时报告。 在Media Edge API路径上，区段视图是在与内容启动相同的条件下触发的。 这两种方法都要求对主内容进行[播放](/help/implementation/events/playback/play.md)事件。
 
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体核心]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.segmentView`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasSegmentView`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 数据馈送 | `event_list`，`post_event_list` （请参阅[`event.tsv`](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasSegmentView`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 数据馈送 | `event_list`，`post_event_list` （请参阅[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Audience Manager | 不适用 |

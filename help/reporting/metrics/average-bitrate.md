@@ -3,10 +3,10 @@ title: 平均比特率（量度）
 description: 报告每个会话的原始加权平均比特率（以kbps为单位）。
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 7%
+source-wordcount: '175'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**平均比特率**&#x200B;事件度量，该度量报告每个会话的原始加权平均比特率。 请参阅分段维度的平均比特率（维度）[&#128279;](/help/reporting/dimensions/average-bitrate.md)。 有关如何收集此变量，请参阅[比特率](/help/implementation/variables/quality/bitrate.md)。*
+*本页介绍&#x200B;**平均比特率**事件度量，该度量报告每个会话的原始加权平均比特率。 请参阅分段维度的平均比特率（维度）[](/help/reporting/dimensions/average-bitrate.md)。 有关如何收集此变量，请参阅[比特率](/help/implementation/variables/quality/bitrate.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,5 +28,6 @@ ht-degree: 7%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体质量]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.qoe.bitrateAverage`收集。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverage`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| 数据馈送 | `event_list`，`post_event_list` （请参阅[`event.tsv`](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverage`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| 数据馈送 | `event_list`，`post_event_list` （请参阅[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Audience Manager | `c_contextdata.a.media.qoe.bitrateAverage` |

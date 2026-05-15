@@ -3,10 +3,10 @@ title: 媒体馈送类型
 description: 在通过多个馈送交付相同内容时，报告广播馈送（例如，East-HD或West-SD）。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 6%
+source-wordcount: '157'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**媒体馈送类型**&#x200B;报告维度。 有关如何收集此变量，请参阅[媒体馈送类型](/help/implementation/variables/standard-metadata/media-feed-type.md)。*
+*此页面涵盖&#x200B;**媒体馈送类型**报告维度。 有关如何收集此变量，请参阅[媒体馈送类型](/help/implementation/variables/standard-metadata/media-feed-type.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 6%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 视频元数据]](/help/reporting/media-reports-enable.md)时，自动从上下文数据`a.media.feed`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.feed`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 数据馈送 | `videofeedtype, post_videofeedtype` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 数据馈送 | `videofeedtype`, `post_videofeedtype` |
+| Audience Manager | `c_contextdata.a.media.feed` |
 
 ## 维度项目
 

@@ -3,9 +3,9 @@ title: 首次播放日期
 description: 设置内容首次在电视上播出的日期。 Adobe建议使用YYYY-MM-DD格式。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**首次播放日期**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[首次播放日期](/help/reporting/dimensions/first-air-date.md)。*
+*本页介绍&#x200B;**首次播放日期**变量的数据收集。 有关相应的报表维度，请参阅[首次播放日期](/help/reporting/dimensions/first-air-date.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 13%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.airDate` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.firstAirDate`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.firstAirDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.airDate` |
 | **必需** | 否 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

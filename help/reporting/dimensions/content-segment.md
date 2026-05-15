@@ -3,10 +3,10 @@ title: 内容区段
 description: 报告在会话期间查看的播放头范围（以分钟为单位）。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 5%
+source-wordcount: '200'
+ht-degree: 6%
 
 ---
 
@@ -22,8 +22,9 @@ ht-degree: 5%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体核心]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.segment`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.segment`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 数据馈送 | `videosegment, post_videosegment` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.segment`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 数据馈送 | `videosegment`, `post_videosegment` |
+| Audience Manager | `c_contextdata.a.media.segment` |
 
 >[!IMPORTANT]
 >

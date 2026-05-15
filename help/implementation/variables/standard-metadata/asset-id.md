@@ -3,10 +3,10 @@ title: 资产 ID
 description: 设置资产ID，这是媒体资产的稳定行业标识符，例如EIDR或TMS/Gracenote ID。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 13%
+source-wordcount: '239'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**资产ID**&#x200B;变量的数据收集。 查看对应报表维度的[资产ID](/help/reporting/dimensions/asset-id.md)。*
+*本页介绍&#x200B;**资产ID**变量的数据收集。 查看对应报表维度的[资产ID](/help/reporting/dimensions/asset-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,9 +28,10 @@ ht-degree: 13%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.asset` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.asset` |
 | **必需** | 否 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

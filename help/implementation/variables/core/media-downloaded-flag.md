@@ -3,9 +3,9 @@ title: 媒体下载标志
 description: 将会话标记为已下载的离线播放，以便与流式传输会话分开报告。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Media downloaded flag**&#x200B;变量的数据收集。 查看相应报表维度的[下载的媒体](/help/reporting/dimensions/media-downloaded-flag.md)。*
+*本页介绍&#x200B;**Media downloaded flag**变量的数据收集。 查看相应报表维度的[下载的媒体](/help/reporting/dimensions/media-downloaded-flag.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 10%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.downloaded` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.downloaded` |
 | **必需** | 否 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

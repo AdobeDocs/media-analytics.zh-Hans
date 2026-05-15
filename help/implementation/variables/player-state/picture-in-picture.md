@@ -3,9 +3,9 @@ title: 画中画
 description: 跟踪查看者何时进入和退出画中画播放，以便后端可以报告PiP参与情况。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '292'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**画中画**&#x200B;播放器状态的数据收集。 查看受画中画影响的流数量[&#128279;](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[画中画计数](/help/reporting/metrics/picture-in-picture-count.md)和[画中画总持续时间](/help/reporting/metrics/picture-in-picture-total-duration.md)以了解相应的报表量度。*
+*本页介绍&#x200B;**画中画**播放器状态的数据收集。 查看受画中画影响的流数量[](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[画中画计数](/help/reporting/metrics/picture-in-picture-count.md)和[画中画总持续时间](/help/reporting/metrics/picture-in-picture-total-duration.md)以了解相应的报表量度。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 8%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.states.pictureinpicture.set`, `a.media.states.pictureinpicture.count`, `a.media.states.pictureinpicture.time` |
-| **XDM集合字段** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details) （带有`name: "pictureInPicture"`的条目） |
+| **XDM集合字段** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （带有`name: "pictureInPicture"`的条目） |
+| **Audience Manager特征** | `c_contextdata.a.media.states.pictureinpicture.set`, `c_contextdata.a.media.states.pictureinpicture.count`, `c_contextdata.a.media.states.pictureinpicture.time` |
 | **必需** | 否 |
-| **发送条件** | 状态开始、状态结束 |
+| **发送条件** | [状态开始](/help/implementation/events/player-state/state-start.md)，[状态结束](/help/implementation/events/player-state/state-end.md) |
 
 ## Web SDK
 

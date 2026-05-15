@@ -3,10 +3,10 @@ title: 广告长度
 description: 设置每个广告的长度（以秒为单位）。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 15%
+source-wordcount: '174'
+ht-degree: 14%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告时长**&#x200B;变量的数据收集。 查看相应报表维度的[广告长度](/help/reporting/dimensions/ad-length.md)。*
+*本页介绍&#x200B;**广告时长**变量的数据收集。 查看相应报表维度的[广告长度](/help/reporting/dimensions/ad-length.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 15%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.length` |
-| **XDM集合字段** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.ad.length` |
 | **必需** | 是 |
-| **发送条件** | 广告开始、广告关闭 |
+| **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
 
 ## Web SDK
 

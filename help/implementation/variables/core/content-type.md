@@ -3,10 +3,10 @@ title: 内容类型
 description: 设置内容类型以标识流的格式（VOD、Live、Linear、Podcast、song等）。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 10%
+source-wordcount: '261'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**内容类型**&#x200B;变量的数据收集。 查看相应报表维度的[内容类型](/help/reporting/dimensions/content-type.md)。*
+*本页介绍&#x200B;**内容类型**变量的数据收集。 查看相应报表维度的[内容类型](/help/reporting/dimensions/content-type.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -29,9 +29,10 @@ ht-degree: 10%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.contentType` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.contentType` |
 | **必需** | 是 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

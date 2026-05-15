@@ -3,9 +3,9 @@ title: 开始时间
 description: 设置播放器的启动时间（以毫秒为单位），以便后端可以报告时间到第一帧质量。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**开始时间**&#x200B;变量的数据收集。 有关相应的报表维度和量度，请参阅[开始时间](/help/reporting/dimensions/time-to-start.md)。*
+*本页介绍&#x200B;**开始时间**变量的数据收集。 有关相应的报表维度和量度，请参阅[开始时间](/help/reporting/dimensions/time-to-start.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 12%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.qoe.timeToStart` |
-| **XDM集合字段** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合字段** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.qoe.timeToStart` |
 | **必需** | 否 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

@@ -3,10 +3,10 @@ title: 章节名称
 description: 设置每个章节的友好名称，以便章节级别报表可以按章节标题划分。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 14%
+source-wordcount: '187'
+ht-degree: 13%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**章节名称**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[章节名称](/help/reporting/dimensions/chapter-name.md)。*
+*本页介绍&#x200B;**章节名称**变量的数据收集。 有关相应的报表维度，请参阅[章节名称](/help/reporting/dimensions/chapter-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 14%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.chapter.friendlyName` |
-| **XDM集合字段** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM集合字段** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.chapter.friendlyName` |
 | **必需** | 否 |
-| **发送条件** | 章节开始，章节关闭 |
+| **发送条件** | [章节开始](/help/implementation/events/chapters/chapter-start.md)，章节关闭 |
 
 ## Web SDK
 

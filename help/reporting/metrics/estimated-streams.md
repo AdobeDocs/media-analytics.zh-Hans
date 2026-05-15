@@ -3,10 +3,10 @@ title: 预计的流
 description: 近似于每个会话的音频或视频流数量。
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 9%
+source-wordcount: '187'
+ht-degree: 10%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 9%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 创建将`a.media.estimatedStreams`映射到自定义事件的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.estimatedStreams`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 数据馈送 | `event_list`，`post_event_list` （处理规则将`a.media.estimatedStreams`映射到的自定义事件；请参阅[`event.tsv`](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Adobe Analytics | 创建将`a.media.estimatedStreams`映射到自定义事件的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.estimatedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 数据馈送 | `event_list`，`post_event_list` （处理规则将`a.media.estimatedStreams`映射到的自定义事件；请参阅[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Audience Manager | `c_contextdata.a.media.estimatedStreams` |

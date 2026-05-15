@@ -3,9 +3,9 @@ title: 每秒帧数
 description: 在QoE对象上设置当前帧速率，以便后端具有用于质量报告的帧速率上下文。
 feature: Streaming Media
 role: Developer
-source-git-commit: 0e6b5a8ef5738191276976ed31125016774c043d
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '225'
 ht-degree: 12%
 
 ---
@@ -18,9 +18,10 @@ ht-degree: 12%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | 无（Adobe Analytics没有为帧速率分配保留的上下文数据键） |
-| **XDM集合字段** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合字段** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager特征** | 不适用 |
 | **必需** | 否 |
-| **发送条件** | 质量事件，会话关闭 |
+| **发送条件** | 质量事件（[比特率更改](/help/implementation/events/playback/bitrate-change.md)，[缓冲开始](/help/implementation/events/playback/buffer-start.md)，[错误](/help/implementation/events/error.md)），会话关闭 |
 
 ## Web SDK
 

@@ -3,10 +3,10 @@ title: 创作 ID
 description: 设置每个广告的创意标识符。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 18%
+source-wordcount: '175'
+ht-degree: 17%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Creative ID**&#x200B;变量的数据收集。 查看相应报表维度的[Creative ID](/help/reporting/dimensions/creative-id.md)。*
+*本页介绍&#x200B;**Creative ID**变量的数据收集。 查看相应报表维度的[Creative ID](/help/reporting/dimensions/creative-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 18%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.creative` |
-| **XDM集合字段** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.ad.creative` |
 | **必需** | 否 |
-| **发送条件** | 广告开始、广告关闭 |
+| **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
 
 ## Web SDK
 

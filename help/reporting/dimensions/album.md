@@ -3,10 +3,10 @@ title: 专辑
 description: 报告音轨所属的相册。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 8%
+source-wordcount: '136'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**相册**&#x200B;报告维度。 请参阅[相册](/help/implementation/variables/standard-metadata/album.md)以了解如何收集此变量。*
+*本页介绍&#x200B;**相册**报告维度。 请参阅[相册](/help/implementation/variables/standard-metadata/album.md)以了解如何收集此变量。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 8%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 音频元数据]](/help/reporting/media-reports-enable.md)时，自动从上下文数据`a.media.album`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.album`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.album`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 数据馈送 | `videoaudioalbum` |
+| Audience Manager | `c_contextdata.a.media.album` |
 
 ## 维度项目
 

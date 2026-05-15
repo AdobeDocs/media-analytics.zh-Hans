@@ -3,10 +3,10 @@ title: 创作者
 description: 设置内容的创建者或生产工作室。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 17%
+source-wordcount: '173'
+ht-degree: 16%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Originator**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[发起人](/help/reporting/dimensions/originator.md)。*
+*本页介绍&#x200B;**Originator**变量的数据收集。 有关相应的报表维度，请参阅[发起人](/help/reporting/dimensions/originator.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 17%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.originator` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.originator` |
 | **必需** | 否 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

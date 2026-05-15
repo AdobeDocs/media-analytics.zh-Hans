@@ -3,10 +3,10 @@ title: 广告pod
 description: 报告每个唯一的广告时间，由自动生成的面板ID作为密钥。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 5%
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
@@ -17,13 +17,14 @@ ht-degree: 5%
 
 ## 如何填充此维度
 
-广告面板ID在`media.adBreakStart`触发时由SDK自动生成。 直接API实施通过中断索引和开始时间构建它，或提供自定义面板ID。
+当触发[广告时间开始](/help/implementation/events/ads/ad-break-start.md)事件时，SDK会自动生成广告面板ID。 直接API实施通过中断索引和开始时间构建它，或提供自定义面板ID。
 
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体广告]](/help/reporting/media-reports-enable.md)时，从上下文数据`a.media.ad.pod`自动收集。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
-| 数据馈送 | `videoadpod, post_videoadpod` |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| 数据馈送 | `videoadpod`, `post_videoadpod` |
+| Audience Manager | 不适用 |
 
 ## 维度项目
 

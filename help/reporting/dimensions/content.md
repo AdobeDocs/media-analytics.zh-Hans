@@ -3,10 +3,10 @@ title: 内容
 description: 报告每个播放的唯一媒体，按内容ID键控。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 5%
+source-wordcount: '249'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**内容**&#x200B;报告维度。 有关如何收集此变量，请参阅[内容ID](/help/implementation/variables/core/content-id.md)。*
+*此页面涵盖&#x200B;**内容**报告维度。 有关如何收集此变量，请参阅[内容ID](/help/implementation/variables/core/content-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 5%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体核心]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.name`收集。 在访问期间持续存在。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 数据馈送 | `video, post_video` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 数据馈送 | `video`, `post_video` |
+| Audience Manager | `c_contextdata.a.media.name` |
 
 >[!IMPORTANT]
 >

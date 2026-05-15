@@ -3,9 +3,9 @@ title: 章节偏移
 description: 设置章节在内容中的偏移，以秒为单位，从开始时间算起。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**章节偏移**&#x200B;变量的数据收集。 查看相应报表维度的[章节偏移](/help/reporting/dimensions/chapter-offset.md)。*
+*本页介绍&#x200B;**章节偏移**变量的数据收集。 查看相应报表维度的[章节偏移](/help/reporting/dimensions/chapter-offset.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 12%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.chapter.offset` |
-| **XDM集合字段** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM集合字段** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.chapter.offset` |
 | **必需** | 否(Mobile SDK)；是(Edge、Media Collection API) |
-| **发送条件** | 章节开始，章节关闭 |
+| **发送条件** | [章节开始](/help/implementation/events/chapters/chapter-start.md)，章节关闭 |
 
 ## Web SDK
 

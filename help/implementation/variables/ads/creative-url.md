@@ -3,9 +3,9 @@ title: 创作 URL
 description: 为每个广告设置广告创意的URL。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '193'
 ht-degree: 16%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Creative URL**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[Creative URL](/help/reporting/dimensions/creative-url.md)。*
+*本页介绍&#x200B;**Creative URL**变量的数据收集。 有关相应的报表维度，请参阅[Creative URL](/help/reporting/dimensions/creative-url.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 16%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.creativeURL` |
-| **XDM集合字段** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.ad.creativeURL` |
 | **必需** | 否 |
-| **发送条件** | 广告开始、广告关闭 |
+| **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
 
 ## Web SDK
 

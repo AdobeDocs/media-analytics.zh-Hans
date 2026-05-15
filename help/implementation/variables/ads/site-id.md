@@ -3,9 +3,9 @@ title: 网站 ID
 description: 设置每个广告的广告网站ID以启用按广告投放网站划分。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '182'
 ht-degree: 17%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**站点ID**&#x200B;变量的数据收集。 查看相应报表维度的[站点ID](/help/reporting/dimensions/site-id.md)。*
+*本页介绍&#x200B;**站点ID**变量的数据收集。 查看相应报表维度的[站点ID](/help/reporting/dimensions/site-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 17%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.site` |
-| **XDM集合字段** | [`mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.ad.site` |
 | **必需** | 否 |
-| **发送条件** | 广告开始、广告关闭 |
+| **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
 
 ## Web SDK
 

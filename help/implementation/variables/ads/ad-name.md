@@ -3,9 +3,9 @@ title: 广告名称
 description: 设置广告的友好名称。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '178'
 ht-degree: 14%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告名称**&#x200B;变量的数据收集。 查看对应报表维度的[广告名称](/help/reporting/dimensions/ad-name.md)。*
+*本页介绍&#x200B;**广告名称**变量的数据收集。 查看对应报表维度的[广告名称](/help/reporting/dimensions/ad-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 14%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.friendlyName` |
-| **XDM集合字段** | [`mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.ad.friendlyName` |
 | **必需** | 否 |
-| **发送条件** | 广告开始、广告关闭 |
+| **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
 
 ## Web SDK
 

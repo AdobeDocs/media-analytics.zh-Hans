@@ -3,9 +3,9 @@ title: 电台/电视台
 description: 为音频广播内容设置广播电台名称或ID。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '179'
 ht-degree: 16%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**工作站**&#x200B;变量的数据收集。 查看[工作站](/help/reporting/dimensions/station.md)以了解相应的报表维度。*
+*本页介绍&#x200B;**工作站**变量的数据收集。 查看[工作站](/help/reporting/dimensions/station.md)以了解相应的报表维度。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 16%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.station` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.station` |
 | **必需** | 否 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

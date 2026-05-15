@@ -3,9 +3,9 @@ title: 媒体会话ID
 description: 唯一标识每个播放会话。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '203'
 ht-degree: 5%
 
 ---
@@ -17,13 +17,14 @@ ht-degree: 5%
 
 ## 如何填充此维度
 
-当后端收到`media.sessionStart`事件时，将自动生成会话ID。 Web SDK和移动SDK实施会捕获并保留您的ID；直接API实施必须从`sessionStart`响应（媒体收集API的`Location`标头或Media Edge API的`media-analytics:new-session`句柄）中读取会话ID，并将其包含在后续事件中。
+当后端收到[会话开始](/help/implementation/events/session/session-start.md)事件时，将自动生成会话ID。 Web SDK和移动SDK实施会捕获并保留您的ID；直接API实施必须从`sessionStart`响应（媒体收集API的`Location`标头或Media Edge API的`media-analytics:new-session`句柄）中读取会话ID，并将其包含在后续事件中。
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 创建将`a.media.vsid`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 数据馈送 | `videosessionid, post_videosessionid` |
+| Adobe Analytics | 创建将`a.media.vsid`映射到eVar的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 数据馈送 | `videosessionid`, `post_videosessionid` |
+| Audience Manager | `c_contextdata.a.media.vsid` |
 
 ## 维度项目
 

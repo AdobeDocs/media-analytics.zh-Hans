@@ -3,9 +3,9 @@ title: 已授权
 description: 将会话标记为通过Adobe Pass进行身份验证，以便将其计入授权事件。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '191'
 ht-degree: 15%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Authorized**&#x200B;变量的数据收集。 查看[Authorized](/help/reporting/metrics/authorized.md)以获取相应的报表量度。*
+*本页介绍&#x200B;**Authorized**变量的数据收集。 查看[Authorized](/help/reporting/metrics/authorized.md)以获取相应的报表量度。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 15%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.pass.auth` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.pass.auth` |
 | **必需** | 否 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

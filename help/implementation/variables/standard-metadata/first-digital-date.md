@@ -3,9 +3,9 @@ title: 第一个数字日期
 description: 设置内容在数字平台上首次播出的日期。 Adobe建议使用YYYY-MM-DD格式。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '206'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**第一个数字日期**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[首次数字化日期](/help/reporting/dimensions/first-digital-date.md)。*
+*本页介绍&#x200B;**第一个数字日期**变量的数据收集。 有关相应的报表维度，请参阅[首次数字化日期](/help/reporting/dimensions/first-digital-date.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 13%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.digitalDate` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.digitalDate` |
 | **必需** | 否 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

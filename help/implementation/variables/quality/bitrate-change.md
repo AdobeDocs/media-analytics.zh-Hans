@@ -3,7 +3,7 @@ title: 比特率更改
 description: 每当播放器切换到其他比特率时，触发比特率更改事件。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 11%
@@ -25,8 +25,9 @@ ht-degree: 11%
 | --- | --- |
 | **上下文数据变量** | （无 — 由后端计数） |
 | **XDM事件类型** | `media.bitrateChange` |
+| **Audience Manager特征** | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 | **必需** | 否 |
-| **发送条件** | 每当播放器切换比特率时 |
+| **发送条件** | [比特率更改](/help/implementation/events/playback/bitrate-change.md) |
 
 ## Web SDK
 

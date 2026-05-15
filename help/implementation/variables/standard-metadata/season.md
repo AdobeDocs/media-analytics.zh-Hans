@@ -3,10 +3,10 @@ title: 季
 description: 设置情景内容的季编号，以便按季划分参与情况。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 15%
+source-wordcount: '195'
+ht-degree: 14%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**季**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[季](/help/reporting/dimensions/season.md)。*
+*本页介绍&#x200B;**季**变量的数据收集。 有关相应的报表维度，请参阅[季](/help/reporting/dimensions/season.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ season变量是节目的季编号（通常是诸如`"2"`之类的字符串整数
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.season` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.season` |
 | **必需** | 否 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

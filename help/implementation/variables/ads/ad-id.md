@@ -3,9 +3,9 @@ title: 广告 ID
 description: 唯一地标识广告。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '183'
 ht-degree: 16%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告ID**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[广告](/help/reporting/dimensions/ad.md)。*
+*本页介绍&#x200B;**广告ID**变量的数据收集。 有关相应的报表维度，请参阅[广告](/help/reporting/dimensions/ad.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 16%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.name` |
-| **XDM集合字段** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.ad.name` |
 | **必需** | 是 |
-| **发送条件** | 广告开始、广告关闭 |
+| **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
 
 ## Web SDK
 

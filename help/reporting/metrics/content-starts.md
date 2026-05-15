@@ -3,10 +3,10 @@ title: 内容开始
 description: 计算主内容实际开始播放的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 9%
+source-wordcount: '146'
+ht-degree: 10%
 
 ---
 
@@ -17,10 +17,11 @@ ht-degree: 9%
 
 ## 如何计算此指标
 
-在首次接收主内容的`media.play`事件时，媒体后端设置`mediaReporting.sessionDetails.isPlayed = true`。 该量度在该播放事件中触发，但在关闭调用时报告。 若要计算前段下拉率，请使用`(Media starts − Content starts) / Media starts`。
+在首次接收主内容的[播放](/help/implementation/events/playback/play.md)事件时，媒体后端设置`mediaReporting.sessionDetails.isPlayed = true`。 该量度在该播放事件中触发，但在关闭调用时报告。 若要计算前段下拉率，请使用`(Media starts − Content starts) / Media starts`。
 
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体核心]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.play`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isPlayed`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 数据馈送 | `event_list`，`post_event_list` （请参阅[`event.tsv`](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isPlayed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 数据馈送 | `event_list`，`post_event_list` （请参阅[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Audience Manager | `c_contextdata.a.media.play` |

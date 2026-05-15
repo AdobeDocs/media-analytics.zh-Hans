@@ -3,10 +3,10 @@ title: 内容名称
 description: 报告每个媒体会话的可读标题。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 8%
+source-wordcount: '160'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**内容名称**&#x200B;报告维度。 有关如何收集此变量，请参阅[内容名称](/help/implementation/variables/core/content-name.md)。*
+*此页面涵盖&#x200B;**内容名称**报告维度。 有关如何收集此变量，请参阅[内容名称](/help/implementation/variables/core/content-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 8%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体核心]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.friendlyName`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.friendlyName`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 数据馈送 | `videoname, post_videoname` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 数据馈送 | `videoname`, `post_videoname` |
+| Audience Manager | `c_contextdata.a.media.friendlyName` |
 
 >[!NOTE]
 >

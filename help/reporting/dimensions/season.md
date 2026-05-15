@@ -3,10 +3,10 @@ title: 季
 description: 报告情景内容的季编号。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 8%
+source-wordcount: '138'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页涵盖&#x200B;**季**&#x200B;报告维度。 请参阅[季](/help/implementation/variables/standard-metadata/season.md)以了解如何收集此变量。*
+*本页涵盖&#x200B;**季**报告维度。 请参阅[季](/help/implementation/variables/standard-metadata/season.md)以了解如何收集此变量。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 8%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 视频元数据]](/help/reporting/media-reports-enable.md)时，自动从上下文数据`a.media.season`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.season`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 数据馈送 | `videoseason, post_videoseason` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.season`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 数据馈送 | `videoseason`, `post_videoseason` |
+| Audience Manager | `c_contextdata.a.media.season` |
 
 ## 维度项目
 

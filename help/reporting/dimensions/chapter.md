@@ -3,10 +3,10 @@ title: 章节
 description: 报告每个播放的唯一章节，由自动生成的章节ID作为键值。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 6%
+source-wordcount: '194'
+ht-degree: 8%
 
 ---
 
@@ -17,13 +17,14 @@ ht-degree: 6%
 
 ## 如何填充此维度
 
-`media.chapterStart`触发时会自动生成章节ID。 该值不是直接设置的；它是从章节位置、偏移和内容ID派生的。
+当触发[章节开始](/help/implementation/events/chapters/chapter-start.md)事件时，将自动生成章节ID。 该值不是直接设置的；它是从章节位置、偏移和内容ID派生的。
 
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体章节]](/help/reporting/media-reports-enable.md)时，自动从上下文数据`a.media.chapter.name`收集。 |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
-| 数据馈送 | `videochapter, post_videochapter` |
+| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| 数据馈送 | `videochapter`, `post_videochapter` |
+| Audience Manager | 不适用 |
 
 ## 维度项目
 

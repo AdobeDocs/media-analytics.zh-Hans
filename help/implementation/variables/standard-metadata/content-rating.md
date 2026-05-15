@@ -3,9 +3,9 @@ title: 内容评级
 description: 按照电视节目家长指南或您的区域评级系统的定义，设置内容评级。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '189'
 ht-degree: 14%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**内容评级**&#x200B;变量的数据收集。 查看相应报表维度的[内容评级](/help/reporting/dimensions/content-rating.md)。*
+*本页介绍&#x200B;**内容评级**变量的数据收集。 查看相应报表维度的[内容评级](/help/reporting/dimensions/content-rating.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 14%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.rating` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.rating`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.rating`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.rating` |
 | **必需** | 否 |
-| **发送条件** | 会话开始，会话关闭 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
 ## Web SDK
 

@@ -3,10 +3,10 @@ title: 内容继续
 description: 标记一个会话，该会话可恢复之前中断的播放，以便后端计算内容恢复事件。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 10%
+source-wordcount: '248'
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**内容继续**&#x200B;变量的数据收集。 查看[内容履历](/help/reporting/metrics/content-resumes.md)以了解相应的报表量度。*
+*本页介绍&#x200B;**内容继续**变量的数据收集。 查看[内容履历](/help/reporting/metrics/content-resumes.md)以了解相应的报表量度。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 10%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.resume` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特征** | 不适用 |
 | **必需** | 否 |
-| **发送条件** | 会话开始 |
+| **发送条件** | [会话开始](/help/implementation/events/session/session-start.md) |
 
 ## Web SDK
 

@@ -3,9 +3,9 @@ title: 章节位置
 description: 在内容中设置章节索引。 章节位置是正确自动生成章节ID所必需的。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '208'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**章节位置**&#x200B;变量的数据收集。 查看对应报表维度的[章节位置](/help/reporting/dimensions/chapter-position.md)。*
+*本页介绍&#x200B;**章节位置**变量的数据收集。 查看对应报表维度的[章节位置](/help/reporting/dimensions/chapter-position.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 12%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.chapter.position` |
-| **XDM集合字段** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM集合字段** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Audience Manager特征** | `c_contextdata.a.media.chapter.position` |
 | **必需** | 否(Mobile SDK)；是(Edge、Media Collection API) |
-| **发送条件** | 章节开始，章节关闭 |
+| **发送条件** | [章节开始](/help/implementation/events/chapters/chapter-start.md)，章节关闭 |
 
 ## Web SDK
 
