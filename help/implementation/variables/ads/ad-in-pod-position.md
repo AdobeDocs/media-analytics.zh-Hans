@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍面板位置&#x200B;**变量中的**广告的数据收集。 查看面板位置](/help/reporting/dimensions/ad-in-pod-position.md)中的[广告以了解相应的报表维度。*
+*本页介绍面板位置&#x200B;**变量中的**&#x200B;广告的数据收集。 查看面板位置[&#128279;](/help/reporting/dimensions/ad-in-pod-position.md)中的广告以了解相应的报表维度。*
 
 >[!ENDSHADEBOX]
 

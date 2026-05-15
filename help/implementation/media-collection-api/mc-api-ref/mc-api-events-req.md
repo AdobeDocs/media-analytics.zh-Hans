@@ -6,10 +6,17 @@ exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/yFHQhj33PM209WycWdPZsV-Yi8qN1DN-DC0KyyqFK1I
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
 source-wordcount: 263
@@ -54,7 +61,7 @@ ht-degree: 70%
 
 >[!IMPORTANT]
 >
->***广告跟踪 -**您只能跟踪`adBreak`* 内的广告。
+>***广告跟踪 -**&#x200B;您只能跟踪`adBreak`* 内的广告。
 >
 >在广告头尾没有 `adBreakStart` 和 `adBreakComplete`“书挡”的情况下，`adStart` 和 `adComplete` 事件将被忽略，并且会将相应的广告持续时间作为主内容持续时间进行跟踪。 这可能会对 Adobe Analytics 中可用的聚合数据产生重大影响。
 

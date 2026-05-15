@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**日期部分**变量的数据收集。 有关相应的报表维度，请参阅[日期部分](/help/reporting/dimensions/day-part.md)。*
+*本页介绍&#x200B;**日期部分**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[日期部分](/help/reporting/dimensions/day-part.md)。*
 
 >[!ENDSHADEBOX]
 

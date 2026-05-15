@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Artist**变量的数据收集。 查看[艺人](/help/reporting/dimensions/artist.md)以了解相应的报表维度。*
+*本页介绍&#x200B;**Artist**&#x200B;变量的数据收集。 查看[艺人](/help/reporting/dimensions/artist.md)以了解相应的报表维度。*
 
 >[!ENDSHADEBOX]
 

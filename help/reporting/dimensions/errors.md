@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**错误**维度。 Adobe Analytics从同一`a.media.qoe.errorCount`上下文数据变量自动填充配对的[错误事件指标](/help/reporting/metrics/error-events.md)。 Customer Journey Analytics公开单个`mediaReporting.qoeDataDetails.errorCount`字段，您可以将其用作维度或指标。*
+*本页介绍&#x200B;**错误**&#x200B;维度。 Adobe Analytics从同一`a.media.qoe.errorCount`上下文数据变量自动填充配对的[错误事件指标](/help/reporting/metrics/error-events.md)。 Customer Journey Analytics公开单个`mediaReporting.qoeDataDetails.errorCount`字段，您可以将其用作维度或指标。*
 
 >[!ENDSHADEBOX]
 

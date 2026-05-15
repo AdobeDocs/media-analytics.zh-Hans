@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Authorized**变量的数据收集。 查看[Authorized](/help/reporting/metrics/authorized.md)以获取相应的报表量度。*
+*本页介绍&#x200B;**Authorized**&#x200B;变量的数据收集。 查看[Authorized](/help/reporting/metrics/authorized.md)以获取相应的报表量度。*
 
 >[!ENDSHADEBOX]
 

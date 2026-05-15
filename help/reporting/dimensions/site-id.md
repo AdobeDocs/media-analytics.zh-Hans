@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**站点ID**报告维度。 有关如何收集此变量，请参阅[站点ID](/help/implementation/variables/ads/site-id.md)。*
+*此页面涵盖&#x200B;**站点ID**&#x200B;报告维度。 有关如何收集此变量，请参阅[站点ID](/help/implementation/variables/ads/site-id.md)。*
 
 >[!ENDSHADEBOX]
 

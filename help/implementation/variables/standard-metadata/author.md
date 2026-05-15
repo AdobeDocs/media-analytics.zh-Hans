@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**作者**变量的数据收集。 有关相应的报表维度，请参阅[作者](/help/reporting/dimensions/author.md)。*
+*本页介绍&#x200B;**作者**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[作者](/help/reporting/dimensions/author.md)。*
 
 >[!ENDSHADEBOX]
 

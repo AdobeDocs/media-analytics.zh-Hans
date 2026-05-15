@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此页涵盖&#x200B;**总缓冲持续时间**指标。 Adobe Analytics从同一`a.media.qoe.bufferTime`上下文数据变量自动填充配对的[缓冲总持续时间（维度）](/help/reporting/dimensions/total-buffer-duration.md)。 Customer Journey Analytics公开单个`mediaReporting.qoeDataDetails.bufferTime`字段，您可以将其用作维度或指标。*
+*此页涵盖&#x200B;**总缓冲持续时间**&#x200B;指标。 Adobe Analytics从同一`a.media.qoe.bufferTime`上下文数据变量自动填充配对的[缓冲总持续时间（维度）](/help/reporting/dimensions/total-buffer-duration.md)。 Customer Journey Analytics公开单个`mediaReporting.qoeDataDetails.bufferTime`字段，您可以将其用作维度或指标。*
 
 >[!ENDSHADEBOX]
 

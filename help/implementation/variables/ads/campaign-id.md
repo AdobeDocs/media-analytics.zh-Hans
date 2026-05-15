@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**促销活动ID**变量的数据收集。 查看相应报表维度的[促销活动ID](/help/reporting/dimensions/campaign-id.md)。*
+*本页介绍&#x200B;**促销活动ID**&#x200B;变量的数据收集。 查看相应报表维度的[促销活动ID](/help/reporting/dimensions/campaign-id.md)。*
 
 >[!ENDSHADEBOX]
 

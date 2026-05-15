@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**首次播放日期**变量的数据收集。 有关相应的报表维度，请参阅[首次播放日期](/help/reporting/dimensions/first-air-date.md)。*
+*本页介绍&#x200B;**首次播放日期**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[首次播放日期](/help/reporting/dimensions/first-air-date.md)。*
 
 >[!ENDSHADEBOX]
 

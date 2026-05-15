@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**流派**变量的数据收集。 有关相应的报表维度，请参阅[流派](/help/reporting/dimensions/genre.md)。*
+*本页介绍&#x200B;**流派**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[流派](/help/reporting/dimensions/genre.md)。*
 
 >[!ENDSHADEBOX]
 

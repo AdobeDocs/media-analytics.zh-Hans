@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Episode**变量的数据收集。 有关相应的报表维度，请参阅[集](/help/reporting/dimensions/episode.md)。*
+*本页介绍&#x200B;**Episode**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[集](/help/reporting/dimensions/episode.md)。*
 
 >[!ENDSHADEBOX]
 

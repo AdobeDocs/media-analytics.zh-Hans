@@ -15,7 +15,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**MVPD**变量的数据收集。 有关相应的报表维度，请参阅[MVPD](/help/reporting/dimensions/mvpd.md)。*
+*本页介绍&#x200B;**MVPD**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[MVPD](/help/reporting/dimensions/mvpd.md)。*
 
 >[!ENDSHADEBOX]
 
