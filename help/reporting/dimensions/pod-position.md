@@ -27,9 +27,9 @@ Pod位置是根据播放器在[广告时间开始](/help/implementation/events/a
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics（处理规则） | 创建将`a.media.ad.podSecond`映射到eVar的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Adobe Analytics（处理规则） | 创建将`a.media.ad.podSecond`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
 | Adobe Analytics（分类） | [广告面板](ad-pod.md)维度的分类 — 为报表包启用&#x200B;**[[!UICONTROL 媒体广告]](/help/reporting/media-reports-enable.md)**&#x200B;时，Adobe会自动创建此分类。 您负责填充和维护分类值。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | 数据馈送（处理规则） | `evar1`-`evar250`，`post_evar1`-`post_evar250` （您的处理规则将`a.media.ad.podSecond`映射到的eVar） |
 | 数据馈送（分类） | 不适用 — 数据馈送不支持分类。 |
 | Audience Manager | `c_contextdata.a.media.ad.podSecond` |
@@ -46,7 +46,7 @@ Pod位置是根据播放器在[广告时间开始](/help/implementation/events/a
 
 ## 处理规则方法
 
-创建将`a.media.ad.podSecond`映射到eVar的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法捕获面板位置作为每次点击值，而无需分类维护。
+创建将`a.media.ad.podSecond`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法捕获面板位置作为每次点击值，而无需分类维护。
 
 取舍是您丢失了面板位置和父[广告Pod](ad-pod.md)维度之间保证的1:1关系。 如果实施在不同事件间为同一面板ID发送的值不一致，则同一广告面板下可能会显示多个位置。 更新值仅适用于以后的数据。
 

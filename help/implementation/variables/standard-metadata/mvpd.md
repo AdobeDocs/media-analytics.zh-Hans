@@ -24,7 +24,7 @@ MVPD （多频道视频节目分发商）变量是用户通过身份验证的有
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.pass.mvpd` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.pass.mvpd` |
 | **必需** | 否 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
