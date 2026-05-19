@@ -15,11 +15,11 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**隐藏式字幕计数**报表量度。 有关如何收集此变量，请参阅[隐藏式字幕](/help/implementation/variables/player-state/closed-captioning.md)。*
+*此页面涵盖&#x200B;**隐藏式字幕计数**&#x200B;报表量度。 有关如何收集此变量，请参阅[隐藏式字幕](/help/implementation/variables/player-state/closed-captioning.md)。*
 
 >[!ENDSHADEBOX]
 
-**隐藏式字幕计数**&#x200B;量度报告查看器在会话期间启用字幕的次数。 每个启用字幕的状态开始事件都会增加计数。 与受隐藏式字幕](closed-captioning-streams-impacted.md)影响的[流配对，用于会话级别的布尔汇总，与受隐藏式字幕影响的[隐藏式字幕总持续时间](closed-captioning-total-duration.md)配对，用于总状态时间。
+**隐藏式字幕计数**&#x200B;量度报告查看器在会话期间启用字幕的次数。 每个启用字幕的状态开始事件都会增加计数。 与受隐藏式字幕[&#128279;](closed-captioning-streams-impacted.md)影响的流配对，用于会话级别的布尔汇总，与受隐藏式字幕影响的[隐藏式字幕总持续时间](closed-captioning-total-duration.md)配对，用于总状态时间。
 
 ## 如何计算此指标
 
