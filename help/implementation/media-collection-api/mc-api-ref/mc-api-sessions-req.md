@@ -5,9 +5,22 @@ uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/q8PEJKM8tYAOT6UMrqvtzMHYjCtk4kjDWVhtl9pgc1s
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: 133
 ht-degree: 85%
 
 ---
@@ -62,7 +75,7 @@ https://{uri}/api/v1/sessions
 ```
 
 * `playerTime`（必需）
-   * `playhead` - 如果内容是实时的，播放头必须是当天的当前秒数，0 &lt;= 播放头 &lt; 86400。如果内容是录制的，播放头必须是内容的当前秒数，0 &lt;= 播放头 &lt; 内容长度。该值可以是浮点数。
+   * `playhead` - 如果内容是实时的，播放头必须是当天的当前秒数，0 &lt;= 播放头 &lt; 86400。 如果内容是录制的，播放头必须是内容的当前秒数，0 &lt;= 播放头 &lt; 内容长度。 该值可以是浮点数。
    * `ts` – 时间戳；必须以毫秒为单位；协调世界时 (UTC)。
 * `eventType`（必需）
 
@@ -88,7 +101,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` 标头 - `/api/v1/` 部分提供 API 版本。`[…]sessions/` 之后的部分是会话 ID。
+`Location:` 标头 - `/api/v1/` 部分提供 API 版本。 `[…]sessions/` 之后的部分是会话 ID。
 
 ## 响应代码
 

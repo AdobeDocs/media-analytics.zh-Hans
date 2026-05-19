@@ -5,9 +5,24 @@ uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/jud37ZkadqiCb4F35qddJjglbaUW942hd0KmjAWrAdw
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: 231
 ht-degree: 100%
 
 ---
@@ -23,14 +38,14 @@ ht-degree: 100%
 | 触发器   | 心跳方法   | 网络调用   | 注释   |
 |---|---|---|---|
 | 用户点击&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 内容开始，心跳内容开始 | 这可以是用户点击&#x200B;**[!UICONTROL 播放]**&#x200B;或自动播放事件。 |
-| 播放视频的第一帧。 | `trackPlay` | 心跳内容播放 | 此方法将触发计时器。只要继续播放，就会每 10 秒发送一次心跳。 |
-| 将播放内容。 |  | 内容心跳 |  |
+| 播放视频的第一帧。 | `trackPlay` | 心跳内容播放 | 此方法将触发计时器。 只要继续播放，就会每 10 秒发送一次心跳。 |
+| 播放内容。 |  | 内容心跳 |  |
 | 缓冲开始。 | `trackEvent:BufferStart` | 心跳缓冲 |  |
 | 内容已缓冲。 |  | 内容心跳 |  |
 | 缓冲结束。 | `trackEvent:BufferComplete` | 心跳缓冲区，心跳播放 |  |
-| 将播放内容。 |  | 内容心跳 |  |
+| 播放内容。 |  | 内容心跳 |  |
 | 内容结束播放。 | `trackComplete` | 心跳内容结束 | 播放头已到达末尾。 |
-| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。即使用户没有观看至视频结束，也必须调用此 API。 |
+| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话结束。 即使用户没有观看至视频结束，也必须调用此 API。 |
 
 ## 参数 {#parameters}
 

@@ -5,16 +5,32 @@ uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 exl-id: c2de6454-8538-4d07-a099-e278b153d894
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/H62IoGbWZ3JPApfb-wFlt9P-oa3rD1kCzalpXEQ4Km0
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: 221
 ht-degree: 100%
 
 ---
 
 # SDK 调试{#sdk-debugging}
 
-您可以启用和禁用日志记录功能。Media SDK 会在整个媒体跟踪堆栈中提供广泛的跟踪/日志记录机制。您可以通过在配置对象中设置 `debugLogging` 标记，来启用或禁用日志记录功能。
+您可以启用和禁用日志记录功能。 Media SDK 会在整个媒体跟踪堆栈中提供广泛的跟踪/日志记录机制。 您可以通过在配置对象中设置 `debugLogging` 标记，来启用或禁用日志记录功能。
 
 ## 有关调试日志记录的代码示例
 
@@ -52,7 +68,7 @@ this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasure
 
 ### OTT（Chromecast、Roku）
 
-ADBMobile 库通过 `setDebugLogging` 方法提供调试日志记录。对于所有生产应用程序，调试日志记录应设置为 `false`。
+ADBMobile 库通过 `setDebugLogging` 方法提供调试日志记录。 对于所有生产应用程序，调试日志记录应设置为 `false`。
 
 #### Roku
 
@@ -84,7 +100,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **标记：**&#x200B;发出日志消息的子组件的名称（通常是类名称）
 * **消息：**&#x200B;实际跟踪消息
 
-您可以使用 Media SDK 库输出的日志来验证实施。一种有效的方法是在日志中搜索字符串 `#track`。这会突出显示您的应用程序发出的所有 `track*()` 调用。
+您可以使用 Media SDK 库输出的日志来验证实施。 一种有效的方法是在日志中搜索字符串 `#track`。 这会突出显示您的应用程序发出的所有 `track*()` 调用。
 
 例如，在日志中过滤 `#track` 的结果如下所示：
 

@@ -5,10 +5,22 @@ uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/yFHQhj33PM209WycWdPZsV-Yi8qN1DN-DC0KyyqFK1I
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 95%
+source-wordcount: 263
+ht-degree: 70%
 
 ---
 
@@ -45,13 +57,13 @@ ht-degree: 95%
 * `customMetadata`（可选，只通过 `adStart` 和 `chapterStart` 事件类型发送）
 * `qoeData`（可选）
 
-有关此版本的有效事件类型列表，请参阅[事件类型和描述](mc-api-event-types.md)。
+有关有效事件类型和每个SDK实现示例的列表，请参阅[事件概述](/help/implementation/events/overview.md)。
 
 >[!IMPORTANT]
 >
 >***广告跟踪 -**&#x200B;您只能跟踪`adBreak`* 内的广告。
 >
->在广告头尾没有 `adBreakStart` 和 `adBreakComplete`“书挡”的情况下，`adStart` 和 `adComplete` 事件将被忽略，并且会将相应的广告持续时间作为主内容持续时间进行跟踪。这可能会对 Adobe Analytics 中可用的聚合数据产生重大影响。
+>在广告头尾没有 `adBreakStart` 和 `adBreakComplete`“书挡”的情况下，`adStart` 和 `adComplete` 事件将被忽略，并且会将相应的广告持续时间作为主内容持续时间进行跟踪。 这可能会对 Adobe Analytics 中可用的聚合数据产生重大影响。
 
 ## 响应
 
@@ -70,8 +82,8 @@ Access-Control-Expose-Headers Location
 
 | HTTP 响应代码 | 描述 | 客户端操作项 |
 |---|---|---|
-| **204** | **无内容。**<br/><br/>心跳调用成功。 | 不适用 |
-| **400** | **错误请求。**<br/><br/>请求格式不正确。 | 检查 [JSON 验证架构](mc-api-json-validation.md)以了解请求类型。 |
-| **404** | **未找到。**<br/><br/>在后端服务中找不到媒体会话的会话 ID。 | 客户端应用程序应使用[会话请求](mc-api-sessions-req.md) API 创建另一个媒体会话并报告对它的跟踪。 |
-| **410** | **不存在。**<br/><br/>在后端服务中找到媒体会话，但客户端无法再对该会话报告活动。 | 客户端应用程序应使用[会话请求](mc-api-sessions-req.md) API 创建另一个媒体会话并报告对它的跟踪。 |
+| **204** | **没有内容。** <br/><br/>心跳调用成功。 | 不适用 |
+| **400** | **错误请求。** <br/><br/>请求格式不正确。 | 检查 [JSON 验证架构](mc-api-json-validation.md)以了解请求类型。 |
+| **404** | 找不到&#x200B;**。** <br/><br/>在后端服务中找不到媒体会话的会话ID。 | 客户端应用程序应使用[会话请求](mc-api-sessions-req.md) API 创建另一个媒体会话并报告对它的跟踪。 |
+| **410** | **不存在。** <br/><br/>在后端服务中找到媒体会话，但客户端无法再对该会话报告活动。 | 客户端应用程序应使用[会话请求](mc-api-sessions-req.md) API 创建另一个媒体会话并报告对它的跟踪。 |
 | **500** | **服务器错误** | 不适用 |

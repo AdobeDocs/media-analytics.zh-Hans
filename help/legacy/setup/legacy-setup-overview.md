@@ -4,10 +4,31 @@ description: 了解如何设置**旧版** 2.x Media SDK 以在您的移动应用
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/8wkHfEeGx3TtATwf9TH7B6exw2lV5xkgOm-z5GCqajQ
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c77ba355-6681-41fe-b719-563d3f507fdb
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 97%
+source-wordcount: 805
+ht-degree: 87%
 
 ---
 
@@ -21,7 +42,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将终止对适用于 iOS 和 Android 的 Media Analytics SDK 的支持。有关更多信息，请参阅 [Media Analytics SDK 支持终止常见问题解答](/help/additional-resources/end-of-support-faqs.md)。
+>Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将终止对适用于 iOS 和 Android 的 Media Analytics SDK 的支持。  有关更多信息，请参阅 [Media Analytics SDK 支持终止常见问题解答](/help/additional-resources/end-of-support-faqs.md)。
 
 
 ## 支持的最低平台版本 {#minimum-platform-version}
@@ -50,7 +71,7 @@ ht-degree: 97%
 
    |  变量名称  | 描述  | 必需 |  默认值  |
    |---|---|:---:|---|
-   | `trackingServer` | 适用于 Media Analytics 的跟踪服务器。这与您的分析跟踪服务器不同。 | 是 | 空字符串 |
+   | `trackingServer` | 适用于 Media Analytics 的跟踪服务器。 这与您的分析跟踪服务器不同。 | 是 | 空字符串 |
    | `channel` | 渠道名称 | 否 | 空字符串 |
    | `ovp` | 用于分发内容的在线媒体平台的名称 | 否 | 空字符串 |
    | `appVersion` | 媒体播放器应用程序/SDK 的版本 | 否 | 空字符串 |
@@ -62,12 +83,12 @@ ht-degree: 97%
 
    |  方法名称  |  描述  | 必需 |
    | --- | --- | :---: |
-   | `getQoSObject()` | 返回包含当前 QoS 信息的 `MediaObject` 实例。在播放会话期间，此方法将被调用多次。播放器实施必须始终返回最新的可用 QoS 数据。 | 是 |
-   | `getCurrentPlaybackTime()` | 返回播放头的当前位置。<br />对于 VOD 跟踪，该值以秒为单位，从媒体项目的开头起计算。<br />对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天 UTC 午夜开始的秒数。<br />请注意：使用进度标记时，需要内容持续时间，并且播放头需要更新为从媒体项目开始的秒数，从 0 开始。 | 是 |
+   | `getQoSObject()` | 返回包含当前 QoS 信息的 `MediaObject` 实例。 在播放会话期间，此方法将被调用多次。 播放器实施必须始终返回最新的可用 QoS 数据。 | 是 |
+   | `getCurrentPlaybackTime()` | 返回播放头的当前位置。<br /> 对于VOD跟踪，该值以秒为单位，从媒体项目的开头起计算。<br /> 对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天UTC午夜开始的秒数。<br /> 请注意：使用进度标记时，需要内容持续时间，并且播放头需要更新为从媒体项目开始的秒数，从 0 开始。 | 是 |
 
    >[!TIP]
    >
-   >服务质量 (QoS) 对象是可选的。如果您的播放器有 QoS 数据，并且您希望跟踪该数据，则需要以下变量：
+   >服务质量 (QoS) 对象是可选的。 如果您的播放器有 QoS 数据，并且您希望跟踪该数据，则需要以下变量：
 
    | 变量名称 | 描述   | 必需 |
    | --- | --- | :---: |
@@ -82,7 +103,7 @@ ht-degree: 97%
 
    >[!IMPORTANT]
    >
-   >在会话结束前，请确保您的 `MediaHeartbeat` 实例可以访问且未被取消分配。此实例将用于以下所有的媒体跟踪事件。
+   >在会话结束前，请确保您的 `MediaHeartbeat` 实例可以访问且未被取消分配。 此实例将用于以下所有的媒体跟踪事件。
 
    >[!TIP]
    >
@@ -135,8 +156,8 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 * 将媒体和广告开始调用直接发送到 Adobe Analytics (AppMeasurement) 服务器。
 * 将心跳调用发送到 Media Analytics (Heartbeats) 跟踪服务器，在该服务器上进行处理，然后传递到 Adobe Analytics 服务器。
 
-* **Adobe Analytics (AppMeasurement) 服务器**
-有关跟踪服务器选项的更多信息，请参阅[正确填充 trackingServer 和 trackingServerSecure 变量](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html)。
+* **Adobe Analytics (AppMeasurement)服务器**
+有关跟踪服务器选项的更多信息，请参阅[正确填充trackingServer和trackingServerSecure变量。](https://helpx.adobe.com/cn/analytics/kb/determining-data-center.html)
 
   >[!IMPORTANT]
   >
@@ -144,14 +165,14 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 
   分析跟踪服务器应该以“`.sc.omtrdc.net`”结尾，或者应该为一个 CNAME。
 
-* **&#x200B; Media Analytics (Heartbeats) 服务器**
-其格式始终为“`[your_namespace].hb.omtrdc.net`”。“`[your_namespace]`”的值指定您的公司，由 Adobe 提供。
+* **&#x200B; Media Analytics（心率）服务器**
+格式始终为“`[your_namespace].hb.omtrdc.net`”。 “`[your_namespace]`”的值指定您的公司，由 Adobe 提供。
 
-媒体跟踪在所有平台、桌面和移动设备上的工作方式都是相同的。音频跟踪当前适用于移动设备平台。在所有跟踪调用中，有一些需要验证的关键通用变量：
+媒体跟踪在所有平台、桌面和移动设备上的工作方式都是相同的。 音频跟踪当前适用于移动设备平台。 在所有跟踪调用中，有一些需要验证的关键通用变量：
 
 ## SDK 1.x 文档 {#sdk-1x-documentation}
 
-| Video Analytics 1.x SDK | 开发人员指南（仅 PDF） |
+| Video Analytics 1.x SDK  |  开发人员指南（仅 PDF） |
 | --- | --- |
 | Android | 为Android配置[&#128279;](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | 为Apple TV配置[&#128279;](vhl-dev-guide-v1x_appletv.pdf) |
@@ -163,4 +184,4 @@ Media Analytics 跟踪实施会生成两种类型的跟踪调用：
 
 ## Primetime Media SDK 文档 {#primetime-docs}
 
-* [Primetime 用户指南](https://helpx.adobe.com/cn/primetime/user-guide.html)
+* [Primetime用户指南](https://helpx.adobe.com/cn/primetime/user-guide.html)

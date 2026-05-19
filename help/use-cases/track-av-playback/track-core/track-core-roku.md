@@ -5,10 +5,25 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/n-ox7dhsEPOQCJqHFm8ZLG-7puJ7kfn1ZE7GEg-KFas
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 81%
+source-wordcount: 802
+ht-degree: 79%
 
 ---
 
@@ -104,7 +119,7 @@ ht-degree: 81%
 
    * **标准元数据**
 
-[在 Roku 中实施标准元数据](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+     [在 Roku 中实施标准元数据](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
      >[!NOTE]
      >
@@ -112,7 +127,7 @@ ht-degree: 81%
 
    * **自定义元数据**
 
-     为自定义变量创建变量对象，然后使用此视频的数据进行填充。例如：
+     为自定义变量创建变量对象，然后使用此视频的数据进行填充。 例如：
 
      ```
      mediaContextData = {}
@@ -122,7 +137,7 @@ ht-degree: 81%
 
 1. **跟踪开始播放的意图**
 
-   要开始跟踪媒体会话，请在媒体心率实例中调用 `trackSessionStart`：
+   要开始跟踪媒体会话，请在媒体心跳实例中调用 `trackSessionStart`：
 
    ```
    ADBMobile().mediaTrackSessionStart(mediaInfo,mediaContextData)
@@ -134,7 +149,7 @@ ht-degree: 81%
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 跟踪的是用户的播放意图，而不是播放的开始。此 API 用于加载视频数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
+   >`trackSessionStart` 跟踪的是用户的播放意图，而不是播放的开始。 此 API 用于加载视频数据/元数据并评估开启 QoS 量度的时间（`trackSessionStart` 和 `trackPlay` 之间的持续时间）。
 
    >[!NOTE]
    >
@@ -150,7 +165,7 @@ ht-degree: 81%
 
 1. **更新播放头值**
 
-   当媒体播放头发生变化时，通过调用`mediaUpdatePlayhead` API通知SDK。 <br />对于视频点播 (VOD)，该值以从媒体项开头开始的秒数指定。<br />对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天UTC午夜开始的秒数。
+   当媒体播放头发生变化时，通过调用`mediaUpdatePlayhead` API通知SDK。<br /> 对于视频点播(VOD)，该值以秒为单位，从媒体项目的开头起计算。<br /> 对于直播，如果播放器不提供有关内容持续时间的信息，则该值可以指定为自当天UTC午夜开始的秒数。
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
@@ -180,7 +195,7 @@ ht-degree: 81%
    ```
 
    >[!IMPORTANT]
-   >`trackSessionEnd` 标记视频跟踪会话的结尾。如果会话成功观看至结束（用户一直观看内容至结尾），请确保先调用 `trackComplete`，之后再调用 `trackSessionEnd`。在调用 `trackSessionEnd` 之后，任何其他 `track*` API 调用都将被忽略（除了用于新的视频跟踪会话的 `trackSessionStart` 之外）。
+   >`trackSessionEnd` 标记视频跟踪会话的结尾。 如果会话成功观看至结束（用户一直观看内容至结尾），请确保先调用 `trackComplete`，之后再调用 `trackSessionEnd`。 在调用 `trackSessionEnd` 之后，任何其他 `track*` API 调用都将被忽略（除了用于新的视频跟踪会话的 `trackSessionStart` 之外）。
 
 1. **跟踪所有可能的暂停方案**
 
@@ -192,12 +207,12 @@ ht-degree: 81%
 
    **暂停方案**
 
-   识别视频播放器将会暂停的任何方案，并确保正确调用了 `trackPause`。以下方案均要求应用程序调用 `trackPause()`：
+   识别视频播放器将会暂停的任何方案，并确保正确调用了 `trackPause`。 以下方案均要求应用程序调用 `trackPause()`：
 
    * 用户在应用程序中明确点击暂停。
    * 播放器将其置于“暂停”状态。
    * （*移动应用程序*）- 用户将应用程序放入后台，但您希望应用程序保持会话打开。
-   * （*移动应用程序*）- 发生导致应用程序被置于后台运行的任何类型的系统中断。例如，用户接到电话，或其他应用程序出现弹出窗口，但您希望应用程序保持会话的活动状态，以便用户有机会从中断点恢复视频。
+   * （*移动应用程序*）- 发生导致应用程序被置于后台运行的任何类型的系统中断。 例如，用户接到电话，或其他应用程序出现弹出窗口，但您希望应用程序保持会话的活动状态，以便用户有机会从中断点恢复视频。
 
 1. 识别播放器中的视频播放事件和/或视频在暂停后继续播放的事件并调用 `trackPlay`：
 
@@ -206,7 +221,7 @@ ht-degree: 81%
    ```
 
    >[!TIP]
-   >这可能与步骤 4 中所使用的事件源相同。请确保当视频播放继续时，每个 `trackPause()` API 调用均与随后的一个 `trackPlay()` API 调用相配对。
+   >这可能与步骤 4 中所使用的事件源相同。 请确保当视频播放继续时，每个 `trackPause()` API 调用均与随后的一个 `trackPlay()` API 调用相配对。
 
 * 跟踪方案：[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * Roku SDK随附的示例播放器提供了完整的跟踪示例。

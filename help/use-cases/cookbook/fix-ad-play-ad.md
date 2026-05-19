@@ -5,19 +5,29 @@ uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/-Q92qldvgTTgJave-VP6P8IYN1CxbQQzxbtLS3DgYAE
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: 453
 ht-degree: 75%
 
 ---
-
 
 # 处理广告之间出现的间隔{#resolving-main-play-appearing-between-ads}
 
 ## 问题
 
-在一些广告跟踪场景中，您可能会遇到在一个广告结束与另一个广告开始之间意外发生 `main:play` 调用的情况。如果广告完成调用与下一个广告开始调用之间的延迟超过 250 毫秒，则 Media SDK 将回退到发送 `main:play` 调用。如果这种回退到 `main:play` 的情况发生在前置广告时间，则内容开始量度可能会提前引入。
+在一些广告跟踪场景中，您可能会遇到在一个广告结束与另一个广告开始之间意外发生 `main:play` 调用的情况。 如果广告完成调用与下一个广告开始调用之间的延迟超过 250 毫秒，则 Media SDK 将回退到发送 `main:play` 调用。 如果这种回退到 `main:play` 的情况发生在前置广告时间，则内容开始量度可能会提前引入。
 
 上述广告之间的间隙由Media SDK解释为主内容，因为此间隙与任何广告内容都不重叠。 Media SDK上未设置任何广告信息，并且播放器处于播放状态。 如果没有广告信息，并且播放器状态为正在播放，则Media SDK默认将间隙的持续时间计入主内容。 VA SDK 不能将该播放时长计为无广告信息的时长。
 
@@ -40,7 +50,7 @@ ht-degree: 75%
 
 ***延迟触发广告完成调用。***
 
-在播放器内部处理此空白：延迟为第一个广告调用 `trackEvent:AdComplete`，然后紧接着为第二个广告调用 `trackEvent:AdStart`。当第一个广告完成后，应用程序应延迟调用 `AdComplete` 事件。请确保在广告时间为上一个广告调用 `trackEvent:AdComplete`。如果播放器能识别出当前的广告资源是广告时间的最后一个广告，则可立即调用 `trackEvent:AdComplete`。此分辨率将导致不到1秒的额外广告时间归属于上一个广告单元。
+在播放器内部处理此空白：延迟为第一个广告调用 `trackEvent:AdComplete`，然后紧接着为第二个广告调用 `trackEvent:AdStart`。 当第一个广告完成后，应用程序应延迟调用 `AdComplete` 事件。 请确保在广告时间为上一个广告调用 `trackEvent:AdComplete`。 如果播放器能识别出当前的广告资源是广告时间的最后一个广告，则可立即调用 `trackEvent:AdComplete`。 此分辨率将导致不到1秒的额外广告时间归属于上一个广告单元。
 
 **在广告时间（包括前置广告）开始时：**
 
@@ -54,7 +64,7 @@ ht-degree: 75%
 
   >[!NOTE]
   >
-  >应仅在前一个广告未完成时调用此实例。请考虑使用布尔值维护前一个广告的“`isinAd`”状态。
+  >应仅在前一个广告未完成时调用此实例。 请考虑使用布尔值维护前一个广告的“`isinAd`”状态。
 
 * 为广告资源创建广告对象实例：例如，`adObject`。
 * 填充广告元数据 `adCustomMetadata`。

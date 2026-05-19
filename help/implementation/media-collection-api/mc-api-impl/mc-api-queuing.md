@@ -5,18 +5,29 @@ uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/maOCcXZJkPef7edi3UtaSIJKa-4x9byaH6Qzt2eDR2Y
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: 205
 ht-degree: 80%
 
 ---
 
 # 会话响应缓慢时对事件进行排队{#queueing-events-when-sessions-response-is-slow}
 
-媒体收集 API 是 RESTful：即，您发出 HTTP 请求并等待响应。只有在视频播放开始时发出[会话请求](../mc-api-ref/mc-api-sessions-req.md)以获取会话 ID 时，它才会发挥重要作用。这一点很重要，因为所有后续跟踪调用都需要会话 ID。
+媒体收集 API 是 RESTful：即，您发出 HTTP 请求并等待响应。 只有在视频播放开始时发出[会话请求](../mc-api-ref/mc-api-sessions-req.md)以获取会话 ID 时，它才会发挥重要作用。 这一点很重要，因为所有后续跟踪调用都需要会话 ID。
 
-播放器可能会在从后端“返回会话响应之前”__（通过会话 ID 参数）触发事件。如果发生这种情况，应用程序必须对在发出[会话请求](../mc-api-ref/mc-api-sessions-req.md)到获取其响应期间到达的任何跟踪事件进行排队。当会话响应到达时，您应该首先处理所有排队的[事件](../mc-api-ref/mc-api-events-req.md)，随后可以使用[事件](../mc-api-ref/mc-api-events-req.md)调用开始处理&#x200B;_实时_&#x200B;事件。
+播放器可能会在从后端“返回会话响应之前”__（通过会话 ID 参数）触发事件。 如果发生这种情况，应用程序必须对在发出[会话请求](../mc-api-ref/mc-api-sessions-req.md)到获取其响应期间到达的任何跟踪事件进行排队。 当会话响应到达时，您应该首先处理所有排队的[事件](../mc-api-ref/mc-api-events-req.md)，随后可以使用[事件](../mc-api-ref/mc-api-events-req.md)调用开始处理&#x200B;_实时_&#x200B;事件。
 
 >[!NOTE]
 >

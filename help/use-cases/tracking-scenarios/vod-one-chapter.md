@@ -5,9 +5,25 @@ uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/VV3HRRhTaxd-CC-uAyfYWks9q5A2zdCN-yn5td2Ajb8
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: 434
 ht-degree: 100%
 
 ---
@@ -18,7 +34,7 @@ ht-degree: 100%
 
 在此方案中，部分 VOD 内容被标记为一个章节。
 
-除非另外指定，否则此方案中的网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案中的调用相同。网络调用在同一时间发生，但负载却不同。
+除非另外指定，否则此方案中的网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案中的调用相同。 网络调用在同一时间发生，但负载却不同。
 
 | 触发器   | 心跳方法   | 网络调用   | 注释   |
 |---|---|---|---|
@@ -27,15 +43,15 @@ ht-degree: 100%
 | 播放章节的第一帧。 | `trackPlay` | 心跳内容播放 | 当章节内容在主内容之前播放时，心跳在章节开始时开始。 |
 | 将播放章节。 |  | 章节心跳 |  |
 | 章节结束。 | `trackEvent:trackChapterComplete` | 心跳章节结束 | 到达章节结尾时。 |
-| 将播放内容。 |  | 内容心跳 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
+| 播放内容。 |  | 内容心跳 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 内容结束。 | `trackComplete` | 心跳内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
-| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话已结束。即使用户没有观看至媒体结束，也必须调用此 API。 |
+| 会话结束。 | `trackSessionEnd` |  | `SessionEnd` 是指观看会话已结束。 即使用户没有观看至媒体结束，也必须调用此 API。 |
 
 ## 参数 {#parameters}
 
-当章节播放开始时，将发送 `Heartbeat Chapter Start` 调用。如果章节的开头与 10 秒计时器不一致，则 `Heartbeat Chapter Start` 调用将延迟几秒钟，并转到下一个 10 秒间隔。
+当章节播放开始时，将发送 `Heartbeat Chapter Start` 调用。 如果章节的开头与 10 秒计时器不一致，则 `Heartbeat Chapter Start` 调用将延迟几秒钟，并转到下一个 10 秒间隔。
 
-发生此情况时，`Content Heartbeat` 调用将以相同的间隔发出。您可以通过检查事件类型和资源类型来区分这两种调用：
+发生此情况时，`Content Heartbeat` 调用将以相同的间隔发出。 您可以通过检查事件类型和资源类型来区分这两种调用：
 
 ### 心跳章节开始
 

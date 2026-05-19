@@ -4,9 +4,19 @@ description: 了解Adobe流媒体服务支持的主要设备，例如iOS、Andro
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
+TQID: https://experienceleague.adobe.com/O3mOUZAV8D1yI3kylOt86o4vgE9mtj6-4wPcYVHqCz8
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: 308
 ht-degree: 75%
 
 ---
@@ -21,9 +31,9 @@ Adobe流媒体服务支持所有主要设备，包括：
 
 发布设备的新版本时例行更新 SDK，您可使用 SDK 与每个平台的原生播放器或任何其他可用的媒体播放器集成。
 
-对于当前不支持 SDK 的设备，或者在您可能需要自定义实施的情况下，您可以使用媒体收集 API 或 Media Edge API。这些API允许您直接从设备向Adobe流媒体服务的后端进行RESTful API调用。
+对于当前不支持 SDK 的设备，或者在您可能需要自定义实施的情况下，您可以使用媒体收集 API 或 Media Edge API。 这些API允许您直接从设备向Adobe流媒体服务的后端进行RESTful API调用。
 
-下表列出当前支持的设备。如果未列出某个设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
+下表列出当前支持的设备。 如果未列出某个设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
 
 有关在Edge上实施媒体的详细信息，请参阅[使用Experience Platform Edge安装流媒体收藏集](/help/implementation/edge/implementation-edge.md)。
 

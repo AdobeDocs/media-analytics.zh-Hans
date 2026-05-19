@@ -5,10 +5,25 @@ uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/PguxKIzAL95WbMl5c0yJq9rYSqZgOGbbAYtxOI4eVOs
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 79%
+source-wordcount: 522
+ht-degree: 77%
 
 ---
 
@@ -20,23 +35,22 @@ ht-degree: 79%
 >
 >如果您实施的是 1.x 版本的 SDK，可以在此处下载 1.x 开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)。
 
-广告播放包括跟踪广告时间、广告开始、广告结束和广告跳过。可以使用媒体播放器的 API 来识别关键播放器事件，以及填充必需和可选的广告变量。请在此处查看元数据的完整列表：[广告参数](../../implementation/variables/ad-parameters.md)。
+广告播放包括跟踪广告时间、广告开始、广告结束和广告跳过。 可以使用媒体播放器的 API 来识别关键播放器事件，以及填充必需和可选的广告变量。
 
 ## 播放器事件 {#player-events}
-
 
 ### 在广告时间开始时
 
 >[!NOTE]
 >包括前置广告
 
-* 为广告时间创建一个 `adBreak` 对象实例。例如，`adBreakObject`。
+* 为广告时间创建一个 `adBreak` 对象实例。 例如，`adBreakObject`。
 
 * 使用 `adBreakObject` 为广告时间开始事件调用 `trackEvent`。
 
 ### 在每个广告资源开始时
 
-* 为广告资源创建一个广告对象实例。例如，`adObject`。
+* 为广告资源创建一个广告对象实例。 例如，`adObject`。
 * 填充广告元数据 `adCustomMetadata`。
 * 为广告开始事件调用 `trackEvent`。
 
@@ -106,7 +120,7 @@ ht-degree: 79%
 
 >[!IMPORTANT]
 >
->确保在广告播放 (`s:asset:type=ad`) 期间不增加内容播放器播放头 (`l:event:playhead`)。否则，“内容逗留时间”量度将受到不良影响。
+>确保在广告播放 (`s:asset:type=ad`) 期间不增加内容播放器播放头 (`l:event:playhead`)。 否则，“内容逗留时间”量度将受到不良影响。
 
 以下代码示例对 HTML5 媒体播放器使用 JavaScript 2.x SDK。
 
@@ -145,3 +159,11 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete);
 };
 ```
+
+>[!MORELIKETHIS]
+>
+>* [广告时间开始](/help/implementation/events/ads/ad-break-start.md)
+>* [广告开始](/help/implementation/events/ads/ad-start.md)
+>* [广告完成](/help/implementation/events/ads/ad-complete.md)
+>* [广告跳过](/help/implementation/events/ads/ad-skip.md)
+>* [广告时间结束](/help/implementation/events/ads/ad-break-complete.md)

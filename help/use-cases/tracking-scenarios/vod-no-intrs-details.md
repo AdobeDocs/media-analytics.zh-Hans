@@ -5,9 +5,25 @@ uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/l5Qi-MmSMd-b9bueLmYzeCiJVr24cGSWKnQ-yBoLG-Q
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: 370
 ht-degree: 100%
 
 ---
@@ -27,7 +43,7 @@ ht-degree: 100%
 
 ## 参数 {#parameters}
 
-您在心跳内容开始调用中看到的许多值也会在 Adobe Analytics `Content Start` 调用中看到。Adobe 使用许多参数填充各种媒体报表，但下表中仅列出了最重要的参数：
+您在心跳内容开始调用中看到的许多值也会在 Adobe Analytics `Content Start` 调用中看到。 Adobe 使用许多参数填充各种媒体报表，但下表中仅列出了最重要的参数：
 
 ### 心跳内容开始
 
@@ -43,7 +59,7 @@ ht-degree: 100%
 
 ## 心跳内容播放 {#heartbeat-content-play}
 
-这些参数应当看起来与 `Heartbeat Content Start` 调用几乎完全相同，但关键的区别在于 `s:event:type` 参数。所有其他参数仍应该存在。
+这些参数应当看起来与 `Heartbeat Content Start` 调用几乎完全相同，但关键的区别在于 `s:event:type` 参数。 所有其他参数仍应该存在。
 
 | 参数 | 值 | 注释   |
 |---|---|---|
@@ -52,7 +68,7 @@ ht-degree: 100%
 
 ## 内容心跳 {#content-heartbeats}
 
-在媒体播放期间，计时器至少每 10 秒发送一次心跳。这些心跳包含有关播放、广告、缓冲等的信息。每个心跳的确切内容超出了此文档的范围，但关键问题是在播放持续的同时始终触发心跳。
+在媒体播放期间，计时器至少每 10 秒发送一次心跳。 这些心跳包含有关播放、广告、缓冲等的信息。 每个心跳的确切内容超出了此文档的范围，但关键问题是在播放持续的同时始终触发心跳。
 
 在内容心跳中，查找以下参数：
 
@@ -63,7 +79,7 @@ ht-degree: 100%
 
 ## 心跳内容结束 {#heartbeat-content-complete}
 
-当播放结束（即，到达播放头的结尾）时，将发送 `Heartbeat Content Complete` 调用。此调用与其他心跳调用类似，但包含一些特定参数：
+当播放结束（即，到达播放头的结尾）时，将发送 `Heartbeat Content Complete` 调用。 此调用与其他心跳调用类似，但包含一些特定参数：
 
 | 参数 | 值 | 注释   |
 |---|---|---|
@@ -72,7 +88,7 @@ ht-degree: 100%
 
 ## 示例代码 {#sample-code}
 
-在此方案中，内容的长度为 40 秒。在结束之前，它将一至播放，不会受到任何干扰。
+在此方案中，内容的长度为 40 秒。 在结束之前，它将一至播放，不会受到任何干扰。
 
 ![](assets/main-content-regular-playback.png)
 

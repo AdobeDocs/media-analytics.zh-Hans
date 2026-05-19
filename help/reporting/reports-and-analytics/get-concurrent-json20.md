@@ -1,32 +1,44 @@
 ---
 title: 使用 Analytics 2.0 API 获取并行查看者 JSON 报表数据
-description: 了解如何使用 Analytics 2.0 API 获取并行查看者报表数据。查看示例请求和响应。
+description: 了解如何使用 Analytics 2.0 API 获取并行查看者报表数据。 查看示例请求和响应。
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-feature: "Streaming Media, Workspace Basics"
+feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/rXu8Om0i6ELI2TGRANqhn9GTqq1DM1Obo7ZbCC1Ox4E
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 100%
+source-wordcount: 190
+ht-degree: 90%
 
 ---
-
 
 # 使用 Analytics 2.0 API 获取并行查看者 JSON 报表数据{#get-concurrent-viewers-json-report-data}
 
 您可以使用 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) 获取并行查看者报表数据。
 
-1. 使用在 UI 中构建的任何区段过滤数据。要按特定内容 ID 进行过滤，请创建新区段。
+1. 使用在 UI 中构建的任何区段过滤数据。 要按特定内容 ID 进行过滤，请创建新区段。
 1. 将请求主体中的 `elements` -> `id` 设置为 `metrics/concurrent_viewers_visitors`。
 1. 请求足够数量的数据。
 
    * 您在报表中指定的数据范围会“在视频会话结束时”收集所有并行查看者数据。__
-因此，您必须考虑从前一天开始，到午夜之后（即第二天）结束的会话。
+您必须考虑从前一天开始，到午夜之后（即第二天）结束的会话。
 
    * 在您的请求中，在预期时间段后再请求一天的数据，但在您的分析中，“仅使用预期数据”。_**_
 
-一天数据的请求有效负荷类似于以下示例。请求将连续 2 天完成，但在报表中，您只使用第一天。
+一天数据的请求有效负荷类似于以下示例。 请求将连续 2 天完成，但在报表中，您只使用第一天。
 
 ## 示例请求
 

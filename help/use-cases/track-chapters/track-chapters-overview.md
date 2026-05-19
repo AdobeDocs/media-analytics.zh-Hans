@@ -5,10 +5,25 @@ uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/PAadkD9nJ7IRf7LdsNzIWtFp0yv54x0xV-Js-ona0Lg
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 97%
+source-wordcount: 337
+ht-degree: 95%
 
 ---
 
@@ -20,9 +35,9 @@ ht-degree: 97%
 > 
 > 如果您实施的是 1.x 版本的 SDK，可以在此处下载开发人员指南：[下载 SDK](/help/getting-started/download-sdks.md)。
 
-章节和区段跟踪适用于自定义的媒体章节或区段。章节跟踪的一些常见用例包括根据媒体内容定义自定义区段（例如，棒球赛的回合），或者定义不同广告时间之间的内容区段。对于核心媒体跟踪实施，章节跟踪&#x200B;**并非**&#x200B;必需项。
+章节和区段跟踪适用于自定义的媒体章节或区段。 章节跟踪的一些常见用例包括根据媒体内容定义自定义区段（例如，棒球赛的回合），或者定义不同广告时间之间的内容区段。 对于核心媒体跟踪实施，章节跟踪&#x200B;**并非**&#x200B;必需项。
 
-章节跟踪包括章节开始、章节结束和章节跳过。您可以结合自定义分段逻辑使用媒体播放器 API 来识别章节事件，并填充必需章节变量和可选章节变量。
+章节跟踪包括章节开始、章节结束和章节跳过。 您可以结合自定义分段逻辑使用媒体播放器 API 来识别章节事件，并填充必需章节变量和可选章节变量。
 
 ## 播放器事件
 
@@ -63,7 +78,7 @@ ht-degree: 97%
 1. 如果由于用户选择跳过章节（例如，用户搜寻章节边界之外的内容）而使章节播放未能完成，请在 MediaHeartbeat 实例中调用 `ChapterSkip`。
 1. 如果存在任何其他章节，请重复执行步骤 1 至 5。
 
-以下代码示例为 HTML5 媒体播放器使用 JavaScript 2.x SDK。您应该结合使用此代码与核心媒体播放代码。
+以下代码示例为 HTML5 媒体播放器使用 JavaScript 2.x SDK。 您应该结合使用此代码与核心媒体播放代码。
 
 ```js
 /* Call on chapter start */
@@ -90,3 +105,9 @@ if (e.type == "chapter skip") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
 };
 ```
+
+>[!MORELIKETHIS]
+>
+>* [章节开始](/help/implementation/events/chapters/chapter-start.md)
+>* [章节结束](/help/implementation/events/chapters/chapter-complete.md)
+>* [章节跳过](/help/implementation/events/chapters/chapter-skip.md)

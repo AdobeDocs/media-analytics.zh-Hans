@@ -5,9 +5,22 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/yj31nOyVc9b6mFyYN0XeRidvQkiYXPS3Aat0a7z5CfI
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: 688
 ht-degree: 92%
 
 ---
@@ -39,11 +52,11 @@ ht-degree: 92%
 
    1. 将库文件和 JSON 配置文件添加到您的项目源。
 
-      用于配置 Adobe Mobile 的 JSON 具有一个用于 Media Analytics 的专有密钥，其名称为 `mediaHeartbeat`。这是Media Analytics的配置参数所属的位置。
+      用于配置 Adobe Mobile 的 JSON 具有一个用于 Media Analytics 的专有密钥，其名称为 `mediaHeartbeat`。 这是Media Analytics的配置参数所属的位置。
 
       >[!TIP]
       >
-      >此包中提供了一个 `ADBMobileConfig` JSON 文件示例。有关设置，请与 Adobe 代表联系。
+      >此包中提供了一个 `ADBMobileConfig` JSON 文件示例。 有关设置，请与 Adobe 代表联系。
 
       例如：
 
@@ -104,7 +117,7 @@ ht-degree: 92%
 
 1. 配置 Experience Cloud 访客 ID。
 
-   Experience Cloud 访客 ID 提供了一个跨 Experience Cloud 解决方案的通用访客 ID。视频事件和其他 Marketing Cloud 集成都需要使用访客 ID 服务。
+   Experience Cloud 访客 ID 提供了一个跨 Experience Cloud 解决方案的通用访客 ID。 视频事件和其他 Marketing Cloud 集成都需要使用访客 ID 服务。
 
    验证您的 `ADBMobileConfig` 配置包含 `marketingCloud` 组织 ID。
 
@@ -120,7 +133,7 @@ ht-degree: 92%
    >
    >确保包含 `@AdobeOrg`。
 
-   配置完成后，将生成一个 Experience Cloud 访客 ID，并将其包含在所有点击中。其他访客 ID（如 `custom` 和 `automatically-generated`）将继续随每次点击一起发送。
+   配置完成后，将生成一个 Experience Cloud 访客 ID，并将其包含在所有点击中。 其他访客 ID（如 `custom` 和 `automatically-generated`）将继续随每次点击一起发送。
 
    **Experience Cloud 访客 ID 服务方法**
 
@@ -131,8 +144,8 @@ ht-degree: 92%
    |  方法   | 描述 |
    | --- | --- |
    | `visitorMarketingCloudID` | 从访客 ID 服务中检索 Experience Cloud 访客 ID。<br/><br/>`ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | 使用 Experience Cloud 访客 ID，您可以设置其他可与每个访客关联的客户 ID。访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。此方法对应于 `setCustomerIDs`。例如：<br/><br/>`identifiers={}`<br/>`identifiers["idType"]="idValue"`<br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | 用于在 SDK 上设置 Roku ID for Advertising (RIDA)。例如：<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>使用 Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API 获取 Roku ID for Advertising (RIDA)。 |
+   | `visitorSyncIdentifiers` | 使用 Experience Cloud 访客 ID，您可以设置其他可与每个访客关联的客户 ID。 访客 API 接受同一访客具有多个客户 ID，并且使用客户类型标识符区分不同客户 ID 的适用范围。 此方法对应于 `setCustomerIDs`。 例如：<br/><br/>`identifiers={}`<br/>`identifiers["idType"]="idValue"`<br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `setAdvertisingIdentifier` | 用于在 SDK 上设置 Roku ID for Advertising (RIDA)。 例如：<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>使用 Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API 获取 Roku ID for Advertising (RIDA)。 |
    | `getAllIdentifiers` | 返回由 SDK 存储的所有标识符的列表，包括 Analytics、Visitor、Audience Manager 和自定义标识符。<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
 
    <!--

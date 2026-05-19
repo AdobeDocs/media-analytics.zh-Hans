@@ -5,9 +5,25 @@ uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/wMYVK9HfRpdPfz4aiFEKOaTDHj548se9hySTd3ux9g8
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: 245
 ht-degree: 100%
 
 ---
@@ -18,7 +34,7 @@ ht-degree: 100%
 
 在此方案中，针对两个不同的媒体以并行方式运行了两个会话，这两个会话使用两个不同的 `MediaHeartbeat` 实例。
 
-此方案与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同，不同之处在于此方案针对两个不同的媒体以并行方式运行了两个会话。这两个会话分别使用不同的 `MediaHeartbeat` 实例。
+此方案与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同，不同之处在于此方案针对两个不同的媒体以并行方式运行了两个会话。 这两个会话分别使用不同的 `MediaHeartbeat` 实例。
 
 除非另外指定，否则网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案相同。
 
@@ -112,7 +128,7 @@ protected void onCreate(Bundle savedInstanceState) {
 } 
 ```
 
-`MediaAnalyticsProvider` 和 `MediaHeartbeat` 的实例都跟踪两个不同的会话，每个会话具有自己唯一的会话 ID。在 Charles 调试工具或调试日志中，这两个会话可以通过使用会话 ID 值进行识别。要在 Android 中显示此方案，请设置以下代码：
+`MediaAnalyticsProvider` 和 `MediaHeartbeat` 的实例都跟踪两个不同的会话，每个会话具有自己唯一的会话 ID。 在 Charles 调试工具或调试日志中，这两个会话可以通过使用会话 ID 值进行识别。 要在 Android 中显示此方案，请设置以下代码：
 
 ```java
 // Set up mediaObject 
@@ -276,7 +292,7 @@ _mediaHeartbeat.trackSessionEnd();
 } 
 ```
 
-`MediaAnalyticsProvider` 和 `ADBMediaHeartbeat` 的实例都跟踪两个不同的会话，每个会话具有自己唯一的会话 ID。在 Charles 调试工具或调试日志中，这两个会话可以通过使用会话 ID 值进行识别。
+`MediaAnalyticsProvider` 和 `ADBMediaHeartbeat` 的实例都跟踪两个不同的会话，每个会话具有自己唯一的会话 ID。 在 Charles 调试工具或调试日志中，这两个会话可以通过使用会话 ID 值进行识别。
 
 要在 iOS 中显示此方案，请设置以下代码：
 
@@ -377,4 +393,4 @@ analyticsProvider2 = new MediaAnalyticsProvider(_player2);
 _player2.loadContent(URL_TO_MEDIA_2); 
 ```
 
-`MediaAnalyticsProvider` 和 `MediaHeartbeat` 的实例都跟踪两个不同的会话，每个会话具有自己唯一的会话 ID。您可以在 Charles 调试工具中看到这两个会话。
+`MediaAnalyticsProvider` 和 `MediaHeartbeat` 的实例都跟踪两个不同的会话，每个会话具有自己唯一的会话 ID。 您可以在 Charles 调试工具中看到这两个会话。

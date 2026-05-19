@@ -5,16 +5,29 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/nWQiQkx66U5JL19U4yV8o4dvm0nLivpyKq29uNlIXTc
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: 472
 ht-degree: 75%
 
 ---
 
 # Roku 元数据键{#roku-metadata-keys}
 
-可以分别在媒体和广告信息对象上设置标准视频、音频和广告元数据。使用视频/广告元数据的常量键，在调用跟踪API之前设置包含信息对象上标准元数据的字典。 有关标准元数据常量的完整列表，请参阅下表，之后提供示例。
+可以分别在媒体和广告信息对象上设置标准视频、音频和广告元数据。 使用视频/广告元数据的常量键，在调用跟踪API之前设置包含信息对象上标准元数据的字典。 有关标准元数据常量的完整列表，请参阅下表，之后提供示例。
 
 ## 视频元数据常量 {#video-metadata-constants}
 
@@ -23,7 +36,7 @@ ht-degree: 75%
 | 节目 | `a.media.show` | `MEDIA_VideoMetadataKeySHOW` |
 | 季 | `a.media.season` | `MEDIA_VideoMetadataKeySEASON` |
 | 剧集 | `a.media.episode` | `MEDIA_VideoMetadataKeyEPISODE` |
-| 资源 | `a.media.asset` | `MEDIA_VideoMetadataKeyASSET_ID` |
+| 资产 | `a.media.asset` | `MEDIA_VideoMetadataKeyASSET_ID` |
 | 流派 | `a.media.genre` | `MEDIA_VideoMetadataKeyGENRE` |
 | 首次播放日期 | `a.media.airDate` | `MEDIA_VideoMetadataKeyFIRST_AIR_DATE` |
 | 首次数字化播放日期 | `a.media.digitalDate` | `MEDIA_VideoMetadataKeyFIRST_DIGITAL_DATE` |
@@ -54,7 +67,7 @@ ht-degree: 75%
 | 元数据名称 | 上下文数据键 | 常量名称 |
 | --- | --- | --- |
 | 广告商 | `a.media.ad.advertiser` | `MEDIA_AdMetadataKeyADVERTISER` |
-| 促销活动 ID | `a.media.ad.campaign` | `MEDIA_AdMetadataKeyCAMPAIGN_ID` |
+| 营销活动 ID | `a.media.ad.campaign` | `MEDIA_AdMetadataKeyCAMPAIGN_ID` |
 | 创作 ID | `a.media.ad.creative` | `MEDIA_AdMetadataKeyCREATIVE_ID` |
 | 版面 ID | `a.media.ad.placement` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
 | 网站 ID | `a.media.ad.site` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
@@ -76,7 +89,7 @@ ht-degree: 75%
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | 用于在 `MediaInfo` `trackLoad` 上设置元数据的常量 |
 | `MEDIA_STANDARD_AD_METADATA` | 用于在 `EventData` `trackEvent` 上设置广告元数据的常量 |
-| `MEDIA_RESUMED` | 用于发送视频恢复心跳的常量。要恢复先前已停止内容的视频跟踪，您需要在调用 `mediaTrackLoad` 时，在 `mediaInfo` 对象中设置 `MEDIA_RESUMED` 属性。（`MEDIA_RESUMED`不是可以使用`mediaTrackEvent` API跟踪的事件。）当应用程序想要继续跟踪用户停止观看但现在打算继续观看的内容时，`MEDIA_RESUMED`应设置为true。 <br/><br/>例如，假设一位用户只观看了 30% 的内容，然后关闭了应用程序。此操作将导致会话结束。之后，如果同一用户返回到相同的内容，并且应用程序允许从先前停止的位置恢复会话，则应用程序应该在调用 `mediaTrackLoad` API 时将 `MEDIA_RESUMED` 设置为“true”。结果是，同一视频内容的这两个不同的媒体会话可以链接在一起。 以下是实施示例：<br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>这将为视频创建一个新会话，但它也会导致 SDK 发送事件类型为“resume”的心跳请求，该事件类型可用于报告，以将两个不同的媒体会话关联在一起。 |
+| `MEDIA_RESUMED` | 用于发送视频恢复心跳的常量。 要恢复先前已停止内容的视频跟踪，您需要在调用 `mediaTrackLoad` 时，在 `mediaInfo` 对象中设置 `MEDIA_RESUMED` 属性。 （`MEDIA_RESUMED`不是可以使用`mediaTrackEvent` API跟踪的事件。） 当应用程序想要继续跟踪用户停止观看但现在打算继续观看的内容时，`MEDIA_RESUMED`应设置为true。 <br/><br/>例如，假设一位用户只观看了 30% 的内容，然后关闭了应用程序。 此操作将导致会话结束。 之后，如果同一用户返回到相同的内容，并且应用程序允许从先前停止的位置恢复会话，则应用程序应该在调用 `mediaTrackLoad` API 时将 `MEDIA_RESUMED` 设置为“true”。 结果是，同一视频内容的这两个不同的媒体会话可以链接在一起。 以下是实施示例：<br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>这将为视频创建一个新会话，但它也会导致 SDK 发送事件类型为“resume”的心跳请求，该事件类型可用于报告，以将两个不同的媒体会话关联在一起。 |
 
 ### 内容类型常量
 

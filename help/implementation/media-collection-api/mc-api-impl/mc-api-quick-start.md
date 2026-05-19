@@ -1,14 +1,26 @@
 ---
 title: 流媒体收集API — 快速入门
-description: 开始使用流媒体 API。了解如何快速验证您的请求数据。
+description: 开始使用流媒体 API。 了解如何快速验证您的请求数据。
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/F7NHDQkJVwVc-Th-blxBP8gifT7V55xLqlI1YT-pswc
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 97%
+source-wordcount: 294
+ht-degree: 90%
 
 ---
 
@@ -16,7 +28,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->收集必要的请求数据，以成功将[会话请求](../mc-api-ref/mc-api-sessions-req.md)发送到 Media Analytics (MA) 收集 API 后端服务器。通过手动发送请求（使用 `curl` 或 Postman 等），您可以快速验证您的请求数据。这将对请求中是否存在与不正确数据类型或信息有关的任何问题立即提供反馈。使用 [JSON 验证架构](../mc-api-ref/mc-api-json-validation.md)验证您提供的请求数据是否正确。
+>收集必要的请求数据，以成功将[会话请求](../mc-api-ref/mc-api-sessions-req.md)发送到 Media Analytics (MA) 收集 API 后端服务器。 通过手动发送请求（使用 `curl` 或 Postman 等），您可以快速验证您的请求数据。 这将对请求中是否存在与不正确数据类型或信息有关的任何问题立即提供反馈。 使用 [JSON 验证架构](../mc-api-ref/mc-api-json-validation.md)验证您提供的请求数据是否正确。
 
 1. 收集运行任何 Experience Cloud 应用程序必须提供的标准、所需 Adobe Analytics 和访客数据：
 
@@ -25,7 +37,7 @@ ht-degree: 97%
    * Analytics 报表包 ID
    * Analytics 跟踪服务器 URL
 
-1. 为 `sessions` 请求正文创建一个 JSON 对象，其中包含进行成功调用所需的最小数据。例如：
+1. 为 `sessions` 请求正文创建一个 JSON 对象，其中包含进行成功调用所需的最小数据。 例如：
 
    ```json
    {
@@ -53,9 +65,9 @@ ht-degree: 97%
 
    >[!NOTE]
    >
-   >必须在 JSON 请求正文中使用正确的数据类型。例如，`analytics.enableSSL` 要求是布尔值，`media.length` 为数值等。通过查看 [JSON 验证架构](mc-api-validate-reqs.md)，您可以检查参数类型以及必选与可选要求。
+   >必须在 JSON 请求正文中使用正确的数据类型。 例如，`analytics.enableSSL`需要布尔值，`media.length`为数值等。通过查看[JSON验证架构](mc-api-validate-reqs.md)，您可以检查参数类型以及必选与可选要求。
 
-1. 将会话请求发送到 MA 收集 API 端点。如果您的请求负载无效，请确定问题并重试，直到接收到 `201 Created` 响应。在此 `curl` 示例中，JSON 请求正文位于名为 `sample_data_session` 的文件中：
+1. 将会话请求发送到 MA 收集 API 端点。 如果您的请求负载无效，请确定问题并重试，直到接收到 `201 Created` 响应。 在此 `curl` 示例中，JSON 请求正文位于名为 `sample_data_session` 的文件中：
 
    ```sh
    $ curl -i -d \
@@ -76,4 +88,4 @@ ht-degree: 97%
    Access-Control-Expose-Headers: Location
    ```
 
-如果[会话请求](../mc-api-ref/mc-api-sessions-req.md)成功，您将接收到与上述相同的 `201 Created` 响应。响应包含 Location 标头中的会话 ID。会话 ID 是响应中的关键信息，因为所有后续跟踪调用都需要该信息。成功返回[会话请求](../mc-api-ref/mc-api-sessions-req.md)后，您可以放心地继续使用视频播放器中的 MA API 来实施视频跟踪。
+如果[会话请求](../mc-api-ref/mc-api-sessions-req.md)成功，您将接收到与上述相同的 `201 Created` 响应。 响应包含 Location 标头中的会话 ID。 会话 ID 是响应中的关键信息，因为所有后续跟踪调用都需要该信息。 成功返回[会话请求](../mc-api-ref/mc-api-sessions-req.md)后，您可以放心地继续使用视频播放器中的 MA API 来实施视频跟踪。

@@ -5,10 +5,26 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/UP1biESuMpPqJNXKmEG-RU-8iBIHJcVZ87N0EsuZ1hI
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 94%
+source-wordcount: 787
+ht-degree: 88%
 
 ---
 
@@ -18,22 +34,22 @@ ht-degree: 94%
 
 >[!IMPORTANT]
 >
->Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将终止对适用于 iOS 和 Android 的 Media Analytics SDK 的支持。有关更多信息，请参阅 [Media Analytics SDK 支持终止常见问题解答](/help/additional-resources/end-of-support-faqs.md)。
+>Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将终止对适用于 iOS 和 Android 的 Media Analytics SDK 的支持。  有关更多信息，请参阅 [Media Analytics SDK 支持终止常见问题解答](/help/additional-resources/end-of-support-faqs.md)。
 
 ## 先决条件
 
-* **获取 Media SDK 的有效配置参数**
-在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
-* **在应用程序中实施适用于 iOS 的 ADBMobile**
-有关 Adobe Mobile SDK 文档的更多信息，请参阅[适用于 Experience Cloud 解决方案的 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=zh-Hans)。
+* **获取Media SDK的有效配置参数**
+在设置Analytics帐户后，这些参数可以从Adobe代表获取。
+* **在应用程序中实施适用于iOS的ADBMobile**
+有关Adobe Mobile SDK文档的更多信息，请参阅适用于Experience Cloud解决方案的[iOS SDK 4.x。](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=zh-Hans)
 
   >[!IMPORTANT]
   >
-  >从 iOS 9 开始，Apple 引入了 App Transport Security (ATS) 功能。此功能旨在通过确保您的应用程序仅使用行业标准协议和密码来提高网络安全性。此功能默认处于启用状态，但您的配置选项为您提供了是否使用 ATS 的选项。有关 ATS 的详细信息，请参阅 [App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=zh-Hans)。
+  >从 iOS 9 开始，Apple 引入了 App Transport Security (ATS) 功能。 此功能旨在通过确保您的应用程序仅使用行业标准协议和密码来提高网络安全性。 此功能默认处于启用状态，但您的配置选项为您提供了是否使用 ATS 的选项。 有关 ATS 的详细信息，请参阅 [App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=zh-Hans)。
 
 * **在媒体播放器中提供以下功能：**
 
-   * _用于订阅播放器事件的 API_ - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
+   * _用于订阅播放器事件的 API_ – Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * _提供播放器信息的 API_ - 此信息包括媒体名称和播放头位置等详细信息。
 
 ## SDK 实施
@@ -153,19 +169,19 @@ ht-degree: 94%
 
    >[!IMPORTANT]
    >
-   >在会话结束前，请确保您的 `ADBMediaHeartbeat` 实例可以访问且“未被取消分配”**。此实例将用于以下所有的跟踪事件。
+   >在会话结束前，请确保您的 `ADBMediaHeartbeat` 实例可以访问且“未被取消分配”**。 此实例将用于以下所有的跟踪事件。
 
 ## 在 iOS 中从版本 1.x 迁移到 2.x {#migrate-to-two-x}
 
-在版本 2.x 中，所有公共方法都已合并到 `ADBMediaHeartbeat` 类中，从而更加便于开发人员使用。所有配置都已合并到 `ADBMediaHeartbeatConfig` 类中。
+在版本 2.x 中，所有公共方法都已合并到 `ADBMediaHeartbeat` 类中，从而更加便于开发人员使用。 所有配置都已合并到 `ADBMediaHeartbeatConfig` 类中。
 
 有关从 1.x 迁移到 2.x 的信息，请参阅旧版实施文档。
 
 ## 配置适用于 tvOS 的本地应用程序
 
-新的 Apple TV 发布后，您现在可以创建要在本机 tvOS 环境中运行的应用程序。您可以使用 iOS 中提供的几个框架中的任意一个来创建纯本机应用程序，也可以使用 XML 模板和 JavaScript 创建应用程序。从 MediaSDK 版本 2.0 开始，提供对 tvOS 的支持。有关 tvOS 的更多信息，请参阅 [tvOS 开发人员网站](https://developer.apple.com/cn/tvos/)。
+新的 Apple TV 发布后，您现在可以创建要在本机 tvOS 环境中运行的应用程序。 您可以使用 iOS 中提供的几个框架中的任意一个来创建纯本机应用程序，也可以使用 XML 模板和 JavaScript 创建应用程序。 从 MediaSDK 版本 2.0 开始，提供对 tvOS 的支持。 有关 tvOS 的更多信息，请参阅 [tvOS 开发人员网站](https://developer.apple.com/cn/tvos/)。
 
-在您的 Xcode 项目中执行以下步骤。本指南的编写假定您的项目具有针对 tvOS 的 Apple TV 应用程序：
+在您的 Xcode 项目中执行以下步骤。 本指南的编写假定您的项目具有针对 tvOS 的 Apple TV 应用程序：
 
 1. 将`VideoHeartbeat_TV.a`库文件拖到您项目的`lib`文件夹中。
 

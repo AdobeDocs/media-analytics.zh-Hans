@@ -1,20 +1,33 @@
 ---
 title: 媒体概述
-description: 使用“媒体概述”仪表板显示汇总测量。了解如何快速监测媒体效果。
+description: 使用“媒体概述”仪表板显示汇总测量。 了解如何快速监测媒体效果。
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: "Streaming Media, Workspace Basics"
+feature: Streaming Media, Workspace Basics
 role: User, Admin
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+TQID: https://experienceleague.adobe.com/engzFFk1A-g6oRqo-MnlNfEmVGUmR316Po152Wajm8c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: 109
+ht-degree: 51%
 
 ---
 
 # 媒体概述{#media-overview}
 
-“媒体概览”功能板旨在让您监测整个网站中的媒体。“媒体概览”屏幕显示了若干汇总测量，这样您便可以快速监测媒体是否如期执行。图表会在广告开始次数旁显示内容开始次数，以便快速查看每个媒体项目的这些量度。
+“媒体概述”功能板可让您监控网站上的媒体。 “媒体概述”显示若干聚合测量，以便您可以快速监视媒体是否按预期执行。 图形会在广告开始旁显示内容开始，以便您快速查看每个媒体项目的这些量度。
 
 ![](assets/media_overview.png)
 
@@ -34,7 +47,7 @@ ht-degree: 100%
 
 ## 媒体效果 {#media-performance}
 
-单击并拖动以放大，然后将鼠标悬停在上面以查看特定媒体的精细量度。单击 ![](assets/video-overview-report-revert.png)
+单击并拖动以放大，然后将鼠标悬停在上面以查看特定媒体的精细量度。 单击 ![](assets/video-overview-report-revert.png)
 
 可在缩放后重置视图。
 

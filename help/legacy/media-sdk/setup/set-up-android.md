@@ -5,10 +5,24 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/re7nZLD9IwvufJGicWLArSwdIi6h518q3ZMDf6oqaCI
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 97%
+source-wordcount: 459
+ht-degree: 86%
 
 ---
 
@@ -18,18 +32,18 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将终止对适用于 iOS 和 Android 的 Media Analytics SDK 的支持。有关更多信息，请参阅 [Media Analytics SDK 支持终止常见问题解答](/help/additional-resources/end-of-support-faqs.md)。
+>Adobe 将于 2021 年 8 月 31 日终止支持版本 4 Mobile SDK，届时还将终止对适用于 iOS 和 Android 的 Media Analytics SDK 的支持。  有关更多信息，请参阅 [Media Analytics SDK 支持终止常见问题解答](/help/additional-resources/end-of-support-faqs.md)。
 
 
 ## 先决条件
 
-* **获取 Media SDK 的有效配置参数**
-在设置 Analytics 帐户后，您可以从 Adobe 代表处获取这些参数。
-* **在应用程序中实施适用于 Android 的 ADBMobile**
-有关 Adobe Mobile SDK 文档的更多信息，请参阅[适用于 Experience Cloud 解决方案的 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=zh-Hans)。
+* **获取Media SDK的有效配置参数**
+在设置Analytics帐户后，这些参数可以从Adobe代表获取。
+* **在应用程序中实施适用于Android的ADBMobile**
+有关Adobe Mobile SDK文档的更多信息，请参阅适用于Experience Cloud解决方案的[Android SDK 4.x。](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=zh-Hans)
 
 * **在媒体播放器中提供以下功能：**
-   * *用于订阅播放器事件的 API* - Media SDK 要求在播放器中发生事件时调用一组简单的 API。
+   * *用于订阅播放器事件的 API* – Media SDK 要求在播放器中发生事件时调用一组简单的 API。
    * *提供播放器信息的 API* - 此信息包括媒体名称和播放头位置等详细信息。
 
 ## SDK 实施
@@ -124,7 +138,7 @@ ht-degree: 97%
 
    >[!IMPORTANT]
    >
-   >在会话结束前，请确保您的 `MediaHeartbeat` 实例可以访问且“未被取消分配”**。此实例将用于以下所有的跟踪事件。
+   >在会话结束前，请确保您的 `MediaHeartbeat` 实例可以访问且“未被取消分配”**。 此实例将用于以下所有的跟踪事件。
 
 **添加应用程序权限**
 
@@ -140,6 +154,6 @@ ht-degree: 97%
 
 **在 Android 中从版本 1.x 迁移到 2.x**
 
-在版本 2.x 中，所有公共方法都已合并到 `com.adobe.primetime.va.simple.MediaHeartbeat` 类中，从而更加便于开发人员使用。此外，所有配置现在都已合并到 `com.adobe.primetime.va.simple.MediaHeartbeatConfig` 类中。
+在版本 2.x 中，所有公共方法都已合并到 `com.adobe.primetime.va.simple.MediaHeartbeat` 类中，从而更加便于开发人员使用。 此外，所有配置现在都已合并到 `com.adobe.primetime.va.simple.MediaHeartbeatConfig` 类中。
 
 有关从 1.x 迁移到 2.x 的信息，请参阅旧版实施文档。

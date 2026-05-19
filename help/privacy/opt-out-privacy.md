@@ -5,10 +5,23 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 94%
+source-wordcount: 382
+ht-degree: 92%
 
 ---
 
@@ -18,8 +31,8 @@ ht-degree: 94%
 
 您可以控制是否允许在特定设备上进行跟踪活动。
 
-* **移动应用程序 –** 媒体扩展尊重数据收集中的隐私设置。要选择退出跟踪，您需要将隐私设置为[在标记中选择退出](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property)或[更新 Mobile SDK 中的隐私状态](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus)。
-* **JavaScript/浏览器应用程序 -** VA 库遵循 `VisitorAPI` 隐私和选择禁用设置。要选择禁用跟踪，您需要在访客 API 服务中选择禁用。有关选择退出和隐私的更多信息，请参阅[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。
+* **移动应用程序 –** 媒体扩展尊重数据收集中的隐私设置。 要选择退出跟踪，您需要将隐私设置为[在标记中选择退出](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property)或[更新 Mobile SDK 中的隐私状态](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus)。
+* **JavaScript/浏览器应用程序 -** VA 库遵循 `VisitorAPI` 隐私和选择禁用设置。 要选择禁用跟踪，您需要在访客 API 服务中选择禁用。 有关选择退出和隐私的更多信息，请参阅[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。
 * **OTT 应用程序（Chromecast、Roku）-** OTT SDK 提供了通用数据保护条例 (GDPR) 就绪 API，允许您为数据收集和传输设置 `opt` 状态标记，并检索本地存储的身份标识。
 
   >[!NOTE]
@@ -28,7 +41,7 @@ ht-degree: 94%
 
   您可以使用以下设置来控制是否在特定设备上发送 Analytics 数据：
 
-   * `ADBMobile.json` 配置文件中的 `privacyDefault` 设置。此设置控制初始设置，除非在代码中进行更改，否则将一直保留初始设置。
+   * `ADBMobile.json` 配置文件中的 `privacyDefault` 设置。 此设置控制初始设置，除非在代码中进行更改，否则将一直保留初始设置。
 
    * `ADBMobile().setPrivacyStatus()` 方法。
 
@@ -86,7 +99,7 @@ ht-degree: 94%
 
 >[!IMPORTANT]
 >
->用于检索所有身份标识符的方法将获取 SDK 已知并且保留的所有用户身份标识。必须&#x200B;**先**&#x200B;调用此方法，用户才能选择退出。
+>用于检索所有身份标识符的方法将获取 SDK 已知并且保留的所有用户身份标识。 必须&#x200B;**先**&#x200B;调用此方法，用户才能选择退出。
 
 将在 JSON 字符串中返回本地存储的身份标识，该字符串可能包含：
 
