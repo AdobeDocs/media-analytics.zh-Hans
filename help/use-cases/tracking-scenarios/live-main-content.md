@@ -6,26 +6,15 @@ exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/oOshJZEQmXqgNh5l10-qhLMO8dmph6Tz9mpH0a4FePU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 590
-ht-degree: 98%
+source-wordcount: 749
+ht-degree: 77%
 
 ---
 
@@ -87,6 +76,17 @@ ht-degree: 98%
 ### 暂停时
 
 当用户暂停播放时，必须应用在播放开始时所应用的相同“实时播放头”逻辑。 当用户返回播放 LIVE 流时，您必须根据自午夜 UTC 以来的新秒数设置 `l:event:playhead` 值，_不是_&#x200B;到用户暂停 LIVE 流的点。
+
+## 跟踪实时流中的项目更改 {#live-program-changes}
+
+当实时流从一个节目或节目转换到另一个节目或节目（广播和有线电视属性的常见模式）时，每个节目应作为单独的会话进行跟踪。 这样，您就可以报告每个标题的参与度和逗留时间，而不是将所有查看归因于单个连续流。
+
+**推荐的方法：**
+
+1. 当前程序结束时（或播放器发出程序更改事件信号时），调用`trackSessionEnd`以关闭当前会话。
+2. 当新程序开始时，使用新程序的元数据（名称、ID、内容类型等）调用`trackSessionStart`。
+
+将每个项目跟踪为其自己的会话，可将[内容逗留时间](/help/reporting/metrics/content-time-spent.md)、[进度标记](/help/reporting/metrics/progress-markers.md)和完成量度范围限制为各个项目，并可实现准确的每个标题受众报告。 使用`trackSessionEnd`而不是`trackComplete`进行过渡 — `trackComplete`表示查看者有意观看到一段离散内容的结尾，而`trackSessionEnd`在此是正确的，因为流以不同的编程继续，而不是结束。
 
 ## 示例代码 {#sample-code}
 

@@ -6,18 +6,13 @@ exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/BlL-c1rf5d3juDKHybex9vrPvQsBIiNXVO2ug9LKl0g
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 358
-ht-degree: 55%
+source-wordcount: 473
+ht-degree: 41%
 
 ---
 
@@ -45,3 +40,11 @@ ht-degree: 55%
 * _重新启动相同会话如何？_
 
   有关恢复跟踪会话的信息，请参阅[恢复不活动的会话](resuming-inactive.md)。SDK会发送一个“恢复”ping，以通知后端用户正在手动恢复会话。
+
+* _如果同一会话调用了`trackSessionEnd`两次，会发生什么情况？_
+
+  为同一会话多次调用`trackSessionEnd`是安全的。 后端关闭第一个事件上的会话，并静默丢弃该会话ID的所有后续事件，包括第二个`trackSessionEnd`。 这意味着竞争条件（例如，在查看器关闭播放器的同一时刻触发30分钟的非活动超时）不会生成重复数据。
+
+* _如果在会话已处于活动状态时调用`trackSessionStart`，会发生什么情况？_
+
+  如果会话尚未关闭，SDK将忽略第二次`trackSessionStart`调用。 如果需要启动新会话，请先调用`trackSessionEnd`以显式关闭当前会话，然后为新会话调用`trackSessionStart`。

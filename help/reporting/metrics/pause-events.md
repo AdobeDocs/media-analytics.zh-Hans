@@ -3,10 +3,10 @@ title: 暂停事件
 description: 计算会话期间发生的每次不同暂停次数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 12%
+source-wordcount: '170'
+ht-degree: 10%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 12%
 
 ## 如何计算此指标
 
-媒体后端在每个[暂停开始](/help/implementation/events/playback/pause-start.md)事件时递增`mediaReporting.sessionDetails.pauseCount`。 该量度在结束调用时报告。
+媒体后端在每[个暂停开始](/help/implementation/events/playback/pause-start.md)事件时增加此计数。 单个连续暂停会生成一个增量，而不管其持续时间如何。 在播放器保持暂停状态时发送的心率[ping](/help/implementation/events/playback/ping.md)属于相同的暂停时段，并且不会再次递增计数。 该量度在结束调用时报告。
 
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体核心]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.pauseCount`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.pauseCount`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 数据馈送 | `event_list`，`post_event_list` （请参阅[`event.tsv`](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.pauseCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 数据馈送 | `event_list`，`post_event_list` （请参阅[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
 | Audience Manager | 不适用 |

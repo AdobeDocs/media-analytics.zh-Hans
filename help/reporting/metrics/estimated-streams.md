@@ -3,9 +3,9 @@ title: 预计的流
 description: 近似于每个会话的音频或视频流数量。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '190'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## 如何计算此指标
 
-媒体后端计算`mediaReporting.sessionDetails.estimatedStreams = FLOOR(totalTimePlayed / 1800) + 1`，其中`totalTimePlayed`是[媒体逗留时间](media-time-spent.md)（以秒为单位）。 该量度在结束调用时报告。
+媒体后端将此量度计算为`FLOOR(totalTimePlayed / 1800) + 1`，其中`totalTimePlayed`是[媒体逗留时间](media-time-spent.md)秒。 该量度在结束调用时报告。
 
 | 媒体逗留时间 | 预计的流 |
 | --- | --- |
@@ -28,7 +28,7 @@ ht-degree: 10%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 创建将`a.media.estimatedStreams`映射到自定义事件的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.estimatedStreams`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 数据馈送 | `event_list`，`post_event_list` （处理规则将`a.media.estimatedStreams`映射到的自定义事件；请参阅[`event.tsv`](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
+| Adobe Analytics | 创建将`a.media.estimatedStreams`映射到自定义事件的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.estimatedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 数据馈送 | `event_list`，`post_event_list` （处理规则将`a.media.estimatedStreams`映射到的自定义事件；请参阅[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查找） |
 | Audience Manager | `c_contextdata.a.media.estimatedStreams` |
