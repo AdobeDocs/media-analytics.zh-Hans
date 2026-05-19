@@ -3,10 +3,10 @@ title: 广告逗留时间
 description: 报告每个会话的活动广告播放总秒数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 9%
+source-wordcount: '174'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ## 如何计算此指标
 
-媒体后端计算播放器在广告上处于`play`状态时两个事件之间经过的时钟时间的总和。 暂停和缓冲期间的时间被排除。 该量度将在广告关闭调用中报告。 该值在Analysis Workspace中显示为`HH:MM:SS`，在数据馈送、Data Warehouse和报表API中以秒为单位。
+媒体后端计算播放器在广告上处于`play`状态时两个事件之间经过的时钟时间的总和。 暂停期间、缓冲期间和搜寻期间的时间被排除，这与为主内容计算[内容逗留时间](/help/reporting/metrics/content-time-spent.md)的方式一致。 该量度将在广告关闭调用中报告。 该值在Analysis Workspace中显示为`HH:MM:SS`，在数据馈送、Data Warehouse和报表API中以秒为单位。
 
 | 报告系统 | 来源 |
 | --- | --- |

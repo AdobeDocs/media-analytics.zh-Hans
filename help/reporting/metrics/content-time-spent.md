@@ -3,10 +3,10 @@ title: 内容逗留时间
 description: 报告每个会话的活动主内容播放的总秒数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 8%
+source-wordcount: '221'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ## 如何计算此指标
 
-媒体后端计算播放器在主内容上处于`play`状态时事件之间经过的时钟时间的总和。 在广告、暂停、缓冲事件和停滞期间排除时间。 该量度在结束调用时报告。 该值在Analysis Workspace中显示为`HH:MM:SS`，在数据馈送、Data Warehouse和报表API中以秒为单位。
+媒体后端计算播放器在主内容上处于`play`状态时事件之间经过的时钟时间的总和。 在广告、暂停、缓冲事件和停滞期间排除时间。 由于只计算活动播放时间，因此当查看器向后搜寻并重新监视区段时，量度可能会超过[内容长度](/help/reporting/dimensions/content-length.md)。 每次经过给定区段都会积累额外的播放时间，并且只要用户消耗会话中的内容并快退内容，就会累积。 该量度在结束调用时报告。 该值在Analysis Workspace中显示为`HH:MM:SS`，在数据馈送、Data Warehouse和报表API中以秒为单位。
 
 | 报告系统 | 来源 |
 | --- | --- |

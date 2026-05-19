@@ -3,9 +3,9 @@ title: 受暂停影响的流
 description: 计算查看器至少暂停一次的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '152'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ## 如何计算此指标
 
-在会话期间首次收到[暂停开始](/help/implementation/events/playback/pause-start.md)事件时，媒体后端设置`mediaReporting.sessionDetails.hasPauseImpactedStreams = true`。 该量度在结束调用时报告。
+媒体后端在会话期间首次收到[暂停开始](/help/implementation/events/playback/pause-start.md)事件时设置此标志。 该量度在结束调用时报告。
 
 | 报告系统 | 来源 |
 | --- | --- |

@@ -3,9 +3,9 @@ title: 受聚焦影响的流数量
 description: 计算播放器至少聚焦一次的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '177'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 8%
 
 ## 如何计算此指标
 
-媒体后端在第一次收到`statesStart`中具有`inFocus`的`media.statesUpdate`事件时，将`inFocus`条目的`mediaReporting.states[]`中的`isSet`标志设置为`true`。 该量度在结束调用时报告。
+媒体后端在会话期间第一次收到焦点状态开始事件时设置此标志。 该量度在结束调用时报告。
 
 | 报告系统 | 来源 |
 | --- | --- |

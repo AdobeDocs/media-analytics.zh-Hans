@@ -3,9 +3,9 @@ title: 受丢帧影响的流
 description: 计算至少丢弃了一个帧的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ## 如何计算此指标
 
-如果会话关闭时QoE对象的`droppedFrames`值大于零，则媒体后端设置`mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams = true`。
+如果会话关闭时QoE对象的`droppedFrames`值大于零，媒体后端将设置此标志。
 
 | 报告系统 | 来源 |
 | --- | --- |

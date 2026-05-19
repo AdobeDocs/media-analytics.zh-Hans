@@ -3,10 +3,10 @@ title: 开始前丢帧
 description: 计算查看器在呈现任何主内容之前退出的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 9%
+source-wordcount: '211'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ## 如何计算此指标
 
-媒体后端为关闭的会话设置`mediaReporting.qoeDataDetails.isDroppedBeforeStart = true`，而不会在主内容上生成[播放](/help/implementation/events/playback/play.md)事件。 该量度在结束调用时报告。
+媒体后端为关闭会话且从未在主内容上生成[播放](/help/implementation/events/playback/play.md)事件设置此标志。 该量度在结束调用时报告。 常见情况包括：查看器在前置广告期间退出，播放器在初始缓冲阶段无限期停止，或者在第一个主内容播放事件之前触发错误。 在所有这些情况下，会话记录了[媒体开始](/help/reporting/metrics/media-starts.md)，但没有记录[内容开始](/help/reporting/metrics/content-starts.md)，并且没有记录[进度标记](/help/reporting/metrics/progress-markers.md)。
 
 | 报告系统 | 来源 |
 | --- | --- |

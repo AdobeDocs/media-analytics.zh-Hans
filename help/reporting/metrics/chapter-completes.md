@@ -3,9 +3,9 @@ title: 章节结束
 description: 计入每个播放到结束的章节。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## 如何计算此指标
 
-当收到[章节结束](/help/implementation/events/chapters/chapter-complete.md)事件时，媒体后端设置`mediaReporting.chapterDetails.isCompleted = true`。 该量度在章节关闭调用中报告。 在播放过程中跳过或放弃的章节不计为已完成。
+当收到[章节结束](/help/implementation/events/chapters/chapter-complete.md)事件时，媒体后端会设置此标志。 该量度在章节关闭调用中报告。 在播放过程中跳过或放弃的章节不计为已完成。
 
 | 报告系统 | 来源 |
 | --- | --- |

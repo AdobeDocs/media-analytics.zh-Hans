@@ -3,10 +3,10 @@ title: 章节开始
 description: 计入会话期间开始播放的每个章节。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 13%
+source-wordcount: '116'
+ht-degree: 12%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ## 如何计算此指标
 
-当收到[章节开始](/help/implementation/events/chapters/chapter-start.md)事件时，媒体后端设置`mediaReporting.chapterDetails.isStarted = true`。 该量度在章节关闭调用中报告。
+媒体后端在收到[章节开始](/help/implementation/events/chapters/chapter-start.md)事件时设置此标志。 该量度在章节关闭调用中报告。
 
 | 报告系统 | 来源 |
 | --- | --- |

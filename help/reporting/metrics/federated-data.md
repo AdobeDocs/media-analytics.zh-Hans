@@ -3,9 +3,9 @@ title: 联合数据
 description: 计算通过联合数据共享而不是客户自己的实施接收的会话。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '220'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 ## 如何计算此指标
 
-当会话通过联合通道到达时，媒体后端设置`mediaReporting.sessionDetails.isFederated = true`。 该指标会在每个符合条件的会话中递增一次，并在结束调用时报告。
+当会话通过联合通道到达时，媒体后端会设置此标志。 该指标会在每个符合条件的会话中递增一次，并在结束调用时报告。
 
 | 报告系统 | 来源 |
 | --- | --- |

@@ -3,9 +3,9 @@ title: 受停滞影响的流
 description: 计算播放期间至少发生一次停滞的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 1278355e0bfc67c635250c426edaf865fb658c37
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '178'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ## 如何计算此指标
 
-当在会话期间至少三个连续事件的主内容上未记录播放头移动时，媒体后端设置`mediaReporting.qoeDataDetails.hasStallImpactedStreams = true`。 该量度在结束调用时报告。
+当在会话期间至少三个连续事件没有在主内容上记录播放头移动时，媒体后端设置此标志。 该量度在结束调用时报告。
 
 | 报告系统 | 来源 |
 | --- | --- |

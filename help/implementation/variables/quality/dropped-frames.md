@@ -3,10 +3,10 @@ title: 丢帧
 description: 设置QoE对象上丢帧的运行计数，以便后端可以报告丢帧质量。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 12%
 >[!ENDSHADEBOX]
 
 dropped frames变量是播放器在会话期间丢帧的运行计数。 在QoE对象中设置此参数，并在播放器报告新流量骤减时更新值。 会话关闭时，后端会报告最新值。
+
+>[!NOTE]
+>
+>始终传递截至该时间点的整个会话的丢帧总数&#x200B;**累计**，而不是按时间间隔的增量。 如果在更新之间将该值重置为`0`，则后端将接收`0`作为最终值，并报告会话的零丢帧，而不考虑之前实际丢帧的情况。
 
 | 属性 | 值 |
 | --- | --- |

@@ -3,9 +3,9 @@ title: 广告完成
 description: 计入每个播放到结束的广告。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## 如何计算此指标
 
-在收到[广告结束](/help/implementation/events/ads/ad-complete.md)事件时，媒体后端设置`mediaReporting.advertisingDetails.isCompleted = true`。 该量度将在广告关闭调用中报告。 跳过或放弃的广告不计为已完成。
+媒体后端在收到[广告结束](/help/implementation/events/ads/ad-complete.md)事件时设置此标志。 该量度将在广告关闭调用中报告。 跳过或放弃的广告不计为已完成。
 
 | 报告系统 | 来源 |
 | --- | --- |

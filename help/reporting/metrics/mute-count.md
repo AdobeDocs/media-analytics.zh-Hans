@@ -3,9 +3,9 @@ title: 静音计数
 description: 报告查看器在会话期间静音的次数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '158'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 9%
 
 ## 如何计算此指标
 
-媒体后端在每个mute state-start事件中递增`mediaReporting.states[]`的`mute`条目中的`count`字段。 该量度在结束调用时报告。
+媒体后端会在每个静音状态开始事件时增加此计数。 该量度在结束调用时报告。
 
 | 报告系统 | 来源 |
 | --- | --- |

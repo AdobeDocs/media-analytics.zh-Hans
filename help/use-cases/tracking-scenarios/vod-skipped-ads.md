@@ -21,10 +21,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 285
-ht-degree: 100%
+source-wordcount: 319
+ht-degree: 80%
 
 ---
 
@@ -45,13 +45,14 @@ ht-degree: 100%
 | 将播放广告的第一帧。 | `trackPlay()` | 心跳广告播放 | 当广告内容在主内容之前播放时，心跳将在广告开始播放时开始。 |
 | 播放广告。 | | 广告心跳 | |
 | 跳过广告。 | `trackEvent:trackAdSkip` | | 没有广告结束网络调用。 |
+| 广告时间结束。 | `trackEvent:AdBreakComplete` | | 即使跳过广告也需要。 如果没有此事件，广告事件将被忽略，跳过的广告持续时间将被计为主内容。 |
 | 播放内容。 | | 内容心跳 | 这些网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 内容结束播放。 | `trackComplete()` | 心跳内容结束 | 此网络调用与[不含广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)方案完全相同。 |
 | 会话结束。 | `trackSessionEnd()` | | `SessionEnd` |
 
 ## 参数 {#parameters}
 
-这些参数与[包含前置式广告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)场景中的参数相同，不同之处在于此场景没有广告结束和广告时间结束调用。
+这些参数与包含前置式广告的[VOD播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)方案中的参数相同，不同之处在于没有广告结束调用。 在跳过后仍需要`AdBreakComplete`才能关闭广告时间。
 
 ## 示例代码 {#sample-code}
 
@@ -128,14 +129,22 @@ _mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip, null, null);
 ....... 
 ....... 
 
-// 6. Call trackComplete() when the playback reaches the end, i.e., when the media  
+// 6. Track the MediaHeartbeat.Event.AdBreakComplete event to close the ad break.  
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content.  
+_mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete, null, null); 
+
+....... 
+....... 
+
+// 7. Call trackComplete() when the playback reaches the end, i.e., when the media  
 //    completes and finishes playing.  
 _mediaHeartbeat.trackComplete(); 
 
 ........ 
 ........ 
 
-// 7. Call trackSessionEnd() when the playback session is over. This method must be called  
+// 8. Call trackSessionEnd() when the playback session is over. This method must be called  
 //    even if the user does not watch the media to completion.  
 _mediaHeartbeat.trackSessionEnd(); 
 
@@ -212,13 +221,20 @@ NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
 ....... 
 ....... 
 
-// 6. Call trackComplete when the playback reaches the end, i.e., when the media 
+// 6. Track the ADBMediaHeartbeatEventAdBreakComplete event to close the ad break.  
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content. 
+[_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdBreakComplete mediaObject:nil data:nil]; 
+....... 
+....... 
+
+// 7. Call trackComplete when the playback reaches the end, i.e., when the media 
 //    completes and finishes playing. 
 [_mediaHeartbeat trackComplete]; 
 ....... 
 ....... 
 
-// 7. Call trackSessionEnd when the playback session is over. This method must  
+// 8. Call trackSessionEnd when the playback session is over. This method must  
 //    be called even if the user does not watch the media to completion. 
 [_mediaHeartbeat trackSessionEnd]; 
 ....... 
@@ -298,14 +314,22 @@ this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip);
 ....... 
 ....... 
 
-// 6. Call trackComplete() when the playback reaches the end, i.e., playback completes  
+// 6. Track the MediaHeartbeat.Event.AdBreakComplete event to close the ad break. 
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content. 
+this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
+
+....... 
+....... 
+
+// 7. Call trackComplete() when the playback reaches the end, i.e., playback completes  
 //    and finishes playing. 
 this._mediaHeartbeat.trackComplete(); 
 
 ........ 
 ........ 
 
-// 7. Call trackSessionEnd() when the playback session is over. This method must be called even  
+// 8. Call trackSessionEnd() when the playback session is over. This method must be called even  
 //    if the user does not watch the media to completion. 
 this._mediaHeartbeat.trackSessionEnd(); 
 

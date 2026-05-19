@@ -3,10 +3,10 @@ title: 广告开始
 description: 计入会话期间开始播放的每一个广告。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 12%
+source-wordcount: '126'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## 如何计算此指标
 
-在收到[广告开始](/help/implementation/events/ads/ad-start.md)事件时，媒体后端设置`mediaReporting.advertisingDetails.isStarted = true`。 该量度将在广告开始调用中报告。
+媒体后端在收到[广告开始](/help/implementation/events/ads/ad-start.md)事件时设置此标志。 该量度将在广告开始调用中报告。
 
 | 报告系统 | 来源 |
 | --- | --- |
