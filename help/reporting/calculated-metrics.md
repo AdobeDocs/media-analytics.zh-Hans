@@ -14,7 +14,7 @@ ht-degree: 5%
 
 Adobe流媒体服务的计算量度是基于标准流媒体量度构建的自定义量度，可让您在不更改实施的情况下得出平均广告逗留时间或媒体完成率等比率。
 
-要在Analysis Workspace中创建这些计算指标，请在[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview)或[Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)中查看各自的计算指标概述。
+要在Analysis Workspace中创建这些计算指标，请在[Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/calculated-metrics/cm-overview)或[Customer Journey Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)中查看各自的计算指标概述。
 
 | 计算量度 | 描述 | 公式 |
 | --- | --- | --- |
