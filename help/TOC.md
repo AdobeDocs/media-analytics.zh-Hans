@@ -5,9 +5,9 @@ user-guide-title: 流媒体服务指南
 breadcrumb-title: 流媒体服务指南
 user-guide-description: 实施流媒体服务。 包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '753'
 ht-degree: 35%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 35%
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
       + [自定义元数据支持](implementation/edge/implementation-edge-custom-metadata.md)
-      + [AEP数据映射和验证](/help/implementation/edge/platform-data.md)
+      + [XDM报告架构](/help/implementation/edge/platform-data.md)
    + 仅限Adobe Analytics的实施 {#analytics-only}
       + [先决条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + [媒体报表启用](implementation/media-sdk/setup/media-reports-enable.md)

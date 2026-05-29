@@ -1,40 +1,33 @@
 ---
-title: Media Edge API数据映射和平台验证
+title: XDM报告架构
 description: 了解哪些Media Edge API事件在Adobe Experience Platform中生成Experience事件，以及如何使用mediaReporting XDM架构验证您的实施。
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: c3a4d31b-8f9e-4d7a-9b2e-1a5f0e8c7d39
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85eid: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: 763
 ht-degree: 4%
 
 ---
 
 
-# Media Edge API数据映射和平台验证
+# XDM报告架构
 
-当您使用Media Edge API或Media Edge SDK发送媒体跟踪事件时，Media Analytics后端会处理这些事件并将计算的体验事件写入Adobe Experience Platform数据集。 了解哪些事件可到达Platform以及后端为您计算的内容，可帮助您验证实施并在Customer Journey Analytics或Adobe Analytics中构建准确的报告。
+使用Adobe Experience Platform Edge Network发送媒体跟踪事件时，Media Analytics后端会处理这些事件，并将计算后的Experience事件写入Platform数据集。 了解哪些事件可到达Platform以及后端为您计算的内容，可帮助您验证实施并在Customer Journey Analytics或Adobe Analytics中构建准确的报告。
 
-Media Edge使用两个不同的XDM架构：
+收集和报表管道的不同部分使用了两个不同的XDM架构：
 
 | 架构 | 命名空间 | 方向 | 用途 |
 |---|---|---|---|
-| 媒体收集 | `xdm.mediaCollection` | →客户端 | 播放器为每个跟踪事件发送的内容 |
-| 媒体报告 | `xdm.mediaReporting` | Adobe → Platform | 后端在处理后写入数据集的内容 |
+| 媒体收集 | `xdm.mediaCollection` | →客户端 | 播放器为每个跟踪事件发送的内容。 由[变量](/help/implementation/variables/)使用。 |
+| 媒体报告 | `xdm.mediaReporting` | Adobe → Platform | 后端在处理之后写入数据集的内容。 由[维度](/help/reporting/dimensions/overview.md)和[量度](/help/reporting/metrics/overview.md)使用。 |
 
-`mediaReporting`中存在，但`mediaCollection`有效负载中缺失的字段为&#x200B;**后端计算** — 派生自会话中的完整事件序列。 您从不发送这些字段；Adobe会生成它们。
+`mediaReporting`中存在但`mediaCollection`有效负载中不存在的字段是从会话中的完整事件序列派生的。 您从不发送这些字段；Adobe会生成它们。
 
 ## 写入Platform数据集的事件
 
