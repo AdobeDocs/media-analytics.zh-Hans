@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**内容渠道**报告维度。 有关如何收集此变量，请参阅[内容渠道](/help/implementation/variables/core/content-channel.md)。*
+*此页面涵盖&#x200B;**内容渠道**&#x200B;报告维度。 有关如何收集此变量，请参阅[内容渠道](/help/implementation/variables/core/content-channel.md)。*
 
 >[!ENDSHADEBOX]
 

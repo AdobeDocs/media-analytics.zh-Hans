@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**全屏总持续时间**报告量度。 有关如何收集此变量，请参阅[全屏](/help/implementation/variables/player-state/full-screen.md)。*
+*此页面涵盖&#x200B;**全屏总持续时间**&#x200B;报告量度。 有关如何收集此变量，请参阅[全屏](/help/implementation/variables/player-state/full-screen.md)。*
 
 >[!ENDSHADEBOX]
 

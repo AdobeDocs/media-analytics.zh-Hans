@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**聚焦总持续时间**报告量度。 请参阅[焦点](/help/implementation/variables/player-state/in-focus.md)以了解如何收集此变量。*
+*此页面涵盖&#x200B;**聚焦总持续时间**&#x200B;报告量度。 请参阅[焦点](/help/implementation/variables/player-state/in-focus.md)以了解如何收集此变量。*
 
 >[!ENDSHADEBOX]
 

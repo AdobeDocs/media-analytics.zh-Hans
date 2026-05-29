@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**节目**变量的数据收集。 查看对应的报表维度的[显示](/help/reporting/dimensions/show.md)。*
+*本页介绍&#x200B;**节目**&#x200B;变量的数据收集。 查看对应的报表维度的[显示](/help/reporting/dimensions/show.md)。*
 
 >[!ENDSHADEBOX]
 

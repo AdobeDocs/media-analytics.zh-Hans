@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告播放器名称**变量的数据收集。 有关相应的报表维度，请参阅[广告播放器名称](/help/reporting/dimensions/ad-player-name.md)。*
+*本页介绍&#x200B;**广告播放器名称**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[广告播放器名称](/help/reporting/dimensions/ad-player-name.md)。*
 
 >[!ENDSHADEBOX]
 

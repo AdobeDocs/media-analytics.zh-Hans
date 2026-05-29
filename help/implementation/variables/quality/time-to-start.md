@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**开始时间**变量的数据收集。 有关相应的报表维度和量度，请参阅[[!UICONTROL 开始时间]](/help/reporting/dimensions/time-to-start.md)。*
+*本页介绍&#x200B;**开始时间**&#x200B;变量的数据收集。 有关相应的报表维度和量度，请参阅[[!UICONTROL 开始时间]](/help/reporting/dimensions/time-to-start.md)。*
 
 >[!ENDSHADEBOX]
 

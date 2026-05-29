@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**内容名称**变量的数据收集。 有关相应的报表维度，请参阅[内容名称](/help/reporting/dimensions/content-name.md)。*
+*本页介绍&#x200B;**内容名称**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[内容名称](/help/reporting/dimensions/content-name.md)。*
 
 >[!ENDSHADEBOX]
 

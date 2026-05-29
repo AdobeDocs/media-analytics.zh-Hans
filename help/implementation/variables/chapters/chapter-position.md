@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**章节位置**变量的数据收集。 查看对应报表维度的[章节位置](/help/reporting/dimensions/chapter-position.md)。*
+*本页介绍&#x200B;**章节位置**&#x200B;变量的数据收集。 查看对应报表维度的[章节位置](/help/reporting/dimensions/chapter-position.md)。*
 
 >[!ENDSHADEBOX]
 

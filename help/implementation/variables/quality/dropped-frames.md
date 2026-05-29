@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**丢帧**变量的数据收集。 查看相应报表维度和量度的[丢帧](/help/reporting/dimensions/dropped-frames.md)。*
+*本页介绍&#x200B;**丢帧**&#x200B;变量的数据收集。 查看相应报表维度和量度的[丢帧](/help/reporting/dimensions/dropped-frames.md)。*
 
 >[!ENDSHADEBOX]
 

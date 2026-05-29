@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**媒体馈送类型**报告维度。 有关如何收集此变量，请参阅[媒体馈送类型](/help/implementation/variables/standard-metadata/media-feed-type.md)。*
+*此页面涵盖&#x200B;**媒体馈送类型**&#x200B;报告维度。 有关如何收集此变量，请参阅[媒体馈送类型](/help/implementation/variables/standard-metadata/media-feed-type.md)。*
 
 >[!ENDSHADEBOX]
 

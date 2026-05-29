@@ -15,11 +15,11 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**全屏计数**报告量度。 有关如何收集此变量，请参阅[全屏](/help/implementation/variables/player-state/full-screen.md)。*
+*此页面涵盖&#x200B;**全屏计数**&#x200B;报告量度。 有关如何收集此变量，请参阅[全屏](/help/implementation/variables/player-state/full-screen.md)。*
 
 >[!ENDSHADEBOX]
 
-**全屏计数**&#x200B;量度报告查看器在会话期间进入全屏的次数。 每个全屏状态开始事件都会增加计数。 与受全屏](full-screen-streams-impacted.md)影响的[个流配对，以生成会话级别的布尔汇总；与全屏总持续时间](full-screen-total-duration.md)配对，以生成状态总时间。[
+**全屏计数**&#x200B;量度报告查看器在会话期间进入全屏的次数。 每个全屏状态开始事件都会增加计数。 与受全屏[&#128279;](full-screen-streams-impacted.md)影响的[个流配对，以生成会话级别的布尔汇总；与全屏总持续时间](full-screen-total-duration.md)配对，以生成状态总时间。
 
 ## 如何计算此指标
 

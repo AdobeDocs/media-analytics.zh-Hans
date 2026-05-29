@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**流格式**报告维度。 有关如何收集此变量，请参阅[流格式](/help/implementation/variables/standard-metadata/stream-format.md)。*
+*本页介绍&#x200B;**流格式**&#x200B;报告维度。 有关如何收集此变量，请参阅[流格式](/help/implementation/variables/standard-metadata/stream-format.md)。*
 
 >[!ENDSHADEBOX]
 

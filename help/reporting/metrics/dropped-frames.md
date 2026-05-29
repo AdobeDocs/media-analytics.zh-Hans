@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此页涵盖&#x200B;**丢帧**指标。 Adobe Analytics从同一`a.media.qoe.droppedFrameCount`上下文数据变量自动填充配对的[丢帧（维度）](/help/reporting/dimensions/dropped-frames.md)。 Customer Journey Analytics公开单个`xdm.mediaReporting.qoeDataDetails.droppedFrames`字段，您可以将其用作维度或指标。 有关如何收集此变量，请参阅[丢帧](/help/implementation/variables/quality/dropped-frames.md)。*
+*此页涵盖&#x200B;**丢帧**&#x200B;指标。 Adobe Analytics从同一`a.media.qoe.droppedFrameCount`上下文数据变量自动填充配对的[丢帧（维度）](/help/reporting/dimensions/dropped-frames.md)。 Customer Journey Analytics公开单个`xdm.mediaReporting.qoeDataDetails.droppedFrames`字段，您可以将其用作维度或指标。 有关如何收集此变量，请参阅[丢帧](/help/implementation/variables/quality/dropped-frames.md)。*
 
 >[!ENDSHADEBOX]
 

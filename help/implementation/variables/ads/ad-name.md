@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告名称**变量的数据收集。 查看对应报表维度的[广告名称](/help/reporting/dimensions/ad-name.md)。*
+*本页介绍&#x200B;**广告名称**&#x200B;变量的数据收集。 查看对应报表维度的[广告名称](/help/reporting/dimensions/ad-name.md)。*
 
 >[!ENDSHADEBOX]
 

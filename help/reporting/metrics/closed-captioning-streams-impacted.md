@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页涵盖受隐藏式字幕影响的&#x200B;**流**报表量度。 有关如何收集此变量，请参阅[隐藏式字幕](/help/implementation/variables/player-state/closed-captioning.md)。*
+*本页涵盖受隐藏式字幕影响的&#x200B;**流**&#x200B;报表量度。 有关如何收集此变量，请参阅[隐藏式字幕](/help/implementation/variables/player-state/closed-captioning.md)。*
 
 >[!ENDSHADEBOX]
 

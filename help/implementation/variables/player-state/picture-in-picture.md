@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**画中画**播放器状态的数据收集。 查看受画中画影响的流数量[](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[画中画计数](/help/reporting/metrics/picture-in-picture-count.md)和[画中画总持续时间](/help/reporting/metrics/picture-in-picture-total-duration.md)以了解相应的报表量度。*
+*本页介绍&#x200B;**画中画**&#x200B;播放器状态的数据收集。 查看受画中画影响的流数量[&#128279;](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[画中画计数](/help/reporting/metrics/picture-in-picture-count.md)和[画中画总持续时间](/help/reporting/metrics/picture-in-picture-total-duration.md)以了解相应的报表量度。*
 
 >[!ENDSHADEBOX]
 

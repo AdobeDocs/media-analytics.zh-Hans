@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**章节长度**变量的数据收集。 查看对应报表维度的[章节长度](/help/reporting/dimensions/chapter-length.md)。*
+*本页介绍&#x200B;**章节长度**&#x200B;变量的数据收集。 查看对应报表维度的[章节长度](/help/reporting/dimensions/chapter-length.md)。*
 
 >[!ENDSHADEBOX]
 
