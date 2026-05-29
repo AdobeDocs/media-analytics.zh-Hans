@@ -3,9 +3,9 @@ title: 流媒体事件概述
 description: 了解媒体事件类型及其发送顺序。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -69,3 +69,9 @@ ht-degree: 0%
 ## 错误事件
 
 [错误](error.md)事件在会话期间记录播放失败 — 流请求失败、编解码器错误或外部投放失败。 每当发生有意义的错误时发送该报告。 错误事件不会关闭会话；可以继续播放，并在同一会话下跟踪后续事件。 如果错误无法恢复，则使用会话结束跟踪该错误，以显式关闭会话。
+
+>[!MORELIKETHIS]
+>
+>* [变量概述](/help/implementation/variables/overview.md)：事件携带到Adobe的数据
+>* [维度概述](/help/reporting/dimensions/overview.md)：事件填充的报表维度
+>* [量度概述](/help/reporting/metrics/overview.md)：事件填充的报表量度
