@@ -20,14 +20,18 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 472
-ht-degree: 93%
+source-wordcount: 449
+ht-degree: 78%
 
 ---
 
 # 使用JavaScript安装Media SDK {#install-web-sdks}
+
+>[!IMPORTANT]
+>
+>本页介绍了仅限Analytics的JavaScript Web SDK实施。 有关推荐的实施，请参阅[使用Edge Network实施流媒体](/help/implementation/edge/edge-web-sdk.md)。
 
 本页上的信息描述如何安装 Web 独立 SDK 和设置 JavaScript。
 
@@ -41,7 +45,7 @@ ht-degree: 93%
 
 * **在媒体应用程序中实施适用于 JavaScript 的 `AppMeasurement` 和 `Experience Cloud Identity Service`**
 
-  有关更多信息，请参阅[使用 JavaScript 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans) 和[实施 Experience Cloud 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hans)。
+  有关详细信息，请参阅[使用JavaScript实施Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans)和使用AppMeasurement进行[访客识别](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/appmeasurement)。
 
 * **在媒体播放器中包含以下 API**
 
@@ -87,10 +91,6 @@ ht-degree: 93%
 
    应该为每个网页配置一次 Media SDK，并且该配置适用于创建的所有跟踪器实例。
 
-   >[!IMPORTANT]
-   >
-   > Media SDK (3.x) 使用媒体收集 API 跟踪媒体，该 API 与 2.x SDK 中使用的 HB 端点不同。 请与 Adobe 代表联系以获取更多信息。
-
    以下是 `MediaConfig` 初始化示例：
 
    ```js
@@ -120,6 +120,4 @@ ht-degree: 93%
 
 ## 从 JavaScript 2.x 迁移到 3.x
 
-有关从 2.x 迁移到 3.x 的详细信息，请参阅[从 2.x 迁移到 3.x](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)。
-
-有关旧版内容，请参阅[旧版实施](/help/legacy/media-sdk/setup/setup-overview.md)
+有关从2.x迁移到3.x的详细信息，请参阅从JS SDK 2.x迁移到3.x[&#128279;](/help/implementation/media-sdk/setup/migrate-js-2x-to-3x.md)。

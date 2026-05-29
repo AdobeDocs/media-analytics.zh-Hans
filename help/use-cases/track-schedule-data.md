@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1425
+source-wordcount: 1424
 ht-degree: 5%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 5%
 
 要上传过去实时内容的计划数据，您的流媒体环境必须满足以下先决条件：
 
-* 必须启用流媒体收集以跟踪您要为其上传计划数据的内容，如[跟踪概述](/help/use-cases/track-av-playback/track-core-overview.md)中所述。<!--specifics??? -->
+* 必须启用流媒体收集以跟踪您要为其上传计划数据的内容，如[跟踪概述](/help/implementation/events/session/overview.md)中所述。<!--specifics??? -->
 
 * 将流媒体收集与Customer Journey Analytics结合使用。 Adobe Analytics不提供上传计划数据的功能。
 
@@ -317,9 +317,9 @@ ht-degree: 5%
 
    请考虑以下维度示例，您可以在Customer Journey Analytics中创建并报告维度：
 
-   * **[“_剧集名称_”](/help/reporting/dimensions/episode.md)**：此维度可以帮助您了解特定系列中的哪些剧集表现最佳。
+   * **[[!UICONTROL 集]](/help/reporting/dimensions/episode.md)**：此维度可以帮助您了解特定系列中的哪些集表现最佳。
 
-   * **[资产ID](/help/reporting/dimensions/asset-id.md)**
+   * **[[!UICONTROL 资产ID]](/help/reporting/dimensions/asset-id.md)**
 
 1. 继续[在Customer Journey Analytics](#analyze-data-in-customer-journey-analytics)中分析数据。
 

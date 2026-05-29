@@ -3,10 +3,10 @@ title: 比特率更改
 description: 每当播放器切换到其他比特率时，触发比特率更改事件。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 11%
+source-wordcount: '260'
+ht-degree: 6%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍如何实施比特率更改事件。 查看相应报表变量的[比特率更改（维度）](/help/reporting/dimensions/bitrate-changes.md)和[比特率更改（量度）](/help/reporting/metrics/bitrate-changes.md)。*
+*本页介绍如何实施比特率更改事件。 查看相应报表变量的[[!UICONTROL 比特率更改]（维度）](/help/reporting/dimensions/bitrate-changes.md)和[[!UICONTROL 比特率更改]（量度）](/help/reporting/metrics/bitrate-changes.md)。*
 
 >[!ENDSHADEBOX]
 
-比特率变化事件表示播放器已切换到不同的比特率。 首先更新QoE对象上的[比特率](/help/implementation/variables/quality/bitrate.md)值，然后触发比特率更改事件。 后端会使用这些事件的计数来计算比特率更改维度和量度，生成的比特率值将馈送平均比特率。
+比特率变化事件表示播放器已切换到不同的比特率。 首先更新QoE对象上的[比特率](/help/implementation/variables/quality/bitrate.md)值，然后触发比特率更改事件。 后端使用这些事件的计数来计算[[!UICONTROL 比特率更改]](/help/reporting/dimensions/bitrate-changes.md)维度和[[!UICONTROL 比特率更改]](/help/reporting/metrics/bitrate-changes.md)量度，结果比特率值馈送[[!UICONTROL 平均比特率]](/help/reporting/metrics/average-bitrate.md)。
 
 | 属性 | 值 |
 | --- | --- |
@@ -29,7 +29,11 @@ ht-degree: 11%
 | **必需** | 否 |
 | **发送条件** | [比特率更改](/help/implementation/events/playback/bitrate-change.md) |
 
-## Web SDK
+## 建议的实施类型
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 使用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)发送具有新比特率的`media.bitrateChange`事件：
 
@@ -51,11 +55,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 使用新比特率更新QoE对象，然后触发比特率更改事件。
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 4500,
@@ -66,7 +68,9 @@ tracker.updateQoEObject(qoe: qoeObject)
 tracker.trackEvent(event: MediaEvent.BitrateChange, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+使用新比特率更新QoE对象，然后触发比特率更改事件。
 
 ```kotlin
 val qoeObject = Media.createQoEObject(4500L, 0.0, 24.0, 0L)
@@ -74,7 +78,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 使用带`media.bitrateChange`的`sendMediaEvent`表示比特率更改。 在`qoeDataDetails`中包含新比特率：
 
@@ -95,7 +99,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 使用更新的`qoeDataDetails`调用[bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange)终结点：
 
@@ -116,7 +120,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 更新QoE对象并触发事件：
 
@@ -126,7 +136,22 @@ tracker.updateQoEObject(qoeObject);
 tracker.trackEvent(ADB.Media.Event.BitrateChange);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+使用新比特率更新QoS对象，然后触发比特率更改事件：
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  4500,  // bitrate (kbps)
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB 媒体收集API]
 
 使用新比特率发送`bitrateChange` POST请求：
 
@@ -141,3 +166,5 @@ tracker.trackEvent(ADB.Media.Event.BitrateChange);
 ```
 
 有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+
+>[!ENDTABS]

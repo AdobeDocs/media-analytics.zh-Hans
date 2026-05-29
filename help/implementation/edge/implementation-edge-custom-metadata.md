@@ -3,7 +3,7 @@ title: 自定义元数据支持 — XDM格式
 description: 了解如何使用Experience Edge XDM格式发送带有媒体跟踪事件的自定义元数据。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -310,7 +310,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 &lt;InlineAlert variant="info" slots="text" />
 
-`xdm.mediaCollection.customMetadata`是用于随事件发送自定义元数据的&#x200B;**入站API路径**。 处理后，数据将作为上下文数据变量转发到Adobe Analytics，并存储在`mediaReporting.customMetadata`下的Adobe Experience Platform中以及作为顶级拼合字段。
+`xdm.mediaCollection.customMetadata`是用于随事件发送自定义元数据的&#x200B;**入站API路径**。 处理后，数据将作为上下文数据变量转发到Adobe Analytics，并存储在`xdm.mediaReporting.customMetadata`下的Adobe Experience Platform中以及作为顶级拼合字段。
 
 **Adobe Analytics:**
 
@@ -323,7 +323,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 - 自定义元数据字段必须定义为XDM架构中的自定义字段（例如，`_mycompany`），并且它们可以在AEP中作为拼合字段存储和查询
 
   ![XDM架构中的自定义字段定义](assets/custom_metadata.png)
-- 对于报告和查询，自定义元数据在`mediaReporting.customMetadata`下可用，并且也作为顶级拼合字段。 使用最适合您的用例的任何一个。
+- 对于报告和查询，自定义元数据在`xdm.mediaReporting.customMetadata`下可用，并且也作为顶级拼合字段。 使用最适合您的用例的任何一个。
 - 可用于区段、Journey Orchestration和Real-Time CDP激活
 
 ## 行为

@@ -3,10 +3,10 @@ title: 媒体下载标志
 description: 将会话标记为已下载的离线播放，以便与流式传输会话分开报告。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 10%
+source-wordcount: '273'
+ht-degree: 6%
 
 ---
 
@@ -24,14 +24,18 @@ ht-degree: 10%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.downloaded` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.downloaded` |
 | **必需** | 否 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
-## Web SDK
+## 建议的实施类型
 
-调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`mediaCollection.sessionDetails`内将`isDownloaded`设置为`true`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`xdm.mediaCollection.sessionDetails`内将`isDownloaded`设置为`true`：
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 使用`MediaConstants.TrackerConfig.DOWNLOADED_CONTENT`创建跟踪器时，在跟踪器配置中设置下载内容标志。
-
-**iOS (Swift)**
 
 ```swift
 var config: [String: Any] = [:]
@@ -70,7 +72,9 @@ Media.createTrackerWith(config: config) { tracker in
 }
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+使用`MediaConstants.TrackerConfig.DOWNLOADED_CONTENT`创建跟踪器时，在跟踪器配置中设置下载内容标志。
 
 ```kotlin
 val config = HashMap<String, Any>()
@@ -81,9 +85,9 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-调用`createMediaSession`时，在`mediaCollection.sessionDetails`内将`isDownloaded`设置为`true`：
+调用`createMediaSession`时，在`xdm.mediaCollection.sessionDetails`内将`isDownloaded`设置为`true`：
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -105,7 +109,7 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 在设备返回联机状态后调用[已下载](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/#downloaded)终结点，在`mediaDownloadedEvents`内批量处理完整的脱机会话。 Adobe自动将`isDownloaded`设置为`true`并分配会话ID；请勿在有效负载中包含任一会话ID。
 
@@ -142,7 +146,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 在创建跟踪器之前在`ADB.MediaConfig`上设置`downloadedContent`：
 
@@ -156,7 +166,18 @@ mediaConfig.downloadedContent = true;
 var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+在调用`trackSessionStart`之前，在媒体信息对象上设置`MediaDownloaded`：
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB 媒体收集API]
 
 在`sessionStart` POST请求的`params`对象中包括`media.downloaded`：
 
@@ -171,3 +192,5 @@ var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
 有关完整请求结构，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+
+>[!ENDTABS]

@@ -18,10 +18,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 6%
+source-wordcount: 563
+ht-degree: 5%
 
 ---
 
@@ -88,9 +88,7 @@ alloy("configure", {
 
 对于使用Media JS SDK的客户，Web SDK提供了从Media JS SDK迁移到Web SDK的迁移路径，同时包括对现有Media JS功能（如处理媒体事件）的支持。
 
-[!DNL Web SDK]包含用于检索Media Analytics跟踪器的命令。 您可以使用此命令创建对象实例，然后使用与[媒体JS库](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)提供的API相同的API跟踪媒体事件。
-
-有关受支持方法的完整详细信息，请参阅[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)文档。
+Web SDK包含一个[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)命令，您可以使用它来创建对象实例。 然后，您可以使用与[3.x Media SDK](/help/implementation/media-sdk/setup/js-3x-api-reference.md)提供的相同API来跟踪媒体事件。
 
 以下代码片段显示了如何在Media JS中检索媒体跟踪器实例。
 

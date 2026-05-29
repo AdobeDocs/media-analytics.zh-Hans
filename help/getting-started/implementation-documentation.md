@@ -19,10 +19,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 362
-ht-degree: 52%
+source-wordcount: 356
+ht-degree: 48%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 52%
 |:-----------------------:|----------------|
 | **Web** | * [使用Adobe Experience Platform Web SDK将Web数据发送到Edge](/help/implementation/edge/edge-web-sdk.md) <br> * [流媒体服务的Web实现](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [使用Adobe Media Analytics for Audio and Video扩展的Web实现](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) |
 | **移动** | * [使用Adobe Experience Platform移动设备SDK将移动数据发送到Edge](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform移动设备SDK指南](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics for Audio and Video扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[当前移动设备SDK版本](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[流媒体服务的移动实施](/help/implementation/media-sdk/setup/mobile-implementation.md) |
-| **OTT** | *[适用于Adobe Marketing Cloud解决方案的Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[设置Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[设置Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| **OTT** | *[适用于Adobe Marketing Cloud解决方案的Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) |
 | **Adobe Experience Platform API** | *[媒体收集 API](/help/implementation/media-collection-api/mc-api-overview.md) |
 
 ## 其他文档 {#additional-documentation}
@@ -52,4 +52,4 @@ ht-degree: 52%
 
 ## Adobe Enterprise 教程 {#adobe-tutorials}
 
-使用 [Adobe Enterprise 教程](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=zh-Hans)利用 Adobe 企业级应用程序满足您的业务需求。 您可以在 Adobe Experience Cloud、Adobe Experience Platform 和 Adobe Analytics 中找到有用的教程和培训。
+使用 [Adobe Enterprise 教程](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=zh-Hans)利用 Adobe 企业级应用程序满足您的业务需求。 您可以在Adobe CX Enterprise、Adobe Experience Platform和Adobe Analytics中找到有用的教程和培训。

@@ -3,10 +3,10 @@ title: 内容 ID
 description: 唯一标识媒体内容。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 15%
+source-wordcount: '221'
+ht-degree: 9%
 
 ---
 
@@ -24,14 +24,18 @@ ht-degree: 15%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.name` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.name` |
 | **必需** | 是 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
-## Web SDK
+## 建议的实施类型
 
-调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`mediaCollection.sessionDetails`中设置`name`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`xdm.mediaCollection.sessionDetails`中设置`name`：
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 将内容ID作为`mediaId`参数传递给`createMediaObject`。
-
-**iOS (Swift)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "My Video",
@@ -69,7 +71,9 @@ let mediaObject = Media.createMediaObjectWith(name: "My Video",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+将内容ID作为`mediaId`参数传递给`createMediaObject`。
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("My Video",
@@ -81,9 +85,9 @@ var mediaInfo = Media.createMediaObject("My Video",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-调用`createMediaSession`时，在`mediaCollection.sessionDetails`中设置`name`：
+调用`createMediaSession`时，在`xdm.mediaCollection.sessionDetails`中设置`name`：
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -105,9 +109,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-调用`mediaCollection.sessionDetails`中包含`name` （内容ID）的[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)终结点：
+调用`xdm.mediaCollection.sessionDetails`中包含`name` （内容ID）的[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)终结点：
 
 ```json
 {
@@ -129,7 +133,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 将内容ID作为第二个参数传递给`ADB.Media.createMediaObject`：
 
@@ -145,7 +155,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+将内容ID作为第二个参数传递给`ADBMobile.media.createMediaObject`：
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "My Video",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB 媒体收集API]
 
 在`sessionStart` POST请求的`params`对象中包括`media.id`：
 
@@ -160,3 +185,5 @@ tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
 有关完整请求结构，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+
+>[!ENDTABS]

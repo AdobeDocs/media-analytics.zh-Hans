@@ -16,13 +16,13 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 45
-ht-degree: 100%
+ht-degree: 53%
 
 ---
 
 # 媒体时段{#media-daypart}
 
-“媒体时段”仪表板显示到当天某个时间之前开始播放内容的次数，以使您可快速了解受众何时参与。![](assets/video-daypart-report.png)
+“媒体时段”仪表板显示到当天某个时间之前的[[!UICONTROL 内容开始次数]](/help/reporting/metrics/content-starts.md)，以使您可快速查看受众何时参与。 ![](assets/video-daypart-report.png)

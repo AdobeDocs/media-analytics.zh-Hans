@@ -20,7 +20,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
 workflow-type: tm+mt
 source-wordcount: 243
 ht-degree: 14%
@@ -44,4 +44,4 @@ ht-degree: 14%
 根据实施路径，[为Web、移动或过顶平台](/help/getting-started/download-sdks.md)下载当前SDK。 必须实施所需的扩展才能启用适用于流媒体的Adobe Analytics加载项。
 
 1. **启用Adobe Analytics报表**<br>
-要在Analytics中启用报表并查看所收集的内容和广告数据，您必须在Analytics中启用报表。 请参阅[媒体报告启用](/help/reporting/media-reports-enable.md)。
+要在Analytics中启用报表并查看所收集的内容和广告数据，您必须在Analytics中启用报表。 请参阅[媒体报告启用](/help/implementation/media-sdk/setup/media-reports-enable.md)。

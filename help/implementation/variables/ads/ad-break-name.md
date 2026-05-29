@@ -3,10 +3,10 @@ title: 广告时间名称
 description: 设置父广告时间的友好名称。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 11%
+source-wordcount: '248'
+ht-degree: 6%
 
 ---
 
@@ -24,14 +24,18 @@ ht-degree: 11%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.podFriendlyName` |
-| **XDM集合字段** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **必需** | 是(Mobile SDK)；否（Edge、媒体收集API） |
 | **发送条件** | [广告时间开始](/help/implementation/events/ads/ad-break-start.md)，广告关闭 |
 
-## Web SDK
+## 建议的实施类型
 
-为`media.adBreakStart`调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`mediaCollection.advertisingPodDetails`中设置`friendlyName`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+为`media.adBreakStart`调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`xdm.mediaCollection.advertisingPodDetails`中设置`friendlyName`：
 
 ```javascript
 alloy("sendEvent", {
@@ -50,11 +54,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 将广告时间名称作为第一个(`name`)参数传递给`createAdBreakObject`，然后在广告开始事件之前跟踪广告时间开始事件。
-
-**iOS (Swift)**
 
 ```swift
 let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
@@ -64,7 +66,9 @@ let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
 tracker.trackEvent(event: MediaEvent.AdBreakStart, info: adBreakObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+将广告时间名称作为第一个(`name`)参数传递给`createAdBreakObject`，然后在广告开始事件之前跟踪广告时间开始事件。
 
 ```kotlin
 val adBreakObject = Media.createAdBreakObject("pre-roll",
@@ -74,9 +78,9 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-为`media.adBreakStart`调用`sendMediaEvent`时，在`mediaCollection.advertisingPodDetails`中设置`friendlyName`：
+为`media.adBreakStart`调用`sendMediaEvent`时，在`xdm.mediaCollection.advertisingPodDetails`中设置`friendlyName`：
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -94,9 +98,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-调用`mediaCollection.advertisingPodDetails`中包含`friendlyName`的[adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart)终结点：
+调用`xdm.mediaCollection.advertisingPodDetails`中包含`friendlyName`的[adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart)终结点：
 
 ```json
 {
@@ -117,7 +121,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 将广告时间名称作为第一个参数传递给`ADB.Media.createAdBreakObject`：
 
@@ -131,7 +141,20 @@ var adBreakInfo = ADB.Media.createAdBreakObject(
 tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+将广告时间名称作为第一个参数传递给`ADBMobile.media.createAdBreakObject`：
+
+```javascript
+var adBreakInfo = ADBMobile.media.createAdBreakObject(
+  "pre-roll",
+  1,
+  0
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB 媒体收集API]
 
 在`adBreakStart` POST请求的`params`对象中包括`media.ad.podFriendlyName`：
 
@@ -146,3 +169,5 @@ tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
 有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+
+>[!ENDTABS]

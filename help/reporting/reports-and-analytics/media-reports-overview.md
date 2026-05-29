@@ -18,7 +18,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 109
 ht-degree: 51%
@@ -27,7 +27,7 @@ ht-degree: 51%
 
 # 媒体概述{#media-overview}
 
-“媒体概述”功能板可让您监控网站上的媒体。 “媒体概述”显示若干聚合测量，以便您可以快速监视媒体是否按预期执行。 图形会在广告开始旁显示内容开始，以便您快速查看每个媒体项目的这些量度。
+“媒体概述”功能板可让您监控网站上的媒体。 “媒体概述”显示若干聚合测量，以便您可以快速监视媒体是否按预期执行。 图表在[[!UICONTROL 广告开始]](/help/reporting/metrics/ad-starts.md)旁显示[[!UICONTROL 内容开始]](/help/reporting/metrics/content-starts.md)，以便您快速查看每个媒体项目的这些量度。
 
 ![](assets/media_overview.png)
 

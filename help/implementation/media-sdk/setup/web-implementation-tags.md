@@ -16,14 +16,18 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 131
-ht-degree: 82%
+source-wordcount: 153
+ht-degree: 70%
 
 ---
 
 # 使用Media Analytics扩展安装流媒体服务
+
+>[!IMPORTANT]
+>
+>本页介绍了仅限Analytics的Media Analytics扩展实施。 有关推荐的实施，请参阅[使用Edge Network实施流媒体](/help/implementation/edge/edge-web-sdk.md)。
 
 您可以使用Adobe Media Analytics扩展实施Adobe流媒体服务。 Media Analytics 扩展添加了核心 JavaScript Media SDK (Media 3.x SDK)。 通过此扩展，可将媒体跟踪器实例添加到启用了标记的网站或项目。
 

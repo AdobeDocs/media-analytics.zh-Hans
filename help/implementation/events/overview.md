@@ -3,9 +3,9 @@ title: 流媒体事件概述
 description: 了解媒体事件类型及其发送顺序。
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -69,10 +69,3 @@ ht-degree: 0%
 ## 错误事件
 
 [错误](error.md)事件在会话期间记录播放失败 — 流请求失败、编解码器错误或外部投放失败。 每当发生有意义的错误时发送该报告。 错误事件不会关闭会话；可以继续播放，并在同一会话下跟踪后续事件。 如果错误无法恢复，则使用会话结束跟踪该错误，以显式关闭会话。
-
->[!MORELIKETHIS]
->
->* [JSON验证架构](/help/implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)：验证每个事件类型的请求有效负载结构
->* [事件请求终结点](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：媒体收集API终结点引用
->* [会话请求终结点](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)：在发送事件之前创建会话
->* [播放器状态跟踪](/help/use-cases/player-state-tracking/implementation-and-reporting.md)：状态开始和状态结束实现详细信息

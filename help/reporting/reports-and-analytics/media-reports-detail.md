@@ -17,15 +17,15 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 50
-ht-degree: 56%
+ht-degree: 8%
 
 ---
 
 # 媒体详细信息{#media-detail}
 
-“媒体详细信息”仪表板显示所有内容的详细量度，包括并行查看者或收听者数量、内容开始播放次数、完成率、逗留时间和广告开始次数。
+“媒体详细信息”仪表板显示所有内容的详细量度，包括并行查看者或收听者数量、[[!UICONTROL 内容开始次数]](/help/reporting/metrics/content-starts.md)、完成率、逗留时间和[[!UICONTROL 广告开始次数]](/help/reporting/metrics/ad-starts.md)。
 
 ![](assets/media_detail.png)

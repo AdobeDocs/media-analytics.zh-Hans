@@ -3,10 +3,10 @@ title: 状态开始
 description: 表示媒体播放器进入了跟踪播放器状态。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 13%
+source-wordcount: '192'
+ht-degree: 7%
 
 ---
 
@@ -18,9 +18,13 @@ ht-degree: 13%
 有效的状态名称： `fullscreen`、`mute`、`closedCaptioning`、`pictureInPicture`、`inFocus`
 
 * **先决条件**： [会话开始](../session/session-start.md)
-* **关联的量度**：因状态而异；请参阅[播放器状态跟踪](/help/use-cases/player-state-tracking/implementation-and-reporting.md)
+* **关联的量度**：因状态而异；请参阅[跟踪播放器状态](/help/implementation/events/player-state/overview.md)
 
-## Web SDK
+## 建议的实施类型
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 使用`eventType: "media.statesUpdate"`和`statesStart`中的状态名称调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -55,11 +59,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 将`trackPlayerStateStart`与通过相应的`MediaConstants.PlayerState`常量创建的状态对象一起使用。
-
-**iOS (Swift)**
 
 ```swift
 let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.FULLSCREEN)
@@ -67,7 +69,9 @@ let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerSt
 tracker.trackEvent(event: MediaEvent.StateStart, info: stateObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+将`trackPlayerStateStart`与通过相应的`MediaConstants.PlayerState`常量创建的状态对象一起使用。
 
 ```kotlin
 val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
@@ -75,7 +79,7 @@ val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
 tracker.trackEvent(Media.Event.StateStart, stateObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 使用`eventType: "media.statesUpdate"`和`statesStart`中的状态名称调用`sendMediaEvent`：
 
@@ -91,7 +95,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 在`statesStart`中调用状态名称为[statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/)的终结点：
 
@@ -113,7 +117,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/statesUpdate?configId={datastrea
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 将`ADB.Media.createStateObject`与相应的`ADB.Media.PlayerState`常量一起使用：
 
@@ -123,7 +133,17 @@ var stateObject = ADB.Media.createStateObject(ADB.Media.PlayerState.Fullscreen);
 tracker.trackPlayerStateStart(stateObject);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+将`ADBMobile.media.createStateObject`与相应的`ADBMobile.media.PlayerState`常量一起使用：
+
+```javascript
+var stateObject = ADBMobile.media.createStateObject(ADBMobile.media.PlayerState.FullScreen);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
+```
+
+>[!TAB 媒体收集API]
 
 向[事件终结点](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)发送`stateStart`帖子：
 
@@ -136,3 +156,5 @@ tracker.trackPlayerStateStart(stateObject);
   }
 }
 ```
+
+>[!ENDTABS]

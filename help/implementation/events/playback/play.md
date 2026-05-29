@@ -3,10 +3,10 @@ title: 播放
 description: 表示媒体播放器已进入播放状态。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 17%
+source-wordcount: '165'
+ht-degree: 10%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 17%
 播放事件表示媒体播放器状态已更改为播放。 在内容开始时、自动播放时以及播放器在暂停或缓冲后恢复时发送此包。 没有单独的恢复事件；[暂停开始](pause-start.md)或[缓冲开始](buffer-start.md)之后的播放事件用作恢复。
 
 * **先决条件**： [会话开始](../session/session-start.md)
-* **关联的量度**： [内容开始](/help/reporting/metrics/content-starts.md)
+* **关联的量度**： [[!UICONTROL 内容开始]](/help/reporting/metrics/content-starts.md)
 
-## Web SDK
+## 建议的实施类型
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 使用`eventType: "media.play"`调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 在媒体播放器开始或继续播放时调用`trackPlay`。
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackPlay()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+在媒体播放器开始或继续播放时调用`trackPlay`。
 
 ```kotlin
 tracker.trackPlay()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 使用`eventType: "media.play"`调用`sendMediaEvent`：
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 调用[播放](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/play/)终结点：
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/play?configId={datastreamID}" \
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 在媒体播放器开始或继续播放时调用`trackPlay`：
 
@@ -94,7 +104,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/play?configId={datastreamID}" \
 tracker.trackPlay();
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+在媒体播放器开始或继续播放时调用`trackPlay`：
+
+```javascript
+ADBMobile.media.trackPlay();
+```
+
+>[!TAB 媒体收集API]
 
 向[事件终结点](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)发送`play`帖子：
 
@@ -104,3 +122,5 @@ tracker.trackPlay();
   "eventType": "play"
 }
 ```
+
+>[!ENDTABS]
