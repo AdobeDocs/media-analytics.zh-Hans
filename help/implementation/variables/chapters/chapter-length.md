@@ -24,7 +24,7 @@ ht-degree: 8%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.chapter.length` |
-| **XDM集合字段** | [`xdm.mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.chapter.length` |
 | **必需** | 否(Mobile SDK)；是(Edge、Media Collection API) |
 | **发送条件** | [章节开始](/help/implementation/events/chapters/chapter-start.md)，章节关闭 |

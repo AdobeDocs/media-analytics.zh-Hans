@@ -26,11 +26,11 @@ ht-degree: 1%
 
 # 迁移Customer Journey Analytics以使用新的流媒体字段
 
-本文档介绍了应如何更新使用名为“Media”的Adobe流媒体服务数据类型的Customer Journey Analytics设置，以便使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
+本文档介绍了应如何更新使用名为“Media”的Adobe流媒体服务数据类型的Customer Journey Analytics设置，以便使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
 
 ## 迁移Customer Journey Analytics
 
-要将Customer Journey Analytics安装程序从名为“Media”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须更新以下使用旧数据类型的安装程序：
+要将Customer Journey Analytics安装程序从名为“Media”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须更新以下使用旧数据类型的安装程序：
 
 * 数据视图
 

@@ -337,7 +337,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 ## 相关文档
 
 - [自定义元数据支持](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)。 — MC API（JSON格式）
-- [媒体收集详细信息数据类型](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — XDM架构引用
+- [媒体收集详细信息数据类型](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details) — XDM架构引用
 - [Adobe Experience Platform Edge Network的数据变量映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/data-var-mapping) — XDM字段的Analytics上下文数据映射
 
 <!--

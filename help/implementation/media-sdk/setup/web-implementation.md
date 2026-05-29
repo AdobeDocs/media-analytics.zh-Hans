@@ -45,7 +45,7 @@ ht-degree: 78%
 
 * **在媒体应用程序中实施适用于 JavaScript 的 `AppMeasurement` 和 `Experience Cloud Identity Service`**
 
-  有关详细信息，请参阅[使用JavaScript实施Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans)和使用AppMeasurement进行[访客识别](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)。
+  有关详细信息，请参阅[使用JavaScript实施Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans)和使用AppMeasurement进行[访客识别](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/appmeasurement)。
 
 * **在媒体播放器中包含以下 API**
 
