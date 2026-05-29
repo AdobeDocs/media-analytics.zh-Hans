@@ -3,7 +3,7 @@ title: 流媒体维度概述
 description: 了解如何在Adobe Analytics和Customer Journey Analytics中填充和组织流媒体维度。
 feature: Dimensions
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -36,6 +36,6 @@ ht-degree: 6%
 
 >[!MORELIKETHIS]
 >
->* [量度概述](../metrics/overview.md)：流媒体量度参考
->* [参数映射](/help/implementation/parameters-mapping.md)：完整的变量到列到XDM引用
->* [媒体区段](/help/reporting/segments.md)：使用流媒体维度的内置区段
+>* [事件概述](/help/implementation/events/overview.md)：填充维度的播放器事件
+>* [变量概述](/help/implementation/variables/overview.md)：事件携带到Adobe的数据
+>* [量度概述](/help/reporting/metrics/overview.md)：变量填充的报表量度
