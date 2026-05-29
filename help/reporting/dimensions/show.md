@@ -3,7 +3,7 @@ title: 节目
 description: 报告属于某个系列的视频内容的节目或系列名称。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**节目**&#x200B;报告维度。 有关如何收集此变量，请参阅[节目](/help/implementation/variables/standard-metadata/show.md)。*
+*此页面涵盖&#x200B;**节目**报告维度。 有关如何收集此变量，请参阅[节目](/help/implementation/variables/standard-metadata/show.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 8%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 视频元数据]](/help/reporting/media-reports-enable.md)时，自动从上下文数据`a.media.show`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 数据馈送 | `videoshow`, `post_videoshow` |
 | Audience Manager | `c_contextdata.a.media.show` |
 

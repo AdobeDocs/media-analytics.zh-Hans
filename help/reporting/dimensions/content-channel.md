@@ -3,7 +3,7 @@ title: 内容渠道
 description: 报告每个会话播放的分发站点、网络或属性。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**内容渠道**&#x200B;报告维度。 有关如何收集此变量，请参阅[内容渠道](/help/implementation/variables/core/content-channel.md)。*
+*此页面涵盖&#x200B;**内容渠道**报告维度。 有关如何收集此变量，请参阅[内容渠道](/help/implementation/variables/core/content-channel.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 7%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体核心]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.channel`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.channel`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 数据馈送 | `videochannel`, `post_videochannel` |
 | Audience Manager | `c_contextdata.a.media.channel` |
 

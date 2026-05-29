@@ -3,10 +3,10 @@ title: 章节开始
 description: 表示内容中章节区段的开始。
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 15%
+source-wordcount: '178'
+ht-degree: 8%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 15%
 章节开始事件表示内容中章节的开始。 章节跟踪是可选的，并且不是核心媒体跟踪的必需项。 章节不能重叠；发送[章节结束](chapter-complete.md)或[章节跳过](chapter-skip.md)以关闭当前章节，然后再开始新章节。
 
 * **先决条件**： [会话开始](../session/session-start.md)
-* **关联的量度**：[章节开始](/help/reporting/metrics/chapter-starts.md)
+* **关联的量度**：[[!UICONTROL 章节开始]](/help/reporting/metrics/chapter-starts.md)
 
-## Web SDK
+## 建议的实施类型
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 使用`eventType: "media.chapterStart"`和所需的`chapterDetails`调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -40,11 +44,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 将章节名称、位置、长度和开始时间传递给`createChapterObject`，然后调用`trackEvent`。
-
-**iOS (Swift)**
 
 ```swift
 let chapterObject = Media.createChapterObjectWith(name: "Pilot Episode - Opening",
@@ -55,7 +57,9 @@ let chapterObject = Media.createChapterObjectWith(name: "Pilot Episode - Opening
 tracker.trackEvent(event: MediaEvent.ChapterStart, info: chapterObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+将章节名称、位置、长度和开始时间传递给`createChapterObject`，然后调用`trackEvent`。
 
 ```kotlin
 val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
@@ -66,7 +70,7 @@ val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 使用`eventType: "media.chapterStart"`和所需的`chapterDetails`调用`sendMediaEvent`：
 
@@ -87,7 +91,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 使用所需的`chapterDetails`调用[chapterStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterstart)终结点：
 
@@ -113,7 +117,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 将章节名称、位置、长度和开始时间传递给`ADB.Media.createChapterObject`：
 
@@ -128,7 +138,22 @@ var chapterInfo = ADB.Media.createChapterObject(
 tracker.trackEvent(ADB.Media.Event.ChapterStart, chapterInfo, null);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+将章节名称、位置、长度和开始时间传递给`ADBMobile.media.createChapterObject`：
+
+```javascript
+var chapterInfo = ADBMobile.media.createChapterObject(
+  "Pilot Episode - Opening",  // name
+  1,                          // position
+  240,                        // length (seconds)
+  0                           // start time (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB 媒体收集API]
 
 向[事件终结点](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)发送`chapterStart`帖子：
 
@@ -144,3 +169,5 @@ tracker.trackEvent(ADB.Media.Event.ChapterStart, chapterInfo, null);
   }
 }
 ```
+
+>[!ENDTABS]

@@ -3,7 +3,7 @@ title: 播放器SDK错误ID
 description: 报告内容播放器SDK生成的唯一错误标识符。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 7%
@@ -22,7 +22,7 @@ ht-degree: 7%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体质量]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.qoe.playerSdkErrors`收集。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 数据馈送 | `videoqoeplayersdkerrors`, `post_videoqoeplayersdkerrors` |
 | Audience Manager | `c_contextdata.a.media.qoe.playerSdkErrors` |
 

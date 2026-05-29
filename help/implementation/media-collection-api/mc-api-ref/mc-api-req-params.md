@@ -6,24 +6,14 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/6SPeRxCbhd8xZE-u0PlNpqXpZ9JWAS5hi41f7mjTBe0
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1344
-ht-degree: 98%
+source-wordcount: 1337
+ht-degree: 86%
 
 ---
 
@@ -31,7 +21,7 @@ ht-degree: 98%
 
 ## Analytics 数据
 
-| 请求密钥  | 必需 | 请求类型密钥 | 设置... |  描述  |
+| 请求密钥 | 必需 | 请求类型键 | 设置…… | 描述 |
 | --- | :---: | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | 字符串 | `sessionStart` | Adobe Analytics 服务器的 URL |
 | `analytics.reportSuite` | Y | 字符串 | `sessionStart` | 标识 Analytics 报表数据的 ID |
@@ -40,16 +30,16 @@ ht-degree: 98%
 
 ## 访客数据
 
-| 请求密钥  | 必需 | 请求类型密钥 | 设置... |  描述  |
+| 请求密钥 | 必需 | 请求类型键 | 设置…… | 描述 |
 | --- | :---: | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | 字符串 | `sessionStart` | Experience Cloud 组织 ID，可在 Adobe Experience Cloud 生态系统中标识您的组织 |
-| `visitor.marketingCloudUserId` | N | 字符串 | `sessionStart` | 这是 Experience Cloud 用户 ID (ECID)。 在大多数情况下，这是您应当用来标识用户的 ID。 心跳 `marketingCloudUserId` 等于 Adobe Analytics 中的 `MID`。 虽然从技术上讲不是必需的，但访问 Experience Cloud 系列应用程序时需要此参数。 |
+| `visitor.marketingCloudOrgId` | Y | 字符串 | `sessionStart` | IMS组织ID；在Adobe CX Enterprise中标识您的组织 |
+| `visitor.marketingCloudUserId` | N | 字符串 | `sessionStart` | Experience Cloud用户ID (ECID)。 在大多数情况下，这是您应当用来标识用户的 ID。 心跳 `marketingCloudUserId` 等于 Adobe Analytics 中的 `MID`。 虽然从技术上讲不是必需的，但是访问CX Enterprise应用程序和服务需要此参数。 |
 | `visitor.aamLocationHint` | N | 整数 | `sessionStart` | 提供 Adobe Audience Manager Edge 数据 – 如果未输入值，则值为 null。 |
 | `appInstallationId` | N | 字符串 | `sessionStart` | appInstallationId 用于唯一标识应用程序和设备 |
 
 ## 内容数据
 
-| 请求密钥  | 必需 | 请求类型密钥 | 设置... |  描述  |
+| 请求密钥 | 必需 | 请求类型键 | 设置…… | 描述 |
 | --- | :---: | :---: | :---: | --- |
 | `media.id` | Y | 字符串 | `sessionStart` | 内容的唯一标识符 |
 | `media.name` | N | 字符串 | `sessionStart` | 人类可读的内容名称 |
@@ -62,7 +52,7 @@ ht-degree: 98%
 
 ## 内容标准元数据
 
-| 请求密钥  | 必需 | 请求类型密钥 | 设置... |  描述  |
+| 请求密钥 | 必需 | 请求类型键 | 设置…… | 描述 |
 | --- | :---: | :---: | :---: | --- |
 | `media.streamFormat` | N | 字符串 | `sessionStart` | 流格式，例如“HD” |
 | `media.show` | N | 字符串 | `sessionStart` | 节目或系列节目的名称 |
@@ -84,7 +74,7 @@ ht-degree: 98%
 
 ## 广告数据
 
-| 请求密钥  | 必需 | 请求类型密钥 | 设置... |  描述  |
+| 请求密钥 | 必需 | 请求类型键 | 设置…… | 描述 |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | 字符串 | `adBreakStart` | 广告时间的友好名称 |
 | `media.ad.podIndex` | Y | 整数 | `adBreakStart` | 视频中广告面板的索引 |
@@ -97,7 +87,7 @@ ht-degree: 98%
 
 ## 广告标准元数据
 
-| 请求密钥  | 必需 | 请求类型密钥 | 设置... |  描述  |
+| 请求密钥 | 必需 | 请求类型键 | 设置…… | 描述 |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.advertiser` | N | 字符串 | `adStart` | 广告中展现的产品所属的公司或品牌 |
 | `media.ad.campaignId` | N | 字符串 | `adStart` | 广告营销活动的 ID |
@@ -108,7 +98,7 @@ ht-degree: 98%
 
 ## 章节数据
 
-| 请求密钥  | 必需 | 请求类型密钥 | 设置... |  描述  |
+| 请求密钥 | 必需 | 请求类型键 | 设置…… | 描述 |
 | --- | :---: | :---: | :---: | --- |
 | `media.chapter.index` | Y | 整数 | `chapterStart` | 标识章节在内容中的位置 |
 | `media.chapter.offset` | Y | 数字 | `chapterStart` | 播放中章节开始的时间（秒） |
@@ -117,7 +107,7 @@ ht-degree: 98%
 
 ## 质量数据
 
-| 请求密钥  | 必需 | 请求类型密钥 | 设置... |  描述  |
+| 请求密钥 | 必需 | 请求类型键 | 设置…… | 描述 |
 | --- | :---: | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | 整数 | 任何 | 平均比特率（以 bps 为单位）。 平均比特率计算为在播放会话期间发生的播放持续时间的所有相关比特率值的加权平均值。 |
 | `media.qoe.droppedFrames` | N | 整数 | 任何 | 流中的丢帧数 |
@@ -126,20 +116,20 @@ ht-degree: 98%
 
 ## 加州消费者隐私法案 (CCPA) 参数 {#ccpa-params}
 
-| 请求密钥  | 必需 | 请求类型密钥 | 设置... |  描述  |
+| 请求密钥 | 必需 | 请求类型键 | 设置…… | 描述 |
 | --- | :---: | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | 布尔值 | `sessionStart` | 如果最终用户选择禁止在 Adobe Analytics 与其他 Experience Cloud 解决方案（如 Audience Manager）之间共享其数据，则设置为 true |
+| `analytics.optOutServerSideForwarding` | N | 布尔值 | `sessionStart` | 如果最终用户选择禁止在Adobe Analytics与其他CX企业解决方案（如Audience Manager）之间共享其数据，则设置为true |
 | `analytics.optOutShare` | N | 布尔值 | `sessionStart` | 如果最终用户选择禁止联合其数据（例如，将其数据联合到其他 Adobe Analytics 客户端），则设置为 true。 |
 
 ## 其他详细信息 {#additional-details}
 
 ### visitor.marketingCloudUserId
 
-在 `sessionStart` 调用中传递 Experience Cloud 用户 ID（也称为 `MID` 或 `MCID`），方法是使用以下键将其包含在 `params` 映射中：**visitor.marketingCloudUserId**。 如果您已经与其他 Experience Cloud 产品集成并且已经获取了 MCID，那么这将是一项非常有用的功能。
+在 `sessionStart` 调用中传递 Experience Cloud 用户 ID（也称为 `MID` 或 `MCID`），方法是使用以下键将其包含在 `params` 映射中：**visitor.marketingCloudUserId**。 如果您已经与其他CX Enterprise产品集成，并且已经获得MCID ，那么这是一个非常有用的功能。
 
 >[!NOTE]
 >
->Media Analytics (MA) 可与 Experience Cloud 系列应用程序（Adobe Analytics、Audience Manager、Target 等）集成。 您需要 Experience Cloud ID 才能访问这些应用程序。 _在大多数情况下，您应当使用 ECID 来标识用户。_
+>Media Analytics (MA)已与CX Enterprise系列应用程序（Adobe Analytics、Audience Manager、Target等）集成。 您需要 Experience Cloud ID 才能访问这些应用程序。 _在大多数情况下，您应当使用 ECID 来标识用户。_
 
 ### appInstallationId
 

@@ -5,22 +5,13 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
 TQID: https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1425
+source-wordcount: 1424
 ht-degree: 5%
 
 ---
@@ -29,7 +20,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->本文中描述的功能处于发布的有限测试阶段，因此可能在您的环境中尚不可用。 当该功能正式发布时，将删除此说明。 有关发布过程的信息，请参阅[Customer Journey Analytics功能发布](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/releases/releases)。
+>本文中描述的功能处于发布的有限测试阶段，因此可能在您的环境中尚不可用。 当该功能正式发布时，将删除此说明。 有关发布过程的信息，请参阅[Customer Journey Analytics功能发布](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases)。
 
 您可以上传过去实时流媒体内容的计划数据，以更轻松准确地跟踪实时内容的收视率。 您可以跟踪各个项目甚至特定主题或项目群区段的收视率。
 
@@ -81,7 +72,7 @@ ht-degree: 5%
 
 要上传过去实时内容的计划数据，您的流媒体环境必须满足以下先决条件：
 
-* 必须启用流媒体收集以跟踪您要为其上传计划数据的内容，如[跟踪概述](/help/use-cases/track-av-playback/track-core-overview.md)中所述。<!--specifics??? -->
+* 必须启用流媒体收集以跟踪您要为其上传计划数据的内容，如[跟踪概述](/help/implementation/events/session/overview.md)中所述。<!--specifics??? -->
 
 * 将流媒体收集与Customer Journey Analytics结合使用。 Adobe Analytics不提供上传计划数据的功能。
 
@@ -157,7 +148,7 @@ ht-degree: 5%
 
    1. 推送包含使用批次ID的程序计划数据记录的.json文件。
 
-      要推送计划信息，您应使用AEP批处理API，如[批处理摄取API概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/batch/overview)中所述。
+      要推送计划信息，您应使用AEP批处理API，如[批处理摄取API概述](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)中所述。
 
       考虑以下使用cURL推送包含计划记录的文件示例：
 
@@ -317,9 +308,9 @@ ht-degree: 5%
 
    请考虑以下维度示例，您可以在Customer Journey Analytics中创建并报告维度：
 
-   * **[“_剧集名称_”](/help/reporting/dimensions/episode.md)**：此维度可以帮助您了解特定系列中的哪些剧集表现最佳。
+   * **[[!UICONTROL 集]](/help/reporting/dimensions/episode.md)**：此维度可以帮助您了解特定系列中的哪些集表现最佳。
 
-   * **[资产ID](/help/reporting/dimensions/asset-id.md)**
+   * **[[!UICONTROL 资产ID]](/help/reporting/dimensions/asset-id.md)**
 
 1. 继续[在Customer Journey Analytics](#analyze-data-in-customer-journey-analytics)中分析数据。
 

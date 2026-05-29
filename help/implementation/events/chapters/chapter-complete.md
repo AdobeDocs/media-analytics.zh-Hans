@@ -3,10 +3,10 @@ title: 章节结束
 description: 表示章节区段已完成播放。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 20%
+source-wordcount: '132'
+ht-degree: 11%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 20%
 章节结束事件表示章节结束播放。 当查看者到达章节结尾时发送该报告。 如果查看器跳过章节，请改为发送[章节跳过](chapter-skip.md)。
 
 * **先决条件**： [会话开始](../session/session-start.md)，[章节开始](chapter-start.md)
-* **关联的量度**： [章节完成](/help/reporting/metrics/chapter-completes.md)
+* **关联的量度**： [[!UICONTROL 章节完成]](/help/reporting/metrics/chapter-completes.md)
 
-## Web SDK
+## 建议的实施类型
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 使用`eventType: "media.chapterComplete"`调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 使用`ChapterComplete`事件类型调用`trackEvent`。
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.ChapterComplete, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+使用`ChapterComplete`事件类型调用`trackEvent`。
 
 ```kotlin
 tracker.trackEvent(Media.Event.ChapterComplete, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 使用`eventType: "media.chapterComplete"`调用`sendMediaEvent`：
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 调用[chapterComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chaptercomplete)终结点：
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterComplete?configId={datast
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 使用`ChapterComplete`事件类型调用`trackEvent`：
 
@@ -94,7 +104,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterComplete?configId={datast
 tracker.trackEvent(ADB.Media.Event.ChapterComplete, null, null);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+使用`ChapterComplete`事件类型调用`trackEvent`：
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterComplete);
+```
+
+>[!TAB 媒体收集API]
 
 向[事件终结点](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)发送`chapterComplete`帖子：
 
@@ -104,3 +122,5 @@ tracker.trackEvent(ADB.Media.Event.ChapterComplete, null, null);
   "eventType": "chapterComplete"
 }
 ```
+
+>[!ENDTABS]

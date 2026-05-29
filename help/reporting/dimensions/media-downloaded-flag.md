@@ -3,7 +3,7 @@ title: 已下载媒体
 description: 标记播放下载的离线内容的会话。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**下载的媒体**&#x200B;报告维度。 有关如何收集此变量，请参阅[媒体下载标志](/help/implementation/variables/core/media-downloaded-flag.md)。*
+*本页介绍&#x200B;**下载的媒体**报告维度。 有关如何收集此变量，请参阅[媒体下载标志](/help/implementation/variables/core/media-downloaded-flag.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ ht-degree: 7%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 创建将`a.media.downloaded`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | 创建将`a.media.downloaded`映射到eVar的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 数据馈送 | `evar1`-`evar250`，`post_evar1`-`post_evar250` （您的处理规则将`a.media.downloaded`映射到的eVar） |
 | Audience Manager | `c_contextdata.a.media.downloaded` |
 

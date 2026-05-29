@@ -5,25 +5,22 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
 TQID: https://experienceleague.adobe.com/tQ2csg1KIb-z6hrh86BEOWfgG2X2jVhM8hsxvBZYc-0
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 131
-ht-degree: 82%
+source-wordcount: 153
+ht-degree: 70%
 
 ---
 
 # 使用Media Analytics扩展安装流媒体服务
+
+>[!IMPORTANT]
+>
+>本页介绍了仅限Analytics的Media Analytics扩展实施。 有关推荐的实施，请参阅[使用Edge Network实施流媒体](/help/implementation/edge/edge-web-sdk.md)。
 
 您可以使用Adobe Media Analytics扩展实施Adobe流媒体服务。 Media Analytics 扩展添加了核心 JavaScript Media SDK (Media 3.x SDK)。 通过此扩展，可将媒体跟踪器实例添加到启用了标记的网站或项目。
 

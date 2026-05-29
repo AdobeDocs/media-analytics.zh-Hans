@@ -3,10 +3,10 @@ title: 每秒帧数
 description: 在QoE对象上设置当前帧速率，以便后端具有用于质量报告的帧速率上下文。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 12%
+source-wordcount: '254'
+ht-degree: 7%
 
 ---
 
@@ -18,14 +18,18 @@ ht-degree: 12%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | 无（Adobe Analytics没有为帧速率分配保留的上下文数据键） |
-| **XDM集合字段** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特征** | 不适用 |
 | **必需** | 否 |
 | **发送条件** | 质量事件（[比特率更改](/help/implementation/events/playback/bitrate-change.md)，[缓冲开始](/help/implementation/events/playback/buffer-start.md)，[错误](/help/implementation/events/error.md)），会话关闭 |
 
-## Web SDK
+## 建议的实施类型
 
-调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`mediaCollection.qoeDataDetails`中设置`framesPerSecond`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`xdm.mediaCollection.qoeDataDetails`中设置`framesPerSecond`：
 
 ```javascript
 alloy("sendEvent", {
@@ -43,11 +47,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 将帧速率作为第三个参数(`fps`)传递给`createQoEObject`。
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -58,7 +60,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+将帧速率作为第三个参数(`fps`)传递给`createQoEObject`。
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -69,9 +73,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-调用`sendMediaEvent`时，在`mediaCollection.qoeDataDetails`中设置`framesPerSecond`：
+调用`sendMediaEvent`时，在`xdm.mediaCollection.qoeDataDetails`中设置`framesPerSecond`：
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -88,9 +92,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-调用`mediaCollection.qoeDataDetails`中包含`framesPerSecond`的[bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange)终结点：
+调用`xdm.mediaCollection.qoeDataDetails`中包含`framesPerSecond`的[bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange)终结点：
 
 ```json
 {
@@ -109,7 +113,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 将帧速率作为第三个参数传递给`ADB.Media.createQoEObject`：
 
@@ -118,7 +128,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 0, 24, 0);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+将帧速率作为第三个参数(`fps`)传递给`ADBMobile.media.createQoSObject`并更新跟踪器：
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB 媒体收集API]
 
 在`params`对象中包括`media.qoe.framesPerSecond`：
 
@@ -133,3 +157,5 @@ tracker.updateQoEObject(qoeObject);
 ```
 
 有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+
+>[!ENDTABS]

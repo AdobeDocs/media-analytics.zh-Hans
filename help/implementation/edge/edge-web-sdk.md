@@ -5,29 +5,20 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
 TQID: https://experienceleague.adobe.com/yr1qlonZDoevoT-vFo-WknObsb-CegTihWEFZN5TdAE
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 6%
+source-wordcount: 563
+ht-degree: 5%
 
 ---
 
 # 使用Adobe Experience Platform Web SDK将Web数据发送到Edge
 
-从版本2.20.0开始，Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/home)的`streamingMedia`组件允许您收集与网站上的媒体会话相关的数据。 收集的数据可以包括有关媒体回放、暂停、完成和其他相关事件的信息。
+从版本2.20.0开始，Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)的`streamingMedia`组件允许您收集与网站上的媒体会话相关的数据。 收集的数据可以包括有关媒体回放、暂停、完成和其他相关事件的信息。
 
 收集数据后，您可以将其发送到Adobe Experience Platform和/或Adobe Analytics以生成报表。 此功能为跟踪和了解您网站上的媒体消费行为提供了全面的解决方案。
 
@@ -82,15 +73,13 @@ alloy("configure", {
 });
 ```
 
-有关如何配置Web SDK `streamingMedia`组件的完整详细信息，请参阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
+有关如何配置Web SDK `streamingMedia`组件的完整详细信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
 
 ### 步骤3：从Media JS SDK迁移时获取媒体跟踪器实例
 
 对于使用Media JS SDK的客户，Web SDK提供了从Media JS SDK迁移到Web SDK的迁移路径，同时包括对现有Media JS功能（如处理媒体事件）的支持。
 
-[!DNL Web SDK]包含用于检索Media Analytics跟踪器的命令。 您可以使用此命令创建对象实例，然后使用与[媒体JS库](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)提供的API相同的API跟踪媒体事件。
-
-有关受支持方法的完整详细信息，请参阅[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)文档。
+Web SDK包含一个[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)命令，您可以使用它来创建对象实例。 然后，您可以使用与[3.x Media SDK](/help/implementation/media-sdk/setup/js-3x-api-reference.md)提供的相同API来跟踪媒体事件。
 
 以下代码片段显示了如何在Media JS中检索媒体跟踪器实例。
 

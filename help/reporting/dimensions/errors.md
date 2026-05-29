@@ -3,7 +3,7 @@ title: 错误数
 description: 报告每个会话的错误事件计数。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**错误**&#x200B;维度。 Adobe Analytics从同一`a.media.qoe.errorCount`上下文数据变量自动填充配对的[错误事件指标](/help/reporting/metrics/error-events.md)。 Customer Journey Analytics公开单个`mediaReporting.qoeDataDetails.errorCount`字段，您可以将其用作维度或指标。*
+*本页介绍&#x200B;**错误**维度。 Adobe Analytics从同一`a.media.qoe.errorCount`上下文数据变量自动填充配对的[错误事件指标](/help/reporting/metrics/error-events.md)。 Customer Journey Analytics公开单个`xdm.mediaReporting.qoeDataDetails.errorCount`字段，您可以将其用作维度或指标。*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 6%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 媒体质量]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.qoe.errorCount`收集。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 数据馈送 | `videoqoeerrorcountevar`, `post_videoqoeerrorcountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.errorCount` |
 

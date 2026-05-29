@@ -3,10 +3,10 @@ title: 隐藏字幕
 description: 跟踪查看器打开和关闭隐藏式字幕的时间，以便后端能够报告字幕参与情况。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 9%
+source-wordcount: '302'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**隐藏式字幕**&#x200B;播放器状态的数据收集。 查看受隐藏式字幕影响的流数量[&#128279;](/help/reporting/metrics/closed-captioning-streams-impacted.md)、[隐藏式字幕数量](/help/reporting/metrics/closed-captioning-count.md)和[隐藏式字幕总持续时长](/help/reporting/metrics/closed-captioning-total-duration.md)以了解相应的报表量度。*
+*本页介绍&#x200B;**隐藏式字幕**播放器状态的数据收集。 查看受隐藏式字幕影响的流数量[](/help/reporting/metrics/closed-captioning-streams-impacted.md)、[隐藏式字幕数量](/help/reporting/metrics/closed-captioning-count.md)和[隐藏式字幕总持续时长](/help/reporting/metrics/closed-captioning-total-duration.md)以了解相应的报表量度。*
 
 >[!ENDSHADEBOX]
 
@@ -24,12 +24,16 @@ ht-degree: 9%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.states.closedcaptioning.set`, `a.media.states.closedcaptioning.count`, `a.media.states.closedcaptioning.time` |
-| **XDM集合字段** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details) （带有`name: "closedCaptioning"`的条目） |
+| **XDM集合字段** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （带有`name: "closedCaptioning"`的条目） |
 | **Audience Manager特征** | `c_contextdata.a.media.states.closedcaptioning.set`, `c_contextdata.a.media.states.closedcaptioning.count`, `c_contextdata.a.media.states.closedcaptioning.time` |
 | **必需** | 否 |
 | **发送条件** | [状态开始](/help/implementation/events/player-state/state-start.md)，[状态结束](/help/implementation/events/player-state/state-end.md) |
 
-## Web SDK
+## 建议的实施类型
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 使用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)发送状态已添加到`statesStart`的`media.statesUpdate`事件：
 
@@ -61,11 +65,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 将`tracker.trackPlayerStateStart()`和`tracker.trackPlayerStateEnd()`与`MediaConstants.PlayerState.CLOSED_CAPTION`常量一起使用。
-
-**iOS (Swift)**
 
 ```swift
 let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.CLOSED_CAPTION)
@@ -74,7 +76,9 @@ tracker.trackPlayerStateStart(info: stateObject)
 tracker.trackPlayerStateEnd(info: stateObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+将`tracker.trackPlayerStateStart()`和`tracker.trackPlayerStateEnd()`与`MediaConstants.PlayerState.CLOSED_CAPTION`常量一起使用。
 
 ```kotlin
 val stateObject = Media.createStateObject(MediaConstants.PlayerState.CLOSED_CAPTION)
@@ -83,7 +87,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 使用`sendMediaEvent`发送状态已添加到`statesStart`的`media.statesUpdate`事件：
 
@@ -113,7 +117,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 在`statesStart`中使用`closedCaptioning`调用[statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/)终结点（或者在查看器禁用字幕时`statesEnd`）：
 
@@ -132,7 +136,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 使用`ADB.Media.createStateObject`和`ADB.Media.PlayerState.ClosedCaptioning`常量：
 
@@ -143,7 +153,18 @@ tracker.trackPlayerStateStart(stateObject);
 tracker.trackPlayerStateEnd(stateObject);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+直接将`ADBMobile.media.createStateObject`与`"closedCaptioning"`字符串一起使用，因为Chromecast没有命名`PlayerState`常量：
+
+```javascript
+var stateObject = ADBMobile.media.createStateObject("closedCaptioning");
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
+// When the viewer disables captions:
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
+```
+
+>[!TAB 媒体收集API]
 
 启用字幕时发送`stateStart` POST请求，禁用字幕时发送`stateEnd` POST：
 
@@ -158,3 +179,5 @@ tracker.trackPlayerStateEnd(stateObject);
 ```
 
 有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+
+>[!ENDTABS]

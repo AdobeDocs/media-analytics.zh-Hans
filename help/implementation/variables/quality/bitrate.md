@@ -3,10 +3,10 @@ title: 比特率
 description: 在QoE对象中设置当前播放比特率（以kbps为单位），以便后端可以计算比特率量度。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 10%
+source-wordcount: '288'
+ht-degree: 6%
 
 ---
 
@@ -15,23 +15,27 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Bitrate**&#x200B;变量的数据收集。 查看相应报表变量的[平均比特率（维度）](/help/reporting/dimensions/average-bitrate.md)和[平均比特率（量度）](/help/reporting/metrics/average-bitrate.md)。*
+*本页介绍&#x200B;**Bitrate**变量的数据收集。 查看相应报表变量的[[!UICONTROL 平均比特率]（维度）](/help/reporting/dimensions/average-bitrate.md)和[[!UICONTROL 平均比特率]（量度）](/help/reporting/metrics/average-bitrate.md)。*
 
 >[!ENDSHADEBOX]
 
-bitrate变量是当前播放比特率（以千位/秒为单位）。 每当播放器协商比特率时，在QoE对象中设置它，并在比特率发生更改时更新QoE对象。 后端使用比特率值计算平均比特率、每比特率存储桶维度以及比特率更改量度。
+bitrate变量是当前播放比特率（以千位/秒为单位）。 每当播放器协商比特率时，在QoE对象中设置它，并在比特率发生更改时更新QoE对象。 后端使用比特率值来计算[[!UICONTROL 平均比特率]](/help/reporting/metrics/average-bitrate.md)、每比特率存储桶维度和[[!UICONTROL 比特率更改]](/help/reporting/metrics/bitrate-changes.md)量度。
 
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.qoe.bitrateAverageBucket` |
-| **XDM集合字段** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **必需** | 否 |
 | **发送条件** | 质量事件（[比特率更改](/help/implementation/events/playback/bitrate-change.md)，[缓冲开始](/help/implementation/events/playback/buffer-start.md)，[错误](/help/implementation/events/error.md)），会话关闭 |
 
-## Web SDK
+## 建议的实施类型
 
-调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`media.bitrateChange`（或任何与质量相关的事件）的`mediaCollection.qoeDataDetails`中设置`bitrate`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`media.bitrateChange`（或任何与质量相关的事件）的`xdm.mediaCollection.qoeDataDetails`中设置`bitrate`：
 
 ```javascript
 alloy("sendEvent", {
@@ -51,11 +55,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 将比特率作为第一个参数传递给`createQoEObject`。 在触发任何质量事件之前更新跟踪器上的QoE对象。
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -66,7 +68,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+将比特率作为第一个参数传递给`createQoEObject`。 在触发任何质量事件之前更新跟踪器上的QoE对象。
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -77,9 +81,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-为质量事件（如`media.bitrateChange`）调用`sendMediaEvent`时，在`mediaCollection.qoeDataDetails`中设置`bitrate`：
+为质量事件（如`media.bitrateChange`）调用`sendMediaEvent`时，在`xdm.mediaCollection.qoeDataDetails`中设置`bitrate`：
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -98,9 +102,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-调用`mediaCollection.qoeDataDetails`中包含`bitrate`的[bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange)终结点：
+调用`xdm.mediaCollection.qoeDataDetails`中包含`bitrate`的[bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange)终结点：
 
 ```json
 {
@@ -119,7 +123,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 将比特率作为第一个参数传递给`ADB.Media.createQoEObject`并更新跟踪器：
 
@@ -134,7 +144,21 @@ var qoeObject = ADB.Media.createQoEObject(
 tracker.updateQoEObject(qoeObject);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+将以kbps为单位的比特率作为第一个参数传递给`ADBMobile.media.createQoSObject`并更新跟踪器：
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate (kbps)
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB 媒体收集API]
 
 在`bitrateChange` POST请求的`params`对象中包括`media.qoe.bitrate`：
 
@@ -149,3 +173,5 @@ tracker.updateQoEObject(qoeObject);
 ```
 
 有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+
+>[!ENDTABS]

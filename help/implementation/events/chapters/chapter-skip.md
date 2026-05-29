@@ -3,10 +3,10 @@ title: 章节跳过
 description: 表示查看器跳过了一个章节。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 18%
+source-wordcount: '139'
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,11 @@ ht-degree: 18%
 * **先决条件**： [会话开始](../session/session-start.md)，[章节开始](chapter-start.md)
 * **关联的量度**：无
 
-## Web SDK
+## 建议的实施类型
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 使用`eventType: "media.chapterSkip"`调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 使用`ChapterSkip`事件类型调用`trackEvent`。
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.ChapterSkip, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+使用`ChapterSkip`事件类型调用`trackEvent`。
 
 ```kotlin
 tracker.trackEvent(Media.Event.ChapterSkip, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 使用`eventType: "media.chapterSkip"`调用`sendMediaEvent`：
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 调用[chapterSkip](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterskip)终结点：
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterSkip?configId={datastream
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 使用`ChapterSkip`事件类型调用`trackEvent`：
 
@@ -94,7 +104,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterSkip?configId={datastream
 tracker.trackEvent(ADB.Media.Event.ChapterSkip, null, null);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+使用`ChapterSkip`事件类型调用`trackEvent`：
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
+```
+
+>[!TAB 媒体收集API]
 
 向[事件终结点](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)发送`chapterSkip`帖子：
 
@@ -104,3 +122,5 @@ tracker.trackEvent(ADB.Media.Event.ChapterSkip, null, null);
   "eventType": "chapterSkip"
 }
 ```
+
+>[!ENDTABS]

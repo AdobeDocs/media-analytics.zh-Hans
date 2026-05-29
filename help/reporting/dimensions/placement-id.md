@@ -3,7 +3,7 @@ title: 版面 ID
 description: 报告每个广告的投放位置标识符。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**版面ID**&#x200B;报告维度。 有关如何收集此变量，请参阅[版面ID](/help/implementation/variables/ads/placement-id.md)。*
+*本页介绍&#x200B;**版面ID**报告维度。 有关如何收集此变量，请参阅[版面ID](/help/implementation/variables/ads/placement-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ ht-degree: 10%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 创建将`a.media.ad.placement`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.placementID`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | 创建将`a.media.ad.placement`映射到eVar的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 数据馈送 | `evar1`-`evar250`，`post_evar1`-`post_evar250` （您的处理规则将`a.media.ad.placement`映射到的eVar） |
 | Audience Manager | `c_contextdata.a.media.ad.placement` |
 

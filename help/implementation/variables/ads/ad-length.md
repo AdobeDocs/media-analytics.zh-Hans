@@ -3,10 +3,10 @@ title: 广告长度
 description: 设置每个广告的长度（以秒为单位）。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 14%
+source-wordcount: '203'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告时长**&#x200B;变量的数据收集。 查看相应报表维度的[广告长度](/help/reporting/dimensions/ad-length.md)。*
+*本页介绍&#x200B;**广告时长**变量的数据收集。 查看相应报表维度的[广告长度](/help/reporting/dimensions/ad-length.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,14 +24,18 @@ ht-degree: 14%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.length` |
-| **XDM集合字段** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.length` |
 | **必需** | 是 |
 | **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
 
-## Web SDK
+## 建议的实施类型
 
-调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`mediaCollection.advertisingDetails`中设置`length`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`xdm.mediaCollection.advertisingDetails`中设置`length`：
 
 ```javascript
 alloy("sendEvent", {
@@ -49,11 +53,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 将广告长度（以秒为单位）作为第四个参数传递给`createAdObject`。
-
-**iOS (Swift)**
 
 ```swift
 let adObject = Media.createAdObjectWith(name: "Ford F-150",
@@ -64,7 +66,9 @@ let adObject = Media.createAdObjectWith(name: "Ford F-150",
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+将广告长度（以秒为单位）作为第四个参数传递给`createAdObject`。
 
 ```kotlin
 val adObject = Media.createAdObject("Ford F-150",
@@ -75,9 +79,9 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-为`media.adStart`调用`sendMediaEvent`时，在`mediaCollection.advertisingDetails`中设置`length`：
+为`media.adStart`调用`sendMediaEvent`时，在`xdm.mediaCollection.advertisingDetails`中设置`length`：
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -96,9 +100,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-调用`mediaCollection.advertisingDetails`中包含`length`的[adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart)终结点：
+调用`xdm.mediaCollection.advertisingDetails`中包含`length`的[adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart)终结点：
 
 ```json
 {
@@ -120,7 +124,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 将广告长度（以秒为单位）作为第四个参数传递给`ADB.Media.createAdObject`：
 
@@ -135,7 +145,21 @@ var adInfo = ADB.Media.createAdObject(
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+将广告长度（以秒为单位）作为第四个参数传递给`ADBMobile.media.createAdObject`：
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject(
+  "Ford F-150",
+  "ad-2125",
+  1,
+  30
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB 媒体收集API]
 
 在`adStart` POST请求的`params`对象中包括`media.ad.length`：
 
@@ -150,3 +174,5 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
 有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+
+>[!ENDTABS]

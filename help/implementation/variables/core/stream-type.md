@@ -3,10 +3,10 @@ title: 流类型
 description: 设置流类型以标识媒体流是音频还是视频内容。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 10%
+source-wordcount: '312'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**流类型**&#x200B;变量的数据收集。 查看相应报表维度的[流类型](/help/reporting/dimensions/stream-type.md)。*
+*本页介绍&#x200B;**流类型**变量的数据收集。 查看相应报表维度的[流类型](/help/reporting/dimensions/stream-type.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -26,14 +26,18 @@ ht-degree: 10%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.streamType` |
-| **XDM集合字段** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.streamType` |
 | **必需** | 是 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
 
-## Web SDK
+## 建议的实施类型
 
-调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`mediaCollection.sessionDetails`中设置`streamType`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+调用[`sendEvent`](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/js/commands/sendevent/overview)时，在`xdm.mediaCollection.sessionDetails`中设置`streamType`：
 
 ```javascript
 alloy("sendEvent", {
@@ -55,11 +59,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 将`Media.MediaType.Video`或`Media.MediaType.Audio`作为`mediaType`参数传递给`createMediaObject`。 请注意，`createMediaObject`中的`streamType`参数控制内容类型变量（VOD、Live等），而不是此变量。
-
-**iOS (Swift)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "video-123",
@@ -71,7 +73,9 @@ let mediaObject = Media.createMediaObjectWith(name: "video-123",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+将`Media.MediaType.Video`或`Media.MediaType.Audio`作为`mediaType`参数传递给`createMediaObject`。 请注意，`createMediaObject`中的`streamType`参数控制内容类型变量（VOD、Live等），而不是此变量。
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("video-123",
@@ -83,9 +87,9 @@ var mediaInfo = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-调用`createMediaSession`时，在`mediaCollection.sessionDetails`中设置`streamType`：
+调用`createMediaSession`时，在`xdm.mediaCollection.sessionDetails`中设置`streamType`：
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -107,9 +111,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-调用`mediaCollection.sessionDetails`中包含`streamType`的[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)终结点：
+调用`xdm.mediaCollection.sessionDetails`中包含`streamType`的[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)终结点：
 
 ```json
 {
@@ -132,7 +136,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 旧版实施类型（仅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 将`ADB.Media.MediaType.Video`或`ADB.Media.MediaType.Audio`作为第五个参数传递给`Media.createMediaObject`：
 
@@ -148,7 +158,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## 媒体收集 API
+>[!TAB Chromecast]
+
+将`ADBMobile.media.MediaType.Video`或`ADBMobile.media.MediaType.Audio`作为第五个参数传递给`ADBMobile.media.createMediaObject`：
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "My Video",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB 媒体收集API]
 
 在`sessionStart` POST请求的`params`对象中包括`media.streamType`：
 
@@ -163,3 +188,5 @@ tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
 有关完整请求结构和所有必填字段，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+
+>[!ENDTABS]

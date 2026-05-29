@@ -3,7 +3,7 @@ title: 节目类型
 description: 报告内容格式（全集、预览、剪辑或其他）。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**显示类型**&#x200B;报告维度。 有关如何收集此变量，请参阅[显示类型](/help/implementation/variables/standard-metadata/show-type.md)。*
+*此页面涵盖&#x200B;**显示类型**报告维度。 有关如何收集此变量，请参阅[显示类型](/help/implementation/variables/standard-metadata/show-type.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 10%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics | 启用[[!UICONTROL 视频元数据]](/help/reporting/media-reports-enable.md)时，自动从上下文数据`a.media.type`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.showType`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 数据馈送 | `videoshowtype`, `post_videoshowtype` |
 | Audience Manager | `c_contextdata.a.media.type` |
 
