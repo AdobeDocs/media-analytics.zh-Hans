@@ -127,7 +127,7 @@ ht-degree: 17%
 
 1. （视情况而定）如果将自定义元数据添加到架构，请按照Customer Journey Analytics指南中的[持久性组件设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)中的说明设置自定义字段的持久性。
 
-1. 按照[共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)中的说明共享项目。
+1. 按照[共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=zh-Hans)中的说明共享项目。
 
    >[!NOTE]
    >

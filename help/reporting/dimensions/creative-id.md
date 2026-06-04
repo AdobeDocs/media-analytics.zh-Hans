@@ -25,9 +25,9 @@ ht-degree: 3%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics（处理规则） | 创建将`a.media.ad.creative`映射到eVar的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Adobe Analytics（处理规则） | 创建将`a.media.ad.creative`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
 | Adobe Analytics（分类） | [广告](ad.md)维度的分类 — 为报表包启用&#x200B;**[[!UICONTROL 媒体广告]](/help/reporting/setup/analytics-reporting.md)**&#x200B;时，Adobe会自动创建此分类。 您负责填充和维护分类值。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 数据馈送（处理规则） | `evar1`-`evar250`，`post_evar1`-`post_evar250` （您的处理规则将`a.media.ad.creative`映射到的eVar） |
 | 数据馈送（分类） | 不适用 — 数据馈送不支持分类。 |
 | Audience Manager | `c_contextdata.a.media.ad.creative` |
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 ## 处理规则方法
 
-创建将`a.media.ad.creative`映射到eVar的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法将创意ID捕获为每次点击值，而无需分类维护。
+创建将`a.media.ad.creative`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法将创意ID捕获为每次点击值，而无需分类维护。
 
 取舍是您丢失了创意ID与父[广告](ad.md)维度之间保证的1:1关系。 如果实施在事件中为同一广告ID发送的值不一致，则同一广告下可能会显示多个创意ID。 更新值仅适用于以后的数据。
 

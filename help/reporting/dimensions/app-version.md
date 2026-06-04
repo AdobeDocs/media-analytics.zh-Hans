@@ -31,8 +31,8 @@ ht-degree: 4%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 使用Edge实施时通过XDM字段映射自动收集。 对于仅限Analytics的实施，使用[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md)将上下文数据`media.sdkVersion`映射到自定义eVar。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | 使用Edge实施时通过XDM字段映射自动收集。 对于仅限Analytics的实施，使用[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md)将上下文数据`media.sdkVersion`映射到自定义eVar。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 数据馈送 | 没有专用数据馈送列。 对于仅限Analytics的实施，使用通过处理规则配置的自定义eVar的数据馈送列。 |
 | Audience Manager | `c_contextdata.media.sdkVersion` （仅限Analytics的实施） |
 

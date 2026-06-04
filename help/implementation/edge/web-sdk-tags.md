@@ -16,7 +16,7 @@ Adobe Experience Platform Web SDK标记扩展允许您在数据收集UI中配置
 
 * **先决条件**：
    * 完成[Edge实施概述](overview.md)（架构、数据集、启用了[!UICONTROL Media Analytics]的数据流）。
-   * 安装和配置Web SDK标记扩展。 请参阅[Web SDK标记扩展概述](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)。
+   * 安装和配置Web SDK标记扩展。 请参阅[Web SDK标记扩展概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/overview)。
 
 ## 在扩展中配置流媒体
 
@@ -39,6 +39,6 @@ Adobe Experience Platform Web SDK标记扩展允许您在数据收集UI中配置
 
 >[!MORELIKETHIS]
 >
->* [Web SDK标记扩展概述](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)
+>* [Web SDK标记扩展概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/overview)
 >* [为流媒体设置Web SDK（代码）](web-sdk.md)
 >* [事件概述](/help/implementation/events/overview.md)

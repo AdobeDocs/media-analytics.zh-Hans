@@ -65,7 +65,7 @@ alloy("setConsent", {
 
 要恢复跟踪，请再次调用`setConsent`，并将`"y"`作为`collect.val`值。
 
-有关其他格式（包括IAB TCF 2.0），请参阅Web SDK文档中的[setConsent命令](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent)。
+有关其他格式（包括IAB TCF 2.0），请参阅Web SDK文档中的[setConsent命令](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/setconsent)。
 
 >[!TAB iOS]
 
