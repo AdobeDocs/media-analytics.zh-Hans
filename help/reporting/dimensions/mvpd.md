@@ -3,7 +3,7 @@ title: MVPD
 description: 报告用户通过其进行身份验证的电缆、卫星或虚拟提供商。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 9%
@@ -27,7 +27,7 @@ MVPD由播放器在会话开始时设置，内容通过Adobe Pass审核。
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 启用[[!UICONTROL 视频元数据]](/help/reporting/media-reports-enable.md)时，自动从上下文数据`a.media.pass.mvpd`收集。 |
+| Adobe Analytics | 启用[[!UICONTROL 视频元数据]](/help/reporting/setup/analytics-reporting.md)时，自动从上下文数据`a.media.pass.mvpd`收集。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 数据馈送 | `videomvpd`, `post_videomvpd` |
 | Audience Manager | `c_contextdata.a.media.pass.mvpd` |

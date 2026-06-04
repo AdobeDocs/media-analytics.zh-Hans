@@ -21,10 +21,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 65%
+source-wordcount: 518
+ht-degree: 66%
 
 ---
 
@@ -34,13 +34,11 @@ ht-degree: 65%
 
 ## Edge 实施方法
 
-我们建议在为所有新Adobe Analytics或Edge客户实施流媒体服务时使用Customer Journey Analytics。
-
-Edge实施方法使用流媒体收集加载项。
+Adobe建议对所有新的Adobe Analytics或Customer Journey Analytics客户使用Edge Network实施方法。
 
 * **Media for Edge Network SDK /扩展：**&#x200B;从Web、iOS和Android设备或Roku设备收集数据并将其发送到Edge Network。 然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
 
-  有关Media for Edge Network SDK /扩展的更多信息，请参阅[使用Edge Network实施流媒体收集](/help/implementation/edge/implementation-edge.md)。
+  有关Media for Edge Network SDK /扩展的更多信息，请参阅[Edge实施概述](/help/implementation/edge/overview.md)。
 
 * **Media Edge API：**&#x200B;可自定义为从任何设备或格式（包括移动设备、Web设备和过顶设备）收集数据并将数据发送到Edge Network。 然后，数据可以发送到 Customer Journey Analytics 或 Adob&#x200B;e Analytics。
 
@@ -54,7 +52,7 @@ Edge实施方法使用流媒体收集加载项。
 
 除了 Edge 实施方法之外，还有其他实施方法。 这些实施方法专为与 Adob&#x200B;e Analytics 配合使用而设计。 但是，采用以下任何实施方法的现有客户仍然可以通过创建[&#x200B; Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)使数据在 Customer Journey Analytics 中可用。
 
-仅限Adobe Analytics的实施方法使用Adobe Analytics for Streaming Media加载项。
+仅限Adobe Analytics的实施方法使用Adobe Analytics for Streaming Media加载项。 有关先决条件和方法的列表，请参阅[仅限Analytics的实施概述](/help/implementation/analytics-only/overview.md)。
 
 * **带有标签的媒体扩展：**&#x200B;适用于音频和视频的 Adobe Media Analytics 扩展提供了将媒体跟踪器实例添加到启用标签的网站或项目的功能。 数据发送到 Adobe Analytics。
 
@@ -72,10 +70,3 @@ Edge实施方法使用流媒体收集加载项。
 
 
 ![Analytics 工作流](assets/analytics-implementation.png)
-
-<!--
-(Not sure if we need the following paragraph and graphic. Paragraph is somewhat redundant with the intro paragraph of this article)
-Choose the implementation method depending on the supported platforms. Some players are not supported by the Media SDKs or the Adobe Experience Platform Media Extensions. The Media Collection APIs provide a way to support those players. For information on supported devices, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
-
-![Media Flow](media-sdk/assets/choose-media-flow2.png)
--->

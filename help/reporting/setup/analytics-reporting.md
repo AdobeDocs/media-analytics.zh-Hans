@@ -1,41 +1,22 @@
 ---
-title: 媒体报表启用
-description: 了解收集媒体量度的媒体报表包。  在发送媒体数据之前，请执行以下步骤来配置媒体报表。
-uuid: d306068d-a308-4b6e-8a72-742dda0de428
-exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
+title: 为仅限Analytics的实施设置报表
+description: 在Adobe Analytics中启用媒体报表包模块，以便收集和报告流媒体数据。
 feature: Streaming Media
-role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/2nLLlF-rFJUR3t-OMbcy5iqF42l-O7oLybXFGhdPyhU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
-  - id: e38cbddc-1633-4cd5-bed5-9f289f2a6029
-  - id: ef60b66e-5984-4336-ba72-6d978b1b6f87
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+role: User, Admin
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 20%
+source-wordcount: '580'
+ht-degree: 8%
 
 ---
 
-# 媒体报表启用
+# 为仅限Analytics的实施设置报表
+
+在仅限于Analytics的实施可以收集流媒体数据之前，必须将接收该数据的每个报表包配置为启用相应的媒体模块。 本页介绍如何启用这些模块以及在何处查找生成的报表。
+
+* **先决条件**： Adobe Analytics实施。 查看[仅限Analytics的实施概述](/help/implementation/analytics-only/overview.md)以及您选择的实施方法。
+
+## 在报表包中启用媒体报告
 
 收集媒体量度的每个报表包必须在发送媒体数据之前进行配置。
 
@@ -44,11 +25,11 @@ ht-degree: 20%
 
    ![报表包管理器菜单屏幕截图](assets/media-reporting.png)
 
-1. 在&#x200B;**[!UICONTROL 媒体报表]**&#x200B;页面上，启用所需的流媒体组件（请参阅下文）。
+1. 在&#x200B;**[!UICONTROL 媒体报表]**&#x200B;页面上，启用所需的流媒体模块（请参阅下文）。
 
 1. 选择&#x200B;**[!UICONTROL 保存].**
 
-   如果此报表包已配置为收集媒体数据，则单击&#x200B;**[!UICONTROL 保存]**&#x200B;后，会显示额外的配置页面。 如果您看到&#x200B;**[!UICONTROL “媒体核心”测量]**&#x200B;页面，请继续执行下一步。
+   如果此报表包已配置为收集媒体数据，则在选择&#x200B;**[!UICONTROL 保存]**&#x200B;后，将显示额外的配置页面。 如果您看到&#x200B;**[!UICONTROL “媒体核心”测量]**&#x200B;页面，请继续执行下一步。
 
 ## 可用的流媒体模块
 
@@ -141,7 +122,7 @@ ht-degree: 20%
       * [[!UICONTROL 总缓冲持续时间]](/help/reporting/metrics/total-buffer-duration.md)
 * **[!UICONTROL 视频元数据]**：启用对标准视频内容属性（如节目、季度和流派）的跟踪。
    * **维度：**
-      * [!UICONTROL 个广告加载]
+      * [[!UICONTROL 个广告加载]](/help/reporting/dimensions/ad-load-type.md)
       * [[!UICONTROL 天部分]](/help/reporting/dimensions/day-part.md)
       * [[!UICONTROL 集]](/help/reporting/dimensions/episode.md)
       * [[!UICONTROL 流派]](/help/reporting/dimensions/genre.md)
@@ -178,3 +159,9 @@ ht-degree: 20%
       * [[!UICONTROL 受聚焦影响的流数量]](/help/reporting/metrics/in-focus-streams-impacted.md)
       * [[!UICONTROL 受静音影响的流数量]](/help/reporting/metrics/mute-streams-impacted.md)
       * [[!UICONTROL 受画中画影响的流数量]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
+
+>[!MORELIKETHIS]
+>
+>* Workspace中的[媒体报告](/help/reporting/workspace/media-workspace-templates.md)
+>* [维度概述](/help/reporting/dimensions/overview.md)
+>* [量度概述](/help/reporting/metrics/overview.md)

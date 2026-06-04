@@ -3,7 +3,7 @@ title: 流类型
 description: 捕获每个媒体会话是音频还是视频内容。
 feature: Dimensions
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 6%
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 >[!ENDSHADEBOX]
 
-**流类型**&#x200B;维度捕获每个媒体会话是音频还是视频内容。 为报表包启用[媒体核心](/help/implementation/media-sdk/setup/media-reports-enable.md)后，它将在Adobe Analytics中可用，并且可用于任何包含流媒体数据的数据集。
+**流类型**&#x200B;维度捕获每个媒体会话是音频还是视频内容。 为报表包启用[媒体核心](/help/reporting/setup/analytics-reporting.md)后，它将在Adobe Analytics中可用，并且可用于任何包含流媒体数据的数据集。
 
 ## 如何填充此维度
 
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 启用[[!UICONTROL 媒体核心]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.streamType`收集。 |
+| Adobe Analytics | 启用[[!UICONTROL 媒体核心]](/help/reporting/setup/analytics-reporting.md)后，自动从上下文数据`a.media.streamType`收集。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 数据馈送 | `videostreamtype` |
 | Audience Manager | `c_contextdata.a.media.streamType` |

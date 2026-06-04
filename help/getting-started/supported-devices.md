@@ -14,7 +14,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 308
 ht-degree: 75%
@@ -35,7 +35,7 @@ Adobe流媒体服务支持所有主要设备，包括：
 
 下表列出当前支持的设备。 如果未列出某个设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
 
-有关在Edge上实施媒体的详细信息，请参阅[使用Experience Platform Edge安装流媒体收藏集](/help/implementation/edge/implementation-edge.md)。
+有关在Edge上实施媒体的详细信息，请参阅[使用Experience Platform Edge安装流媒体收藏集](/help/implementation/edge/overview.md)。
 
 | 流平台和设备 |  | Media for Edge Network SDK/扩展 | Media Edge API | 带有标记或 AEP 移动 SDK 的媒体扩展 | Media SDK | 媒体收集 API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

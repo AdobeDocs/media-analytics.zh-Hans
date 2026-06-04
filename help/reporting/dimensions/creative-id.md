@@ -3,7 +3,7 @@ title: 创作 ID
 description: 报告广告创意标识符。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 3%
@@ -26,7 +26,7 @@ ht-degree: 3%
 | 报告系统 | 来源 |
 | --- | --- |
 | Adobe Analytics（处理规则） | 创建将`a.media.ad.creative`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
-| Adobe Analytics（分类） | [广告](ad.md)维度的分类 — 为报表包启用&#x200B;**[[!UICONTROL 媒体广告]](/help/reporting/media-reports-enable.md)**&#x200B;时，Adobe会自动创建此分类。 您负责填充和维护分类值。 |
+| Adobe Analytics（分类） | [广告](ad.md)维度的分类 — 为报表包启用&#x200B;**[[!UICONTROL 媒体广告]](/help/reporting/setup/analytics-reporting.md)**&#x200B;时，Adobe会自动创建此分类。 您负责填充和维护分类值。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 数据馈送（处理规则） | `evar1`-`evar250`，`post_evar1`-`post_evar250` （您的处理规则将`a.media.ad.creative`映射到的eVar） |
 | 数据馈送（分类） | 不适用 — 数据馈送不支持分类。 |
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 ## 分类方法
 
-为报表包启用了&#x200B;**[[!UICONTROL 媒体广告]](/help/reporting/media-reports-enable.md)**&#x200B;时，Adobe会自动创建Creative ID分类结构。 您负责使用[分类集](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)填充和维护分类。
+为报表包启用了&#x200B;**[[!UICONTROL 媒体广告]](/help/reporting/setup/analytics-reporting.md)**&#x200B;时，Adobe会自动创建Creative ID分类结构。 您负责使用[分类集](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)填充和维护分类。
 
 此方法在每个广告ID及其创意ID之间提供了保证的1:1关系。 分类更新会以追溯方式应用于该ID的所有历史数据。
 

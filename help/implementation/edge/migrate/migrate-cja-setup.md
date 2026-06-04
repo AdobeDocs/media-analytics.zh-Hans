@@ -17,7 +17,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 759
 ht-degree: 1%
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 查看[内容ID](/help/reporting/dimensions/content.md)参数以及[流媒体服务](/help/media-overview.md)下记录的其余流媒体变量，以便在旧字段和新字段之间映射。 旧字段路径位于“XDM字段路径”属性下，而新字段路径位于“报告XDM字段路径”属性下。
 
-![旧和新XDM字段路径](assets/field-paths-updated.jpeg)
+![旧和新XDM字段路径](../../assets/field-paths-updated.jpeg)
 
 ## 示例
 
@@ -72,13 +72,13 @@ ht-degree: 1%
 
 1. 找到正在使用来自已弃用数据类型的旧字段的量度或维度。
 
-   数据视图中的![旧字段路径](assets/old-field-data-view.jpeg)
+   数据视图中的![旧字段路径](../../assets/old-field-data-view.jpeg)
 
 1. 检查[章节偏移](/help/reporting/dimensions/chapter-offset.md)文章中对应的新字段。
 
 1. 在数据视图中查找新的对应字段。
 
-   ![数据视图中的新字段路径](assets/new-field-data-view.jpeg)
+   ![数据视图中的新字段路径](../../assets/new-field-data-view.jpeg)
 
 1. 将新字段拖到量度或维度中。
 
@@ -92,43 +92,43 @@ ht-degree: 1%
 
 1. 将“Case When”子句拖到派生字段中。
 
-   ![自定义新字段以创建数据视图](assets/create-derived-field2.jpeg)
+   ![自定义新字段以创建数据视图](../../assets/create-derived-field2.jpeg)
 
-1. 使用&#x200B;**报告XDM字段路径**&#x200B;的值填充&#x200B;[!UICONTROL **If**]&#x200B;子句，如[章节名称](/help/reporting/dimensions/chapter-name.md)页面中所示。
+1. 使用&#x200B;**报告XDM字段路径**&#x200B;的值填充&#x200B;**[!UICONTROL If]**&#x200B;子句，如[章节名称](/help/reporting/dimensions/chapter-name.md)页面中所示。
 
-   ![章节名称](assets/chapter-name.jpeg)
+   ![章节名称](../../assets/chapter-name.jpeg)
 
-   ![章节名称](assets/chapter-name2.jpeg)
+   ![章节名称](../../assets/chapter-name2.jpeg)
 
-   ![派生字段条件](assets/derived-field-condition.jpeg)
+   ![派生字段条件](../../assets/derived-field-condition.jpeg)
 
-   ![派生字段章节名称](assets/derived-field-chapter-name.jpeg)
+   ![派生字段章节名称](../../assets/derived-field-chapter-name.jpeg)
 
 1. 使用已弃用的“媒体”数据类型的旧字段填充回退值。
 
-   ![回退值](assets/fallback-value.jpeg)
+   ![回退值](../../assets/fallback-value.jpeg)
 
-   ![回退值](assets/fallback-value2.jpeg)
+   ![回退值](../../assets/fallback-value2.jpeg)
 
    这是派生字段的最终定义。
 
-   ![派生字段结束](assets/derived-field-complete.jpeg)
+   ![派生字段结束](../../assets/derived-field-complete.jpeg)
 
 1. 要更新派生字段，请找到正在使用旧弃用字段的派生字段（路径以`media.mediaTimed`开头）。
 
-   ![派生字段](assets/old-derived-field.jpeg)
+   ![派生字段](../../assets/old-derived-field.jpeg)
 
-1. 将鼠标悬停在要更新的派生字段上，然后选择&#x200B;[!UICONTROL **编辑**]&#x200B;图标。
+1. 将鼠标悬停在要更新的派生字段上，然后选择&#x200B;**[!UICONTROL 编辑]**&#x200B;图标。
 
 1. 找到旧数据类型（以`media.mediaTimed`开头的路径）中的所有字段，并将它们替换为新的相应字段。
 
-   ![查找具有旧数据类型的字段](assets/locate-fields-with-old-datatype.jpeg)
+   ![查找具有旧数据类型的字段](../../assets/locate-fields-with-old-datatype.jpeg)
 
 1. 检查[内容名称](/help/reporting/dimensions/content-name.md)文章中对应的新字段。
 
 1. 用新字段替换旧字段。
 
-   ![新字段](assets/derived-field-new.jpeg)
+   ![新字段](../../assets/derived-field-new.jpeg)
 
 1. 使用旧的已弃用“Media”数据类型的字段对所有派生字段重复此过程。
 

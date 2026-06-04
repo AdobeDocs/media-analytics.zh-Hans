@@ -18,7 +18,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 750
 ht-degree: 4%
@@ -41,7 +41,7 @@ ht-degree: 4%
 
 Web SDK尊重使用`setConsent`命令设置的同意首选项。 当同意设置为`"out"`时，Web SDK将停止将所有事件（包括流媒体跟踪调用）转发到Edge Network。 会话之间的同意状态会保留在浏览器存储中。
 
-在实施选择退出之前，请确保为您的Web SDK配置了流媒体组件。 有关详细信息，请参阅[设置Web SDK](../implementation/edge/edge-web-sdk.md)。
+在实施选择退出之前，请确保为您的Web SDK配置了流媒体组件。 有关详细信息，请参阅[设置Web SDK](../implementation/edge/web-sdk.md)。
 
 使用Adobe 2.0同意标准将同意设置为选择退出：
 
@@ -217,7 +217,7 @@ var ADBMobileConfig = {
 }
 ```
 
-* `analytics.optOutServerSideForwarding`：设置为`true`以选择退出在Adobe Analytics与其他Experience Cloud解决方案（如Audience Manager）之间共享的数据。
+* `analytics.optOutServerSideForwarding`：设置为`true`可选择在Adobe Analytics与其他Experience Cloud解决方案（如Audience Manager）之间共享数据。
 * `analytics.optOutShare`：设置为`true`可选择不与其他Adobe Analytics客户端共享联合数据。
 
 有关可用参数的完整列表，请参阅[媒体收集API请求参数引用](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)。

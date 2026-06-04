@@ -20,7 +20,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 513
 ht-degree: 3%
@@ -72,8 +72,8 @@ ht-degree: 3%
 
 **分辨率：**&#x200B;延迟每个广告的AdComplete调用（最后一个除外），而不是在广告结束时立即调用。 按如下方式批处理调用：
 
-- 在每个&#x200B;**广告开始**&#x200B;时：如果以前的广告存在且尚未标记为完成，请为新广告调用AdComplete *before*。
-- 在每个&#x200B;**广告资源结束**&#x200B;时：不要立即调用AdComplete — 延迟它。
-- 在&#x200B;**广告时间结束**&#x200B;时：调用上一个广告的AdComplete （如果尚未调用），然后调用AdBreakComplete。
+* 在每个&#x200B;**广告开始**&#x200B;时：如果以前的广告存在且尚未标记为完成，请为新广告调用AdComplete *before*。
+* 在每个&#x200B;**广告资源结束**&#x200B;时：不要立即调用AdComplete — 延迟它。
+* 在&#x200B;**广告时间结束**&#x200B;时：调用上一个广告的AdComplete （如果尚未调用），然后调用AdBreakComplete。
 
 此模式可确保AdComplete和下一个AdStart能够连续触发，从而消除任何缺口。

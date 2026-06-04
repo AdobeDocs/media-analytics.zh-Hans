@@ -3,7 +3,7 @@ title: 时段
 description: 报告内容广播或播放的时段时间（上午、下午、黄金时段、深夜）。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
@@ -27,7 +27,7 @@ ht-degree: 8%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 启用[[!UICONTROL 视频元数据]](/help/reporting/media-reports-enable.md)时，自动从上下文数据`a.media.dayPart`收集。 |
+| Adobe Analytics | 启用[[!UICONTROL 视频元数据]](/help/reporting/setup/analytics-reporting.md)时，自动从上下文数据`a.media.dayPart`收集。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 数据馈送 | `videodaypart`, `post_videodaypart` |
 | Audience Manager | `c_contextdata.a.media.dayPart` |

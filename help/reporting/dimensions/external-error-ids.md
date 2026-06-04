@@ -3,7 +3,7 @@ title: 外部错误Id
 description: 报告来自外部源的唯一错误标识符，如CDN错误。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 7%
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 启用[[!UICONTROL 媒体质量]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.qoe.externalErrors`收集。 |
+| Adobe Analytics | 启用[[!UICONTROL 媒体质量]](/help/reporting/setup/analytics-reporting.md)后，自动从上下文数据`a.media.qoe.externalErrors`收集。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.externalErrors`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 数据馈送 | `videoqoeextneralerrors` |
 | Audience Manager | `c_contextdata.a.media.qoe.externalErrors` |

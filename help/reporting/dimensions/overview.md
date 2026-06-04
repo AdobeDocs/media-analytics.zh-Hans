@@ -3,7 +3,7 @@ title: 流媒体维度概述
 description: 了解如何在Adobe Analytics和Customer Journey Analytics中填充和组织流媒体维度。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 | 报告系统 | 维度如何到达 |
 | --- | --- |
-| Adobe Analytics | 使用[上下文数据变量](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/vars/page-vars/contextdata)填充。 某些维度会自动使用这些上下文数据变量填充维度，而其他维度必须使用[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)填充。 自动填充值的维度必须首先启用各自的[流媒体报表包设置](../../implementation/media-sdk/setup/media-reports-enable.md)。 |
+| Adobe Analytics | 使用[上下文数据变量](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/vars/page-vars/contextdata)填充。 某些维度会自动使用这些上下文数据变量填充维度，而其他维度必须使用[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)填充。 自动填充值的维度必须首先启用各自的[流媒体报表包设置](../setup/analytics-reporting.md)。 |
 | Customer Journey Analytics | XDM字段通常位于`xdm.mediaReporting.sessionDetails`中，其来源为包含流媒体数据的任何数据集。 您必须使用[数据视图组件设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中的所需设置创建每个维度。 |
 | 数据馈送 | 自动填充的维度具有其自己的数据馈送列名称（如`videostreamtype`、`videoname`或`videolength`）。 需要处理规则的维度使用`evar`列名。 |
 | Audience Manager | 从Adobe Analytics转发的上下文数据。 仅在配置了Analytics到Audience Manager服务器端转发时可用。 |

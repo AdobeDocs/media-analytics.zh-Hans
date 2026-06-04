@@ -3,7 +3,7 @@ title: 流派
 description: 报告内容流派。 多流派内容会跨行项目进行拆分，每个行项目会获得相同的量度权重。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 7%
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 启用[[!UICONTROL 视频元数据]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.genre`（存储为列表变量）收集。 |
+| Adobe Analytics | 启用[[!UICONTROL 视频元数据]](/help/reporting/setup/analytics-reporting.md)后，自动从上下文数据`a.media.genre`（存储为列表变量）收集。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting)或[`xdm.mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-reporting)（旧版） |
 | 数据馈送 | `videogenre`, `post_videogenre` |
 | Audience Manager | `c_contextdata.a.media.genre` |

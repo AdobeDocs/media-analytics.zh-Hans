@@ -18,7 +18,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 700
 ht-degree: 0%
@@ -37,11 +37,11 @@ ht-degree: 0%
 >
 >为避免丢失数据，在完成此部分中的步骤之前，请确保已使用新的`mediaReporting`字段部署了Analytics源连接器。
 
-1. 在Adobe Experience Platform中的&#x200B;[!UICONTROL **源**]&#x200B;部分下，转到&#x200B;[!UICONTROL **数据流**]&#x200B;选项卡。
+1. 在Adobe Experience Platform中的&#x200B;**[!UICONTROL 源]**&#x200B;部分下，转到&#x200B;**[!UICONTROL 数据流]**&#x200B;选项卡。
 
 1. 找到负责通过Adobe数据收集将流媒体数据从Adobe Analytics导入Adobe Experience Platform的数据流。
 
-1. 选择&#x200B;[!UICONTROL **更新数据流**]&#x200B;以通过用新XDM对象中的新对应字段替换每个包含已弃用字段的自定义源映射来修改数据准备设置。
+1. 选择&#x200B;**[!UICONTROL 更新数据流]**&#x200B;以通过用新XDM对象中的新对应字段替换每个包含已弃用字段的自定义源映射来修改数据准备设置。
 
 1. 从已弃用的“Media”对象中找到包含源字段的映射。
 
@@ -55,19 +55,19 @@ ht-degree: 0%
 
 为了更便于遵循迁移准则，请考虑以下包含单个映射的数据流示例。 在这种情况下，您只需应用一次迁移指南。
 
-1. 在Adobe Experience Platform中的&#x200B;[!UICONTROL **源**]&#x200B;部分下，转到&#x200B;[!UICONTROL **数据流**]&#x200B;选项卡。
+1. 在Adobe Experience Platform中的&#x200B;**[!UICONTROL 源]**&#x200B;部分下，转到&#x200B;**[!UICONTROL 数据流]**&#x200B;选项卡。
 
 1. 找到负责通过Adobe数据收集将流媒体数据从Adobe Analytics导入Adobe Experience Platform的数据流。
 
 1. 选择&#x200B;**[!UICONTROL 更新数据流]**&#x200B;进入编辑UI，如下图所示。
 
-   ![AEP数据流](assets/aep-dataflow.jpeg)
+   ![AEP数据流](../../assets/aep-dataflow.jpeg)
 
 1. 在&#x200B;**[!UICONTROL 映射]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL 自定义]**。
 
 1. 确定依赖于`media.mediaTimed`字段作为源的自定义映射。
 
-   ![AEP数据流继续](assets/aep-dataflow2.jpeg)
+   ![AEP数据流继续](../../assets/aep-dataflow2.jpeg)
 
    在此示例中，由于您在开发组织的架构中创建了自定义字段组，因此目标字段位于`_dcbl`下。 自定义字段组路径因组织名称而异。
 
@@ -75,17 +75,17 @@ ht-degree: 0%
 
    例如，对于Network，`media.mediaTimed.primaryAssetViewDetails`.broadcastNetwork的通讯方为`xdm.mediaReporting.sessionDetails.network`。
 
-   ![已更新XDM字段路径](assets/xdm-field-path-old-and-new.jpeg)
+   ![已更新XDM字段路径](../../assets/xdm-field-path-old-and-new.jpeg)
 
 1. 在&#x200B;**[!UICONTROL Source字段]**&#x200B;字段中，将`media.mediaTimed`路径替换为`mediaReporting`路径。 目标字段保持不变。
 
-   ![AEP数据流继续](assets/aep-dataflow3.jpeg)
+   ![AEP数据流继续](../../assets/aep-dataflow3.jpeg)
 
 1. 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以保存更改。
 
    状态为&#x200B;**[!UICONTROL 正在处理]**。 应用更改后，状态显示为&#x200B;**[!UICONTROL 已启用]**。
 
-   ![AEP数据流继续](assets/aep-dataflow5.jpeg)
+   ![AEP数据流继续](../../assets/aep-dataflow5.jpeg)
 
 ## 不同数据类型的示例
 
@@ -99,8 +99,8 @@ ht-degree: 0%
 
 使用`media.mediaTimed`映射到自定义字段。
 
-![AEP数据流继续](assets/aep-dataflow6.jpeg)
+![AEP数据流继续](../../assets/aep-dataflow6.jpeg)
 
 与`mediaReporting`映射到同一自定义字段：
 
-![AEP数据流继续](assets/aep-dataflow7.jpeg)
+![AEP数据流继续](../../assets/aep-dataflow7.jpeg)

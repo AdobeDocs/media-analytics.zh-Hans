@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 516
 ht-degree: 1%
@@ -43,49 +43,49 @@ ht-degree: 1%
 
 查看[内容ID](/help/reporting/dimensions/content.md)参数以及[流媒体服务](/help/media-overview.md)下记录的其余流媒体变量，以便在旧字段和新字段之间映射。 旧字段路径位于“XDM字段路径”属性下，而新字段路径位于“报告XDM字段路径”属性下。
 
-![旧和新XDM字段路径](assets/field-paths-updated.jpeg)
+![旧和新XDM字段路径](../../assets/field-paths-updated.jpeg)
 
 ## 示例
 
 为了更便于遵循迁移准则，请考虑以下示例，其中包含具有单个规则的受众。 由于受众只有一个规则，因此您只需应用迁移准则一次。
 
-1. 选择右上角的&#x200B;[!UICONTROL **编辑受众**]&#x200B;按钮。
+1. 选择右上角的&#x200B;**[!UICONTROL 编辑受众]**&#x200B;按钮。
 
 1. 找到为受众配置的规则。
 
-   ![编辑受众](assets/audience-edit.jpeg)
+   ![编辑受众](../../assets/audience-edit.jpeg)
 
-   ![编辑受众](assets/audience-edit2.jpeg)
+   ![编辑受众](../../assets/audience-edit2.jpeg)
 
 1. 选择规则以打开其配置。
 
-   ![编辑受众](assets/audience-edit3.jpeg)
+   ![编辑受众](../../assets/audience-edit3.jpeg)
 
 1. （可选）要查看规则中使用的字段的路径，请选择字段名称旁边的信息按钮。
 
-   ![编辑受众](assets/audience-edit4.jpeg)
+   ![编辑受众](../../assets/audience-edit4.jpeg)
 
 1. 标识字段名称（本例中为“Media Starts”）。
 
-   ![编辑受众](assets/audience-edit5.jpeg)
+   ![编辑受众](../../assets/audience-edit5.jpeg)
 
 1. 查看[流媒体服务](/help/media-overview.md)下记录的流媒体变量以在旧字段之间映射。 旧字段路径可在“XDM字段路径”属性下找到，而新字段路径可在“报告XDM字段路径”属性下找到。 例如，对于[Media Starts](/help/reporting/metrics/media-starts.md)参数，`media.mediaTimed.impressions.value`的通讯对方是`xdm.mediaReporting.sessionDetails.isViewed`。
 
-   ![已更新XDM路径](assets/updated-xdm-path.jpeg)
+   ![已更新XDM路径](../../assets/updated-xdm-path.jpeg)
 
 1. 使用新字段添加与现有规则相同的规则。
 
-   ![添加规则](assets/add-rule.jpeg)
+   ![添加规则](../../assets/add-rule.jpeg)
 
-   ![添加规则](assets/add-rule2.jpeg)
+   ![添加规则](../../assets/add-rule2.jpeg)
 
-   ![添加规则](assets/add-rule3.jpeg)
+   ![添加规则](../../assets/add-rule3.jpeg)
 
-1. 选择&#x200B;[!UICONTROL **保存**]&#x200B;以保存受众。 您可以保留此设置，只要您需要验证受众是否仍按预期工作。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存受众。 您可以保留此设置，只要您需要验证受众是否仍按预期工作。
 
-1. 验证完成后，删除旧字段，然后选择&#x200B;[!UICONTROL **保存**]&#x200B;以保存受众。
+1. 验证完成后，删除旧字段，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存受众。
 
-   ![添加规则](assets/add-rule4.jpeg)
+   ![添加规则](../../assets/add-rule4.jpeg)
 
 1. 再次验证受众。
 
