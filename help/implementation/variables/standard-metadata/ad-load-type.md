@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告加载类型**变量的数据收集。 查看相应报表维度的[广告加载](/help/reporting/dimensions/ad-load-type.md)。*
+*本页介绍&#x200B;**广告加载类型**&#x200B;变量的数据收集。 查看相应报表维度的[广告加载](/help/reporting/dimensions/ad-load-type.md)。*
 
 >[!ENDSHADEBOX]
 

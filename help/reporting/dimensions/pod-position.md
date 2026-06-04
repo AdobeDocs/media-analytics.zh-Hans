@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**面板位置**报告维度。 有关如何收集此变量，请参阅[广告时间开始时间](/help/implementation/variables/ads/ad-break-start-time.md)。*
+*此页面涵盖&#x200B;**面板位置**&#x200B;报告维度。 有关如何收集此变量，请参阅[广告时间开始时间](/help/implementation/variables/ads/ad-break-start-time.md)。*
 
 >[!ENDSHADEBOX]
 

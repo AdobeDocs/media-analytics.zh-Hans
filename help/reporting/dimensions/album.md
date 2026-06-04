@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**相册**报告维度。 请参阅[相册](/help/implementation/variables/standard-metadata/album.md)以了解如何收集此变量。*
+*本页介绍&#x200B;**相册**&#x200B;报告维度。 请参阅[相册](/help/implementation/variables/standard-metadata/album.md)以了解如何收集此变量。*
 
 >[!ENDSHADEBOX]
 

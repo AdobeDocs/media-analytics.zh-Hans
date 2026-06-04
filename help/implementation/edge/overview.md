@@ -117,7 +117,7 @@ Adobe Experience Platform Edge Network允许您将发送到多个产品的数据
 
    +++ 展开以查看有关将自定义元数据添加到架构的说明。
 
-   1. 通过选择&#x200B;**[!UICONTROL 帐户信息]** > **[!UICONTROL 分配的组织]** > [!UICONTROL _**组织名称**_] > **[!UICONTROL 租户]**，找到组织的租户名称。
+   1. 通过选择&#x200B;**[!UICONTROL 帐户信息]** > **[!UICONTROL 分配的组织]** > [!UICONTROL _&#x200B;**组织名称**&#x200B;_] > **[!UICONTROL 租户]**，找到组织的租户名称。
 
       通过此路径接收自定义字段。 （例如，租户名称： _dcbl → myCustomField path： _dcbl.myCustomField。）
 

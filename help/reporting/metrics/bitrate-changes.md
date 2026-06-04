@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**比特率更改**量度。 Adobe Analytics从同一`a.media.qoe.bitrateChangeCount`上下文数据变量自动填充配对的[比特率更改（维度）](/help/reporting/dimensions/bitrate-changes.md)。 Customer Journey Analytics公开单个`xdm.mediaReporting.qoeDataDetails.bitrateChangeCount`字段，您可以将其用作维度或指标。 有关如何触发比特率更改事件，请参阅[比特率更改](/help/implementation/variables/quality/bitrate-change.md)。*
+*本页介绍&#x200B;**比特率更改**&#x200B;量度。 Adobe Analytics从同一`a.media.qoe.bitrateChangeCount`上下文数据变量自动填充配对的[比特率更改（维度）](/help/reporting/dimensions/bitrate-changes.md)。 Customer Journey Analytics公开单个`xdm.mediaReporting.qoeDataDetails.bitrateChangeCount`字段，您可以将其用作维度或指标。 有关如何触发比特率更改事件，请参阅[比特率更改](/help/implementation/variables/quality/bitrate-change.md)。*
 
 >[!ENDSHADEBOX]
 

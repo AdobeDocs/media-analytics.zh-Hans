@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页涵盖&#x200B;**季**报告维度。 请参阅[季](/help/implementation/variables/standard-metadata/season.md)以了解如何收集此变量。*
+*本页涵盖&#x200B;**季**&#x200B;报告维度。 请参阅[季](/help/implementation/variables/standard-metadata/season.md)以了解如何收集此变量。*
 
 >[!ENDSHADEBOX]
 

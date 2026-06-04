@@ -15,7 +15,7 @@ ht-degree: 4%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**应用程序版本**报告维度。 有关如何收集此变量，请参阅[应用程序版本](/help/implementation/variables/core/app-version.md)。*
+*本页介绍&#x200B;**应用程序版本**&#x200B;报告维度。 有关如何收集此变量，请参阅[应用程序版本](/help/implementation/variables/core/app-version.md)。*
 
 >[!ENDSHADEBOX]
 

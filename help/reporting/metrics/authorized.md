@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**已授权**报告量度。 请参阅[Authorized](/help/implementation/variables/standard-metadata/authorized.md)以了解如何收集此变量。*
+*此页面涵盖&#x200B;**已授权**&#x200B;报告量度。 请参阅[Authorized](/help/implementation/variables/standard-metadata/authorized.md)以了解如何收集此变量。*
 
 >[!ENDSHADEBOX]
 
