@@ -6,24 +6,15 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: c8add8f2-4250-4fd9-9cde-9707036c567d
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 489
-ht-degree: 46%
+source-wordcount: 490
+ht-degree: 43%
 
 ---
 
@@ -38,7 +29,7 @@ ht-degree: 46%
 Customer Journey Analytics流媒体收集加载项和Adobe Analytics for Streaming Media加载项的当前定价模型基于视频流。 如有必要，请联系您的销售代表或Adobe客户团队，因为此加载项是针对Adobe Analytics和Adobe Experience Platform单独销售的。
 
 1. **启用Adobe Analytics报表**<br>
-要在Analytics或Customer Journey Analytics中启用报表，并查看所收集的内容和广告数据，您必须启用报表。 请参阅[媒体报告启用](/help/implementation/media-sdk/setup/media-reports-enable.md)。
+要在Analytics或Customer Journey Analytics中启用报表，并查看所收集的内容和广告数据，您必须启用报表。 请参阅[为仅限Analytics的实施设置报表](/help/reporting/setup/analytics-reporting.md)。
 
 1. **在CX Enterprise中实施Adobe Experience Platform Identity服务**
 
@@ -58,8 +49,8 @@ Customer Journey Analytics流媒体收集加载项和Adobe Analytics for Streami
 
    根据您计划实施流媒体服务的方式，查看以下任一实施方法的先决条件：
 
-   * [仅 Adobe Analytics 实施的先决条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+   * [仅限Analytics的实施概述](/help/implementation/analytics-only/overview.md)
 
-   * [Edge 实施的先决条件](/help/implementation/edge/prerequisites-edge.md)
+   * [Edge实施概述](/help/implementation/edge/overview.md)
 
    使用[实施概述](/help/implementation/overview.md)确定何种实施方法适合您。

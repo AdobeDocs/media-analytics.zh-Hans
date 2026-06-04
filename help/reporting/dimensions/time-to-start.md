@@ -3,7 +3,7 @@ title: 开始时间（维度）
 description: 报告呈现第一帧之前经过的时间。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页涵盖&#x200B;**开始时间**&#x200B;维度。 Adobe Analytics从同一`a.media.qoe.timeToStart`上下文数据变量自动填充配对的[开始时间（指标）](/help/reporting/metrics/time-to-start.md)。 Customer Journey Analytics公开单个`xdm.mediaReporting.qoeDataDetails.timeToStart`字段，您可以将其用作维度或指标。 有关如何收集此变量，请参阅[开始时间](/help/implementation/variables/quality/time-to-start.md)。*
+*本页涵盖&#x200B;**开始时间**维度。 Adobe Analytics从同一`a.media.qoe.timeToStart`上下文数据变量自动填充配对的[开始时间（指标）](/help/reporting/metrics/time-to-start.md)。 Customer Journey Analytics公开单个`xdm.mediaReporting.qoeDataDetails.timeToStart`字段，您可以将其用作维度或指标。 有关如何收集此变量，请参阅[开始时间](/help/implementation/variables/quality/time-to-start.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ ht-degree: 6%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 启用[[!UICONTROL 媒体质量]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.qoe.timeToStart`收集。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Adobe Analytics | 启用[[!UICONTROL 媒体质量]](/help/reporting/setup/analytics-reporting.md)后，自动从上下文数据`a.media.qoe.timeToStart`收集。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 数据馈送 | `videoqoetimetostartevar`, `post_videoqoetimetostartevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.timeToStart` |
 

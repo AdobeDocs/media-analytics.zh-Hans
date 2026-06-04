@@ -3,7 +3,7 @@ title: 缓冲总持续时间（维度）
 description: 报告每个会话缓冲所花费的累积秒数。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此页涵盖&#x200B;**总缓冲持续时间**&#x200B;维度。 Adobe Analytics从同一`a.media.qoe.bufferTime`上下文数据变量自动填充配对的[总缓冲持续时间（指标）](/help/reporting/metrics/total-buffer-duration.md)。 Customer Journey Analytics公开单个`xdm.mediaReporting.qoeDataDetails.bufferTime`字段，您可以将其用作维度或指标。*
+*此页涵盖&#x200B;**总缓冲持续时间**维度。 Adobe Analytics从同一`a.media.qoe.bufferTime`上下文数据变量自动填充配对的[总缓冲持续时间（指标）](/help/reporting/metrics/total-buffer-duration.md)。 Customer Journey Analytics公开单个`xdm.mediaReporting.qoeDataDetails.bufferTime`字段，您可以将其用作维度或指标。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ ht-degree: 6%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics | 启用[[!UICONTROL 媒体质量]](/help/reporting/media-reports-enable.md)后，自动从上下文数据`a.media.qoe.bufferTime`收集。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Adobe Analytics | 启用[[!UICONTROL 媒体质量]](/help/reporting/setup/analytics-reporting.md)后，自动从上下文数据`a.media.qoe.bufferTime`收集。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 数据馈送 | `videoqoebuffertimeevar`, `post_videoqoebuffertimeevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bufferTime` |
 

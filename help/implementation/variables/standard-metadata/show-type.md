@@ -3,7 +3,7 @@ title: 节目类型
 description: 使用字符串整数代码标识内容格式（全集、预览、剪辑或其他）。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 8%
@@ -15,23 +15,23 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**节目类型**&#x200B;变量的数据收集。 查看相应报表维度的[显示类型](/help/reporting/dimensions/show-type.md)。*
+*本页介绍&#x200B;**节目类型**变量的数据收集。 查看相应报表维度的[显示类型](/help/reporting/dimensions/show-type.md)。*
 
 >[!ENDSHADEBOX]
 
 show type变量使用字符串整数代码标识内容格式：
 
-- `"0"`：整集
-- `"1"`：预览或预告片
-- `"2"`：剪辑
-- `"3"`：其他
+* `"0"`：整集
+* `"1"`：预览或预告片
+* `"2"`：剪辑
+* `"3"`：其他
 
 在衡量参与度时，使用它可将完整节目观看与短格式内容（如预告片和剪辑）分开。
 
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.type` |
-| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.type` |
 | **必需** | 否 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |

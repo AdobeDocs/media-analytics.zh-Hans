@@ -5,16 +5,11 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
 TQID: https://experienceleague.adobe.com/O3mOUZAV8D1yI3kylOt86o4vgE9mtj6-4wPcYVHqCz8
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 308
 ht-degree: 75%
@@ -35,7 +30,7 @@ Adobe流媒体服务支持所有主要设备，包括：
 
 下表列出当前支持的设备。 如果未列出某个设备，请联系客户关怀团队或解决方案顾问以了解该设备的状态。
 
-有关在Edge上实施媒体的详细信息，请参阅[使用Experience Platform Edge安装流媒体收藏集](/help/implementation/edge/implementation-edge.md)。
+有关在Edge上实施媒体的详细信息，请参阅[使用Experience Platform Edge安装流媒体收藏集](/help/implementation/edge/overview.md)。
 
 | 流平台和设备 |  | Media for Edge Network SDK/扩展 | Media Edge API | 带有标记或 AEP 移动 SDK 的媒体扩展 | Media SDK | 媒体收集 API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

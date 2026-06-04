@@ -6,19 +6,11 @@ exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/sEVJa-FPqZiSc4Hdr7lQfNbECS2lxckBmqAYhGHmx2w
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 449
 ht-degree: 7%
@@ -31,7 +23,7 @@ ht-degree: 7%
 
 要使此数据在Analysis Workspace中可用，客户必须定义自定义eVar并配置处理规则，以根据其用例填充这些数据。 在映射到eVar或prop后，如果配置了[Analytics源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)，则数据也可以通过相应的eVar路径在Adobe Experience Platform中可用。
 
-对于使用Experience Edge的基于XDM的实施，请参阅[自定义元数据支持 — XDM格式](/help/implementation/edge/implementation-edge-custom-metadata.md)。
+对于使用Experience Edge的基于XDM的实施，请参阅[自定义元数据支持 — XDM格式](/help/implementation/edge/custom-metadata.md)。
 
 ## 概述
 
@@ -80,8 +72,8 @@ ht-degree: 7%
 
 ### 关键命名要求
 
-- 避免在自定义元数据键中使用`media.`前缀 — 它映射到标准媒体字段，并且可能会在Analytics报表中覆盖它们
-- `a.`前缀是为Adobe标准元数据保留的，不得使用
+* 避免在自定义元数据键中使用`media.`前缀 — 它映射到标准媒体字段，并且可能会在Analytics报表中覆盖它们
+* `a.`前缀是为Adobe标准元数据保留的，不得使用
 
 ## 主内容自定义元数据
 
@@ -173,19 +165,19 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 
 ## 行为
 
-- 所有自定义元数据值必须是&#x200B;**字符串**。 发送之前转换数字和布尔值。
-- 自定义元数据显示在Analytics中，前缀为`c.`（例如，`contentCategory`→`c.contentCategory`）
-- 通过Analytics处理规则将自定义元数据映射到eVar、prop或上下文数据变量
-- `sessionStart`元数据在整个会话中持续存在；更新需要新会话
-- 每个`adStart`和`chapterStart`事件都可以携带不同的自定义元数据
+* 所有自定义元数据值必须是&#x200B;**字符串**。 发送之前转换数字和布尔值。
+* 自定义元数据显示在Analytics中，前缀为`c.`（例如，`contentCategory`→`c.contentCategory`）
+* 通过Analytics处理规则将自定义元数据映射到eVar、prop或上下文数据变量
+* `sessionStart`元数据在整个会话中持续存在；更新需要新会话
+* 每个`adStart`和`chapterStart`事件都可以携带不同的自定义元数据
 
 ## 相关文档
 
-- [自定义元数据支持 — XDM格式](/help/implementation/edge/implementation-edge-custom-metadata.md) — 通过Experience Edge将自定义元数据发送到Analytics和AEP
-- [报告包数据的Adobe Analytics源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics) — 将Analytics数据引入Adobe Experience Platform
+* [自定义元数据支持 — XDM格式](/help/implementation/edge/custom-metadata.md) — 通过Experience Edge将自定义元数据发送到Analytics和AEP
+* [报告包数据的Adobe Analytics源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics) — 将Analytics数据引入Adobe Experience Platform
 
 <!--
-- [Session endpoints](sessions.md) — Session lifecycle management
-- [Ad endpoints](ads.md) — Track advertising impressions
-- [Chapter endpoints](chapters.md) — Segment content into chapters
+* [Session endpoints](sessions.md) — Session lifecycle management
+* [Ad endpoints](ads.md) — Track advertising impressions
+* [Chapter endpoints](chapters.md) — Segment content into chapters
 -->
