@@ -5,10 +5,10 @@ user-guide-title: 流媒体服务指南
 breadcrumb-title: 流媒体服务指南
 user-guide-description: 实施流媒体服务。 包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 34%
+source-wordcount: '698'
+ht-degree: 32%
 
 ---
 
@@ -289,21 +289,7 @@ ht-degree: 34%
       + [总停滞持续时间](reporting/metrics/total-stalling-duration.md)
       + [独特播放时间](reporting/metrics/unique-time-played.md)
    + [计算量度](reporting/calculated-metrics.md)
-   + Workspace中的媒体面板 {#media-workspace-panels}
-      + [“媒体平均受众访问分钟数”面板](reporting/workspace/average-minute-audience.md)
-      + [“媒体并行查看者”面板](reporting/workspace/media-concurrent-viewers-overview.md)
-      + [“媒体播放耗时”面板](reporting/workspace/media-playback-time-spent.md)
-   + [Workspace 中的媒体报表](reporting/workspace/media-workspace-templates.md)
    + [媒体分段](reporting/segments.md)
-   + 默认媒体报表 {#media-default-reports}
-      + [默认报表概述](reporting/reports-and-analytics/default-reports-overview.md)
-      + [媒体概述](reporting/reports-and-analytics/media-reports-overview.md)
-      + [媒体详细信息](reporting/reports-and-analytics/media-reports-detail.md)
-      + [媒体时段报表](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [媒体并行查看者报表](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + 媒体API {#media-api}
-      + [获取并行查看者数据](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [获取Media Playback耗时数据](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 用例 {#media-use-cases}
    + [跟踪计划数据](/help/use-cases/track-schedule-data.md)
    + [跟踪下载的内容](use-cases/track-downloaded-content.md)
