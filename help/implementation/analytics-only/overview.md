@@ -18,7 +18,7 @@ ht-degree: 5%
 
 1. **完成常规先决条件。** 请参阅[常规先决条件](/help/getting-started/prereqs.md)。
 
-1. **确认Adobe Analytics实施。** 仅限于Analytics的流媒体实施需要基本的Adobe Analytics实施。 请参阅[实施Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)。
+1. **确认Adobe Analytics实施。** 仅限于Analytics的流媒体实施需要基本的Adobe Analytics实施。 请参阅[实施Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)。
 
 1. **获取媒体跟踪服务器URL。** 向您的Adobe Analytics代表询问媒体跟踪服务器URL (`collection-api-server` URL)。 域通常遵循模式`[your_namespace].hb-api.omtrdc.net`。
 
