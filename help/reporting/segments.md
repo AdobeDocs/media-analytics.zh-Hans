@@ -17,20 +17,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: 209
-ht-degree: 90%
+source-wordcount: 188
+ht-degree: 76%
 
 ---
 
 # 媒体分段{#segments}
 
-您可以使用区段根据特性或网站交互来确定访客子集。 利用流媒体区段，您可以确定访客流类型，例如音频流、实时流或播客流。 有关 Adobe Analytics 区段的信息，请参阅“Adobe Analytics 组件指南”中的[关于区段和容器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=zh-Hans)。
-
->[!NOTE]
->
->这些与媒体流类型相关的报表区段是在 2018 年 9 月 13 日与 `streamType` 参数一起引入的。
+您可以使用区段根据特性或网站交互来确定访客子集。 利用流媒体区段，您可以确定访客流类型，例如音频流、实时流或播客流。 有关Adobe Analytics区段的信息，请参阅《Adobe Analytics组件指南》中的[关于区段](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/segmentation/seg-overview)。
 
 | 区段 | 描述 | 规则 |
 |---|---|---|

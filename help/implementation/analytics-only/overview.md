@@ -3,7 +3,7 @@ title: 仅限Analytics的实施概述
 description: 适用于流媒体的Adobe Analytics加载项的先决条件和实施方法，用于仅限Analytics的实施。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 5%
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 每个页面都涵盖特定于流媒体的设置。 每个事件和每个变量的代码位于[事件](/help/implementation/events/overview.md)和[变量](/help/implementation/variables/overview.md)中。
 
-| 代码库 | In-code | 通过标记 |
+| 代码库 | In-code | 使用标记 |
 |---|---|---|
 | Web (JavaScript) | [JavaScript](javascript.md) | [Media Analytics标记扩展](javascript-tags.md) |
 | Chromecast | [Chromecast](chromecast.md) | — |

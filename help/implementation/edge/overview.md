@@ -3,16 +3,18 @@ title: Edge实施概述
 description: 设置通过Edge Network收集流媒体数据所需的Adobe Experience Platform架构、数据集和数据流。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 5%
+source-wordcount: '1298'
+ht-degree: 4%
 
 ---
 
 # Edge实施概述
 
-Adobe Experience Platform Edge Network允许您将发送到多个产品的数据发送到单个端点，然后将该相应信息转发到每个产品。 这可以整合多个数据解决方案中的实施工作，并且是为Adobe Analytics和Customer Journey Analytics实施流媒体收集的建议方法。
+Adobe Experience Platform Edge Network允许您将发送到多个产品的数据发送到单个端点，然后将该相应信息转发到每个产品。 这是实施流媒体收藏集的推荐方法，也是从单个工具中同时支持Adobe Analytics和Customer Journey Analytics的唯一方法。
+
+与旧版Media SDK方法（每个Adobe解决方案需要特定于产品的检测工具）不同，Edge实施使用共享XDM数据模型和单个数据流。 数据流从您的SDK或API流向Edge Network，然后路由到数据流中配置的任何Adobe产品（Analytics、CJA、AJO或RTCDP）。 这意味着以后切换或添加下游产品不需要重新检测您的媒体事件。
 
 无论您使用哪个代码库(Web SDK、Mobile SDK（iOS或Android）、Roku SDK或Media Edge API)，都必须首先完成本页中所述的平台设置：创建架构、创建数据集和配置数据流。
 
@@ -20,11 +22,10 @@ Adobe Experience Platform Edge Network允许您将发送到多个产品的数据
 
 1. **完成常规先决条件。** 请参阅[常规先决条件](/help/getting-started/prereqs.md)。
 
-1. **确认兼容的Adobe解决方案。** 您必须具备有效的Customer Journey Analytics、Adobe Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform实施：
-   * [Customer Journey Analytics指南](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hans)
-   * [实施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)
-   * [Adobe Journey Optimizer文档](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hans)
-   * [Real-Time Customer Data Platform文档](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hans)
+1. **确认兼容的Adobe解决方案。** 您必须至少具有下列项之一的有效实施：
+   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hans) — 基于Edge的媒体数据的主要报表目标
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans) — 通过同一数据流支持随附或替代CJA
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hans)或[Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hans) — 在配置其中一项时，将&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;服务添加到您的数据流
 
 ## 在Adobe Experience Platform中设置架构
 
@@ -51,7 +52,7 @@ Adobe Experience Platform Edge Network允许您将发送到多个产品的数据
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改。
 
-1. （可选）您可以隐藏Media Edge API未使用的某些字段。 隐藏这些字段可以使架构更易于读取，但不是必需的。 这些字段仅引用`MediaAnalytics Interaction Details`字段组中的字段。
+1. （可选）您可以在架构UI中隐藏某些字段。 这些字段是Adobe在后端填充的服务器计算报表字段 — 它们并非由SDK或API发送，不会影响数据收集。 隐藏这些变量对功能没有影响；它仅减少在AEP UI中浏览架构时的视觉噪音。 这些字段仅引用`MediaAnalytics Interaction Details`字段组中的字段。
 
    +++ 展开以查看有关可隐藏字段的说明。
 
@@ -135,43 +136,31 @@ Adobe Experience Platform Edge Network允许您将发送到多个产品的数据
 
    +++
 
-1. 继续[在Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)中创建数据集。
-
 ## 在 Adobe Experience Platform 中创建数据集
-
-1. 请确保按照[在Adobe Experience Platform中设置架构](#set-up-the-schema-in-adobe-experience-platform)中所述设置架构。
 
 1. 在Adobe Experience Platform中，按照[数据集UI指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh_Hans#create)中的说明开始创建数据集。
 
    为数据集选择架构时，请选择之前创建的架构。
 
-1. 继续[在Adobe Experience Platform](#configure-a-datastream-in-adobe-experience-platform)中配置数据流。
-
 ## 在Adobe Experience Platform中配置数据流
-
-1. 请确保按照[在Adobe Experience Platform中创建数据集](#create-a-dataset-in-adobe-experience-platform)中的说明创建了数据集。
 
 1. 按照[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans)中的说明创建新数据流。
 
    创建数据流时，进行以下选择：
 
-   * 在&#x200B;**[!UICONTROL 事件架构]**&#x200B;字段中，选择您在[中创建的架构。在Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)中设置架构。 选择&#x200B;**[!UICONTROL 保存]**。
+   * 在&#x200B;**[!UICONTROL 事件架构]**&#x200B;字段中，选择您在[中创建的架构。在Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)中设置架构。
 
      >[!IMPORTANT]
      >
-     >不要选择&#x200B;**[!UICONTROL 保存并添加映射]**，因为这样做会导致时间戳字段出现映射错误。
+     >选择&#x200B;**[!UICONTROL 保存]**；不要选择&#x200B;**[!UICONTROL 保存并添加映射]**。 选择&#x200B;**[!UICONTROL 保存并添加映射]**&#x200B;会导致时间戳字段出现映射错误。
 
      ![创建数据流并选择架构](assets/datastream-create-schema.png)
 
-   * 根据您使用的是Adobe Analytics还是Customer Journey Analytics，将以下任一服务添加到数据流：
+   * 根据您的Adobe解决方案，将相应的服务添加到数据流。 有关添加服务的信息，请参阅[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans#view-details)中的“将服务添加到数据流”。
 
-      * **[!UICONTROL Adobe Analytics]**（如果使用Adobe Analytics）
+      * **[!UICONTROL Adobe Analytics]**（如果使用Adobe Analytics） — 按照[创建报表包](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中的说明定义报表包。
 
-        如果您使用的是Adobe Analytics，请按照[创建报表包](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中的说明定义报表包。
-
-      * **[!UICONTROL Adobe Experience Platform]**（如果使用Customer Journey Analytics）
-
-     有关将服务添加到数据流的信息，请参阅[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans#view-details)中的“将服务添加到数据流”。
+      * **[!UICONTROL Adobe Experience Platform]**（如果使用Customer Journey Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform）
 
      ![添加Adobe Analytics服务](assets/datastream-add-service.png)
 
@@ -183,7 +172,9 @@ Adobe Experience Platform Edge Network允许您将发送到多个产品的数据
 
 准备好架构、数据集和数据流后，实施以下代码库之一以开始将流媒体数据发送到Edge Network。 每个页面都涵盖特定于流媒体的设置；每个事件和每个变量的代码都存在于[事件](/help/implementation/events/overview.md)和[变量](/help/implementation/variables/overview.md)中。
 
-| 代码库 | In-code | 通过标记 |
+**代码内**&#x200B;实现直接在应用程序源代码中写入SDK调用。 **使用标记**&#x200B;实施使用[Adobe Experience Platform标记](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)，这使您能够在不修改应用程序代码的情况下配置和部署跟踪规则。 选择适合您的部署工作流的任意方法。
+
+| 代码库 | In-code | 使用标记 |
 |---|---|---|
 | Web | [Web SDK](web-sdk.md) | [Web SDK标记扩展](web-sdk-tags.md) |
 | iOS | [iOS](ios.md) | [iOS （标记）](ios-tags.md) |
