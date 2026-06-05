@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
 workflow-type: tm+mt
-source-wordcount: 789
-ht-degree: 59%
+source-wordcount: 793
+ht-degree: 60%
 
 ---
 
@@ -37,12 +37,17 @@ ht-degree: 59%
 
 **上次更新时间**：2026年6月4日
 
-## 2025
+## 2026
 
 | 功能 | 描述 | 日期 |
 | --- | --- | --- |
 | **支持计划数据** | 上传过去实时内容的计划数据以按项目或区段跟踪收视率。 支持的内容类型包括：<ul><li>FAST（免费广告支持电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul>有关详细信息，请参阅[上传计划数据以跟踪实时内容](/help/use-cases/track-schedule-data.md)用例。 | 开始推出：2025年10月29日<p>正式发布：2026年10月</p> |
-| `mediaTimed` XDM字段已弃用 | `mediaTimed` XDM对象已弃用，支持`mediaReporting`字段路径。 在2025年5月9日之前实施了Analytics Source Connector的客户必须迁移其配置。 有关更多信息，请参阅以下迁移指南：<ul><li>[将受众迁移到新的流媒体字段](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[迁移Customer Journey Analytics以使用新的流媒体字段](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[将自定义字段的数据准备迁移至新的流媒体字段](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[将配置文件迁移到新的流媒体字段](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | 2025 年 10 月 |
+
+## 2025
+
+| 功能 | 描述 | 日期 |
+| --- | --- | --- |
+| **`mediaTimed`XDM字段弃用** | `mediaTimed` XDM对象已弃用，支持`mediaReporting`字段路径。 在2025年5月9日之前实施了Analytics Source Connector的客户必须迁移其配置。 有关更多信息，请参阅以下迁移指南：<ul><li>[将受众迁移到新的流媒体字段](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[迁移Customer Journey Analytics以使用新的流媒体字段](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[将自定义字段的数据准备迁移至新的流媒体字段](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[将配置文件迁移到新的流媒体字段](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | 2025 年 10 月 |
 
 ## 2024
 
