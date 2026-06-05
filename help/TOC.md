@@ -5,10 +5,10 @@ user-guide-title: 流媒体服务指南
 breadcrumb-title: 流媒体服务指南
 user-guide-description: 实施流媒体服务。 包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 35%
+source-wordcount: '749'
+ht-degree: 34%
 
 ---
 
@@ -16,13 +16,11 @@ ht-degree: 35%
 # 流媒体服务指南 {#using}
 
 + [Adobe流媒体服务指南](media-overview.md)
-+ 发行说明 {#release-notes}
-   + [流媒体服务发行说明](additional-resources/release-notes.md)
++ [流媒体服务发行说明](release-notes.md)
 + 快速入门 {#getting-started}
    + [先决条件](getting-started/prereqs.md)
    + [支持的设备](getting-started/supported-devices.md)
-   + [流媒体服务实施文档](getting-started/implementation-documentation.md)
-   + [SDK、库和扩展](getting-started/download-sdks.md)
+   + [获取媒体SDK、扩展和API](getting-started/download-sdks.md)
 + 实施 {#implementation}
    + [实施概述](implementation/overview.md)
    + 事件 {#events}
