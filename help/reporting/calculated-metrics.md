@@ -18,12 +18,12 @@ Adobe流媒体服务的计算量度是基于标准流媒体量度构建的自定
 
 | 计算量度 | 描述 | 公式 |
 | --- | --- | --- |
-| 平均 每个媒体流的广告 | 每[[!UICONTROL 个媒体开始的[[!UICONTROL 广告开始次数]](/help/reporting/metrics/ad-starts.md)]](/help/reporting/metrics/media-starts.md) | `[Ad starts] / [Media starts]` |
-| 平均 每个媒体流的章节数 | 每个[[!UICONTROL 媒体开始的[[!UICONTROL 章节开始次数]](/help/reporting/metrics/chapter-starts.md)]](/help/reporting/metrics/media-starts.md) | `[Chapter starts] / [Media starts]` |
+| 平均 每个媒体流的广告 | 每[&#128279;](/help/reporting/metrics/media-starts.md)个媒体开始的[[!UICONTROL 广告开始次数]](/help/reporting/metrics/ad-starts.md) | `[Ad starts] / [Media starts]` |
+| 平均 每个媒体流的章节数 | 每个[&#128279;](/help/reporting/metrics/media-starts.md)媒体开始的[[!UICONTROL 章节开始次数]](/help/reporting/metrics/chapter-starts.md) | `[Chapter starts] / [Media starts]` |
 | 平均 媒体逗留时间 | 每[[!UICONTROL 个媒体开始]](/help/reporting/metrics/media-starts.md)的[[!UICONTROL 媒体逗留时间]](/help/reporting/metrics/media-time-spent.md) (`HH:MM:SS`) | `[Media time spent] / [Media starts]` |
-| 平均 内容逗留时间 | 每个[[!UICONTROL 内容开始时间[[!UICONTROL 内容逗留时间]](/help/reporting/metrics/content-time-spent.md)]](/help/reporting/metrics/content-starts.md) (`HH:MM:SS`) | `[Content time spent] / [Content starts]` |
-| 平均 广告逗留时间 | 每[[!UICONTROL 个广告开始的[[!UICONTROL 广告逗留时间]](/help/reporting/metrics/ad-time-spent.md)]](/help/reporting/metrics/ad-starts.md) (`HH:MM:SS`) | `[Ad time spent] / [Ad starts]` |
-| 平均 章节逗留时间 | 每个[[!UICONTROL 章节开始的[[!UICONTROL 章节逗留时间]](/help/reporting/metrics/chapter-time-spent.md)]](/help/reporting/metrics/chapter-starts.md) (`HH:MM:SS`) | `[Chapter time spent] / [Chapter starts]` |
+| 平均 内容逗留时间 | 每个[&#128279;](/help/reporting/metrics/content-starts.md)内容开始时间[[!UICONTROL 内容逗留时间]](/help/reporting/metrics/content-time-spent.md) (`HH:MM:SS`) | `[Content time spent] / [Content starts]` |
+| 平均 广告逗留时间 | 每[&#128279;](/help/reporting/metrics/ad-starts.md)个广告开始的[[!UICONTROL 广告逗留时间]](/help/reporting/metrics/ad-time-spent.md) (`HH:MM:SS`) | `[Ad time spent] / [Ad starts]` |
+| 平均 章节逗留时间 | 每个[&#128279;](/help/reporting/metrics/chapter-starts.md)章节开始的[[!UICONTROL 章节逗留时间]](/help/reporting/metrics/chapter-time-spent.md) (`HH:MM:SS`) | `[Chapter time spent] / [Chapter starts]` |
 | 媒体完成率 | [[!UICONTROL 内容完成]](/help/reporting/metrics/content-completes.md)与[[!UICONTROL 媒体开始]](/help/reporting/metrics/media-starts.md)的速率 | `[Content completes] / [Media starts]` |
 | 内容完成率 | [[!UICONTROL 内容完成]](/help/reporting/metrics/content-completes.md)与[[!UICONTROL 内容开始]](/help/reporting/metrics/content-starts.md)的速率 | `[Content completes] / [Content starts]` |
 | 广告完成率 | [[!UICONTROL 广告完成]](/help/reporting/metrics/ad-completes.md)与[[!UICONTROL 广告开始]](/help/reporting/metrics/ad-starts.md)的速率 | `[Ad completes] / [Ad starts]` |
