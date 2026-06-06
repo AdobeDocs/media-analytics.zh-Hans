@@ -5,9 +5,9 @@ user-guide-title: 流媒体服务指南
 breadcrumb-title: 流媒体服务指南
 user-guide-description: 实施流媒体服务。 包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
+source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '693'
 ht-degree: 31%
 
 ---
@@ -290,7 +290,7 @@ ht-degree: 31%
       + [总停滞持续时间](reporting/metrics/total-stalling-duration.md)
       + [独特播放时间](reporting/metrics/unique-time-played.md)
    + [计算量度](reporting/calculated-metrics.md)
-   + [媒体分段](reporting/segments.md)
+   + [区段](reporting/segments.md)
 + 用例 {#media-use-cases}
    + [跟踪计划数据](/help/use-cases/track-schedule-data.md)
    + [跟踪下载的内容](use-cases/track-downloaded-content.md)
