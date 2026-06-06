@@ -1,5 +1,5 @@
 ---
-title: 解释选择禁用和隐私
+title: 选择禁用和隐私设置
 description: 了解如何处理选择启用、选择禁用和隐私。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
@@ -18,14 +18,14 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
 workflow-type: tm+mt
-source-wordcount: 750
-ht-degree: 4%
+source-wordcount: 751
+ht-degree: 3%
 
 ---
 
-# 选择禁用和隐私
+# 选择禁用和隐私设置
 
 当用户选择退出跟踪时，流媒体库会立即停止所有数据收集活动。 对于该用户，不会发生会话开始调用、心率ping以及事件跟踪数据被发送到Adobe数据收集服务器。
 
@@ -217,7 +217,7 @@ var ADBMobileConfig = {
 }
 ```
 
-* `analytics.optOutServerSideForwarding`：设置为`true`可选择在Adobe Analytics与其他Experience Cloud解决方案（如Audience Manager）之间共享数据。
+* `analytics.optOutServerSideForwarding`：设置为`true`以选择退出在Adobe Analytics与其他Experience Cloud解决方案（如Audience Manager）之间共享的数据。
 * `analytics.optOutShare`：设置为`true`可选择不与其他Adobe Analytics客户端共享联合数据。
 
 有关可用参数的完整列表，请参阅[媒体收集API请求参数引用](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)。
