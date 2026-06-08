@@ -3,9 +3,9 @@ title: 跟踪播放器状态
 description: 了解播放器状态事件以及如何跟踪全屏、静音、隐藏式字幕、画中画和聚焦状态。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '656'
 ht-degree: 12%
 
 ---
@@ -149,7 +149,7 @@ tracker.trackEvent(Media.Event.StateStart, fullscreenState, null)
 tracker.trackEvent(Media.Event.StateEnd, fullscreenState, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 ```brightscript
 ' t0 — start mute and picture-in-picture together
@@ -290,6 +290,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, fullscreenState, nu
 // t2 — end full screen
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, fullscreenState, null);
 ```
+
+>[!TAB Roku 2.x]
+
+播放器状态跟踪在Roku 2.x SDK中不可用。 要跟踪播放器状态，请使用[Roku Edge SDK](/help/implementation/edge/roku.md)。
 
 >[!TAB 媒体收集API]
 

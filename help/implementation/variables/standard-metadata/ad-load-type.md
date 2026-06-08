@@ -3,9 +3,9 @@ title: 广告加载类型
 description: 为流会话设置广告加载类型。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '269'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告加载类型**&#x200B;变量的数据收集。 查看相应报表维度的[广告加载](/help/reporting/dimensions/ad-load-type.md)。*
+*本页介绍&#x200B;**广告加载类型**变量的数据收集。 查看相应报表维度的[广告加载](/help/reporting/dimensions/ad-load-type.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.adLoad` |
-| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.adLoad` |
 | **必需** | 否 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 >[!TAB Web SDK]
 
-调用[`createMediaSession`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/commands/createmediasession)时，在`xdm.mediaCollection.sessionDetails`中设置`adLoad`：
+调用[`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession)时，在`xdm.mediaCollection.sessionDetails`中设置`adLoad`：
 
 ```javascript
 alloy("createMediaSession", {
@@ -79,7 +79,7 @@ videoMetadata[MediaConstants.VideoMetadataKeys.AD_LOAD] = "linear"
 tracker.trackSessionStart(mediaInfo, videoMetadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`createMediaSession`在`sessionDetails`中设置`adLoad`：
 
@@ -150,6 +150,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.AD_LOAD] = "linear";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+在调用`mediaTrackSessionStart`之前，使用`MEDIA_VideoMetadataKeyAD_LOAD`在媒体对象的标准元数据中设置广告加载类型：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyAD_LOAD] = "linear"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 媒体收集API]

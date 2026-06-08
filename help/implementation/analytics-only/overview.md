@@ -3,9 +3,9 @@ title: 仅限Analytics的实施概述
 description: 适用于流媒体的Adobe Analytics加载项的先决条件和实施方法，用于仅限Analytics的实施。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '234'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 1. **完成常规先决条件。** 请参阅[常规先决条件](/help/getting-started/prereqs.md)。
 
-1. **确认Adobe Analytics实施。** 仅限于Analytics的流媒体实施需要基本的Adobe Analytics实施。 请参阅[实施Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)。
+1. **确认Adobe Analytics实施。** 仅限于Analytics的流媒体实施需要基本的Adobe Analytics实施。 请参阅[实施Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)。
 
 1. **获取媒体跟踪服务器URL。** 向您的Adobe Analytics代表询问媒体跟踪服务器URL (`collection-api-server` URL)。 域通常遵循模式`[your_namespace].hb-api.omtrdc.net`。
 
@@ -32,6 +32,7 @@ ht-degree: 5%
 |---|---|---|
 | Web (JavaScript) | [JavaScript](javascript.md) | [Media Analytics标记扩展](javascript-tags.md) |
 | Chromecast | [Chromecast](chromecast.md) | — |
+| Roku | [Roku 2.x](roku-2x.md) | — |
 | API | [媒体收集API](media-collection-api.md) | — |
 
 ## 下一步

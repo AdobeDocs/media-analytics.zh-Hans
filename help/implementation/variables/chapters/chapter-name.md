@@ -3,9 +3,9 @@ title: 章节名称
 description: 设置每个章节的友好名称，以便章节级别报表可以按章节标题划分。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '225'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**章节名称**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[章节名称](/help/reporting/dimensions/chapter-name.md)。*
+*本页介绍&#x200B;**章节名称**变量的数据收集。 有关相应的报表维度，请参阅[章节名称](/help/reporting/dimensions/chapter-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 8%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.chapter.friendlyName` |
-| **XDM集合字段** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.chapter.friendlyName` |
 | **必需** | 否 |
 | **发送条件** | [章节开始](/help/implementation/events/chapters/chapter-start.md)，章节关闭 |
@@ -81,7 +81,7 @@ val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 为`media.chapterStart`调用`sendMediaEvent`时，在`xdm.mediaCollection.chapterDetails`中设置`friendlyName`：
 
@@ -159,6 +159,17 @@ var chapterInfo = ADBMobile.media.createChapterObject(
   0                           // startTime
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+将章节名称作为第一个参数(`name`)传递给`adb_media_init_chapterinfo`：
+
+```brightscript
+adb = ADBMobile()
+chapterInfo = adb_media_init_chapterinfo("Pilot Episode - Opening", 1, 240.0, 0.0)  ' name, position, length, startTime
+
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 ```
 
 >[!TAB 媒体收集API]

@@ -3,10 +3,10 @@ title: 媒体下载标志
 description: 将会话标记为已下载的离线播放，以便与流式传输会话分开报告。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 6%
+source-wordcount: '304'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Media downloaded flag**&#x200B;变量的数据收集。 查看相应报表维度的[下载的媒体](/help/reporting/dimensions/media-downloaded-flag.md)。*
+*本页介绍&#x200B;**Media downloaded flag**变量的数据收集。 查看相应报表维度的[下载的媒体](/help/reporting/dimensions/media-downloaded-flag.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 6%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.downloaded` |
-| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.downloaded` |
 | **必需** | 否 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
@@ -85,7 +85,7 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 调用`createMediaSession`时，在`xdm.mediaCollection.sessionDetails`内将`isDownloaded`设置为`true`：
 
@@ -176,6 +176,10 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
 mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
+
+>[!TAB Roku 2.x]
+
+在Roku 2.x SDK中，“下载的内容”跟踪不可用。 要报告下载的媒体播放，请使用[Roku Edge SDK](/help/implementation/edge/roku.md)或[媒体收集API](/help/implementation/analytics-only/media-collection-api.md)。
 
 >[!TAB 媒体收集API]
 

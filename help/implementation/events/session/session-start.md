@@ -3,10 +3,10 @@ title: 会话开始
 description: 发出媒体会话开始的信号，并获取所有后续事件所需的会话ID。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 5%
+source-wordcount: '388'
+ht-degree: 4%
 
 ---
 
@@ -75,7 +75,7 @@ val mediaObject = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用所需的会话详细信息调用`createMediaSession`：
 
@@ -162,6 +162,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+使用`adb_media_init_mediainfo`生成媒体对象并调用`mediaTrackSessionStart`。 可选的第二个参数接受`a.media.*`元数据键或`invalid`的关联数组：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
+```
+
 >[!TAB 媒体收集API]
 
 向[会话终结点](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)发送`sessionStart`帖子。 响应`Location`标头包含要在所有后续事件请求中使用的会话ID。
@@ -184,7 +195,7 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 
 ## 恢复会话
 
-在恢复之前关闭的会话时（例如，跨设备切换后或应用程序恢复保存的播放状态后），在会话开始时设置恢复标志。 这会导致Analytics递增[[!UICONTROL 内容恢复]](/help/reporting/metrics/content-resumes.md)，而不是[[!UICONTROL 媒体开始]](/help/reporting/metrics/media-starts.md)。
+在恢复之前关闭的会话时（例如，在跨设备切换后或应用程序恢复保存的播放状态后），在会话开始时设置恢复标志。 这会导致Analytics递增[[!UICONTROL 内容恢复]](/help/reporting/metrics/content-resumes.md)，而不是[[!UICONTROL 媒体开始]](/help/reporting/metrics/media-starts.md)。
 
 ## 建议的实施类型
 
@@ -242,7 +253,7 @@ mediaObject[Media.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 将`"hasResume": true`添加到`sessionDetails`：
 
@@ -325,6 +336,18 @@ var mediaObject = ADBMobile.media.createMediaObject(
 
 mediaObject[ADBMobile.media.MediaObjectKey.MediaResumed] = true;
 ADBMobile.media.trackSessionStart(mediaObject, null);
+```
+
+>[!TAB Roku 2.x]
+
+在调用`mediaTrackSessionStart`之前，在媒体对象上设置`resumed`键：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+mediaInfo.resumed = true
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 媒体收集API]

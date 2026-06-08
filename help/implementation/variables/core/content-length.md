@@ -3,10 +3,10 @@ title: 内容时长
 description: 在会话开始时以秒为单位设置内容长度。 它驱动了进度标记和平均受众访问分钟数。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 8%
+source-wordcount: '280'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Content length**&#x200B;变量的数据收集。 查看相应报表维度的[内容长度](/help/reporting/dimensions/content-length.md)。*
+*本页介绍&#x200B;**Content length**变量的数据收集。 查看相应报表维度的[内容长度](/help/reporting/dimensions/content-length.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 8%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.length` |
-| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.length` |
 | **必需** | 是 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
@@ -84,7 +84,7 @@ var mediaInfo = Media.createMediaObject("My Video",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 调用`createMediaSession`时，在`xdm.mediaCollection.sessionDetails`中设置`length`：
 
@@ -167,6 +167,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+将内容长度（以秒为单位）作为第三个参数传递给`adb_media_init_mediainfo`：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 媒体收集API]

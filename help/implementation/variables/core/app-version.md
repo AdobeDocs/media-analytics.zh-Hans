@@ -3,9 +3,9 @@ title: 应用程序版本
 description: 配置媒体播放器应用程序的版本字符串。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**应用程序版本**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[应用程序版本](/help/reporting/dimensions/app-version.md)。*
+*本页介绍&#x200B;**应用程序版本**变量的数据收集。 有关相应的报表维度，请参阅[应用程序版本](/help/reporting/dimensions/app-version.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 | 属性 | 值 |
 | --- | --- |
-| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **媒体收集API参数** | `media.sdkVersion` |
 | **必需** | 否 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md) |
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 >[!TAB Web SDK]
 
-调用[`configure`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/commands/configure/streamingmedia)时，在`streamingMedia`配置对象中设置`appVersion`：
+调用[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)时，在`streamingMedia`配置对象中设置`appVersion`：
 
 ```javascript
 alloy("configure", {
@@ -77,7 +77,7 @@ val config: Map<String, Any> = mapOf(
 MobileCore.updateConfiguration(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`ADB_CONSTANTS.CONFIGURATION.MEDIA_APP_VERSION`在SDK配置中设置应用程序版本：
 
@@ -149,6 +149,16 @@ var ADBMobileConfig = {
     "sdkVersion": "2.1.0"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+在`ADBMobileConfig.json`的`mediaHeartbeat`部分中设置`sdkVersion`。 此字段会捕获您的播放器应用程序版本，而不是Roku 2.x SDK库版本：
+
+```json
+"mediaHeartbeat": {
+  "sdkVersion": "2.1.0"
+}
 ```
 
 >[!TAB 媒体收集API]

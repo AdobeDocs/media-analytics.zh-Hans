@@ -3,9 +3,9 @@ title: 广告商
 description: 设置每个广告中介绍的公司或品牌。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '218'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告商**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[广告商](/help/reporting/dimensions/advertiser.md)。*
+*本页介绍&#x200B;**广告商**变量的数据收集。 有关相应的报表维度，请参阅[广告商](/help/reporting/dimensions/advertiser.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 10%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.advertiser` |
-| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.advertiser` |
 | **必需** | 否 |
 | **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.ADVERTISER] = "Ford"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 为`media.adStart`调用`sendMediaEvent`时，在`xdm.mediaCollection.advertisingDetails`中设置`advertiser`：
 
@@ -146,6 +146,21 @@ var standardAdMetadata = {};
 standardAdMetadata[ADBMobile.media.AdMetadataKeys.ADVERTISER] = "Sample advertiser";
 adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+在标准广告元数据对象中使用`MEDIA_AdMetadataKeyADVERTISER`设置广告商：
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+standardAdMetadata = {}
+standardAdMetadata[adb.MEDIA_AdMetadataKeyADVERTISER] = "Sample advertiser"
+adInfo[adb.MEDIA_STANDARD_AD_METADATA] = standardAdMetadata
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB 媒体收集API]

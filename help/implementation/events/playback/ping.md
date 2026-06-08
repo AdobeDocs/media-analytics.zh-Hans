@@ -3,9 +3,9 @@ title: Ping
 description: 发送心跳以保持媒体会话活动状态并定期跟踪播放进度。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '283'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Mobile SDK会自动发送Ping事件。 不需要显式调用。
 
 Mobile SDK会自动发送Ping事件。 不需要显式调用。
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 计划与`eventType: "media.ping"`的定期`sendMediaEvent`调用。 每次调用时将`playhead`更新到当前播放位置：
 
@@ -100,6 +100,14 @@ Media SDK会自动发送Ping事件。 不需要显式调用。
 >[!TAB Chromecast]
 
 Chromecast SDK会自动发送Ping事件。 不需要显式调用。
+
+>[!TAB Roku 2.x]
+
+只要您在事件循环中调用`processMediaMessages`，Media SDK就会自动发送Ping事件。 更新播放头，以便每次ping均报告当前位置：
+
+```brightscript
+ADBMobile().mediaUpdatePlayhead(10)
+```
 
 >[!TAB 媒体收集API]
 

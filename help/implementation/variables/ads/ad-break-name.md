@@ -3,9 +3,9 @@ title: 广告时间名称
 description: 设置父广告时间的友好名称。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '267'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告时间名称**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[面板名称](/help/reporting/dimensions/pod-name.md)。*
+*本页介绍&#x200B;**广告时间名称**变量的数据收集。 有关相应的报表维度，请参阅[面板名称](/help/reporting/dimensions/pod-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 6%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.podFriendlyName` |
-| **XDM集合字段** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **必需** | 是(Mobile SDK)；否（Edge、媒体收集API） |
 | **发送条件** | [广告时间开始](/help/implementation/events/ads/ad-break-start.md)，广告关闭 |
@@ -78,7 +78,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 为`media.adBreakStart`调用`sendMediaEvent`时，在`xdm.mediaCollection.advertisingPodDetails`中设置`friendlyName`：
 
@@ -152,6 +152,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
   0
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Roku 2.x]
+
+将广告时间名称作为第一个参数传递给`adb_media_init_adbreakinfo`。 请注意Roku参数顺序： `name, startTime, position`。
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("pre-roll", 0.0, 1)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 ```
 
 >[!TAB 媒体收集API]

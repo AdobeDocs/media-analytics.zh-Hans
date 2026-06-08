@@ -5,9 +5,9 @@ user-guide-title: 流媒体服务指南
 breadcrumb-title: 流媒体服务指南
 user-guide-description: 实施流媒体服务。 包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '697'
 ht-degree: 31%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 31%
       + [iOS标记扩展](/help/implementation/edge/ios-tags.md)
       + [Android](/help/implementation/edge/android.md)
       + [Android标记扩展](/help/implementation/edge/android-tags.md)
-      + [Roku](/help/implementation/edge/roku.md)
+      + [Roku Edge](/help/implementation/edge/roku.md)
       + [Media Edge API](/help/implementation/edge/media-edge-api.md)
       + [自定义元数据支持](/help/implementation/edge/custom-metadata.md)
       + [XDM报告架构](/help/implementation/edge/reporting-schema.md)
@@ -145,6 +145,7 @@ ht-degree: 31%
       + [JavaScript](/help/implementation/analytics-only/javascript.md)
       + [Media Analytics标记扩展](/help/implementation/analytics-only/javascript-tags.md)
       + [Chromecast](/help/implementation/analytics-only/chromecast.md)
+      + [Roku 2.x](/help/implementation/analytics-only/roku-2x.md)
       + [媒体收集 API](/help/implementation/analytics-only/media-collection-api.md)
       + 媒体收集API参考 {#streaming-media-apis}
          + [媒体收集](implementation/media-collection-api/mc-api-overview.md)

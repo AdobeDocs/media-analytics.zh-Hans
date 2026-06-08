@@ -3,10 +3,10 @@ title: 状态开始
 description: 表示媒体播放器进入了跟踪播放器状态。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 7%
+source-wordcount: '217'
+ht-degree: 6%
 
 ---
 
@@ -79,7 +79,7 @@ val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
 tracker.trackEvent(Media.Event.StateStart, stateObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`eventType: "media.statesUpdate"`和`statesStart`中的状态名称调用`sendMediaEvent`：
 
@@ -142,6 +142,10 @@ var stateObject = ADBMobile.media.createStateObject(ADBMobile.media.PlayerState.
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+播放器状态跟踪在Roku 2.x SDK中不可用。 要跟踪播放器状态，请使用[Roku Edge SDK](/help/implementation/edge/roku.md)。
 
 >[!TAB 媒体收集API]
 

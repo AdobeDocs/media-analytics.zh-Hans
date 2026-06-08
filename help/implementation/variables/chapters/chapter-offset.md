@@ -3,10 +3,10 @@ title: 章节偏移
 description: 设置章节在内容中的偏移，以秒为单位，从开始时间算起。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 7%
+source-wordcount: '243'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**章节偏移**&#x200B;变量的数据收集。 查看相应报表维度的[章节偏移](/help/reporting/dimensions/chapter-offset.md)。*
+*本页介绍&#x200B;**章节偏移**变量的数据收集。 查看相应报表维度的[章节偏移](/help/reporting/dimensions/chapter-offset.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.chapter.offset` |
-| **XDM集合字段** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.chapter.offset` |
 | **必需** | 否(Mobile SDK)；是(Edge、Media Collection API) |
 | **发送条件** | [章节开始](/help/implementation/events/chapters/chapter-start.md)，章节关闭 |
@@ -81,7 +81,7 @@ val chapterObject = Media.createChapterObject("Act II",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 为`media.chapterStart`调用`sendMediaEvent`时，在`xdm.mediaCollection.chapterDetails`中设置`offset`：
 
@@ -158,6 +158,17 @@ var chapterInfo = ADBMobile.media.createChapterObject(
   0                           // startTime (seconds from content start)
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+将章节偏移量（以秒为单位）作为第四个参数(`startTime`)传递给`adb_media_init_chapterinfo`：
+
+```brightscript
+adb = ADBMobile()
+chapterInfo = adb_media_init_chapterinfo("Pilot Episode - Opening", 1, 240.0, 0.0)  ' name, position, length, startTime
+
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 ```
 
 >[!TAB 媒体收集API]

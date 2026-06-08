@@ -3,17 +3,17 @@ title: 会话结束
 description: 在查看器放弃内容时立即关闭媒体会话。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 5%
+source-wordcount: '314'
+ht-degree: 4%
 
 ---
 
 
 # 会话结束
 
-会话结束事件会立即不可逆地关闭媒体跟踪会话。 会话结束是硬关闭 — 一旦发送，会话即被终止，并且其下无法跟踪任何进一步的事件。 只有在您确定之后不会再发生其他事件时（例如，当播放器被销毁或页面卸载时），才使用会话结束。 在大多数情况下，更安全的做法是让会议自然过期，而不是冒险中断可能仍会到达的事件。 如果查看器完成内容，请改为调用[会话完成](session-complete.md)。
+会话结束事件会立即不可逆地关闭媒体跟踪会话。 会话结束是一个硬关闭；发送会话后，会话将被终止，并且其后无法跟踪任何进一步事件。 只有在您确定之后不会再发生其他事件时（例如，当播放器被销毁或页面卸载时），才使用会话结束。 在大多数情况下，更安全的做法是让会议自然过期，而不是冒险中断可能仍会到达的事件。 如果查看器完成内容，请改为调用[会话完成](session-complete.md)。
 
 如果没有明确的会话结束，则会话会在没有事件发生10分钟或播放头没有移动30分钟后自动关闭。
 
@@ -60,7 +60,7 @@ tracker.trackSessionEnd()
 tracker.trackSessionEnd()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`eventType: "media.sessionEnd"`调用`sendMediaEvent`：
 
@@ -116,6 +116,14 @@ tracker.trackSessionEnd();
 
 ```javascript
 ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB Roku 2.x]
+
+当查看器关闭播放器或导航离开时调用`mediaTrackSessionEnd`：
+
+```brightscript
+ADBMobile().mediaTrackSessionEnd()
 ```
 
 >[!TAB 媒体收集API]

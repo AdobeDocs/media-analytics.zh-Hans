@@ -6,21 +6,13 @@ exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 751
+source-wordcount: 798
 ht-degree: 3%
 
 ---
@@ -65,7 +57,7 @@ alloy("setConsent", {
 
 要恢复跟踪，请再次调用`setConsent`，并将`"y"`作为`collect.val`值。
 
-有关其他格式（包括IAB TCF 2.0），请参阅Web SDK文档中的[setConsent命令](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/setconsent)。
+有关其他格式（包括IAB TCF 2.0），请参阅Web SDK文档中的[setConsent命令](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent)。
 
 >[!TAB iOS]
 
@@ -99,15 +91,15 @@ MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
 
 有关详细信息，请参阅AEP Mobile SDK文档中的[隐私和GDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)。
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
-AEP Roku SDK使用`setConsent()`和Adobe 2.0同意标准。 将`collect.val`设置为`"n"`会立即停止所有数据收集，包括流媒体事件。
+Roku Edge SDK使用`setConsent()`和Adobe 2.0同意标准。 将`collect.val`设置为`"n"`会立即停止所有数据收集，包括流媒体事件。
 
 同意值：
 
-* `"y"` — 已选择加入（允许数据收集）
-* `"n"` — 已选择退出（已禁止数据收集）
-* `"p"` — 待定（等待用户决定；在解析之前不收集任何数据）
+* `"y"`：已选择加入（允许数据收集）
+* `"n"`：已选择退出（已禁止数据收集）
+* `"p"`：待定（等待用户决定；在解析之前不收集任何数据）
 
 ```brightscript
 currentDate = CreateObject("roDateTime")
@@ -129,7 +121,7 @@ m.aepSdk.setConsent(collectConsentNo)
 
 要恢复跟踪，请将`collect.val`设置为`"y"`并再次调用`setConsent()`。
 
-您还可以使用带有`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT`密钥的`updateConfiguration()`在SDK初始化时设置默认同意值。 有关详细信息，请参阅[AEP Roku SDK文档](https://github.com/adobe/aepsdk-roku)。
+您还可以使用带有`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT`密钥的`updateConfiguration()`在SDK初始化时设置默认同意值。 有关详细信息，请参阅[Roku Edge SDK文档](https://github.com/adobe/aepsdk-roku)。
 
 >[!TAB Media Edge API]
 
@@ -196,6 +188,30 @@ var ADBMobileConfig = {
     "privacyDefault": "optedout"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDK尊重使用`setPrivacyStatus`设置的隐私状态。 将状态设置为`PRIVACY_STATUS_OPT_OUT`会禁止所有数据收集。
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_OUT)
+```
+
+要恢复跟踪，请将状态重新设置为opted in ：
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_IN)
+```
+
+您还可以在`ADBMobileConfig.json`文件中的SDK初始化时设置默认隐私状态：
+
+```json
+"analytics": {
+  "privacyDefault": "optedout"
+}
 ```
 
 >[!TAB 媒体收集API]

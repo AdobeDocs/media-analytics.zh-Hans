@@ -3,10 +3,10 @@ title: 电台/电视台
 description: 为音频广播内容设置广播电台名称或ID。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 10%
+source-wordcount: '234'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**工作站**&#x200B;变量的数据收集。 查看[工作站](/help/reporting/dimensions/station.md)以了解相应的报表维度。*
+*本页介绍&#x200B;**工作站**变量的数据收集。 查看[工作站](/help/reporting/dimensions/station.md)以了解相应的报表维度。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 10%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.station` |
-| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.station` |
 | **必需** | 否 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
@@ -73,7 +73,7 @@ metadata[MediaConstants.AudioMetadataKeys.STATION] = "NPR"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`createMediaSession`在`sessionDetails`中设置`station`：
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.AudioMetadataKeys.STATION] = "NPR";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+在调用`mediaTrackSessionStart`之前，使用`MEDIA_AudioMetadataKeySTATION`在媒体对象的标准元数据中设置工作站名称：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Track", "audio-123", 240.0, adb.MEDIA_STREAM_TYPE_AOD, adb.MEDIA_TYPE_AUDIO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_AudioMetadataKeySTATION] = "NPR"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 媒体收集API]

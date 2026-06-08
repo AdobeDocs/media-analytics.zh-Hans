@@ -3,10 +3,10 @@ title: 比特率更改
 description: 表示播放比特率已更改的信号。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 7%
+source-wordcount: '226'
+ht-degree: 6%
 
 ---
 
@@ -69,7 +69,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 在`qoeDataDetails`中使用`eventType: "media.bitrateChange"`和新比特率调用`sendMediaEvent`：
 
@@ -150,6 +150,18 @@ this._qosInfo = ADBMobile.media.createQoSObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Roku 2.x]
+
+使用`adb_media_init_qosinfo`生成具有新比特率的QoS对象，使用`mediaUpdateQoS`更新跟踪器，然后跟踪该事件。 请注意Roku参数顺序： `bitrate, startupTime, fps, droppedFrames`。
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 ```
 
 >[!TAB 媒体收集API]
