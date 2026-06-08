@@ -3,7 +3,7 @@ title: 受隐藏式字幕影响的流数量
 description: 计算查看器至少启用一次字幕的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-受隐藏式字幕影响的&#x200B;**流**&#x200B;量度计算查看器至少启用一次字幕的会话数。 量度是会话级别的布尔值 — 在一个受影响的流中，同一会话计数内切换多个字幕。 对于总启用字幕的音量，请使用[隐藏式字幕计数](closed-captioning-count.md)。
+受隐藏式字幕影响的&#x200B;**流**&#x200B;量度计算查看器至少启用一次字幕的会话数。 量度是会话级别的布尔值；多个描述在同一会话计数内切换为一个受影响的流。 对于总启用字幕的音量，请使用[隐藏式字幕计数](closed-captioning-count.md)。
 
 ## 如何计算此指标
 

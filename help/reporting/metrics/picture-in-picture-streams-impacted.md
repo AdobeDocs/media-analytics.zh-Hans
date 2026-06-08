@@ -3,7 +3,7 @@ title: 受画中画影响的流数量
 description: 计算查看者至少一次输入画中画的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 7%
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 >[!ENDSHADEBOX]
 
-受画中画影响的&#x200B;**流**&#x200B;量度计算查看器至少输入一次画中画播放的会话数。 量度是会话级别的布尔值 — 在同一会话中，多个画中画条目计为一个受影响的流。 对于画中画输入的总量，请使用[画中画计数](picture-in-picture-count.md)。
+受画中画影响的&#x200B;**流**&#x200B;量度计算查看器至少输入一次画中画播放的会话数。 量度是会话级别的布尔值；同一会话中的多个画中画条目计为一个受影响的流。 对于画中画输入的总量，请使用[画中画计数](picture-in-picture-count.md)。
 
 ## 如何计算此指标
 

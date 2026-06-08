@@ -23,10 +23,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 575
-ht-degree: 32%
+source-wordcount: 625
+ht-degree: 30%
 
 ---
 
@@ -44,7 +44,7 @@ Edge实施收集数据一次，然后通过Adobe Experience Platform Edge Networ
 | [![Apple iOS图标](assets/apple.png)](https://github.com/adobe/aepsdk-media-ios)<br>[iOS / tvOS SDK](https://github.com/adobe/aepsdk-media-ios) | [为流媒体设置iOS](/help/implementation/edge/ios.md) | [样本](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 | [![扩展图标](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Android标记扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [为流媒体设置Android标记扩展](/help/implementation/edge/android-tags.md) | |
 | [![扩展图标](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[iOS / tvOS标记扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [为流媒体设置iOS标记扩展](/help/implementation/edge/ios-tags.md) | |
-| [![Roku图标](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[Roku SDK](https://github.com/adobe/aepsdk-roku) | [为流媒体设置Roku](/help/implementation/edge/roku.md) | [样本](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
+| [![Roku图标](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[Roku Edge SDK](https://github.com/adobe/aepsdk-roku) | [设置适用于流媒体的Roku Edge](/help/implementation/edge/roku.md) | [样本](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
 | [![API图标](assets/api.png)](https://developer.adobe.com/data-collection-apis/docs/api/media-edge)<br>[Media Edge API](https://developer.adobe.com/data-collection-apis/docs/api/media-edge) | [设置Media Edge API](/help/implementation/edge/media-edge-api.md) | [样本](https://developer.adobe.com/data-collection-apis/docs/getting-started/media-edge-examples) |
 
 ## 仅限Analytics的实施 {#analytics-only-sdks}
@@ -56,4 +56,5 @@ Edge实施收集数据一次，然后通过Adobe Experience Platform Edge Networ
 | [![JavaScript图标](assets/javascript-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2)<br>[Media SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [为流媒体设置JavaScript](/help/implementation/analytics-only/javascript.md) | [样本](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | [![扩展图标](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans)<br>[媒体扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) | [使用流媒体标记设置JavaScript](/help/implementation/analytics-only/javascript-tags.md) | [样本](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | [![Chromecast图标](assets/chromecast-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3)<br>[Chromecast SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [为流媒体设置Chromecast](/help/implementation/analytics-only/chromecast.md) | [样本](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/chromecast/samples/BasicPlayerSample) |
+| [![Roku图标](assets/roku-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7)<br>[Roku SDK 2.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7) | [为流媒体设置Roku 2.x](/help/implementation/analytics-only/roku-2x.md) | [样本](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/roku/samples) |
 | [![API图标](assets/api.png)](/help/implementation/media-collection-api/mc-api-overview.md)<br>[媒体收集API](/help/implementation/media-collection-api/mc-api-overview.md) | [设置媒体收集API](/help/implementation/analytics-only/media-collection-api.md) | |

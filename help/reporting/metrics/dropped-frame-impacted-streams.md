@@ -3,7 +3,7 @@ title: 受丢帧影响的流
 description: 计算至少丢弃了一个帧的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # 受丢帧影响的流
 
-**丢帧影响的流**&#x200B;度量计算至少丢帧了一次的会话数。 量度是会话级别的布尔值 — 在一个受影响的流中，同一会话计数的多个丢帧。 对于总丢帧量，请使用[丢帧](dropped-frames.md)。
+**丢帧影响的流**&#x200B;度量计算至少丢帧了一次的会话数。 量度是会话级别的布尔值；同一会话内多次删除的会话计数相当于一个受影响的流。 对于总丢帧量，请使用[丢帧](dropped-frames.md)。
 
 ## 如何计算此指标
 

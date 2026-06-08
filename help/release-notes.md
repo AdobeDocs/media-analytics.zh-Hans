@@ -26,9 +26,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 720
+source-wordcount: 722
 ht-degree: 35%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 35%
 | 功能 | 描述 | 日期 |
 | --- | --- | --- |
 | **Web SDK支持** | 使用Web SDK或Web SDK标记扩展将流媒体Web数据发送到Adobe Experience Platform Edge Network，从而支持跨平台解决方案（如Customer Journey Analytics、Real-time CDP、Journey Optimizer和事件转发）的统一收集方法。 有关详细信息，请参阅[为流媒体设置Web SDK](/help/implementation/edge/web-sdk.md)或[为流媒体设置Web SDK标记扩展](/help/implementation/edge/web-sdk-tags.md)。 | 2024 年 5 月 29 日 |
-| **Roku支持** | 使用Roku SDK将流媒体数据发送到Adobe Experience Platform。 有关详细信息，请参阅[为流媒体设置Roku](/help/implementation/edge/roku.md)。 | 2024 年 4 月 12 日 |
+| **Roku支持** | 使用Roku Edge SDK将流媒体数据发送到Adobe Experience Platform。 有关详细信息，请参阅[为流媒体设置Roku Edge](/help/implementation/edge/roku.md)。 | 2024 年 4 月 12 日 |
 
 ## 2023
 

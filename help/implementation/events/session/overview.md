@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 803
-ht-degree: 2%
+source-wordcount: 807
+ht-degree: 3%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 ## 实施步骤
 
 1. **识别用户何时触发播放**（用户点击“播放”或自动播放触发）。 创建具有内容名称、ID、长度、流类型和媒体类型的媒体对象。 有关字段定义，请参阅[内容名称](/help/implementation/variables/core/content-name.md)、[内容ID](/help/implementation/variables/core/content-id.md)、[内容长度](/help/implementation/variables/core/content-length.md)、[流类型](/help/implementation/variables/core/stream-type.md)和[内容类型](/help/implementation/variables/core/content-type.md)。
-1. **可选附加元数据** — 标准元数据（节目、季、集等） 和自定义上下文数据变量。 有关标准元数据密钥引用，请参阅[节目](/help/implementation/variables/standard-metadata/show.md)、[季](/help/implementation/variables/standard-metadata/season.md)、[集](/help/implementation/variables/standard-metadata/episode.md)、[流派](/help/implementation/variables/standard-metadata/genre.md)和[网络](/help/implementation/variables/standard-metadata/network.md)。
+1. **可选附加元数据**：标准元数据（节目、季、集等） 和自定义上下文数据变量。 有关标准元数据密钥引用，请参阅[节目](/help/implementation/variables/standard-metadata/show.md)、[季](/help/implementation/variables/standard-metadata/season.md)、[集](/help/implementation/variables/standard-metadata/episode.md)、[流派](/help/implementation/variables/standard-metadata/genre.md)和[网络](/help/implementation/variables/standard-metadata/network.md)。
 1. **调用[会话开始](/help/implementation/events/session/session-start.md)**&#x200B;以开始跟踪会话。 这会加载数据和元数据，并开始开始时间QoS测量。 SessionStart跟踪要播放的&#x200B;*意图*，而不是第一帧。
 1. 当第一帧内容在屏幕上呈现时，**调用[播放](/help/implementation/events/playback/play.md)**。
 1. 播放器暂停时，**调用[暂停开始](/help/implementation/events/playback/pause-start.md)**。 恢复播放时再次调用播放。 没有单独的恢复事件。
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 ## 核心播放
 
-以下示例显示了一个完整的会话流 — 从会话开始到内容完成和会话结束。
+以下示例显示了从会话开始到内容完成和会话结束的完整会话流。
 
 有关平台实现的详细信息，请参阅[会话开始](/help/implementation/events/session/session-start.md)、[播放](/help/implementation/events/playback/play.md)、[暂停开始](/help/implementation/events/playback/pause-start.md)、[会话完成](/help/implementation/events/session/session-complete.md)和[会话结束](/help/implementation/events/session/session-end.md)。
 
@@ -82,7 +82,7 @@ ht-degree: 2%
 
 ## 处理应用程序中断
 
-媒体应用程序中的播放过程可能会因为多种原因出现中断 — 用户按下暂停，应用程序进入后台，接到电话。 无论原因如何，跟踪指令都相同：
+可以通过多种方式中断媒体应用程序中的播放。 例如，用户按下暂停时，应用程序进入后台或接到电话。 无论原因如何，跟踪指令都相同：
 
 1. 当应用程序中断（进入后台、媒体暂停等）时，调用&#x200B;**PauseStart**。
 1. 当应用程序返回前台和/或媒体重新开始播放时，调用&#x200B;**播放**。

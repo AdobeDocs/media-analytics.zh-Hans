@@ -3,16 +3,16 @@ title: 设置适用于流媒体的Media Edge API
 description: 使用Media Edge API将流媒体数据直接发送到Edge Network。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
 
 # 设置适用于流媒体的Media Edge API
 
-如果您无法使用Web SDK、Mobile SDK或Roku SDK（例如，在自定义或不支持的运行时上），则可以使用Media Edge API直接将流媒体数据发送到Edge Network。 该API使用RESTful HTTP调用，是完全可自定义的。
+如果您无法使用Web SDK、Mobile SDK或Roku Edge SDK（例如，在自定义或不支持的运行时上），则可以使用Media Edge API直接将流媒体数据发送到Edge Network。 该API使用RESTful HTTP调用，是完全可自定义的。
 
 * **先决条件**：完成[Edge实施概述](overview.md)（架构、数据集、启用[!UICONTROL Media Analytics]的数据流）。
 

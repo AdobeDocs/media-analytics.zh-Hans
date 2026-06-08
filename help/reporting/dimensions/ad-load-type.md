@@ -3,7 +3,7 @@ title: 广告加载次数
 description: 报告用于每个流媒体会话的广告加载类型。
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 7%
@@ -34,4 +34,4 @@ ht-degree: 7%
 
 ## 维度项目
 
-每一项都是会话开始时设置的文字广告加载类型字符串。 值不受标准枚举的约束 — 定义跨实施一致的分类，以便值在报表中以可预见的方式汇总。
+每一项都是会话开始时设置的文字广告加载类型字符串。 值不受标准枚举的限制。 定义在您的实施中一致的分类，以便值可以预测地汇总在报表中。

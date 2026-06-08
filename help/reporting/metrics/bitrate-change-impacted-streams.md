@@ -3,7 +3,7 @@ title: 受比特率更改影响的流
 description: 计算至少发生一次比特率更改的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 受比特率更改影响的流
 
-**比特率更改影响的流**&#x200B;度量计算至少发生一次比特率更改的会话。 量度是会话级别的布尔值 — 在同一会话中，多个比特率更改计为一个受影响的流。 对于总比特率更改卷，请使用[比特率更改](/help/reporting/dimensions/bitrate-changes.md)。
+**比特率更改影响的流**&#x200B;度量计算至少发生一次比特率更改的会话。 量度是会话级别的布尔值；同一会话中的多个比特率更改计为一个受影响的流。 对于总比特率更改卷，请使用[比特率更改](/help/reporting/dimensions/bitrate-changes.md)。
 
 ## 如何计算此指标
 

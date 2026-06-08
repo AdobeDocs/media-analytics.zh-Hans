@@ -18,9 +18,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 751
+source-wordcount: 798
 ht-degree: 3%
 
 ---
@@ -99,15 +99,15 @@ MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
 
 有关详细信息，请参阅AEP Mobile SDK文档中的[隐私和GDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)。
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
-AEP Roku SDK使用`setConsent()`和Adobe 2.0同意标准。 将`collect.val`设置为`"n"`会立即停止所有数据收集，包括流媒体事件。
+Roku Edge SDK使用`setConsent()`和Adobe 2.0同意标准。 将`collect.val`设置为`"n"`会立即停止所有数据收集，包括流媒体事件。
 
 同意值：
 
-* `"y"` — 已选择加入（允许数据收集）
-* `"n"` — 已选择退出（已禁止数据收集）
-* `"p"` — 待定（等待用户决定；在解析之前不收集任何数据）
+* `"y"`：已选择加入（允许数据收集）
+* `"n"`：已选择退出（已禁止数据收集）
+* `"p"`：待定（等待用户决定；在解析之前不收集任何数据）
 
 ```brightscript
 currentDate = CreateObject("roDateTime")
@@ -129,7 +129,7 @@ m.aepSdk.setConsent(collectConsentNo)
 
 要恢复跟踪，请将`collect.val`设置为`"y"`并再次调用`setConsent()`。
 
-您还可以使用带有`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT`密钥的`updateConfiguration()`在SDK初始化时设置默认同意值。 有关详细信息，请参阅[AEP Roku SDK文档](https://github.com/adobe/aepsdk-roku)。
+您还可以使用带有`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT`密钥的`updateConfiguration()`在SDK初始化时设置默认同意值。 有关详细信息，请参阅[Roku Edge SDK文档](https://github.com/adobe/aepsdk-roku)。
 
 >[!TAB Media Edge API]
 
@@ -196,6 +196,30 @@ var ADBMobileConfig = {
     "privacyDefault": "optedout"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDK尊重使用`setPrivacyStatus`设置的隐私状态。 将状态设置为`PRIVACY_STATUS_OPT_OUT`会禁止所有数据收集。
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_OUT)
+```
+
+要恢复跟踪，请将状态重新设置为opted in ：
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_IN)
+```
+
+您还可以在`ADBMobileConfig.json`文件中的SDK初始化时设置默认隐私状态：
+
+```json
+"analytics": {
+  "privacyDefault": "optedout"
+}
 ```
 
 >[!TAB 媒体收集API]

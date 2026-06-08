@@ -14,9 +14,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 268
+source-wordcount: 269
 ht-degree: 55%
 
 ---
@@ -45,7 +45,7 @@ Adobe流媒体服务支持所有主要设备，包括：
 | | Windows设备 | | ![支持](/help/assets/icon-blue-check.png) | | ![支持](/help/assets/icon-blue-check.png) |
 | OTT | | | | | |
 | | Apple TV (tvOS) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | | ![支持](/help/assets/icon-blue-check.png) |
-| | Roku | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | | ![支持](/help/assets/icon-blue-check.png) |
+| | Roku | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) |
 | | Fire TV (Fire OS) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | | ![支持](/help/assets/icon-blue-check.png) |
 | | Android TV | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | | ![支持](/help/assets/icon-blue-check.png) |
 | | Chromecast | | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) | ![支持](/help/assets/icon-blue-check.png) |

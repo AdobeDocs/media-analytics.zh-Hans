@@ -3,7 +3,7 @@ title: 受停滞影响的流
 description: 计算播放期间至少发生一次停滞的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # 受停滞影响的流
 
-**Stall影响的流**&#x200B;量度计算播放期间至少发生一次停止的会话数。 该量度是一个会话级别的布尔值 — 在一个受影响的流中，同一会话计数的多个停顿。 对于总停止量，请使用[停止事件](stall-events.md)。
+**Stall影响的流**&#x200B;量度计算播放期间至少发生一次停止的会话数。 量度是会话级别的布尔值；同一会话中的多个停止计为一个受影响的流。 对于总停止量，请使用[停止事件](stall-events.md)。
 
 ## 如何计算此指标
 

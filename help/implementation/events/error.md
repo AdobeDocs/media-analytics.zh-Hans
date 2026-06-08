@@ -3,10 +3,10 @@ title: 错误
 description: 表示媒体播放器遇到错误。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 10%
+source-wordcount: '187'
+ht-degree: 9%
 
 ---
 
@@ -60,7 +60,7 @@ tracker.trackError(errorId: "media-error-001")
 tracker.trackError("media-error-001")
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`eventType: "media.error"`和所需的`errorDetails`调用`sendMediaEvent`：
 
@@ -124,6 +124,15 @@ tracker.trackError("media-error-001");
 
 ```javascript
 ADBMobile.media.trackError("media-error-001");
+```
+
+>[!TAB Roku 2.x]
+
+使用错误ID和错误源调用`mediaTrackError`。 将`ERROR_SOURCE_PLAYER`常量用于播放器错误：
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackError("media-error-001", adb.ERROR_SOURCE_PLAYER)
 ```
 
 >[!TAB 媒体收集API]

@@ -20,7 +20,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 1337
 ht-degree: 86%
@@ -44,7 +44,7 @@ ht-degree: 86%
 | --- | :---: | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | 字符串 | `sessionStart` | IMS组织ID；在Adobe CX Enterprise中标识您的组织 |
 | `visitor.marketingCloudUserId` | N | 字符串 | `sessionStart` | Experience Cloud用户ID (ECID)。 在大多数情况下，这是您应当用来标识用户的 ID。 心跳 `marketingCloudUserId` 等于 Adobe Analytics 中的 `MID`。 虽然从技术上讲不是必需的，但是访问CX Enterprise应用程序和服务需要此参数。 |
-| `visitor.aamLocationHint` | N | 整数 | `sessionStart` | 提供 Adobe Audience Manager Edge 数据 – 如果未输入值，则值为 null。 |
+| `visitor.aamLocationHint` | N | 整数 | `sessionStart` | 提供Adobe Audience Manager Edge数据。 如果未输入值，则值为 null。 |
 | `appInstallationId` | N | 字符串 | `sessionStart` | appInstallationId 用于唯一标识应用程序和设备 |
 
 ## 内容数据

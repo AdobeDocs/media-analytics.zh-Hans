@@ -15,7 +15,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 763
 ht-degree: 4%
@@ -65,7 +65,7 @@ ht-degree: 4%
 |---|---|
 | `xdm.mediaReporting.sessionDetails.timePlayed` | 已播放主内容的总秒数，不包括广告 |
 | `xdm.mediaReporting.sessionDetails.totalTimePlayed` | 经过的总秒数，包括广告 |
-| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | 删除重复项秒数 — 多次查看的间隔只计算一次 |
+| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | 删除了重复项秒数。 多次查看的间隔只计算一次 |
 | `xdm.mediaReporting.sessionDetails.averageMinuteAudience` | `timePlayed`除以内容长度 |
 | `xdm.mediaReporting.sessionDetails.estimatedStreams` | 估计的并发流 |
 | `xdm.mediaReporting.sessionDetails.adCount` | 开始的广告数 |

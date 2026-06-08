@@ -3,7 +3,7 @@ title: 受错误影响的流
 description: 计算至少发生一个错误的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 受错误影响的流
 
-**错误影响的流**&#x200B;量度计算至少发生一个错误（`trackError`被调用或[错误](/help/implementation/events/error.md)事件已触发）的会话数。 量度是会话级别的布尔值 — 在一个受影响的流中，相同的会话计为多个错误。 对于总错误量，请使用[错误](/help/reporting/dimensions/errors.md)。
+**错误影响的流**&#x200B;量度计算至少发生一个错误（`trackError`被调用或[错误](/help/implementation/events/error.md)事件已触发）的会话数。 量度是会话级别的布尔值；同一会话中的多个错误计为一个受影响的流。 对于总错误量，请使用[错误](/help/reporting/dimensions/errors.md)。
 
 ## 如何计算此指标
 

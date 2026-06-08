@@ -3,7 +3,7 @@ title: 受静音影响的流数量
 description: 计算查看器至少将音频静音一次的会话。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-受静音影响的&#x200B;**流**&#x200B;量度计算查看器至少静音一次的会话。 量度是会话级别的布尔值 — 在一个受影响的流中，在同一会话计数内进行多次静音切换。 对于静音音量总计，请使用[静音计数](mute-count.md)。
+受静音影响的&#x200B;**流**&#x200B;量度计算查看器至少静音一次的会话。 量度是会话级别的布尔值；在同一会话内将多个静音切换为一个受影响的流。 对于静音音量总计，请使用[静音计数](mute-count.md)。
 
 ## 如何计算此指标
 

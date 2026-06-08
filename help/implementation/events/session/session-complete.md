@@ -3,10 +3,10 @@ title: 会话结束
 description: 表示查看器已到达主内容的结尾。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ tracker.trackComplete()
 tracker.trackComplete()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`eventType: "media.sessionComplete"`调用`sendMediaEvent`：
 
@@ -110,6 +110,14 @@ tracker.trackComplete();
 
 ```javascript
 ADBMobile.media.trackComplete();
+```
+
+>[!TAB Roku 2.x]
+
+当媒体播放器到达内容结尾时，调用`mediaTrackComplete`：
+
+```brightscript
+ADBMobile().mediaTrackComplete()
 ```
 
 >[!TAB 媒体收集API]

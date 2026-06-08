@@ -3,7 +3,7 @@ title: 受缓冲影响的流
 description: 计算播放器至少一次进入缓冲状态的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 受缓冲影响的流
 
-**Buffer影响的流**&#x200B;度量对播放器至少一次进入缓冲状态的会话进行计数。 量度是会话级别的布尔值 — 在一个受影响的流中，同一会话中有多个缓冲事件计数。 对于总缓冲卷，请使用[缓冲事件](buffer-events.md)。
+**Buffer影响的流**&#x200B;度量对播放器至少一次进入缓冲状态的会话进行计数。 量度是会话级别的布尔值；同一会话中的多个缓冲事件计为一个受影响的流。 对于总缓冲卷，请使用[缓冲事件](buffer-events.md)。
 
 ## 如何计算此指标
 

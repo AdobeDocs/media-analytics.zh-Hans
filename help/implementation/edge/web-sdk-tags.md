@@ -3,7 +3,7 @@ title: 设置适用于流媒体的Web SDK标记扩展
 description: 在Adobe Experience Platform Web SDK标记扩展中配置流媒体收集。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -23,10 +23,10 @@ Adobe Experience Platform Web SDK标记扩展允许您在数据收集UI中配置
 1. 在数据收集UI中，打开Web属性并选择&#x200B;**[!UICONTROL 扩展]**。
 1. 在已安装的&#x200B;**Adobe Experience Platform Web SDK**&#x200B;扩展上，选择&#x200B;**[!UICONTROL 配置]**。
 1. 展开&#x200B;**[!UICONTROL 流媒体]**&#x200B;部分并设置以下内容：
-   * **[!UICONTROL 渠道]** — 每个会话报告的渠道名称。
-   * **[!UICONTROL 播放器名称]** — 正在使用的媒体播放器的名称。
-   * **[!UICONTROL 应用程序版本]** — 播放器应用程序的版本。
-   * **[!UICONTROL 主Ping间隔]**&#x200B;和&#x200B;**[!UICONTROL 广告Ping间隔]** — 主内容和广告的Ping频率（以秒为单位）。
+   * **[!UICONTROL 频道]**：每个会话报告的频道名称。
+   * **[!UICONTROL 播放器名称]**：正在使用的媒体播放器名称。
+   * **[!UICONTROL 应用程序版本]**：播放器应用程序的版本。
+   * **[!UICONTROL 主Ping间隔]**&#x200B;和&#x200B;**[!UICONTROL 广告Ping间隔]**：主内容和广告的Ping频率（以秒为单位）。
 1. 保存扩展配置并发布更改。
 
 ## 跟踪媒体事件

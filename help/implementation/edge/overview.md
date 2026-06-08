@@ -3,29 +3,29 @@ title: Edge实施概述
 description: 设置通过Edge Network收集流媒体数据所需的Adobe Experience Platform架构、数据集和数据流。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1282'
 ht-degree: 4%
 
 ---
 
 # Edge实施概述
 
-Adobe Experience Platform Edge Network允许您将发送到多个产品的数据发送到单个端点，然后将该相应信息转发到每个产品。 这是实施流媒体收藏集的推荐方法，也是从单个工具中同时支持Adobe Analytics和Customer Journey Analytics的唯一方法。
+Adobe Experience Platform Edge Network允许您将发送到多个产品的数据发送到单个端点，然后将该相应信息转发到每个产品。 这是实施流媒体收藏集的推荐方法，也是从单个实施中同时支持Adobe Analytics和Customer Journey Analytics的唯一方法。
 
 与旧版Media SDK方法（每个Adobe解决方案需要特定于产品的检测工具）不同，Edge实施使用共享XDM数据模型和单个数据流。 数据流从您的SDK或API流向Edge Network，然后路由到数据流中配置的任何Adobe产品（Analytics、CJA、AJO或RTCDP）。 这意味着以后切换或添加下游产品不需要重新检测您的媒体事件。
 
-无论您使用哪个代码库(Web SDK、Mobile SDK（iOS或Android）、Roku SDK或Media Edge API)，都必须首先完成本页中所述的平台设置：创建架构、创建数据集和配置数据流。
+无论您使用哪个代码库，都必须首先完成此页面上描述的平台设置：创建方案、创建数据集并配置数据流。
 
 ## 先决条件
 
 1. **完成常规先决条件。** 请参阅[常规先决条件](/help/getting-started/prereqs.md)。
 
 1. **确认兼容的Adobe解决方案。** 您必须至少具有下列项之一的有效实施：
-   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hans) — 基于Edge的媒体数据的主要报表目标
-   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans) — 通过同一数据流支持随附或替代CJA
-   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hans)或[Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hans) — 在配置其中一项时，将&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;服务添加到您的数据流
+   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hans)：基于Edge的媒体数据的主要报表目标
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)：通过同一数据流支持随附或替代CJA
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hans)或[Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hans)：配置其中一项时，请将&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;服务添加到您的数据流
 
 ## 在Adobe Experience Platform中设置架构
 
@@ -158,7 +158,7 @@ Adobe Experience Platform Edge Network允许您将发送到多个产品的数据
 
    * 根据您的Adobe解决方案，将相应的服务添加到数据流。 有关添加服务的信息，请参阅[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans#view-details)中的“将服务添加到数据流”。
 
-      * **[!UICONTROL Adobe Analytics]**（如果使用Adobe Analytics） — 按照[创建报表包](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中的说明定义报表包。
+      * **[!UICONTROL Adobe Analytics]**（如果使用Adobe Analytics）：定义报表包，如[创建报表包](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述。
 
       * **[!UICONTROL Adobe Experience Platform]**（如果使用Customer Journey Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform）
 
@@ -179,7 +179,7 @@ Adobe Experience Platform Edge Network允许您将发送到多个产品的数据
 | Web | [Web SDK](web-sdk.md) | [Web SDK标记扩展](web-sdk-tags.md) |
 | iOS | [iOS](ios.md) | [iOS （标记）](ios-tags.md) |
 | Android | [Android](android.md) | [Android （标记）](android-tags.md) |
-| Roku | [Roku](roku.md) | — |
+| Roku | [Roku Edge](roku.md) | — |
 | API | [Media Edge API](media-edge-api.md) | — |
 
 ## 下一步

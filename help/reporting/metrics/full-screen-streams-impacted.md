@@ -3,7 +3,7 @@ title: 受全屏影响的流数量
 description: 计算查看者至少进入全屏一次的会话数。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-受全屏影响的&#x200B;**流**&#x200B;量度计算查看器至少进入全屏一次的会话数。 量度是会话级别的布尔值 — 同一会话中的多个全屏条目计为一个受影响的流。 若要获得全屏输入总数量，请使用[全屏计数](full-screen-count.md)。
+受全屏影响的&#x200B;**流**&#x200B;量度计算查看器至少进入全屏一次的会话数。 量度是会话级别的布尔值；同一会话中的多个全屏条目计为一个受影响的流。 若要获得全屏输入总数量，请使用[全屏计数](full-screen-count.md)。
 
 ## 如何计算此指标
 
