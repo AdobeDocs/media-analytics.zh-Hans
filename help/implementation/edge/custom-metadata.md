@@ -336,5 +336,5 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 >[!MORELIKETHIS]
 >
 >* [媒体收集API自定义元数据支持](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
->* [媒体收集详细信息数据类型](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [媒体收集详细信息数据类型](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details)
 >* [Adobe Experience Platform Edge Network的数据变量映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/data-var-mapping)

@@ -24,7 +24,7 @@ ht-degree: 6%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.podSecond` |
-| **XDM集合字段** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.podSecond` |
 | **必需** | 是 |
 | **发送条件** | [广告时间开始](/help/implementation/events/ads/ad-break-start.md)，广告关闭 |
