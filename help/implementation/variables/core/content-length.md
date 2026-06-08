@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Content length**变量的数据收集。 查看相应报表维度的[内容长度](/help/reporting/dimensions/content-length.md)。*
+*本页介绍&#x200B;**Content length**&#x200B;变量的数据收集。 查看相应报表维度的[内容长度](/help/reporting/dimensions/content-length.md)。*
 
 >[!ENDSHADEBOX]
 

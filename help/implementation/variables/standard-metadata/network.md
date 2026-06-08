@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**网络**变量的数据收集。 有关相应的报表维度，请参阅[网络](/help/reporting/dimensions/network.md)。*
+*本页介绍&#x200B;**网络**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[网络](/help/reporting/dimensions/network.md)。*
 
 >[!ENDSHADEBOX]
 

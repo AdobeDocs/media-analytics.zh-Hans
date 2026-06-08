@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**季**变量的数据收集。 有关相应的报表维度，请参阅[季](/help/reporting/dimensions/season.md)。*
+*本页介绍&#x200B;**季**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[季](/help/reporting/dimensions/season.md)。*
 
 >[!ENDSHADEBOX]
 

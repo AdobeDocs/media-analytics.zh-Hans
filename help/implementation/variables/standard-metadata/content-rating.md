@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**内容评级**变量的数据收集。 查看相应报表维度的[内容评级](/help/reporting/dimensions/content-rating.md)。*
+*本页介绍&#x200B;**内容评级**&#x200B;变量的数据收集。 查看相应报表维度的[内容评级](/help/reporting/dimensions/content-rating.md)。*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**流类型**变量的数据收集。 查看相应报表维度的[流类型](/help/reporting/dimensions/stream-type.md)。*
+*本页介绍&#x200B;**流类型**&#x200B;变量的数据收集。 查看相应报表维度的[流类型](/help/reporting/dimensions/stream-type.md)。*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**内容渠道**变量的数据收集。 有关相应的报表维度，请参阅[内容渠道](/help/reporting/dimensions/content-channel.md)。*
+*本页介绍&#x200B;**内容渠道**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[内容渠道](/help/reporting/dimensions/content-channel.md)。*
 
 >[!ENDSHADEBOX]
 

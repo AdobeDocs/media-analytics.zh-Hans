@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**工作站**变量的数据收集。 查看[工作站](/help/reporting/dimensions/station.md)以了解相应的报表维度。*
+*本页介绍&#x200B;**工作站**&#x200B;变量的数据收集。 查看[工作站](/help/reporting/dimensions/station.md)以了解相应的报表维度。*
 
 >[!ENDSHADEBOX]
 

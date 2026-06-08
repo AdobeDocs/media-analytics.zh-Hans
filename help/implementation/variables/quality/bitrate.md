@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Bitrate**变量的数据收集。 查看相应报表变量的[[!UICONTROL 平均比特率]（维度）](/help/reporting/dimensions/average-bitrate.md)和[[!UICONTROL 平均比特率]（量度）](/help/reporting/metrics/average-bitrate.md)。*
+*本页介绍&#x200B;**Bitrate**&#x200B;变量的数据收集。 查看相应报表变量的[[!UICONTROL 平均比特率]（维度）](/help/reporting/dimensions/average-bitrate.md)和[[!UICONTROL 平均比特率]（量度）](/help/reporting/metrics/average-bitrate.md)。*
 
 >[!ENDSHADEBOX]
 

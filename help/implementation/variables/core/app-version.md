@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**应用程序版本**变量的数据收集。 有关相应的报表维度，请参阅[应用程序版本](/help/reporting/dimensions/app-version.md)。*
+*本页介绍&#x200B;**应用程序版本**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[应用程序版本](/help/reporting/dimensions/app-version.md)。*
 
 >[!ENDSHADEBOX]
 

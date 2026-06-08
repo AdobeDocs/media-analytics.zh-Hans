@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*此页涵盖&#x200B;**发起人**报告维度。 有关如何收集此变量，请参阅[发起人](/help/implementation/variables/standard-metadata/originator.md)。*
+*此页涵盖&#x200B;**发起人**&#x200B;报告维度。 有关如何收集此变量，请参阅[发起人](/help/implementation/variables/standard-metadata/originator.md)。*
 
 >[!ENDSHADEBOX]
 

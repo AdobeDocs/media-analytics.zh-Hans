@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**站点ID**变量的数据收集。 查看相应报表维度的[站点ID](/help/reporting/dimensions/site-id.md)。*
+*本页介绍&#x200B;**站点ID**&#x200B;变量的数据收集。 查看相应报表维度的[站点ID](/help/reporting/dimensions/site-id.md)。*
 
 >[!ENDSHADEBOX]
 

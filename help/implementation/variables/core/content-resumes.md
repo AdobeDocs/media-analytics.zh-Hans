@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**内容继续**变量的数据收集。 查看[[!UICONTROL 内容履历]](/help/reporting/metrics/content-resumes.md)以了解相应的报表量度。*
+*本页介绍&#x200B;**内容继续**&#x200B;变量的数据收集。 查看[[!UICONTROL 内容履历]](/help/reporting/metrics/content-resumes.md)以了解相应的报表量度。*
 
 >[!ENDSHADEBOX]
 

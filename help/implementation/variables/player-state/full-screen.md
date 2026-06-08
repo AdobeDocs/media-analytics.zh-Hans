@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**全屏**播放器状态的数据收集。 查看受全屏影响的[流](/help/reporting/metrics/full-screen-streams-impacted.md)、[全屏计数](/help/reporting/metrics/full-screen-count.md)和[全屏总持续时间](/help/reporting/metrics/full-screen-total-duration.md)以了解相应的报表量度。*
+*本页介绍&#x200B;**全屏**&#x200B;播放器状态的数据收集。 查看受全屏影响的[流](/help/reporting/metrics/full-screen-streams-impacted.md)、[全屏计数](/help/reporting/metrics/full-screen-count.md)和[全屏总持续时间](/help/reporting/metrics/full-screen-total-duration.md)以了解相应的报表量度。*
 
 >[!ENDSHADEBOX]
 
