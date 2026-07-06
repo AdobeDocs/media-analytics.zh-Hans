@@ -6,19 +6,11 @@ exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: e760701d832fbb4336e9d40d183f6b514f3bf02a
 workflow-type: tm+mt
 source-wordcount: 798
 ht-degree: 3%
@@ -65,7 +57,7 @@ alloy("setConsent", {
 
 要恢复跟踪，请再次调用`setConsent`，并将`"y"`作为`collect.val`值。
 
-有关其他格式（包括IAB TCF 2.0），请参阅Web SDK文档中的[setConsent命令](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/setconsent)。
+有关其他格式（包括IAB TCF 2.0），请参阅Web SDK文档中的[setConsent命令](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent)。
 
 >[!TAB iOS]
 
@@ -241,9 +233,10 @@ adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_IN)
 }
 ```
 
-* `analytics.optOutServerSideForwarding`：设置为`true`以选择退出在Adobe Analytics与其他Experience Cloud解决方案（如Audience Manager）之间共享的数据。
+* `analytics.optOutServerSideForwarding`：设置为`true`可选择在Adobe Analytics与其他Experience Cloud解决方案（如Audience Manager）之间共享数据。
 * `analytics.optOutShare`：设置为`true`可选择不与其他Adobe Analytics客户端共享联合数据。
 
 有关可用参数的完整列表，请参阅[媒体收集API请求参数引用](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)。
 
 >[!ENDTABS]
+
