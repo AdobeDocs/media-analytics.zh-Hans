@@ -5,10 +5,10 @@ user-guide-title: 流媒体服务指南
 breadcrumb-title: 流媒体服务指南
 user-guide-description: 实施流媒体服务。 包括 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: caf61bd76e2911ae5be31c4b1d8265b1df002acf
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 31%
+source-wordcount: '692'
+ht-degree: 32%
 
 ---
 
@@ -165,7 +165,6 @@ ht-degree: 31%
             + [超时情况](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [控制事件的顺序](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [会话响应缓慢时对事件进行排队](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + [选择禁用和隐私设置](implementation/opt-out-privacy.md)
 + 报告 {#reporting}
    + 设置报表 {#reporting-setup}
       + [Edge实施](reporting/setup/edge-reporting.md)
@@ -300,3 +299,8 @@ ht-degree: 31%
       + [时间线：章节](use-cases/scenarios/chapter-start-end.md)
       + [时间轴：观看到底](use-cases/scenarios/view-to-end-of-content.md)
       + [时间轴：用户放弃会话](use-cases/scenarios/user-abandons-session.md)
+
+<!--
+Removed from before the Reporting section:
+  + [Opt-out and privacy settings](implementation/opt-out-privacy.md)
+-->
