@@ -3,13 +3,11 @@ title: 暂停开始
 description: 表示用户暂停了媒体播放。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 10%
-
+source-wordcount: '159'
+ht-degree: 9%
 ---
-
 
 # 暂停开始
 
@@ -126,7 +124,7 @@ ADBMobile().mediaTrackPause()
 
 >[!TAB 媒体收集API]
 
-向[事件终结点](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)发送`pauseStart`帖子：
+向[事件终结点](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)发送`pauseStart`帖子：
 
 ```json
 {

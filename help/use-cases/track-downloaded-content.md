@@ -8,30 +8,37 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/rtLBRcyLB8D8HPBj-Qw5LD824Fu8KeUDsLokJCn2Wfc
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: e992d880-33bc-4949-a648-aa7d410276cd
+    internal-label: Validation
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+    internal-label: Implementation
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 721
-ht-degree: 93%
-
+source-wordcount: '729'
+ht-degree: 91%
 ---
-
 # 跟踪下载的内容{#track-downloaded-content}
 
 ## 概述 {#overview}
 
-通过“下载的内容”功能，可在用户离线时跟踪媒体消费情况。 例如，用户在移动设备上下载并安装某个应用程序，然后使用该应用程序将内容下载到设备上的本地存储中。 为了跟踪下载的数据，Adobe 开发了“下载的内容”功能。 通过使用此功能，当用户播放设备存储中的内容时，便会在设备中存储跟踪数据，无论设备是否连接到网络。 当用户结束播放会话，并且设备重新联机时，存储的跟踪信息便会在单个负载内发送到媒体收集 API 后端。 然后，可在 Media Collection API 中像往常一样处理和报告存储的跟踪信息。
+通过“下载的内容”功能，可在用户离线时跟踪媒体消费情况。 例如，用户在移动设备上下载并安装某个应用程序，然后使用该应用程序将内容下载到设备上的本地存储中。 为了跟踪下载的数据，Adobe 开发了“下载的内容”功能。 通过使用此功能，当用户播放设备存储中的内容时，便会在设备中存储跟踪数据，无论设备是否连接到网络。 当用户结束播放会话，并且设备重新在线时，存储的跟踪信息便会在单个负载内发送到媒体收集 API 后端。 然后，可在 Media Collection API 中像往常一样处理和报告存储的跟踪信息。
 
 对比两种方法：
 
@@ -39,13 +46,13 @@ ht-degree: 93%
 
   使用这种实时方法时，媒体播放器会发送每个播放器事件的跟踪数据，每 10 秒（广告为每 1 秒）就会发送一次网络 ping，并且是逐一发送到后端。
 
-* 脱机（“下载的内容”功能）
+* 离线（“下载的内容”功能）
 
   使用这种批处理方法时，需要生成相同的会话事件，但是这些事件会存储在设备上，直至它们作为单个会话发送到后端为止（请参阅以下示例）。
 
 每种方法各有其优点和缺点：
-* 联机方案会实时跟踪；这要求在发出每次网络调用之前进行网络连接检查。
-* 脱机方案（“下载的内容”功能）只需要进行一次网络连接检查，但却需要占用更大的设备内存。
+* 在线场景会实时跟踪；这要求在发出每次网络调用之前进行网络连接检查。
+* 离线场景（“下载的内容”功能）只需要进行一次网络连接检查，但却需要占用更大的设备内存。
 
 ## 实施 {#implementation}
 
@@ -55,9 +62,9 @@ iOS 和 Android 移动设备支持内容跟踪。
 
 ### 事件架构
 
-“下载的内容”功能是（标准）联机媒体收集 API 的脱机版本，因此，播放器进行批处理并发送到后端的事件数据必须使用进行联机调用时所用的相同事件架构。 有关这些架构的信息，请参阅：
-* [概述;](/help/implementation/media-collection-api/mc-api-overview.md)
-* [验证事件请求](/help/implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+“下载的内容”功能是（标准）在线媒体收集 API 的离线版本，因此，播放器进行批处理并发送到后端的事件数据必须使用进行在线调用时所用的相同事件架构。 有关这些架构的信息，请参阅：
+* [概述;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/)
+* [验证事件请求](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation)
 
 ### 事件的顺序
 

@@ -3,19 +3,17 @@ title: 章节长度
 description: 设置每个章节的长度（以秒为单位）。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '232'
 ht-degree: 7%
-
 ---
-
 
 # 章节长度
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**章节长度**&#x200B;变量的数据收集。 查看对应报表维度的[章节长度](/help/reporting/dimensions/chapter-length.md)。*
+*本页介绍&#x200B;**章节长度**变量的数据收集。 查看对应报表维度的[章节长度](/help/reporting/dimensions/chapter-length.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 7%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.chapter.length` |
-| **XDM集合字段** | [`xdm.mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.chapter.length` |
 | **必需** | 否(Mobile SDK)；是(Edge、Media Collection API) |
 | **发送条件** | [章节开始](/help/implementation/events/chapters/chapter-start.md)，章节关闭 |
@@ -185,6 +183,6 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+有关完整请求结构，请参阅[媒体收集API事件引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

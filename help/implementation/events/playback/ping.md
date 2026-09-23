@@ -3,13 +3,11 @@ title: Ping
 description: 发送心跳以保持媒体会话活动状态并定期跟踪播放进度。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '292'
 ht-degree: 1%
-
 ---
-
 
 # Ping
 
@@ -111,7 +109,7 @@ ADBMobile().mediaUpdatePlayhead(10)
 
 >[!TAB 媒体收集API]
 
-向计时器上的[事件终结点](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)发送`ping`个POST。 不包括`params`对象：
+向计时器上的[事件终结点](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)发送`ping`个POST。 不包括`params`对象：
 
 ```json
 {

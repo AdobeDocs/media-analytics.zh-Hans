@@ -8,25 +8,32 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+    internal-label: Methods
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+    internal-label: Implementation
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 274
+source-wordcount: '274'
 ht-degree: 10%
-
 ---
-
 # 先决条件 {#prerequisites}
 
 在开始实施Adobe流媒体服务之前，请完成以下任务：
@@ -41,11 +48,11 @@ Customer Journey Analytics流媒体收集加载项和Adobe Analytics for Streami
 
    身份配置要求因实施方法而异：
 
-   * **Edge实施**：身份通过Adobe Experience Platform身份命名空间配置进行处理。 无需设置单独的Identity Service。 有关详细信息，请参阅[Edge实施概述](/help/implementation/edge/overview.md)。
+   * **Edge实施**：身份通过Adobe Experience Platform身份命名空间配置进行处理。 无需设置单独的访客ID服务。 有关详细信息，请参阅[Edge实施概述](/help/implementation/edge/overview.md)。
 
-   * **仅限Analytics的实施**：必须启用Adobe Experience Platform Identity Service，才能在CX Enterprise解决方案中一致地识别访客。 Identity Service为每个站点访客分配一个唯一的永久性ID ，并允许在您订阅的所有CX Enterprise解决方案之间共享该ID 。
+   * **仅限Analytics的实施**：必须启用Adobe访客ID服务，才能在所有CX Enterprise解决方案中一致地识别访客。 访客ID服务会为每个网站访客分配一个唯一的永久ID，并允许在您订阅的所有CX Enterprise解决方案之间共享该ID。
 
-     有关详细信息，请参阅[Adobe Experience Platform Identity Service文档](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。
+     有关详细信息，请参阅[Adobe访客ID服务文档](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。
 
 1. **查看实施方法的其他先决条件**
 

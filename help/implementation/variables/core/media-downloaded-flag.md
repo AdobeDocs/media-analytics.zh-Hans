@@ -3,19 +3,17 @@ title: 媒体下载标志
 description: 将会话标记为已下载的离线播放，以便与流式传输会话分开报告。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '322'
 ht-degree: 5%
-
 ---
-
 
 # 媒体下载标志
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**Media downloaded flag**&#x200B;变量的数据收集。 查看相应报表维度的[下载的媒体](/help/reporting/dimensions/media-downloaded-flag.md)。*
+*本页介绍&#x200B;**Media downloaded flag**变量的数据收集。 查看相应报表维度的[下载的媒体](/help/reporting/dimensions/media-downloaded-flag.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 5%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.downloaded` |
-| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.downloaded` |
 | **必需** | 否 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
@@ -179,7 +177,7 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 
 >[!TAB Roku 2.x]
 
-在Roku 2.x SDK中，“下载的内容”跟踪不可用。 要报告下载的媒体播放，请使用[Roku Edge SDK](/help/implementation/edge/roku.md)或[媒体收集API](/help/implementation/analytics-only/media-collection-api.md)。
+在Roku 2.x SDK中，“下载的内容”跟踪不可用。 要报告下载的媒体播放，请使用[Roku Edge SDK](/help/implementation/edge/roku.md)或[媒体收集API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation)。
 
 >[!TAB 媒体收集API]
 
@@ -195,6 +193,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+有关完整请求结构，请参阅[媒体收集API会话引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

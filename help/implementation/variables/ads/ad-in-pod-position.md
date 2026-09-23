@@ -3,19 +3,17 @@ title: 面板中的广告位置
 description: 将广告的索引位置设置在其父广告时间内。 第一个广告的索引为0。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 7%
-
+source-wordcount: '266'
+ht-degree: 6%
 ---
-
 
 # 面板中的广告位置
 
 >[!BEGINSHADEBOX]
 
-*本页介绍面板位置&#x200B;**变量中的**&#x200B;广告的数据收集。 查看面板位置[&#128279;](/help/reporting/dimensions/ad-in-pod-position.md)中的广告以了解相应的报表维度。*
+*本页介绍面板位置&#x200B;**变量中的**广告的数据收集。 查看面板位置](/help/reporting/dimensions/ad-in-pod-position.md)中的[广告以了解相应的报表维度。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ pod position变量中的广告是广告在其父广告时间内的零索引位�
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.podPosition` |
-| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.podPosition` |
 | **必需** | 是 |
 | **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
@@ -184,6 +182,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+有关完整请求结构，请参阅[媒体收集API事件引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

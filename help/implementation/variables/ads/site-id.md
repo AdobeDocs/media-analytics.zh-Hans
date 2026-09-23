@@ -3,19 +3,17 @@ title: 网站 ID
 description: 设置每个广告的广告网站ID以启用按广告投放网站划分。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '238'
 ht-degree: 10%
-
 ---
-
 
 # 网站 ID
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**站点ID**&#x200B;变量的数据收集。 查看相应报表维度的[站点ID](/help/reporting/dimensions/site-id.md)。*
+*本页介绍&#x200B;**站点ID**变量的数据收集。 查看相应报表维度的[站点ID](/help/reporting/dimensions/site-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 10%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.site` |
-| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.site` |
 | **必需** | 否 |
 | **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
@@ -177,6 +175,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+有关完整请求结构，请参阅[媒体收集API事件引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

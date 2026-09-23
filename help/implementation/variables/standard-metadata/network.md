@@ -3,19 +3,17 @@ title: 网络
 description: 设置广播网络或频道名称。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '236'
 ht-degree: 9%
-
 ---
-
 
 # 网络
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**网络**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[网络](/help/reporting/dimensions/network.md)。*
+*本页介绍&#x200B;**网络**变量的数据收集。 有关相应的报表维度，请参阅[网络](/help/reporting/dimensions/network.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 9%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.network` |
-| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.network`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.network`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.network` |
 | **必需** | 否 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+有关完整请求结构，请参阅[媒体收集API会话引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

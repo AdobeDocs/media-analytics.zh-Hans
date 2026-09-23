@@ -8,28 +8,38 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/-L2tSDNue-GheYE-krKkpnOh05s5GKZZBz5sFXsBJ3I
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+    internal-label: Media Analytics
   - id: c77ba355-6681-41fe-b719-563d3f507fdb
+    internal-label: Mobile SDK
   - id: df312454-73c4-43f6-a90e-18f5043f074c
+    internal-label: Tags
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+    internal-label: Data collection
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 30%
-
+source-wordcount: '650'
+ht-degree: 29%
 ---
-
 # 获取媒体SDK、扩展和API
 
 ## Edge实施（推荐） {#edge-sdks}
@@ -39,7 +49,7 @@ Edge实施收集数据一次，然后通过Adobe Experience Platform Edge Networ
 | | 文档 | 示例 |
 |:---:|---|---|
 | [![JavaScript图标](assets/javascript-icon.png)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/overview)<br>[Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/overview) | [为流媒体设置Web SDK](/help/implementation/edge/web-sdk.md) | [样本](https://github.com/adobe/alloy-samples/blob/main/media-collection/STANDALONE.md) |
-| [![扩展图标](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html?lang=zh-Hans)<br>[Web SDK标记扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html?lang=zh-Hans) | [为流媒体设置Web SDK标记扩展](/help/implementation/edge/web-sdk-tags.md) | [样本](https://github.com/adobe/alloy-samples/blob/main/media-collection/TAGS_IMPL.md) |
+| [![扩展图标](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html)<br>[Web SDK标记扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html) | [为流媒体设置Web SDK标记扩展](/help/implementation/edge/web-sdk-tags.md) | [样本](https://github.com/adobe/alloy-samples/blob/main/media-collection/TAGS_IMPL.md) |
 | [![Android图标](assets/android.png)](https://github.com/adobe/aepsdk-media-android)<br>[Android SDK](https://github.com/adobe/aepsdk-media-android) | [为流媒体设置Android](/help/implementation/edge/android.md) | [样本](https://github.com/adobe/aepsdk-media-android/tree/main/code/testapp) |
 | [![Apple iOS图标](assets/apple.png)](https://github.com/adobe/aepsdk-media-ios)<br>[iOS / tvOS SDK](https://github.com/adobe/aepsdk-media-ios) | [为流媒体设置iOS](/help/implementation/edge/ios.md) | [样本](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 | [![扩展图标](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Android标记扩展](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [为流媒体设置Android标记扩展](/help/implementation/edge/android-tags.md) | |
@@ -57,4 +67,4 @@ Edge实施收集数据一次，然后通过Adobe Experience Platform Edge Networ
 | [![扩展图标](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans)<br>[媒体扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hans) | [使用流媒体标记设置JavaScript](/help/implementation/analytics-only/javascript-tags.md) | [样本](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | [![Chromecast图标](assets/chromecast-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3)<br>[Chromecast SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [为流媒体设置Chromecast](/help/implementation/analytics-only/chromecast.md) | [样本](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/chromecast/samples/BasicPlayerSample) |
 | [![Roku图标](assets/roku-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7)<br>[Roku SDK 2.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7) | [为流媒体设置Roku 2.x](/help/implementation/analytics-only/roku-2x.md) | [样本](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/roku/samples) |
-| [![API图标](assets/api.png)](/help/implementation/media-collection-api/mc-api-overview.md)<br>[媒体收集API](/help/implementation/media-collection-api/mc-api-overview.md) | [设置媒体收集API](/help/implementation/analytics-only/media-collection-api.md) | |
+| [![API图标](assets/api.png)](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/)<br>[媒体收集API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/) | [设置媒体收集API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation) | |

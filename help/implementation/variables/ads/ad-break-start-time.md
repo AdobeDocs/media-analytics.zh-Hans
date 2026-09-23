@@ -3,19 +3,17 @@ title: 广告时间开始时间
 description: 在内容中设置广告时间的开始时间（偏移）（以秒为单位）。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '268'
 ht-degree: 6%
-
 ---
-
 
 # 广告时间开始时间
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告时间开始时间**&#x200B;变量的数据收集。 查看相应报表维度的[面板位置](/help/reporting/dimensions/pod-position.md)。*
+*本页介绍&#x200B;**广告时间开始时间**变量的数据收集。 查看相应报表维度的[面板位置](/help/reporting/dimensions/pod-position.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 6%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.podSecond` |
-| **XDM集合字段** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.podSecond` |
 | **必需** | 是 |
 | **发送条件** | [广告时间开始](/help/implementation/events/ads/ad-break-start.md)，广告关闭 |
@@ -178,6 +176,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+有关完整请求结构，请参阅[媒体收集API事件引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

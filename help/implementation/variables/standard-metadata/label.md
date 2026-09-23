@@ -3,19 +3,17 @@ title: 标签
 description: 设置发布音频内容的录制标签。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '241'
 ht-degree: 9%
-
 ---
-
 
 # 标签
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**标签**&#x200B;变量的数据收集。 查看相应报表维度的[标签](/help/reporting/dimensions/label.md)。*
+*本页介绍&#x200B;**标签**变量的数据收集。 查看相应报表维度的[标签](/help/reporting/dimensions/label.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ label变量是发布音频内容的录制标签的名称（例如，`"Capitol Re
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.label` |
-| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.label` |
 | **必需** | 否 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md)，会话关闭 |
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+有关完整请求结构，请参阅[媒体收集API会话引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

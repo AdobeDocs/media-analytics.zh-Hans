@@ -3,19 +3,17 @@ title: 应用程序版本
 description: 配置媒体播放器应用程序的版本字符串。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '297'
 ht-degree: 2%
-
 ---
-
 
 # 应用程序版本
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**应用程序版本**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[应用程序版本](/help/reporting/dimensions/app-version.md)。*
+*本页介绍&#x200B;**应用程序版本**变量的数据收集。 有关相应的报表维度，请参阅[应用程序版本](/help/reporting/dimensions/app-version.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +25,7 @@ ht-degree: 2%
 
 | 属性 | 值 |
 | --- | --- |
-| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **媒体收集API参数** | `media.sdkVersion` |
 | **必需** | 否 |
 | **发送条件** | [会话开始](/help/implementation/events/session/session-start.md) |
@@ -38,7 +36,7 @@ ht-degree: 2%
 
 >[!TAB Web SDK]
 
-调用[`configure`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/commands/configure/streamingmedia)时，在`streamingMedia`配置对象中设置`appVersion`：
+调用[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)时，在`streamingMedia`配置对象中设置`appVersion`：
 
 ```javascript
 alloy("configure", {
@@ -177,6 +175,6 @@ var ADBMobileConfig = {
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+有关完整请求结构，请参阅[媒体收集API会话引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

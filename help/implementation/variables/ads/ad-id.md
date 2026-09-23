@@ -3,19 +3,17 @@ title: 广告 ID
 description: 唯一地标识广告。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '241'
 ht-degree: 9%
-
 ---
-
 
 # 广告 ID
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告ID**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[广告](/help/reporting/dimensions/ad.md)。*
+*本页介绍&#x200B;**广告ID**变量的数据收集。 有关相应的报表维度，请参阅[广告](/help/reporting/dimensions/ad.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 9%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.name` |
-| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.name` |
 | **必需** | 是 |
 | **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
@@ -188,6 +186,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+有关完整请求结构，请参阅[媒体收集API事件引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

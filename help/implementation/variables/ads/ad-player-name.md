@@ -3,19 +3,17 @@ title: 广告播放器名称
 description: 设置呈现广告的播放器的名称。 广告播放器可以不同于主内容播放器。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '286'
 ht-degree: 6%
-
 ---
-
 
 # 广告播放器名称
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**广告播放器名称**&#x200B;变量的数据收集。 有关相应的报表维度，请参阅[广告播放器名称](/help/reporting/dimensions/ad-player-name.md)。*
+*本页介绍&#x200B;**广告播放器名称**变量的数据收集。 有关相应的报表维度，请参阅[广告播放器名称](/help/reporting/dimensions/ad-player-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 6%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.playerName` |
-| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.playerName` |
 | **必需** | 是 |
 | **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |
@@ -173,6 +171,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo, contextData)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+有关完整请求结构，请参阅[媒体收集API事件引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]
