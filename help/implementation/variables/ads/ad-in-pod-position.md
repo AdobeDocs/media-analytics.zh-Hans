@@ -22,7 +22,7 @@ pod position变量中的广告是广告在其父广告时间内的零索引位�
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.podPosition` |
-| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.podPosition` |
 | **必需** | 是 |
 | **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |

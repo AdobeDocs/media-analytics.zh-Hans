@@ -26,7 +26,7 @@ dropped frames变量是播放器在会话期间丢帧的运行计数。 在QoE�
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.qoe.droppedFrameCount` |
-| **XDM集合字段** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **必需** | 否 |
 | **发送条件** | 质量事件（[比特率更改](/help/implementation/events/playback/bitrate-change.md)，[缓冲开始](/help/implementation/events/playback/buffer-start.md)，[错误](/help/implementation/events/error.md)），会话关闭 |
