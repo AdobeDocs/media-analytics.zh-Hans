@@ -58,7 +58,7 @@ Adobe建议对所有新的Adobe Analytics或Customer Journey Analytics客户使�
 
 建议将上述 Edge 实施方法用于 Customer Journey Analytics 和 Adobe Analytics，特别是对于新的实施。
 
-除了 Edge 实施方法之外，还有其他实施方法。 这些实施方法专为与 Adobe Analytics 配合使用而设计。 但是，采用以下任何实施方法的现有客户仍然可以通过创建[ Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)使数据在 Customer Journey Analytics 中可用。
+除了 Edge 实施方法之外，还有其他实施方法。 这些实施方法专为与 Adobe Analytics 配合使用而设计。 但是，采用以下任何实施方法的现有客户仍然可以通过创建[&#x200B; Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)使数据在 Customer Journey Analytics 中可用。
 
 仅限Adobe Analytics的实施方法使用Adobe Analytics for Streaming Media加载项。 有关先决条件和方法的列表，请参阅[仅限Analytics的实施概述](/help/implementation/analytics-only/overview.md)。
 
@@ -74,7 +74,7 @@ Adobe建议对所有新的Adobe Analytics或Customer Journey Analytics客户使�
 
 * **媒体收集 API：**&#x200B;由于可自定义媒体收集 API，因此它们可用于需要自定义跟踪功能的应用程序以及不受 Media SDK 支持的设备。 媒体收集 API 使用 RESTful HTTP 调用跟踪音频和视频事件。 数据发送到 Adobe Analytics。
 
-  有关使用 Media Collection API 的信息，请参阅[ Media Collection API。](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/)
+  有关使用 Media Collection API 的信息，请参阅[&#x200B; Media Collection API。](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/)
 
 
 ![Analytics 工作流](assets/analytics-implementation.png)
