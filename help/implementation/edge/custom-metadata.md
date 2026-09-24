@@ -3,19 +3,17 @@ title: 自定义元数据支持 — XDM格式
 description: 了解如何使用Experience Edge XDM格式发送带有媒体跟踪事件的自定义元数据。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '774'
 ht-degree: 5%
-
 ---
-
 
 # 自定义元数据支持 — XDM格式
 
 Experience Edge API允许您在`sessionStart`、`adStart`和`chapterStart` API事件中发送媒体自定义元数据以及标准XDM字段。 通过XDM格式发送的媒体自定义元数据可以转发到&#x200B;**Adobe Analytics**&#x200B;和&#x200B;**Adobe Experience Platform**。
 
-有关媒体收集API实施，请参阅[自定义元数据支持](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)。
+有关媒体收集API实施，请参阅[自定义元数据支持](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)。
 
 ## 概述
 
@@ -335,6 +333,6 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 >[!MORELIKETHIS]
 >
->* [媒体收集API自定义元数据支持](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [媒体收集API自定义元数据支持](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)
 >* [媒体收集详细信息数据类型](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details)
 >* [Adobe Experience Platform Edge Network的数据变量映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/data-var-mapping)

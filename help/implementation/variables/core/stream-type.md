@@ -3,13 +3,11 @@ title: 流类型
 description: 设置流类型以标识媒体流是音频还是视频内容。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 6%
-
 ---
-
 
 # 流类型
 
@@ -198,6 +196,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-有关完整请求结构和所有必填字段，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+有关完整请求结构和所有必填字段，请参阅[媒体收集API会话引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

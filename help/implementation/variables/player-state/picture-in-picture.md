@@ -3,13 +3,11 @@ title: 画中画
 description: 跟踪查看者何时进入和退出画中画播放，以便后端可以报告PiP参与情况。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 5%
-
+source-wordcount: '356'
+ht-degree: 6%
 ---
-
 
 # 画中画
 
@@ -182,6 +180,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+有关完整请求结构，请参阅[媒体收集API事件引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

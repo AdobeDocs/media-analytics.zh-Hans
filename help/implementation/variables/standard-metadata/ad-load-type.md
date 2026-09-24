@@ -3,13 +3,11 @@ title: 广告加载类型
 description: 为流会话设置广告加载类型。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '278'
 ht-degree: 3%
-
 ---
-
 
 # 广告加载类型
 
@@ -181,6 +179,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+有关完整请求结构，请参阅[媒体收集API会话引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

@@ -3,13 +3,11 @@ title: 媒体下载标志
 description: 将会话标记为已下载的离线播放，以便与流式传输会话分开报告。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '322'
 ht-degree: 5%
-
 ---
-
 
 # 媒体下载标志
 
@@ -179,7 +177,7 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 
 >[!TAB Roku 2.x]
 
-在Roku 2.x SDK中，“下载的内容”跟踪不可用。 要报告下载的媒体播放，请使用[Roku Edge SDK](/help/implementation/edge/roku.md)或[媒体收集API](/help/implementation/analytics-only/media-collection-api.md)。
+在Roku 2.x SDK中，“下载的内容”跟踪不可用。 要报告下载的媒体播放，请使用[Roku Edge SDK](/help/implementation/edge/roku.md)或[媒体收集API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation)。
 
 >[!TAB 媒体收集API]
 
@@ -195,6 +193,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+有关完整请求结构，请参阅[媒体收集API会话引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

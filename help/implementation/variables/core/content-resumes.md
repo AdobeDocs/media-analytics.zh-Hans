@@ -3,13 +3,11 @@ title: 内容继续
 description: 标记一个会话，该会话可恢复之前中断的播放，以便后端计算内容恢复事件。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '302'
 ht-degree: 6%
-
 ---
-
 
 # 内容继续
 
@@ -196,6 +194,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+有关完整请求结构，请参阅[媒体收集API会话引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

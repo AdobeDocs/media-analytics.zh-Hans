@@ -3,13 +3,11 @@ title: 内容时长
 description: 在会话开始时以秒为单位设置内容长度。 它驱动了进度标记和平均受众访问分钟数。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '289'
 ht-degree: 7%
-
 ---
-
 
 # 内容时长
 
@@ -194,6 +192,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API会话引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+有关完整请求结构，请参阅[媒体收集API会话引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

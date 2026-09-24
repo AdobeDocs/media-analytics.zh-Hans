@@ -3,13 +3,11 @@ title: 每秒帧数
 description: 在QoE对象上设置当前帧速率，以便后端具有用于质量报告的帧速率上下文。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '281'
 ht-degree: 7%
-
 ---
-
 
 # 每秒帧数
 
@@ -167,6 +165,6 @@ adb.mediaUpdateQoS(qosInfo)
 }
 ```
 
-有关完整请求结构，请参阅[媒体收集API事件引用](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+有关完整请求结构，请参阅[媒体收集API事件引用](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

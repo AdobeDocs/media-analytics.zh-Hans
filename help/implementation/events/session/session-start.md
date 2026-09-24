@@ -3,13 +3,11 @@ title: 会话开始
 description: 发出媒体会话开始的信号，并获取所有后续事件所需的会话ID。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
-
+source-wordcount: '397'
+ht-degree: 5%
 ---
-
 
 # 会话开始
 
@@ -175,7 +173,7 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 
 >[!TAB 媒体收集API]
 
-向[会话终结点](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)发送`sessionStart`帖子。 响应`Location`标头包含要在所有后续事件请求中使用的会话ID。
+向[会话终结点](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)发送`sessionStart`帖子。 响应`Location`标头包含要在所有后续事件请求中使用的会话ID。
 
 ```json
 {
