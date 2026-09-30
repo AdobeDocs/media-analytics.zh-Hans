@@ -26,7 +26,7 @@ Media SDK for JavaScript (3.x)将流媒体数据直接发送到Adobe Analytics�
 
 * **先决条件**：
   * 完成[仅限Analytics的实施概述](overview.md)。
-  * 实施[AppMeasurement](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/js/overview)和[访客ID服务](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)。
+  * 实施[AppMeasurement](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/js/overview)和[访客ID服务](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/appmeasurement)。
   * [下载适用于JavaScript的Media SDK](/help/getting-started/download-sdks.md)。
 
 ## 安装和配置SDK

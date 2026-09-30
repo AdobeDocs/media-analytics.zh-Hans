@@ -40,8 +40,8 @@ Streaming Media Analytics中的量度是由媒体后端计算的事件驱动计�
 
 | 报告系统 | 量度如何到达 |
 | --- | --- |
-| Adobe Analytics | 使用[上下文数据变量](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/vars/page-vars/contextdata)填充。 某些量度会自动使用这些上下文数据变量填充解决方案事件，而其他量度必须使用[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)映射到自定义事件。 自动填充值的量度必须首先启用各自的[流媒体报表包设置](../setup/analytics-reporting.md)。 |
-| Customer Journey Analytics | `xdm.mediaReporting.sessionDetails`和相关节点中的XDM字段，源自任何包含流媒体数据的数据集。 您必须使用[数据视图组件设置](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中的所需设置创建每个量度。 |
+| Adobe Analytics | 使用[上下文数据变量](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/vars/page-vars/contextdata)填充。 某些量度会自动使用这些上下文数据变量填充解决方案事件，而其他量度必须使用[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)映射到自定义事件。 自动填充值的量度必须首先启用各自的[流媒体报表包设置](../setup/analytics-reporting.md)。 |
+| Customer Journey Analytics | `xdm.mediaReporting.sessionDetails`和相关节点中的XDM字段，源自任何包含流媒体数据的数据集。 您必须使用[数据视图组件设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中的所需设置创建每个量度。 |
 | 数据馈送 | 量度将作为事件ID显示在`event_list`和`post_event_list`列中。 每个源文件都包含一个`events.csv`文件，其中包含所有量度（包括流媒体量度）的查找。 |
 
 >[!MORELIKETHIS]
