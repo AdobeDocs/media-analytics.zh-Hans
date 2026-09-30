@@ -3,7 +3,19 @@ title: 面板中的广告位置
 description: 将广告的索引位置设置在其父广告时间内。 第一个广告的索引为0。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 6%
@@ -13,7 +25,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍面板位置&#x200B;**变量中的**&#x200B;广告的数据收集。 查看面板位置[&#128279;](/help/reporting/dimensions/ad-in-pod-position.md)中的广告以了解相应的报表维度。*
+*本页介绍面板位置&#x200B;**变量中的**广告的数据收集。 查看面板位置](/help/reporting/dimensions/ad-in-pod-position.md)中的[广告以了解相应的报表维度。*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ pod position变量中的广告是广告在其父广告时间内的零索引位�
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.ad.podPosition` |
-| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合字段** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特征** | `c_contextdata.a.media.ad.podPosition` |
 | **必需** | 是 |
 | **发送条件** | [广告开始](/help/implementation/events/ads/ad-start.md)，广告关闭 |

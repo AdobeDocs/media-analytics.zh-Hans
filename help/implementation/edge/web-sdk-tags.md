@@ -3,20 +3,30 @@ title: 设置适用于流媒体的Web SDK标记扩展
 description: 在Adobe Experience Platform Web SDK标记扩展中配置流媒体收集。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
-
 ---
-
 # 设置适用于流媒体的Web SDK标记扩展
 
 Adobe Experience Platform Web SDK标记扩展允许您在数据收集UI中配置流媒体收集，而不使用`alloy.js`配置代码。 本页介绍标记配置。 若要改为在代码中配置Web SDK，请参阅[为流媒体设置Web SDK](web-sdk.md)。
 
 * **先决条件**：
-   * 完成[Edge实施概述](overview.md)（架构、数据集、启用了[!UICONTROL Media Analytics]的数据流）。
-   * 安装和配置Web SDK标记扩展。 请参阅[Web SDK标记扩展概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/overview)。
+  * 完成[Edge实施概述](overview.md)（架构、数据集、启用了[!UICONTROL Media Analytics]的数据流）。
+  * 安装和配置Web SDK标记扩展。 请参阅[Web SDK标记扩展概述](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)。
 
 ## 在扩展中配置流媒体
 
@@ -39,6 +49,6 @@ Adobe Experience Platform Web SDK标记扩展允许您在数据收集UI中配置
 
 >[!MORELIKETHIS]
 >
->* [Web SDK标记扩展概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/overview)
+>* [Web SDK标记扩展概述](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)
 >* [为流媒体设置Web SDK（代码）](web-sdk.md)
 >* [事件概述](/help/implementation/events/overview.md)

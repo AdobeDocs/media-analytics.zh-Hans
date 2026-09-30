@@ -3,21 +3,31 @@ title: 设置适用于流媒体的JavaScript
 description: 为仅限Analytics的流媒体实施安装和配置Media SDK for JavaScript (3.x) 。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 3%
-
 ---
-
 # 设置适用于流媒体的JavaScript
 
 Media SDK for JavaScript (3.x)将流媒体数据直接发送到Adobe Analytics。 本页介绍手动JavaScript安装。 要改为通过标记部署SDK，请参阅[设置Media Analytics标记扩展](javascript-tags.md)。 对于新的实施，请考虑使用[Web SDK](/help/implementation/edge/web-sdk.md)通过Edge Network数据流将数据发送到Adobe Analytics。
 
 * **先决条件**：
-   * 完成[仅限Analytics的实施概述](overview.md)。
-   * 实施[AppMeasurement](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/js/overview)和[访客ID服务](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/appmeasurement)。
-   * [下载适用于JavaScript的Media SDK](/help/getting-started/download-sdks.md)。
+  * 完成[仅限Analytics的实施概述](overview.md)。
+  * 实施[AppMeasurement](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/js/overview)和[访客ID服务](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)。
+  * [下载适用于JavaScript的Media SDK](/help/getting-started/download-sdks.md)。
 
 ## 安装和配置SDK
 

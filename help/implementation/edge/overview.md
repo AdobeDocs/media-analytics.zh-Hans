@@ -3,13 +3,27 @@ title: Edge实施概述
 description: 设置通过Edge Network收集流媒体数据所需的Adobe Experience Platform架构、数据集和数据流。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '1282'
-ht-degree: 4%
-
+ht-degree: 5%
 ---
-
 # Edge实施概述
 
 Adobe Experience Platform Edge Network允许您将发送到多个产品的数据发送到单个端点，然后将该相应信息转发到每个产品。 这是实施流媒体收藏集的推荐方法，也是从单个实施中同时支持Adobe Analytics和Customer Journey Analytics的唯一方法。
@@ -24,14 +38,14 @@ Adobe Experience Platform Edge Network允许您将发送到多个产品的数据
 
 1. **确认兼容的Adobe解决方案。** 您必须至少具有下列项之一的有效实施：
    * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hans)：基于Edge的媒体数据的主要报表目标
-   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)：通过同一数据流支持随附或替代CJA
-   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hans)或[Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hans)：配置其中一项时，请将&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;服务添加到您的数据流
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)：通过同一数据流支持随附或替代CJA
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hans)或[Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)：配置其中一项时，请将&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;服务添加到您的数据流
 
 ## 在Adobe Experience Platform中设置架构
 
 为了在使用Adobe Experience Platform的应用程序之间标准化数据收集，Adobe创建了一个公开记录的开放式Experience Data Model (XDM)标准。
 
-1. 在Adobe Experience Platform中，按照[在UI中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)中的说明开始创建架构。
+1. 在Adobe Experience Platform中，按照[在UI中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)中的说明开始创建架构。
 
 1. 在“架构详细信息”页面上，选择&#x200B;**[!UICONTROL Experience Event]**&#x200B;作为架构的基类。
 
@@ -118,7 +132,7 @@ Adobe Experience Platform Edge Network允许您将发送到多个产品的数据
 
    +++ 展开以查看有关将自定义元数据添加到架构的说明。
 
-   1. 通过选择&#x200B;**[!UICONTROL 帐户信息]** > **[!UICONTROL 分配的组织]** > [!UICONTROL _&#x200B;**组织名称**&#x200B;_] > **[!UICONTROL 租户]**，找到组织的租户名称。
+   1. 通过选择&#x200B;**[!UICONTROL 帐户信息]** > **[!UICONTROL 分配的组织]** > [!UICONTROL _**组织名称**_] > **[!UICONTROL 租户]**，找到组织的租户名称。
 
       通过此路径接收自定义字段。 （例如，租户名称： _dcbl → myCustomField path： _dcbl.myCustomField。）
 
@@ -130,7 +144,7 @@ Adobe Experience Platform Edge Network允许您将发送到多个产品的数据
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [为请求有效负载中的自定义字段使用生成的路径](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)。
+   1. [为请求有效负载中的自定义字段使用生成的路径](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -156,11 +170,11 @@ Adobe Experience Platform Edge Network允许您将发送到多个产品的数据
 
      ![创建数据流并选择架构](assets/datastream-create-schema.png)
 
-   * 根据您的Adobe解决方案，将相应的服务添加到数据流。 有关添加服务的信息，请参阅[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans#view-details)中的“将服务添加到数据流”。
+   * 根据您的Adobe解决方案，将相应的服务添加到数据流。 有关添加服务的信息，请参阅[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)中的“将服务添加到数据流”。
 
-      * **[!UICONTROL Adobe Analytics]**（如果使用Adobe Analytics）：定义报表包，如[创建报表包](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述。
+     * **[!UICONTROL Adobe Analytics]**（如果使用Adobe Analytics）：定义报表包，如[创建报表包](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述。
 
-      * **[!UICONTROL Adobe Experience Platform]**（如果使用Customer Journey Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform）
+     * **[!UICONTROL Adobe Experience Platform]**（如果使用Customer Journey Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform）
 
      ![添加Adobe Analytics服务](assets/datastream-add-service.png)
 

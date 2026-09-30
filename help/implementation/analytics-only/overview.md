@@ -3,7 +3,23 @@ title: 仅限Analytics的实施概述
 description: 适用于流媒体的Adobe Analytics加载项的先决条件和实施方法，用于仅限Analytics的实施。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 5%
@@ -16,7 +32,7 @@ ht-degree: 5%
 
 1. **完成常规先决条件。** 请参阅[常规先决条件](/help/getting-started/prereqs.md)。
 
-1. **确认Adobe Analytics实施。** 仅限于Analytics的流媒体实施需要基本的Adobe Analytics实施。 请参阅[实施Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)。
+1. **确认Adobe Analytics实施。** 仅限于Analytics的流媒体实施需要基本的Adobe Analytics实施。 请参阅[实施Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)。
 
 1. **获取媒体跟踪服务器URL。** 向您的Adobe Analytics代表询问媒体跟踪服务器URL (`collection-api-server` URL)。 域通常遵循模式`[your_namespace].hb-api.omtrdc.net`。
 

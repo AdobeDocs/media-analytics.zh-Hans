@@ -1,34 +1,44 @@
 ---
 title: 流媒体章节的开始和结束时间线是什么
-description: 了解播放头时间线以及章节开始和结束的时间。
+description: 了解播放头时间线以及章节何时开始和结束。
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Streaming Media
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/o23vjoaQPzd1F6J7a-kpGH-CEJmcJwvhBvWWgPf47DM
+TQID: 'https://experienceleague.adobe.com/o23vjoaQPzd1F6J7a-kpGH-CEJmcJwvhBvWWgPf47DM'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+    internal-label: Metadata
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 1180
+source-wordcount: '1180'
 ht-degree: 100%
-
 ---
-
 # 时间线：章节 {#timeline-3-chapters}
 
 ## VOD、前置广告、暂停、缓冲、观看到内容的结尾
 
-下图说明了播放头时间轴和用户操作的相应时间轴。 每项操作及其随附请求的详细信息如下所述。
+下图说明了播放头时间线和用户操作的相应时间线。 每项操作及其随附请求的详细信息如下所述。
 
 ![API 内容](assets/va_api_content_3.png)
 
@@ -74,13 +84,13 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 应用程序启动 Ping 事件计时器 | 0 | 0 | |
 
-启动 Ping 计时器。 如果有前置广告，则第一个 Ping 事件应在 1 秒后触发，否则应在 10 秒后触发。
+启动 Ping 计时器。 如果有前置式广告，则第一个 Ping 事件应在 1 秒后触发，否则应在 10 秒后触发。
 
 ### 操作 3 - 广告时间开始 {#Action-3}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪前置广告时间开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| 跟踪前置式广告插播开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 只能在广告时间期间跟踪广告。
 
@@ -102,9 +112,9 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪前置广告 1 开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| 跟踪前置式广告 #1 开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-开始跟踪第一个前置广告，其时长为 15 秒。 包括含此 `adStart` 的自定义元数据。
+开始跟踪第一个前置式广告，其时长为 15 秒。 包括含此 `adStart` 的自定义元数据。
 
 ```json
 {
@@ -224,7 +234,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪前置广告 2 结束 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
+| 跟踪前置式广告 #2 结束 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
 跟踪第二个前置式广告的结束。
 
@@ -242,9 +252,9 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪前置广告时间结束 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
+| 跟踪前置式广告插播结束 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-广告时间结束。 在整个广告时间内，播放状态一直保持为“正在播放”。
+广告时间结束。 在整个广告插播期间，播放状态一直保持为“正在播放”。
 
 ```json
 {
@@ -338,7 +348,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 缓冲结束后，应用程序将跟踪内容的恢复 | 36 | 11 | `/api/v1/sessions/{sid}/events` |
 
-缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。 您必须发送来自缓冲的另一个跟踪播放事件。  **`bufferStart` 后的 `play` 调用一定会对后端进行“bufferEnd”调用**，因此不需要 `bufferEnd` 事件。
+缓冲在 3 秒后结束，因此请将播放器恢复到“正在播放”状态。 您必须在结束缓冲后再发送一个跟踪播放事件。  **`bufferStart` 后的 `play` 调用一定会对后端进行“bufferEnd”调用**，因此不需要 `bufferEnd` 事件。
 
 ```json
 {
@@ -374,7 +384,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 应用程序跟踪章节结束 | 45 | 20 | `/api/v1/sessions/{sid}/events` |
 
-第一个章节结束，正好在第二个广告时间之前。
+第一个章节结束，正好在第二个广告插播之前。
 
 ```json
 {
@@ -390,7 +400,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪中置广告时间开始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
+| 跟踪中置式广告插播开始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
 持续时间为 8 秒的中置式广告：发送 `adBreakStart`。
 
@@ -412,7 +422,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪中置广告 3 开始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
+| 跟踪中置式广告 #3 开始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
 跟踪中置式广告。
 
@@ -462,7 +472,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪中置广告 1 结束 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| 跟踪中置式广告 #1 结束 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
 中置式广告完成。
 
@@ -480,7 +490,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪中置广告时间结束 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| 跟踪中置式广告插播结束 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
 广告时间结束。
 
@@ -628,7 +638,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 用户完成对内容的观看。 | 88 | 45 | `/api/v1/sessions/{sid}/events` |
+| 用户将内容观看到最后。 | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
 将 `sessionComplete` 发送到后端，表明用户已观看全部内容。
 
@@ -645,4 +655,4 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->**无搜寻事件？ -** 媒体收集 API 中没有明确支持 `seekStart` 或 `seekComplete` 事件。 这是因为在终端用户进行清理时，某些播放器会生成大量此类事件，而几百个用户很容易就会阻塞后端服务的网络带宽。 Adobe 根据设备时间戳而不是播放头位置来计算心跳持续时间，以明确支持搜寻事件。
+>**无搜寻事件？ -** 媒体收集 API 中没有明确支持 `seekStart` 或 `seekComplete` 事件。 这是因为在终端用户拖动进度条时，某些播放器会生成大量此类事件，而几百个用户很容易就会阻塞后端服务的网络带宽。 Adobe 通过根据设备时间戳而不是播放头位置来计算心跳持续时间，绕过了对搜寻事件的显式支持。

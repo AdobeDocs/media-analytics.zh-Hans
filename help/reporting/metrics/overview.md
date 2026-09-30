@@ -3,13 +3,22 @@ title: 流媒体量度概述
 description: 了解如何在Adobe Analytics和Customer Journey Analytics中计算和组织流媒体量度。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 3%
-
 ---
-
 
 # 流媒体量度概述
 
@@ -31,8 +40,8 @@ Streaming Media Analytics中的量度是由媒体后端计算的事件驱动计�
 
 | 报告系统 | 量度如何到达 |
 | --- | --- |
-| Adobe Analytics | 使用[上下文数据变量](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/vars/page-vars/contextdata)填充。 某些量度会自动使用这些上下文数据变量填充解决方案事件，而其他量度必须使用[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)映射到自定义事件。 自动填充值的量度必须首先启用各自的[流媒体报表包设置](../setup/analytics-reporting.md)。 |
-| Customer Journey Analytics | `xdm.mediaReporting.sessionDetails`和相关节点中的XDM字段，源自任何包含流媒体数据的数据集。 您必须使用[数据视图组件设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中的所需设置创建每个量度。 |
+| Adobe Analytics | 使用[上下文数据变量](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/vars/page-vars/contextdata)填充。 某些量度会自动使用这些上下文数据变量填充解决方案事件，而其他量度必须使用[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)映射到自定义事件。 自动填充值的量度必须首先启用各自的[流媒体报表包设置](../setup/analytics-reporting.md)。 |
+| Customer Journey Analytics | `xdm.mediaReporting.sessionDetails`和相关节点中的XDM字段，源自任何包含流媒体数据的数据集。 您必须使用[数据视图组件设置](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中的所需设置创建每个量度。 |
 | 数据馈送 | 量度将作为事件ID显示在`event_list`和`post_event_list`列中。 每个源文件都包含一个`events.csv`文件，其中包含所有量度（包括流媒体量度）的查找。 |
 
 >[!MORELIKETHIS]

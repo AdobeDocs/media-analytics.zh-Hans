@@ -3,13 +3,25 @@ title: 为Edge实施设置报表
 description: 配置Customer Journey Analytics以报告通过Edge Network收集的流媒体数据。
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 6%
-
+ht-degree: 7%
 ---
-
 # 为Edge实施设置报表
 
 通过Edge Network实施流媒体收集后，配置Customer Journey Analytics以报告收集的数据。
@@ -26,7 +38,7 @@ ht-degree: 6%
 
 ## 在 Customer Journey Analytics 中创建数据视图
 
-1. 在Customer Journey Analytics中，按照[创建或编辑数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/create-dataview)中的说明创建数据视图。
+1. 在Customer Journey Analytics中，按照[创建或编辑数据视图](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)中的说明创建数据视图。
 
    1. 在&#x200B;**[!UICONTROL 连接]**&#x200B;字段中，选择您之前创建的连接。 新连接最多可能需要15分钟才能显示。
 
@@ -50,7 +62,7 @@ ht-degree: 6%
 
       >[!IMPORTANT]
       >
-      >需要此表中的上下文标签才能使流媒体面板正常工作。 Customer Journey Analytics使用它们自动计算&#x200B;**并行查看者**&#x200B;和&#x200B;**播放耗时**&#x200B;派生指标（由[媒体并行查看者](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)和[媒体播放耗时](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)面板使用），并填充[媒体平均受众访问分钟数](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)面板中的报表选项。
+      >需要此表中的上下文标签才能使流媒体面板正常工作。 Customer Journey Analytics使用它们自动计算&#x200B;**并行查看者**&#x200B;和&#x200B;**播放耗时**&#x200B;派生指标（由[媒体并行查看者](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)和[媒体播放耗时](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)面板使用），并填充[媒体平均受众访问分钟数](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)面板中的报表选项。
 
       此时可以向数据视图添加任何其他[维度](/help/reporting/dimensions/overview.md)或[量度](/help/reporting/metrics/overview.md)。 每个页面都列出了该组件的XDM路径。
 
@@ -70,7 +82,7 @@ ht-degree: 6%
 
 1. （视情况而定）如果将自定义元数据添加到架构，请按照Customer Journey Analytics指南中的[持久性组件设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)中的说明设置自定义字段的持久性。
 
-1. 按照[共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=zh-Hans)中的说明共享项目。
+1. 按照[共享项目](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)中的说明共享项目。
 
    >[!NOTE]
    >
@@ -80,9 +92,9 @@ ht-degree: 6%
 
 Customer Journey Analytics中的Analysis Workspace包括三个专用媒体面板，面向具有流媒体收集加载项的客户。 这些面板提供了预建的可视化图表，可满足最常见的流媒体报表需求。
 
-* **[媒体平均受众访问分钟数](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**：比较任意长度或类型的程序的平均内容使用量。 支持特定内容（基于持续时间）和自定义时段模式，并允许事后更新持续时间分类。
-* **[媒体并行查看者](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**：分析一段时间内的并行查看者，以确定并发峰值和流失点。 支持可配置的粒度和按区段、维度或日期范围划分的系列。
-* **[媒体播放耗时](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**：分析一段时间的播放持续时间，提供关于高峰期和低谷期的详细信息。 支持可配置的粒度和输出格式（小时或分钟）。
+* **[媒体平均受众访问分钟数](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**：比较任意长度或类型的程序的平均内容使用量。 支持特定内容（基于持续时间）和自定义时段模式，并允许事后更新持续时间分类。
+* **[媒体并行查看者](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**：分析一段时间内的并行查看者，以确定并发峰值和流失点。 支持可配置的粒度和按区段、维度或日期范围划分的系列。
+* **[媒体播放耗时](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**：分析一段时间的播放持续时间，提供关于高峰期和低谷期的详细信息。 支持可配置的粒度和输出格式（小时或分钟）。
 
 >[!MORELIKETHIS]
 >

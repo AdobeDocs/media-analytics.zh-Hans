@@ -4,34 +4,46 @@ description: 了解如何将自定义字段的数据类型数据准备迁移到�
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
-TQID: https://experienceleague.adobe.com/57wAwVCwAUlRcMAbFW-X6T6Fe7Ap6leOaQw2Vx9r3OA
+TQID: 'https://experienceleague.adobe.com/57wAwVCwAUlRcMAbFW-X6T6Fe7Ap6leOaQw2Vx9r3OA'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
+    internal-label: Data collection
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 700
+source-wordcount: '700'
 ht-degree: 0%
-
 ---
-
 # 将自定义字段的数据准备迁移至新的流媒体字段
 
-本文档介绍了迁移数据准备服务的过程，该数据准备服务位于为Adobe流媒体收集数据启用的Adobe数据收集流之上。 迁移会从名为“Media”的Adobe Streaming Media Collection数据类型转换数据准备映射，以使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
+本文档介绍了迁移数据准备服务的过程，该数据准备服务位于为Adobe流媒体收集数据启用的Adobe数据收集流之上。 迁移会从名为“Media”的Adobe Streaming Media Collection数据类型转换数据准备映射，以使用名为“[媒体报表详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新对应数据类型。
 
 ## 迁移自定义字段的数据准备
 
-要将数据准备映射从名为“媒体”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须编辑数据准备映射：
+要将数据准备映射从名为“媒体”的旧数据类型迁移到名为“[媒体报告详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)”的新数据类型，您必须编辑数据准备映射：
 
 >[!IMPORTANT]
 >
@@ -91,7 +103,7 @@ ht-degree: 0%
 
 在上述示例中，涉及的所有数据类型都是字符串，因此映射替换是直接的。
 
-如果源字段数据类型不同于目标字段数据类型，则需要遵循[数据准备故障排除指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/troubleshooting-guide)、[使用数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/data-handling)处理数据格式和[数据准备映射函数](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/data-handling)中的准则。
+如果源字段数据类型不同于目标字段数据类型，则需要遵循[数据准备故障排除指南](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide)、[使用数据准备](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)处理数据格式和[数据准备映射函数](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)中的准则。
 
 例如，如果源类型是字符串而目标类型是布尔值，则数据准备可以自动解析该值并将源值转换为布尔值。
 

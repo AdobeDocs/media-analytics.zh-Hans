@@ -3,7 +3,19 @@ title: 静音
 description: 跟踪查看器何时将音频静音和取消静音，以便后端可以报告静音参与情况。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 7%
@@ -13,7 +25,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**静音**&#x200B;播放器状态的数据收集。 查看受静音影响的[流](/help/reporting/metrics/mute-streams-impacted.md)、[静音计数](/help/reporting/metrics/mute-count.md)以及相应报表量度的[静音总持续时间](/help/reporting/metrics/mute-total-duration.md)。*
+*本页介绍&#x200B;**静音**播放器状态的数据收集。 查看受静音影响的[流](/help/reporting/metrics/mute-streams-impacted.md)、[静音计数](/help/reporting/metrics/mute-count.md)以及相应报表量度的[静音总持续时间](/help/reporting/metrics/mute-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ ht-degree: 7%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
-| **XDM集合字段** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details) （带有`name: "mute"`的条目） |
+| **XDM集合字段** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （带有`name: "mute"`的条目） |
 | **Audience Manager特征** | `c_contextdata.a.media.states.mute.set`, `c_contextdata.a.media.states.mute.count`, `c_contextdata.a.media.states.mute.time` |
 | **必需** | 否 |
 | **发送条件** | [状态开始](/help/implementation/events/player-state/state-start.md)，[状态结束](/help/implementation/events/player-state/state-end.md) |

@@ -3,20 +3,30 @@ title: 设置适用于流媒体的iOS
 description: 在iOS上配置Adobe Experience Platform Mobile SDK以将流媒体数据发送到Edge Network。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
-
 ---
-
 # 设置适用于流媒体的iOS
 
 Adobe Streaming Media for Edge Network扩展(`AEPEdgeMedia`)收集iOS或tvOS应用程序中的媒体会话数据，并将其发送到Edge Network。 本页介绍代码内配置。 要改为通过Tags移动属性配置SDK，请参阅[为带有标记的iOS设置](ios-tags.md)。
 
 * **先决条件**：
-   * 完成[Edge实施概述](overview.md)（架构、数据集、启用了[!UICONTROL Media Analytics]的数据流）。
-   * 将`AEPCore`、`AEPEdge`、`AEPEdgeIdentity`和`AEPEdgeMedia`扩展添加到您的应用程序中。 有关安装和注册，请参阅[Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)。
+  * 完成[Edge实施概述](overview.md)（架构、数据集、启用了[!UICONTROL Media Analytics]的数据流）。
+  * 将`AEPCore`、`AEPEdge`、`AEPEdgeIdentity`和`AEPEdgeMedia`扩展添加到您的应用程序中。 有关安装和注册，请参阅[Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)。
 
 ## 为iOS配置媒体
 

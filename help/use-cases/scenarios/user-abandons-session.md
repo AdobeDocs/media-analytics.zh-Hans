@@ -5,26 +5,35 @@ uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Streaming Media
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/e0p6PwQPp5P2RG5M-0IeWtSebVa8rH20SZBRExC9Q7c
+TQID: 'https://experienceleague.adobe.com/e0p6PwQPp5P2RG5M-0IeWtSebVa8rH20SZBRExC9Q7c'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 642
+source-wordcount: '642'
 ht-degree: 100%
-
 ---
-
 # 时间线 2 – 用户放弃会话 {#timeline--2-user-abandons-session}
 
-## VOD、前置广告、中置广告、用户提前放弃内容
+## VOD、前置式广告、中置式广告、用户提前放弃内容
 
 下图说明了播放头时间轴和用户操作的相应时间轴。 每项操作及其随附请求的详细信息如下所述。
 
@@ -40,7 +49,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 按下“自动播放”或“播放”按钮 | 0 | 0 | `/api/v1/sessions` |
 
-此调用表示&#x200B;_用户播放视频的意图_。 它会向客户端返回一个会话 ID (`{sid}`)，用于标识会话中的所有后续跟踪调用。 播放器状态不是“正在播放”，而是“正在启动”。  强制会话参数必须包含在请求正文中的 `params` 映射中。  在后端，此调用会生成一个 Adobe Analytics 启动调用。 有关会话的信息，请参阅媒体收集 API 文档。
+此调用表示&#x200B;_用户播放视频的意图_。 它会向客户端返回一个会话 ID (`{sid}`)，用于标识会话中的所有后续跟踪调用。 播放器状态不是“正在播放”，而是“正在启动”。  强制会话参数必须包含在请求正文中的 `params` 映射中。  在后端，此调用会生成一个 Adobe Analytics 启动调用。 有关会话的信息，请参阅媒体采集 API 文档。
 
 ```json
 {
@@ -72,15 +81,15 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 应用程序启动 Ping 事件计时器 | 0 | 0 | |
 
-启动应用程序的 Ping 计时器。 如果有前置广告，则第一个 Ping 事件应在 1 秒后触发，否则应在 10 秒后触发。
+启动应用程序的 Ping 计时器。 如果有前置式广告，则第一个 Ping 事件应在 1 秒后触发，否则应在 10 秒后触发。
 
 ### 操作 3 - 广告时间开始 {#Action-3}
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪前置广告时间开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| 跟踪前置式广告插播开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-必须跟踪前置广告。 只能在广告时间期间跟踪广告。
+必须跟踪前置式广告。 只能在广告时间期间跟踪广告。
 
 ```json
 {
@@ -101,7 +110,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪前置广告 1 开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| 跟踪前置式广告 #1 开始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 一个时长为 12 秒的广告开始。
 
@@ -151,7 +160,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪前置广告 1 结束 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| 跟踪前置式广告 1 完成 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 第一个前置式广告结束。
 
@@ -297,7 +306,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪中置广告时间开始 | 45 | 33 | `/api/v1/sessions/{sid}/events` |
+| 跟踪中置式广告时间开始 | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
 持续时间为 8 秒的中置式广告：发送 `adBreakStart`。
 
@@ -320,7 +329,7 @@ ht-degree: 100%
 
 | 操作 | 操作时间轴（秒） | 播放头位置（秒） | 客户端请求 |
 | --- | :---: | :---: | --- |
-| 跟踪中置广告 1 开始 | 45 | 33 | `/api/v1/sessions/{sid}/events` |
+| 跟踪中置式广告 1 开始 | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
 跟踪中置式广告。
 

@@ -3,20 +3,30 @@ title: 设置适用于带标记的流媒体的iOS
 description: 使用Adobe Streaming Media for iOS标记扩展配置Edge Network的流媒体收集。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
-
 ---
-
 # 设置适用于带标记的流媒体的iOS
 
 您可以通过Tags移动属性为iOS或tvOS应用程序配置流媒体收集，并在数据收集UI中管理媒体设置。 本页介绍标记配置。 要在代码中配置SDK，请参阅[为流媒体设置iOS](ios.md)。
 
 * **先决条件**：
-   * 完成[Edge实施概述](overview.md)（架构、数据集、启用了[!UICONTROL Media Analytics]的数据流）。
-   * 在数据收集UI中创建移动属性。 请参阅[Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)。
+  * 完成[Edge实施概述](overview.md)（架构、数据集、启用了[!UICONTROL Media Analytics]的数据流）。
+  * 在数据收集UI中创建移动属性。 请参阅[Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)。
 
 ## 配置扩展
 

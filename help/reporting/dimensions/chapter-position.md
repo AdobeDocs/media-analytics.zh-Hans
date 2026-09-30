@@ -3,19 +3,31 @@ title: 章节位置
 description: 报告内容中每个章节的索引。
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '368'
 ht-degree: 2%
-
 ---
-
 
 # 章节位置
 
 >[!BEGINSHADEBOX]
 
-*此页涵盖&#x200B;**章节位置**&#x200B;报告维度。 有关如何收集此变量，请参阅[章节位置](/help/implementation/variables/chapters/chapter-position.md)。*
+*此页涵盖&#x200B;**章节位置**报告维度。 有关如何收集此变量，请参阅[章节位置](/help/implementation/variables/chapters/chapter-position.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +39,9 @@ ht-degree: 2%
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics（处理规则） | 创建将`a.media.chapter.position`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Adobe Analytics（处理规则） | 创建将`a.media.chapter.position`映射到eVar的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
 | Adobe Analytics（分类） | [Chapter](chapter.md)维度的分类。 为报表包启用&#x200B;**[[!UICONTROL 媒体章节]](/help/reporting/setup/analytics-reporting.md)**&#x200B;后，Adobe会自动创建此分类。 您负责填充和维护分类值。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.index`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | 数据馈送（处理规则） | `evar1`-`evar250`，`post_evar1`-`post_evar250` （您的处理规则将`a.media.chapter.position`映射到的eVar） |
 | 数据馈送（分类） | 不适用 — 数据馈送不支持分类。 |
 | Audience Manager | `c_contextdata.a.media.chapter.position` |
@@ -46,7 +58,7 @@ ht-degree: 2%
 
 ## 处理规则方法
 
-创建将`a.media.chapter.position`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法将章节位置捕获为每次点击值，而无需分类维护。
+创建将`a.media.chapter.position`映射到eVar的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法将章节位置捕获为每次点击值，而无需分类维护。
 
 取舍是您丢失了章节位置和父[Chapter](chapter.md)维度之间保证的1:1关系。 如果实施在不同事件间为同一章节ID发送的值不一致，则同一章节下可能会显示多个位置。 更新值仅适用于以后的数据。
 

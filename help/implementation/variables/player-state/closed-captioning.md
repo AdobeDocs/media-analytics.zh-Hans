@@ -3,7 +3,19 @@ title: 隐藏字幕
 description: 跟踪查看器打开和关闭隐藏式字幕的时间，以便后端能够报告字幕参与情况。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 7%
@@ -13,7 +25,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本页介绍&#x200B;**隐藏式字幕**&#x200B;播放器状态的数据收集。 查看受隐藏式字幕影响的流数量[&#128279;](/help/reporting/metrics/closed-captioning-streams-impacted.md)、[隐藏式字幕数量](/help/reporting/metrics/closed-captioning-count.md)和[隐藏式字幕总持续时长](/help/reporting/metrics/closed-captioning-total-duration.md)以了解相应的报表量度。*
+*本页介绍&#x200B;**隐藏式字幕**播放器状态的数据收集。 查看受隐藏式字幕影响的流数量[](/help/reporting/metrics/closed-captioning-streams-impacted.md)、[隐藏式字幕数量](/help/reporting/metrics/closed-captioning-count.md)和[隐藏式字幕总持续时长](/help/reporting/metrics/closed-captioning-total-duration.md)以了解相应的报表量度。*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ ht-degree: 7%
 | 属性 | 值 |
 | --- | --- |
 | **上下文数据变量** | `a.media.states.closedcaptioning.set`, `a.media.states.closedcaptioning.count`, `a.media.states.closedcaptioning.time` |
-| **XDM集合字段** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/media-collection-details) （带有`name: "closedCaptioning"`的条目） |
+| **XDM集合字段** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （带有`name: "closedCaptioning"`的条目） |
 | **Audience Manager特征** | `c_contextdata.a.media.states.closedcaptioning.set`, `c_contextdata.a.media.states.closedcaptioning.count`, `c_contextdata.a.media.states.closedcaptioning.time` |
 | **必需** | 否 |
 | **发送条件** | [状态开始](/help/implementation/events/player-state/state-start.md)，[状态结束](/help/implementation/events/player-state/state-end.md) |

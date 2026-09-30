@@ -3,19 +3,31 @@ title: Pod名称
 description: 报告每个广告时间的友好名称。 使用分类或自定义处理规则在Adobe Analytics中收集它。
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '433'
 ht-degree: 1%
-
 ---
-
 
 # Pod名称
 
 >[!BEGINSHADEBOX]
 
-*此页面涵盖&#x200B;**面板名称**&#x200B;报告维度。 有关如何收集此变量，请参阅[广告时间名称](/help/implementation/variables/ads/ad-break-name.md)。*
+*此页面涵盖&#x200B;**面板名称**报告维度。 有关如何收集此变量，请参阅[广告时间名称](/help/implementation/variables/ads/ad-break-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +39,9 @@ Pod名称源自播放器在[广告时间开始](/help/implementation/events/ads/
 
 | 报告系统 | 来源 |
 | --- | --- |
-| Adobe Analytics（处理规则） | 创建将`a.media.ad.podFriendlyName`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Adobe Analytics（处理规则） | 创建将`a.media.ad.podFriendlyName`映射到eVar的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
 | Adobe Analytics（分类） | 广告面板维度的分类。 为报表包启用&#x200B;**[[!UICONTROL 媒体广告]](/help/reporting/setup/analytics-reporting.md)**&#x200B;时，Adobe会自动创建此分类。 您负责填充和维护分类值。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | 数据馈送（处理规则） | `evar1`-`evar250`，`post_evar1`-`post_evar250` （您的处理规则将`a.media.ad.podFriendlyName`映射到的eVar） |
 | 数据馈送（分类） | 不适用 — 数据馈送不支持分类。 |
 | Audience Manager | `c_contextdata.a.media.ad.podFriendlyName` |
@@ -38,7 +50,7 @@ Pod名称源自播放器在[广告时间开始](/help/implementation/events/ads/
 
 为报表包启用&#x200B;**[[!UICONTROL 媒体广告]](/help/reporting/setup/analytics-reporting.md)**&#x200B;时，Adobe会自动创建Pod名称分类结构。 您负责使用[分类集](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)填充和维护分类。
 
-此方法在每个面板ID及其友好名称之间提供了保证的1:1关系。 分类更新会以追溯方式应用于该ID的所有历史数据。
+这种方法保证了每个面板ID与其友好名称之间存在1:1的关系。 分类更新会以追溯方式应用于该ID的所有历史数据。
 
 >[!IMPORTANT]
 >
@@ -46,9 +58,9 @@ Pod名称源自播放器在[广告时间开始](/help/implementation/events/ads/
 
 ## 处理规则方法
 
-创建将`a.media.ad.podFriendlyName`映射到eVar的[处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法将友好名称捕获为每次点击值，而无需分类维护。
+创建将`a.media.ad.podFriendlyName`映射到eVar的[处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法将友好名称捕获为每次点击值，而无需分类维护。
 
-取舍是您丢失了面板名称和父[广告pod](ad-pod.md)维度之间保证的1:1关系。 如果实施在不同事件间为同一面板ID发送的值不一致，则同一广告面板下可能会显示多个名称。 更新值仅适用于以后的数据。
+取舍是您会丢失面板名称和父[广告pod](ad-pod.md)维度之间保证的1:1关系。 如果实施在不同事件间为同一面板ID发送的值不一致，则同一广告面板下可能会显示多个名称。 更新值仅适用于以后的数据。
 
 ## 维度项目
 

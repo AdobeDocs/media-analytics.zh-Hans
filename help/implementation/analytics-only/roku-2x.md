@@ -3,13 +3,23 @@ title: 设置适用于流媒体的Roku 2.x
 description: 安装和配置适用于Roku的适用于Adobe Media SDK 2.x ，用于仅Analytics流媒体实施，包括SceneGraph渠道。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 2%
-
 ---
-
 # 设置适用于流媒体的Roku 2.x
 
 Adobe Media SDK 2.x for Roku (`adbmobile.brs`)将使用BrightScript编写的Roku渠道中的流媒体数据直接发送到Adobe Analytics。 它还通过Audience Manager收集受众数据，并通过媒体事件测量参与度。
@@ -19,9 +29,9 @@ Adobe Media SDK 2.x for Roku (`adbmobile.brs`)将使用BrightScript编写的Roku
 >本页介绍了适用于Roku的仅适用于Analytics的Media SDK 2.x。 对于新的实施，Adobe建议使用[Roku Edge SDK](/help/implementation/edge/roku.md)，这样除Adobe Analytics之外，数据还可以供Customer Journey Analytics、Adobe Journey Optimizer和Real-Time CDP使用。
 
 * **先决条件**：
-   * 完成[仅限Analytics的实施概述](overview.md)。
-   * [下载Roku的Media SDK](/help/getting-started/download-sdks.md)。
-   * 在媒体播放器中包括API以订阅播放器事件，以及包括API以提供播放器信息，例如媒体名称和播放头位置。
+  * 完成[仅限Analytics的实施概述](overview.md)。
+  * [下载Roku的Media SDK](/help/getting-started/download-sdks.md)。
+  * 在媒体播放器中包括API以订阅播放器事件，以及包括API以提供播放器信息，例如媒体名称和播放头位置。
 
 ## 安装SDK
 

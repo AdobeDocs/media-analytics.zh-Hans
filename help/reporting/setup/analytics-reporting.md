@@ -3,13 +3,25 @@ title: 为仅限Analytics的实施设置报表
 description: 在Adobe Analytics中启用媒体报表包模块，以便收集和报告流媒体数据。
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 11%
-
 ---
-
 # 为仅限Analytics的实施设置报表
 
 在仅限于Analytics的实施可以收集流媒体数据之前，必须将接收该数据的每个报表包配置为启用相应的媒体模块。 本页介绍如何启用这些模块以及在何处查找生成的报表。
@@ -39,30 +51,30 @@ ht-degree: 11%
 
   +++选择以查看维度和量度
 
-   * **维度：**
-      * [[!UICONTROL 内容]](/help/reporting/dimensions/content.md)
-      * [[!UICONTROL 内容渠道]](/help/reporting/dimensions/content-channel.md)
-      * [[!UICONTROL 内容长度（变量）]](/help/reporting/dimensions/content-length.md)
-      * [[!UICONTROL 内容名称（变量）]](/help/reporting/dimensions/content-name.md)
-      * [[!UICONTROL 内容播放器名称]](/help/reporting/dimensions/content-player-name.md)
-      * [[!UICONTROL 内容区段]](/help/reporting/dimensions/content-segment.md)
-      * [[!UICONTROL 内容类型]](/help/reporting/dimensions/content-type.md)
-      * [[!UICONTROL 媒体路径]](/help/reporting/dimensions/media-path.md)
-      * [[!UICONTROL 媒体会话ID]](/help/reporting/dimensions/media-session-id.md)
-      * [[!UICONTROL 流类型]](/help/reporting/dimensions/stream-type.md)
-   * **量度：**
-      * [[!UICONTROL 平均受众访问分钟数]](/help/reporting/metrics/average-minute-audience.md)
-      * [[!UICONTROL 内容完成]](/help/reporting/metrics/content-completes.md)
-      * [[!UICONTROL 内容继续]](/help/reporting/metrics/content-resumes.md)
-      * [[!UICONTROL 内容区段视图]](/help/reporting/metrics/content-segment-views.md)
-      * [[!UICONTROL 内容开始]](/help/reporting/metrics/content-starts.md)
-      * [[!UICONTROL 内容逗留时间]](/help/reporting/metrics/content-time-spent.md)
-      * [[!UICONTROL 媒体开始]](/help/reporting/metrics/media-starts.md)
-      * [[!UICONTROL 暂停事件]](/help/reporting/metrics/pause-events.md)
-      * [[!UICONTROL 受暂停影响的流]](/help/reporting/metrics/paused-impacted-streams.md)
-      * [[!UICONTROL 进度标记]](/help/reporting/metrics/progress-markers.md)
-      * [[!UICONTROL 总暂停持续时间]](/help/reporting/metrics/total-pause-duration.md)
-      * [[!UICONTROL 唯一播放时间]](/help/reporting/metrics/unique-time-played.md)
+  * **维度：**
+    * [[!UICONTROL 内容]](/help/reporting/dimensions/content.md)
+    * [[!UICONTROL 内容渠道]](/help/reporting/dimensions/content-channel.md)
+    * [[!UICONTROL 内容长度（变量）]](/help/reporting/dimensions/content-length.md)
+    * [[!UICONTROL 内容名称（变量）]](/help/reporting/dimensions/content-name.md)
+    * [[!UICONTROL 内容播放器名称]](/help/reporting/dimensions/content-player-name.md)
+    * [[!UICONTROL 内容区段]](/help/reporting/dimensions/content-segment.md)
+    * [[!UICONTROL 内容类型]](/help/reporting/dimensions/content-type.md)
+    * [[!UICONTROL 媒体路径]](/help/reporting/dimensions/media-path.md)
+    * [[!UICONTROL 媒体会话ID]](/help/reporting/dimensions/media-session-id.md)
+    * [[!UICONTROL 流类型]](/help/reporting/dimensions/stream-type.md)
+  * **量度：**
+    * [[!UICONTROL 平均受众访问分钟数]](/help/reporting/metrics/average-minute-audience.md)
+    * [[!UICONTROL 内容完成]](/help/reporting/metrics/content-completes.md)
+    * [[!UICONTROL 内容继续]](/help/reporting/metrics/content-resumes.md)
+    * [[!UICONTROL 内容区段视图]](/help/reporting/metrics/content-segment-views.md)
+    * [[!UICONTROL 内容开始]](/help/reporting/metrics/content-starts.md)
+    * [[!UICONTROL 内容逗留时间]](/help/reporting/metrics/content-time-spent.md)
+    * [[!UICONTROL 媒体开始]](/help/reporting/metrics/media-starts.md)
+    * [[!UICONTROL 暂停事件]](/help/reporting/metrics/pause-events.md)
+    * [[!UICONTROL 受暂停影响的流]](/help/reporting/metrics/paused-impacted-streams.md)
+    * [[!UICONTROL 进度标记]](/help/reporting/metrics/progress-markers.md)
+    * [[!UICONTROL 总暂停持续时间]](/help/reporting/metrics/total-pause-duration.md)
+    * [[!UICONTROL 唯一播放时间]](/help/reporting/metrics/unique-time-played.md)
 
   +++
 
@@ -70,28 +82,28 @@ ht-degree: 11%
 
   +++选择以查看维度、分类和量度
 
-   * **维度：**
-      * [[!UICONTROL 广告]](/help/reporting/dimensions/ad.md)
-      * [[!UICONTROL 面板中的广告位置]](/help/reporting/dimensions/ad-in-pod-position.md)
-      * [[!UICONTROL 广告长度（变量）]](/help/reporting/dimensions/ad-length.md)
-      * [[!UICONTROL 广告名称（变量）]](/help/reporting/dimensions/ad-name.md)
-      * [[!UICONTROL 广告播放器名称]](/help/reporting/dimensions/ad-player-name.md)
-      * [[!UICONTROL 广告Pod]](/help/reporting/dimensions/ad-pod.md)
-      * [[!UICONTROL 广告商]](/help/reporting/dimensions/advertiser.md)
-      * [[!UICONTROL 营销活动 ID]](/help/reporting/dimensions/campaign-id.md)
-   * **分类维度：**
-      * [[!UICONTROL 资产ID]](/help/reporting/dimensions/asset-id.md)
-      * [[!UICONTROL 内容评级]](/help/reporting/dimensions/content-rating.md)
-      * [[!UICONTROL Creative ID]](/help/reporting/dimensions/creative-id.md)
-      * [[!UICONTROL 首次播放日期]](/help/reporting/dimensions/first-air-date.md)
-      * [[!UICONTROL 第一个数字日期]](/help/reporting/dimensions/first-digital-date.md)
-      * [[!UICONTROL 面板名称]](/help/reporting/dimensions/pod-name.md)
-      * [[!UICONTROL Pod位置]](/help/reporting/dimensions/pod-position.md)
-   * **量度：**
-      * [[!UICONTROL 广告完成]](/help/reporting/metrics/ad-completes.md)
-      * [[!UICONTROL 广告开始]](/help/reporting/metrics/ad-starts.md)
-      * [[!UICONTROL 广告逗留时间]](/help/reporting/metrics/ad-time-spent.md)
-      * [[!UICONTROL 媒体逗留时间]](/help/reporting/metrics/media-time-spent.md)
+  * **维度：**
+    * [[!UICONTROL 广告]](/help/reporting/dimensions/ad.md)
+    * [[!UICONTROL 面板中的广告位置]](/help/reporting/dimensions/ad-in-pod-position.md)
+    * [[!UICONTROL 广告长度（变量）]](/help/reporting/dimensions/ad-length.md)
+    * [[!UICONTROL 广告名称（变量）]](/help/reporting/dimensions/ad-name.md)
+    * [[!UICONTROL 广告播放器名称]](/help/reporting/dimensions/ad-player-name.md)
+    * [[!UICONTROL 广告Pod]](/help/reporting/dimensions/ad-pod.md)
+    * [[!UICONTROL 广告商]](/help/reporting/dimensions/advertiser.md)
+    * [[!UICONTROL 营销活动 ID]](/help/reporting/dimensions/campaign-id.md)
+  * **分类维度：**
+    * [[!UICONTROL 资产ID]](/help/reporting/dimensions/asset-id.md)
+    * [[!UICONTROL 内容评级]](/help/reporting/dimensions/content-rating.md)
+    * [[!UICONTROL Creative ID]](/help/reporting/dimensions/creative-id.md)
+    * [[!UICONTROL 首次播放日期]](/help/reporting/dimensions/first-air-date.md)
+    * [[!UICONTROL 第一个数字日期]](/help/reporting/dimensions/first-digital-date.md)
+    * [[!UICONTROL 面板名称]](/help/reporting/dimensions/pod-name.md)
+    * [[!UICONTROL Pod位置]](/help/reporting/dimensions/pod-position.md)
+  * **量度：**
+    * [[!UICONTROL 广告完成]](/help/reporting/metrics/ad-completes.md)
+    * [[!UICONTROL 广告开始]](/help/reporting/metrics/ad-starts.md)
+    * [[!UICONTROL 广告逗留时间]](/help/reporting/metrics/ad-time-spent.md)
+    * [[!UICONTROL 媒体逗留时间]](/help/reporting/metrics/media-time-spent.md)
 
   +++
 
@@ -99,18 +111,18 @@ ht-degree: 11%
 
   +++选择以查看维度、分类和量度
 
-   * **Dimension：**
-      * [[!UICONTROL 章节]](/help/reporting/dimensions/chapter.md)
-   * **分类维度：**
-      * [[!UICONTROL 章节长度]](/help/reporting/dimensions/chapter-length.md)
-      * [[!UICONTROL 章节名称]](/help/reporting/dimensions/chapter-name.md)
-      * [[!UICONTROL 章节偏移]](/help/reporting/dimensions/chapter-offset.md)
-      * [[!UICONTROL 章节位置]](/help/reporting/dimensions/chapter-position.md)
-      * [[!UICONTROL 发起人]](/help/reporting/dimensions/originator.md)
-   * **量度：**
-      * [[!UICONTROL 章节完成]](/help/reporting/metrics/chapter-completes.md)
-      * [[!UICONTROL 章节开始]](/help/reporting/metrics/chapter-starts.md)
-      * [[!UICONTROL 章节逗留时间]](/help/reporting/metrics/chapter-time-spent.md)
+  * **Dimension：**
+    * [[!UICONTROL 章节]](/help/reporting/dimensions/chapter.md)
+  * **分类维度：**
+    * [[!UICONTROL 章节长度]](/help/reporting/dimensions/chapter-length.md)
+    * [[!UICONTROL 章节名称]](/help/reporting/dimensions/chapter-name.md)
+    * [[!UICONTROL 章节偏移]](/help/reporting/dimensions/chapter-offset.md)
+    * [[!UICONTROL 章节位置]](/help/reporting/dimensions/chapter-position.md)
+    * [[!UICONTROL 发起人]](/help/reporting/dimensions/originator.md)
+  * **量度：**
+    * [[!UICONTROL 章节完成]](/help/reporting/metrics/chapter-completes.md)
+    * [[!UICONTROL 章节开始]](/help/reporting/metrics/chapter-starts.md)
+    * [[!UICONTROL 章节逗留时间]](/help/reporting/metrics/chapter-time-spent.md)
 
   +++
 
@@ -118,29 +130,29 @@ ht-degree: 11%
 
   +++选择以查看维度和量度
 
-   * **维度：**
-      * [[!UICONTROL 平均比特率]](/help/reporting/dimensions/average-bitrate.md)
-      * [[!UICONTROL 比特率更改]](/help/reporting/dimensions/bitrate-changes.md)
-      * [[!UICONTROL 缓冲事件]](/help/reporting/dimensions/buffer-events.md)
-      * [[!UICONTROL 丢帧]](/help/reporting/dimensions/dropped-frames.md)
-      * [[!UICONTROL 个错误]](/help/reporting/dimensions/errors.md)
-      * [[!UICONTROL 外部错误ID]](/help/reporting/dimensions/external-error-ids.md)
-      * [[!UICONTROL 播放器SDK错误ID]](/help/reporting/dimensions/player-sdk-error-ids.md)
-      * [[!UICONTROL 开始时间]](/help/reporting/dimensions/time-to-start.md)
-      * [[!UICONTROL 总缓冲持续时间]](/help/reporting/dimensions/total-buffer-duration.md)
-   * **量度：**
-      * [[!UICONTROL 平均比特率]](/help/reporting/metrics/average-bitrate.md)
-      * [[!UICONTROL 受比特率更改影响的流]](/help/reporting/metrics/bitrate-change-impacted-streams.md)
-      * [[!UICONTROL 比特率更改]](/help/reporting/metrics/bitrate-changes.md)
-      * [[!UICONTROL 缓冲事件]](/help/reporting/metrics/buffer-events.md)
-      * [[!UICONTROL 受缓冲影响的流]](/help/reporting/metrics/buffer-impacted-streams.md)
-      * [[!UICONTROL 受丢帧影响的流]](/help/reporting/metrics/dropped-frame-impacted-streams.md)
-      * [[!UICONTROL 丢帧]](/help/reporting/metrics/dropped-frames.md)
-      * [[!UICONTROL 开始前丢弃]](/help/reporting/metrics/drops-before-start.md)
-      * [[!UICONTROL 错误事件]](/help/reporting/metrics/error-events.md)
-      * [[!UICONTROL 错误影响的流]](/help/reporting/metrics/error-impacted-streams.md)
-      * [[!UICONTROL 开始时间]](/help/reporting/metrics/time-to-start.md)
-      * [[!UICONTROL 总缓冲持续时间]](/help/reporting/metrics/total-buffer-duration.md)
+  * **维度：**
+    * [[!UICONTROL 平均比特率]](/help/reporting/dimensions/average-bitrate.md)
+    * [[!UICONTROL 比特率更改]](/help/reporting/dimensions/bitrate-changes.md)
+    * [[!UICONTROL 缓冲事件]](/help/reporting/dimensions/buffer-events.md)
+    * [[!UICONTROL 丢帧]](/help/reporting/dimensions/dropped-frames.md)
+    * [[!UICONTROL 个错误]](/help/reporting/dimensions/errors.md)
+    * [[!UICONTROL 外部错误ID]](/help/reporting/dimensions/external-error-ids.md)
+    * [[!UICONTROL 播放器SDK错误ID]](/help/reporting/dimensions/player-sdk-error-ids.md)
+    * [[!UICONTROL 开始时间]](/help/reporting/dimensions/time-to-start.md)
+    * [[!UICONTROL 总缓冲持续时间]](/help/reporting/dimensions/total-buffer-duration.md)
+  * **量度：**
+    * [[!UICONTROL 平均比特率]](/help/reporting/metrics/average-bitrate.md)
+    * [[!UICONTROL 受比特率更改影响的流]](/help/reporting/metrics/bitrate-change-impacted-streams.md)
+    * [[!UICONTROL 比特率更改]](/help/reporting/metrics/bitrate-changes.md)
+    * [[!UICONTROL 缓冲事件]](/help/reporting/metrics/buffer-events.md)
+    * [[!UICONTROL 受缓冲影响的流]](/help/reporting/metrics/buffer-impacted-streams.md)
+    * [[!UICONTROL 受丢帧影响的流]](/help/reporting/metrics/dropped-frame-impacted-streams.md)
+    * [[!UICONTROL 丢帧]](/help/reporting/metrics/dropped-frames.md)
+    * [[!UICONTROL 开始前丢弃]](/help/reporting/metrics/drops-before-start.md)
+    * [[!UICONTROL 错误事件]](/help/reporting/metrics/error-events.md)
+    * [[!UICONTROL 错误影响的流]](/help/reporting/metrics/error-impacted-streams.md)
+    * [[!UICONTROL 开始时间]](/help/reporting/metrics/time-to-start.md)
+    * [[!UICONTROL 总缓冲持续时间]](/help/reporting/metrics/total-buffer-duration.md)
 
   +++
 
@@ -148,19 +160,19 @@ ht-degree: 11%
 
   +++选择以查看维度和量度
 
-   * **维度：**
-      * [[!UICONTROL 个广告加载]](/help/reporting/dimensions/ad-load-type.md)
-      * [[!UICONTROL 天部分]](/help/reporting/dimensions/day-part.md)
-      * [[!UICONTROL 集]](/help/reporting/dimensions/episode.md)
-      * [[!UICONTROL 流派]](/help/reporting/dimensions/genre.md)
-      * [[!UICONTROL 媒体馈送类型]](/help/reporting/dimensions/media-feed-type.md)
-      * [[!UICONTROL MVPD]](/help/reporting/dimensions/mvpd.md)
-      * [[!UICONTROL 网络]](/help/reporting/dimensions/network.md)
-      * [[!UICONTROL 季]](/help/reporting/dimensions/season.md)
-      * [[!UICONTROL 节目]](/help/reporting/dimensions/show.md)
-      * [[!UICONTROL 显示类型]](/help/reporting/dimensions/show-type.md)
-   * **指标：**
-      * [[!UICONTROL 已授权]](/help/reporting/metrics/authorized.md)
+  * **维度：**
+    * [[!UICONTROL 个广告加载]](/help/reporting/dimensions/ad-load-type.md)
+    * [[!UICONTROL 天部分]](/help/reporting/dimensions/day-part.md)
+    * [[!UICONTROL 集]](/help/reporting/dimensions/episode.md)
+    * [[!UICONTROL 流派]](/help/reporting/dimensions/genre.md)
+    * [[!UICONTROL 媒体馈送类型]](/help/reporting/dimensions/media-feed-type.md)
+    * [[!UICONTROL MVPD]](/help/reporting/dimensions/mvpd.md)
+    * [[!UICONTROL 网络]](/help/reporting/dimensions/network.md)
+    * [[!UICONTROL 季]](/help/reporting/dimensions/season.md)
+    * [[!UICONTROL 节目]](/help/reporting/dimensions/show.md)
+    * [[!UICONTROL 显示类型]](/help/reporting/dimensions/show-type.md)
+  * **指标：**
+    * [[!UICONTROL 已授权]](/help/reporting/metrics/authorized.md)
 
   +++
 
@@ -168,13 +180,13 @@ ht-degree: 11%
 
   +++选择以查看维度
 
-   * **维度：**
-      * [[!UICONTROL 相册]](/help/reporting/dimensions/album.md)
-      * [[!UICONTROL 艺人]](/help/reporting/dimensions/artist.md)
-      * [[!UICONTROL 作者]](/help/reporting/dimensions/author.md)
-      * [[!UICONTROL Label]](/help/reporting/dimensions/label.md)
-      * [[!UICONTROL 发布者]](/help/reporting/dimensions/publisher.md)
-      * [[!UICONTROL 工作站]](/help/reporting/dimensions/station.md)
+  * **维度：**
+    * [[!UICONTROL 相册]](/help/reporting/dimensions/album.md)
+    * [[!UICONTROL 艺人]](/help/reporting/dimensions/artist.md)
+    * [[!UICONTROL 作者]](/help/reporting/dimensions/author.md)
+    * [[!UICONTROL Label]](/help/reporting/dimensions/label.md)
+    * [[!UICONTROL 发布者]](/help/reporting/dimensions/publisher.md)
+    * [[!UICONTROL 工作站]](/help/reporting/dimensions/station.md)
 
   +++
 
@@ -182,22 +194,22 @@ ht-degree: 11%
 
   +++选择以查看指标
 
-   * **量度：**
-      * [[!UICONTROL 隐藏式字幕计数]](/help/reporting/metrics/closed-captioning-count.md)
-      * [[!UICONTROL 隐藏式字幕总时长]](/help/reporting/metrics/closed-captioning-total-duration.md)
-      * [[!UICONTROL 全屏计数]](/help/reporting/metrics/full-screen-count.md)
-      * [[!UICONTROL 全屏总时长]](/help/reporting/metrics/full-screen-total-duration.md)
-      * [[!UICONTROL 聚焦计数]](/help/reporting/metrics/in-focus-count.md)
-      * [[!UICONTROL 观看中总持续时间]](/help/reporting/metrics/in-focus-total-duration.md)
-      * [[!UICONTROL 静音计数]](/help/reporting/metrics/mute-count.md)
-      * [[!UICONTROL 静音总持续时间]](/help/reporting/metrics/mute-total-duration.md)
-      * [[!UICONTROL 画中画计数]](/help/reporting/metrics/picture-in-picture-count.md)
-      * [[!UICONTROL 画中画总持续时间]](/help/reporting/metrics/picture-in-picture-total-duration.md)
-      * [[!UICONTROL 受隐藏式字幕影响的流数量]](/help/reporting/metrics/closed-captioning-streams-impacted.md)
-      * [[!UICONTROL 受全屏影响的流数量]](/help/reporting/metrics/full-screen-streams-impacted.md)
-      * [[!UICONTROL 受聚焦影响的流数量]](/help/reporting/metrics/in-focus-streams-impacted.md)
-      * [[!UICONTROL 受静音影响的流数量]](/help/reporting/metrics/mute-streams-impacted.md)
-      * [[!UICONTROL 受画中画影响的流数量]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
+  * **量度：**
+    * [[!UICONTROL 隐藏式字幕计数]](/help/reporting/metrics/closed-captioning-count.md)
+    * [[!UICONTROL 隐藏式字幕总时长]](/help/reporting/metrics/closed-captioning-total-duration.md)
+    * [[!UICONTROL 全屏计数]](/help/reporting/metrics/full-screen-count.md)
+    * [[!UICONTROL 全屏总时长]](/help/reporting/metrics/full-screen-total-duration.md)
+    * [[!UICONTROL 聚焦计数]](/help/reporting/metrics/in-focus-count.md)
+    * [[!UICONTROL 观看中总持续时间]](/help/reporting/metrics/in-focus-total-duration.md)
+    * [[!UICONTROL 静音计数]](/help/reporting/metrics/mute-count.md)
+    * [[!UICONTROL 静音总持续时间]](/help/reporting/metrics/mute-total-duration.md)
+    * [[!UICONTROL 画中画计数]](/help/reporting/metrics/picture-in-picture-count.md)
+    * [[!UICONTROL 画中画总持续时间]](/help/reporting/metrics/picture-in-picture-total-duration.md)
+    * [[!UICONTROL 受隐藏式字幕影响的流数量]](/help/reporting/metrics/closed-captioning-streams-impacted.md)
+    * [[!UICONTROL 受全屏影响的流数量]](/help/reporting/metrics/full-screen-streams-impacted.md)
+    * [[!UICONTROL 受聚焦影响的流数量]](/help/reporting/metrics/in-focus-streams-impacted.md)
+    * [[!UICONTROL 受静音影响的流数量]](/help/reporting/metrics/mute-streams-impacted.md)
+    * [[!UICONTROL 受画中画影响的流数量]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
 
   +++
 
