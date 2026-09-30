@@ -3,13 +3,25 @@ title: 为Edge实施设置报表
 description: 配置Customer Journey Analytics以报告通过Edge Network收集的流媒体数据。
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 6%
-
+ht-degree: 7%
 ---
-
 # 为Edge实施设置报表
 
 通过Edge Network实施流媒体收集后，配置Customer Journey Analytics以报告收集的数据。

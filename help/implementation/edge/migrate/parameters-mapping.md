@@ -4,25 +4,35 @@ description: 与Analytics Source Connector和Customer Journey Analytics一起使
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+TQID: 'https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+    internal-label: Implementation
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 1331
+source-wordcount: '1331'
 ht-degree: 19%
-
 ---
-
 # Adobe Experience Platform和Customer Journey Analytics的Media Analytics参数映射
 
 本文档全面列出了Adobe Experience Platform和Customer Journey Analytics中使用的所有Media Analytics参数。 它旨在支持将通过[Analytics Source Connector](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/cn/docs/experience-platform/sources/connectors/adobe-applications/classifications)从Adobe Analytics导入的数据集成到Platform，并将每个参数映射到其相应的XDM字段路径。
@@ -161,24 +171,24 @@ Media Analytics分类通过名为ACDC的单独流程引入AEP。 下表列出的
 对于每个查找数据集（分类数据集），请如下配置：
 
 * **视频数据集**：
-   * 键： `_sandbox.key`
-   * 匹配键： `Asset ID (media.mediaTimed.primaryAssetReference._id)`
-   * 数据源类型： `Web Data`
+  * 键： `_sandbox.key`
+  * 匹配键： `Asset ID (media.mediaTimed.primaryAssetReference._id)`
+  * 数据源类型： `Web Data`
 
 * **视频数据集**：
-   * 键： `_sandbox.key`
-   * 匹配键： `Ad ID (advertising.adAssetReference._id)`
-   * 数据源类型： `Web Data`
+  * 键： `_sandbox.key`
+  * 匹配键： `Ad ID (advertising.adAssetReference._id)`
+  * 数据源类型： `Web Data`
 
 * **videoadpod数据集**：
-   * 键： `_sandbox.key`
-   * 匹配键： `Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
-   * 数据源类型： `Web Data`
+  * 键： `_sandbox.key`
+  * 匹配键： `Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
+  * 数据源类型： `Web Data`
 
 * **videochapter数据集**：
-   * 键： `_sandbox.key`
-   * 匹配键： `Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
-   * 数据源类型： `Web Data`
+  * 键： `_sandbox.key`
+  * 匹配键： `Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
+  * 数据源类型： `Web Data`
 
 ### 报表注意事项
 

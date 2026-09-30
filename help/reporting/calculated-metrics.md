@@ -3,13 +3,22 @@ title: 计算量度
 description: Adobe Analytics和Customer Journey Analytics中流媒体报表的自定义计算量度。
 feature: Metrics
 role: User, Admin
-source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 4%
-
 ---
-
 # 流媒体计算量度
 
 Adobe流媒体服务的计算量度是基于标准流媒体量度构建的自定义量度，可让您在不更改实施的情况下得出平均广告逗留时间或媒体完成率等比率。

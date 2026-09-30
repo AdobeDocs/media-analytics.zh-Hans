@@ -3,13 +3,25 @@ title: 章节名称
 description: 显示人类可读的章节标题。
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '367'
 ht-degree: 2%
-
 ---
-
 
 # 章节名称
 
@@ -38,7 +50,7 @@ ht-degree: 2%
 
 为报表包启用了&#x200B;**[[!UICONTROL 媒体章节]](/help/reporting/setup/analytics-reporting.md)**&#x200B;时，Adobe会自动创建章节名称分类结构。 您负责使用[分类集](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)填充和维护分类。
 
-此方法在每个章节ID及其友好名称之间提供了保证的1:1关系。 分类更新会以追溯方式应用于该ID的所有历史数据。
+此方法在每个章节ID及其友好名称之间保证存在1:1的关系。 分类更新会以追溯方式应用于该ID的所有历史数据。
 
 >[!IMPORTANT]
 >

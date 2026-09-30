@@ -3,13 +3,23 @@ title: 设置Media Analytics标记扩展
 description: 使用Adobe Media Analytics (3.x SDK) for Audio and Video标记扩展实施仅限Analytics的流媒体。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 12%
-
 ---
-
 # 设置Media Analytics标记扩展
 
 Adobe Media Analytics (3.x SDK) for Audio and Video标记扩展通过标记部署Media SDK for JavaScript (3.x)，而无需手动安装JavaScript。 本页介绍标记配置。 要在代码中安装SDK，请参阅[为流媒体设置JavaScript](javascript.md)。 对于新的实施，请考虑推荐的[Web SDK标记扩展](/help/implementation/edge/web-sdk-tags.md) Edge路径。
