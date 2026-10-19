@@ -3,6 +3,7 @@ cloud: Experience Cloud
 solution: Analytics
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: "Analytics"
 usetq: true
 feature-set: Analytics
 landing-page-name: analytics
@@ -11,11 +12,9 @@ git-repo: https://github.com/AdobeDocs/media-analytics.zh-Hans
 index: true
 source-git-commit: 28c9e0d7f0dbf36f24ab7b2449730670c5bcdcfb
 workflow-type: tm+mt
-source-wordcount: 128
-ht-degree: 89%
-
+source-wordcount: '123'
+ht-degree: 92%
 ---
-
 
 # 供内部使用的元数据
 
@@ -27,6 +26,6 @@ metadata.md 文件包含存储库级别的元数据，这些元数据会被传�
 | solution-hub-url | 打开 helpx 中心页面 |
 | solution-icon | 在解决方案标题旁边显示解决方案图标。 尚未实施 |
 | getting-started-url | 指向 helpx 快速入门页面的链接 |
-| tutorials-url | 指向视频教程的链接 – helpx 教程或 KT 教程 |
+| tutorials-url | 指向视频教程的链接：helpx 教程或 KT 教程 |
 | mini-toc-levels | 确定右边栏中显示的标题层级数。 默认值为 2 |
 | git-repo | 指定供内部使用的主存储库的位置 |
